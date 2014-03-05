@@ -117,7 +117,7 @@ class TableVisitor extends AstVisitor {
 
 		  cellContent = new StringBuilder()
 		  iterate(e)
-		  cellContent ++= " ----- " + e.toString()
+//		  cellContent ++= " ----- " + e.toString()
 		  currentCell.content = cellContent.toString
 		  
 		  column += 1
@@ -214,6 +214,9 @@ class TableVisitor extends AstVisitor {
 	def visit(e : XmlCharRef) = {
 	  
 	} 
-	
+
+	def visit(e : SemiPre) = {
+
+	}
 
 }

@@ -31,7 +31,7 @@ class WikipediaPCMParser {
     val editPage = Http("http://en.wikipedia.org/w/index.php")
     .params("title" -> title, "action" -> "edit")
     .option(HttpOptions.connTimeout(1000))
-    .option(HttpOptions.readTimeout(10000))
+    .option(HttpOptions.readTimeout(30000))
     .asString
    
     val xml = parseHTMLAsXML(editPage)
@@ -47,7 +47,7 @@ class WikipediaPCMParser {
     val expandTemplatesPage = Http.post("https://en.wikipedia.org/wiki/Special:ExpandTemplates")
      .params("wpInput" -> wikiCode, "wpRemoveComments" -> "1")
      .option(HttpOptions.connTimeout(1000))
-	 .option(HttpOptions.readTimeout(10000))
+	 .option(HttpOptions.readTimeout(30000))
      .asString
     
     val xml = parseHTMLAsXML(expandTemplatesPage)

@@ -50,7 +50,7 @@ class ParserTest extends FlatSpec with Matchers {
   }
    
    it should "parse this file correctly" in {
-    val pcms = parsePCMFromURL("Comparison_of_Linux_distributions")
+    val pcms = parsePCMFromURL("Comparison_of_web_browsers")
     pcms.foreach(println)
    }
       

@@ -23,6 +23,9 @@ import org.sweble.wikitext.`lazy`.parser.XmlElementOpen
 import org.sweble.wikitext.`lazy`.parser.SemiPre
 import org.sweble.wikitext.`lazy`.parser.Ticks
 import org.sweble.wikitext.`lazy`.parser.ExternalLink
+import org.sweble.wikitext.`lazy`.parser.XmlElementEmpty
+import org.sweble.wikitext.`lazy`.utils.XmlEntityRef
+import org.sweble.wikitext.`lazy`.parser.Url
 
 class PageVisitor extends AstVisitor{
   
@@ -90,7 +93,15 @@ class PageVisitor extends AstVisitor{
   def visit(e : XmlElementClose) = {
     
   }
+  
+  def visit(e : XmlElementEmpty) = {
+    
+  }
 
+  def visit(e : XmlEntityRef) = {
+
+  }
+  	
   def visit(e : SemiPre) = {
 
   }
@@ -98,6 +109,10 @@ class PageVisitor extends AstVisitor{
   def visit(e : Ticks) = {
 
   }
+  
+  	def visit(e : Url) = {
+
+	}
   
   
 }
