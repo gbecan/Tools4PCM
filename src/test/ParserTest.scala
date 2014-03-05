@@ -49,7 +49,11 @@ class ParserTest extends FlatSpec with Matchers {
     pcms.size should be (6)
   }
    
-   
+   it should "parse this file correctly" in {
+    val pcms = parsePCMFromURL("Comparison_of_Linux_distributions")
+    pcms.foreach(println)
+   }
+      
    
    it should "parse the same PCM from a URL and from a file containing the code" in {
      val fromFile = parsePCMFromFile("resources/amd.pcm")

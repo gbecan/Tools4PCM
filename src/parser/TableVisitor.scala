@@ -26,6 +26,7 @@ import pcm.PCM
 import org.sweble.wikitext.`lazy`.parser.Ticks
 import org.sweble.wikitext.`lazy`.parser.SemiPre
 import org.sweble.wikitext.`lazy`.parser.ExternalLink
+import org.sweble.wikitext.`lazy`.utils.XmlCharRef
 
 class TableVisitor extends AstVisitor {
 
@@ -36,7 +37,7 @@ class TableVisitor extends AstVisitor {
 	
 	var currentCell : Cell = _
 	var cellContent : StringBuilder = _
-	
+		
 	var inXMLElement : Boolean = false
 
 	def visit(e : Table) = {
@@ -49,15 +50,18 @@ class TableVisitor extends AstVisitor {
 
 	def visit(e : XmlAttribute) = {
 	  	val name = e.getName()
-	  	val value = e.getValue().get(0) match {
-	  	  case t:Text => t.getContent() 
-	  	  case _ => ""
-	  	}
 	  	
-	  	name match {
-	  	  case "rowspan" => handleRowspan(value.toInt)
-	  	  case "colspan" => handleColspan(value.toInt)
-	  	  case _ => 
+	  	if (!e.getValue().isEmpty()) {
+	  		val value = e.getValue() match {
+	  			case t:Text => t.getContent() 
+	  			case _ => ""
+	  		}
+	  	
+	  		name match {
+	  		case "rowspan" => handleRowspan(value.toInt)
+	  		case "colspan" => handleColspan(value.toInt)
+	  		case _ => 
+	  		}
 	  	}
 
 	}
@@ -199,6 +203,10 @@ class TableVisitor extends AstVisitor {
 	def visit(e : Ticks) = {
 	  
     }
+	
+	def visit(e : XmlCharRef) = {
+	  
+	} 
 	
 
 }
