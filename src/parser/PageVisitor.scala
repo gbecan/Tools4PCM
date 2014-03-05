@@ -22,6 +22,7 @@ import org.sweble.wikitext.`lazy`.parser.XmlElementClose
 import org.sweble.wikitext.`lazy`.parser.XmlElementOpen
 import org.sweble.wikitext.`lazy`.parser.SemiPre
 import org.sweble.wikitext.`lazy`.parser.Ticks
+import org.sweble.wikitext.`lazy`.parser.ExternalLink
 
 class PageVisitor extends AstVisitor{
   
@@ -74,6 +75,10 @@ class PageVisitor extends AstVisitor{
     
   }
   
+  def visit(e : ExternalLink) = {
+	  
+  }
+  
   def visit(e : DefinitionList) = {
     
   }
@@ -93,4 +98,6 @@ class PageVisitor extends AstVisitor{
   def visit(e : Ticks) = {
 
   }
+  
+  
 }

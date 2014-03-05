@@ -88,9 +88,11 @@ class TableVisitor extends AstVisitor {
 	    row += 1
 	    column = 0
 	  }
-	  iterate(e)
-	  row += 1
-	  column = 0
+	  if (!e.getBody().isEmpty()) {
+		  iterate(e)
+		  row += 1
+		  column = 0  
+	  }
 	}
 
 	def visit(e : TableHeader) = {
@@ -115,7 +117,7 @@ class TableVisitor extends AstVisitor {
 
 		  cellContent = new StringBuilder()
 		  iterate(e)
-//		  cellContent ++= " ----- " + e.toString()
+		  cellContent ++= " ----- " + e.toString()
 		  currentCell.content = cellContent.toString
 		  
 		  column += 1
@@ -185,7 +187,12 @@ class TableVisitor extends AstVisitor {
 	}
 
 	def visit(e : XmlElementEmpty) = {
-
+		e.getName() match {
+		case "br" => 
+		inXMLElement = false
+		cellContent += '\n'
+		case _ =>
+		}
 	}
 
 	def visit(e : XmlEntityRef) = {
