@@ -117,7 +117,7 @@ class TableVisitor extends AstVisitor {
 
 		  cellContent = new StringBuilder()
 		  iterate(e)
-//		  cellContent ++= " ----- " + e.toString()
+		  cellContent ++= " ----- " + e.toString()
 		  currentCell.content = cellContent.toString
 		  
 		  column += 1
@@ -173,11 +173,9 @@ class TableVisitor extends AstVisitor {
 
 	def visit(e : XmlElementOpen) = {
 	  e.getName() match {
-	    case "br" => 
-	      inXMLElement = false
-	      cellContent += '\n'
-	    case "small" => inXMLElement = false
-	    case "abbr" => inXMLElement = false
+	    case "br" => cellContent += '\n'
+	    case "small" => 
+	    case "abbr" =>
 	    case _ => inXMLElement = true 
 	  }
 	}
@@ -188,17 +186,26 @@ class TableVisitor extends AstVisitor {
 
 	def visit(e : XmlElementEmpty) = {
 		e.getName() match {
-		case "br" => 
-		inXMLElement = false
-		cellContent += '\n'
+		case "br" => cellContent += '\n'
 		case _ =>
 		}
 	}
 
 	def visit(e : XmlEntityRef) = {
-
+	  if (!inXMLElement) {
+	    val value = e.getName() match {
+	      case "nbsp" => 160.toChar
+	      case _ => '\0'
+	    }
+	    
+	    cellContent += value
+	  }
 	}
 
+	def visit(e : XmlCharRef) = {
+	  println(e)
+	} 
+	
 	def visit(e : XmlAttributeGarbage) = {
 		cellContent ++= e.getContent() + "|"
 	}
@@ -211,10 +218,6 @@ class TableVisitor extends AstVisitor {
 	  
     }
 	
-	def visit(e : XmlCharRef) = {
-	  
-	} 
-
 	def visit(e : SemiPre) = {
 
 	}
