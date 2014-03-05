@@ -203,7 +203,7 @@ class TableVisitor extends AstVisitor {
 	}
 
 	def visit(e : XmlCharRef) = {
-	  println(e)
+	  cellContent += e.getCodePoint().toChar
 	} 
 	
 	def visit(e : XmlAttributeGarbage) = {
