@@ -50,9 +50,9 @@ class TableVisitor extends AstVisitor {
 
 	def visit(e : XmlAttribute) = {
 	  	val name = e.getName()
-	  	
+
 	  	if (!e.getValue().isEmpty()) {
-	  		val value = e.getValue() match {
+	  		val value = e.getValue().get(0) match {
 	  			case t:Text => t.getContent() 
 	  			case _ => ""
 	  		}
