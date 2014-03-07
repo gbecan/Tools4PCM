@@ -8,6 +8,7 @@ import pcm.PCM
 import scala.xml.XML
 import scalaj.http.Http
 import scalaj.http.HttpOptions
+import java.net.URL
 
 class ParserTest extends FlatSpec with Matchers {
   
@@ -16,12 +17,10 @@ class ParserTest extends FlatSpec with Matchers {
     val code = reader.mkString
     reader.close
     val parser = new WikipediaPCMParser
-    val preprocessedCode = parser.expandTemplates(code)
-//    println(preprocessedCode)
-    parser.parsePreprocessedCode(preprocessedCode)
+    parser.parse(code)
   }
   
-  def parsePCMFromURL(title : String) : List[PCM] = {
+  def parseFromTitle(title : String) : List[PCM] = {
     (new WikipediaPCMParser).parseOnlineArticle(title)
   }
 
@@ -32,8 +31,8 @@ class ParserTest extends FlatSpec with Matchers {
    }
   
   it should "parse Comparison of AMD processors" in {
-    val pcms = parsePCMFromFile("resources/amd.pcm")
-    pcms.foreach(println)
+    val pcms = parseFromTitle("Comparison of AMD processors")
+    pcms.foreach(pcm => println(pcm.toHTML))
     pcms.size should be (1)
   }
   
@@ -44,20 +43,20 @@ class ParserTest extends FlatSpec with Matchers {
   }
    
    it should "parse List of free and open-source Android applications" in {
-    val pcms = parsePCMFromURL("List_of_free_and_open-source_Android_applications")
+    val pcms = parseFromTitle("List_of_free_and_open-source_Android_applications")
     pcms.foreach(println)
     pcms.size should be (6)
   }
    
    it should "parse this file correctly" in {
-    val pcms = parsePCMFromURL("Comparison_of_web_browsers")
+    val pcms = parseFromTitle("Comparison_of_web_browsers")
     pcms.foreach(println)
    }
       
    
    it should "parse the same PCM from a URL and from a file containing the code" in {
      val fromFile = parsePCMFromFile("resources/amd.pcm")
-     val fromURL = (new WikipediaPCMParser).parseOnlineArticle("Comparison_of_AMD_processors")
+     val fromURL = parseFromTitle("Comparison_of_AMD_processors")
      
      fromFile.size should be (1)
      fromURL.size should be (1)
@@ -66,7 +65,7 @@ class ParserTest extends FlatSpec with Matchers {
    }
  
    
-   "Scala" should "download the code of a wikipedia page" in {
+   "Scalaj-http" should "download the code of a wikipedia page" in {
 	   val xmlPage = Http("http://en.wikipedia.org/w/index.php?title=Comparison_of_AMD_processors&action=edit")
 	   .option(HttpOptions.connTimeout(1000))
 	   .option(HttpOptions.readTimeout(10000))

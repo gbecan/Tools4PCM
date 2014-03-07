@@ -15,25 +15,31 @@ import org.xml.sax.InputSource
 import scala.xml.parsing.NoBindingFactoryAdapter
 import java.io.StringReader
 import scala.xml.Node
+import org.sweble.wikitext.`lazy`.LazyPreprocessor
 
 class WikipediaPCMParser {
   
-  def parseOnlineArticle(title : String) : List[PCM] = {
-    val code = getPageCode(title)
-    val preprocessedCode = expandTemplates(code)
-    parsePreprocessedCode(preprocessedCode) 
-  }
-
+  private val config = new SimpleWikiConfiguration()
+  private val parser = new LazyParser(config)
+  private val preprocessor = new LazyPreprocessor(config)
+  
   /**
-   * Get page code on English version of Wikipedia
+   * Parse PCM from online MediaWiki code
    */
-  def getPageCode(title : String) : String = {
-    val editPage = Http("http://en.wikipedia.org/w/index.php")
-    .params("title" -> title, "action" -> "edit")
+  def parseOnlineArticle(title : String) : List[PCM] = {
+    val code = retrieveCodeFromOnlineArticle(title)
+    parse(code)
+  }
+  
+  /**
+   * Retrieve MediaWiki code of an article from URL
+   */
+  private def retrieveCodeFromOnlineArticle(title : String) : String = {
+     val editPage = Http("http://en.wikipedia.org/w/index.php")
+     .params("title" -> title.replaceAll(" ", "_"), "action" -> "edit")
     .option(HttpOptions.connTimeout(1000))
     .option(HttpOptions.readTimeout(30000))
     .asString
-   
     val xml = parseHTMLAsXML(editPage)
     val code = (xml \\ "textarea").text
     
@@ -41,39 +47,45 @@ class WikipediaPCMParser {
   }
   
   /**
-   * Expand templates in WikiCode with the special page on English version of Wikipedia
+   * Clean HTML to get strict XML
    */
-  def expandTemplates(wikiCode : String) : String = {
-    val expandTemplatesPage = Http.post("https://en.wikipedia.org/wiki/Special:ExpandTemplates")
-     .params("wpInput" -> wikiCode, "wpRemoveComments" -> "1")
-     .option(HttpOptions.connTimeout(1000))
-	 .option(HttpOptions.readTimeout(30000))
-     .asString
-    
-    val xml = parseHTMLAsXML(expandTemplatesPage)
-     
-    val textareas = (xml \\ "textarea")
-    textareas.filter(_.attribute("id") exists (_.text == "output")).text
-  }
-  
-  def parsePreprocessedCode(wikiCode : String) : List[PCM] = {
-    val config = new SimpleWikiConfiguration()
-    val aliases = new HashSet[String]()
-    aliases.add("Yes")
-    aliases.add("yes")
-    config.addMagicWord(new MagicWord("Yes", false, aliases))
-	val parser = new LazyParser(config)
-	val ast = parser.parseArticle(wikiCode, "");
-    val visitor = new PageVisitor
-    visitor.go(ast)
-    visitor.getPCMs()
-  }
-  
   private def parseHTMLAsXML(htmlCode : String) : Node = {
     val adapter = new NoBindingFactoryAdapter
     val htmlParser = (new SAXFactoryImpl).newSAXParser()
     val xml = adapter.loadXML(new InputSource(new StringReader(htmlCode)), htmlParser)
     xml
   }
+  
+  
+  /**
+   * Parse PCM from MediaWiki code 
+   */
+  def parse(code : String) : List[PCM] = {
+    val preprocessedCode = preprocess(code)
+    parseAndNormalizePCM(preprocessedCode)
+  }
+  
+  /**
+   * Preprocess MediaWiki code
+   * Remove templates with the help of https://en.wikipedia.org/wiki/Special:ExpandTemplates
+   */
+  private def preprocess(code : String) : String = {
+    val ast = preprocessor.parseArticle(code, "")
+    val visitor = new PreprocessVisitor()
+    visitor.go(ast)
+    visitor.getPreprocessedCode()
+  }
+  
+  /**
+   * Parse preprocessed MediaWiki code to extract normalized PCMs
+   */
+  private def parseAndNormalizePCM(code : String) : List[PCM] = {
+	val ast = parser.parseArticle(code, "");
+    val visitor = new PageVisitor
+    visitor.go(ast)
+    visitor.getPCMs()
+  }
+  
+  
   
 }
