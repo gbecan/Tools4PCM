@@ -1,5 +1,7 @@
 package pcm
 
+import scala.xml.PrettyPrinter
+
 
 class PCM {
 
@@ -38,17 +40,18 @@ class PCM {
   }
   
   def toHTML() : String = {
-    (<table border="1">
+    val htmlCode = <table border="1">
     { 
     	for {row <- 0 to getNumberOfRows} 
 	    yield <tr> 
       	  {
 		    for {column <- 0 to getNumberOfColumns} 
-		  	yield <th> {cells.getOrElse((row, column), "/!\\ Not defined /!\\")} </th>
+		  	yield <th>{cells.getOrElse((row, column), "/!\\ Not defined /!\\")}</th>
 		  }
     	</tr>
 	} 
-    </table>).toString
+    </table>
+    (new PrettyPrinter(80,2)).format(htmlCode)
   }
   
   

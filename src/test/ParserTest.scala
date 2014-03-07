@@ -9,6 +9,7 @@ import scala.xml.XML
 import scalaj.http.Http
 import scalaj.http.HttpOptions
 import java.net.URL
+import java.io.FileWriter
 
 class ParserTest extends FlatSpec with Matchers {
   
@@ -32,8 +33,11 @@ class ParserTest extends FlatSpec with Matchers {
   
   it should "parse Comparison of AMD processors" in {
     val pcms = parseFromTitle("Comparison of AMD processors")
-    pcms.foreach(pcm => println(pcm.toHTML))
+    val writer = new FileWriter("output/amd.html")
+    pcms.foreach(pcm => writer.write(pcm.toHTML))
+    writer.close()
     pcms.size should be (1)
+    
   }
   
    it should "parse Comparison of European Traffic Laws" in {
