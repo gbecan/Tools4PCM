@@ -24,6 +24,14 @@ class ParserTest extends FlatSpec with Matchers {
   def parseFromTitle(title : String) : List[PCM] = {
     (new WikipediaPCMParser).parseOnlineArticle(title)
   }
+  
+  def testArticle(title : String) : List[PCM] = {
+    val pcms = parseFromTitle(title)
+    val writer = new FileWriter("output/" + title.replaceAll(" ", "_") + ".html")
+    pcms.foreach(pcm => writer.write(pcm.toHTML))
+    writer.close()
+    pcms
+  }
 
   "The PCM parser" should "parse the example of tables from Wikipedia" in {
     val pcms = parsePCMFromFile("resources/example.pcm")
@@ -32,29 +40,23 @@ class ParserTest extends FlatSpec with Matchers {
    }
   
   it should "parse Comparison of AMD processors" in {
-    val pcms = parseFromTitle("Comparison of AMD processors")
-    val writer = new FileWriter("output/amd.html")
-    pcms.foreach(pcm => writer.write(pcm.toHTML))
-    writer.close()
+    val pcms = testArticle("Comparison of AMD processors")
     pcms.size should be (1)
     
   }
   
    it should "parse Comparison of European Traffic Laws" in {
-    val pcms = parsePCMFromFile("resources/european_traffic_laws.pcm")
-    pcms.foreach(println)
+    val pcms = testArticle("resources/european_traffic_laws.pcm")
     pcms.size should be (1)
   }
    
    it should "parse List of free and open-source Android applications" in {
-    val pcms = parseFromTitle("List_of_free_and_open-source_Android_applications")
-    pcms.foreach(println)
+    val pcms = testArticle("List_of_free_and_open-source_Android_applications")
     pcms.size should be (6)
   }
    
    it should "parse this file correctly" in {
-    val pcms = parseFromTitle("Comparison_of_web_browsers")
-    pcms.foreach(println)
+    val pcms = testArticle("Comparison_of_web_browsers")
    }
       
    

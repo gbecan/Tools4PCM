@@ -40,7 +40,13 @@ class PCM {
   }
   
   def toHTML() : String = {
-    val htmlCode = <table border="1">
+    val htmlCode = 
+    <html>
+    <head>
+    		<meta charset="utf-8"/>
+    </head>
+    <body>
+    <table border="1">
     { 
     	for {row <- 0 to getNumberOfRows} 
 	    yield <tr> 
@@ -51,6 +57,9 @@ class PCM {
     	</tr>
 	} 
     </table>
+    </body>
+    </html>
+    
     (new PrettyPrinter(80,2)).format(htmlCode)
   }
   

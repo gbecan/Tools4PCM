@@ -117,9 +117,9 @@ class TableVisitor extends AstVisitor {
 
 		  cellContent = new StringBuilder()
 		  iterate(e)
-//		  cellContent ++= " ----- " + e.toString()
-		  currentCell.content = cellContent.toString
 		  
+		  currentCell.content = cellContent.toString
+		  println(currentCell.content + " ----- " + e.toString())
 		  column += 1
 	  } else {
 	    currentCell = new Cell()  

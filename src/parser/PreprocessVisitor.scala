@@ -42,17 +42,26 @@ class PreprocessVisitor extends AstVisitor {
     if (cachedTemplate.isDefined) {
       cachedTemplate.get
     } else {
+    	// Ask expanded template
 	    val expandTemplatesPage = Http.post("https://en.wikipedia.org/wiki/Special:ExpandTemplates")
 	     .params("wpInput" -> template, "wpRemoveComments" -> "1", "wpRemoveNowiki" -> "1")
 	     .option(HttpOptions.connTimeout(1000))
 		 .option(HttpOptions.readTimeout(30000))
 	     .asString
-	    
+
+	    // Filter the returned page
 	    val xml = parseHTMLAsXML(expandTemplatesPage)
-	     
 	    val textareas = (xml \\ "textarea")
-	    val expandedTemplate = textareas.filter(_.attribute("id") exists (_.text == "output")).text
+	    var expandedTemplate = textareas.filter(_.attribute("id") exists (_.text == "output")).text
+
+	    // Remove line breaks
+	    if (expandedTemplate.size >= 2) {
+	    	expandedTemplate = expandedTemplate.substring(1, expandedTemplate.size - 1 )  
+	    }
+	    
+	    // Add template to cache
 	    templateCache += template -> expandedTemplate
+	    
 	    expandedTemplate
     }
   }
