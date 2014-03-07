@@ -13,11 +13,17 @@ class PCM {
     cells get (row, column)
   }
   
+  def getNumberOfRows() : Int = {
+    cells.keys.maxBy(_._1)._1
+  }
+  
+  def getNumberOfColumns() : Int = {
+    cells.keys.maxBy(_._2)._2
+  }
+  
   override def toString() : String = {
     val result = new StringBuilder
-    val maxRow = cells.keys.maxBy(_._1)._1
-    val maxColumn = cells.keys.maxBy(_._2)._2
-    for (row <- 0 to maxRow; column <- 0 to maxColumn) {
+    for (row <- 0 to getNumberOfRows; column <- 0 to getNumberOfColumns) {
       result ++= row + "," + column + ":"
       
       val cell = cells get (row, column)
@@ -30,4 +36,20 @@ class PCM {
     }
     result.toString
   }
+  
+  def toHTML() : String = {
+    (<table border="1">
+    { 
+    	for {row <- 0 to getNumberOfRows} 
+	    yield <tr> 
+      	  {
+		    for {column <- 0 to getNumberOfColumns} 
+		  	yield <th> {cells.getOrElse((row, column), "/!\\ Not defined /!\\")} </th>
+		  }
+    	</tr>
+	} 
+    </table>).toString
+  }
+  
+  
 }
