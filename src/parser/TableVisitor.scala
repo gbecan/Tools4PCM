@@ -27,6 +27,9 @@ import org.sweble.wikitext.`lazy`.parser.Ticks
 import org.sweble.wikitext.`lazy`.parser.SemiPre
 import org.sweble.wikitext.`lazy`.parser.ExternalLink
 import org.sweble.wikitext.`lazy`.utils.XmlCharRef
+import org.sweble.wikitext.`lazy`.parser.TableCaption
+import org.sweble.wikitext.`lazy`.parser.DefinitionList
+import org.sweble.wikitext.`lazy`.parser.Section
 
 class TableVisitor extends AstVisitor {
 
@@ -119,7 +122,7 @@ class TableVisitor extends AstVisitor {
 		  iterate(e)
 		  
 		  currentCell.content = cellContent.toString
-		  println(currentCell.content + " ----- " + e.toString())
+//		  println(currentCell.content + " ----- " + e.toString())
 		  column += 1
 	  } else {
 	    currentCell = new Cell()  
@@ -156,7 +159,8 @@ class TableVisitor extends AstVisitor {
 	def visit(e : ExternalLink) = {
 	  if (!inXMLElement) {
 		  if (e.getTitle().isEmpty()) {
-		    cellContent ++= e.getTarget().getPath()
+		    val target = e.getTarget()
+		    cellContent ++= target.getProtocol() + ":" + target.getPath()
 		  } else {
 		    dispatch(e.getTitle())
 		  }
@@ -220,6 +224,18 @@ class TableVisitor extends AstVisitor {
 	
 	def visit(e : SemiPre) = {
 
+	}
+	
+	def visit(e : TableCaption) {
+	  
+	}
+	
+	def visit(e : DefinitionList) {
+	  
+	}
+	
+	def visit(e : Section) {
+	  
 	}
 
 }
