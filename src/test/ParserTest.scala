@@ -10,8 +10,10 @@ import scalaj.http.Http
 import scalaj.http.HttpOptions
 import java.net.URL
 import java.io.FileWriter
+import org.scalatest.prop.TableDrivenPropertyChecks
+import java.net.UnknownHostException
 
-class ParserTest extends FlatSpec with Matchers {
+class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
   
   def parsePCMFromFile(file : String) : List[PCM]= {
     val reader= Source.fromFile(file)
@@ -46,7 +48,7 @@ class ParserTest extends FlatSpec with Matchers {
   }
   
    it should "parse Comparison of European Traffic Laws" in {
-    val pcms = testArticle("resources/european_traffic_laws.pcm")
+    val pcms = testArticle("Comparison of European traffic laws")
     pcms.size should be (1)
   }
    
@@ -69,7 +71,24 @@ class ParserTest extends FlatSpec with Matchers {
      fromFile(0).toString should be (fromURL(0).toString)
      
    }
- 
+   
+   it should "parse every available PCM in Wikipedia" in {
+	   val wikipediaPCMs = Source.fromFile("resources/list_of_PCMs.txt").getLines.toList
+	   for(article <- wikipediaPCMs) {
+	     println(article)
+	     var retry = false
+	     do {
+		     try {
+		    	 val pcms = testArticle(article)
+		     } catch {
+		       case e : UnknownHostException => retry = true 
+		     }  
+	     } while (retry)
+	   }
+   }
+   
+   
+
    
    "Scalaj-http" should "download the code of a wikipedia page" in {
 	   val xmlPage = Http("http://en.wikipedia.org/w/index.php?title=Comparison_of_AMD_processors&action=edit")
