@@ -3,6 +3,7 @@ package pcm
 import scala.xml.PrettyPrinter
 import scala.xml.Text
 import scala.xml.XML
+import scala.xml.Elem
 
 
 class PCM {
@@ -41,13 +42,8 @@ class PCM {
     result.toString
   }
   
-  def toHTML() : String = {
+  def toHTML() : Elem = {
     val htmlCode = 
-    <html>
-    <head>
-    		<meta charset="utf-8"/>
-    </head>
-    <body>
     <table border="1">
     { 
     	for {row <- 0 to getNumberOfRows} 
@@ -78,11 +74,7 @@ class PCM {
     	</tr>
 	} 
     </table>
-    </body>
-    </html>
     
-    (new PrettyPrinter(80,2)).format(htmlCode)
+    htmlCode
   }
-  
-  
 }

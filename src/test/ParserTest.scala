@@ -12,6 +12,7 @@ import java.net.URL
 import java.io.FileWriter
 import org.scalatest.prop.TableDrivenPropertyChecks
 import java.net.UnknownHostException
+import scala.xml.PrettyPrinter
 
 class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
   
@@ -30,7 +31,16 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
   def testArticle(title : String) : List[PCM] = {
     val pcms = parseFromTitle(title)
     val writer = new FileWriter("output/" + title.replaceAll(" ", "_") + ".html")
-    pcms.foreach(pcm => writer.write(pcm.toHTML))
+    writer.write((new PrettyPrinter(80,2)).format(
+    <html>
+    <head>
+    		<meta charset="utf-8"/>
+    </head>
+    <body>
+    	{ for(pcm <- pcms) yield pcm.toHTML }
+    </body>
+    </html>
+    ))
     writer.close()
     pcms
   }
