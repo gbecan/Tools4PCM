@@ -1,6 +1,8 @@
 package pcm
 
 import scala.xml.PrettyPrinter
+import scala.xml.Text
+import scala.xml.XML
 
 
 class PCM {
@@ -52,7 +54,26 @@ class PCM {
 	    yield <tr> 
       	  {
 		    for {column <- 0 to getNumberOfColumns} 
-		  	yield <th>{cells.getOrElse((row, column), "/!\\ Not defined /!\\")}</th>
+		  	yield <th>
+		  	{
+		  	  val cell = cells.get((row, column))
+		  	  if (cell.isDefined) {
+		  	    // Convert new lines in <br/>
+		  	    val lines = cell.get.content.split("\n")
+		  	    var firstLine = true
+		  	    for (line <- lines) yield {
+		  	      if (firstLine) {
+		  	        firstLine = false
+		  	        Text(line)
+		  	      } else {
+		  	        <br/> ++ Text(line)
+		  	      }
+		  	    }
+		  	  } else {
+		  	    "/!\\ Not defined /!\\"
+		  	  }
+		  	}
+		  	</th>
 		  }
     	</tr>
 	} 
