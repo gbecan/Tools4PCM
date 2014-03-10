@@ -33,6 +33,7 @@ import org.sweble.wikitext.`lazy`.parser.Section
 import org.sweble.wikitext.`lazy`.parser.Itemization
 import scala.collection.mutable.ListBuffer
 import scala.collection.mutable.Stack
+import org.sweble.wikitext.`lazy`.parser.DefinitionDefinition
 
 class TableVisitor extends AstVisitor {
 
@@ -112,8 +113,11 @@ class TableVisitor extends AstVisitor {
 	}
 	
 	def handleCell(e : AstNode) {
+//	  println(e)
+	  
 	  rowspan = 1
 	  colspan = 1
+	  
 	  if (!inXMLElement) {
 		  // Skip cells defined by rowspan
 		  while (currentPCM.getCell(row, column).isDefined) {
@@ -193,6 +197,7 @@ class TableVisitor extends AstVisitor {
 	    case "small" => 
 	    case "abbr" =>
 	    case "center" =>
+//	    case "span" =>
 	    case _ => inXMLElement = true 
 	  }
 	}
@@ -244,7 +249,25 @@ class TableVisitor extends AstVisitor {
 	}
 	
 	def visit(e : DefinitionList) {
+	  val it = e.getContent().iterator()
+	  var first = true
 	  
+	  while (it.hasNext()) {
+	    val definition = it.next()
+	    
+	    // Each element of a definition list is separated by a line break
+	    if (first) {
+	      first = false
+	    } else {
+	      cellContent += '\n'
+	    }
+	    
+	    dispatch(definition)
+	  }
+	}
+	
+	def visit(e : DefinitionDefinition) {
+	  iterate(e)
 	}
 	
 	def visit(e : Section) {
