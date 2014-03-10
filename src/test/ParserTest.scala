@@ -75,15 +75,40 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
    it should "parse every available PCM in Wikipedia" in {
 	   val wikipediaPCMs = Source.fromFile("resources/list_of_PCMs.txt").getLines.toList
 	   for(article <- wikipediaPCMs) {
-	     println(article)
-	     var retry = false
-	     do {
-		     try {
-		    	 val pcms = testArticle(article)
-		     } catch {
-		       case e : UnknownHostException => retry = true 
-		     }  
-	     } while (retry)
+	     if (article.startsWith("//")) {
+	       println("IGNORED : " + article)
+	     } else {
+	    	 println(article)
+	    	 var retry = false
+	    	 do {
+	    		 try {
+	    			 val pcms = testArticle(article)
+	    		 } catch {
+	    		 case e : UnknownHostException => retry = true
+	    		 case e => e.printStackTrace()
+	    		 }  
+	    	 } while (retry)
+	     }
+	   }
+   }
+   
+   it should "parse these PCMs" in {
+	   val wikipediaPCMs = Source.fromFile("resources/pcms_to_test.txt").getLines.toList
+	   for(article <- wikipediaPCMs) {
+	     if (article.startsWith("//")) {
+	       println("IGNORED : " + article)
+	     } else {
+	    	 println(article)
+	    	 var retry = false
+	    	 do {
+	    		 try {
+	    			 val pcms = testArticle(article)
+	    		 } catch {
+	    		 case e : UnknownHostException => retry = true
+	    		 case e => e.printStackTrace()
+	    		 }  
+	    	 } while (retry)
+	     }
 	   }
    }
    

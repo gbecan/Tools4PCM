@@ -18,6 +18,7 @@ import org.sweble.wikitext.`lazy`.preprocessor.TemplateArgument
 import org.sweble.wikitext.`lazy`.preprocessor.TagExtension
 import scala.collection.immutable.Map
 import scala.collection.immutable.HashMap
+import org.sweble.wikitext.`lazy`.preprocessor.Redirect
 
 class PreprocessVisitor extends AstVisitor {
   
@@ -149,6 +150,10 @@ class PreprocessVisitor extends AstVisitor {
   
   def visit(e : TagExtension) {
     // a TagExtension is a reference which may contain usefull information
+  }
+  
+  def visit(e : Redirect) {
+    
   }
   
 }

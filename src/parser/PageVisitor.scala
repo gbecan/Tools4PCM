@@ -28,6 +28,7 @@ import org.sweble.wikitext.`lazy`.utils.XmlEntityRef
 import org.sweble.wikitext.`lazy`.parser.Url
 import org.sweble.wikitext.`lazy`.utils.XmlCharRef
 import org.sweble.wikitext.`lazy`.parser.Enumeration
+import org.sweble.wikitext.`lazy`.parser.HorizontalRule
 
 class PageVisitor extends AstVisitor{
   
@@ -37,91 +38,95 @@ class PageVisitor extends AstVisitor{
     pcms.toList
   }
   
-  def visit(e : LazyParsedPage) = {
+  def visit(e : LazyParsedPage) {
     iterate(e)
   }
   
-  def visit(e : NodeList) = {
+  def visit(e : NodeList) {
     iterate(e)
   }
   
-  def visit(e : Table) = {
+  def visit(e : Table) {
 	  val tableVisitor = new TableVisitor
 	  tableVisitor.go(e)
 	  pcms += tableVisitor.pcm
   }
   
-  def visit(e : ImTagOpen) = {
+  def visit(e : ImTagOpen) {
     
   }
   
-  def visit(e : ImTagClose) = {
+  def visit(e : ImTagClose) {
 
   }
   
   
-  def visit(e : Text) = {
+  def visit(e : Text) {
 
   }
   
-  def visit(e : Whitespace) = {
+  def visit(e : Whitespace) {
 
   }
   
-  def visit(e : Section) = {
+  def visit(e : Section) {
 	  iterate(e)
   }
   
-  def visit(e : Itemization) = {
+  def visit(e : Itemization) {
     
   }
   
-  def visit(e : InternalLink) = {
+  def visit(e : InternalLink) {
     
   }
   
-  def visit(e : ExternalLink) = {
+  def visit(e : ExternalLink) {
 	  
   }
   
-  def visit(e : DefinitionList) = {
+  def visit(e : DefinitionList) {
     
   }
   
-  def visit(e : XmlElementOpen) = {
+  def visit(e : XmlElementOpen) {
     
   }
   
-  def visit(e : XmlElementClose) = {
+  def visit(e : XmlElementClose) {
     
   }
   
-  def visit(e : XmlElementEmpty) = {
+  def visit(e : XmlElementEmpty) {
     
   }
 
-  def visit(e : XmlEntityRef) = {
+  def visit(e : XmlEntityRef) {
 
   }
   
-  def visit(e : XmlCharRef) = {
+  def visit(e : XmlCharRef) {
 
   }
   	
-  def visit(e : SemiPre) = {
+  def visit(e : SemiPre) {
 
   }
   
-  def visit(e : Ticks) = {
+  def visit(e : Ticks) {
 
   }
 
-  def visit(e : Url) = {
+  def visit(e : Url) {
 
   }
   
-  def visit(e : Enumeration) = {
+  def visit(e : Enumeration) {
 
+  }
+  
+  def visit (e : HorizontalRule) {
+    
   }
     
 }

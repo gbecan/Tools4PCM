@@ -30,6 +30,7 @@ import org.sweble.wikitext.`lazy`.utils.XmlCharRef
 import org.sweble.wikitext.`lazy`.parser.TableCaption
 import org.sweble.wikitext.`lazy`.parser.DefinitionList
 import org.sweble.wikitext.`lazy`.parser.Section
+import org.sweble.wikitext.`lazy`.parser.Itemization
 
 class TableVisitor extends AstVisitor {
 
@@ -39,7 +40,7 @@ class TableVisitor extends AstVisitor {
 	var column : Int = 0
 	
 	var currentCell : Cell = _
-	var cellContent : StringBuilder = _
+	var cellContent : StringBuilder = new StringBuilder
 		
 	var inXMLElement : Boolean = false
 
@@ -61,15 +62,17 @@ class TableVisitor extends AstVisitor {
 	  		}
 	  	
 	  		name match {
-	  		case "rowspan" => handleRowspan(value.toInt)
-	  		case "colspan" => handleColspan(value.toInt)
+	  		case "rowspan" => handleRowspan(value)
+	  		case "colspan" => handleColspan(value)
 	  		case _ => 
 	  		}
 	  	}
 
 	}
 	
-	def handleRowspan(value : Int) {
+	
+	def handleRowspan(valueVerbatim : String) {
+	  val value = getNumberFromString(valueVerbatim) 
 		if (!inXMLElement) {
 			for (i <- 1 until value) {
 				pcm.setCell(currentCell, row + i, column)
@@ -77,13 +80,19 @@ class TableVisitor extends AstVisitor {
 		}
 	}
 	
-	def handleColspan(value : Int) {
+	def handleColspan(valueVerbatim : String) {
+		val value = getNumberFromString(valueVerbatim)
 		if (!inXMLElement) {
 			for (i <- 1 until value) {
 				column += 1
-						pcm.setCell(currentCell, row, column)
+				pcm.setCell(currentCell, row, column)
 			}
 		}
+	}
+	
+	def getNumberFromString(s: String) : Int = {
+	  val numberRegex = "(\\d)*".r
+	  (numberRegex findFirstIn s).getOrElse("0").toInt
 	}
 
 	def visit(e : TableRow) = {
@@ -125,7 +134,8 @@ class TableVisitor extends AstVisitor {
 //		  println(currentCell.content + " ----- " + e.toString())
 		  column += 1
 	  } else {
-	    currentCell = new Cell()  
+	    currentCell = new Cell()
+	    cellContent = new StringBuilder()
 	    iterate(e)
 	  }
 	} 
@@ -235,6 +245,10 @@ class TableVisitor extends AstVisitor {
 	}
 	
 	def visit(e : Section) {
+	  
+	}
+	
+	def visit(e : Itemization) {
 	  
 	}
 
