@@ -49,7 +49,7 @@ class PageVisitor extends AstVisitor{
   def visit(e : Table) {
 	  val tableVisitor = new TableVisitor
 	  tableVisitor.go(e)
-	  pcms += tableVisitor.pcm
+	  pcms ++= tableVisitor.pcms
   }
   
   def visit(e : ImTagOpen) {

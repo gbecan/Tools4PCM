@@ -31,21 +31,32 @@ import org.sweble.wikitext.`lazy`.parser.TableCaption
 import org.sweble.wikitext.`lazy`.parser.DefinitionList
 import org.sweble.wikitext.`lazy`.parser.Section
 import org.sweble.wikitext.`lazy`.parser.Itemization
+import scala.collection.mutable.ListBuffer
+import scala.collection.mutable.Stack
 
 class TableVisitor extends AstVisitor {
 
-	val pcm : PCM = new PCM
+	val pcms : ListBuffer[PCM] = ListBuffer()
+  
+	private val pcmStack : Stack[PCM] = new Stack()
+	private def currentPCM = pcmStack.top
 	
-	var row : Int = 0
-	var column : Int = 0
+	private var row : Int = 0
+	private var column : Int = 0
 	
-	var currentCell : Cell = _
-	var cellContent : StringBuilder = new StringBuilder
+	private var currentCell : Cell = _
+	private var cellContent : StringBuilder = new StringBuilder
 		
-	var inXMLElement : Boolean = false
+	private var inXMLElement : Boolean = false
 
+	
+	
 	def visit(e : Table) = {
-		iterate(e)
+	  val pcm = new PCM
+	  pcmStack.push(pcm)
+	  pcms += pcm
+	  iterate(e)
+	  pcmStack.pop
 	}
 
 	def visit(e : NodeList) = {
@@ -75,7 +86,7 @@ class TableVisitor extends AstVisitor {
 	  val value = getNumberFromString(valueVerbatim) 
 		if (!inXMLElement) {
 			for (i <- 1 until value) {
-				pcm.setCell(currentCell, row + i, column)
+				currentPCM.setCell(currentCell, row + i, column)
 			}
 		}
 	}
@@ -85,7 +96,7 @@ class TableVisitor extends AstVisitor {
 		if (!inXMLElement) {
 			for (i <- 1 until value) {
 				column += 1
-				pcm.setCell(currentCell, row, column)
+				currentPCM.setCell(currentCell, row, column)
 			}
 		}
 	}
@@ -96,7 +107,7 @@ class TableVisitor extends AstVisitor {
 	}
 
 	def visit(e : TableRow) = {
-	  if (row == 0 && !pcm.cells.isEmpty) {
+	  if (row == 0 && !currentPCM.cells.isEmpty) {
 	    row += 1
 	    column = 0
 	  }
@@ -120,12 +131,12 @@ class TableVisitor extends AstVisitor {
 	def handleCell(e : AstNode) {
 	  if (!inXMLElement) {
 		  // Skip cells defined by rowspan
-		  while (pcm.getCell(row, column).isDefined) {
+		  while (currentPCM.getCell(row, column).isDefined) {
 			  column += 1
 		  }
 
 		  currentCell = new Cell()  
-		  pcm.setCell(currentCell, row, column)
+		  currentPCM.setCell(currentCell, row, column)
 
 		  cellContent = new StringBuilder()
 		  iterate(e)

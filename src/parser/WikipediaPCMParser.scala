@@ -42,7 +42,6 @@ class WikipediaPCMParser {
     .asString
     val xml = parseHTMLAsXML(editPage)
     val code = (xml \\ "textarea").text
-    
     code
   }
   
