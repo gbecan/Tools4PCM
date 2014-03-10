@@ -192,6 +192,7 @@ class TableVisitor extends AstVisitor {
 	    case "br" => cellContent += '\n'
 	    case "small" => 
 	    case "abbr" =>
+	    case "center" =>
 	    case _ => inXMLElement = true 
 	  }
 	}
