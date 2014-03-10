@@ -44,6 +44,9 @@ class TableVisitor extends AstVisitor {
 	private var row : Int = 0
 	private var column : Int = 0
 	
+	private var rowspan : Int = 0
+	private var colspan : Int = 0
+	
 	private var currentCell : Cell = _
 	private var cellContent : StringBuilder = new StringBuilder
 		
@@ -73,39 +76,19 @@ class TableVisitor extends AstVisitor {
 	  		}
 	  	
 	  		name match {
-	  		case "rowspan" => handleRowspan(value)
-	  		case "colspan" => handleColspan(value)
+	  		case "rowspan" => rowspan = getNumberFromString(value)
+	  		case "colspan" => colspan = getNumberFromString(value)
 	  		case _ => 
 	  		}
 	  	}
 
 	}
 	
-	
-	def handleRowspan(valueVerbatim : String) {
-	  val value = getNumberFromString(valueVerbatim) 
-		if (!inXMLElement) {
-			for (i <- 1 until value) {
-				currentPCM.setCell(currentCell, row + i, column)
-			}
-		}
-	}
-	
-	def handleColspan(valueVerbatim : String) {
-		val value = getNumberFromString(valueVerbatim)
-		if (!inXMLElement) {
-			for (i <- 1 until value) {
-				column += 1
-				currentPCM.setCell(currentCell, row, column)
-			}
-		}
-	}
-	
 	def getNumberFromString(s: String) : Int = {
 	  val numberRegex = "(\\d)*".r
 	  (numberRegex findFirstIn s).getOrElse("0").toInt
 	}
-
+		
 	def visit(e : TableRow) = {
 	  if (row == 0 && !currentPCM.cells.isEmpty) {
 	    row += 1
@@ -129,6 +112,8 @@ class TableVisitor extends AstVisitor {
 	}
 	
 	def handleCell(e : AstNode) {
+	  rowspan = 1
+	  colspan = 1
 	  if (!inXMLElement) {
 		  // Skip cells defined by rowspan
 		  while (currentPCM.getCell(row, column).isDefined) {
@@ -136,14 +121,18 @@ class TableVisitor extends AstVisitor {
 		  }
 
 		  currentCell = new Cell()  
-		  currentPCM.setCell(currentCell, row, column)
-
 		  cellContent = new StringBuilder()
 		  iterate(e)
-		  
+
 		  currentCell.content = cellContent.toString
+		  
+		  for (rowShift <- 0 until rowspan; colShift <- 0 until colspan) {
+		    currentPCM.setCell(currentCell, row + rowShift, column + colShift)
+		  }
+		  
+		  
 //		  println(currentCell.content + " ----- " + e.toString())
-		  column += 1
+		  column += colspan
 	  } else {
 	    currentCell = new Cell()
 	    cellContent = new StringBuilder()
@@ -193,7 +182,9 @@ class TableVisitor extends AstVisitor {
 	}
 
 	def visit(e : Whitespace) = {
-	  
+//	  if (e.getHasNewline()) {
+//	    cellContent += '\n'
+//	  }
 	}
 
 	def visit(e : XmlElementOpen) = {
