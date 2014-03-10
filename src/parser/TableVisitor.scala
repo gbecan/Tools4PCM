@@ -42,6 +42,9 @@ class TableVisitor extends AstVisitor {
 	private val pcmStack : Stack[PCM] = new Stack()
 	private def currentPCM = pcmStack.top
 	
+	private val rowStack : Stack[Int] = new Stack()
+	private val columnStack : Stack[Int] = new Stack()
+	
 	private var row : Int = 0
 	private var column : Int = 0
 	
@@ -57,10 +60,28 @@ class TableVisitor extends AstVisitor {
 	
 	def visit(e : Table) = {
 	  val pcm = new PCM
-	  pcmStack.push(pcm)
 	  pcms += pcm
+	  
+	  pcmStack.push(pcm)
+	  
+	  // Save old values of row and column
+	  rowStack.push(row)
+	  columnStack.push(column)
+	  row = 0
+	  column = 0
+	  
+	  // Iterate over each row
 	  iterate(e)
+	  
 	  pcmStack.pop
+	  
+	  // Restore old values of row and column
+	  rowStack.pop
+	  columnStack.pop
+	  if (!rowStack.isEmpty && !columnStack.isEmpty) {
+		  row = rowStack.top
+		  column = columnStack.top  
+	  }
 	}
 
 	def visit(e : NodeList) = {
