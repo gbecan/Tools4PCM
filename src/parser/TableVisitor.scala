@@ -60,9 +60,8 @@ class TableVisitor extends AstVisitor {
 	
 	def visit(e : Table) = {
 	  val pcm = new PCM
-	  pcms += pcm
-	  
 	  pcmStack.push(pcm)
+	  pcms += pcm
 	  
 	  // Save old values of row and column
 	  rowStack.push(row)
@@ -74,6 +73,10 @@ class TableVisitor extends AstVisitor {
 	  iterate(e)
 	  
 	  pcmStack.pop
+	  
+	  // Clear previous cell
+	  currentCell = new Cell()  
+	  cellContent = new StringBuilder()
 	  
 	  // Restore old values of row and column
 	  rowStack.pop
@@ -134,35 +137,31 @@ class TableVisitor extends AstVisitor {
 	}
 	
 	def handleCell(e : AstNode) {
-//	  println(e)
-	  
-	  rowspan = 1
-	  colspan = 1
-	  
-	  if (!inXMLElement) {
-		  // Skip cells defined by rowspan
-		  while (currentPCM.getCell(row, column).isDefined) {
-			  column += 1
-		  }
+//		println(e)
 
-		  currentCell = new Cell()  
-		  cellContent = new StringBuilder()
-		  iterate(e)
+		rowspan = 1
+		colspan = 1
 
-		  currentCell.content = cellContent.toString
-		  
-		  for (rowShift <- 0 until rowspan; colShift <- 0 until colspan) {
-		    currentPCM.setCell(currentCell, row + rowShift, column + colShift)
-		  }
-		  
-		  
-//		  println(currentCell.content + " ----- " + e.toString())
-		  column += colspan
-	  } else {
-	    currentCell = new Cell()
-	    cellContent = new StringBuilder()
-	    iterate(e)
-	  }
+		if (!inXMLElement) {
+			// Skip cells defined by rowspan
+			while (currentPCM.getCell(row, column).isDefined) {
+				column += 1
+			}
+		}
+		
+		currentCell = new Cell()  
+		cellContent = new StringBuilder()
+		iterate(e)
+
+		if(!inXMLElement) {
+			currentCell.content = cellContent.toString
+			
+			// Handle rowspan and colspan
+			for (rowShift <- 0 until rowspan; colShift <- 0 until colspan) {
+					currentPCM.setCell(currentCell, row + rowShift, column + colShift)
+			}
+			column += colspan
+		} 
 	} 
 
 	
