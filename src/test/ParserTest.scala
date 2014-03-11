@@ -13,6 +13,9 @@ import java.io.FileWriter
 import org.scalatest.prop.TableDrivenPropertyChecks
 import java.net.UnknownHostException
 import scala.xml.PrettyPrinter
+import scala.concurrent._
+import ExecutionContext.Implicits.global
+import scala.concurrent.duration._
 
 class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
   
@@ -83,23 +86,30 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
    }
    
    it should "parse every available PCM in Wikipedia" in {
-	   val wikipediaPCMs = Source.fromFile("resources/list_of_PCMs.txt").getLines.toList
-	   for(article <- wikipediaPCMs) {
+       val wikipediaPCMs = Source.fromFile("resources/list_of_PCMs.txt").getLines.toList
+	   val tasks : Seq[Future[String]] = for(article <- wikipediaPCMs) yield future {
+	     var result = new StringBuilder
 	     if (article.startsWith("//")) {
-	       println("IGNORED : " + article)
+	       result ++= "IGNORED : " + article
 	     } else {
-	    	 println(article)
+	    	 result ++= article
 	    	 var retry = false
 	    	 do {
 	    		 try {
 	    			 val pcms = testArticle(article)
 	    		 } catch {
-	    		 case e : UnknownHostException => retry = true
-	    		 case e => e.printStackTrace()
+	    		 case e : UnknownHostException => retry = true 
+	    		 case e : Throwable => result ++= '\n' + e.getLocalizedMessage()
 	    		 }  
 	    	 } while (retry)
 	     }
+	     result.toString
 	   }
+
+       for (task <- tasks) {
+         val result = Await.result(task, 10.minutes)
+         println(result)
+       }
    }
    
    it should "parse these PCMs" in {
@@ -115,7 +125,7 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
 	    			 val pcms = testArticle(article)
 	    		 } catch {
 	    		 case e : UnknownHostException => retry = true
-	    		 case e => e.printStackTrace()
+	    		 case e : Throwable => e.printStackTrace()
 	    		 }  
 	    	 } while (retry)
 	     }
