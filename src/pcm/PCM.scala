@@ -19,16 +19,24 @@ class PCM {
   }
   
   def getNumberOfRows() : Int = {
-    cells.keys.maxBy(_._1)._1
+    if (!cells.isEmpty) {
+    	cells.keys.maxBy(_._1)._1 + 1
+    } else {
+      0
+    }
   }
   
   def getNumberOfColumns() : Int = {
-    cells.keys.maxBy(_._2)._2
+    if (!cells.isEmpty) {
+    	cells.keys.maxBy(_._2)._2 + 1
+    } else {
+      0
+    }
   }
   
   override def toString() : String = {
     val result = new StringBuilder
-    for (row <- 0 to getNumberOfRows; column <- 0 to getNumberOfColumns) {
+    for (row <- 0 until getNumberOfRows; column <- 0 until getNumberOfColumns) {
       result ++= row + "," + column + ":"
       
       val cell = cells get (row, column)
@@ -46,10 +54,10 @@ class PCM {
     val htmlCode = 
     <table border="1">
     { 
-    	for {row <- 0 to getNumberOfRows} 
+    	for {row <- 0 until getNumberOfRows} 
 	    yield <tr> 
       	  {
-		    for {column <- 0 to getNumberOfColumns} 
+		    for {column <- 0 until getNumberOfColumns} 
 		  	yield <th>
 		  	{
 		  	  val cell = cells.get((row, column))
