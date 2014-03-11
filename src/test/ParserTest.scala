@@ -14,8 +14,10 @@ import org.scalatest.prop.TableDrivenPropertyChecks
 import java.net.UnknownHostException
 import scala.xml.PrettyPrinter
 import scala.concurrent._
-import ExecutionContext.Implicits.global
 import scala.concurrent.duration._
+import scala.io.Codec
+import java.nio.charset.Charset
+import java.util.concurrent.Executors
 
 class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
   
@@ -33,7 +35,13 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
   
   def testArticle(title : String) : List[PCM] = {
     val pcms = parseFromTitle(title)
-    val writer = new FileWriter("output/" + title.replaceAll(" ", "_") + ".html")
+    writeToHTML(title, pcms)
+    dumpCellsInFile(title, pcms)
+    pcms
+  }
+  
+  def writeToHTML(title : String, pcms : List[PCM]) {
+    val writer = new FileWriter("output/html/" + title.replaceAll(" ", "_") + ".html")
     writer.write((new PrettyPrinter(80,2)).format(
     <html>
     <head>
@@ -45,7 +53,19 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
     </html>
     ))
     writer.close()
-    pcms
+  }
+  
+  def dumpCellsInFile(title : String, pcms : List[PCM]) {
+    val writer = new FileWriter("output/dump/" + title.replaceAll(" ", "_") + ".txt")
+    for(pcm <- pcms; 
+    row <- 0 until pcm.getNumberOfRows; 
+    column <- 0 until pcm.getNumberOfColumns) {
+      val cell = pcm.getCell(row, column)
+      if (cell.isDefined) {
+        writer.write(cell.get.content + "\n")
+      }
+    }
+    writer.close()
   }
 
   "The PCM parser" should "parse the example of tables from Wikipedia" in {
@@ -86,7 +106,11 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
    }
    
    it should "parse every available PCM in Wikipedia" in {
-       val wikipediaPCMs = Source.fromFile("resources/list_of_PCMs.txt").getLines.toList
+	   val wikipediaPCMsFile = Source.fromFile("resources/list_of_PCMs.txt")
+	   val wikipediaPCMs = wikipediaPCMsFile.getLines.toList
+	   wikipediaPCMsFile.close
+	   
+	   val executionContext = ExecutionContext.fromExecutor(Executors.newFixedThreadPool(20))
 	   val tasks : Seq[Future[String]] = for(article <- wikipediaPCMs) yield future {
 	     var result = new StringBuilder
 	     if (article.startsWith("//")) {
@@ -98,13 +122,13 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
 	    		 try {
 	    			 val pcms = testArticle(article)
 	    		 } catch {
-	    		 case e : UnknownHostException => retry = true 
+//	    		 case e : UnknownHostException => retry = true 
 	    		 case e : Throwable => result ++= '\n' + e.getLocalizedMessage()
 	    		 }  
 	    	 } while (retry)
 	     }
 	     result.toString
-	   }
+	   } (executionContext)
 
        for (task <- tasks) {
          val result = Await.result(task, 10.minutes)
@@ -124,7 +148,7 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
 	    		 try {
 	    			 val pcms = testArticle(article)
 	    		 } catch {
-	    		 case e : UnknownHostException => retry = true
+//	    		 case e : UnknownHostException => retry = true
 	    		 case e : Throwable => e.printStackTrace()
 	    		 }  
 	    	 } while (retry)
@@ -132,8 +156,6 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
 	   }
    }
    
-   
-
    
    "Scalaj-http" should "download the code of a wikipedia page" in {
 	   val xmlPage = Http("http://en.wikipedia.org/w/index.php?title=Comparison_of_AMD_processors&action=edit")
