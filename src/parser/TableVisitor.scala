@@ -236,11 +236,11 @@ class TableVisitor extends AstVisitor {
 	def visit(e : XmlEntityRef) = {
 	  if (!inXMLElement) {
 	    val value = e.getName() match {
-	      case "nbsp" => 160.toChar
-	      case _ => '\0'
+	      case "nbsp" => 160.toChar.toString
+	      case _ => ""
 	    }
 	    
-	    cellContent += value
+	    cellContent ++= value
 	  }
 	}
 
