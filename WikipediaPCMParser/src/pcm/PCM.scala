@@ -5,89 +5,46 @@ import scala.xml.Text
 import scala.xml.XML
 import scala.xml.Elem
 import pcmmm.PcmmmFactory
+import scala.collection.mutable.ListBuffer
 
 
 class PCM {
 
-  var cells : Map[(Int, Int), Cell] = Map()
+  private val matrices : ListBuffer[Matrix] = new ListBuffer
   
-  def setCell(cell : Cell, row : Int, column : Int) {
-    cells += ((row, column) -> cell)
+  def getMatrices : List[Matrix] = {
+    matrices.toList
   }
-  
-  def getCell(row : Int, column : Int) : Option[Cell] = {
-    cells get (row, column)
-  }
-  
-  def getNumberOfRows() : Int = {
-    if (!cells.isEmpty) {
-    	cells.keys.maxBy(_._1)._1 + 1
-    } else {
-      0
-    }
-  }
-  
-  def getNumberOfColumns() : Int = {
-    if (!cells.isEmpty) {
-    	cells.keys.maxBy(_._2)._2 + 1
-    } else {
-      0
-    }
-  }
-  
-  def toPCMModel() : pcmmm.PCM = {
-    PcmmmFactory.eINSTANCE.createPCM()
+
+  def addMatrix(matrix : Matrix) = {
+    matrices += matrix
   }
   
   override def toString() : String = {
     val result = new StringBuilder
-    for (row <- 0 until getNumberOfRows; column <- 0 until getNumberOfColumns) {
-      result ++= row + "," + column + ":"
-      
-      val cell = cells get (row, column)
-      if (cell.isDefined) {
-        result ++= cell.get.content 
-      } else {
-        result ++= "/!\\ This cell is not defined /!\\"
-      }
-      result += '\n'
+    for (matrix <- matrices) {
+      result ++= matrix.toString
+      result ++= "\n ------------------ \n"
     }
     result.toString
   }
   
   def toHTML() : Elem = {
     val htmlCode = 
-    <table border="1">
-    { 
-    	for {row <- 0 until getNumberOfRows} 
-	    yield <tr> 
-      	  {
-		    for {column <- 0 until getNumberOfColumns} 
-		  	yield <th>
-		  	{
-		  	  val cell = cells.get((row, column))
-		  	  if (cell.isDefined) {
-		  	    // Convert new lines in <br/>
-		  	    val lines = cell.get.content.split("\n")
-		  	    var firstLine = true
-		  	    for (line <- lines) yield {
-		  	      if (firstLine) {
-		  	        firstLine = false
-		  	        Text(line)
-		  	      } else {
-		  	        <br/> ++ Text(line)
-		  	      }
-		  	    }
-		  	  } else {
-		  	    "/!\\ Not defined /!\\"
-		  	  }
-		  	}
-		  	</th>
-		  }
-    	</tr>
-	} 
-    </table>
+    <html>
+    <head>
+    		<meta charset="utf-8"/>
+    </head>
+    <body>
+    	{ for(matrix <- matrices) yield matrix.toHTML }
+    </body>
+    </html>	
     
     htmlCode
   }
+
+  def toPCMModel() : pcmmm.PCM = {
+    PcmmmFactory.eINSTANCE.createPCM()
+  }
+
 }

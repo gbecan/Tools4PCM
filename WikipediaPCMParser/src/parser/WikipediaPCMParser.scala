@@ -26,7 +26,7 @@ class WikipediaPCMParser {
   /**
    * Parse PCM from online MediaWiki code
    */
-  def parseOnlineArticle(title : String) : List[PCM] = {
+  def parseOnlineArticle(title : String) : PCM = {
     val code = retrieveCodeFromOnlineArticle(title)
     parse(code)
   }
@@ -59,7 +59,7 @@ class WikipediaPCMParser {
   /**
    * Parse PCM from MediaWiki code 
    */
-  def parse(code : String) : List[PCM] = {
+  def parse(code : String) : PCM = {
     val preprocessedCode = preprocess(code)
     parseAndNormalizePCM(preprocessedCode)
   }
@@ -78,11 +78,11 @@ class WikipediaPCMParser {
   /**
    * Parse preprocessed MediaWiki code to extract normalized PCMs
    */
-  private def parseAndNormalizePCM(code : String) : List[PCM] = {
+  private def parseAndNormalizePCM(code : String) : PCM = {
 	val ast = parser.parseArticle(code, "");
     val visitor = new PageVisitor
     visitor.go(ast)
-    visitor.getPCMs()
+    visitor.pcm
   }
   
   
