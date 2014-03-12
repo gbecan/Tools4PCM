@@ -2,10 +2,14 @@ package pcm
 
 import pcmmm.PcmmmFactory
 
-class Cell {
-
-  var content = ""
-  var isHeader : Boolean = false
+class Cell(
+  val content : String,
+  val isHeader : Boolean,
+  val row : Int,
+  val rowspan : Int,
+  val column : Int,
+  val colspan : Int
+  ) {
   
   override def toString() : String = {
      content

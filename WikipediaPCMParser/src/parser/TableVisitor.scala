@@ -34,6 +34,7 @@ import scala.collection.mutable.ListBuffer
 import scala.collection.mutable.Stack
 import org.sweble.wikitext.`lazy`.parser.DefinitionDefinition
 import pcm.Matrix
+import pcm.Cell
 
 class TableVisitor extends AstVisitor {
 
@@ -51,7 +52,6 @@ class TableVisitor extends AstVisitor {
 	private var rowspan : Int = 0
 	private var colspan : Int = 0
 	
-	private var currentCell : Cell = _
 	private var cellContent : StringBuilder = new StringBuilder
 		
 	private var inXMLElement : Boolean = false
@@ -75,7 +75,6 @@ class TableVisitor extends AstVisitor {
 	  matrixStack.pop
 	  
 	  // Clear previous cell
-	  currentCell = new Cell()  
 	  cellContent = new StringBuilder()
 	  
 	  // Restore old values of row and column
@@ -127,16 +126,14 @@ class TableVisitor extends AstVisitor {
 	}
 
 	def visit(e : TableHeader) = {
-		handleCell(e)
-		currentCell.isHeader = true
+		handleCell(e, true)
 	}
 
 	def visit(e : TableCell) = {
-		handleCell(e)
-		currentCell.isHeader = false
+		handleCell(e, false)
 	}
 	
-	def handleCell(e : AstNode) {
+	def handleCell(e : AstNode, isHeader : Boolean) {
 //		println(e)
 
 		rowspan = 1
@@ -148,19 +145,19 @@ class TableVisitor extends AstVisitor {
 				column += 1
 			}
 		}
-		
-		currentCell = new Cell()  
+
 		cellContent = new StringBuilder()
 		iterate(e)
 
 		if(!inXMLElement) {
-			currentCell.content = cellContent.toString
+		  val cell = new Cell(cellContent.toString, isHeader, row, rowspan, column, colspan)
 			
-			// Handle rowspan and colspan
-			for (rowShift <- 0 until rowspan; colShift <- 0 until colspan) {
-					currentMatrix.setCell(currentCell, row + rowShift, column + colShift)
-			}
-			column += colspan
+		  // Handle rowspan and colspan
+		  for (rowShift <- 0 until rowspan; colShift <- 0 until colspan) {
+			  currentMatrix.setCell(cell, row + rowShift, column + colShift)
+		  }
+		  
+		  column += colspan
 		} 
 	} 
 
