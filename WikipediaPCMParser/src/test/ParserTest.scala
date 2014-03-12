@@ -64,7 +64,10 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
     column <- 0 until pcm.getNumberOfColumns) {
       val cell = pcm.getCell(row, column)
       if (cell.isDefined) {
-        writer.write(cell.get.content + "\n")
+        val content = cell.get.content
+        val words = for (word <- content.split("\\s") if !word.isEmpty()) yield word
+        val formattedContent = words.mkString("", " ", "").toLowerCase()
+        writer.write(formattedContent + "\n")
       }
     }
     writer.close()
