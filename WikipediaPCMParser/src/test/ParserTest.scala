@@ -21,6 +21,8 @@ import java.util.concurrent.Executors
 
 class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
   
+  val executionContext = ExecutionContext.fromExecutor(Executors.newFixedThreadPool(20))
+  
   def parsePCMFromFile(file : String) : List[PCM]= {
     val reader= Source.fromFile(file)
     val code = reader.mkString
@@ -110,7 +112,6 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
 	   val wikipediaPCMs = wikipediaPCMsFile.getLines.toList
 	   wikipediaPCMsFile.close
 	   
-	   val executionContext = ExecutionContext.fromExecutor(Executors.newFixedThreadPool(20))
 	   val tasks : Seq[Future[String]] = for(article <- wikipediaPCMs) yield future {
 	     var result = new StringBuilder
 	     if (article.startsWith("//")) {
@@ -138,22 +139,30 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
    
    it should "parse these PCMs" in {
 	   val wikipediaPCMs = Source.fromFile("resources/pcms_to_test.txt").getLines.toList
-	   for(article <- wikipediaPCMs) {
+	   val tasks : Seq[Future[String]] = for(article <- wikipediaPCMs) yield future {
+	     var result = new StringBuilder
 	     if (article.startsWith("//")) {
-	       println("IGNORED : " + article)
+	       result ++= "IGNORED : " + article
 	     } else {
-	    	 println(article)
+	    	 result ++= article + "\n"
 	    	 var retry = false
 	    	 do {
 	    		 try {
 	    			 val pcms = testArticle(article)
+	    			 result ++= pcms.size.toString + "\n"
 	    		 } catch {
 //	    		 case e : UnknownHostException => retry = true
-	    		 case e : Throwable => e.printStackTrace()
+	    		 case e : Throwable => result ++= e.getMessage()
 	    		 }  
 	    	 } while (retry)
 	     }
-	   }
+	     result.toString
+	   } (executionContext)
+	   
+	   for (task <- tasks) {
+         val result = Await.result(task, 10.minutes)
+         println(result)
+       }
    }
    
    
