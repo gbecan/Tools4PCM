@@ -86,22 +86,16 @@ class Matrix {
   
   def toPCMModel() : pcmmm.Matrix = {
     val model = PcmmmFactory.eINSTANCE.createMatrix
-    
-    for (row <- 0 until getNumberOfRows; column <- 0 until getNumberOfColumns) {
-    	val cell = cells.get((row, column))
-    	if (cell.isDefined) {
-    	  val cellModel = cell.get.toPCMModel
-    	   val words = for (word <- cellModel.getVerbatim().split("\\s") 
-    			   if !word.isEmpty()) yield word
-    	   var formattedContent = words.mkString("", " ", "").toLowerCase()
-    	   formattedContent = formattedContent.substring(0, 50.min(formattedContent.size))
-    	  cellModel.setName(row + "," + column + ": " + formattedContent)
-    	  cellModel.setRow(row)
-    	  cellModel.setColumn(column)
-    	  model.getCells().add(cellModel)
-    	}
+    val cellsInOrder = cells.values.toList.distinct.sortWith((c1, c2) => comparePosition(c1, c2))
+    for (cell <- cellsInOrder) {
+      model.getCells().add(cell.toPCMModel)
     }
     
     model
+  }
+  
+  def comparePosition(c1 : Cell, c2 : Cell) : Boolean = {
+    (c1.row < c2.row) || 
+    (c1.row == c2.row && c1.column < c2.column)
   }
 }

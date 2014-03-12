@@ -22,6 +22,16 @@ class Cell(
       PcmmmFactory.eINSTANCE.createExtra()
     }
     model.setVerbatim(content)
+    
+    val words = for (word <- content.split("\\s") if !word.isEmpty()) yield word
+	var formattedContent = words.mkString("", " ", "").toLowerCase()
+	formattedContent = formattedContent.substring(0, 50.min(formattedContent.size))
+	model.setName(row + "," + column + ": " + formattedContent)
+    model.setRow(row)
+    model.setRowspan(rowspan)
+    model.setColumn(column)
+    model.setColspan(colspan)
+    
     model
   }
 }
