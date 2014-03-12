@@ -18,6 +18,10 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link pcmmm.Cell#getVerbatim <em>Verbatim</em>}</li>
  *   <li>{@link pcmmm.Cell#getNote <em>Note</em>}</li>
  *   <li>{@link pcmmm.Cell#getLink <em>Link</em>}</li>
+ *   <li>{@link pcmmm.Cell#getRow <em>Row</em>}</li>
+ *   <li>{@link pcmmm.Cell#getRowspan <em>Rowspan</em>}</li>
+ *   <li>{@link pcmmm.Cell#getColumn <em>Column</em>}</li>
+ *   <li>{@link pcmmm.Cell#getColspan <em>Colspan</em>}</li>
  * </ul>
  * </p>
  *
@@ -109,5 +113,109 @@ public interface Cell extends EObject {
 	 * @generated
 	 */
 	EList<String> getLink();
+
+	/**
+	 * Returns the value of the '<em><b>Row</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Row</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Row</em>' attribute.
+	 * @see #setRow(int)
+	 * @see pcmmm.PcmmmPackage#getCell_Row()
+	 * @model
+	 * @generated
+	 */
+	int getRow();
+
+	/**
+	 * Sets the value of the '{@link pcmmm.Cell#getRow <em>Row</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Row</em>' attribute.
+	 * @see #getRow()
+	 * @generated
+	 */
+	void setRow(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Rowspan</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Rowspan</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Rowspan</em>' attribute.
+	 * @see #setRowspan(int)
+	 * @see pcmmm.PcmmmPackage#getCell_Rowspan()
+	 * @model
+	 * @generated
+	 */
+	int getRowspan();
+
+	/**
+	 * Sets the value of the '{@link pcmmm.Cell#getRowspan <em>Rowspan</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Rowspan</em>' attribute.
+	 * @see #getRowspan()
+	 * @generated
+	 */
+	void setRowspan(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Column</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Column</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Column</em>' attribute.
+	 * @see #setColumn(int)
+	 * @see pcmmm.PcmmmPackage#getCell_Column()
+	 * @model
+	 * @generated
+	 */
+	int getColumn();
+
+	/**
+	 * Sets the value of the '{@link pcmmm.Cell#getColumn <em>Column</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Column</em>' attribute.
+	 * @see #getColumn()
+	 * @generated
+	 */
+	void setColumn(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Colspan</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Colspan</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Colspan</em>' attribute.
+	 * @see #setColspan(int)
+	 * @see pcmmm.PcmmmPackage#getCell_Colspan()
+	 * @model
+	 * @generated
+	 */
+	int getColspan();
+
+	/**
+	 * Sets the value of the '{@link pcmmm.Cell#getColspan <em>Colspan</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Colspan</em>' attribute.
+	 * @see #getColspan()
+	 * @generated
+	 */
+	void setColspan(int value);
 
 } // Cell

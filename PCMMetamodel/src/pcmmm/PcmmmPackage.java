@@ -196,13 +196,49 @@ public interface PcmmmPackage extends EPackage {
 	int CELL__LINK = 3;
 
 	/**
+	 * The feature id for the '<em><b>Row</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CELL__ROW = 4;
+
+	/**
+	 * The feature id for the '<em><b>Rowspan</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CELL__ROWSPAN = 5;
+
+	/**
+	 * The feature id for the '<em><b>Column</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CELL__COLUMN = 6;
+
+	/**
+	 * The feature id for the '<em><b>Colspan</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CELL__COLSPAN = 7;
+
+	/**
 	 * The number of structural features of the '<em>Cell</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CELL_FEATURE_COUNT = 4;
+	int CELL_FEATURE_COUNT = 8;
 
 	/**
 	 * The number of operations of the '<em>Cell</em>' class.
@@ -700,6 +736,42 @@ public interface PcmmmPackage extends EPackage {
 	int HEADER__LINK = CELL__LINK;
 
 	/**
+	 * The feature id for the '<em><b>Row</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEADER__ROW = CELL__ROW;
+
+	/**
+	 * The feature id for the '<em><b>Rowspan</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEADER__ROWSPAN = CELL__ROWSPAN;
+
+	/**
+	 * The feature id for the '<em><b>Column</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEADER__COLUMN = CELL__COLUMN;
+
+	/**
+	 * The feature id for the '<em><b>Colspan</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEADER__COLSPAN = CELL__COLSPAN;
+
+	/**
 	 * The feature id for the '<em><b>Concept</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -771,6 +843,42 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int ABS_VALUED_CELL__LINK = CELL__LINK;
+
+	/**
+	 * The feature id for the '<em><b>Row</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABS_VALUED_CELL__ROW = CELL__ROW;
+
+	/**
+	 * The feature id for the '<em><b>Rowspan</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABS_VALUED_CELL__ROWSPAN = CELL__ROWSPAN;
+
+	/**
+	 * The feature id for the '<em><b>Column</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABS_VALUED_CELL__COLUMN = CELL__COLUMN;
+
+	/**
+	 * The feature id for the '<em><b>Colspan</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABS_VALUED_CELL__COLSPAN = CELL__COLSPAN;
 
 	/**
 	 * The feature id for the '<em><b>My Header Product</b></em>' reference.
@@ -853,6 +961,42 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int EXTRA__LINK = ABS_VALUED_CELL__LINK;
+
+	/**
+	 * The feature id for the '<em><b>Row</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRA__ROW = ABS_VALUED_CELL__ROW;
+
+	/**
+	 * The feature id for the '<em><b>Rowspan</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRA__ROWSPAN = ABS_VALUED_CELL__ROWSPAN;
+
+	/**
+	 * The feature id for the '<em><b>Column</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRA__COLUMN = ABS_VALUED_CELL__COLUMN;
+
+	/**
+	 * The feature id for the '<em><b>Colspan</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTRA__COLSPAN = ABS_VALUED_CELL__COLSPAN;
 
 	/**
 	 * The feature id for the '<em><b>My Header Product</b></em>' reference.
@@ -1339,6 +1483,42 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int VALUED_CELL__LINK = ABS_VALUED_CELL__LINK;
+
+	/**
+	 * The feature id for the '<em><b>Row</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VALUED_CELL__ROW = ABS_VALUED_CELL__ROW;
+
+	/**
+	 * The feature id for the '<em><b>Rowspan</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VALUED_CELL__ROWSPAN = ABS_VALUED_CELL__ROWSPAN;
+
+	/**
+	 * The feature id for the '<em><b>Column</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VALUED_CELL__COLUMN = ABS_VALUED_CELL__COLUMN;
+
+	/**
+	 * The feature id for the '<em><b>Colspan</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VALUED_CELL__COLSPAN = ABS_VALUED_CELL__COLSPAN;
 
 	/**
 	 * The feature id for the '<em><b>My Header Product</b></em>' reference.
@@ -1917,6 +2097,50 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getCell_Link();
+
+	/**
+	 * Returns the meta object for the attribute '{@link pcmmm.Cell#getRow <em>Row</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Row</em>'.
+	 * @see pcmmm.Cell#getRow()
+	 * @see #getCell()
+	 * @generated
+	 */
+	EAttribute getCell_Row();
+
+	/**
+	 * Returns the meta object for the attribute '{@link pcmmm.Cell#getRowspan <em>Rowspan</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Rowspan</em>'.
+	 * @see pcmmm.Cell#getRowspan()
+	 * @see #getCell()
+	 * @generated
+	 */
+	EAttribute getCell_Rowspan();
+
+	/**
+	 * Returns the meta object for the attribute '{@link pcmmm.Cell#getColumn <em>Column</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Column</em>'.
+	 * @see pcmmm.Cell#getColumn()
+	 * @see #getCell()
+	 * @generated
+	 */
+	EAttribute getCell_Column();
+
+	/**
+	 * Returns the meta object for the attribute '{@link pcmmm.Cell#getColspan <em>Colspan</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Colspan</em>'.
+	 * @see pcmmm.Cell#getColspan()
+	 * @see #getCell()
+	 * @generated
+	 */
+	EAttribute getCell_Colspan();
 
 	/**
 	 * Returns the meta object for class '{@link pcmmm.AbstractFeature <em>Abstract Feature</em>}'.
@@ -2697,6 +2921,38 @@ public interface PcmmmPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CELL__LINK = eINSTANCE.getCell_Link();
+
+		/**
+		 * The meta object literal for the '<em><b>Row</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CELL__ROW = eINSTANCE.getCell_Row();
+
+		/**
+		 * The meta object literal for the '<em><b>Rowspan</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CELL__ROWSPAN = eINSTANCE.getCell_Rowspan();
+
+		/**
+		 * The meta object literal for the '<em><b>Column</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CELL__COLUMN = eINSTANCE.getCell_Column();
+
+		/**
+		 * The meta object literal for the '<em><b>Colspan</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CELL__COLSPAN = eINSTANCE.getCell_Colspan();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.AbstractFeatureImpl <em>Abstract Feature</em>}' class.

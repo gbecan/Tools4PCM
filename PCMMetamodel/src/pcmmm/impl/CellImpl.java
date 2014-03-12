@@ -29,6 +29,10 @@ import pcmmm.PcmmmPackage;
  *   <li>{@link pcmmm.impl.CellImpl#getVerbatim <em>Verbatim</em>}</li>
  *   <li>{@link pcmmm.impl.CellImpl#getNote <em>Note</em>}</li>
  *   <li>{@link pcmmm.impl.CellImpl#getLink <em>Link</em>}</li>
+ *   <li>{@link pcmmm.impl.CellImpl#getRow <em>Row</em>}</li>
+ *   <li>{@link pcmmm.impl.CellImpl#getRowspan <em>Rowspan</em>}</li>
+ *   <li>{@link pcmmm.impl.CellImpl#getColumn <em>Column</em>}</li>
+ *   <li>{@link pcmmm.impl.CellImpl#getColspan <em>Colspan</em>}</li>
  * </ul>
  * </p>
  *
@@ -94,6 +98,86 @@ public abstract class CellImpl extends MinimalEObjectImpl.Container implements C
 	 * @ordered
 	 */
 	protected EList<String> link;
+
+	/**
+	 * The default value of the '{@link #getRow() <em>Row</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRow()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int ROW_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getRow() <em>Row</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRow()
+	 * @generated
+	 * @ordered
+	 */
+	protected int row = ROW_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getRowspan() <em>Rowspan</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRowspan()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int ROWSPAN_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getRowspan() <em>Rowspan</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRowspan()
+	 * @generated
+	 * @ordered
+	 */
+	protected int rowspan = ROWSPAN_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getColumn() <em>Column</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getColumn()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int COLUMN_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getColumn() <em>Column</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getColumn()
+	 * @generated
+	 * @ordered
+	 */
+	protected int column = COLUMN_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getColspan() <em>Colspan</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getColspan()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int COLSPAN_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getColspan() <em>Colspan</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getColspan()
+	 * @generated
+	 * @ordered
+	 */
+	protected int colspan = COLSPAN_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -185,6 +269,90 @@ public abstract class CellImpl extends MinimalEObjectImpl.Container implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public int getRow() {
+		return row;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setRow(int newRow) {
+		int oldRow = row;
+		row = newRow;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.CELL__ROW, oldRow, row));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int getRowspan() {
+		return rowspan;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setRowspan(int newRowspan) {
+		int oldRowspan = rowspan;
+		rowspan = newRowspan;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.CELL__ROWSPAN, oldRowspan, rowspan));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int getColumn() {
+		return column;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setColumn(int newColumn) {
+		int oldColumn = column;
+		column = newColumn;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.CELL__COLUMN, oldColumn, column));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int getColspan() {
+		return colspan;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setColspan(int newColspan) {
+		int oldColspan = colspan;
+		colspan = newColspan;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.CELL__COLSPAN, oldColspan, colspan));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -196,6 +364,14 @@ public abstract class CellImpl extends MinimalEObjectImpl.Container implements C
 				return getNote();
 			case PcmmmPackage.CELL__LINK:
 				return getLink();
+			case PcmmmPackage.CELL__ROW:
+				return getRow();
+			case PcmmmPackage.CELL__ROWSPAN:
+				return getRowspan();
+			case PcmmmPackage.CELL__COLUMN:
+				return getColumn();
+			case PcmmmPackage.CELL__COLSPAN:
+				return getColspan();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -223,6 +399,18 @@ public abstract class CellImpl extends MinimalEObjectImpl.Container implements C
 				getLink().clear();
 				getLink().addAll((Collection<? extends String>)newValue);
 				return;
+			case PcmmmPackage.CELL__ROW:
+				setRow((Integer)newValue);
+				return;
+			case PcmmmPackage.CELL__ROWSPAN:
+				setRowspan((Integer)newValue);
+				return;
+			case PcmmmPackage.CELL__COLUMN:
+				setColumn((Integer)newValue);
+				return;
+			case PcmmmPackage.CELL__COLSPAN:
+				setColspan((Integer)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -247,6 +435,18 @@ public abstract class CellImpl extends MinimalEObjectImpl.Container implements C
 			case PcmmmPackage.CELL__LINK:
 				getLink().clear();
 				return;
+			case PcmmmPackage.CELL__ROW:
+				setRow(ROW_EDEFAULT);
+				return;
+			case PcmmmPackage.CELL__ROWSPAN:
+				setRowspan(ROWSPAN_EDEFAULT);
+				return;
+			case PcmmmPackage.CELL__COLUMN:
+				setColumn(COLUMN_EDEFAULT);
+				return;
+			case PcmmmPackage.CELL__COLSPAN:
+				setColspan(COLSPAN_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -267,6 +467,14 @@ public abstract class CellImpl extends MinimalEObjectImpl.Container implements C
 				return note != null && !note.isEmpty();
 			case PcmmmPackage.CELL__LINK:
 				return link != null && !link.isEmpty();
+			case PcmmmPackage.CELL__ROW:
+				return row != ROW_EDEFAULT;
+			case PcmmmPackage.CELL__ROWSPAN:
+				return rowspan != ROWSPAN_EDEFAULT;
+			case PcmmmPackage.CELL__COLUMN:
+				return column != COLUMN_EDEFAULT;
+			case PcmmmPackage.CELL__COLSPAN:
+				return colspan != COLSPAN_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -289,6 +497,14 @@ public abstract class CellImpl extends MinimalEObjectImpl.Container implements C
 		result.append(note);
 		result.append(", link: ");
 		result.append(link);
+		result.append(", row: ");
+		result.append(row);
+		result.append(", rowspan: ");
+		result.append(rowspan);
+		result.append(", column: ");
+		result.append(column);
+		result.append(", colspan: ");
+		result.append(colspan);
 		result.append(')');
 		return result.toString();
 	}
