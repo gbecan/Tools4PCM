@@ -166,6 +166,14 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
    }
    
    
+   it should "export to PCM Metamodel" in {
+     val pcms = parseFromTitle("Comparison of AMD processors")
+     for (pcm <- pcms) {
+       val pcmModel = pcm.toPCMModel
+       println(pcmModel)
+     }
+   }
+   
    "Scalaj-http" should "download the code of a wikipedia page" in {
 	   val xmlPage = Http("http://en.wikipedia.org/w/index.php?title=Comparison_of_AMD_processors&action=edit")
 	   .option(HttpOptions.connTimeout(1000))

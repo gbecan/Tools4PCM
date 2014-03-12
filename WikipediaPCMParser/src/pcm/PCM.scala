@@ -4,6 +4,7 @@ import scala.xml.PrettyPrinter
 import scala.xml.Text
 import scala.xml.XML
 import scala.xml.Elem
+import pcmmm.PcmmmFactory
 
 
 class PCM {
@@ -32,6 +33,10 @@ class PCM {
     } else {
       0
     }
+  }
+  
+  def toPCMModel() : pcmmm.PCM = {
+    PcmmmFactory.eINSTANCE.createPCM()
   }
   
   override def toString() : String = {
