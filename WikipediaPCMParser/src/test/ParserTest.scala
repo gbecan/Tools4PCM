@@ -18,6 +18,11 @@ import scala.concurrent.duration._
 import scala.io.Codec
 import java.nio.charset.Charset
 import java.util.concurrent.Executors
+import org.eclipse.emf.ecore.resource.Resource
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl
+import org.eclipse.emf.common.util.URI
+import java.util.Collections
+import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
 
 class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
   
@@ -160,8 +165,16 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
    
    
    it should "export to PCM Metamodel" in {
-     val pcm = parseFromTitle("Comparison of AMD processors")
-     println(pcm.toPCMModel)
+     val title = "Comparison of AMD processors".replaceAll(" ", "_")
+     val pcm = parseFromTitle(title)
+
+     val reg = Resource.Factory.Registry.INSTANCE;
+     val m = reg.getExtensionToFactoryMap();
+     m.put("pcm", new XMIResourceFactoryImpl());
+     val resSet = new ResourceSetImpl();
+     val resource = resSet.createResource(URI.createURI("output/models/" + title + ".pcm"));
+     resource.getContents().add(pcm.toPCMModel);
+     resource.save(Collections.EMPTY_MAP);
    }
    
    "Scalaj-http" should "download the code of a wikipedia page" in {
@@ -184,8 +197,5 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
      
      val code = (xmlPage \\ "textarea").filter(_.attribute("id") exists (_.text == "output")).text
      code should be ("style=\"background: #90ff90; color: black; vertical-align: middle; text-align: center; \" class=\"table-yes\"|Yes")
-
-     
-     
    }
 }

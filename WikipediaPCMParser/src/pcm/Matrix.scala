@@ -2,6 +2,7 @@ package pcm
 
 import scala.xml.Elem
 import scala.xml.Text
+import pcmmm.PcmmmFactory
 
 class Matrix {
 
@@ -81,5 +82,26 @@ class Matrix {
     </table>
     
     htmlCode
+  }
+  
+  def toPCMModel() : pcmmm.Matrix = {
+    val model = PcmmmFactory.eINSTANCE.createMatrix
+    
+    for (row <- 0 until getNumberOfRows; column <- 0 until getNumberOfColumns) {
+    	val cell = cells.get((row, column))
+    	if (cell.isDefined) {
+    	  val cellModel = cell.get.toPCMModel
+    	   val words = for (word <- cellModel.getVerbatim().split("\\s") 
+    			   if !word.isEmpty()) yield word
+    	   var formattedContent = words.mkString("", " ", "").toLowerCase()
+    	   formattedContent = formattedContent.substring(0, 50.min(formattedContent.size))
+    	  cellModel.setName(row + "," + column + ": " + formattedContent)
+    	  cellModel.setRow(row)
+    	  cellModel.setColumn(column)
+    	  model.getCells().add(cellModel)
+    	}
+    }
+    
+    model
   }
 }

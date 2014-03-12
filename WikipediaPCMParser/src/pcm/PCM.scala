@@ -4,8 +4,8 @@ import scala.xml.PrettyPrinter
 import scala.xml.Text
 import scala.xml.XML
 import scala.xml.Elem
-import pcmmm.PcmmmFactory
 import scala.collection.mutable.ListBuffer
+import pcmmm.PcmmmFactory
 
 
 class PCM {
@@ -44,7 +44,11 @@ class PCM {
   }
 
   def toPCMModel() : pcmmm.PCM = {
-    PcmmmFactory.eINSTANCE.createPCM()
+    val model = PcmmmFactory.eINSTANCE.createPCM()
+    for (matrix <- matrices) {
+    	model.getMatrix().add(matrix.toPCMModel)
+    }
+    model
   }
 
 }
