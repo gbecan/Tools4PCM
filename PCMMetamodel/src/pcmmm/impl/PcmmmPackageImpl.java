@@ -10,7 +10,6 @@ import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
-import pcmmm.AbsValuedCell;
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
@@ -33,7 +32,6 @@ import pcmmm.Partial;
 import pcmmm.PcmmmFactory;
 import pcmmm.PcmmmPackage;
 import pcmmm.Product;
-import pcmmm.ProductComparisonPage;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
 import pcmmm.Type;
@@ -112,13 +110,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * @generated
 	 */
 	private EClass featureEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass productComparisonPageEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -224,13 +215,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * @generated
 	 */
 	private EClass xOrEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass absValuedCellEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -484,6 +468,24 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getPCM_Concepts() {
+		return (EReference)pcmEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPCM_DomainCollection() {
+		return (EReference)pcmEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getMatrix() {
 		return matrixEClass;
 	}
@@ -558,69 +560,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 */
 	public EClass getFeature() {
 		return featureEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getProductComparisonPage() {
-		return productComparisonPageEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getProductComparisonPage_Perspectives() {
-		return (EReference)productComparisonPageEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getProductComparisonPage_Title() {
-		return (EAttribute)productComparisonPageEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getProductComparisonPage_Description() {
-		return (EAttribute)productComparisonPageEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getProductComparisonPage_Concepts() {
-		return (EReference)productComparisonPageEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getProductComparisonPage_Name() {
-		return (EAttribute)productComparisonPageEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getProductComparisonPage_DomainCollection() {
-		return (EReference)productComparisonPageEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -835,6 +774,24 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getValuedCell_MyHeaderProduct() {
+		return (EReference)valuedCellEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getValuedCell_MyHeaderFeature() {
+		return (EReference)valuedCellEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getAnd() {
 		return andEClass;
 	}
@@ -855,33 +812,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 */
 	public EClass getXOr() {
 		return xOrEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getAbsValuedCell() {
-		return absValuedCellEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAbsValuedCell_MyHeaderProduct() {
-		return (EReference)absValuedCellEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAbsValuedCell_MyHeaderFeature() {
-		return (EReference)absValuedCellEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1075,6 +1005,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		createEAttribute(pcmEClass, PCM__DESCRIPTION);
 		createEReference(pcmEClass, PCM__MATRIX);
 		createEAttribute(pcmEClass, PCM__NAME);
+		createEReference(pcmEClass, PCM__CONCEPTS);
+		createEReference(pcmEClass, PCM__DOMAIN_COLLECTION);
 
 		matrixEClass = createEClass(MATRIX);
 		createEAttribute(matrixEClass, MATRIX__NAME);
@@ -1089,14 +1021,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		createEReference(featureFamilyEClass, FEATURE_FAMILY__FEATURES);
 
 		featureEClass = createEClass(FEATURE);
-
-		productComparisonPageEClass = createEClass(PRODUCT_COMPARISON_PAGE);
-		createEReference(productComparisonPageEClass, PRODUCT_COMPARISON_PAGE__PERSPECTIVES);
-		createEAttribute(productComparisonPageEClass, PRODUCT_COMPARISON_PAGE__TITLE);
-		createEAttribute(productComparisonPageEClass, PRODUCT_COMPARISON_PAGE__DESCRIPTION);
-		createEReference(productComparisonPageEClass, PRODUCT_COMPARISON_PAGE__CONCEPTS);
-		createEAttribute(productComparisonPageEClass, PRODUCT_COMPARISON_PAGE__NAME);
-		createEReference(productComparisonPageEClass, PRODUCT_COMPARISON_PAGE__DOMAIN_COLLECTION);
 
 		variabilityConceptEClass = createEClass(VARIABILITY_CONCEPT);
 		createEAttribute(variabilityConceptEClass, VARIABILITY_CONCEPT__NAME);
@@ -1132,16 +1056,14 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		valuedCellEClass = createEClass(VALUED_CELL);
 		createEReference(valuedCellEClass, VALUED_CELL__INTERPRETATION);
 		createEReference(valuedCellEClass, VALUED_CELL__CONCEPTS);
+		createEReference(valuedCellEClass, VALUED_CELL__MY_HEADER_PRODUCT);
+		createEReference(valuedCellEClass, VALUED_CELL__MY_HEADER_FEATURE);
 
 		andEClass = createEClass(AND);
 
 		orEClass = createEClass(OR);
 
 		xOrEClass = createEClass(XOR);
-
-		absValuedCellEClass = createEClass(ABS_VALUED_CELL);
-		createEReference(absValuedCellEClass, ABS_VALUED_CELL__MY_HEADER_PRODUCT);
-		createEReference(absValuedCellEClass, ABS_VALUED_CELL__MY_HEADER_FEATURE);
 
 		domainEClass = createEClass(DOMAIN);
 		createEReference(domainEClass, DOMAIN__INTERVALS);
@@ -1201,7 +1123,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		featureFamilyEClass.getESuperTypes().add(this.getAbstractFeature());
 		featureEClass.getESuperTypes().add(this.getAbstractFeature());
 		headerEClass.getESuperTypes().add(this.getCell());
-		extraEClass.getESuperTypes().add(this.getAbsValuedCell());
+		extraEClass.getESuperTypes().add(this.getCell());
 		booleanEClass.getESuperTypes().add(this.getConstraint());
 		partialEClass.getESuperTypes().add(this.getConstraint());
 		simpleEClass.getESuperTypes().add(this.getConstraint());
@@ -1209,11 +1131,10 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		unknwonEClass.getESuperTypes().add(this.getConstraint());
 		emptyEClass.getESuperTypes().add(this.getConstraint());
 		inconsistentEClass.getESuperTypes().add(this.getConstraint());
-		valuedCellEClass.getESuperTypes().add(this.getAbsValuedCell());
+		valuedCellEClass.getESuperTypes().add(this.getCell());
 		andEClass.getESuperTypes().add(this.getMultiple());
 		orEClass.getESuperTypes().add(this.getMultiple());
 		xOrEClass.getESuperTypes().add(this.getMultiple());
-		absValuedCellEClass.getESuperTypes().add(this.getCell());
 		orderedDomainEClass.getESuperTypes().add(this.getDomain());
 
 		// Initialize classes, features, and operations; add parameters
@@ -1236,6 +1157,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		initEAttribute(getPCM_Description(), ecorePackage.getEString(), "description", null, 0, -1, pcmmm.PCM.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPCM_Matrix(), this.getMatrix(), null, "matrix", null, 0, -1, pcmmm.PCM.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPCM_Name(), ecorePackage.getEString(), "name", null, 0, 1, pcmmm.PCM.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPCM_Concepts(), this.getVariabilityConcept(), null, "concepts", null, 0, -1, pcmmm.PCM.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPCM_DomainCollection(), this.getDomainCollection(), null, "domainCollection", null, 1, 1, pcmmm.PCM.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(matrixEClass, Matrix.class, "Matrix", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMatrix_Name(), ecorePackage.getEString(), "name", null, 0, 1, Matrix.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1250,14 +1173,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		initEReference(getFeatureFamily_Features(), this.getAbstractFeature(), null, "features", null, 1, -1, FeatureFamily.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(featureEClass, Feature.class, "Feature", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(productComparisonPageEClass, ProductComparisonPage.class, "ProductComparisonPage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductComparisonPage_Perspectives(), this.getPCM(), null, "perspectives", null, 0, -1, ProductComparisonPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getProductComparisonPage_Title(), ecorePackage.getEString(), "title", null, 0, 1, ProductComparisonPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getProductComparisonPage_Description(), ecorePackage.getEString(), "description", null, 0, -1, ProductComparisonPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getProductComparisonPage_Concepts(), this.getVariabilityConcept(), null, "concepts", null, 0, -1, ProductComparisonPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getProductComparisonPage_Name(), ecorePackage.getEString(), "name", null, 0, 1, ProductComparisonPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getProductComparisonPage_DomainCollection(), this.getDomainCollection(), null, "domainCollection", null, 0, 1, ProductComparisonPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(variabilityConceptEClass, VariabilityConcept.class, "VariabilityConcept", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getVariabilityConcept_Name(), ecorePackage.getEString(), "name", null, 0, 1, VariabilityConcept.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1294,16 +1209,14 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		initEClass(valuedCellEClass, ValuedCell.class, "ValuedCell", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getValuedCell_Interpretation(), this.getConstraint(), null, "interpretation", null, 1, 1, ValuedCell.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getValuedCell_Concepts(), this.getVariabilityConcept(), this.getVariabilityConcept_Constraints(), "concepts", null, 0, -1, ValuedCell.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getValuedCell_MyHeaderProduct(), this.getAbstractProduct(), null, "myHeaderProduct", null, 1, 1, ValuedCell.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getValuedCell_MyHeaderFeature(), this.getAbstractFeature(), null, "myHeaderFeature", null, 1, 1, ValuedCell.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(andEClass, And.class, "And", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(orEClass, Or.class, "Or", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(xOrEClass, XOr.class, "XOr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(absValuedCellEClass, AbsValuedCell.class, "AbsValuedCell", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAbsValuedCell_MyHeaderProduct(), this.getAbstractProduct(), null, "myHeaderProduct", null, 1, 1, AbsValuedCell.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAbsValuedCell_MyHeaderFeature(), this.getAbstractFeature(), null, "myHeaderFeature", null, 1, 1, AbsValuedCell.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(domainEClass, Domain.class, "Domain", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDomain_Intervals(), this.getInterval(), null, "intervals", null, 0, -1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

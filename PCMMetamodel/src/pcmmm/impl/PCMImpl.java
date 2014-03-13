@@ -19,9 +19,11 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import pcmmm.DomainCollection;
 import pcmmm.Matrix;
 import pcmmm.PCM;
 import pcmmm.PcmmmPackage;
+import pcmmm.VariabilityConcept;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,6 +36,8 @@ import pcmmm.PcmmmPackage;
  *   <li>{@link pcmmm.impl.PCMImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link pcmmm.impl.PCMImpl#getMatrix <em>Matrix</em>}</li>
  *   <li>{@link pcmmm.impl.PCMImpl#getName <em>Name</em>}</li>
+ *   <li>{@link pcmmm.impl.PCMImpl#getConcepts <em>Concepts</em>}</li>
+ *   <li>{@link pcmmm.impl.PCMImpl#getDomainCollection <em>Domain Collection</em>}</li>
  * </ul>
  * </p>
  *
@@ -99,6 +103,26 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 	 * @ordered
 	 */
 	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getConcepts() <em>Concepts</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConcepts()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<VariabilityConcept> concepts;
+
+	/**
+	 * The cached value of the '{@link #getDomainCollection() <em>Domain Collection</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDomainCollection()
+	 * @generated
+	 * @ordered
+	 */
+	protected DomainCollection domainCollection;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -190,11 +214,70 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<VariabilityConcept> getConcepts() {
+		if (concepts == null) {
+			concepts = new EObjectContainmentEList<VariabilityConcept>(VariabilityConcept.class, this, PcmmmPackage.PCM__CONCEPTS);
+		}
+		return concepts;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DomainCollection getDomainCollection() {
+		return domainCollection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetDomainCollection(DomainCollection newDomainCollection, NotificationChain msgs) {
+		DomainCollection oldDomainCollection = domainCollection;
+		domainCollection = newDomainCollection;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PcmmmPackage.PCM__DOMAIN_COLLECTION, oldDomainCollection, newDomainCollection);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDomainCollection(DomainCollection newDomainCollection) {
+		if (newDomainCollection != domainCollection) {
+			NotificationChain msgs = null;
+			if (domainCollection != null)
+				msgs = ((InternalEObject)domainCollection).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - PcmmmPackage.PCM__DOMAIN_COLLECTION, null, msgs);
+			if (newDomainCollection != null)
+				msgs = ((InternalEObject)newDomainCollection).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - PcmmmPackage.PCM__DOMAIN_COLLECTION, null, msgs);
+			msgs = basicSetDomainCollection(newDomainCollection, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.PCM__DOMAIN_COLLECTION, newDomainCollection, newDomainCollection));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case PcmmmPackage.PCM__MATRIX:
 				return ((InternalEList<?>)getMatrix()).basicRemove(otherEnd, msgs);
+			case PcmmmPackage.PCM__CONCEPTS:
+				return ((InternalEList<?>)getConcepts()).basicRemove(otherEnd, msgs);
+			case PcmmmPackage.PCM__DOMAIN_COLLECTION:
+				return basicSetDomainCollection(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -215,6 +298,10 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 				return getMatrix();
 			case PcmmmPackage.PCM__NAME:
 				return getName();
+			case PcmmmPackage.PCM__CONCEPTS:
+				return getConcepts();
+			case PcmmmPackage.PCM__DOMAIN_COLLECTION:
+				return getDomainCollection();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -242,6 +329,13 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 			case PcmmmPackage.PCM__NAME:
 				setName((String)newValue);
 				return;
+			case PcmmmPackage.PCM__CONCEPTS:
+				getConcepts().clear();
+				getConcepts().addAll((Collection<? extends VariabilityConcept>)newValue);
+				return;
+			case PcmmmPackage.PCM__DOMAIN_COLLECTION:
+				setDomainCollection((DomainCollection)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -266,6 +360,12 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 			case PcmmmPackage.PCM__NAME:
 				setName(NAME_EDEFAULT);
 				return;
+			case PcmmmPackage.PCM__CONCEPTS:
+				getConcepts().clear();
+				return;
+			case PcmmmPackage.PCM__DOMAIN_COLLECTION:
+				setDomainCollection((DomainCollection)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -286,6 +386,10 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 				return matrix != null && !matrix.isEmpty();
 			case PcmmmPackage.PCM__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case PcmmmPackage.PCM__CONCEPTS:
+				return concepts != null && !concepts.isEmpty();
+			case PcmmmPackage.PCM__DOMAIN_COLLECTION:
+				return domainCollection != null;
 		}
 		return super.eIsSet(featureID);
 	}

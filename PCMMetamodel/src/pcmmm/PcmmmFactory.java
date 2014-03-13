@@ -76,15 +76,6 @@ public interface PcmmmFactory extends EFactory {
 	Feature createFeature();
 
 	/**
-	 * Returns a new object of class '<em>Product Comparison Page</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Product Comparison Page</em>'.
-	 * @generated
-	 */
-	ProductComparisonPage createProductComparisonPage();
-
-	/**
 	 * Returns a new object of class '<em>Header</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

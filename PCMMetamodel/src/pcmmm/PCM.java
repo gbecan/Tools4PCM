@@ -18,6 +18,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link pcmmm.PCM#getDescription <em>Description</em>}</li>
  *   <li>{@link pcmmm.PCM#getMatrix <em>Matrix</em>}</li>
  *   <li>{@link pcmmm.PCM#getName <em>Name</em>}</li>
+ *   <li>{@link pcmmm.PCM#getConcepts <em>Concepts</em>}</li>
+ *   <li>{@link pcmmm.PCM#getDomainCollection <em>Domain Collection</em>}</li>
  * </ul>
  * </p>
  *
@@ -109,5 +111,47 @@ public interface PCM extends EObject {
 	 * @generated
 	 */
 	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Concepts</b></em>' containment reference list.
+	 * The list contents are of type {@link pcmmm.VariabilityConcept}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Concepts</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Concepts</em>' containment reference list.
+	 * @see pcmmm.PcmmmPackage#getPCM_Concepts()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<VariabilityConcept> getConcepts();
+
+	/**
+	 * Returns the value of the '<em><b>Domain Collection</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Domain Collection</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Domain Collection</em>' containment reference.
+	 * @see #setDomainCollection(DomainCollection)
+	 * @see pcmmm.PcmmmPackage#getPCM_DomainCollection()
+	 * @model containment="true" required="true"
+	 * @generated
+	 */
+	DomainCollection getDomainCollection();
+
+	/**
+	 * Sets the value of the '{@link pcmmm.PCM#getDomainCollection <em>Domain Collection</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Domain Collection</em>' containment reference.
+	 * @see #getDomainCollection()
+	 * @generated
+	 */
+	void setDomainCollection(DomainCollection value);
 
 } // PCM

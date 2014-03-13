@@ -65,7 +65,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getVariabilityConcept()
 	 * @generated
 	 */
-	int VARIABILITY_CONCEPT = 10;
+	int VARIABILITY_CONCEPT = 9;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -342,13 +342,31 @@ public interface PcmmmPackage extends EPackage {
 	int PCM__NAME = 3;
 
 	/**
+	 * The feature id for the '<em><b>Concepts</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PCM__CONCEPTS = 4;
+
+	/**
+	 * The feature id for the '<em><b>Domain Collection</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PCM__DOMAIN_COLLECTION = 5;
+
+	/**
 	 * The number of structural features of the '<em>PCM</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PCM_FEATURE_COUNT = 4;
+	int PCM_FEATURE_COUNT = 6;
 
 	/**
 	 * The number of operations of the '<em>PCM</em>' class.
@@ -608,88 +626,6 @@ public interface PcmmmPackage extends EPackage {
 	int FEATURE_OPERATION_COUNT = ABSTRACT_FEATURE_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link pcmmm.impl.ProductComparisonPageImpl <em>Product Comparison Page</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see pcmmm.impl.ProductComparisonPageImpl
-	 * @see pcmmm.impl.PcmmmPackageImpl#getProductComparisonPage()
-	 * @generated
-	 */
-	int PRODUCT_COMPARISON_PAGE = 9;
-
-	/**
-	 * The feature id for the '<em><b>Perspectives</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCT_COMPARISON_PAGE__PERSPECTIVES = 0;
-
-	/**
-	 * The feature id for the '<em><b>Title</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCT_COMPARISON_PAGE__TITLE = 1;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCT_COMPARISON_PAGE__DESCRIPTION = 2;
-
-	/**
-	 * The feature id for the '<em><b>Concepts</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCT_COMPARISON_PAGE__CONCEPTS = 3;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCT_COMPARISON_PAGE__NAME = 4;
-
-	/**
-	 * The feature id for the '<em><b>Domain Collection</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCT_COMPARISON_PAGE__DOMAIN_COLLECTION = 5;
-
-	/**
-	 * The number of structural features of the '<em>Product Comparison Page</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCT_COMPARISON_PAGE_FEATURE_COUNT = 6;
-
-	/**
-	 * The number of operations of the '<em>Product Comparison Page</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCT_COMPARISON_PAGE_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link pcmmm.impl.HeaderImpl <em>Header</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -697,7 +633,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getHeader()
 	 * @generated
 	 */
-	int HEADER = 11;
+	int HEADER = 10;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -799,124 +735,6 @@ public interface PcmmmPackage extends EPackage {
 	int HEADER_OPERATION_COUNT = CELL_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link pcmmm.impl.AbsValuedCellImpl <em>Abs Valued Cell</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see pcmmm.impl.AbsValuedCellImpl
-	 * @see pcmmm.impl.PcmmmPackageImpl#getAbsValuedCell()
-	 * @generated
-	 */
-	int ABS_VALUED_CELL = 25;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABS_VALUED_CELL__NAME = CELL__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABS_VALUED_CELL__VERBATIM = CELL__VERBATIM;
-
-	/**
-	 * The feature id for the '<em><b>Note</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABS_VALUED_CELL__NOTE = CELL__NOTE;
-
-	/**
-	 * The feature id for the '<em><b>Link</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABS_VALUED_CELL__LINK = CELL__LINK;
-
-	/**
-	 * The feature id for the '<em><b>Row</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABS_VALUED_CELL__ROW = CELL__ROW;
-
-	/**
-	 * The feature id for the '<em><b>Rowspan</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABS_VALUED_CELL__ROWSPAN = CELL__ROWSPAN;
-
-	/**
-	 * The feature id for the '<em><b>Column</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABS_VALUED_CELL__COLUMN = CELL__COLUMN;
-
-	/**
-	 * The feature id for the '<em><b>Colspan</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABS_VALUED_CELL__COLSPAN = CELL__COLSPAN;
-
-	/**
-	 * The feature id for the '<em><b>My Header Product</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABS_VALUED_CELL__MY_HEADER_PRODUCT = CELL_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>My Header Feature</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABS_VALUED_CELL__MY_HEADER_FEATURE = CELL_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>Abs Valued Cell</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABS_VALUED_CELL_FEATURE_COUNT = CELL_FEATURE_COUNT + 2;
-
-	/**
-	 * The number of operations of the '<em>Abs Valued Cell</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ABS_VALUED_CELL_OPERATION_COUNT = CELL_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link pcmmm.impl.ExtraImpl <em>Extra</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -924,7 +742,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getExtra()
 	 * @generated
 	 */
-	int EXTRA = 12;
+	int EXTRA = 11;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -933,7 +751,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXTRA__NAME = ABS_VALUED_CELL__NAME;
+	int EXTRA__NAME = CELL__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
@@ -942,7 +760,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXTRA__VERBATIM = ABS_VALUED_CELL__VERBATIM;
+	int EXTRA__VERBATIM = CELL__VERBATIM;
 
 	/**
 	 * The feature id for the '<em><b>Note</b></em>' attribute list.
@@ -951,7 +769,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXTRA__NOTE = ABS_VALUED_CELL__NOTE;
+	int EXTRA__NOTE = CELL__NOTE;
 
 	/**
 	 * The feature id for the '<em><b>Link</b></em>' attribute list.
@@ -960,7 +778,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXTRA__LINK = ABS_VALUED_CELL__LINK;
+	int EXTRA__LINK = CELL__LINK;
 
 	/**
 	 * The feature id for the '<em><b>Row</b></em>' attribute.
@@ -969,7 +787,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXTRA__ROW = ABS_VALUED_CELL__ROW;
+	int EXTRA__ROW = CELL__ROW;
 
 	/**
 	 * The feature id for the '<em><b>Rowspan</b></em>' attribute.
@@ -978,7 +796,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXTRA__ROWSPAN = ABS_VALUED_CELL__ROWSPAN;
+	int EXTRA__ROWSPAN = CELL__ROWSPAN;
 
 	/**
 	 * The feature id for the '<em><b>Column</b></em>' attribute.
@@ -987,7 +805,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXTRA__COLUMN = ABS_VALUED_CELL__COLUMN;
+	int EXTRA__COLUMN = CELL__COLUMN;
 
 	/**
 	 * The feature id for the '<em><b>Colspan</b></em>' attribute.
@@ -996,25 +814,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXTRA__COLSPAN = ABS_VALUED_CELL__COLSPAN;
-
-	/**
-	 * The feature id for the '<em><b>My Header Product</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTRA__MY_HEADER_PRODUCT = ABS_VALUED_CELL__MY_HEADER_PRODUCT;
-
-	/**
-	 * The feature id for the '<em><b>My Header Feature</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXTRA__MY_HEADER_FEATURE = ABS_VALUED_CELL__MY_HEADER_FEATURE;
+	int EXTRA__COLSPAN = CELL__COLSPAN;
 
 	/**
 	 * The number of structural features of the '<em>Extra</em>' class.
@@ -1023,7 +823,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXTRA_FEATURE_COUNT = ABS_VALUED_CELL_FEATURE_COUNT + 0;
+	int EXTRA_FEATURE_COUNT = CELL_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Extra</em>' class.
@@ -1032,7 +832,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXTRA_OPERATION_COUNT = ABS_VALUED_CELL_OPERATION_COUNT + 0;
+	int EXTRA_OPERATION_COUNT = CELL_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link pcmmm.impl.ConstraintImpl <em>Constraint</em>}' class.
@@ -1042,7 +842,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getConstraint()
 	 * @generated
 	 */
-	int CONSTRAINT = 13;
+	int CONSTRAINT = 12;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1088,7 +888,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getBoolean()
 	 * @generated
 	 */
-	int BOOLEAN = 14;
+	int BOOLEAN = 13;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1134,7 +934,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getPartial()
 	 * @generated
 	 */
-	int PARTIAL = 15;
+	int PARTIAL = 14;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1198,7 +998,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getSimple()
 	 * @generated
 	 */
-	int SIMPLE = 16;
+	int SIMPLE = 15;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1253,7 +1053,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getMultiple()
 	 * @generated
 	 */
-	int MULTIPLE = 17;
+	int MULTIPLE = 16;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1308,7 +1108,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getUnknwon()
 	 * @generated
 	 */
-	int UNKNWON = 18;
+	int UNKNWON = 17;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1354,7 +1154,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getEmpty()
 	 * @generated
 	 */
-	int EMPTY = 19;
+	int EMPTY = 18;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1400,7 +1200,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getInconsistent()
 	 * @generated
 	 */
-	int INCONSISTENT = 20;
+	int INCONSISTENT = 19;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1446,7 +1246,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getValuedCell()
 	 * @generated
 	 */
-	int VALUED_CELL = 21;
+	int VALUED_CELL = 20;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1455,7 +1255,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALUED_CELL__NAME = ABS_VALUED_CELL__NAME;
+	int VALUED_CELL__NAME = CELL__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
@@ -1464,7 +1264,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALUED_CELL__VERBATIM = ABS_VALUED_CELL__VERBATIM;
+	int VALUED_CELL__VERBATIM = CELL__VERBATIM;
 
 	/**
 	 * The feature id for the '<em><b>Note</b></em>' attribute list.
@@ -1473,7 +1273,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALUED_CELL__NOTE = ABS_VALUED_CELL__NOTE;
+	int VALUED_CELL__NOTE = CELL__NOTE;
 
 	/**
 	 * The feature id for the '<em><b>Link</b></em>' attribute list.
@@ -1482,7 +1282,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALUED_CELL__LINK = ABS_VALUED_CELL__LINK;
+	int VALUED_CELL__LINK = CELL__LINK;
 
 	/**
 	 * The feature id for the '<em><b>Row</b></em>' attribute.
@@ -1491,7 +1291,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALUED_CELL__ROW = ABS_VALUED_CELL__ROW;
+	int VALUED_CELL__ROW = CELL__ROW;
 
 	/**
 	 * The feature id for the '<em><b>Rowspan</b></em>' attribute.
@@ -1500,7 +1300,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALUED_CELL__ROWSPAN = ABS_VALUED_CELL__ROWSPAN;
+	int VALUED_CELL__ROWSPAN = CELL__ROWSPAN;
 
 	/**
 	 * The feature id for the '<em><b>Column</b></em>' attribute.
@@ -1509,7 +1309,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALUED_CELL__COLUMN = ABS_VALUED_CELL__COLUMN;
+	int VALUED_CELL__COLUMN = CELL__COLUMN;
 
 	/**
 	 * The feature id for the '<em><b>Colspan</b></em>' attribute.
@@ -1518,25 +1318,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALUED_CELL__COLSPAN = ABS_VALUED_CELL__COLSPAN;
-
-	/**
-	 * The feature id for the '<em><b>My Header Product</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VALUED_CELL__MY_HEADER_PRODUCT = ABS_VALUED_CELL__MY_HEADER_PRODUCT;
-
-	/**
-	 * The feature id for the '<em><b>My Header Feature</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VALUED_CELL__MY_HEADER_FEATURE = ABS_VALUED_CELL__MY_HEADER_FEATURE;
+	int VALUED_CELL__COLSPAN = CELL__COLSPAN;
 
 	/**
 	 * The feature id for the '<em><b>Interpretation</b></em>' containment reference.
@@ -1545,7 +1327,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALUED_CELL__INTERPRETATION = ABS_VALUED_CELL_FEATURE_COUNT + 0;
+	int VALUED_CELL__INTERPRETATION = CELL_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Concepts</b></em>' reference list.
@@ -1554,7 +1336,25 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALUED_CELL__CONCEPTS = ABS_VALUED_CELL_FEATURE_COUNT + 1;
+	int VALUED_CELL__CONCEPTS = CELL_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>My Header Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VALUED_CELL__MY_HEADER_PRODUCT = CELL_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>My Header Feature</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VALUED_CELL__MY_HEADER_FEATURE = CELL_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Valued Cell</em>' class.
@@ -1563,7 +1363,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALUED_CELL_FEATURE_COUNT = ABS_VALUED_CELL_FEATURE_COUNT + 2;
+	int VALUED_CELL_FEATURE_COUNT = CELL_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of operations of the '<em>Valued Cell</em>' class.
@@ -1572,7 +1372,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALUED_CELL_OPERATION_COUNT = ABS_VALUED_CELL_OPERATION_COUNT + 0;
+	int VALUED_CELL_OPERATION_COUNT = CELL_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link pcmmm.impl.AndImpl <em>And</em>}' class.
@@ -1582,7 +1382,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getAnd()
 	 * @generated
 	 */
-	int AND = 22;
+	int AND = 21;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1637,7 +1437,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getOr()
 	 * @generated
 	 */
-	int OR = 23;
+	int OR = 22;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1692,7 +1492,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getXOr()
 	 * @generated
 	 */
-	int XOR = 24;
+	int XOR = 23;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1747,7 +1547,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getDomain()
 	 * @generated
 	 */
-	int DOMAIN = 26;
+	int DOMAIN = 24;
 
 	/**
 	 * The feature id for the '<em><b>Intervals</b></em>' containment reference list.
@@ -1811,7 +1611,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getInterval()
 	 * @generated
 	 */
-	int INTERVAL = 27;
+	int INTERVAL = 25;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1857,7 +1657,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getDomainCollection()
 	 * @generated
 	 */
-	int DOMAIN_COLLECTION = 28;
+	int DOMAIN_COLLECTION = 26;
 
 	/**
 	 * The feature id for the '<em><b>Domains</b></em>' containment reference list.
@@ -1894,7 +1694,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getType()
 	 * @generated
 	 */
-	int TYPE = 29;
+	int TYPE = 27;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -1922,7 +1722,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getOrderedDomain()
 	 * @generated
 	 */
-	int ORDERED_DOMAIN = 30;
+	int ORDERED_DOMAIN = 28;
 
 	/**
 	 * The feature id for the '<em><b>Intervals</b></em>' containment reference list.
@@ -2004,7 +1804,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getYesNO()
 	 * @generated
 	 */
-	int YES_NO = 31;
+	int YES_NO = 29;
 
 	/**
 	 * The number of structural features of the '<em>Yes NO</em>' class.
@@ -2207,6 +2007,28 @@ public interface PcmmmPackage extends EPackage {
 	EAttribute getPCM_Name();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link pcmmm.PCM#getConcepts <em>Concepts</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Concepts</em>'.
+	 * @see pcmmm.PCM#getConcepts()
+	 * @see #getPCM()
+	 * @generated
+	 */
+	EReference getPCM_Concepts();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link pcmmm.PCM#getDomainCollection <em>Domain Collection</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Domain Collection</em>'.
+	 * @see pcmmm.PCM#getDomainCollection()
+	 * @see #getPCM()
+	 * @generated
+	 */
+	EReference getPCM_DomainCollection();
+
+	/**
 	 * Returns the meta object for class '{@link pcmmm.Matrix <em>Matrix</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2299,82 +2121,6 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getFeature();
-
-	/**
-	 * Returns the meta object for class '{@link pcmmm.ProductComparisonPage <em>Product Comparison Page</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Product Comparison Page</em>'.
-	 * @see pcmmm.ProductComparisonPage
-	 * @generated
-	 */
-	EClass getProductComparisonPage();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link pcmmm.ProductComparisonPage#getPerspectives <em>Perspectives</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Perspectives</em>'.
-	 * @see pcmmm.ProductComparisonPage#getPerspectives()
-	 * @see #getProductComparisonPage()
-	 * @generated
-	 */
-	EReference getProductComparisonPage_Perspectives();
-
-	/**
-	 * Returns the meta object for the attribute '{@link pcmmm.ProductComparisonPage#getTitle <em>Title</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Title</em>'.
-	 * @see pcmmm.ProductComparisonPage#getTitle()
-	 * @see #getProductComparisonPage()
-	 * @generated
-	 */
-	EAttribute getProductComparisonPage_Title();
-
-	/**
-	 * Returns the meta object for the attribute list '{@link pcmmm.ProductComparisonPage#getDescription <em>Description</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Description</em>'.
-	 * @see pcmmm.ProductComparisonPage#getDescription()
-	 * @see #getProductComparisonPage()
-	 * @generated
-	 */
-	EAttribute getProductComparisonPage_Description();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link pcmmm.ProductComparisonPage#getConcepts <em>Concepts</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Concepts</em>'.
-	 * @see pcmmm.ProductComparisonPage#getConcepts()
-	 * @see #getProductComparisonPage()
-	 * @generated
-	 */
-	EReference getProductComparisonPage_Concepts();
-
-	/**
-	 * Returns the meta object for the attribute '{@link pcmmm.ProductComparisonPage#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see pcmmm.ProductComparisonPage#getName()
-	 * @see #getProductComparisonPage()
-	 * @generated
-	 */
-	EAttribute getProductComparisonPage_Name();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link pcmmm.ProductComparisonPage#getDomainCollection <em>Domain Collection</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Domain Collection</em>'.
-	 * @see pcmmm.ProductComparisonPage#getDomainCollection()
-	 * @see #getProductComparisonPage()
-	 * @generated
-	 */
-	EReference getProductComparisonPage_DomainCollection();
 
 	/**
 	 * Returns the meta object for class '{@link pcmmm.VariabilityConcept <em>Variability Concept</em>}'.
@@ -2617,6 +2363,28 @@ public interface PcmmmPackage extends EPackage {
 	EReference getValuedCell_Concepts();
 
 	/**
+	 * Returns the meta object for the reference '{@link pcmmm.ValuedCell#getMyHeaderProduct <em>My Header Product</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>My Header Product</em>'.
+	 * @see pcmmm.ValuedCell#getMyHeaderProduct()
+	 * @see #getValuedCell()
+	 * @generated
+	 */
+	EReference getValuedCell_MyHeaderProduct();
+
+	/**
+	 * Returns the meta object for the reference '{@link pcmmm.ValuedCell#getMyHeaderFeature <em>My Header Feature</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>My Header Feature</em>'.
+	 * @see pcmmm.ValuedCell#getMyHeaderFeature()
+	 * @see #getValuedCell()
+	 * @generated
+	 */
+	EReference getValuedCell_MyHeaderFeature();
+
+	/**
 	 * Returns the meta object for class '{@link pcmmm.And <em>And</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2645,38 +2413,6 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getXOr();
-
-	/**
-	 * Returns the meta object for class '{@link pcmmm.AbsValuedCell <em>Abs Valued Cell</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Abs Valued Cell</em>'.
-	 * @see pcmmm.AbsValuedCell
-	 * @generated
-	 */
-	EClass getAbsValuedCell();
-
-	/**
-	 * Returns the meta object for the reference '{@link pcmmm.AbsValuedCell#getMyHeaderProduct <em>My Header Product</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>My Header Product</em>'.
-	 * @see pcmmm.AbsValuedCell#getMyHeaderProduct()
-	 * @see #getAbsValuedCell()
-	 * @generated
-	 */
-	EReference getAbsValuedCell_MyHeaderProduct();
-
-	/**
-	 * Returns the meta object for the reference '{@link pcmmm.AbsValuedCell#getMyHeaderFeature <em>My Header Feature</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>My Header Feature</em>'.
-	 * @see pcmmm.AbsValuedCell#getMyHeaderFeature()
-	 * @see #getAbsValuedCell()
-	 * @generated
-	 */
-	EReference getAbsValuedCell_MyHeaderFeature();
 
 	/**
 	 * Returns the meta object for class '{@link pcmmm.Domain <em>Domain</em>}'.
@@ -3007,6 +2743,22 @@ public interface PcmmmPackage extends EPackage {
 		EAttribute PCM__NAME = eINSTANCE.getPCM_Name();
 
 		/**
+		 * The meta object literal for the '<em><b>Concepts</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PCM__CONCEPTS = eINSTANCE.getPCM_Concepts();
+
+		/**
+		 * The meta object literal for the '<em><b>Domain Collection</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PCM__DOMAIN_COLLECTION = eINSTANCE.getPCM_DomainCollection();
+
+		/**
 		 * The meta object literal for the '{@link pcmmm.impl.MatrixImpl <em>Matrix</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3087,64 +2839,6 @@ public interface PcmmmPackage extends EPackage {
 		 * @generated
 		 */
 		EClass FEATURE = eINSTANCE.getFeature();
-
-		/**
-		 * The meta object literal for the '{@link pcmmm.impl.ProductComparisonPageImpl <em>Product Comparison Page</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see pcmmm.impl.ProductComparisonPageImpl
-		 * @see pcmmm.impl.PcmmmPackageImpl#getProductComparisonPage()
-		 * @generated
-		 */
-		EClass PRODUCT_COMPARISON_PAGE = eINSTANCE.getProductComparisonPage();
-
-		/**
-		 * The meta object literal for the '<em><b>Perspectives</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PRODUCT_COMPARISON_PAGE__PERSPECTIVES = eINSTANCE.getProductComparisonPage_Perspectives();
-
-		/**
-		 * The meta object literal for the '<em><b>Title</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PRODUCT_COMPARISON_PAGE__TITLE = eINSTANCE.getProductComparisonPage_Title();
-
-		/**
-		 * The meta object literal for the '<em><b>Description</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PRODUCT_COMPARISON_PAGE__DESCRIPTION = eINSTANCE.getProductComparisonPage_Description();
-
-		/**
-		 * The meta object literal for the '<em><b>Concepts</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PRODUCT_COMPARISON_PAGE__CONCEPTS = eINSTANCE.getProductComparisonPage_Concepts();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PRODUCT_COMPARISON_PAGE__NAME = eINSTANCE.getProductComparisonPage_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Domain Collection</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PRODUCT_COMPARISON_PAGE__DOMAIN_COLLECTION = eINSTANCE.getProductComparisonPage_DomainCollection();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.VariabilityConceptImpl <em>Variability Concept</em>}' class.
@@ -3355,6 +3049,22 @@ public interface PcmmmPackage extends EPackage {
 		EReference VALUED_CELL__CONCEPTS = eINSTANCE.getValuedCell_Concepts();
 
 		/**
+		 * The meta object literal for the '<em><b>My Header Product</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VALUED_CELL__MY_HEADER_PRODUCT = eINSTANCE.getValuedCell_MyHeaderProduct();
+
+		/**
+		 * The meta object literal for the '<em><b>My Header Feature</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VALUED_CELL__MY_HEADER_FEATURE = eINSTANCE.getValuedCell_MyHeaderFeature();
+
+		/**
 		 * The meta object literal for the '{@link pcmmm.impl.AndImpl <em>And</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3383,32 +3093,6 @@ public interface PcmmmPackage extends EPackage {
 		 * @generated
 		 */
 		EClass XOR = eINSTANCE.getXOr();
-
-		/**
-		 * The meta object literal for the '{@link pcmmm.impl.AbsValuedCellImpl <em>Abs Valued Cell</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see pcmmm.impl.AbsValuedCellImpl
-		 * @see pcmmm.impl.PcmmmPackageImpl#getAbsValuedCell()
-		 * @generated
-		 */
-		EClass ABS_VALUED_CELL = eINSTANCE.getAbsValuedCell();
-
-		/**
-		 * The meta object literal for the '<em><b>My Header Product</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ABS_VALUED_CELL__MY_HEADER_PRODUCT = eINSTANCE.getAbsValuedCell_MyHeaderProduct();
-
-		/**
-		 * The meta object literal for the '<em><b>My Header Feature</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ABS_VALUED_CELL__MY_HEADER_FEATURE = eINSTANCE.getAbsValuedCell_MyHeaderFeature();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.DomainImpl <em>Domain</em>}' class.

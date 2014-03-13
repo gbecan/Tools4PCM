@@ -29,7 +29,6 @@ import pcmmm.Partial;
 import pcmmm.PcmmmFactory;
 import pcmmm.PcmmmPackage;
 import pcmmm.Product;
-import pcmmm.ProductComparisonPage;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
 import pcmmm.Unknwon;
@@ -87,7 +86,6 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 			case PcmmmPackage.PRODUCT: return createProduct();
 			case PcmmmPackage.FEATURE_FAMILY: return createFeatureFamily();
 			case PcmmmPackage.FEATURE: return createFeature();
-			case PcmmmPackage.PRODUCT_COMPARISON_PAGE: return createProductComparisonPage();
 			case PcmmmPackage.HEADER: return createHeader();
 			case PcmmmPackage.EXTRA: return createExtra();
 			case PcmmmPackage.BOOLEAN: return createBoolean();
@@ -169,16 +167,6 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 	public Feature createFeature() {
 		FeatureImpl feature = new FeatureImpl();
 		return feature;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProductComparisonPage createProductComparisonPage() {
-		ProductComparisonPageImpl productComparisonPage = new ProductComparisonPageImpl();
-		return productComparisonPage;
 	}
 
 	/**
