@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link pcmmm.PCM#getTitle <em>Title</em>}</li>
  *   <li>{@link pcmmm.PCM#getDescription <em>Description</em>}</li>
- *   <li>{@link pcmmm.PCM#getMatrix <em>Matrix</em>}</li>
+ *   <li>{@link pcmmm.PCM#getMatrices <em>Matrices</em>}</li>
  *   <li>{@link pcmmm.PCM#getName <em>Name</em>}</li>
  *   <li>{@link pcmmm.PCM#getConcepts <em>Concepts</em>}</li>
  *   <li>{@link pcmmm.PCM#getDomainCollection <em>Domain Collection</em>}</li>
@@ -71,20 +71,20 @@ public interface PCM extends EObject {
 	EList<String> getDescription();
 
 	/**
-	 * Returns the value of the '<em><b>Matrix</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Matrices</b></em>' containment reference list.
 	 * The list contents are of type {@link pcmmm.Matrix}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Matrix</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Matrices</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Matrix</em>' containment reference list.
-	 * @see pcmmm.PcmmmPackage#getPCM_Matrix()
+	 * @return the value of the '<em>Matrices</em>' containment reference list.
+	 * @see pcmmm.PcmmmPackage#getPCM_Matrices()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Matrix> getMatrix();
+	EList<Matrix> getMatrices();
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.

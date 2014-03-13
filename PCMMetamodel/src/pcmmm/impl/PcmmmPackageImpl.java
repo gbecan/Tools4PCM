@@ -450,7 +450,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getPCM_Matrix() {
+	public EReference getPCM_Matrices() {
 		return (EReference)pcmEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1003,7 +1003,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		pcmEClass = createEClass(PCM);
 		createEAttribute(pcmEClass, PCM__TITLE);
 		createEAttribute(pcmEClass, PCM__DESCRIPTION);
-		createEReference(pcmEClass, PCM__MATRIX);
+		createEReference(pcmEClass, PCM__MATRICES);
 		createEAttribute(pcmEClass, PCM__NAME);
 		createEReference(pcmEClass, PCM__CONCEPTS);
 		createEReference(pcmEClass, PCM__DOMAIN_COLLECTION);
@@ -1155,7 +1155,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		initEClass(pcmEClass, pcmmm.PCM.class, "PCM", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPCM_Title(), ecorePackage.getEString(), "title", null, 0, 1, pcmmm.PCM.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPCM_Description(), ecorePackage.getEString(), "description", null, 0, -1, pcmmm.PCM.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPCM_Matrix(), this.getMatrix(), null, "matrix", null, 0, -1, pcmmm.PCM.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPCM_Matrices(), this.getMatrix(), null, "matrices", null, 0, -1, pcmmm.PCM.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPCM_Name(), ecorePackage.getEString(), "name", null, 0, 1, pcmmm.PCM.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPCM_Concepts(), this.getVariabilityConcept(), null, "concepts", null, 0, -1, pcmmm.PCM.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPCM_DomainCollection(), this.getDomainCollection(), null, "domainCollection", null, 1, 1, pcmmm.PCM.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

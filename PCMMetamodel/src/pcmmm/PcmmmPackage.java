@@ -324,13 +324,13 @@ public interface PcmmmPackage extends EPackage {
 	int PCM__DESCRIPTION = 1;
 
 	/**
-	 * The feature id for the '<em><b>Matrix</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Matrices</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PCM__MATRIX = 2;
+	int PCM__MATRICES = 2;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1985,15 +1985,15 @@ public interface PcmmmPackage extends EPackage {
 	EAttribute getPCM_Description();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link pcmmm.PCM#getMatrix <em>Matrix</em>}'.
+	 * Returns the meta object for the containment reference list '{@link pcmmm.PCM#getMatrices <em>Matrices</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Matrix</em>'.
-	 * @see pcmmm.PCM#getMatrix()
+	 * @return the meta object for the containment reference list '<em>Matrices</em>'.
+	 * @see pcmmm.PCM#getMatrices()
 	 * @see #getPCM()
 	 * @generated
 	 */
-	EReference getPCM_Matrix();
+	EReference getPCM_Matrices();
 
 	/**
 	 * Returns the meta object for the attribute '{@link pcmmm.PCM#getName <em>Name</em>}'.
@@ -2727,12 +2727,12 @@ public interface PcmmmPackage extends EPackage {
 		EAttribute PCM__DESCRIPTION = eINSTANCE.getPCM_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Matrix</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Matrices</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PCM__MATRIX = eINSTANCE.getPCM_Matrix();
+		EReference PCM__MATRICES = eINSTANCE.getPCM_Matrices();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.

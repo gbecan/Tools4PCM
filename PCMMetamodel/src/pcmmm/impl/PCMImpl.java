@@ -34,7 +34,7 @@ import pcmmm.VariabilityConcept;
  * <ul>
  *   <li>{@link pcmmm.impl.PCMImpl#getTitle <em>Title</em>}</li>
  *   <li>{@link pcmmm.impl.PCMImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link pcmmm.impl.PCMImpl#getMatrix <em>Matrix</em>}</li>
+ *   <li>{@link pcmmm.impl.PCMImpl#getMatrices <em>Matrices</em>}</li>
  *   <li>{@link pcmmm.impl.PCMImpl#getName <em>Name</em>}</li>
  *   <li>{@link pcmmm.impl.PCMImpl#getConcepts <em>Concepts</em>}</li>
  *   <li>{@link pcmmm.impl.PCMImpl#getDomainCollection <em>Domain Collection</em>}</li>
@@ -75,14 +75,14 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 	protected EList<String> description;
 
 	/**
-	 * The cached value of the '{@link #getMatrix() <em>Matrix</em>}' containment reference list.
+	 * The cached value of the '{@link #getMatrices() <em>Matrices</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMatrix()
+	 * @see #getMatrices()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Matrix> matrix;
+	protected EList<Matrix> matrices;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -181,11 +181,11 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Matrix> getMatrix() {
-		if (matrix == null) {
-			matrix = new EObjectContainmentEList<Matrix>(Matrix.class, this, PcmmmPackage.PCM__MATRIX);
+	public EList<Matrix> getMatrices() {
+		if (matrices == null) {
+			matrices = new EObjectContainmentEList<Matrix>(Matrix.class, this, PcmmmPackage.PCM__MATRICES);
 		}
-		return matrix;
+		return matrices;
 	}
 
 	/**
@@ -272,8 +272,8 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case PcmmmPackage.PCM__MATRIX:
-				return ((InternalEList<?>)getMatrix()).basicRemove(otherEnd, msgs);
+			case PcmmmPackage.PCM__MATRICES:
+				return ((InternalEList<?>)getMatrices()).basicRemove(otherEnd, msgs);
 			case PcmmmPackage.PCM__CONCEPTS:
 				return ((InternalEList<?>)getConcepts()).basicRemove(otherEnd, msgs);
 			case PcmmmPackage.PCM__DOMAIN_COLLECTION:
@@ -294,8 +294,8 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 				return getTitle();
 			case PcmmmPackage.PCM__DESCRIPTION:
 				return getDescription();
-			case PcmmmPackage.PCM__MATRIX:
-				return getMatrix();
+			case PcmmmPackage.PCM__MATRICES:
+				return getMatrices();
 			case PcmmmPackage.PCM__NAME:
 				return getName();
 			case PcmmmPackage.PCM__CONCEPTS:
@@ -322,9 +322,9 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 				getDescription().clear();
 				getDescription().addAll((Collection<? extends String>)newValue);
 				return;
-			case PcmmmPackage.PCM__MATRIX:
-				getMatrix().clear();
-				getMatrix().addAll((Collection<? extends Matrix>)newValue);
+			case PcmmmPackage.PCM__MATRICES:
+				getMatrices().clear();
+				getMatrices().addAll((Collection<? extends Matrix>)newValue);
 				return;
 			case PcmmmPackage.PCM__NAME:
 				setName((String)newValue);
@@ -354,8 +354,8 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 			case PcmmmPackage.PCM__DESCRIPTION:
 				getDescription().clear();
 				return;
-			case PcmmmPackage.PCM__MATRIX:
-				getMatrix().clear();
+			case PcmmmPackage.PCM__MATRICES:
+				getMatrices().clear();
 				return;
 			case PcmmmPackage.PCM__NAME:
 				setName(NAME_EDEFAULT);
@@ -382,8 +382,8 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 				return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
 			case PcmmmPackage.PCM__DESCRIPTION:
 				return description != null && !description.isEmpty();
-			case PcmmmPackage.PCM__MATRIX:
-				return matrix != null && !matrix.isEmpty();
+			case PcmmmPackage.PCM__MATRICES:
+				return matrices != null && !matrices.isEmpty();
 			case PcmmmPackage.PCM__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case PcmmmPackage.PCM__CONCEPTS:
