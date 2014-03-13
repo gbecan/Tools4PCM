@@ -46,7 +46,7 @@ class PCM {
   def toPCMModel() : pcmmm.PCM = {
     val model = PcmmmFactory.eINSTANCE.createPCM()
     for (matrix <- matrices) {
-    	model.getMatrix().add(matrix.toPCMModel)
+    	model.getMatrices().add(matrix.toPCMModel)
     }
     model
   }
