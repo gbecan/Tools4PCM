@@ -44,6 +44,8 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
     val pcm = parseFromTitle(title)
     writeToHTML(title, pcm)
     dumpCellsInFile(title, pcm)
+    writeToPCMModel(title, pcm)
+    writeToCSV(title, pcm)
     pcm
   }
   
@@ -68,7 +70,26 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
     }
     writer.close()
   }
+  
+  def writeToPCMModel(title : String, pcm : PCM) {
+     val path = "output/models/" + title.replaceAll(" ", "_") + ".pcm"
+     
+    // Save model in file
+     val reg = Resource.Factory.Registry.INSTANCE;
+     val m = reg.getExtensionToFactoryMap();
+     m.put("pcm", new XMIResourceFactoryImpl());
+     val resSet = new ResourceSetImpl();
+     val resource = resSet.createResource(URI.createURI(path));
+     resource.getContents().add(pcm.toPCMModel);
+     resource.save(Collections.EMPTY_MAP);
+  }
 
+  def writeToCSV(title : String, pcm : PCM) {
+    val writer = new FileWriter("output/csv/" + title.replaceAll(" ", "_") + ".csv")
+    writer.write(pcm.toCSV)
+    writer.close()
+  }
+  
   "The PCM parser" should "parse the example of tables from Wikipedia" in {
     val pcm = parsePCMFromFile("resources/example.pcm")
     println(pcm)
@@ -167,14 +188,7 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
    it should "export to PCM Metamodel" in {
      val title = "Comparison of AMD processors".replaceAll(" ", "_")
      val pcm = parseFromTitle(title)
-
-     val reg = Resource.Factory.Registry.INSTANCE;
-     val m = reg.getExtensionToFactoryMap();
-     m.put("pcm", new XMIResourceFactoryImpl());
-     val resSet = new ResourceSetImpl();
-     val resource = resSet.createResource(URI.createURI("output/models/" + title + ".pcm"));
-     resource.getContents().add(pcm.toPCMModel);
-     resource.save(Collections.EMPTY_MAP);
+     writeToPCMModel(title, pcm)
    }
    
    "Scalaj-http" should "download the code of a wikipedia page" in {

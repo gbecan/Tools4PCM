@@ -98,4 +98,29 @@ class Matrix {
     (c1.row < c2.row) || 
     (c1.row == c2.row && c1.column < c2.column)
   }
+  
+  def toCSV() : String = {
+    val result = new StringBuilder
+    for (row <- 0 until getNumberOfRows) {
+      for (column <- 0 until getNumberOfColumns) {
+    	  val cell = cells get (row, column)
+    	  if (cell.isDefined) {
+    	    val content = cell.get.content
+    	    val formattedContent = '"' + content.replaceAll("\"", "\"\"") + '"'
+    		result ++= formattedContent 
+    	  } else {
+    		result ++= "\"/!\\ This cell is not defined /!\\\""
+    	  }
+    	  if (column < getNumberOfColumns - 1) {
+    	    result += ','
+    	  }
+      }
+      
+      if (row < getNumberOfRows - 1) {
+    	  result += '\n'  
+      }
+      
+    }
+    result.toString
+  }
 }

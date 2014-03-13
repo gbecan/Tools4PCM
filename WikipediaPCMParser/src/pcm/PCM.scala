@@ -50,5 +50,10 @@ class PCM {
     }
     model
   }
+  
+  def toCSV() : String = {
+    val matricesInCSV = matrices.map(_.toCSV) 
+    matricesInCSV.mkString("", "\n", "")
+  }
 
 }
