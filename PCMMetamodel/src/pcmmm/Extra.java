@@ -13,5 +13,5 @@ package pcmmm;
  * @model
  * @generated
  */
-public interface Extra extends AbsValuedCell {
+public interface Extra extends Cell {
 } // Extra

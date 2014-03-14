@@ -18,12 +18,17 @@ import scala.concurrent.duration._
 import scala.io.Codec
 import java.nio.charset.Charset
 import java.util.concurrent.Executors
+import org.eclipse.emf.ecore.resource.Resource
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl
+import org.eclipse.emf.common.util.URI
+import java.util.Collections
+import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
 
 class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
   
   val executionContext = ExecutionContext.fromExecutor(Executors.newFixedThreadPool(20))
   
-  def parsePCMFromFile(file : String) : List[PCM]= {
+  def parsePCMFromFile(file : String) : PCM= {
     val reader= Source.fromFile(file)
     val code = reader.mkString
     reader.close
@@ -31,65 +36,80 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
     parser.parse(code)
   }
   
-  def parseFromTitle(title : String) : List[PCM] = {
+  def parseFromTitle(title : String) : PCM = {
     (new WikipediaPCMParser).parseOnlineArticle(title)
   }
   
-  def testArticle(title : String) : List[PCM] = {
-    val pcms = parseFromTitle(title)
-    writeToHTML(title, pcms)
-    dumpCellsInFile(title, pcms)
-    pcms
+  def testArticle(title : String) : PCM = {
+    val pcm = parseFromTitle(title)
+    writeToHTML(title, pcm)
+    dumpCellsInFile(title, pcm)
+    writeToPCMModel(title, pcm)
+    writeToCSV(title, pcm)
+    pcm
   }
   
-  def writeToHTML(title : String, pcms : List[PCM]) {
+  def writeToHTML(title : String, pcm : PCM) {
     val writer = new FileWriter("output/html/" + title.replaceAll(" ", "_") + ".html")
-    writer.write((new PrettyPrinter(80,2)).format(
-    <html>
-    <head>
-    		<meta charset="utf-8"/>
-    </head>
-    <body>
-    	{ for(pcm <- pcms) yield pcm.toHTML }
-    </body>
-    </html>
-    ))
+    writer.write((new PrettyPrinter(80,2)).format(pcm.toHTML))
     writer.close()
   }
   
-  def dumpCellsInFile(title : String, pcms : List[PCM]) {
+  def dumpCellsInFile(title : String, pcm : PCM) {
     val writer = new FileWriter("output/dump/" + title.replaceAll(" ", "_") + ".txt")
-    for(pcm <- pcms; 
-    row <- 0 until pcm.getNumberOfRows; 
-    column <- 0 until pcm.getNumberOfColumns) {
-      val cell = pcm.getCell(row, column)
+    for(matrix <- pcm.getMatrices; 
+    row <- 0 until matrix.getNumberOfRows; 
+    column <- 0 until matrix.getNumberOfColumns) {
+      val cell = matrix.getCell(row, column)
       if (cell.isDefined) {
-        writer.write(cell.get.content + "\n")
+        val content = cell.get.content
+        val words = for (word <- content.split("\\s") if !word.isEmpty()) yield word
+        val formattedContent = words.mkString("", " ", "").toLowerCase()
+        writer.write(formattedContent + "\n")
       }
     }
     writer.close()
   }
+  
+  def writeToPCMModel(title : String, pcm : PCM) {
+     val path = "output/models/" + title.replaceAll(" ", "_") + ".pcm"
+     
+    // Save model in file
+     val reg = Resource.Factory.Registry.INSTANCE;
+     val m = reg.getExtensionToFactoryMap();
+     m.put("pcm", new XMIResourceFactoryImpl());
+     val resSet = new ResourceSetImpl();
+     val resource = resSet.createResource(URI.createURI(path));
+     resource.getContents().add(pcm.toPCMModel);
+     resource.save(Collections.EMPTY_MAP);
+  }
 
+  def writeToCSV(title : String, pcm : PCM) {
+    val writer = new FileWriter("output/csv/" + title.replaceAll(" ", "_") + ".csv")
+    writer.write(pcm.toCSV)
+    writer.close()
+  }
+  
   "The PCM parser" should "parse the example of tables from Wikipedia" in {
-    val pcms = parsePCMFromFile("resources/example.pcm")
-    pcms.foreach(println)
-    pcms.size should be (1)
+    val pcm = parsePCMFromFile("resources/example.pcm")
+    println(pcm)
+    pcm.getMatrices.size should be (1)
    }
   
   it should "parse Comparison of AMD processors" in {
-    val pcms = testArticle("Comparison of AMD processors")
-    pcms.size should be (1)
+    val pcm = testArticle("Comparison of AMD processors")
+    pcm.getMatrices.size should be (1)
     
   }
   
    it should "parse Comparison of European Traffic Laws" in {
-    val pcms = testArticle("Comparison of European traffic laws")
-    pcms.size should be (1)
+    val pcm = testArticle("Comparison of European traffic laws")
+    pcm.getMatrices.size should be (1)
   }
    
    it should "parse List of free and open-source Android applications" in {
-    val pcms = testArticle("List_of_free_and_open-source_Android_applications")
-    pcms.size should be (6)
+    val pcm = testArticle("List_of_free_and_open-source_Android_applications")
+    pcm.getMatrices.size should be (6)
   }
    
    it should "parse this file correctly" in {
@@ -101,9 +121,9 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
      val fromFile = parsePCMFromFile("resources/amd.pcm")
      val fromURL = parseFromTitle("Comparison_of_AMD_processors")
      
-     fromFile.size should be (1)
-     fromURL.size should be (1)
-     fromFile(0).toString should be (fromURL(0).toString)
+     fromFile.getMatrices.size should be (1)
+     fromURL.getMatrices.size should be (1)
+     fromFile.getMatrices(0).toString should be (fromURL.getMatrices(0).toString)
      
    }
    
@@ -148,8 +168,7 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
 	    	 var retry = false
 	    	 do {
 	    		 try {
-	    			 val pcms = testArticle(article)
-	    			 result ++= pcms.size.toString + "\n"
+	    			 val pcm = testArticle(article)
 	    		 } catch {
 //	    		 case e : UnknownHostException => retry = true
 	    		 case e : Throwable => result ++= e.getMessage()
@@ -165,6 +184,12 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
        }
    }
    
+   
+   it should "export to PCM Metamodel" in {
+     val title = "Comparison of AMD processors".replaceAll(" ", "_")
+     val pcm = parseFromTitle(title)
+     writeToPCMModel(title, pcm)
+   }
    
    "Scalaj-http" should "download the code of a wikipedia page" in {
 	   val xmlPage = Http("http://en.wikipedia.org/w/index.php?title=Comparison_of_AMD_processors&action=edit")
@@ -186,8 +211,5 @@ class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
      
      val code = (xmlPage \\ "textarea").filter(_.attribute("id") exists (_.text == "output")).text
      code should be ("style=\"background: #90ff90; color: black; vertical-align: middle; text-align: center; \" class=\"table-yes\"|Yes")
-
-     
-     
    }
 }

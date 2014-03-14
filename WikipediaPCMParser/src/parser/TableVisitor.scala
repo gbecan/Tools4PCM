@@ -22,7 +22,6 @@ import de.fau.cs.osr.ptk.common.ast.AstNode
 import org.sweble.wikitext.`lazy`.utils.XmlAttributeGarbage
 import org.sweble.wikitext.`lazy`.parser.MagicWord
 import pcm.Cell
-import pcm.PCM
 import org.sweble.wikitext.`lazy`.parser.Ticks
 import org.sweble.wikitext.`lazy`.parser.SemiPre
 import org.sweble.wikitext.`lazy`.parser.ExternalLink
@@ -34,13 +33,15 @@ import org.sweble.wikitext.`lazy`.parser.Itemization
 import scala.collection.mutable.ListBuffer
 import scala.collection.mutable.Stack
 import org.sweble.wikitext.`lazy`.parser.DefinitionDefinition
+import pcm.Matrix
+import pcm.Cell
 
 class TableVisitor extends AstVisitor {
 
-	val pcms : ListBuffer[PCM] = ListBuffer()
+	val matrices : ListBuffer[Matrix] = ListBuffer()
   
-	private val pcmStack : Stack[PCM] = new Stack()
-	private def currentPCM = pcmStack.top
+	private val matrixStack : Stack[Matrix] = new Stack()
+	private def currentMatrix = matrixStack.top
 	
 	private val rowStack : Stack[Int] = new Stack()
 	private val columnStack : Stack[Int] = new Stack()
@@ -51,7 +52,6 @@ class TableVisitor extends AstVisitor {
 	private var rowspan : Int = 0
 	private var colspan : Int = 0
 	
-	private var currentCell : Cell = _
 	private var cellContent : StringBuilder = new StringBuilder
 		
 	private var inXMLElement : Boolean = false
@@ -59,9 +59,9 @@ class TableVisitor extends AstVisitor {
 	
 	
 	def visit(e : Table) = {
-	  val pcm = new PCM
-	  pcmStack.push(pcm)
-	  pcms += pcm
+	  val matrix = new Matrix
+	  matrixStack.push(matrix)
+	  matrices += matrix
 	  
 	  // Save old values of row and column
 	  rowStack.push(row)
@@ -72,10 +72,9 @@ class TableVisitor extends AstVisitor {
 	  // Iterate over each row
 	  iterate(e)
 	  
-	  pcmStack.pop
+	  matrixStack.pop
 	  
 	  // Clear previous cell
-	  currentCell = new Cell()  
 	  cellContent = new StringBuilder()
 	  
 	  // Restore old values of row and column
@@ -115,7 +114,7 @@ class TableVisitor extends AstVisitor {
 	}
 		
 	def visit(e : TableRow) = {
-	  if (row == 0 && !currentPCM.cells.isEmpty) {
+	  if (row == 0 && !currentMatrix.cells.isEmpty) {
 	    row += 1
 	    column = 0
 	  }
@@ -127,16 +126,14 @@ class TableVisitor extends AstVisitor {
 	}
 
 	def visit(e : TableHeader) = {
-		handleCell(e)
-		currentCell.isHeader = true
+		handleCell(e, true)
 	}
 
 	def visit(e : TableCell) = {
-		handleCell(e)
-		currentCell.isHeader = false
+		handleCell(e, false)
 	}
 	
-	def handleCell(e : AstNode) {
+	def handleCell(e : AstNode, isHeader : Boolean) {
 //		println(e)
 
 		rowspan = 1
@@ -144,23 +141,23 @@ class TableVisitor extends AstVisitor {
 
 		if (!inXMLElement) {
 			// Skip cells defined by rowspan
-			while (currentPCM.getCell(row, column).isDefined) {
+			while (currentMatrix.getCell(row, column).isDefined) {
 				column += 1
 			}
 		}
-		
-		currentCell = new Cell()  
+
 		cellContent = new StringBuilder()
 		iterate(e)
 
 		if(!inXMLElement) {
-			currentCell.content = cellContent.toString
+		  val cell = new Cell(cellContent.toString, isHeader, row, rowspan, column, colspan)
 			
-			// Handle rowspan and colspan
-			for (rowShift <- 0 until rowspan; colShift <- 0 until colspan) {
-					currentPCM.setCell(currentCell, row + rowShift, column + colShift)
-			}
-			column += colspan
+		  // Handle rowspan and colspan
+		  for (rowShift <- 0 until rowspan; colShift <- 0 until colspan) {
+			  currentMatrix.setCell(cell, row + rowShift, column + colShift)
+		  }
+		  
+		  column += colspan
 		} 
 	} 
 

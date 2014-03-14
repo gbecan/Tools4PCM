@@ -7,7 +7,6 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
 
-import pcmmm.AbsValuedCell;
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
@@ -30,7 +29,6 @@ import pcmmm.PCM;
 import pcmmm.Partial;
 import pcmmm.PcmmmPackage;
 import pcmmm.Product;
-import pcmmm.ProductComparisonPage;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
 import pcmmm.Type;
@@ -161,12 +159,6 @@ public class PcmmmSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case PcmmmPackage.PRODUCT_COMPARISON_PAGE: {
-				ProductComparisonPage productComparisonPage = (ProductComparisonPage)theEObject;
-				T result = caseProductComparisonPage(productComparisonPage);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case PcmmmPackage.VARIABILITY_CONCEPT: {
 				VariabilityConcept variabilityConcept = (VariabilityConcept)theEObject;
 				T result = caseVariabilityConcept(variabilityConcept);
@@ -183,7 +175,6 @@ public class PcmmmSwitch<T> extends Switch<T> {
 			case PcmmmPackage.EXTRA: {
 				Extra extra = (Extra)theEObject;
 				T result = caseExtra(extra);
-				if (result == null) result = caseAbsValuedCell(extra);
 				if (result == null) result = caseCell(extra);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -246,7 +237,6 @@ public class PcmmmSwitch<T> extends Switch<T> {
 			case PcmmmPackage.VALUED_CELL: {
 				ValuedCell valuedCell = (ValuedCell)theEObject;
 				T result = caseValuedCell(valuedCell);
-				if (result == null) result = caseAbsValuedCell(valuedCell);
 				if (result == null) result = caseCell(valuedCell);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -272,13 +262,6 @@ public class PcmmmSwitch<T> extends Switch<T> {
 				T result = caseXOr(xOr);
 				if (result == null) result = caseMultiple(xOr);
 				if (result == null) result = caseConstraint(xOr);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case PcmmmPackage.ABS_VALUED_CELL: {
-				AbsValuedCell absValuedCell = (AbsValuedCell)theEObject;
-				T result = caseAbsValuedCell(absValuedCell);
-				if (result == null) result = caseCell(absValuedCell);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -455,21 +438,6 @@ public class PcmmmSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseFeature(Feature object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Product Comparison Page</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Product Comparison Page</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseProductComparisonPage(ProductComparisonPage object) {
 		return null;
 	}
 
@@ -695,21 +663,6 @@ public class PcmmmSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseXOr(XOr object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Abs Valued Cell</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Abs Valued Cell</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAbsValuedCell(AbsValuedCell object) {
 		return null;
 	}
 

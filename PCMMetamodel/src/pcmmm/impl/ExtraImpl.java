@@ -16,7 +16,7 @@ import pcmmm.PcmmmPackage;
  *
  * @generated
  */
-public class ExtraImpl extends AbsValuedCellImpl implements Extra {
+public class ExtraImpl extends CellImpl implements Extra {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

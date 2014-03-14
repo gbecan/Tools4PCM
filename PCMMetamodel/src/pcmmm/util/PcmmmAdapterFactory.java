@@ -9,7 +9,6 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 
 import org.eclipse.emf.ecore.EObject;
 
-import pcmmm.AbsValuedCell;
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
@@ -32,7 +31,6 @@ import pcmmm.PCM;
 import pcmmm.Partial;
 import pcmmm.PcmmmPackage;
 import pcmmm.Product;
-import pcmmm.ProductComparisonPage;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
 import pcmmm.Type;
@@ -135,10 +133,6 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 				return createFeatureAdapter();
 			}
 			@Override
-			public Adapter caseProductComparisonPage(ProductComparisonPage object) {
-				return createProductComparisonPageAdapter();
-			}
-			@Override
 			public Adapter caseVariabilityConcept(VariabilityConcept object) {
 				return createVariabilityConceptAdapter();
 			}
@@ -197,10 +191,6 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseXOr(XOr object) {
 				return createXOrAdapter();
-			}
-			@Override
-			public Adapter caseAbsValuedCell(AbsValuedCell object) {
-				return createAbsValuedCellAdapter();
 			}
 			@Override
 			public Adapter caseDomain(Domain object) {
@@ -369,20 +359,6 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createFeatureAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link pcmmm.ProductComparisonPage <em>Product Comparison Page</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see pcmmm.ProductComparisonPage
-	 * @generated
-	 */
-	public Adapter createProductComparisonPageAdapter() {
 		return null;
 	}
 
@@ -593,20 +569,6 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createXOrAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link pcmmm.AbsValuedCell <em>Abs Valued Cell</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see pcmmm.AbsValuedCell
-	 * @generated
-	 */
-	public Adapter createAbsValuedCellAdapter() {
 		return null;
 	}
 

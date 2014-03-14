@@ -29,14 +29,12 @@ import org.sweble.wikitext.`lazy`.parser.Url
 import org.sweble.wikitext.`lazy`.utils.XmlCharRef
 import org.sweble.wikitext.`lazy`.parser.Enumeration
 import org.sweble.wikitext.`lazy`.parser.HorizontalRule
+import pcm.Matrix
 
 class PageVisitor extends AstVisitor{
   
-  var pcms : ListBuffer[PCM] = ListBuffer()
-
-  def getPCMs() : List[PCM] = {
-    pcms.toList
-  }
+  var matrices : ListBuffer[Matrix] = ListBuffer()
+  val pcm : PCM = new PCM
   
   def visit(e : LazyParsedPage) {
     iterate(e)
@@ -49,7 +47,9 @@ class PageVisitor extends AstVisitor{
   def visit(e : Table) {
 	  val tableVisitor = new TableVisitor
 	  tableVisitor.go(e)
-	  pcms ++= tableVisitor.pcms
+	  for (matrix <- tableVisitor.matrices) {
+	    pcm.addMatrix(matrix)
+	  }
   }
   
   def visit(e : ImTagOpen) {
