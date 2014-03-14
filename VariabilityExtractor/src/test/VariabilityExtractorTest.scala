@@ -71,6 +71,13 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	  val pcm = loadPCMModel(file)
 	  variabilityExtractor.extractVariability(pcm)
 	  savePCMModel(pcm, file.getName())
+	  
+	  for (matrix <- pcm.getMatrices()) {
+		  val cells = matrix.getCells()
+		  val nonExtraCells = cells.count(cell => !cell.isInstanceOf[Extra])
+		  
+		  println((nonExtraCells * 100) / cells.size() + "% of non extra cells")
+	  }
   }
   
   

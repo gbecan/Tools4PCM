@@ -3,7 +3,10 @@ package extractor
 import pcmmm.PCM
 import scala.collection.JavaConversions._
 import patterns.PatternInterpreter
-import patterns.YesNoInterpreter
+import patterns.BooleanInterpreter
+import patterns.SimpleInterpreter
+import patterns.UnknownInterpreter
+import patterns.NumberInterpreter
 
 class VariabilityExtractor {
 
@@ -12,7 +15,10 @@ class VariabilityExtractor {
   private val cellContentInterpreter = new CellContentInterpreter
   
   private val patternInterpreters : List[PatternInterpreter] = List(
-			  new YesNoInterpreter
+			  new BooleanInterpreter,
+			  new UnknownInterpreter,
+			  new NumberInterpreter,
+			  new SimpleInterpreter
 	  )
   
   def extractVariability(pcm : PCM) {
