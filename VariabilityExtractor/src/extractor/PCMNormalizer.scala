@@ -21,7 +21,8 @@ class PCMNormalizer {
       val row = cell.getRow()
       val column = cell.getColumn()
 
-      // TODO : handle row/colspan      
+      // TODO : handle row/colspan 
+      // TODO : handle product and feature clusters
       if (row < numberOfRows && column < numberOfColumns) { // Top left header
         val newCell = PcmmmFactory.eINSTANCE.createExtra()
         convertCell(it, cell, newCell)
