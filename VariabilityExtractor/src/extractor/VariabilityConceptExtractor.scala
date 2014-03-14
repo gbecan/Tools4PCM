@@ -15,7 +15,7 @@ class VariabilityConceptExtractor {
    * @param transposed : true if the rows and columns represent respectively features and products
    */
   def extractConceptsFromHeaders(pcm : PCM, numberOfRows : Int = 1, numberOfColumns : Int = 1, transposed : Boolean = false) {
-    // FIXME : should we consider that PCM headers start from first row and column ???
+
 	  for (
 	      matrix <- pcm.getMatrices();
 	      cell <- matrix.getCells().filter(_ .isInstanceOf[Header])
@@ -41,5 +41,8 @@ class VariabilityConceptExtractor {
 	  }
   }
   
+  
+  // TODO : extract features and products from each Simple contained in a ValuedCell 
+  // + add these variability concepts to the cell
   
 }

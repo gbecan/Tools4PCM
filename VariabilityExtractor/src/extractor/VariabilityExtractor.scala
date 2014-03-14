@@ -5,18 +5,21 @@ import scala.collection.JavaConversions._
 
 class VariabilityExtractor {
 
+  private val pcmNormalizer = new PCMNormalizer
+  private val variabilityConceptExtractor = new VariabilityConceptExtractor
+  private val cellContentInterpreter = new CellContentInterpreter
+  
   def extractVariability(pcm : PCM) {
 	  // Normalize PCM
-	  val pcmNormalizer = new PCMNormalizer
 	  for  (matrix <- pcm.getMatrices()) {
-		  pcmNormalizer.setHeaders(matrix) // FIXME : Requires configuration
+		  pcmNormalizer.setHeaders(matrix) // FIXME : requires configuration
 	  }
 
 	  // Extract features and products from headers
-	  val variabilityConceptExtractor = new VariabilityConceptExtractor
 	  variabilityConceptExtractor.extractConceptsFromHeaders(pcm)
 	  
 	  // Separate contents in cells (detect Simple, Multi or Partial patterns)
+	  cellContentInterpreter.extractVariabilityPatterns(pcm) // FIXME : requires configuration
 	  
 	  // Extract features and products from cells
 	  
