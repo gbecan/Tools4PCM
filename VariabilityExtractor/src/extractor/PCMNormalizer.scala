@@ -11,6 +11,9 @@ import java.util.ListIterator
 
 class PCMNormalizer {
   
+  // TODO : remove matrices without variability (user input)
+  
+  
   def setHeaders(matrix : Matrix, numberOfRows : Int = 1, numberOfColumns : Int = 1) {
     val it = matrix.getCells().listIterator()
     while(it.hasNext()) {
