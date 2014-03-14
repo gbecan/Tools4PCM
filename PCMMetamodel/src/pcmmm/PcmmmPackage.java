@@ -900,13 +900,22 @@ public interface PcmmmPackage extends EPackage {
 	int BOOLEAN__NAME = CONSTRAINT__NAME;
 
 	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOLEAN__VALUE = CONSTRAINT_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Boolean</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BOOLEAN_FEATURE_COUNT = CONSTRAINT_FEATURE_COUNT + 0;
+	int BOOLEAN_FEATURE_COUNT = CONSTRAINT_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Eval</em>' operation.
@@ -2227,6 +2236,17 @@ public interface PcmmmPackage extends EPackage {
 	EClass getBoolean();
 
 	/**
+	 * Returns the meta object for the attribute '{@link pcmmm.Boolean#isValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see pcmmm.Boolean#isValue()
+	 * @see #getBoolean()
+	 * @generated
+	 */
+	EAttribute getBoolean_Value();
+
+	/**
 	 * Returns the meta object for class '{@link pcmmm.Partial <em>Partial</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2929,6 +2949,14 @@ public interface PcmmmPackage extends EPackage {
 		 * @generated
 		 */
 		EClass BOOLEAN = eINSTANCE.getBoolean();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BOOLEAN__VALUE = eINSTANCE.getBoolean_Value();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.PartialImpl <em>Partial</em>}' class.
