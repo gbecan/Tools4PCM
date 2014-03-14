@@ -65,6 +65,14 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	  }
   }
   
+  it should "run on nikon DSLR PCM" in {
+      val variabilityExtractor = new VariabilityExtractor
+      val file = new File("../WikipediaPCMParser/output/models/Comparison_of_Nikon_DSLR_cameras.pcm")
+	  val pcm = loadPCMModel(file)
+	  variabilityExtractor.extractVariability(pcm)
+	  savePCMModel(pcm, file.getName())
+  }
+  
   
    "PCMNormalizer" should "set headers correctly" in {
 	  val pcmNormalizer = new PCMNormalizer

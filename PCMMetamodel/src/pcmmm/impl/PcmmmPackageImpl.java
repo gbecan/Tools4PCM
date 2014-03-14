@@ -657,6 +657,15 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getBoolean_Value() {
+		return (EAttribute)booleanEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getPartial() {
 		return partialEClass;
 	}
@@ -1036,6 +1045,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		createEOperation(constraintEClass, CONSTRAINT___EVAL);
 
 		booleanEClass = createEClass(BOOLEAN);
+		createEAttribute(booleanEClass, BOOLEAN__VALUE);
 
 		partialEClass = createEClass(PARTIAL);
 		createEReference(partialEClass, PARTIAL__CONDITION);
@@ -1189,6 +1199,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		initEOperation(getConstraint__Eval(), null, "eval", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(booleanEClass, pcmmm.Boolean.class, "Boolean", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getBoolean_Value(), ecorePackage.getEBoolean(), "value", null, 0, 1, pcmmm.Boolean.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(partialEClass, Partial.class, "Partial", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPartial_Condition(), this.getConstraint(), null, "condition", null, 1, 1, Partial.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
