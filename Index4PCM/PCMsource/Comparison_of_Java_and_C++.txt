@@ -1,0 +1,96 @@
+c++
+java
+strongly influenced by c syntax, with object-oriented features added.
+strongly influenced by c++/c syntax.
+compatible with c source code, except for a few corner case.
+provides the java native interface and recently java native access as a way to directly call c/c++ code.
+write once, compile anywhere (woca).
+write once, run anywhere / everywhere (wora / wore).
+allows procedural programming, functional programming, object-oriented programming, generic programming, and template metaprogramming. favors a mix of paradigms.
+strongly encourages exclusive use of the object-oriented programming paradigm. includes support for generic programming and creation of scripting languages.
+runs as native executable machine code for the target instruction set(s).
+runs in a virtual machine.
+provides object types and type names. allows reflection through rtti.
+is reflective, allowing metaprogramming and dynamic code generation at runtime.
+has multiple binary compatibility standards (commonly microsoft (for msvc compiler) and itanium/gnu (for virtually all other compilers).
+has a single, os- and compiler-independent binary compatibility standard, allowing runtime check of correctness of libraries.
+optional automated bounds checking (e.g., the method in and containers).
+all operations are required to be bound-checked by all compliant distributions of java. hotspot can remove bounds checking.
+supports native unsigned arithmetic.
+no native support for unsigned arithmetic.
+standardized minimum limits for all numerical types, but the actual sizes are implementation-defined. standardized types are available through the standard library .
+standardized limits and sizes of all primitive types on all platforms.
+pointers, references, and pass-by-value are supported for all types (primitive or user-defined).
+all types (primitive types and reference types) are always passed by value.
+memory management can be done explicitly through , by automatic scope-based resource management (raii), or by smart pointers. supports deterministic destruction of objects. garbage collection abi standardized in c++11, though compilers are not required to implement garbage collection.
+automatic garbage collection. supports a non-deterministic finalize() method whose use is not recommended.
+resource management can be done manually or by automatic scope-based resource management (raii).
+resource management must be done manually, or automatically via finalizers, though this is generally discouraged. has try-with-resources for automatic scope-based resource management (version 7 onwards).
+supports classes, structs (pod-types), and unions, and can allocate them on the heap or the stack.
+classes are allocated on the heap. java se 6 optimizes with escape analysis to allocate some objects on the stack.
+allows explicitly overriding types as well as some implicit narrowing conversions (for compatibility with c).
+rigid type safety except for widening conversions.
+the c++ standard library was designed to have a limited scope and functionality but includes language support, diagnostics, general utilities, strings, locales, containers, algorithms, iterators, numerics, input/output, random number generators, regular expression parsing, threading facilities, type traits (for static type introspection) and standard c library. the boost library offers more functionality including network i/o.a rich amount of third-party libraries exist for gui and other functionalities like: ace, crypto++, various xmpp instant messaging (im) libraries, openldap, qt, gtkmm.
+the standard library has grown with each release. by version 1.6, the library included support for locales, logging, containers and iterators, algorithms, gui programming (but not using the system gui), graphics, multi-threading, networking, platform security, introspection, dynamic class loading, blocking and non-blocking i/o. it provided interfaces or support classes for xml, xslt, midi, database connectivity, naming services (e.g. ldap), cryptography, security services (e.g. kerberos), print services, and web services. swt offers an abstraction for platform-specific guis.
+operator overloading for most operators. preserving meaning (semantics) is highly recommended.
+operators are not overridable. the language overrides + and += for the string class.
+single and multiple inheritance of classes, including virtual inheritance.
+single inheritance of classes. supports multiple inheritance via the interfaces construct, which is equivalent to a c++ class composed of abstract methods.
+compile-time templates. allows for turing complete meta-programming.
+generics are used to achieve basic type-parametrization, but they do not translate from source code to byte code due to the use of type erasure by the compiler.
+function pointers, function objects, lambdas (in c++11), and interfaces.
+references to functions achieved via the reflection api. oop idioms using interfaces, such as adapter, observer, and listener are generally preferred over direct references to methods.
+no standard inline documentation mechanism. third-party software (e.g. doxygen) exists.
+extensive javadoc documentation standard on all system classes and methods.
+keyword for defining immutable variables and member functions that do not change the object. const-ness is propagated as a means to enforce, at compile-time, correctness of the code with respect to mutability of objects (see const-correctness).
+provides a version of , equivalent to pointers for objects and for primitive types. immutability of object members achieved through read-only interfaces and object encapsulation.
+supports the statement.
+supports labels with loops and statement blocks.
+source code can be written to be platform-independent (can be compiled for windows, bsd, linux, mac os x, solaris, etc., without modification) and written to take advantage of platform-specific features. typically compiled into native machine code, must be re-compiled for each target platform.
+compiled into byte code for the jvm. byte code is dependent on the java platform, but is typically independent of operating system specific features.
+c++
+java
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c++
+java
+
+
+
+
+
+
+
+
+
+
+c++
+java
+c++ is compiled directly to machine code which is then executed directly by the central processing unit.
+java is compiled to byte-code which the java virtual machine (jvm) then interprets at runtime. actual java implementations do just-in-time compilation to native machine code.
+java/c++ statement
+c++ generated code (x86)
+java generated byte code
+vector[i]++;
+mov edx,[ebp+4h] mov eax,[ebp+1ch] inc dword ptr [edx+eax*4]
+aload_1 iload_2 dup2 iaload iconst_1 iadd iastore

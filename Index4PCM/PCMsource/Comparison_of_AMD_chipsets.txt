@@ -1,0 +1,956 @@
+model
+code name
+released
+cpu support
+fab (nm)
+fsb/ht (mhz)
+southbridge
+features / notes
+amd-640 chipset
+amd-640
+
+k6, cyrix 6x86
+
+66 (fsb)
+amd-645
+amd licensed via technologies' apollo vp2/97
+amd-750 chipset
+amd-751
+1999
+athlon, duron (slot&nbsp;a, socket&nbsp;a), alpha&nbsp;21264
+
+100 (fsb)
+amd-756, via-vt82c686a
+agp 2×, sdram irongate chipset family; early steppings had issues with agp 2×; drivers often limited support to agp 1×; later fixed with "super bypass" memory access adjustment.
+amd-760 chipset
+amd-761
+nov 2000
+athlon, athlon xp, duron (socket&nbsp;a), alpha&nbsp;21264
+
+133 (fsb)
+amd-766, via-vt82c686b
+agp 4×, ddr sdram
+amd-760mp chipset
+amd-762
+may 2001
+athlon&nbsp;mp
+
+133 (fsb)
+amd-766
+agp 4×
+amd-760mpx chipset
+amd-762
+may 2001
+athlon&nbsp;mp
+
+133 (fsb)
+amd-768
+agp 4×, hardware rng most initial boards shipped without usb headers due to a fault with the integrated usb controller. manufacturers included pci usb cards to cover this shortcoming. a later refresh of the chipset had the usb problem remedied.
+amd-8000 series chipset
+amd-8111
+apr 2004
+opteron
+
+800 (ht 1.x)
+amd-8131 amd-8132
+hardware rng
+model
+codename
+released
+cpu support
+fab (nm)
+ht (mhz)
+igp
+crossfire
+southbridge
+features / notes
+amd 480x chipset (originally crossfire xpress 1600)
+rd480
+oct 2006
+athlon&nbsp;64, sempron
+110
+1000 (ht 2.0)
+no
+x8 + x8
+sb600, uli-m1575
+
+amd 570x/550x chipset (originally crossfire xpress 3100)
+rd570
+jun 2007
+phenom, athlon 64, sempron
+
+1000 ht 2.0)
+no
+x16 + x8
+sb600
+
+amd 580x chipset (originally crossfire xpress 3200)
+rd580
+oct 2006
+phenom, athlon 64, sempron
+
+1000 ht 2.0)
+no
+x16 + x16
+sb600
+
+
+
+
+
+
+
+
+
+
+
+amd 690v chipset
+rs690c
+feb 2007
+athlon 64, sempron
+80
+1000 (ht 2.0)
+radeon x1200 (350mhz)
+no
+sb600
+directx 9.0, avivo, hdmi/hdcp, no lvds
+amd 690g chipset
+rs690
+feb 2007
+phenom, athlon 64, sempron
+80
+1000 (ht 2.0)
+radeon x1250 (400mhz)
+no
+sb600
+directx 9.0, avivo, hdmi/hdcp
+amd m690v chipset
+rs690mc
+feb 2007
+turion&nbsp;64&nbsp;x2, athlon 64 x2 mobile
+80
+800 (ht 2.0)
+radeon x1200 (350 mhz)
+no
+sb600
+directx 9.0, avivo, dvi, hdmi/hdcp, no lvds, powerplay 7.0
+amd m690 chipset
+rs690m
+feb 2007
+turion&nbsp;64&nbsp;x2, athlon 64 x2 mobile
+80
+800 (ht 2.0)
+radeon x1250 (350 mhz)
+no
+sb600
+directx 9.0, avivo, dvi/hdcp, no hdmi, powerplay 7.0
+amd m690e chipset
+rs690t
+feb 2007
+athlon neo, mobile sempron
+80
+800 (ht 2.0)
+radeon x1250 (350mhz)
+no
+sb600
+directx 9.0, avivo, 2× hdmi/hdcp, powerplay 7.0
+amd m690t chipset
+rs690t
+feb 2007
+turion&nbsp;64&nbsp;x2, athlon 64 x2 mobile
+80
+800 (ht 2.0)
+radeon x1270 (400mhz)
+no
+sb600
+directx 9.0, avivo, hdmi/hdcp, powerplay 7.0
+
+
+
+
+
+
+
+
+
+
+amd 740 chipset
+rx740
+2008
+athlon 64, phenom, sempron
+55
+1000 (ht 2.0)
+no
+no
+sb600, sb700, sb750
+single pcie 1.1 x16
+amd 740g chipset
+rs740
+2008
+athlon 64, phenom, sempron
+55
+1000 (ht 2.0)
+radeon 2100
+no
+sb600, sb700, sb750
+directx 9.0, avivo, hdmi/hdcp, or single pcie 1.1 x16
+amd 760g chipset
+rs780l
+2009
+athlon 64, phenom, sempron
+55
+2600 (ht 3.0)
+radeon 3000
+hybrid
+sb710
+directx 10, avivo hd, hdmi/hdcp, or single pcie 2.0 x16
+amd 770 chipset
+rx780
+2008
+athlon 64, phenom, sempron
+65
+2600 (ht 3.0)
+no
+no
+sb600, sb700, sb710, sb750
+single pcie 2.0 x16
+amd 780v chipset
+rs780c
+2008
+athlon 64, phenom, sempron
+55
+2600 (ht 3.0)
+radeon 3100
+no
+sb700, sb710, sb750
+directx 10, avivo hd, hdmi/hdcp, displayport/dpcp, or single pcie 2.0 x16
+amd 780g chipset
+rs780i
+2008
+athlon 64, phenom, sempron
+55
+2600 (ht 3.0)
+radeon hd 3200
+hybrid
+sb700, sb710, sb750
+directx 10, uvd+, hdmi/hdcp, displayport/dpcp, side-port memory, or single pcie 2.0 x16
+amd m780v chipset
+rs780mc
+2008
+mobile turion, mobile athlon, athlon neo
+55
+2600 (ht 3.0)
+radeon 3100
+powerxpress axiom/mxm module(s)
+sb600, sb700, sb710
+directx 10, uvd+, hdmi/hdcp, displayport, dvi, vga, or single pcie 2.0 x16puma platform, powerxpress
+amd m780g chipset
+rs780m
+2008
+mobile turion, mobile athlon, athlon neo
+55
+2600 (ht 3.0)
+radeon hd 3200
+powerxpress axiom/mxm module(s)
+sb600, sb700, sb710
+directx 10, uvd+, hdmi/hdcp, displayport, dvi, vga, or single pcie 2.0 x16puma platform, powerxpress
+amd 785g chipset
+rs880
+2009
+athlon 64, phenom, sempron
+55
+2600 (ht 3.0)
+radeon hd 4200
+hybrid, x16 + x4
+sb710, sb750, sb810, sb850
+directx 10.1, uvd2, side-port memory, hdmi/hdcp, displayport/dpcp, or two pcie 2.0 x16 tdp: 11 w (500 mhz), 3 w in powerplay
+amd 790gx chipset
+rs780d
+2008
+athlon 64, phenom, sempron
+55
+2600 (ht 3.0)
+radeon hd 3300
+hybrid, x8 + x8
+sb750
+directx 10, uvd+, side-port memory, hdmi/hdcp, displayport/dpcp, or two pcie 2.0 x16
+amd 790x chipset
+rd780
+2008
+athlon 64, phenom, sempron
+65
+2600 (ht 3.0)
+no
+x8 + x8
+sb600, sb700, sb750, sb850
+two pcie 2.0 x16
+amd 790fx chipset
+rd790
+nov 2007
+athlon 64, phenom, sempron
+65
+2600 (ht 3.0)
+no
+crossfire x (dual x16 or quad x8)
+sb600, sb750, sb850
+up to four pcie 2.0 x16 support for amd quad fx platform (fasn8), dual socket enthusiast platform with numa, optional single socket variant, 720-pin 1.1 v fc-bga
+model
+codename
+released
+cpu support
+fab (nm)
+ht (mhz)
+igp
+crossfire
+southbridge
+features / notes
+model
+code name
+released
+cpu support
+fab (nm)
+ht (mhz)
+igp
+crossfire
+sli
+tdp (w)
+southbridge
+features / notes
+amd 870 chipset
+rx880
+2010
+phenom ii, athlon 64, sempron
+65
+2600 (ht 3.0)
+no
+hybrid, x16 + x4
+no
+
+sb850
+single pcie 2.0 x16
+amd 880g chipset
+rs880p
+q4 2010
+phenom ii, athlon ii, sempron
+55
+2600 (ht 3.0)
+radeon hd 4250
+hybrid
+no
+
+sb710, sb750, sb810, sb850, sb920, sb950
+directx 10.1, uvd2, hdmi/hdcp, displayport/dpcp, or single pcie 2.0 x16 am3+ socket support
+amd 880m chipset
+rs880m
+q2 2010
+mobile turion ii, mobile athlon ii, mobile sempron
+55
+2600 (ht 3.0)
+radeon hd 4200
+powerxpress axiom/mxm module(s)
+no
+
+sb820
+directx 10.1, uvd2, hdmi/hdcp, displayport, dvi, vga, sideport memory, or single pci-e 2.0 x16mobile chipset, tigris platform
+amd 880m chipset
+rs880m
+q2 2010
+athlon ii neo, turion ii neo
+55
+2600 (ht 3.0)
+radeon hd 4225
+powerxpress axiom/mxm module(s)
+no
+
+sb820
+directx 10.1, uvd2, hdmi/hdcp, displayport, dvi, vga, or single pci-e 2.0 x16mobile chipset, nile platform
+amd 880m chipset
+rs880m
+q2 2010
+mobile phenom ii, mobile turion ii, mobile athlon ii, mobile sempron v-series
+55
+2600 (ht 3.0)
+radeon hd 4250 radeon hd 4270
+powerxpress axiom/mxm module(s)
+no
+
+sb820
+directx 10.1, uvd2, hdmi/hdcp, displayport, dvi, vga, or single pci-e 2.0 x16mobile chipset, danube platform
+amd 890gx chipset
+rs880d
+q2 2010
+phenom ii, athlon ii, sempron
+55
+2600 (ht 3.0)
+radeon hd 4290
+hybrid, x8 + x8
+no
+22 w
+sb710, sb750, sb810, sb850
+directx 10.1, uvd2, hdmi/hdcp, displayport/dpcp, side-port memory, or two pcie 2.0 x16
+amd 890fx chipset
+rd890
+q2 2010
+bulldozer, phenom ii, athlon ii, sempron
+65
+2600 (ht 3.0)
+no
+x16 + x16 or x8 quad
+no
+18 w
+sb710, sb750, sb810, sb850
+four pcie 2.0 x16
+
+
+
+
+
+
+
+
+
+
+
+amd 970 chipset
+rd970
+q2 2011
+bulldozer, phenom ii, athlon ii, sempron
+65
+2600 (ht 3.0) 3200 (ht 3.1)
+no
+x16 + x4
+no
+13.6w
+sb710, sb750, sb810, sb850, sb920, sb950
+single pcie 2.0 x16, iommuam3+ socket support
+amd 990x chipset
+rd990
+q2 2011
+bulldozer, phenom ii, athlon ii, sempron
+65
+2600 (ht 3.0) 3200 (ht 3.1)
+no
+x8 + x8
+x8 + x8
+14w
+sb710, sb750, sb810, sb850, sb920, sb950
+two pcie 2.0 x16, iommuam3+ socket support
+amd 990fx chipset
+rd990
+q2 2011
+bulldozer, phenom ii, athlon ii, sempron
+65
+2600 (ht 3.0) 3200 (ht 3.1)
+no
+x16 + x16 or x8 quad
+x16 + x16 or x16 + x8 + x8 or x8 quad
+19.6 w
+sb710, sb750, sb810, sb850, sb920, sb950
+four pcie 2.0 x16, iommuam3+ socket support
+model
+code name
+released
+cpu support
+fab (nm)
+ht (mhz)
+igp
+crossfire
+sli
+tdp (w)
+southbridge
+features / notes
+model
+codename
+released
+fab (nm)
+usb 2.0 + 1.1
+audio
+parallel ata
+features / notes
+amd 640 chipset
+amd-645
+
+
+
+
+2 × ata/33
+
+amd 710 chipset
+sb-710
+
+
+
+absolute pitch hi-fi w/ envy hd or vt1708s hd audio 8-channel codec
+1 x u-dma 133/100/66 (2x pata)
+5x sata 3&nbsp;gb/s w/ raid support 0/1/10 1x esata 3 gb/s port
+amd 750 chipset
+amd-756
+1999
+
+0 + 4
+
+2 × ata/66
+
+amd 760 chipset
+amd-766
+2001
+
+0 + 4
+
+2 × ata/100
+
+amd 760mpx chipset
+amd-768
+2001
+
+0 + 4
+ac'97
+2 × ata/100
+
+
+
+
+
+
+
+
+
+geode gx1
+geode cs5530
+
+
+
+ac'97
+2 × ata/33
+national semiconductor release
+geode gxm geode gxlv
+geode cs5530a
+
+
+
+ac'97
+2 × ata/33
+national semiconductor release
+geode gx
+geode cs5535
+
+
+0 + 4
+ac'97
+2 × ata/66
+
+geode lx
+geode cs5536
+
+
+4 + 0
+ac'97
+2 × ata/100
+
+
+
+
+
+
+
+
+
+amd-8111 nforce professional uli-1563
+amd-8131
+2004
+
+4 + 2
+ac'97
+2 × ata/133
+pci-x
+amd-8111 nforce professional uli-1563
+amd-8132
+2004
+
+4 + 2
+ac'97
+2 × ata/133
+pci-x 2.0
+amd-8151
+amd-8151
+2004
+
+4 + 2
+ac'97
+2 × ata/133
+agp 8x
+model
+codename
+released
+fab (nm)
+sata
+usb 2.0 + 1.1
+parallel ata
+raid
+gb ethernet mac
+package
+tdp (w)
+features / notes
+amd 480/570/580/690 crossfire chipset
+sb600
+2006
+130
+4 × 3 gbit/s ahci 1.1 sata revision 2.0
+10 + 0
+1 × ata/133
+0,1,10
+no
+548-pin fc-bga
+4.0
+
+amd 700 chipset series
+sb700
+q1 2008
+130
+6 × 3 gbit/s ahci 1.1 sata revision 2.0
+12 + 2
+1 × ata/133
+0,1,10
+no
+548-pin fc-bga
+4.5
+dash 1.0
+amd 700s chipset series
+sb700s
+q1 2008
+130
+6 × 3 gbit/s ahci 1.1 sata revision 2.0
+12 + 2
+1 × ata/133
+0,1,10
+no
+548-pin fc-bga
+4.5
+dash 1.0 server southbridge
+amd 700 chipset series
+sb710
+q4 2008
+130
+6 × 3 gbit/s ahci 1.1 sata revision 2.0
+12 + 2
+1 × ata/133
+0,1,10
+no
+548-pin fc-bga
+4.5
+dash 1.0
+amd 700 chipset series
+sb750
+q4 2008
+130
+6 × 3 gbit/s ahci 1.1 sata revision 2.0
+12 + 2
+1 × ata/133
+0,1,5,10
+no
+548-pin fc-bga
+4.5
+dash 1.0
+amd 800 chipset series
+sb810
+q1 2010
+65
+6 × 3 gbit/s ahci 1.2 sata revision 2.0
+14 + 2
+no
+0,1,10
+10/100/1000
+605-pin fc-bga
+6.0
+
+amd 800 chipset series
+sb850
+q1 2010
+65
+6 × 6 gbps ahci 1.2 sata revision 3.0
+14 + 2
+no
+0,1,5,10
+10/100/1000
+605-pin fc-bga
+6.0
+
+amd 900 chipset series
+sb920
+may 30, 2011
+65
+6 × 6 gbps ahci 1.2 sata revision 3.0
+14 + 2
+no
+0,1,10
+10/100/1000
+605-pin fc-bga
+6.0
+
+amd 900 chipset series
+sb950
+may 30, 2011
+65
+6 × 6 gbps ahci 1.2 sata revision 3.0
+14 + 2
+no
+0,1,5,10
+10/100/1000
+605-pin fc-bga
+6.0
+
+model
+codename
+platform
+fab (nm)
+umi
+sata
+usb 3.0+2.0+1.1
+raid
+gb ethernet mac
+33 mhz pci
+sd
+vga dac
+tdp (w)
+features / notes
+part number
+a55t
+hudson-m2t
+"brazos" t
+65
+×2 gen. 1
+1× 3 gbit/s ahci 1.1
+0 + 8 + 0
+no
+no
+no
+sdio
+no
+
+
+
+a50m
+hudson-m1
+"brazos"
+65
+×4 gen. 1
+6× 6 gbit/s ahci 1.2
+0 + 14 + 2
+no
+no
+no
+no
+no
+5.9
+~920 mw idle
+100-cg2198
+a60m
+hudson-m2
+"sabine"
+65
+×4 gen. 1 +dp
+6× 6 gbit/s ahci 1.2
+0 + 14 + 2
+0,1
+10/100/1000
+no
+yes
+yes
+4.7
+
+
+a68m
+hudson-m3l
+"brazos 2.0"
+65
+×4 gen. 1 +dp
+2× 6 gbit/s ahci 1.2
+2 + 8 + 0
+0,1
+10/100/1000
+no
+yes
+no
+4.7
+~750 mw idle
+
+a70m
+hudson-m3
+"indus" "comal" "sabine"
+65
+×4 gen. 1 +dp
+6× 6 gbit/s ahci 1.2
+4 + 10 + 2
+0,1
+10/100/1000
+no
+yes
+yes
+4.7
+first native usb 3.0 controller
+100-cg2389
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a45
+hudson-d1
+
+65
+×4 gen. 2
+6× 3 gbit/s ahci 1.1
+0 + 14 + 2
+no
+no
+up to 4 slots
+no
+no
+
+
+
+a55
+hudson-d2
+"lynx" []
+65
+×4 gen. 2 +dp
+6× 3 gbit/s ahci 1.1
+0 + 14 + 2
+0,1,10
+10/100/1000
+up to 3 slots
+yes
+yes
+7.6 []
+
+
+a75
+hudson-d3
+"lynx" []
+65
+×4 gen. 2 +dp
+6× 6 gbit/s ahci 1.2
+4 + 10 + 2
+0,1,10
+10/100/1000
+up to 3 slots
+yes
+yes
+7.8
+first native usb 3.0 controller
+100-cg2386
+a78
+bolton-d3
+
+65
+×4 gen. 2 +dp
+6× 6 gbit/s ahci 1.2
+4 + 10 + 2
+0,1,10
+10/100/1000
+up to 3 slots
+yes
+yes
+
+
+
+a85x
+hudson-d4
+"virgo" []
+65
+×4 gen. 2 +dp
+8× 6 gbit/s ahci 1.2
+4 + 10 + 2
+0,1,5,10
+10/100/1000
+up to 3 slots
+yes
+yes
+7.8 []
+
+
+a88x
+bolton-d4
+
+65
+
+8× 6 gbit/s ahci 1.?
+4 + 10 + 2
+0,1,5,10
+10/100/1000
+up to 3 slots
+?
+?
+?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a55e
+hudson-e1
+
+65
+×4 gen. 2
+6× 6 gbit/s ahci 1.2
+0 + 14 + 2
+0,1,5,10
+10/100/1000
+up to 4 slots
+no
+no
+5.9
+
+100-cg2293
+a77e
+bolton-e4
+
+
+1-, 2-, or 4-lane
+6 6 gb/s ahci 1.3
+4 + 10 + 2
+
+
+up to 3 slots
+yes
+yes
+
+4-lane pcie 2.0
+218-0844020-00
+model
+codename
+platform
+fab (nm)
+umi
+sata
+usb 3.0+2.0+1.1
+raid
+gb ethernet mac
+33 mhz pci
+sd
+vga dac
+tdp (w)
+features / notes
+part number

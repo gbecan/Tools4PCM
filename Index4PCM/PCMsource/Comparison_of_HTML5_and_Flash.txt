@@ -1,0 +1,132 @@
+
+html5 standard
+html web browser features
+adobe flash features
+date started
+work began in 2003 working draft as of 2011
+n/a
+work began in 1996 version 1 released in 1997
+desktop operating systems
+n/a
+microsoft windows, apple mac os x, linux
+microsoft windows, apple mac os x, linux (ppapi-only after 11.2), solaris
+mobile operating systems
+n/a
+windows phone 8+, android 2.3+, apple ios 6+, symbian belle+, blackberry os 7+
+up to android 4.0 (unofficially for android 4.1), windows rt
+video game console
+playstation vita
+xbox 360, sony playstation 3, nintendo wii
+sony playstation 3 (flash 9 only), nintendo wii (flash lite only)
+device support
+n/a
+limited access to web camera, microphone, accelerometer, gps
+full access to web camera, microphone, accelerometer, gps
+market penetration
+n/a
+~96% of internet connected pcs are css 2/3 acid compliant, ~99% support javascript 1.5 or above, ~84% of devices support basic svg
+~95% of internet connected pcs (~83% have flash player 11, ~17% have 10 and below)
+vector graphics formats
+n/a
+scalable vector graphics (svg) supported on ~84% of browsers
+swf with embedded graphics
+bitmap effects
+yes
+varying support of filters in css3 (eg. glow, blur, drop shadow, sepia)
+yes, applied to text or graphics (eg. glow, drop shadow, bevel)
+vector text display
+yes
+yes
+yes, with saffron type system
+font support
+n/a
+installed fonts and custom fonts using css 3 web fonts
+installed fonts and embedded fonts
+text anti-aliasing
+n/a
+yes, implemented in most browsers, for system and custom fonts
+yes, in most cases
+text tab stop
+no
+only supported inside "pre" tags
+yes, with text layout framework
+liquid text layout
+yes
+yes, using the "div" tag and css styling
+no, but text fields can be resized in actionscript
+tabular data
+yes
+yes, using the "table" tag
+no, but text fields can be arranged into a grid
+linked text frames
+no
+no
+yes, with text layout framework
+programming languages
+depends
+javascript
+actionscript, pixel bender
+c++ support
+cross-compiling of c++ code to javascript using emscripten
+native code execution with google native client in google chrome only
+cross-compiling of c++ code to run in flash player using flascc
+source code format
+plaintext
+plaintext javascript with limited obfuscation
+compiled bytecode, can be obfuscated
+data formats
+depends
+css 3, html, xml, json
+json, xml, subset of css 1
+data compression
+no
+gzip compression for html, js and css files (on supported servers)
+lzma or deflate for swf files
+image formats
+depends
+png, jpeg, animated gif
+png, jpeg, jpeg-xr, single-frame gif
+video formats
+depends
+varying support of h.264, webm and ogg theora (see html5 video)
+h.264, sorenson spark, and on2 vp6
+streaming video
+no
+pseudo-streaming only of webm and ogg theora using video tag
+flash video, h.264 and partial support for mp4
+audio formats
+depends
+varying support of mp3, ogg vorbis, wav pcm, aac and webm vorbis (see html5 audio)
+mp3, wav and aac audio files or embedded sound
+fullscreen support
+no
+supported on some browsers
+yes, with warning displayed
+encryption drm
+with obfuscation
+no, all files being plaintext, except for obfuscation
+yes, being binary formatted files, unless decompiled
+file system access
+no
+varying support of single file upload, and drag and drop of files onto browser
+support for single file upload and generation, air only: full create/read/write access to file system
+bitmap manipulation
+no
+varying support for html5 "canvas" element
+yes, using the bitmapdata class
+binary manipulation
+no
+no, unless javascript arrays are used for the same
+yes, using the bytearray class
+large binary data
+no
+using web sockets to stream binary or xml data
+yes, embedded or streaming binary data
+offline storage
+depends
+using web storage or cookies to store binary or xml data
+using local shared object to store amf-formatted data
+metadata
+meta tag
+can be included in meta tag
+extensible metadata platform

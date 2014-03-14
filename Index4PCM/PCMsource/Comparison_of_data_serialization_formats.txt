@@ -1,0 +1,511 @@
+name
+creator/maintainer
+based on
+standardized?
+specification
+binary?
+human-readable?
+supports reference?
+schema/idl?
+standard api
+apache avro
+apache software foundation
+n/a
+yes
+apache avro™ 1.7.5 specification
+yes
+no
+n/a
+n/a
+n/a
+asn.1
+iso, iec, itu-t
+n/a
+yes
+iso/iec 8824; x.680 series of itu-t recommendations
+yes (ber, der, per, oer, or custom via ecn)
+yes (xer, gser, or custom via ecn)
+partial
+yes (built-in)
+n/a
+bencode
+bram cohen (creator) bittorrent, inc. (maintainer)
+n/a
+yes
+part of bittorrent protocol specification
+partially (numbers and delimiters are ascii)
+partially
+no
+no
+no
+bson
+mongodb
+json
+yes
+bson specification
+yes
+no
+no
+no
+no
+candle markup
+henry luo
+xml, json, javafx
+yes
+candle markup reference
+no
+yes
+yes (xpointer, xpath)
+yes (candle pattern reference)
+yes (xquery, xpath)
+comma-separated values (csv)
+rfc author: yakov shafranovich
+n/a
+partial (myriad informal variants used)
+rfc 4180 (among others)
+no
+yes
+no
+no
+no
+concise binary object representation (cbor)
+rfc authors: carsten bormann & paul hoffman
+messagepack, json, coap
+yes
+rfc 7049
+yes
+no
+no
+no
+no
+d-bus message protocol
+freedesktop.org
+n/a
+yes
+d-bus specification
+yes
+yes (type signatures)
+no
+no
+yes (see d-bus)
+json
+douglas crockford
+javascript syntax
+yes
+rfc 4627 (ancillary: rfc 6901, rfc 6902)
+no, but see bson
+yes
+yes (json pointer (rfc 6901); alternately: jsonpath, jpath, jspon, json:select())
+partial (json schema proposal, kwalify, rx, itemscript schema)
+partial (clarinet, jsonquery, jsonpath)
+messagepack
+sadayuki furuhashi
+json (loosely)
+yes
+messagepack format specification
+yes
+no
+no
+no
+no
+netstring
+dan bernstein
+n/a
+yes
+netstrings.txt
+yes
+yes
+no
+no
+no
+ogdl
+rolf veen
+?
+yes
+specification
+yes (binary specification)
+yes
+yes (path specification)
+yes (schema wd)
+
+openddl
+eric lengyel
+c, php
+yes
+openddl.org
+no
+yes
+yes
+no
+no
+php's &
+php group
+n/a
+yes
+no
+yes
+yes
+yes
+no
+yes
+data::dumper format (core perl module)
+gurusamy sarathy (activestate developer)
+perl data types
+yes
+no
+?
+yes
+no
+?
+yes
+property list
+next (creator) apple (maintainer)
+?
+partial
+public dtd for xml format
+yes
+yes
+no
+?
+cocoa, corefoundation, openstep, gnustep
+protocol buffers
+google
+n/a
+partial
+developer guide: encoding
+yes
+partial
+no
+yes (built-in)
+
+root
+cern & fnal
+n/a
+no
+n/a
+yes
+yes (optional xml output for debugging)
+yes
+yes (c++ object persistency framework)
+yes (native c++ api, bindings for python, ruby, and others)
+
+internet draft author: ron rivest
+lisp, netstring
+partial (largely de facto)
+"s-expressions" internet draft
+yes ("canonical representation")
+yes ("advanced transport representation")
+no
+no
+
+sereal
+yves orton, steffen müller et al.
+n/a
+yes
+sereal specification
+yes
+no
+yes
+no
+no
+
+max wildgrube
+n/a
+yes
+rfc 3072
+yes
+no
+no
+no
+
+thrift
+facebook (creator) apache (maintainer)
+n/a
+no
+original whitepaper
+yes
+partial
+no
+yes (built-in)
+
+toml
+tom preston-werner
+n/a
+no
+version 0.2.0
+no
+yes
+no
+no
+no
+external data representation
+sun microsystems (creator) ietf (maintainer)
+n/a
+yes
+rfc 4506
+yes
+no
+yes
+yes
+yes
+xml
+w3c
+sgml
+yes
+1.0 (fifth edition) 1.1 (second edition)
+partial
+yes
+yes (xpointer, xpath)
+yes (xml schema)
+yes (dom, sax, xquery, xpath)
+xml-rpc
+dave winer
+xml, soap
+yes
+xml-rpc specification
+no
+yes
+no
+no
+no
+yaml
+clark evans, ingy döt net, and oren ben-kiki
+c, java, perl, python, ruby, email, html, mime, uri, xml, sax, soap, json
+yes
+version 1.2
+no
+yes
+yes
+partial (kwalify, rx, built-in language type-defs)
+no
+format
+null
+boolean true
+boolean false
+integer
+floating-point
+string
+array
+associative array/object
+asn.1 (xml encoding rules)
+
+
+
+
+
+
+
+an object (the key is a field name):a data mapping (the key is a data value):
+candle markup
+
+
+
+
+
+
+
+or
+csv
+(or an empty element in the row)
+
+
+
+
+
+
+
+netstring
+
+
+
+
+
+
+
+
+json
+
+
+
+
+
+
+
+
+ogdl[]
+
+
+
+
+
+
+
+
+openddl
+
+
+
+
+
+
+homogeneous array:heterogeneous array:
+
+php's &
+
+
+
+
+
+
+
+associative array: object:
+property list (plain text format)
+n/a
+
+
+
+
+
+
+
+property list (xml format)
+n/a
+
+
+
+
+
+
+
+s-expression
+
+
+
+
+
+
+
+
+yaml
+
+
+
+
+
+
+
+
+xml
+
+
+
+
+
+
+
+
+xml-rpc
+
+
+
+
+
+
+
+
+format
+null
+boolean
+integer
+floating-point
+string
+array
+associative array/object
+asn.1 (ber, per or oer encoding)
+null type
+boolean; ber: as 1 byte in binary form; per: as 1 bit; oer: as 1 byte
+integer; ber: variable-length big-endian binary representation (up to 2^(2^1024) bits); per unaligned: a fixed number of bits if the integer type has a finite range; a variable number of bits otherwise; per aligned: a fixed number of bits if the integer type has a finite range and the size of the range is less than 65536; a variable number of octets otherwise; oer: one, two, or four octets (either signed or unsigned) if the integer type has a finite range that fits in that number of octets; a variable number of octets otherwise
+real; base-10 real values are represented as character strings in iso 6093 format; binary real values are represented in a binary format that includes the mantissa, the base (2, 8, or 16), and the exponent; the special values nan, -inf, +inf, and negative zero are also supported
+multiple valid types (visiblestring, printablestring, generalstring, universalstring, utf8string)
+data specifications set of (unordered) and sequence of (guaranteed order)
+user definable type
+bson
+null type - 0 bytes for value
+true: one byte false:
+int32: 32-bit little-endian 2's complement or int64: 64-bit little-endian 2's complement
+double: little-endian binary64
+utf-8 encoded, preceded by int32 encoded string length in bytes
+bson embedded document with numeric keys
+bson embedded document
+concise binary object representation (cbor)
+
+true: false:
+small positive number , small negative number (abs(n) <= 23) 8bit: positive , negative 16bit: positive , negative 32bit: positive , negative 64bit: positive , negative negative number x encoded as ~x (binary inversion) or as (-x-1) byte order - big-endian
+typecode (one byte) + ieee half/single/double
+typecode with length (like integer coding) and content. bytestring and utf-8 have different typecode
+typecode with count (like integer coding) and items
+typecode with pairs count (like integer coding) and pairs
+messagepack
+
+true: false:
+single byte "fixnum" (values -32..127) ortypecode (one byte) + big-endian (u)int8/16/32/64
+typecode (one byte) + ieee single/double
+n/a
+as "fixarray" (single-byte prefix + up to 15 array items) ortypecode (one byte) + 2-4 bytes length + array items
+as "fixmap" (single-byte prefix + up to 15 key-value pairs) ortypecode (one byte) + 2-4 bytes length + key-value pairs
+netstring
+
+true:
+
+
+
+
+
+ogdl binary
+
+
+
+
+
+
+
+property list (binary format)
+
+
+
+
+
+
+
+protocol buffers
+
+
+variable encoding length signed 32-bit: varint encoding of "zigzag"-encoded value variable encoding length signed 64-bit: varint encoding of "zigzag"-encoded constant encoding length 32-bit: 32 bits in little-endian 2's complement constant encoding length 64-bit: 64 bits in little-endian 2's complement
+floats: little-endian binary32doubles: little-endian binary64
+utf-8 encoded, preceded by varint-encoded integer length of string in bytes
+repeated value with the same tag
+n/a
+sereal
+
+true: false:
+single byte pos/neg (values -16..15) ortypecode (one byte) + "varint" encoded variable length integerortypecode (one byte) + "zigzag" encoded variable length integer
+typecode (one byte) + ieee single/double/quad
+as "short_binary" (single-byte prefix + up to 31 raw bytes) ortypecode (one byte, including boolean utf8-encoding flag) + "varint" encoded length + raw bytes
+as "arrayref" (single-byte prefix + up to 15 array items) ortypecode (one byte) + "varint" encoded length + array items
+as "hashref" (single-byte prefix + up to 15 key-value pairs) ortypecode (one byte) + "varint" encoded length + key-value pairs.distinguishes hashmaps from objects / class instances.
+thrift
+
+
+
+
+
+
+
+structured data exchange formats (sdxf)
+
+
+big-endian signed 24bit or 32bit integer
+big-endian ieee double
+either utf-8 or iso 8859-1 encoded
+list of elements with identical id and size, preceded by array header with int16 length
+chunks can contain other chunks to arbitrary depth

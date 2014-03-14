@@ -1,0 +1,568 @@
+olap server
+company
+website
+latest stable version
+software license
+license pricing
+essbase
+oracle
+
+11.1.2.3
+proprietary
+http://www.oracle.com/us/corporate/pricing/index.htm
+iccube
+misconsulting sa
+
+4.1.1
+proprietary
+community/http://www.iccube.com/purchase/prices
+infor bi olap server
+infor
+
+10.4
+proprietary
+-
+microsoft analysis services
+microsoft
+
+2012
+proprietary
+http://www.microsoft.com/sqlserver/2008/en/us/pricing.aspx
+microstrategy intelligence server
+microstrategy
+
+9
+proprietary
+-
+mondrian olap server
+pentaho
+
+3.5.0
+epl
+free
+oracle database olap option
+oracle
+
+11g r2
+proprietary
+http://www.oracle.com/us/corporate/pricing/index.htm
+palo
+jedox
+
+5.0
+gpl v2 or eula
+-
+sas olap server
+sas institute
+
+9.3
+proprietary
+-
+sap netweaver bw
+sap
+
+7.20
+proprietary
+-
+cognos tm1
+ibm
+
+10.2 fp1
+proprietary
+-
+olap server
+molap
+rolap
+holap
+offline
+essbase
+yes
+yes
+yes
+
+iccube
+yes
+no
+no
+offline cubes
+infor bi olap server
+yes
+no
+no
+local cubes
+microsoft analysis services
+yes
+yes
+yes
+local cubes, powerpivot for excel
+microstrategy intelligence server
+yes
+yes
+yes
+microstrategy office, dynamic dashboards
+mondrian olap server
+no
+yes
+no
+
+oracle database olap option
+yes
+yes
+yes
+
+palo
+yes
+no
+no
+
+sas olap server
+yes
+yes
+yes
+
+ibm tm1
+yes
+no
+no
+
+ibm cognos
+yes
+yes
+yes
+
+sap netweaver bw
+yes
+yes
+no
+olap server
+xml for analysis
+ole db for olap
+mdx
+stored procedures
+custom functions
+sql
+linq
+visualization
+essbase
+yes
+yes
+yes
+?
+yes
+no
+yes
+?
+iccube
+yes
+yes
+yes
+java, r
+yes
+no
+yes
+java, javascript
+infor bi olap server
+yes
+yes
+yes
+olap rules, push rules, application engine
+yes
+no
+no
+application studio
+microsoft analysis services
+yes
+yes
+yes
+.net
+yes
+yes
+yes
+microsoft excel, microsoft powerpivot, microsoft power view
+microstrategy intelligence server
+yes
+no
+yes
+yes
+yes
+yes
+yes
+?
+mondrian olap server
+yes
+yes
+yes
+no
+yes
+no
+yes
+?
+palo
+yes
+yes
+yes
+cube rules, svs triggers
+yes
+no
+yes
+?
+oracle database olap option
+no
+yes
+yes
+java, pl/sql, olap dml
+yes
+yes
+no
+?
+sas olap server
+yes
+yes
+yes
+no
+no
+no
+yes
+web report studio
+sap netweaver bw
+yes
+yes
+yes
+no
+yes
+no
+yes
+?
+cognos tm1
+yes
+yes
+yes
+yes
+yes
+no
+yes
+?
+olap server
+real time
+semi-additive measures
+write-back
+many-to-many
+partitioning
+essbase
+?
+yes
+yes
+?
+yes
+iccube
+yes
+yes
+yes
+yes
+yes
+infor bi olap server
+?
+yes
+yes
+?
+yes
+microsoft analysis services
+?
+yes
+yes
+yes
+yes
+microstrategy intelligence server
+?
+yes
+yes
+?
+yes
+mondrian olap server
+?
+no
+planned
+?
+no
+oracle database olap option
+?
+yes
+yes
+?
+yes
+palo
+?
+?
+yes
+?
+?
+tm1
+?
+yes
+yes
+?
+no
+ibm cognos
+yes
+yes
+no
+yes
+yes
+sas olap server
+?
+yes
+yes
+?
+yes
+sap netweaver bw
+?
+yes
+yes
+?
+yes
+olap server
+# cubes
+# measures
+# dimensions
+# hierarchies in dimension
+# levels in hierarchy
+# dimension members
+essbase
+?
+?
+?
+256
+?
+20,000,000 (aso), 1,000,000 (bso)
+iccube
+2,147,483,647
+2,147,483,647
+2,147,483,647
+2,147,483,647
+2,147,483,647
+2,147,483,647
+infor bi olap server
+?
+?
+?
+?
+?
+1,000,000
+microsoft analysis services
+2,147,483,647
+2,147,483,647
+2,147,483,647
+2,147,483,647
+2,147,483,647
+2,147,483,647
+microstrategy intelligence server
+unrestricted
+unrestricted
+unrestricted
+unrestricted
+unrestricted
+unrestricted
+palo
+?
+?
+?
+?
+?
+?
+sas olap server
+unrestricted
+1024
+128
+128
+19
+4,294,967,296
+olap server
+authentication
+network encryption
+on-the-fly
+data access
+data access
+data access
+olap server
+authentication
+network encryption
+on-the-fly
+cell security
+dimension security
+visual totals
+essbase
+essbase authentication, ldap authentication
+ssl
+?
+yes
+yes
+yes
+iccube
+http basic/form authentication, windows sso (ntlm,kerberos)
+ssl
+yes
+yes
+yes
+yes
+infor bi olap server
+olap authentication, infor federation services, ldap, microsoft active directory
+yes
+yes
+yes
+yes
+?
+microsoft analysis services
+ntlm, kerberos
+ssl and sspi
+?
+yes
+yes
+yes
+microstrategy intelligence server
+host authentication, database authentication, ldap, microsoft active directory, ntlm, siteminder, tivoli, sap, kerberos
+ssl, aes
+?
+yes
+yes
+yes
+oracle database olap option
+oracle database authentication
+ssl
+?
+yes
+yes
+?
+palo
+palo authentication, ldap, microsoft active directory
+ssl
+yes
+yes
+yes
+?
+sas olap server
+host authentication,sas token authentication, ldap, microsoft active directory
+yes
+?
+yes
+yes
+yes
+olap server
+windows
+linux
+unix
+z/os
+essbase
+yes
+yes
+yes
+no
+iccube
+yes
+yes
+yes
+yes
+infor bi olap server
+yes
+no
+no
+no
+microsoft analysis services
+yes
+no
+no
+no
+microstrategy intelligence server
+yes
+yes
+yes
+no
+mondrian olap server
+yes
+yes
+yes
+yes
+oracle database olap option
+yes
+yes
+yes
+yes
+palo
+yes
+yes
+yes
+no
+sas olap server
+yes
+yes
+yes
+yes
+sap netweaver bw
+yes
+yes
+yes
+yes
+tm1
+yes
+yes
+yes
+no
+olap server
+issue tracking system
+forum/blog
+roadmap
+source code
+essbase
+myoracle support
+http://forums.oracle.com/forums/main.jspa?categoryid=84
+http://communities.ioug.org/portals/2/oracle_essbase_roadmap_sep_09.pdf
+closed
+iccube
+youtrack
+http://www.iccube.com/support/forum
+http://www.iccube.com/support/qa/roadmap
+open
+infor bi olap server
+infor xtreme
+
+available upon request
+closed
+microsoft analysis services
+connect
+http://social.msdn.microsoft.com/forums/en-us/sqlanalysisservices/threads
+-
+closed
+microstrategy intelligence server
+microstrategy resource center
+https://resource.microstrategy.com/forum/
+-
+closed
+mondrian olap server
+jira
+http://forums.pentaho.org/forumdisplay.php?f=79
+http://mondrian.pentaho.org/documentation/roadmap.php
+open
+oracle database olap option
+myoracle support
+http://forums.oracle.com/forums/main.jspa?categoryid=84
+
+closed
+palo
+mantis
+http://www.jedox.com/community/palo-forum/board.php?boardid=9
+
+open
+sas olap server
+support
+
+
+closed
+sap netweaver bw
+oss
+http://forums.sdn.sap.com/index.jspa
+http://esworkplace.sap.com/socoview(bd1lbizjptawmszkpw1pbg==)/render.asp?id=2270ead629814d05a7ececececc8d002&fragid=&packageid=dee98d07df9fa9f1b3c7001a64d3f462
+closed
+tm1
+ibm service request
+http://forums.olapforums.com/
+
+closed

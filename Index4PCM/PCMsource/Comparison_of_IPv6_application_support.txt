@@ -1,0 +1,635 @@
+application
+category
+ipv6 supported?
+zone id supported?
+earliest version # with ipv6 support
+notes
+reference links
+absolutetelnet
+ssh client, telnet client, sftp client
+yes
+no
+5.01
+supports ssh, telnet, and sftp
+http://www.celestialsoftware.net/
+active directory
+ldap server
+yes
+
+2008
+
+http://technet.microsoft.com/en-us/library/dd578336(ws.10).aspx http://www.networkworld.com/community/blog/configuring-microsoft-active-directory-suppor http://technet.microsoft.com/en-us/library/dd379498(ws.10).aspx
+apache httpd
+web server
+yes
+n/a
+2.0.14
+"virtual hosts on ipv6 addresses are broken in versions until 2.0.28"
+http://tldp.org/howto/linux+ipv6-howto/hints-daemons-apache2..html
+apple mail
+e-mail client
+yes
+
+
+
+
+bind
+dns server
+yes
+n/a
+
+
+
+bsd telnet
+console application
+yes
+yes
+1.2?
+telnet and telnetd from openbsd.
+
+cerberus ftp server
+ftp server
+yes
+n/a
+3.0
+supports rfc 2428 ftp extensions for ipv6
+http://www.cerberusftp.com/products/features/index.html
+cups
+digital printing
+yes
+
+1.2
+
+http://www.cups.org/documentation.php/whatsnew.html
+curl
+file transfer software
+yes
+
+
+
+ejabberd
+xmpp server
+yes
+n/a
+0.7 or older
+jabber server
+https://github.com/ivan/ejabberd/commit/99aac0acce17cb43dbcd333194bf3412d1a39943
+ffproxy
+proxy server
+yes
+
+1.5
+non-caching proxy.
+
+filezilla
+ftp, ftps and sftp client
+yes
+
+3.1.0-beta1
+
+http://filezilla-project.org/client_features.phphttp://filezilla-project.org/versions.php#3.1.0-beta1
+ftp.exe
+console application
+yes
+yes
+5.1 (xp)
+standard windows ftp client.
+
+google chrome
+web browser
+yes
+
+initial
+
+
+hiawatha
+web server
+yes
+n/a
+6.0
+
+
+iis
+web server
+yes
+n/a
+6.0
+versions before 7.0 do not support bandwidth throttling, client ip address restrictions, ftp, or nntp.
+http://blogs.iis.net/nazim/archive/2008/05/03/using-ipv6-with-iis7.aspx
+internet explorer
+web browser
+yes
+no
+4.01
+versions before 7.0 may not be able to handle numerical addresses. macintosh versions do not support ipv6.
+http://research.microsoft.com/msripv6/readme.htmhttp://msdn.microsoft.com/downloads/sdks/platform/tpipv6/faq.asphttp://arstechnica.com/articles/paedia/ipv6.ars/4
+irssi
+irc client
+yes
+
+0.7.15
+
+http://svn.irssi.org/repos/irssi/tags/r_0_7_16/news
+jabberd2
+xmpp server
+yes
+n/a
+2.0
+jabber server
+
+java
+programming language
+yes
+yes
+1.4.2
+support on windows xp/2003 was added in java 1.5.0
+http://java.sun.com/j2se/1.4.2/docs/relnotes/features.html#networkinghttp://java.sun.com/j2se/1.5.0/docs/guide/net/enhancements-1.5.0.htmlhttp://java.sun.com/j2se/1.5.0/docs/guide/net/ipv6_guide/
+konqueror
+web browser
+yes
+yes
+2.2
+
+http://www.kde.org/announcements/changelogs/changelog2_1to2_2.php
+lighttpd
+web server
+yes
+n/a
+
+
+
+linux cifs vfs
+smb/cifs client
+yes
+
+1.49
+cifs vfs version 1.48 is part of kernel 2.6.21
+http://linux-cifs.samba.org/
+linux netkit ftp
+console application
+yes
+yes
+0.17?
+standard linux ftp client.
+
+linux netkit telnet
+console application
+yes
+yes
+0.17?
+standard linux telnet client and server.
+
+maradns
+dns server
+partial
+n/a
+
+
+
+microsoft dns
+dns server
+yes
+n/a
+5.0 (2000)
+windows 2000 dns can handle aaaa records, but the operating system does not ship with ipv6.
+http://www.microsoft.com/technet/network/deploy/confeat/domain.mspx
+microsoft outlook
+e-mail client
+yes
+
+2007
+
+http://technet.microsoft.com/en-us/network/hh994905.aspx
+microsoft sql server
+database
+yes
+
+2005 (9.0)
+
+http://msdn.microsoft.com/en-us/library/ms345359(sql.90).aspx, http://blogs.msdn.com/b/sql_protocols/archive/2005/10/12/480192.aspx
+mirc
+irc client
+yes
+
+7.1
+
+
+mozilla / seamonkey
+web browser
+yes
+
+
+ipv6 is not preferred by default on mac os x.
+http://www.mozilla.org/releases/mozilla1.7/readme.html http://kb.mozillazine.org/network.dns.disableipv6 http://arstechnica.com/articles/paedia/ipv6.ars/4
+mozilla firefox
+web browser
+yes
+yes
+1.5
+ipv6 is not preferred by default on mac os x in firefox 1.5 or 2.0, only in 3.0. firefox is not able to connect to a socks-proxy with ipv6 and does not support pac-scripts what return ipv6.
+http://arstechnica.com/articles/paedia/ipv6.ars/4 http://kb.mozillazine.org/network.dns.disableipv6 https://bugzilla.mozilla.org/show_bug.cgi?id=909021
+mozilla thunderbird
+e-mail client
+yes
+
+
+version 2.0 & later appears to work with mac os x version 10.4.9.
+http://slashdot.org/comments.pl?sid=231405&threshold=0&commentsort=0&mode=thread&pid=18799313#18804565
+mplayer
+multimedia player
+yes
+n/a
+
+for example in http streaming.
+
+mysql
+database
+yes
+
+5.5.3
+disabled by default before 5.6.6.
+http://dev.mysql.com/doc/refman/5.5/en/ipv6-support.html http://dev.mysql.com/doc/refman/5.6/en/ipv6-server-config.html
+nginx
+web server
+yes
+
+0.7.36
+full support implemented in 0.8.22
+http://kovyrin.net/2010/01/16/enabling-ipv6-support-in-nginx/ http://nginx.org/en/changes
+nmap
+console application
+yes
+yes
+3.10alpha1
+zone id support since version 4.65
+http://insecure.org/nmap/changelog.html
+nortel networks vpn client
+vpn client
+?
+
+
+
+http://products.nortel.com/go/product_content.jsp?segid=0&parid=0&prod_id=34820&locale=en-us
+novell edirectory
+ldap server
+no
+no
+
+
+
+openarena
+game/fps
+yes
+
+0.8.1 or older
+
+
+openldap
+ldap server
+yes
+
+2.0.0
+
+http://www.openldap.org/devel/cvsweb.cgi/~checkout~/attic/changes?rev=1.5.2.9
+openssh
+ssh client/server
+yes
+yes
+
+
+
+openttd
+game/simulation
+yes
+
+1.0.0
+
+http://wiki.openttd.org/openttd_1.0.0
+openvpn
+vpn client
+yes
+
+2.3
+partial support starting with version 2.0.
+http://openvpn.net/faq.html http://openvpn.net/index.php/open-source/faq/77-server/287-is-ipv6-support-plannedin-the-works.html
+opera
+web browser
+yes
+no
+7.20b
+ipv6 support on macintosh was added in opera 9.0
+http://www.ipv6tf.org/index.php?page=news/newsroom&id=77 http://www.opera.com/docs/changelogs/windows/720b/index.dml http://www.opera.com/docs/changelogs/linux/720b7/index.dml http://www.opera.com/docs/changelogs/mac/900/index.dml
+oracle
+database
+yes
+
+11gr1
+
+http://metalink.oracle.com/metalink/plsql/showdoc?db=not&id=783570.1
+outlook express
+e-mail client
+no
+n/a
+
+windows mail on the windows vista platform has ipv6 support.
+http://www.ipv6style.jp/en/20070115/vista_lifehack1.html
+pidgin
+instant messenger
+yes
+
+2.0 (gaim had support in older builds)
+ipv6 is enabled on linux builds, but not on win32 builds.
+http://developer.pidgin.im/ticket/1075
+pokerth
+game/card/holdem
+yes
+
+0.6.2
+
+
+polipo
+proxy server
+yes
+no
+0.8
+can be used for proxying between ipv4 and ipv6
+
+postgresql
+database
+yes
+
+7.4 (8.1 on windows)
+ipv6 broken in aix version
+
+privoxy
+proxy server
+yes
+
+3.0.13 beta
+
+http://www.privoxy.org/announce.txt http://www.privoxy.org/3.0.13/user-manual/whatsnew.html
+putty
+ssh client
+yes
+yes
+0.58
+fully functional (also zone id's) from 0.59
+http://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html
+quagga
+routing software
+yes
+n/a
+
+ospfv3 area support is incomplete.
+http://www.quagga.net/docs/docs-multi/ipv6-support.html#ipv6-support http://www.quagga.net/docs/docs-multi/ospf6-area.html#ospf6-area
+rsync
+differential file synchronizer
+yes
+
+2.5.0
+native ipv6 support since 2.5.0, but hosts allow/deny in rsync.conf didn't work until 2.5.6.
+http://samba.org/ftp/rsync/old-versions/rsync-2.5.0.news http://samba.org/ftp/rsync/old-versions/rsync-2.5.6-news
+rtorrent
+bittorrent client
+no
+
+
+
+
+rushub
+direct connect server
+yes
+
+2.3.3
+
+http://wiki.mydc.ru/%d0%98%d1%81%d1%82%d0%be%d1%80%d0%b8%d1%8f_%d0%b8%d0%b7%d0%bc%d0%b5%d0%bd%d0%b5%d0%bd%d0%b8%d0%b9_rushub#rushub_v_2.3.3.2c_lua_plugin_v_2.3
+safari
+web browser
+yes
+no
+
+
+http://arstechnica.com/articles/paedia/ipv6.ars/4
+samba
+smb/cifs client/server
+yes
+
+3.2.0
+
+http://samba.org/samba/history/samba-3.2.0.html
+simple dns plus
+dns server
+yes
+n/a
+5.0 (jan 2008)
+
+http://www.simpledns.com/kb.aspx?kbid=1222
+skype
+voip
+no
+
+
+
+http://forum.skype.com/index.php?showtopic=632023
+smartftp
+ftp and sftp client
+yes
+
+
+
+
+srelay
+socks server
+yes
+n/a
+
+
+
+squid cache
+proxy server
+yes
+
+3.1
+http://squidproxy.wordpress.com/ http://www.squid-cache.org/versions/v3/3.1/
+teeworlds
+game/side-scroller
+yes
+
+0.6.0
+
+
+telnet.exe
+console application
+yes
+yes
+5.1 (xp)
+standard windows telnet client.
+
+tightvnc
+vnc
+optional
+
+protocol version 3.5
+experimental ipv6 builds were made available in 2004.
+http://jungla.dit.upm.es/~acosta/paginas/vncipv6.html
+tinc
+vpn client
+yes
+
+1.0
+defaults to ipv6; can be set to ipv4-only.
+http://www.tinc-vpn.org/faq
+tinydns
+dns server
+yes
+n/a
+1.05?
+
+http://cr.yp.to/djbdns.html
+trillian
+instant messenger
+no
+no
+
+
+http://bugs.ceruleanstudios.com/show_bug.cgi?id=11530
+udp speed test 3
+network speed test tool
+yes
+yes
+3.05
+unicast, broadcast, multicast, anycast.
+http://www.myjavaserver.com/~skybuck/
+vlc
+multimedia player
+yes
+
+
+
+
+uploadftp
+ftp, ftps and sftp client
+yes
+
+2.0
+
+http://www.upload-ftp.com/features
+vmware vsphere client
+systems management client
+yes
+
+4.0.0
+performance reports do not support ipv6, but everything else appears to. this was tested using ipv6>ipv4 pt, where the server is on the ipv4 side.[]
+
+warzone 2100
+game/rts
+yes
+
+3.1.1 or older
+
+
+webmin
+web-based remote administration tool
+yes
+
+1.530
+
+http://www.webmin.com/changes.html
+weechat
+irc client
+yes
+
+0.1.3
+
+http://www.weechat.org/features/
+wget
+file transfer software
+yes
+
+1.9?
+may default to ipv4 transfers: "-6" option used to override.
+http://svn.dotsrc.org/repo/wget/trunk/src/changelog
+winamp
+multimedia player
+yes
+
+5.34
+
+http://betas.intercom.net/index.php?name=news&file=article&sid=1550
+windows live mail
+e-mail client
+yes
+
+initial
+
+
+windows mail
+e-mail client
+yes
+
+initial
+
+
+windows media player
+multimedia player
+yes
+
+9.0?
+
+http://www.uk6x.com/applicationservices/mp3radio.html
+windows file and print sharing
+smb/cifs client/server
+yes
+
+5.2 (server 2003)
+windows xp 32-bit does not support ipv6 at the smb/cifs layer. the protocol is available for other applications ("ipv6 install" pre-sp1; protocol install afterwards).
+http://www.microsoft.com/technet/network/ipv6/ipv6faq.mspx http://www.microsoft.com/technet/abouttn/flash/promo/lettertoeditor/lte041205.mspx http://www.ipv6tf.org/index.php?page=meet/faqs&faq_id=2600&q=27
+world of warcraft
+game/mmorpg
+yes
+
+patch 4.1.0
+
+
+wwwoffle
+proxy server
+yes
+no
+2.6d
+
+http://www.gedanken.demon.co.uk/wwwoffle/version-2.9/faq.html
+xchat
+irc client
+yes
+
+1.7.0
+
+http://www.xchat.org/changelog.txt
+xinetd
+networking daemon
+yes
+
+1.89
+version 2.3.3 or newer recommended to avoid security issues.
+http://tldp.org/howto/linux+ipv6-howto/hints-daemons-xinetd.html
+µtorrent
+bittorrent client
+yes
+
+1.8
+
+
+transmission
+bittorrent client
+yes
+
+1.5
+no official windows version.
+
+cisco anyconnect
+vpn client
+yes
+yes
+2.0
+no split tunneling allowed in ipv6. asa 8.4 software required for full ipv6 mode.
+http://www.cisco.com/en/us/docs/security/vpn_client/anyconnect/anyconnect25/administration/guide/anyconnectadmin25.html http://www.cisco.com/en/us/docs/security/asa/asa84/configuration/guide/vpn_anyconnect.html#wp1108722
