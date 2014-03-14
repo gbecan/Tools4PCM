@@ -151,26 +151,39 @@ public class PCMIndexer {
 
 
 	public String manageCell(String s) {
-		if (s.equals("yes")){addLitteral("yesno", s); return "YES/NO";}
-		if (s.equals("no")){addLitteral("yesno", s);return "YES/NO";}
-		if (s.equals("true")){addLitteral("yesno", s);return "YES/NO";}
-		if (s.equals("false")){addLitteral("yesno", s);return "YES/NO";}
-		if (s.equals("✓")){addLitteral("yesno", s);return "YES/NO";}
-		if (s.contains("?")) {addLitteral("unknown", s);return "UNKNOWN";}
-		if (s.equals("unknown")) {addLitteral("unknown", s);return "UNKNOWN";}
-		if (s.contains("only*")) {addLitteral("only", s);return "ONLY";}
-		if (s.matches("if")) {addLitteral("iffile", s);return "IF";}	
-		if (s.contains("free")) {addLitteral("freeProprietary", s);return "FREE/PROPRIETARY";}
-		if (s.contains("proprietary")) {addLitteral("freeProprietary", s);return "FREE/PROPRIETARY";}
-		if (s.contains("(paid*")) {addLitteral("freeProprietary", s);return "FREE/PROPRIETARY";}
-		if (s.contains("partial")) {addLitteral("partial", s);return "PARTIAL";}
-		if (s.matches("(\\d+(\\.\\d+)+)")){addLitteral("version", s);return "VERSION";}
-		if (s.equals("n/a")) {addLitteral("unknown", s);return "UNKNOWN";}
-		if (s.matches("[-]+")) {addLitteral("unknown", s);return "UNKNOWN";}
-		if (s.matches("[—]+")) {addLitteral("unknown", s);return "UNKNOWN";}
-		if (s.matches("[0-9]+")){addLitteral("number", s);return "NUMBER";}
-		if (s.matches("([a-z]|[0-9])+")) {addLitteral("word", s);return "WORD";}
-		if (s.matches("\\w+(\\s\\w+)*")){addLitteral("single", s);return "SINGLE";}
+		String[] temp = s.split(" ");
+		for (String tmp : temp) {
+
+			if (tmp.equals("yes")) {addLitteral("yesno", s); return "YES/NO";}
+			if (tmp.equals("no")) {addLitteral("yesno", s); return "YES/NO";}
+			if (tmp.equals("true")) {addLitteral("yesno", s); return "YES/NO";}
+			if (tmp.equals("false")) {addLitteral("yesno", s); return "YES/NO";}
+			if (tmp.equals("✓")) {addLitteral("yesno", s); return "YES/NO";}
+
+			if (s.contains("?")) {addLitteral("unknown", s); return "UNKNOWN";}
+			if (s.equals("unknown")) {addLitteral("unknown", s); return "UNKNOWN";}
+			if (s.contains("only*")) {addLitteral("only", s); return "ONLY";}
+			if (s.matches("if")) {addLitteral("iffile", s); return "IF";}
+
+			if (s.contains("free")) {addLitteral("freeProprietary", s);	return "FREE/PROPRIETARY";}
+			if (s.contains("proprietary")) {addLitteral("freeProprietary", s); return "FREE/PROPRIETARY";			}
+			if (s.contains("(paid*")) {addLitteral("freeProprietary", s); return "FREE/PROPRIETARY";}
+
+			if (s.contains("partial")) {addLitteral("partial", s); return "PARTIAL";}
+
+			if (s.matches("(\\d+(\\.\\d+)+)")) {addLitteral("version", s); return "VERSION";}
+
+			if (s.equals("n/a")) {addLitteral("unknown", s); return "UNKNOWN";}
+			if (s.matches("[-]+")) {addLitteral("unknown", s); return "UNKNOWN";}
+			if (s.matches("[—]+")) {addLitteral("unknown", s); return "UNKNOWN";}
+
+			if (s.matches("[0-9]+")) {addLitteral("number", s); return "NUMBER";}
+
+			if (s.matches("([a-z]|[0-9])+")) {addLitteral("word", s); return "WORD";}
+
+			if (s.matches("\\w+(\\s\\w+)*")) {addLitteral("single", s); return "SINGLE";}
+		}
+
 		return s;
 	}
 
