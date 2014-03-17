@@ -10,23 +10,30 @@ import pcmmm.Constraint
 import interpreters.PatternInterpreter
 import pcmmm.Matrix
 import pcmmm.Header
+import pcmmm.Feature
+import pcmmm.Product
 
 class CellContentInterpreter {
 
   def interpretCells(pcm : PCM, patternInterpreters : List[PatternInterpreter]) {
+    // Configure pattern interpreters to this PCM 
+      for (patternInterpreter <- patternInterpreters) {
+        patternInterpreter.config(pcm)
+      }
+    
     for (matrix <- pcm.getMatrices) {
       
+      // Interpret every uninterpreted cells 
       val it = matrix.getCells().listIterator()
       while (it.hasNext()) {
         val cell = it.next()
 
-        // If cell is not yet interpreted, we interpret it
         if (cell.isInstanceOf[Extra]) {
            var interpretation : Option[Constraint] = None
-           val (rowHeaders, columnHeaders) = findHeadersFor(cell, matrix)
+           val (products, features) = findConceptsFor(cell, matrix)
         
            for (patternInterpreter <- patternInterpreters if !interpretation.isDefined) {
-        	 interpretation = patternInterpreter.interpret(cell.getVerbatim(), rowHeaders, columnHeaders)
+        	 interpretation = patternInterpreter.interpret(cell.getVerbatim(), products, features)
 	    		
     		 if (interpretation.isDefined) {
     			 val newCell = PcmmmFactory.eINSTANCE.createValuedCell()
@@ -58,29 +65,31 @@ class CellContentInterpreter {
   }
   
   /**
-   * Find headers for a cell
-   * @return the verbatims of the cell's headers
+   * Find concepts for a cell
+   * @return products and features related to the cell
    */
-  def findHeadersFor(cell : Cell, matrix : Matrix) : (List[String], List[String]) = {
+  def findConceptsFor(cell : Cell, matrix : Matrix) : (List[Product], List[Feature]) = {
     val cellRows = cell.getRow() until cell.getRow() + cell.getRowspan()
     val cellColumns = cell.getColumn() until cell.getColumn() + cell.getColspan()
 
-    var rowHeaders : List[String] = Nil
-    var columnHeaders : List[String] = Nil
+    var products : List[Product] = Nil
+    var features : List[Feature] = Nil
     
-    for (header <- matrix.getCells() if header.isInstanceOf[Header])  {
-      
+    for (header <- matrix.getCells().filter(_.isInstanceOf[Header]))  {
       val headerRows = header.getRow() until header.getRow() + header.getRowspan()
       val headerColumns = header.getColumn() until header.getColumn() + header.getColspan()
       
-      if (!headerRows.intersect(cellRows).isEmpty) {
-        rowHeaders = header.getVerbatim() :: rowHeaders
-      } else if (!headerColumns.intersect(cellColumns).isEmpty) {
-        columnHeaders = header.getVerbatim() :: columnHeaders
-      }
+
+      val concept = header.asInstanceOf[Header].getConcept()
       
+      if ((!headerRows.intersect(cellRows).isEmpty) || (!headerColumns.intersect(cellColumns).isEmpty)) {
+        concept match {
+          case p : Product => products = p :: products
+          case f : Feature => features = f :: features
+        }
+      }
     }
     
-    (rowHeaders, columnHeaders)
+    (products, features)
   }
 }

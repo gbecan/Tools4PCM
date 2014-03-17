@@ -16,9 +16,23 @@ import extractor.PCMNormalizer
 import scala.collection.JavaConversions._
 import pcmmm.Extra
 import pcmmm.Header
+import interpreters.PatternInterpreter
+import interpreters.SimplePatternInterpreter
+import interpreters.BooleanPatternInterpreter
+import interpreters.MultiplePatternInterpreter
+import interpreters.UnknownPatternInterpreter
 
 class VariabilityExtractorTest extends FlatSpec with Matchers {
 
+  val nikonDSLRPatternInterpreters : List[PatternInterpreter] = List(
+		  new BooleanPatternInterpreter(Nil,"yes|true|✓",List("true")),
+		  new BooleanPatternInterpreter(Nil,"no|false",List("false")),
+		  new UnknownPatternInterpreter(Nil,"\\?|unknown|-",Nil),
+		  new SimplePatternInterpreter(Nil,"\\w+(\\s\\w+)*",Nil),
+		  new SimplePatternInterpreter(Nil,"(\\d+(\\.\\d+)+)",Nil),
+		  new MultiplePatternInterpreter(List("LCD monitor", "Storage media"), ".*", Nil) // FIXME : does not work
+  )
+  
   
   def loadPCMModel(file : File) : PCM = {
     // Initialize the model
@@ -66,9 +80,12 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
   }
   
   it should "run on nikon DSLR PCM" in {
-      val variabilityExtractor = new VariabilityExtractor
       val file = new File("../WikipediaPCMParser/output/models/Comparison_of_Nikon_DSLR_cameras.pcm")
+      val configFile = new File("input/configs/Comparison_of_Nikon_DSLR_cameras.config")
 	  val pcm = loadPCMModel(file)
+	  
+	  val variabilityExtractor = new VariabilityExtractor
+      variabilityExtractor.parseConfigurationFile(configFile.getAbsolutePath())
 	  variabilityExtractor.extractVariability(pcm)
 	  savePCMModel(pcm, file.getName())
 	  

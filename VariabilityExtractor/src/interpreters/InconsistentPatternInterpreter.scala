@@ -5,12 +5,11 @@ import pcmmm.Constraint
 import pcmmm.PcmmmFactory
 
 class InconsistentPatternInterpreter (
-    validRowHeaders : List[String],
-    validColumnHeaders : List[String],
+    validHeaders : List[String],
     regex : String,
     parameters : List[String])
-    extends PatternInterpreter(validRowHeaders, validColumnHeaders, regex, parameters) {
-
+    extends PatternInterpreter(validHeaders, regex, parameters) {
+  
   override def createConstraint(matcher : Matcher, parameters : List[String]) : Constraint = {
 		  PcmmmFactory.eINSTANCE.createInconsistent()
   }

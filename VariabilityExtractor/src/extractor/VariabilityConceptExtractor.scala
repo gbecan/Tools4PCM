@@ -36,7 +36,8 @@ class VariabilityConceptExtractor {
 			    }
 			  }
 		  
-		  concept.setName(cell.getVerbatim())	  
+		  concept.setName(cell.getVerbatim())
+		  cell.asInstanceOf[Header].setConcept(concept)
 		  pcm.getConcepts().add(concept)
 	  }
   }

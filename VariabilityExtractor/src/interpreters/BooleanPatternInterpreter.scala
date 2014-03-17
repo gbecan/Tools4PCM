@@ -5,16 +5,20 @@ import pcmmm.Constraint
 import pcmmm.PcmmmFactory
 
 class BooleanPatternInterpreter (
-    validRowHeaders : List[String],
-    validColumnHeaders : List[String],
+    validHeaders : List[String],
     regex : String,
     parameters : List[String])
-    extends PatternInterpreter(validRowHeaders, validColumnHeaders, regex, parameters) {
+    extends PatternInterpreter(validHeaders, regex, parameters) {
   
  
   override def createConstraint(matcher : Matcher, parameters : List[String]) : Constraint = {
 		  val constraint = PcmmmFactory.eINSTANCE.createBoolean()
-		  constraint.setValue(parameters.head.toBoolean)
+		  if (!parameters.isEmpty) {
+			  constraint.setValue(parameters.head.toBoolean)
+		  } else {
+			  constraint.setValue(false)
+		  }
+		  
 		  constraint
   }
     
