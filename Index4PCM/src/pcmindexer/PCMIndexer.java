@@ -26,6 +26,7 @@ public class PCMIndexer {
 
 	public String corpusDir;
 	public static Logger myLogger = Logger.getLogger("Indexer");
+	public ParserTools PCMconfigurator;
 
 	public IndexWriter standardWriter;
 	public IndexWriter englishWriter;
@@ -33,7 +34,22 @@ public class PCMIndexer {
 	public EnglishAnalyzer anaEnglish;
 	
 	public ArrayList<Token> tokens;
-	
+		
+	/**
+	 * constructor of two indexers that will create 
+	 * one StandardAnalyzer index in directory StandardIndex, 
+	 * one EnglishAnalyzer index documents from CorpusDir in EnglishIndex (English language + default stop-word removing + stemming)
+	 * @param standardIndex the location of the Standard index dir
+	 * @param englishIndex the location of the English index dir
+	 * @param corpus the corpus to index
+	 * @param config the config file with the PCLM dedicated rules
+	 * @throws IOException
+	 */
+	public PCMIndexer(String standardIndex, String englishIndex, String corpus, String config) throws IOException {
+		this(standardIndex, englishIndex, corpus);	
+		PCMconfigurator = new ParserTools();
+		PCMconfigurator.readParameters(config);
+	}
 	/**
 	 * constructor of two indexers that will create 
 	 * one StandardAnalyzer index in directory StandardIndex, 
@@ -52,7 +68,6 @@ public class PCMIndexer {
 		standardConfigurator.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
 		Directory dirStandard = FSDirectory.open(new File(standardIndex));
 		standardWriter = new IndexWriter(dirStandard, standardConfigurator);
-				
 		
 		anaEnglish = new EnglishAnalyzer(Version.LUCENE_35);
 		IndexWriterConfig englishConfigurator = new IndexWriterConfig(Version.LUCENE_35, anaEnglish);
@@ -126,6 +141,12 @@ public class PCMIndexer {
 		return standardWriter.numDocs();
 	}
 
+	
+	/**
+	 * analyze a normalized Matrix formated as follows: one row per cell
+	 * @param f the PCM to browse
+	 * @throws IOException
+	 */
 	private void getDocument(File f) throws IOException {	
 		
 		InputStream ips = new FileInputStream(f);
