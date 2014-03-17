@@ -1348,22 +1348,22 @@ public interface PcmmmPackage extends EPackage {
 	int VALUED_CELL__CONCEPTS = CELL_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>My Header Product</b></em>' reference.
+	 * The feature id for the '<em><b>My Header Products</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VALUED_CELL__MY_HEADER_PRODUCT = CELL_FEATURE_COUNT + 2;
+	int VALUED_CELL__MY_HEADER_PRODUCTS = CELL_FEATURE_COUNT + 2;
 
 	/**
-	 * The feature id for the '<em><b>My Header Feature</b></em>' reference.
+	 * The feature id for the '<em><b>My Header Features</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VALUED_CELL__MY_HEADER_FEATURE = CELL_FEATURE_COUNT + 3;
+	int VALUED_CELL__MY_HEADER_FEATURES = CELL_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Valued Cell</em>' class.
@@ -2383,26 +2383,26 @@ public interface PcmmmPackage extends EPackage {
 	EReference getValuedCell_Concepts();
 
 	/**
-	 * Returns the meta object for the reference '{@link pcmmm.ValuedCell#getMyHeaderProduct <em>My Header Product</em>}'.
+	 * Returns the meta object for the reference list '{@link pcmmm.ValuedCell#getMyHeaderProducts <em>My Header Products</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>My Header Product</em>'.
-	 * @see pcmmm.ValuedCell#getMyHeaderProduct()
+	 * @return the meta object for the reference list '<em>My Header Products</em>'.
+	 * @see pcmmm.ValuedCell#getMyHeaderProducts()
 	 * @see #getValuedCell()
 	 * @generated
 	 */
-	EReference getValuedCell_MyHeaderProduct();
+	EReference getValuedCell_MyHeaderProducts();
 
 	/**
-	 * Returns the meta object for the reference '{@link pcmmm.ValuedCell#getMyHeaderFeature <em>My Header Feature</em>}'.
+	 * Returns the meta object for the reference list '{@link pcmmm.ValuedCell#getMyHeaderFeatures <em>My Header Features</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>My Header Feature</em>'.
-	 * @see pcmmm.ValuedCell#getMyHeaderFeature()
+	 * @return the meta object for the reference list '<em>My Header Features</em>'.
+	 * @see pcmmm.ValuedCell#getMyHeaderFeatures()
 	 * @see #getValuedCell()
 	 * @generated
 	 */
-	EReference getValuedCell_MyHeaderFeature();
+	EReference getValuedCell_MyHeaderFeatures();
 
 	/**
 	 * Returns the meta object for class '{@link pcmmm.And <em>And</em>}'.
@@ -3077,20 +3077,20 @@ public interface PcmmmPackage extends EPackage {
 		EReference VALUED_CELL__CONCEPTS = eINSTANCE.getValuedCell_Concepts();
 
 		/**
-		 * The meta object literal for the '<em><b>My Header Product</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>My Header Products</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference VALUED_CELL__MY_HEADER_PRODUCT = eINSTANCE.getValuedCell_MyHeaderProduct();
+		EReference VALUED_CELL__MY_HEADER_PRODUCTS = eINSTANCE.getValuedCell_MyHeaderProducts();
 
 		/**
-		 * The meta object literal for the '<em><b>My Header Feature</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>My Header Features</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference VALUED_CELL__MY_HEADER_FEATURE = eINSTANCE.getValuedCell_MyHeaderFeature();
+		EReference VALUED_CELL__MY_HEADER_FEATURES = eINSTANCE.getValuedCell_MyHeaderFeatures();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.AndImpl <em>And</em>}' class.

@@ -14,8 +14,8 @@ import org.eclipse.emf.common.util.EList;
  * <ul>
  *   <li>{@link pcmmm.ValuedCell#getInterpretation <em>Interpretation</em>}</li>
  *   <li>{@link pcmmm.ValuedCell#getConcepts <em>Concepts</em>}</li>
- *   <li>{@link pcmmm.ValuedCell#getMyHeaderProduct <em>My Header Product</em>}</li>
- *   <li>{@link pcmmm.ValuedCell#getMyHeaderFeature <em>My Header Feature</em>}</li>
+ *   <li>{@link pcmmm.ValuedCell#getMyHeaderProducts <em>My Header Products</em>}</li>
+ *   <li>{@link pcmmm.ValuedCell#getMyHeaderFeatures <em>My Header Features</em>}</li>
  * </ul>
  * </p>
  *
@@ -69,55 +69,35 @@ public interface ValuedCell extends Cell {
 	EList<VariabilityConcept> getConcepts();
 
 	/**
-	 * Returns the value of the '<em><b>My Header Product</b></em>' reference.
+	 * Returns the value of the '<em><b>My Header Products</b></em>' reference list.
+	 * The list contents are of type {@link pcmmm.AbstractProduct}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>My Header Product</em>' reference isn't clear,
+	 * If the meaning of the '<em>My Header Products</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>My Header Product</em>' reference.
-	 * @see #setMyHeaderProduct(AbstractProduct)
-	 * @see pcmmm.PcmmmPackage#getValuedCell_MyHeaderProduct()
+	 * @return the value of the '<em>My Header Products</em>' reference list.
+	 * @see pcmmm.PcmmmPackage#getValuedCell_MyHeaderProducts()
 	 * @model required="true"
 	 * @generated
 	 */
-	AbstractProduct getMyHeaderProduct();
+	EList<AbstractProduct> getMyHeaderProducts();
 
 	/**
-	 * Sets the value of the '{@link pcmmm.ValuedCell#getMyHeaderProduct <em>My Header Product</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>My Header Product</em>' reference.
-	 * @see #getMyHeaderProduct()
-	 * @generated
-	 */
-	void setMyHeaderProduct(AbstractProduct value);
-
-	/**
-	 * Returns the value of the '<em><b>My Header Feature</b></em>' reference.
+	 * Returns the value of the '<em><b>My Header Features</b></em>' reference list.
+	 * The list contents are of type {@link pcmmm.AbstractFeature}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>My Header Feature</em>' reference isn't clear,
+	 * If the meaning of the '<em>My Header Features</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>My Header Feature</em>' reference.
-	 * @see #setMyHeaderFeature(AbstractFeature)
-	 * @see pcmmm.PcmmmPackage#getValuedCell_MyHeaderFeature()
+	 * @return the value of the '<em>My Header Features</em>' reference list.
+	 * @see pcmmm.PcmmmPackage#getValuedCell_MyHeaderFeatures()
 	 * @model required="true"
 	 * @generated
 	 */
-	AbstractFeature getMyHeaderFeature();
-
-	/**
-	 * Sets the value of the '{@link pcmmm.ValuedCell#getMyHeaderFeature <em>My Header Feature</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>My Header Feature</em>' reference.
-	 * @see #getMyHeaderFeature()
-	 * @generated
-	 */
-	void setMyHeaderFeature(AbstractFeature value);
+	EList<AbstractFeature> getMyHeaderFeatures();
 
 } // ValuedCell

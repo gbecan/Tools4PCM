@@ -781,7 +781,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getValuedCell_MyHeaderProduct() {
+	public EReference getValuedCell_MyHeaderProducts() {
 		return (EReference)valuedCellEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -790,7 +790,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getValuedCell_MyHeaderFeature() {
+	public EReference getValuedCell_MyHeaderFeatures() {
 		return (EReference)valuedCellEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1064,8 +1064,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		valuedCellEClass = createEClass(VALUED_CELL);
 		createEReference(valuedCellEClass, VALUED_CELL__INTERPRETATION);
 		createEReference(valuedCellEClass, VALUED_CELL__CONCEPTS);
-		createEReference(valuedCellEClass, VALUED_CELL__MY_HEADER_PRODUCT);
-		createEReference(valuedCellEClass, VALUED_CELL__MY_HEADER_FEATURE);
+		createEReference(valuedCellEClass, VALUED_CELL__MY_HEADER_PRODUCTS);
+		createEReference(valuedCellEClass, VALUED_CELL__MY_HEADER_FEATURES);
 
 		andEClass = createEClass(AND);
 
@@ -1218,8 +1218,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		initEClass(valuedCellEClass, ValuedCell.class, "ValuedCell", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getValuedCell_Interpretation(), this.getConstraint(), null, "interpretation", null, 1, 1, ValuedCell.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getValuedCell_Concepts(), this.getVariabilityConcept(), this.getVariabilityConcept_Constraints(), "concepts", null, 0, -1, ValuedCell.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getValuedCell_MyHeaderProduct(), this.getAbstractProduct(), null, "myHeaderProduct", null, 1, 1, ValuedCell.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getValuedCell_MyHeaderFeature(), this.getAbstractFeature(), null, "myHeaderFeature", null, 1, 1, ValuedCell.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getValuedCell_MyHeaderProducts(), this.getAbstractProduct(), null, "myHeaderProducts", null, 1, -1, ValuedCell.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getValuedCell_MyHeaderFeatures(), this.getAbstractFeature(), null, "myHeaderFeatures", null, 1, -1, ValuedCell.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(andEClass, And.class, "And", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -33,8 +34,8 @@ import pcmmm.VariabilityConcept;
  * <ul>
  *   <li>{@link pcmmm.impl.ValuedCellImpl#getInterpretation <em>Interpretation</em>}</li>
  *   <li>{@link pcmmm.impl.ValuedCellImpl#getConcepts <em>Concepts</em>}</li>
- *   <li>{@link pcmmm.impl.ValuedCellImpl#getMyHeaderProduct <em>My Header Product</em>}</li>
- *   <li>{@link pcmmm.impl.ValuedCellImpl#getMyHeaderFeature <em>My Header Feature</em>}</li>
+ *   <li>{@link pcmmm.impl.ValuedCellImpl#getMyHeaderProducts <em>My Header Products</em>}</li>
+ *   <li>{@link pcmmm.impl.ValuedCellImpl#getMyHeaderFeatures <em>My Header Features</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,24 +63,24 @@ public class ValuedCellImpl extends CellImpl implements ValuedCell {
 	protected EList<VariabilityConcept> concepts;
 
 	/**
-	 * The cached value of the '{@link #getMyHeaderProduct() <em>My Header Product</em>}' reference.
+	 * The cached value of the '{@link #getMyHeaderProducts() <em>My Header Products</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMyHeaderProduct()
+	 * @see #getMyHeaderProducts()
 	 * @generated
 	 * @ordered
 	 */
-	protected AbstractProduct myHeaderProduct;
+	protected EList<AbstractProduct> myHeaderProducts;
 
 	/**
-	 * The cached value of the '{@link #getMyHeaderFeature() <em>My Header Feature</em>}' reference.
+	 * The cached value of the '{@link #getMyHeaderFeatures() <em>My Header Features</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMyHeaderFeature()
+	 * @see #getMyHeaderFeatures()
 	 * @generated
 	 * @ordered
 	 */
-	protected AbstractFeature myHeaderFeature;
+	protected EList<AbstractFeature> myHeaderFeatures;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -160,16 +161,11 @@ public class ValuedCellImpl extends CellImpl implements ValuedCell {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractProduct getMyHeaderProduct() {
-		if (myHeaderProduct != null && myHeaderProduct.eIsProxy()) {
-			InternalEObject oldMyHeaderProduct = (InternalEObject)myHeaderProduct;
-			myHeaderProduct = (AbstractProduct)eResolveProxy(oldMyHeaderProduct);
-			if (myHeaderProduct != oldMyHeaderProduct) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, PcmmmPackage.VALUED_CELL__MY_HEADER_PRODUCT, oldMyHeaderProduct, myHeaderProduct));
-			}
+	public EList<AbstractProduct> getMyHeaderProducts() {
+		if (myHeaderProducts == null) {
+			myHeaderProducts = new EObjectResolvingEList<AbstractProduct>(AbstractProduct.class, this, PcmmmPackage.VALUED_CELL__MY_HEADER_PRODUCTS);
 		}
-		return myHeaderProduct;
+		return myHeaderProducts;
 	}
 
 	/**
@@ -177,58 +173,11 @@ public class ValuedCellImpl extends CellImpl implements ValuedCell {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AbstractProduct basicGetMyHeaderProduct() {
-		return myHeaderProduct;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setMyHeaderProduct(AbstractProduct newMyHeaderProduct) {
-		AbstractProduct oldMyHeaderProduct = myHeaderProduct;
-		myHeaderProduct = newMyHeaderProduct;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.VALUED_CELL__MY_HEADER_PRODUCT, oldMyHeaderProduct, myHeaderProduct));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AbstractFeature getMyHeaderFeature() {
-		if (myHeaderFeature != null && myHeaderFeature.eIsProxy()) {
-			InternalEObject oldMyHeaderFeature = (InternalEObject)myHeaderFeature;
-			myHeaderFeature = (AbstractFeature)eResolveProxy(oldMyHeaderFeature);
-			if (myHeaderFeature != oldMyHeaderFeature) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, PcmmmPackage.VALUED_CELL__MY_HEADER_FEATURE, oldMyHeaderFeature, myHeaderFeature));
-			}
+	public EList<AbstractFeature> getMyHeaderFeatures() {
+		if (myHeaderFeatures == null) {
+			myHeaderFeatures = new EObjectResolvingEList<AbstractFeature>(AbstractFeature.class, this, PcmmmPackage.VALUED_CELL__MY_HEADER_FEATURES);
 		}
-		return myHeaderFeature;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AbstractFeature basicGetMyHeaderFeature() {
-		return myHeaderFeature;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setMyHeaderFeature(AbstractFeature newMyHeaderFeature) {
-		AbstractFeature oldMyHeaderFeature = myHeaderFeature;
-		myHeaderFeature = newMyHeaderFeature;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.VALUED_CELL__MY_HEADER_FEATURE, oldMyHeaderFeature, myHeaderFeature));
+		return myHeaderFeatures;
 	}
 
 	/**
@@ -274,12 +223,10 @@ public class ValuedCellImpl extends CellImpl implements ValuedCell {
 				return getInterpretation();
 			case PcmmmPackage.VALUED_CELL__CONCEPTS:
 				return getConcepts();
-			case PcmmmPackage.VALUED_CELL__MY_HEADER_PRODUCT:
-				if (resolve) return getMyHeaderProduct();
-				return basicGetMyHeaderProduct();
-			case PcmmmPackage.VALUED_CELL__MY_HEADER_FEATURE:
-				if (resolve) return getMyHeaderFeature();
-				return basicGetMyHeaderFeature();
+			case PcmmmPackage.VALUED_CELL__MY_HEADER_PRODUCTS:
+				return getMyHeaderProducts();
+			case PcmmmPackage.VALUED_CELL__MY_HEADER_FEATURES:
+				return getMyHeaderFeatures();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -300,11 +247,13 @@ public class ValuedCellImpl extends CellImpl implements ValuedCell {
 				getConcepts().clear();
 				getConcepts().addAll((Collection<? extends VariabilityConcept>)newValue);
 				return;
-			case PcmmmPackage.VALUED_CELL__MY_HEADER_PRODUCT:
-				setMyHeaderProduct((AbstractProduct)newValue);
+			case PcmmmPackage.VALUED_CELL__MY_HEADER_PRODUCTS:
+				getMyHeaderProducts().clear();
+				getMyHeaderProducts().addAll((Collection<? extends AbstractProduct>)newValue);
 				return;
-			case PcmmmPackage.VALUED_CELL__MY_HEADER_FEATURE:
-				setMyHeaderFeature((AbstractFeature)newValue);
+			case PcmmmPackage.VALUED_CELL__MY_HEADER_FEATURES:
+				getMyHeaderFeatures().clear();
+				getMyHeaderFeatures().addAll((Collection<? extends AbstractFeature>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -324,11 +273,11 @@ public class ValuedCellImpl extends CellImpl implements ValuedCell {
 			case PcmmmPackage.VALUED_CELL__CONCEPTS:
 				getConcepts().clear();
 				return;
-			case PcmmmPackage.VALUED_CELL__MY_HEADER_PRODUCT:
-				setMyHeaderProduct((AbstractProduct)null);
+			case PcmmmPackage.VALUED_CELL__MY_HEADER_PRODUCTS:
+				getMyHeaderProducts().clear();
 				return;
-			case PcmmmPackage.VALUED_CELL__MY_HEADER_FEATURE:
-				setMyHeaderFeature((AbstractFeature)null);
+			case PcmmmPackage.VALUED_CELL__MY_HEADER_FEATURES:
+				getMyHeaderFeatures().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -346,10 +295,10 @@ public class ValuedCellImpl extends CellImpl implements ValuedCell {
 				return interpretation != null;
 			case PcmmmPackage.VALUED_CELL__CONCEPTS:
 				return concepts != null && !concepts.isEmpty();
-			case PcmmmPackage.VALUED_CELL__MY_HEADER_PRODUCT:
-				return myHeaderProduct != null;
-			case PcmmmPackage.VALUED_CELL__MY_HEADER_FEATURE:
-				return myHeaderFeature != null;
+			case PcmmmPackage.VALUED_CELL__MY_HEADER_PRODUCTS:
+				return myHeaderProducts != null && !myHeaderProducts.isEmpty();
+			case PcmmmPackage.VALUED_CELL__MY_HEADER_FEATURES:
+				return myHeaderFeatures != null && !myHeaderFeatures.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
