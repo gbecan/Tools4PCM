@@ -8,11 +8,14 @@ import java.util.ListIterator
 import pcmmm.PcmmmFactory
 import pcmmm.Constraint
 import interpreters.PatternInterpreter
+import pcmmm.Matrix
+import pcmmm.Header
 
 class CellContentInterpreter {
 
   def interpretCells(pcm : PCM, patternInterpreters : List[PatternInterpreter]) {
     for (matrix <- pcm.getMatrices) {
+      
       val it = matrix.getCells().listIterator()
       while (it.hasNext()) {
         val cell = it.next()
@@ -20,10 +23,10 @@ class CellContentInterpreter {
         // If cell is not yet interpreted, we interpret it
         if (cell.isInstanceOf[Extra]) {
            var interpretation : Option[Constraint] = None
-        	
+           val (rowHeaders, columnHeaders) = findHeadersFor(cell, matrix)
+        
            for (patternInterpreter <- patternInterpreters if !interpretation.isDefined) {
-	    		
-             interpretation = patternInterpreter.interpret(cell.getVerbatim())
+        	 interpretation = patternInterpreter.interpret(cell.getVerbatim(), rowHeaders, columnHeaders)
 	    		
     		 if (interpretation.isDefined) {
     			 val newCell = PcmmmFactory.eINSTANCE.createValuedCell()
@@ -52,5 +55,32 @@ class CellContentInterpreter {
     // Change cell to new cell
     it.remove()
     it.add(newCell)
+  }
+  
+  /**
+   * Find headers for a cell
+   * @return the verbatims of the cell's headers
+   */
+  def findHeadersFor(cell : Cell, matrix : Matrix) : (List[String], List[String]) = {
+    val cellRows = cell.getRow() until cell.getRow() + cell.getRowspan()
+    val cellColumns = cell.getColumn() until cell.getColumn() + cell.getColspan()
+
+    var rowHeaders : List[String] = Nil
+    var columnHeaders : List[String] = Nil
+    
+    for (header <- matrix.getCells() if header.isInstanceOf[Header])  {
+      
+      val headerRows = header.getRow() until header.getRow() + header.getRowspan()
+      val headerColumns = header.getColumn() until header.getColumn() + header.getColspan()
+      
+      if (!headerRows.intersect(cellRows).isEmpty) {
+        rowHeaders = header.getVerbatim() :: rowHeaders
+      } else if (!headerColumns.intersect(cellColumns).isEmpty) {
+        columnHeaders = header.getVerbatim() :: columnHeaders
+      }
+      
+    }
+    
+    (rowHeaders, columnHeaders)
   }
 }
