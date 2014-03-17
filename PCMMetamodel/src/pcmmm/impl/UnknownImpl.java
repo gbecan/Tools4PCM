@@ -5,24 +5,24 @@ package pcmmm.impl;
 import org.eclipse.emf.ecore.EClass;
 
 import pcmmm.PcmmmPackage;
-import pcmmm.Unknwon;
+import pcmmm.Unknown;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Unknwon</b></em>'.
+ * An implementation of the model object '<em><b>Unknown</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class UnknwonImpl extends ConstraintImpl implements Unknwon {
+public class UnknownImpl extends ConstraintImpl implements Unknown {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected UnknwonImpl() {
+	protected UnknownImpl() {
 		super();
 	}
 
@@ -33,7 +33,7 @@ public class UnknwonImpl extends ConstraintImpl implements Unknwon {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return PcmmmPackage.Literals.UNKNWON;
+		return PcmmmPackage.Literals.UNKNOWN;
 	}
 
-} //UnknwonImpl
+} //UnknownImpl

@@ -7,9 +7,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
@@ -35,7 +33,7 @@ import pcmmm.Product;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
 import pcmmm.Type;
-import pcmmm.Unknwon;
+import pcmmm.Unknown;
 import pcmmm.ValuedCell;
 import pcmmm.VariabilityConcept;
 import pcmmm.XOr;
@@ -172,7 +170,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass unknwonEClass = null;
+	private EClass unknownEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -729,8 +727,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getUnknwon() {
-		return unknwonEClass;
+	public EClass getUnknown() {
+		return unknownEClass;
 	}
 
 	/**
@@ -1057,7 +1055,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		multipleEClass = createEClass(MULTIPLE);
 		createEReference(multipleEClass, MULTIPLE__CONTRAINTS);
 
-		unknwonEClass = createEClass(UNKNWON);
+		unknownEClass = createEClass(UNKNOWN);
 
 		emptyEClass = createEClass(EMPTY);
 
@@ -1138,7 +1136,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		partialEClass.getESuperTypes().add(this.getConstraint());
 		simpleEClass.getESuperTypes().add(this.getConstraint());
 		multipleEClass.getESuperTypes().add(this.getConstraint());
-		unknwonEClass.getESuperTypes().add(this.getConstraint());
+		unknownEClass.getESuperTypes().add(this.getConstraint());
 		emptyEClass.getESuperTypes().add(this.getConstraint());
 		inconsistentEClass.getESuperTypes().add(this.getConstraint());
 		valuedCellEClass.getESuperTypes().add(this.getCell());
@@ -1211,7 +1209,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		initEClass(multipleEClass, Multiple.class, "Multiple", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMultiple_Contraints(), this.getConstraint(), null, "contraints", null, 2, -1, Multiple.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(unknwonEClass, Unknwon.class, "Unknwon", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(unknownEClass, Unknown.class, "Unknown", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(emptyEClass, Empty.class, "Empty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

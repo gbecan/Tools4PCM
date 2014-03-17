@@ -4,9 +4,7 @@ package pcmmm.util;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.util.Switch;
-
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
@@ -32,7 +30,7 @@ import pcmmm.Product;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
 import pcmmm.Type;
-import pcmmm.Unknwon;
+import pcmmm.Unknown;
 import pcmmm.ValuedCell;
 import pcmmm.VariabilityConcept;
 import pcmmm.XOr;
@@ -213,10 +211,10 @@ public class PcmmmSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case PcmmmPackage.UNKNWON: {
-				Unknwon unknwon = (Unknwon)theEObject;
-				T result = caseUnknwon(unknwon);
-				if (result == null) result = caseConstraint(unknwon);
+			case PcmmmPackage.UNKNOWN: {
+				Unknown unknown = (Unknown)theEObject;
+				T result = caseUnknown(unknown);
+				if (result == null) result = caseConstraint(unknown);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -562,17 +560,17 @@ public class PcmmmSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Unknwon</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Unknown</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Unknwon</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Unknown</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseUnknwon(Unknwon object) {
+	public T caseUnknown(Unknown object) {
 		return null;
 	}
 

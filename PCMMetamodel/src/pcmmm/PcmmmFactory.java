@@ -130,13 +130,13 @@ public interface PcmmmFactory extends EFactory {
 	Multiple createMultiple();
 
 	/**
-	 * Returns a new object of class '<em>Unknwon</em>'.
+	 * Returns a new object of class '<em>Unknown</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Unknwon</em>'.
+	 * @return a new object of class '<em>Unknown</em>'.
 	 * @generated
 	 */
-	Unknwon createUnknwon();
+	Unknown createUnknown();
 
 	/**
 	 * Returns a new object of class '<em>Empty</em>'.

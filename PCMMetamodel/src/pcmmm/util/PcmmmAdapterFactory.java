@@ -4,11 +4,8 @@ package pcmmm.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
-
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
-
 import org.eclipse.emf.ecore.EObject;
-
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
@@ -34,7 +31,7 @@ import pcmmm.Product;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
 import pcmmm.Type;
-import pcmmm.Unknwon;
+import pcmmm.Unknown;
 import pcmmm.ValuedCell;
 import pcmmm.VariabilityConcept;
 import pcmmm.XOr;
@@ -165,8 +162,8 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 				return createMultipleAdapter();
 			}
 			@Override
-			public Adapter caseUnknwon(Unknwon object) {
-				return createUnknwonAdapter();
+			public Adapter caseUnknown(Unknown object) {
+				return createUnknownAdapter();
 			}
 			@Override
 			public Adapter caseEmpty(Empty object) {
@@ -475,16 +472,16 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link pcmmm.Unknwon <em>Unknwon</em>}'.
+	 * Creates a new adapter for an object of class '{@link pcmmm.Unknown <em>Unknown</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see pcmmm.Unknwon
+	 * @see pcmmm.Unknown
 	 * @generated
 	 */
-	public Adapter createUnknwonAdapter() {
+	public Adapter createUnknownAdapter() {
 		return null;
 	}
 

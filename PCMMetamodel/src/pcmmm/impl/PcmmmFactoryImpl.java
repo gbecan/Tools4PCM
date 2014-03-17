@@ -5,11 +5,8 @@ package pcmmm.impl;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
 import pcmmm.And;
 import pcmmm.Domain;
 import pcmmm.DomainCollection;
@@ -31,7 +28,7 @@ import pcmmm.PcmmmPackage;
 import pcmmm.Product;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
-import pcmmm.Unknwon;
+import pcmmm.Unknown;
 import pcmmm.ValuedCell;
 import pcmmm.XOr;
 import pcmmm.YesNO;
@@ -92,7 +89,7 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 			case PcmmmPackage.PARTIAL: return createPartial();
 			case PcmmmPackage.SIMPLE: return createSimple();
 			case PcmmmPackage.MULTIPLE: return createMultiple();
-			case PcmmmPackage.UNKNWON: return createUnknwon();
+			case PcmmmPackage.UNKNOWN: return createUnknown();
 			case PcmmmPackage.EMPTY: return createEmpty();
 			case PcmmmPackage.INCONSISTENT: return createInconsistent();
 			case PcmmmPackage.VALUED_CELL: return createValuedCell();
@@ -234,9 +231,9 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Unknwon createUnknwon() {
-		UnknwonImpl unknwon = new UnknwonImpl();
-		return unknwon;
+	public Unknown createUnknown() {
+		UnknownImpl unknown = new UnknownImpl();
+		return unknown;
 	}
 
 	/**

@@ -1110,14 +1110,14 @@ public interface PcmmmPackage extends EPackage {
 	int MULTIPLE_OPERATION_COUNT = CONSTRAINT_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link pcmmm.impl.UnknwonImpl <em>Unknwon</em>}' class.
+	 * The meta object id for the '{@link pcmmm.impl.UnknownImpl <em>Unknown</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see pcmmm.impl.UnknwonImpl
-	 * @see pcmmm.impl.PcmmmPackageImpl#getUnknwon()
+	 * @see pcmmm.impl.UnknownImpl
+	 * @see pcmmm.impl.PcmmmPackageImpl#getUnknown()
 	 * @generated
 	 */
-	int UNKNWON = 17;
+	int UNKNOWN = 17;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1126,16 +1126,16 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNKNWON__NAME = CONSTRAINT__NAME;
+	int UNKNOWN__NAME = CONSTRAINT__NAME;
 
 	/**
-	 * The number of structural features of the '<em>Unknwon</em>' class.
+	 * The number of structural features of the '<em>Unknown</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UNKNWON_FEATURE_COUNT = CONSTRAINT_FEATURE_COUNT + 0;
+	int UNKNOWN_FEATURE_COUNT = CONSTRAINT_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Eval</em>' operation.
@@ -1144,16 +1144,16 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNKNWON___EVAL = CONSTRAINT___EVAL;
+	int UNKNOWN___EVAL = CONSTRAINT___EVAL;
 
 	/**
-	 * The number of operations of the '<em>Unknwon</em>' class.
+	 * The number of operations of the '<em>Unknown</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UNKNWON_OPERATION_COUNT = CONSTRAINT_OPERATION_COUNT + 0;
+	int UNKNOWN_OPERATION_COUNT = CONSTRAINT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link pcmmm.impl.EmptyImpl <em>Empty</em>}' class.
@@ -2321,14 +2321,14 @@ public interface PcmmmPackage extends EPackage {
 	EReference getMultiple_Contraints();
 
 	/**
-	 * Returns the meta object for class '{@link pcmmm.Unknwon <em>Unknwon</em>}'.
+	 * Returns the meta object for class '{@link pcmmm.Unknown <em>Unknown</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Unknwon</em>'.
-	 * @see pcmmm.Unknwon
+	 * @return the meta object for class '<em>Unknown</em>'.
+	 * @see pcmmm.Unknown
 	 * @generated
 	 */
-	EClass getUnknwon();
+	EClass getUnknown();
 
 	/**
 	 * Returns the meta object for class '{@link pcmmm.Empty <em>Empty</em>}'.
@@ -3021,14 +3021,14 @@ public interface PcmmmPackage extends EPackage {
 		EReference MULTIPLE__CONTRAINTS = eINSTANCE.getMultiple_Contraints();
 
 		/**
-		 * The meta object literal for the '{@link pcmmm.impl.UnknwonImpl <em>Unknwon</em>}' class.
+		 * The meta object literal for the '{@link pcmmm.impl.UnknownImpl <em>Unknown</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see pcmmm.impl.UnknwonImpl
-		 * @see pcmmm.impl.PcmmmPackageImpl#getUnknwon()
+		 * @see pcmmm.impl.UnknownImpl
+		 * @see pcmmm.impl.PcmmmPackageImpl#getUnknown()
 		 * @generated
 		 */
-		EClass UNKNWON = eINSTANCE.getUnknwon();
+		EClass UNKNOWN = eINSTANCE.getUnknown();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.EmptyImpl <em>Empty</em>}' class.
