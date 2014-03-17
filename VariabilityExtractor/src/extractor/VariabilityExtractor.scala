@@ -4,6 +4,9 @@ import pcmmm.PCM
 import scala.collection.JavaConversions._
 import interpreters.PatternInterpreter
 import interpreters.BooleanPatternInterpreter
+import interpreters.UnknownPatternInterpreter
+import interpreters.SimplePatternInterpreter
+import interpreters.MultiplePatternInterpreter
 
 class VariabilityExtractor {
 
@@ -12,7 +15,12 @@ class VariabilityExtractor {
   private val cellContentInterpreter = new CellContentInterpreter
   
   private val patternInterpreters : List[PatternInterpreter] = List(
-		  new BooleanPatternInterpreter(Nil,Nil,"yes|no",Nil)
+		  new BooleanPatternInterpreter(Nil,Nil,"yes|true|✓",List("true")),
+		  new BooleanPatternInterpreter(Nil,Nil,"no|false",List("false")),
+		  new UnknownPatternInterpreter(Nil,Nil,"\\?|unknown|-",Nil),
+		  new SimplePatternInterpreter(Nil,Nil,"\\w+(\\s\\w+)*",Nil),
+		  new SimplePatternInterpreter(Nil,Nil,"(\\d+(\\.\\d+)+)",Nil),
+		  new MultiplePatternInterpreter(Nil,List("LCD monitor", "Storage media"), ".*", Nil) // FIXME : does not work
   )
   
   def extractVariability(pcm : PCM) {
