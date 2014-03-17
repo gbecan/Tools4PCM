@@ -6,6 +6,7 @@ import pcmmm.Header
 import pcmmm.VariabilityConcept
 import pcmmm.Feature
 import pcmmm.PcmmmFactory
+import pcmmm.ValuedCell
 
 class VariabilityConceptExtractor {
 
@@ -42,8 +43,20 @@ class VariabilityConceptExtractor {
 	  }
   }
   
+  /**
+   * Extract variability concepts from interpreted cells
+   * @param pcm : model of PCM
+   */
+  def extractConceptsFromInterpretedCells(pcm : PCM) {
+    for (
+	      matrix <- pcm.getMatrices();
+	      cell <- matrix.getCells().filter(_ .isInstanceOf[ValuedCell])
+	  ) {
+    	val valuedCell = cell.asInstanceOf[ValuedCell]
+    	valuedCell.getInterpretation()
+    		
+    }
+  }
   
-  // TODO : extract features and products from each Simple contained in a ValuedCell 
-  // + add these variability concepts to the cell
   
 }

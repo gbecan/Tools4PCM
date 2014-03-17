@@ -15,6 +15,11 @@ import pcmmm.Product
 
 class CellContentInterpreter {
 
+  /**
+   * Interpret each cell and specify its product and feature headers
+   * @param pcm : model of PCM
+   * @param patternInterpreters : variability pattern interpreters
+   */
   def interpretCells(pcm : PCM, patternInterpreters : List[PatternInterpreter]) {
     // Configure pattern interpreters to this PCM 
       for (patternInterpreter <- patternInterpreters) {
@@ -36,8 +41,19 @@ class CellContentInterpreter {
         	 interpretation = patternInterpreter.interpret(cell.getVerbatim(), products, features)
 	    		
     		 if (interpretation.isDefined) {
+    			 // Create valued cell
     			 val newCell = PcmmmFactory.eINSTANCE.createValuedCell()
     			 convertCell(it, cell, newCell)
+    			 
+    			 // Set product and feature headers
+    			 if (!products.isEmpty) {
+    			   newCell.setMyHeaderProduct(products.head)
+    			 } 
+    			 if (!features.isEmpty) {
+    			   newCell.setMyHeaderFeature(features.head)
+    			 } 
+    			 
+    			 // Set interpretation
     			 newCell.setInterpretation(interpretation.get)
     			 // FIXME : what about recursive interpretation (Multi or Partial for example)?
 	    	 }

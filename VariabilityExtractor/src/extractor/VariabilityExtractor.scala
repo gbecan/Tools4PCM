@@ -60,11 +60,12 @@ class VariabilityExtractor {
 	  // Extract features and products from headers
 	  variabilityConceptExtractor.extractConceptsFromHeaders(pcm)
 	  
-	  // Separate contents in cells (detect Simple, Multi or Partial patterns)
-	  
-	  cellContentInterpreter.interpretCells(pcm, patternInterpreters) // FIXME : requires configuration
+	  // Interpret contents in cells (detect variability patterns (e.g. Boolean pattern)
+	  // and specify header products and features related to each cell 
+	  cellContentInterpreter.interpretCells(pcm, patternInterpreters)
 	  
 	  // Extract features and products from cells
+	  variabilityConceptExtractor.extractConceptsFromInterpretedCells(pcm)
 	  
 	  // Extract feature's domains
 	  
