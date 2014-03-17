@@ -101,7 +101,7 @@ public class ParserTools {
 			String headers = m.group(1);
 			ArrayList<String> h = new ArrayList<String>();
 			if (headers != null) {
-				String[] temp = headers.split(" ");
+				String[] temp = headers.split("\\s(?=\")|(?<=\")\\s");
 				for (String t : temp) {
 					t = t.replace("\"", "");
 					h.add(t);
