@@ -1,13 +1,13 @@
 package extractor
 
 import pcmmm.PCM
-import patterns.PatternInterpreter
 import scala.collection.JavaConversions._
 import pcmmm.Extra
 import pcmmm.Cell
 import java.util.ListIterator
 import pcmmm.PcmmmFactory
 import pcmmm.Constraint
+import interpreters.PatternInterpreter
 
 class CellContentInterpreter {
 
