@@ -12,6 +12,9 @@ import interpreters.PatternInterpreter
 import pcmindexer.Concept
 import interpreters.PatternInterpreter
 import interpreters.BooleanPatternInterpreter
+import interpreters.PartialPatternInterpreter
+import interpreters.EmptyPatternInterpreter
+import interpreters.InconsistentPatternInterpreter
 
 class VariabilityExtractor {
 
@@ -36,7 +39,14 @@ class VariabilityExtractor {
   
   def concept2PatternInterpreter(pattern : Concept) : PatternInterpreter = {
     pattern.getName() match {
-      case _ => new BooleanPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
+      case "Boolean" => new BooleanPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
+      case "Simple" => new SimplePatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
+      case "Partial" => new PartialPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
+      case "Multiple" => new MultiplePatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
+      case "Unknown" => new UnknownPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
+      case "Empty" => new EmptyPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
+      case "Inconsistent" => new InconsistentPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
+      case _ => new UnknownPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
     }
     
   }

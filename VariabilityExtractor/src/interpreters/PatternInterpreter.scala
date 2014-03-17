@@ -24,10 +24,13 @@ abstract class PatternInterpreter(
 	// we need to restart all the pattern matching rule on sub-elements of the pattern
 	
     def config(pcm : PCM) {
+	  validProducts = Nil
+	  validFeatures = Nil
+	  
 	  // Find concepts in validHeaders and separate them in products and features
-	   for (concept <- pcm.getConcepts())  {
-	     if (validHeaders.contains(concept.getName())) {
-	    	 concept match {
+	   for (concept <- pcm.getConcepts(); validHeader <- validHeaders)  {
+	     if (format(validHeader).equals(format(concept.getName()))) {
+	        concept match {
 	    	   case p : Product => validProducts = p :: validProducts 
 	    	   case f : Feature => validFeatures = f :: validFeatures
 	    	 }
