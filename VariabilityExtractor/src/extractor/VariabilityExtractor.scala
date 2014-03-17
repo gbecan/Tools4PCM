@@ -2,11 +2,7 @@ package extractor
 
 import pcmmm.PCM
 import scala.collection.JavaConversions._
-import patterns.PatternInterpreter
-import patterns.BooleanInterpreter
-import patterns.SimpleInterpreter
-import patterns.UnknownInterpreter
-import patterns.NumberInterpreter
+import interpreters.PatternInterpreter
 
 class VariabilityExtractor {
 
@@ -14,12 +10,7 @@ class VariabilityExtractor {
   private val variabilityConceptExtractor = new VariabilityConceptExtractor
   private val cellContentInterpreter = new CellContentInterpreter
   
-  private val patternInterpreters : List[PatternInterpreter] = List(
-			  new BooleanInterpreter,
-			  new UnknownInterpreter,
-			  new NumberInterpreter,
-			  new SimpleInterpreter
-	  )
+  private val patternInterpreters : List[PatternInterpreter] = List()
   
   def extractVariability(pcm : PCM) {
 	  // Normalize PCM

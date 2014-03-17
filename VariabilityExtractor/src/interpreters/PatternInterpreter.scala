@@ -1,9 +1,13 @@
-package patterns
+package interpreters
 
 import pcmmm.Constraint
 
-abstract class PatternInterpreter {
-
+abstract class PatternInterpreter(
+    headers : List[String],
+    regex : String,
+    parameters : List[String]
+    ) {
+  
 	def interpret(s : String) : Option[Constraint]
 	
 	def format (s : String) : String = {
@@ -11,6 +15,8 @@ abstract class PatternInterpreter {
       val formattedContent = words.mkString("", " ", "").toLowerCase()
       formattedContent
 	}
+	
+	
   
 }
 
