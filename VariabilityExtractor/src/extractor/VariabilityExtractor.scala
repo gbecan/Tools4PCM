@@ -20,21 +20,19 @@ class VariabilityExtractor {
 
   private val pcmNormalizer = new PCMNormalizer
   private val variabilityConceptExtractor = new VariabilityConceptExtractor
-  private val cellContentInterpreter = new CellContentInterpreter
-  
-  private var patternInterpreters : List[PatternInterpreter] = Nil
+  private val cellContentInterpreter = new CellContentInterpreter(Nil)
   
   def setPatternInterpreters(interpreters : List[PatternInterpreter]) {
-    patternInterpreters = interpreters
+    cellContentInterpreter.setInterpreters(interpreters)
   }
   
   def parseConfigurationFile(configFile : String) {
 	  val configParser = new ParserTools
 	  configParser.readParameters(configFile)
-	  patternInterpreters = (for (pattern <- configParser.patterns) yield {
+	  val patternInterpreters = (for (pattern <- configParser.patterns) yield {
 		  concept2PatternInterpreter(pattern)
 	  }).toList
-	  
+	  cellContentInterpreter.setInterpreters(patternInterpreters)
   }
   
   def concept2PatternInterpreter(pattern : Concept) : PatternInterpreter = {
@@ -62,7 +60,7 @@ class VariabilityExtractor {
 	  
 	  // Interpret contents in cells (detect variability patterns (e.g. Boolean pattern)
 	  // and specify header products and features related to each cell 
-	  cellContentInterpreter.interpretCells(pcm, patternInterpreters)
+	  cellContentInterpreter.interpretCells(pcm)
 	  
 	  // Extract features and products from cells
 	  variabilityConceptExtractor.extractConceptsFromInterpretedCells(pcm)

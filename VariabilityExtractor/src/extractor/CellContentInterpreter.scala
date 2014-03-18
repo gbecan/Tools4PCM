@@ -12,15 +12,28 @@ import pcmmm.Matrix
 import pcmmm.Header
 import pcmmm.Feature
 import pcmmm.Product
+import interpreters.PatternInterpreter
+import interpreters.PatternInterpreter
+import interpreters.PatternInterpreter
+import interpreters.PatternInterpreter
 
-class CellContentInterpreter {
+class CellContentInterpreter(
+    interpreters : List[PatternInterpreter]
+) {
 
+  private var patternInterpreters : List[PatternInterpreter] = interpreters
+  
+  def setInterpreters(interpreters : List[PatternInterpreter]) {
+      patternInterpreters = interpreters
+      patternInterpreters.foreach(_.setCellContentInterpreter(this))
+  }
+  
   /**
    * Interpret each cell and specify its product and feature headers
    * @param pcm : model of PCM
    * @param patternInterpreters : variability pattern interpreters
    */
-  def interpretCells(pcm : PCM, patternInterpreters : List[PatternInterpreter]) {
+  def interpretCells(pcm : PCM) {
     // Configure pattern interpreters to this PCM 
       for (patternInterpreter <- patternInterpreters) {
         patternInterpreter.config(pcm)
@@ -34,36 +47,49 @@ class CellContentInterpreter {
         val cell = it.next()
 
         if (cell.isInstanceOf[Extra]) {
-           var interpretation : Option[Constraint] = None
+           // Find concepts in headers of this cell
            val (products, features) = findConceptsFor(cell, matrix)
-        
-           for (patternInterpreter <- patternInterpreters if !interpretation.isDefined) {
-        	 interpretation = patternInterpreter.interpret(cell.getVerbatim(), products, features)
-	    		
-    		 if (interpretation.isDefined) {
-    			 // Create valued cell
-    			 val newCell = PcmmmFactory.eINSTANCE.createValuedCell()
-    			 convertCell(it, cell, newCell)
-    			 
-    			 // Set product and feature headers
-    			 if (!products.isEmpty) {
-    			   newCell.getMyHeaderProducts.addAll(products)
-    			 } 
-    			 if (!features.isEmpty) {
-    			   newCell.getMyHeaderFeatures.addAll(features)
-    			 } 
-    			 
-    			 // Set interpretation
-    			 newCell.setInterpretation(interpretation.get)
-    			 // FIXME : what about recursive interpretation (Multi or Partial for example)?
-	    	 }
-           }
+
+           // Find interpretation
+           val interpretation = findInterpretation(cell.getVerbatim(), products, features)
+	       
+	       if (interpretation.isDefined) {
+			 // Create valued cell
+			 val newCell = PcmmmFactory.eINSTANCE.createValuedCell()
+			 convertCell(it, cell, newCell)
+			 
+			 // Set product and feature headers
+			 if (!products.isEmpty) {
+			   newCell.getMyHeaderProducts.addAll(products)
+			 } 
+			 if (!features.isEmpty) {
+			   newCell.getMyHeaderFeatures.addAll(features)
+			 } 
+				 
+			 // Set interpretation
+			 newCell.setInterpretation(interpretation.get)
+			 // FIXME : what about recursive interpretation (Multi or Partial for example)?
+	    	}
         }
       }
     }
     
   }
   
+  /**
+   * Find interpretation of a string according to the given pattern interpreters and lists of valid products and features
+   */
+  def findInterpretation(
+      verbatim : String, 
+      products : List[Product], 
+      features : List[Feature]) 
+  : Option[Constraint] = {
+	   var interpretation : Option[Constraint] = None
+	   for (interpreter <- patternInterpreters if !interpretation.isDefined) {
+		 interpretation = interpreter.interpret(verbatim, products, features)
+	   }
+	   interpretation
+  }
   
   // TODO : capitalize this method somewhere because it is redundant with the same one in PCMNormalizer
   def convertCell(it : ListIterator[Cell], cell : Cell, newCell : Cell) {

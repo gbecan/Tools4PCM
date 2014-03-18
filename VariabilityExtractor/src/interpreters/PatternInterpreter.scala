@@ -8,6 +8,10 @@ import pcmmm.Header
 import pcmmm.Feature
 import pcmmm.PCM
 import pcmmm.Product
+import extractor.CellContentInterpreter
+import extractor.CellContentInterpreter
+import extractor.CellContentInterpreter
+import extractor.CellContentInterpreter
 
 abstract class PatternInterpreter(
 	val validHeaders : List[String],
@@ -19,6 +23,12 @@ abstract class PatternInterpreter(
 
 	private var validProducts : List[Product] = Nil
     private var validFeatures : List[Feature] = Nil
+    
+    var cellContentInterpreter : CellContentInterpreter = new CellContentInterpreter(Nil)
+    
+    def setCellContentInterpreter(interpreter : CellContentInterpreter) {
+	  cellContentInterpreter = interpreter
+	}
     
 	// FIXME : in some cases (Multi, Partial for example), 
 	// we need to restart all the pattern matching rule on sub-elements of the pattern
