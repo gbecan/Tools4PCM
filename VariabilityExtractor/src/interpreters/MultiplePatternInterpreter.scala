@@ -17,10 +17,13 @@ class MultiplePatternInterpreter (
 		  val constraint = PcmmmFactory.eINSTANCE.createMultiple()
 		  for (groupID <- 1 to matcher.groupCount()) {
 			  val subConstraint = matcher.group(groupID)
-			  val subCInterpretation = cellContentInterpreter.findInterpretation(subConstraint, products, features)
-			  if (subCInterpretation.isDefined) {
-			    constraint.getContraints().add(subCInterpretation.get)
+			  if (subConstraint != null) {
+				  val subCInterpretation = cellContentInterpreter.findInterpretation(subConstraint, products, features)
+				  if (subCInterpretation.isDefined) {
+				    constraint.getContraints().add(subCInterpretation.get)
+				  }
 			  }
+			  
 		  }
 		  constraint
   }

@@ -21,6 +21,7 @@ class VariabilityExtractor {
   private val pcmNormalizer = new PCMNormalizer
   private val variabilityConceptExtractor = new VariabilityConceptExtractor
   private val cellContentInterpreter = new CellContentInterpreter(Nil)
+  private val domainExtractor = new DomainExtractor
   
   def setPatternInterpreters(interpreters : List[PatternInterpreter]) {
     cellContentInterpreter.setInterpreters(interpreters)
@@ -58,7 +59,7 @@ class VariabilityExtractor {
 	  // Extract features and products from headers
 	  variabilityConceptExtractor.extractConceptsFromHeaders(pcm)
 	  
-	  // Interpret contents in cells (detect variability patterns (e.g. Boolean pattern)
+	  // Interpret contents in cells (detect variability patterns (e.g. Boolean pattern))
 	  // and specify header products and features related to each cell 
 	  cellContentInterpreter.interpretCells(pcm)
 	  
@@ -66,7 +67,7 @@ class VariabilityExtractor {
 	  variabilityConceptExtractor.extractConceptsFromInterpretedCells(pcm)
 	  
 	  // Extract feature's domains
+	  domainExtractor.extractDomains(pcm)
 	  
-	  // Extract constraints
   }
 }
