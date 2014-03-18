@@ -78,12 +78,11 @@ class CellContentInterpreter(
   
   /**
    * Find interpretation of a string according to the given pattern interpreters and lists of valid products and features
+   * @param verbatim : string to analyze
+   * @param products : header products associated with this string
+   * @param features : header features associated with this string
    */
-  def findInterpretation(
-      verbatim : String, 
-      products : List[Product], 
-      features : List[Feature]) 
-  : Option[Constraint] = {
+  def findInterpretation(verbatim : String, products : List[Product], features : List[Feature]) : Option[Constraint] = {
 	   var interpretation : Option[Constraint] = None
 	   for (interpreter <- patternInterpreters if !interpretation.isDefined) {
 		 interpretation = interpreter.interpret(verbatim, products, features)

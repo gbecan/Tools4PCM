@@ -55,7 +55,7 @@ abstract class PatternInterpreter(
 	  
 		  val matcher = pattern.matcher(format(s))
 		  if (matcher.matches()) {
-			Some(createConstraint(s, matcher, parameters))
+			Some(createConstraint(s, matcher, parameters, products, features))
 		  } else {
 		    None
 		  }
@@ -66,7 +66,7 @@ abstract class PatternInterpreter(
 	  
 	}
 	
-	def createConstraint(s : String, matcher : Matcher, parameters : List[String]) : Constraint
+	def createConstraint(s : String, matcher : Matcher, parameters : List[String], products : List[Product], features : List[Feature]) : Constraint
 	
 	def format (s : String) : String = {
 	  val words = for (word <- s.split("\\s") if !word.isEmpty()) yield word
