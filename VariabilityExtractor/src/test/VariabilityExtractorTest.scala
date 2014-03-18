@@ -21,19 +21,12 @@ import interpreters.SimplePatternInterpreter
 import interpreters.BooleanPatternInterpreter
 import interpreters.MultiplePatternInterpreter
 import interpreters.UnknownPatternInterpreter
+import export.PCM2HTML
+import java.io.FileWriter
+import scala.xml.PrettyPrinter
 
 class VariabilityExtractorTest extends FlatSpec with Matchers {
 
-  val nikonDSLRPatternInterpreters : List[PatternInterpreter] = List(
-		  new BooleanPatternInterpreter(Nil,"yes|true|✓",List("true")),
-		  new BooleanPatternInterpreter(Nil,"no|false",List("false")),
-		  new UnknownPatternInterpreter(Nil,"\\?|unknown|-",Nil),
-		  new SimplePatternInterpreter(Nil,"\\w+(\\s\\w+)*",Nil),
-		  new SimplePatternInterpreter(Nil,"(\\d+(\\.\\d+)+)",Nil),
-		  new MultiplePatternInterpreter(List("LCD monitor", "Storage media"), ".*", Nil) // FIXME : does not work
-  )
-  
-  
   def loadPCMModel(file : File) : PCM = {
     // Initialize the model
     PcmmmPackage.eINSTANCE.eClass();
@@ -56,7 +49,7 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
   }
   
   def savePCMModel(pcm : PCM, name : String) {
-     val path = "output/" + name
+     val path = "output/models/" + name
      
      // Save model in file
      val reg = Resource.Factory.Registry.INSTANCE;
@@ -66,6 +59,16 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
      val resource = resSet.createResource(URI.createURI(path));
      resource.getContents().add(pcm);
      resource.save(Collections.EMPTY_MAP);
+     
+     // Save model in HTML file
+     val htmlExport = new PCM2HTML
+     val htmlCode = htmlExport.pcm2HTML(pcm)
+     val title = name.substring(0, name.size - 4)
+     
+     val writer = new FileWriter("output/html/" + title.replaceAll(" ", "_") + ".html")
+	 writer.write((new PrettyPrinter(80,2)).format(htmlCode))
+	 writer.close()
+	    
   }
   
   "VariabilityExtractor" should "run on every input file" in {
@@ -73,7 +76,10 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
     
 	  val modelFolder = new File("../WikipediaPCMParser/output/models")
 	  for (file <- modelFolder.listFiles()) {
+	    println(file.getName())
 	    val pcm = loadPCMModel(file)
+	    val configFile = "input/configs/" + file.getName.substring(0, file.getName.size - 4) + ".config"  
+	    variabilityExtractor.parseConfigurationFile(configFile)
 	    variabilityExtractor.extractVariability(pcm)
 	    savePCMModel(pcm, file.getName())
 	  }
