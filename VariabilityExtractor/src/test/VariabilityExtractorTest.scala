@@ -82,6 +82,13 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	    variabilityExtractor.parseConfigurationFile(configFile)
 	    variabilityExtractor.extractVariability(pcm)
 	    savePCMModel(pcm, file.getName())
+	    
+	    for (matrix <- pcm.getMatrices()) {
+		  val cells = matrix.getCells()
+		  val nonHeaderCells = cells.count(cell => !cell.isInstanceOf[Header])
+		  val nonExtraCells = cells.count(cell => !cell.isInstanceOf[Extra] && !cell.isInstanceOf[Header])
+		  println("\t\t" + (nonExtraCells * 100) / nonHeaderCells + "% of interpreted cells")
+	    }
 	  }
   }
   

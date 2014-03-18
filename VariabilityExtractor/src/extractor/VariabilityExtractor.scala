@@ -33,7 +33,12 @@ class VariabilityExtractor {
 	  val patternInterpreters = (for (pattern <- configParser.patterns) yield {
 		  concept2PatternInterpreter(pattern)
 	  }).toList
-	  cellContentInterpreter.setInterpreters(patternInterpreters)
+	  if (!patternInterpreters.isEmpty) {
+		  cellContentInterpreter.setInterpreters(patternInterpreters)
+	  } else {
+		  cellContentInterpreter.useDefaultInterpreters()
+	  }
+	  
 	  
   }
   

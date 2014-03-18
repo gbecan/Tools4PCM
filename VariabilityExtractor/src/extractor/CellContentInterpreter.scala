@@ -16,6 +16,8 @@ import interpreters.PatternInterpreter
 import interpreters.PatternInterpreter
 import interpreters.PatternInterpreter
 import interpreters.PatternInterpreter
+import interpreters.BooleanPatternInterpreter
+import interpreters.UnknownPatternInterpreter
 
 class CellContentInterpreter(
     interpreters : List[PatternInterpreter]
@@ -26,6 +28,15 @@ class CellContentInterpreter(
   def setInterpreters(interpreters : List[PatternInterpreter]) {
       patternInterpreters = interpreters
       patternInterpreters.foreach(_.setCellContentInterpreter(this))
+  }
+  
+  def useDefaultInterpreters() {
+    patternInterpreters = List(
+    	new BooleanPatternInterpreter(Nil,"yes|true",List("true")),
+    	new BooleanPatternInterpreter(Nil,"no|false",List("false")),
+    	new UnknownPatternInterpreter(Nil,"\\?",Nil)
+    	
+    )
   }
   
   /**
