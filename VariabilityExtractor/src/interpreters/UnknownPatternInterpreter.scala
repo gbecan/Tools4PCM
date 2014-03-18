@@ -11,8 +11,10 @@ class UnknownPatternInterpreter (
     parameters : List[String])
     extends PatternInterpreter(validHeaders, regex, parameters) {
 
-  override def createConstraint(matcher : Matcher, parameters : List[String]) : Constraint = {
-		  PcmmmFactory.eINSTANCE.createUnknown()
+  override def createConstraint(s : String, matcher : Matcher, parameters : List[String]) : Constraint = {
+		 val constraint =  PcmmmFactory.eINSTANCE.createUnknown()
+		 constraint.setName(s)
+		 constraint
   }
 
 }

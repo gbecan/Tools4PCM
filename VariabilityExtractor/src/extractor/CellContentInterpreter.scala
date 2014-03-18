@@ -47,10 +47,10 @@ class CellContentInterpreter {
     			 
     			 // Set product and feature headers
     			 if (!products.isEmpty) {
-    			   newCell.setMyHeaderProduct(products.head)
+    			   newCell.getMyHeaderProducts.addAll(products)
     			 } 
     			 if (!features.isEmpty) {
-    			   newCell.setMyHeaderFeature(features.head)
+    			   newCell.getMyHeaderFeatures.addAll(features)
     			 } 
     			 
     			 // Set interpretation

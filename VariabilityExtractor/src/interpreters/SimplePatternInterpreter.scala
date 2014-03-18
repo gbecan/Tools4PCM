@@ -10,8 +10,10 @@ class SimplePatternInterpreter (
     parameters : List[String])
     extends PatternInterpreter(validHeaders, regex, parameters) {
  
-  override def createConstraint(matcher : Matcher, parameters : List[String]) : Constraint = {
-		  PcmmmFactory.eINSTANCE.createSimple()
+  override def createConstraint(s : String, matcher : Matcher, parameters : List[String]) : Constraint = {
+		  val constraint = PcmmmFactory.eINSTANCE.createSimple()
+		  constraint.setName(s)
+		  constraint
   }
   
 }

@@ -7,6 +7,11 @@ import pcmmm.VariabilityConcept
 import pcmmm.Feature
 import pcmmm.PcmmmFactory
 import pcmmm.ValuedCell
+import pcmmm.Product
+import pcmmm.Constraint
+import pcmmm.Simple
+import pcmmm.Multiple
+import pcmmm.Partial
 
 class VariabilityConceptExtractor {
 
@@ -53,8 +58,42 @@ class VariabilityConceptExtractor {
 	      cell <- matrix.getCells().filter(_ .isInstanceOf[ValuedCell])
 	  ) {
     	val valuedCell = cell.asInstanceOf[ValuedCell]
-    	valuedCell.getInterpretation()
-    		
+    	val extractedConcepts = extractVariabilityConcepts(pcm, valuedCell.getInterpretation()) // FIXME
+    	valuedCell.getConcepts().addAll(extractedConcepts.diff(valuedCell.getMyHeaderFeatures().toSet))
+    }
+  }
+  
+  private def extractVariabilityConcepts(pcm : PCM, interpretation : Constraint) : Set[VariabilityConcept] = {
+	  interpretation match {
+	    case c : Simple =>
+	      val concept = getConcept(pcm, c.getName())
+	      c.setConcept(concept)
+	      Set(concept)
+	    case c : Multiple => 
+	      val concepts = for (constraint <- c.getContraints()) yield {extractVariabilityConcepts(pcm, constraint)}
+	      if (!concepts.isEmpty) {
+	        concepts.reduceLeft((s1 ,s2) => s1 union s2)
+	      } else {
+	        Set.empty
+	      }
+	    case c : Partial => 
+	      extractVariabilityConcepts(pcm, c.getCondition()).union(extractVariabilityConcepts(pcm, c.getArgument()))
+	    case _ => Set.empty
+	  }
+  }
+  
+  /**
+   * Get concept in PCM or create one if it does not exist
+   */
+  private def getConcept(pcm : PCM, name : String) : VariabilityConcept = {
+    val existingConcept = pcm.getConcepts().find(c => c.getName() == name)
+    if (existingConcept.isDefined) {
+      existingConcept.get
+    } else {
+      val newFeature = PcmmmFactory.eINSTANCE.createFeature()
+      newFeature.setName(name)
+      pcm.getConcepts().add(newFeature)
+      newFeature
     }
   }
   

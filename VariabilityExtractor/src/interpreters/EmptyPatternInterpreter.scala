@@ -10,8 +10,10 @@ class EmptyPatternInterpreter (
     parameters : List[String])
     extends PatternInterpreter(validHeaders, regex, parameters) {
 
-  override def createConstraint(matcher : Matcher, parameters : List[String]) : Constraint = {
-		  PcmmmFactory.eINSTANCE.createEmpty()
+  override def createConstraint(s : String, matcher : Matcher, parameters : List[String]) : Constraint = {
+		  val constraint = PcmmmFactory.eINSTANCE.createEmpty()
+		  constraint.setName(s)
+		  constraint
   }
 
 }
