@@ -34,10 +34,10 @@ class CellContentInterpreter(
    * @param patternInterpreters : variability pattern interpreters
    */
   def interpretCells(pcm : PCM) {
-    // Configure pattern interpreters to this PCM 
-      for (patternInterpreter <- patternInterpreters) {
-        patternInterpreter.config(pcm)
-      }
+    // Configure pattern interpreters to this PCM
+	for (patternInterpreter <- patternInterpreters) {
+		patternInterpreter.config(pcm)
+	}
     
     for (matrix <- pcm.getMatrices) {
       
@@ -49,7 +49,7 @@ class CellContentInterpreter(
         if (cell.isInstanceOf[Extra]) {
            // Find concepts in headers of this cell
            val (products, features) = findConceptsFor(cell, matrix)
-
+        		   
            // Find interpretation
            val interpretation = findInterpretation(cell.getVerbatim(), products, features)
 	       

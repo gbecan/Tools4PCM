@@ -33,9 +33,7 @@ class VariabilityExtractor {
 	  val patternInterpreters = (for (pattern <- configParser.patterns) yield {
 		  concept2PatternInterpreter(pattern)
 	  }).toList
-	  if (!patternInterpreters.isEmpty) {
-		  cellContentInterpreter.setInterpreters(patternInterpreters)
-	  }
+	  cellContentInterpreter.setInterpreters(patternInterpreters)
 	  
   }
   
@@ -63,7 +61,7 @@ class VariabilityExtractor {
 	  variabilityConceptExtractor.extractConceptsFromHeaders(pcm)
 	  
 	  // Interpret contents in cells (detect variability patterns (e.g. Boolean pattern))
-	  // and specify header products and features related to each cell 
+	  // and specify header products and features related to each cell
 	  cellContentInterpreter.interpretCells(pcm)
 	  
 	  // Extract features and products from cells
@@ -71,6 +69,5 @@ class VariabilityExtractor {
 	  
 	  // Extract feature's domains
 	  domainExtractor.extractDomains(pcm)
-	  
   }
 }
