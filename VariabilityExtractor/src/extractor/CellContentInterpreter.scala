@@ -28,12 +28,8 @@ class CellContentInterpreter(
   private var patternInterpreters : List[PatternInterpreter] = if(!interpreters.isEmpty) {interpreters} else {CellContentInterpreter.defaultInterpreters}
   
   def setInterpreters(interpreters : List[PatternInterpreter]) {
-      patternInterpreters = interpreters
+      patternInterpreters = interpreters ::: CellContentInterpreter.defaultInterpreters
       patternInterpreters.foreach(_.setCellContentInterpreter(this))
-  }
-  
-  def useDefaultInterpreters() {
-    patternInterpreters = CellContentInterpreter.defaultInterpreters
   }
   
   /**
