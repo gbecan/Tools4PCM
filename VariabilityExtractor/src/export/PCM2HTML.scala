@@ -5,6 +5,17 @@ import scala.xml.Elem
 import scala.collection.JavaConversions._
 import pcmmm.Matrix
 import pcmmm.Cell
+import pcmmm.Header
+import pcmmm.Extra
+import pcmmm.ValuedCell
+import pcmmm.Constraint
+import pcmmm.Boolean
+import pcmmm.Unknown
+import pcmmm.Empty
+import pcmmm.Inconsistent
+import pcmmm.Simple
+import pcmmm.Partial
+import pcmmm.Multiple
 
 class PCM2HTML {
 
@@ -50,8 +61,32 @@ class PCM2HTML {
     	rowspan={cell.getRowspan().toString}
     	colspan={cell.getColspan().toString}
     >
-    		{cell.getVerbatim()}
+    {
+      cell match {
+        case c : ValuedCell => interpretation2String(c.getInterpretation())
+        case c : Header => "Header(" + c.getVerbatim() + ")"
+        case c : Extra => "Extra(" + c.getVerbatim() + ")"
+      }
+    }
     </td>
     htmlCode
+  }
+  
+  def interpretation2String(interpretation : Constraint) : String = {
+		  if (Option(interpretation).isDefined) {
+			interpretation match {
+		    case i : Boolean => "Boolean(" + i.getName() + ", " + i.isValue() + ")"
+		    case i : Unknown => "Unknown(" + i.getName() + ")"
+		    case i : Empty => "Empty(" + i.getName() + ")"
+		    case i : Inconsistent => "Inconsistent(" + i.getName() + ")"
+		    case i : Simple => "Simple(" + i.getName() + ")"
+		    case i : Partial => "Partial(" + interpretation2String(i.getArgument()) + "," +
+		    					 interpretation2String(i.getCondition()) + ")"
+		    case i : Multiple => "Multiple(" + (for (c <- i.getContraints()) yield {interpretation2String(c)}).mkString(",") + ")"
+			}
+		  } else {
+		    ""
+		  }
+		  
   }
 }
