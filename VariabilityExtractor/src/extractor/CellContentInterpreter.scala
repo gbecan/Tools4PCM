@@ -20,6 +20,7 @@ import interpreters.BooleanPatternInterpreter
 import interpreters.UnknownPatternInterpreter
 import interpreters.EmptyPatternInterpreter
 import interpreters.SimplePatternInterpreter
+import pcmmm.ValuedCell
 
 class CellContentInterpreter(
     interpreters : List[PatternInterpreter]
@@ -49,30 +50,27 @@ class CellContentInterpreter(
       val it = matrix.getCells().listIterator()
       while (it.hasNext()) {
         val cell = it.next()
-
-        if (cell.isInstanceOf[Extra]) {
-           // Find concepts in headers of this cell
-           val (products, features) = findConceptsFor(cell, matrix)
-        		   
-           // Find interpretation
-           val interpretation = findInterpretation(cell.getVerbatim(), products, features)
-	       
-	       if (interpretation.isDefined) {
-			 // Create valued cell
-			 val newCell = PcmmmFactory.eINSTANCE.createValuedCell()
-			 convertCell(it, cell, newCell)
-			 
-			 // Set product and feature headers
-			 if (!products.isEmpty) {
-			   newCell.getMyHeaderProducts.addAll(products)
-			 } 
-			 if (!features.isEmpty) {
-			   newCell.getMyHeaderFeatures.addAll(features)
-			 } 
-				 
-			 // Set interpretation
-			 newCell.setInterpretation(interpretation.get)
-	    	}
+        cell match {
+          case valuedCell : ValuedCell if !Option(valuedCell.getInterpretation()).isDefined =>
+	           // Find concepts in headers of this cell
+	           val (products, features) = findConceptsFor(valuedCell, matrix)
+	        		   
+	           // Find interpretation
+	           val interpretation = findInterpretation(valuedCell.getVerbatim(), products, features)
+		       
+	           // Set interpretation
+		       if (interpretation.isDefined) {
+			         valuedCell.setInterpretation(interpretation.get)
+					 
+					 // Set product and feature headers
+					 if (!products.isEmpty) {
+						 valuedCell.getMyHeaderProducts.addAll(products)
+					 } 
+					 if (!features.isEmpty) {
+						 valuedCell.getMyHeaderFeatures.addAll(features)
+					 } 
+		       }
+          case _ => 
         }
       }
     }
@@ -91,21 +89,6 @@ class CellContentInterpreter(
 		 interpretation = interpreter.interpret(verbatim, products, features)
 	   }
 	   interpretation
-  }
-  
-  // TODO : capitalize this method somewhere because it is redundant with the same one in PCMNormalizer
-  def convertCell(it : ListIterator[Cell], cell : Cell, newCell : Cell) {
-    // Copy cell to new cell
-    newCell.setName(cell.getName())
-    newCell.setVerbatim(cell.getVerbatim())
-    newCell.setRow(cell.getRow())
-    newCell.setRowspan(cell.getRowspan())
-    newCell.setColumn(cell.getColumn())
-    newCell.setColspan(cell.getColspan())
-    
-    // Change cell to new cell
-    it.remove()
-    it.add(newCell)
   }
   
   /**

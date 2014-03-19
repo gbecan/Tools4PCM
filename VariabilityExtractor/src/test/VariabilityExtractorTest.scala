@@ -24,6 +24,7 @@ import interpreters.UnknownPatternInterpreter
 import export.PCM2HTML
 import java.io.FileWriter
 import scala.xml.PrettyPrinter
+import pcmmm.ValuedCell
 
 class VariabilityExtractorTest extends FlatSpec with Matchers {
 
@@ -74,7 +75,7 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
   "VariabilityExtractor" should "run on every input file" in {
 	  val variabilityExtractor = new VariabilityExtractor
     
-	  var sumNonHeaderCells : Double = 0
+	  var sumValuedCells : Double = 0
 	  var sumInterpretedCells : Double = 0
 	  var sumAveragePerMatrix : Double = 0
 	  var nbMatrix : Double = 0
@@ -91,18 +92,24 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	    for (matrix <- pcm.getMatrices()) yield {
 		  val cells = matrix.getCells()
 		  
-		  val nonHeaderCells : Double = cells.count(cell => !cell.isInstanceOf[Header])
-		  sumNonHeaderCells += nonHeaderCells
-		  val interpretedCells : Double = cells.count(cell => !cell.isInstanceOf[Extra] && !cell.isInstanceOf[Header])
-		  sumInterpretedCells += interpretedCells
-		  val averageMatrix : Double = interpretedCells / nonHeaderCells
-		  sumAveragePerMatrix += averageMatrix
-		  nbMatrix += 1
-		  println("\t\t" + (averageMatrix * 100).toInt + "% of interpreted cells")
+		  val valuedCells = cells.filter(cell => cell.isInstanceOf[ValuedCell])
+		  val interpretedCells = valuedCells.filter(cell => Option(cell.asInstanceOf[ValuedCell].getInterpretation()).isDefined)
+		  
+		  if (valuedCells.size > 0) {
+			  sumValuedCells += valuedCells.size
+			  sumInterpretedCells += interpretedCells.size
+			  val averageMatrix : Double = interpretedCells.size.toDouble / valuedCells.size.toDouble
+			  sumAveragePerMatrix += averageMatrix
+			  nbMatrix += 1
+		  	  println("\t\t" + (averageMatrix * 100).toInt + "% of interpreted cells")
+		  }else {
+		    println("\t\tno valued cells")
+		  }
+		  
 	    }
 	  }
 	  
-	  println("Average per cell : " + ((sumInterpretedCells * 100) / sumNonHeaderCells).toInt + "%" + " (" + sumInterpretedCells.toInt + "/" + sumNonHeaderCells.toInt + ")")
+	  println("Average per cell : " + ((sumInterpretedCells * 100) / sumValuedCells).toInt + "%" + " (" + sumInterpretedCells.toInt + "/" + sumValuedCells.toInt + ")")
 	  println("Average per matrix : " + ((sumAveragePerMatrix * 100)/ nbMatrix).toInt + "%")
   }
   

@@ -24,20 +24,20 @@ class PCMNormalizer {
       // TODO : handle row/colspan 
       // TODO : handle product and feature clusters
       if (row < numberOfRows && column < numberOfColumns) { // Top left header
-        val newCell = PcmmmFactory.eINSTANCE.createExtra()
+        val newCell = PcmmmFactory.eINSTANCE.createExtra
         convertCell(it, cell, newCell)
       } else if (row < numberOfRows) { // Top header
         if (!cell.isInstanceOf[Header]) {
-	        val newCell = PcmmmFactory.eINSTANCE.createHeader()
+	        val newCell = PcmmmFactory.eINSTANCE.createHeader
 	        convertCell(it, cell, newCell)  
         }
       } else if (column < numberOfColumns) { // Left header
         if (!cell.isInstanceOf[Header]) {
-        	val newCell = PcmmmFactory.eINSTANCE.createHeader()
+        	val newCell = PcmmmFactory.eINSTANCE.createHeader
         	convertCell(it, cell, newCell)
         }
       } else { // Inner cell
-        val newCell = PcmmmFactory.eINSTANCE.createExtra()
+        val newCell = PcmmmFactory.eINSTANCE.createValuedCell
         convertCell(it, cell, newCell)
       }
       
