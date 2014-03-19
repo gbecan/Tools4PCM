@@ -35,7 +35,7 @@ public interface ValuedCell extends Cell {
 	 * @return the value of the '<em>Interpretation</em>' containment reference.
 	 * @see #setInterpretation(Constraint)
 	 * @see pcmmm.PcmmmPackage#getValuedCell_Interpretation()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 * @generated
 	 */
 	Constraint getInterpretation();

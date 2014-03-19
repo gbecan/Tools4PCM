@@ -58,8 +58,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Partial" eSuperTypes="#//Constraint">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="condition" lowerBound="1"
-        eType="#//Constraint" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="condition" eType="#//Constraint"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="argument" lowerBound="1"
         eType="#//Constraint" containment="true"/>
   </eClassifiers>
@@ -68,15 +68,15 @@
         eType="#//VariabilityConcept"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Multiple" eSuperTypes="#//Constraint">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="contraints" lowerBound="2"
-        upperBound="-1" eType="#//Constraint" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contraints" upperBound="-1"
+        eType="#//Constraint" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Unknown" eSuperTypes="#//Constraint"/>
   <eClassifiers xsi:type="ecore:EClass" name="Empty" eSuperTypes="#//Constraint"/>
   <eClassifiers xsi:type="ecore:EClass" name="Inconsistent" eSuperTypes="#//Constraint"/>
   <eClassifiers xsi:type="ecore:EClass" name="ValuedCell" eSuperTypes="#//Cell">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="interpretation" lowerBound="1"
-        eType="#//Constraint" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interpretation" eType="#//Constraint"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="concepts" upperBound="-1"
         eType="#//VariabilityConcept" eOpposite="#//VariabilityConcept/constraints"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="myHeaderProducts" lowerBound="1"

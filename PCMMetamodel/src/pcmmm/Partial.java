@@ -32,7 +32,7 @@ public interface Partial extends Constraint {
 	 * @return the value of the '<em>Condition</em>' containment reference.
 	 * @see #setCondition(Constraint)
 	 * @see pcmmm.PcmmmPackage#getPartial_Condition()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 * @generated
 	 */
 	Constraint getCondition();

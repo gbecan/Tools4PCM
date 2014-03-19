@@ -32,7 +32,7 @@ public interface Multiple extends Constraint {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Contraints</em>' containment reference list.
 	 * @see pcmmm.PcmmmPackage#getMultiple_Contraints()
-	 * @model containment="true" lower="2"
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Constraint> getContraints();
