@@ -18,12 +18,14 @@ import interpreters.PatternInterpreter
 import interpreters.PatternInterpreter
 import interpreters.BooleanPatternInterpreter
 import interpreters.UnknownPatternInterpreter
+import interpreters.EmptyPatternInterpreter
+import interpreters.SimplePatternInterpreter
 
 class CellContentInterpreter(
     interpreters : List[PatternInterpreter]
 ) {
 
-  private var patternInterpreters : List[PatternInterpreter] = interpreters
+  private var patternInterpreters : List[PatternInterpreter] = if(!interpreters.isEmpty) {interpreters} else {CellContentInterpreter.defaultInterpreters}
   
   def setInterpreters(interpreters : List[PatternInterpreter]) {
       patternInterpreters = interpreters
@@ -31,12 +33,7 @@ class CellContentInterpreter(
   }
   
   def useDefaultInterpreters() {
-    patternInterpreters = List(
-    	new BooleanPatternInterpreter(Nil,"yes|true",List("true")),
-    	new BooleanPatternInterpreter(Nil,"no|false",List("false")),
-    	new UnknownPatternInterpreter(Nil,"\\?",Nil)
-    	
-    )
+    patternInterpreters = CellContentInterpreter.defaultInterpreters
   }
   
   /**
@@ -144,4 +141,14 @@ class CellContentInterpreter(
     
     (products, features)
   }
+}
+
+object CellContentInterpreter {
+  val defaultInterpreters : List[PatternInterpreter] = List(
+    	new BooleanPatternInterpreter(Nil,"yes|true",List("true")),
+    	new BooleanPatternInterpreter(Nil,"no|false",List("false")),
+    	new UnknownPatternInterpreter(Nil,"\\?",Nil),
+    	new EmptyPatternInterpreter(Nil,"",Nil),
+    	new SimplePatternInterpreter(Nil,"\\d+",Nil)
+    )
 }

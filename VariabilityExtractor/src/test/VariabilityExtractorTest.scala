@@ -74,6 +74,11 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
   "VariabilityExtractor" should "run on every input file" in {
 	  val variabilityExtractor = new VariabilityExtractor
     
+	  var sumNonHeaderCells : Double = 0
+	  var sumInterpretedCells : Double = 0
+	  var sumAveragePerMatrix : Double = 0
+	  var nbMatrix : Double = 0
+	  
 	  val modelFolder = new File("../WikipediaPCMParser/output/models")
 	  for (file <- modelFolder.listFiles()) {
 	    println(file.getName())
@@ -83,13 +88,21 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	    variabilityExtractor.extractVariability(pcm)
 	    savePCMModel(pcm, file.getName())
 	    
-	    for (matrix <- pcm.getMatrices()) {
+	    for (matrix <- pcm.getMatrices()) yield {
 		  val cells = matrix.getCells()
-		  val nonHeaderCells = cells.count(cell => !cell.isInstanceOf[Header])
-		  val nonExtraCells = cells.count(cell => !cell.isInstanceOf[Extra] && !cell.isInstanceOf[Header])
-		  println("\t\t" + (nonExtraCells * 100) / nonHeaderCells + "% of interpreted cells")
+		  val nonHeaderCells : Double = cells.count(cell => !cell.isInstanceOf[Header])
+		  sumNonHeaderCells += nonHeaderCells
+		  val interpretedCells : Double = cells.count(cell => !cell.isInstanceOf[Extra] && !cell.isInstanceOf[Header])
+		  sumInterpretedCells += interpretedCells
+		  val averageMatrix : Double = interpretedCells / nonHeaderCells
+		  sumAveragePerMatrix += averageMatrix
+		  nbMatrix += 1
+		  println("\t\t" + (averageMatrix * 100).toInt + "% of interpreted cells")
 	    }
 	  }
+	  
+	  println("Average per cell : " + ((sumInterpretedCells * 100) / sumNonHeaderCells).toInt + "%")
+	  println("Average per matrix : " + ((sumAveragePerMatrix * 100)/ nbMatrix).toInt + "%")
   }
   
   it should "run on nikon DSLR PCM" in {
@@ -98,7 +111,7 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	  val pcm = loadPCMModel(file)
 	  
 	  val variabilityExtractor = new VariabilityExtractor
-      variabilityExtractor.parseConfigurationFile(configFile.getAbsolutePath())
+//      variabilityExtractor.parseConfigurationFile(configFile.getAbsolutePath())
 	  variabilityExtractor.extractVariability(pcm)
 	  savePCMModel(pcm, file.getName())
 	  
