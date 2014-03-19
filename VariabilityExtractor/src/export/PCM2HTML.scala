@@ -66,7 +66,8 @@ class PCM2HTML {
     >
     {
       cell match {
-        case c : ValuedCell => interpretation2String(c.getInterpretation())
+        case c : ValuedCell if Option(c.getInterpretation()).isDefined => interpretation2String(c.getInterpretation())
+        case c : ValuedCell => "ValuedCell(" + c.getVerbatim() + ")"
         case c : Header => "Header(" + c.getVerbatim() + ")"
         case c : Extra => "Extra(" + c.getVerbatim() + ")"
       }
