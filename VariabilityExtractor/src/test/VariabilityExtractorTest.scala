@@ -25,6 +25,8 @@ import export.PCM2HTML
 import java.io.FileWriter
 import scala.xml.PrettyPrinter
 import pcmmm.ValuedCell
+import org.eclipse.emf.ecore.util.Diagnostician
+import org.eclipse.emf.common.util.Diagnostic
 
 class VariabilityExtractorTest extends FlatSpec with Matchers {
 
@@ -82,13 +84,29 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	  
 	  val modelFolder = new File("../WikipediaPCMParser/output/models")
 	  for (file <- modelFolder.listFiles()) {
+	    // Load model
 	    println(file.getName())
 	    val pcm = loadPCMModel(file)
+	    
+	    // Load configuration
 	    val configFile = "input/configs/" + file.getName.substring(0, file.getName.size - 4) + ".config"  
 	    variabilityExtractor.parseConfigurationFile(configFile)
+	    
+	    // Extract variability
 	    variabilityExtractor.extractVariability(pcm)
+	    
+	    // Validate and save model
+	    val diagnostic = Diagnostician.INSTANCE.validate(pcm)
+	    if (diagnostic.getSeverity() == Diagnostic.OK) {
+	      println("OK")
+	    } else {
+	      println("NOT VALID")
+	    }
+	    
+	    // Save model
 	    savePCMModel(pcm, file.getName())
 	    	
+	    // Compute stats on interpreted cells
 	    for (matrix <- pcm.getMatrices()) yield {
 		  val cells = matrix.getCells()
 		  

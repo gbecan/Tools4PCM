@@ -61,15 +61,11 @@ class CellContentInterpreter(
 	           // Set interpretation
 		       if (interpretation.isDefined) {
 			         valuedCell.setInterpretation(interpretation.get)
-					 
-					 // Set product and feature headers
-					 if (!products.isEmpty) {
-						 valuedCell.getMyHeaderProducts.addAll(products)
-					 } 
-					 if (!features.isEmpty) {
-						 valuedCell.getMyHeaderFeatures.addAll(features)
-					 } 
 		       }
+	           
+	           // Set product and feature headers
+        	   valuedCell.getMyHeaderProducts.addAll(products)
+        	   valuedCell.getMyHeaderFeatures.addAll(features)
           case _ => 
         }
       }
