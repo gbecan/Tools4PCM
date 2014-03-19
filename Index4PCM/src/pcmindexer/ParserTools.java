@@ -2,6 +2,9 @@ package pcmindexer;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.regex.*;
 
 import org.apache.log4j.Logger;
@@ -11,12 +14,14 @@ public class ParserTools {
 	// (sections like, figures, lists ...)
 	public ArrayList<Concept> patterns;
 	public ArrayList<String> warnings;
+	public Map<String,List<String>> extractionParameters;
 
 	public static Logger myLogger = Logger.getLogger("ConfigTool");
 
 	public ParserTools() {
 		patterns = new ArrayList<Concept>();
 		warnings = new ArrayList<String>();
+		extractionParameters = new HashMap<String, List<String>>();
 	}
 
 	/**
@@ -36,7 +41,7 @@ public class ParserTools {
 		BufferedReader br = new BufferedReader(ipsr);
 		String s = "";
 		while ((s = br.readLine()) != null) {
-			patterns.add(readLine(s));
+			readLine(s);
 		}
 		br.close();
 	}
@@ -92,13 +97,51 @@ public class ParserTools {
 		return occur;
 	}
 
-	public static Concept readLine(String s) {
-		Pattern configPattern = Pattern
+	public void readLine(String s) {
+		// Parse configuration for selecting matrices and cells
+		boolean configLine = readConfig(s);
+
+		// Parse rules for detecting variability patterns
+		boolean ruleLine = false;
+		if (!configLine) {
+			ruleLine = readRule(s) != null;
+		}
+
+		if (!configLine && !ruleLine) {
+			myLogger.fatal("The line is not written correctly: " + s);
+		}
+		
+	}
+
+	public boolean readConfig(String s) {
+		Pattern configPattern = Pattern.compile("(.*?)=\\{(\".*?\"(,\".*?\")*)?\\}");
+		Matcher configMatcher = configPattern.matcher(s);
+		if (configMatcher.matches()) {
+			String key = configMatcher.group(1);
+			List<String> parameters = new ArrayList<String>();
+			for (int i = 2; i < configMatcher.groupCount(); i++) {
+				String group = configMatcher.group(i);
+				if (group != null) {
+					String[] values = group.split(",");
+					for (String value : values) {
+						parameters.add(value.substring(value.indexOf("\"")+1,value.lastIndexOf("\"")));
+					}
+				}
+			}
+			extractionParameters.put(key, parameters);
+			return true;
+		} else   {
+			return false;
+		}
+	}
+
+	public Concept readRule(String s) {
+		Pattern rulePattern = Pattern
 				.compile("(\".*\")*(\\s|\\t)*(\\w+)(\\s|\\t)*(\".*\")(\\s|\\t)*(\\{.*\\})*");
-		Matcher m = configPattern.matcher(s);
-		if (m.matches()) {
+		Matcher ruleMatcher = rulePattern.matcher(s);
+		if (ruleMatcher.matches()) {
 			// managing headers
-			String headers = m.group(1);
+			String headers = ruleMatcher.group(1);
 			ArrayList<String> h = new ArrayList<String>();
 			if (headers != null) {
 				String[] temp = headers.split("\\s(?=\")|(?<=\")\\s");
@@ -108,13 +151,13 @@ public class ParserTools {
 				}
 			}
 			// getting the rule name
-			String ruleName = m.group(3);
+			String ruleName = ruleMatcher.group(3);
 			// getting the rule expression
-			String ruleExp = m.group(5);
+			String ruleExp = ruleMatcher.group(5);
 			int size = ruleExp.length();
 			ruleExp = ruleExp.substring(1, size - 1);
 			// gettings the rule parameters
-			String params = m.group(7);
+			String params = ruleMatcher.group(7);
 			ArrayList<String> p = new ArrayList<String>();
 			if (params != null) {
 				size = params.length();
@@ -123,11 +166,13 @@ public class ParserTools {
 				for (String t : temp) {
 					p.add(t);
 				}
-//				p.add(params);
+				//						p.add(params);
 			}
-			return new Concept(h, ruleName, ruleExp, p);
+			Concept concept = new Concept(h, ruleName, ruleExp, p);
+			patterns.add(concept);
+			return concept;
+		} else {
+			return null;
 		}
-		myLogger.fatal("The rule is not written correctly: " + s);
-		return null;
 	}
 }

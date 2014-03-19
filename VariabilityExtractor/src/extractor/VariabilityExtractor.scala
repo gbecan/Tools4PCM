@@ -22,6 +22,7 @@ class VariabilityExtractor {
   private val variabilityConceptExtractor = new VariabilityConceptExtractor
   private val cellContentInterpreter = new CellContentInterpreter(Nil)
   private val domainExtractor = new DomainExtractor
+  private var parameters : Map[String,List[String]] = Map()
   
   def setPatternInterpreters(interpreters : List[PatternInterpreter]) {
     cellContentInterpreter.setInterpreters(interpreters)
@@ -34,6 +35,8 @@ class VariabilityExtractor {
 		  concept2PatternInterpreter(pattern)
 	  }).toList
 	  cellContentInterpreter.setInterpreters(patternInterpreters)
+	  
+	  parameters = configParser.extractionParameters.map(e => (e._1,e._2.toList)).toMap
   }
   
   def concept2PatternInterpreter(pattern : Concept) : PatternInterpreter = {
