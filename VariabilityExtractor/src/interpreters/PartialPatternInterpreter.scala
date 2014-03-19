@@ -15,14 +15,15 @@ class PartialPatternInterpreter (
 
   override def createConstraint(s : String, matcher : Matcher, parameters : List[String], products : List[Product], features : List[Feature]) : Constraint = {
 		 val constraint = PcmmmFactory.eINSTANCE.createPartial()
-		 if (matcher.groupCount() == 2) {
+		 if (matcher.groupCount() >= 1) {
 		   // Interpret argument
 		   val argument = matcher.group(1)
 		   val argInterpretation = cellContentInterpreter.findInterpretation(argument, products, features)
 		   if (argInterpretation.isDefined) {
 			   constraint.setArgument(argInterpretation.get)  
 		   }
-		   
+		 }
+		 if (matcher.groupCount() >= 2) {  
 		   // Interpret condition
 		   val condition = matcher.group(2)
 		   val condInterpretation = cellContentInterpreter.findInterpretation(condition, products, features)

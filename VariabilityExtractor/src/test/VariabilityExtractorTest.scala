@@ -85,7 +85,7 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	    println(file.getName())
 	    val pcm = loadPCMModel(file)
 	    val configFile = "input/configs/" + file.getName.substring(0, file.getName.size - 4) + ".config"  
-	    variabilityExtractor.parseConfigurationFile(configFile)
+//	    variabilityExtractor.parseConfigurationFile(configFile)
 	    variabilityExtractor.extractVariability(pcm)
 	    savePCMModel(pcm, file.getName())
 	    	
@@ -119,15 +119,17 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	  val pcm = loadPCMModel(file)
 	  
 	  val variabilityExtractor = new VariabilityExtractor
-//      variabilityExtractor.parseConfigurationFile(configFile.getAbsolutePath())
+      variabilityExtractor.parseConfigurationFile(configFile.getAbsolutePath())
 	  variabilityExtractor.extractVariability(pcm)
 	  savePCMModel(pcm, file.getName())
 	  
 	  for (matrix <- pcm.getMatrices()) {
-		  val cells = matrix.getCells()
-		  val nonExtraCells = cells.count(cell => !cell.isInstanceOf[Extra])
+		  val valuedCells = matrix.getCells().filter(cell => cell.isInstanceOf[ValuedCell])
+		  val interpretedCells = valuedCells.filter(cell => Option(cell.asInstanceOf[ValuedCell].getInterpretation()).isDefined)
+		  if (valuedCells.size != 0) {
+			  println((interpretedCells.size * 100) / valuedCells.size + "% of non extra cells")
+		  }
 		  
-		  println((nonExtraCells * 100) / cells.size() + "% of non extra cells")
 	  }
   }
   

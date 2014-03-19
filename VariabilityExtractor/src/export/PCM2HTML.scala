@@ -16,6 +16,9 @@ import pcmmm.Inconsistent
 import pcmmm.Simple
 import pcmmm.Partial
 import pcmmm.Multiple
+import pcmmm.And
+import pcmmm.XOr
+import pcmmm.Or
 
 class PCM2HTML {
 
@@ -82,11 +85,18 @@ class PCM2HTML {
 		    case i : Simple => "Simple(" + i.getName() + ")"
 		    case i : Partial => "Partial(" + interpretation2String(i.getArgument()) + "," +
 		    					 interpretation2String(i.getCondition()) + ")"
-		    case i : Multiple => "Multiple(" + (for (c <- i.getContraints()) yield {interpretation2String(c)}).mkString(",") + ")"
+		    case i : And => "And(" + multipleInterpretation2string(i) + ")"
+		    case i : XOr => "XOr(" + multipleInterpretation2string(i) + ")"
+		    case i : Or => "Or(" + multipleInterpretation2string(i) + ")"
+		    case i : Multiple => "Multiple(" + multipleInterpretation2string(i) + ")"
 			}
 		  } else {
 		    ""
 		  }
 		  
+  }
+  
+  def multipleInterpretation2string(interpretation : Multiple) : String = {
+		  (for (c <- interpretation.getContraints()) yield {interpretation2String(c)}).mkString(",")
   }
 }

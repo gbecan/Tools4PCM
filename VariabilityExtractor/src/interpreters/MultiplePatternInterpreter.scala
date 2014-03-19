@@ -14,7 +14,13 @@ class MultiplePatternInterpreter (
     extends PatternInterpreter(validHeaders, regex, parameters) {
 
   override def createConstraint(s : String, matcher : Matcher, parameters : List[String], products : List[Product], features : List[Feature]) : Constraint = {
-		  val constraint = PcmmmFactory.eINSTANCE.createMultiple()
+		  val constraint = parameters match {
+		    case "and" :: Nil => PcmmmFactory.eINSTANCE.createAnd()
+		    case "xor" :: Nil => PcmmmFactory.eINSTANCE.createXOr()
+		    case "or" :: Nil => PcmmmFactory.eINSTANCE.createOr()
+		    case _ => PcmmmFactory.eINSTANCE.createMultiple()
+		  }
+		   
 		  for (groupID <- 1 to matcher.groupCount()) {
 			  val subConstraint = matcher.group(groupID)
 			  if (subConstraint != null) {
