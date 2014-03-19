@@ -123,7 +123,7 @@ public class ParserTools {
 				for (String t : temp) {
 					p.add(t);
 				}
-				p.add(params);
+//				p.add(params);
 			}
 			return new Concept(h, ruleName, ruleExp, p);
 		}
