@@ -30,9 +30,6 @@ abstract class PatternInterpreter(
 	  cellContentInterpreter = interpreter
 	}
     
-	// FIXME : in some cases (Multi, Partial for example), 
-	// we need to restart all the pattern matching rule on sub-elements of the pattern
-	
     def config(pcm : PCM) {
 	  validProducts = Nil
 	  validFeatures = Nil

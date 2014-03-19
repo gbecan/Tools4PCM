@@ -87,9 +87,10 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	    variabilityExtractor.parseConfigurationFile(configFile)
 	    variabilityExtractor.extractVariability(pcm)
 	    savePCMModel(pcm, file.getName())
-	    
+	    	
 	    for (matrix <- pcm.getMatrices()) yield {
 		  val cells = matrix.getCells()
+		  
 		  val nonHeaderCells : Double = cells.count(cell => !cell.isInstanceOf[Header])
 		  sumNonHeaderCells += nonHeaderCells
 		  val interpretedCells : Double = cells.count(cell => !cell.isInstanceOf[Extra] && !cell.isInstanceOf[Header])
@@ -101,7 +102,7 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	    }
 	  }
 	  
-	  println("Average per cell : " + ((sumInterpretedCells * 100) / sumNonHeaderCells).toInt + "%")
+	  println("Average per cell : " + ((sumInterpretedCells * 100) / sumNonHeaderCells).toInt + "%" + " (" + sumInterpretedCells.toInt + "/" + sumNonHeaderCells.toInt + ")")
 	  println("Average per matrix : " + ((sumAveragePerMatrix * 100)/ nbMatrix).toInt + "%")
   }
   

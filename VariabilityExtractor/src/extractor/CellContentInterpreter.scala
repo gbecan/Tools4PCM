@@ -76,7 +76,6 @@ class CellContentInterpreter(
 				 
 			 // Set interpretation
 			 newCell.setInterpretation(interpretation.get)
-			 // FIXME : what about recursive interpretation (Multi or Partial for example)?
 	    	}
         }
       }
@@ -145,10 +144,15 @@ class CellContentInterpreter(
 
 object CellContentInterpreter {
   val defaultInterpreters : List[PatternInterpreter] = List(
-    	new BooleanPatternInterpreter(Nil,"yes|true",List("true")),
+		new EmptyPatternInterpreter(Nil,"",Nil),
+    	new BooleanPatternInterpreter(Nil,"yes|true|✓",List("true")),
     	new BooleanPatternInterpreter(Nil,"no|false",List("false")),
     	new UnknownPatternInterpreter(Nil,"\\?",Nil),
-    	new EmptyPatternInterpreter(Nil,"",Nil),
-    	new SimplePatternInterpreter(Nil,"\\d+",Nil)
+    	new UnknownPatternInterpreter(Nil,"n/a",Nil),
+    	new UnknownPatternInterpreter(Nil,"unknown",Nil),
+    	new UnknownPatternInterpreter(Nil,"(-)+",Nil),
+    	new UnknownPatternInterpreter(Nil,"(—)+",Nil),
+    	new SimplePatternInterpreter(Nil,"\\d+",Nil),
+    	new SimplePatternInterpreter(Nil,"\\w+",Nil) // FIXME : this may contain important key words that should be interpreted differently
     )
 }
