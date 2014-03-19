@@ -24,7 +24,7 @@ import org.eclipse.emf.common.util.URI
 import java.util.Collections
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
 
-class ParserTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
+class ParserTest extends FlatSpec with Matchers {
   
   val executionContext = ExecutionContext.fromExecutor(Executors.newFixedThreadPool(20))
   

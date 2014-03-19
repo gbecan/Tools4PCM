@@ -35,6 +35,7 @@ import scala.collection.mutable.Stack
 import org.sweble.wikitext.`lazy`.parser.DefinitionDefinition
 import pcm.Matrix
 import pcm.Cell
+import java.util.regex.Pattern
 
 class TableVisitor extends AstVisitor {
 
@@ -56,7 +57,18 @@ class TableVisitor extends AstVisitor {
 		
 	private var inXMLElement : Boolean = false
 
-	
+	private val trimPattern : Pattern = Pattern.compile("\\s*(.*?)\\s*")
+	/**
+	 * Remove spaces before and after the string
+	 */
+	def trim(s : String) : String = {
+	  val matcher = trimPattern.matcher(s)
+	  if (matcher.matches() && matcher.groupCount() == 1) {
+		  matcher.group(1)
+	  } else {
+		  ""
+	  }
+	}
 	
 	def visit(e : Table) = {
 	  val matrix = new Matrix
@@ -150,7 +162,7 @@ class TableVisitor extends AstVisitor {
 		iterate(e)
 
 		if(!inXMLElement) {
-		  val cell = new Cell(cellContent.toString, isHeader, row, rowspan, column, colspan)
+		  val cell = new Cell(trim(cellContent.toString), isHeader, row, rowspan, column, colspan)
 			
 		  // Handle rowspan and colspan
 		  for (rowShift <- 0 until rowspan; colShift <- 0 until colspan) {
