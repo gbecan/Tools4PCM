@@ -145,7 +145,8 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 		  val valuedCells = matrix.getCells().filter(cell => cell.isInstanceOf[ValuedCell])
 		  val interpretedCells = valuedCells.filter(cell => Option(cell.asInstanceOf[ValuedCell].getInterpretation()).isDefined)
 		  if (valuedCells.size != 0) {
-			  println((interpretedCells.size * 100) / valuedCells.size + "% of non extra cells")
+			  println((interpretedCells.size * 100) / valuedCells.size + "% of non extra cells"  + 
+			      " (" + interpretedCells.size + "/" + valuedCells.size + ")")
 		  }
 		  
 	  }

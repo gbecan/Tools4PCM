@@ -29,7 +29,9 @@ class CellContentInterpreter(
   private var patternInterpreters : List[PatternInterpreter] = if(!interpreters.isEmpty) {interpreters} else {CellContentInterpreter.defaultInterpreters}
   
   def setInterpreters(interpreters : List[PatternInterpreter]) {
-      patternInterpreters = interpreters ::: CellContentInterpreter.defaultInterpreters
+      patternInterpreters = CellContentInterpreter.defaultInterpreters :::
+    	  					interpreters :::
+    	  					CellContentInterpreter.defaultGreedyInterpreters
       patternInterpreters.foreach(_.setCellContentInterpreter(this))
   }
   
@@ -126,8 +128,10 @@ object CellContentInterpreter {
     	new UnknownPatternInterpreter(Nil,"n/a",Nil),
     	new UnknownPatternInterpreter(Nil,"unknown",Nil),
     	new UnknownPatternInterpreter(Nil,"(-)+",Nil),
-    	new UnknownPatternInterpreter(Nil,"(—)+",Nil),
-    	new SimplePatternInterpreter(Nil,"\\d+",Nil),
-    	new SimplePatternInterpreter(Nil,"\\w+",Nil) // FIXME : this may contain important key words that should be interpreted differently
+    	new UnknownPatternInterpreter(Nil,"(—)+",Nil)
+    )
+  val defaultGreedyInterpreters : List[PatternInterpreter] = List(
+      new SimplePatternInterpreter(Nil,"\\d+",Nil),
+      new SimplePatternInterpreter(Nil,"\\w+",Nil) // FIXME : this may contain important key words that should be interpreted differently
     )
 }
