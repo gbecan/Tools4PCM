@@ -129,7 +129,7 @@ object CellContentInterpreter {
     	new UnknownPatternInterpreter(Nil,"(—)+",Nil)
     )
   val defaultGreedyInterpreters : List[PatternInterpreter] = List(
-      new SimplePatternInterpreter(Nil,"\\d+",Nil),
+      new SimplePatternInterpreter(Nil,"\\d+(\\.\\d+)*",Nil),
       new SimplePatternInterpreter(Nil,"\\w+",Nil) // FIXME : this may contain important key words that should be interpreted differently
     )
 }
