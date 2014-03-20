@@ -6,6 +6,7 @@ import pcmmm.PcmmmFactory
 
 class Matrix {
 
+  var name : String = ""
   var cells : Map[(Int, Int), Cell] = Map()
   
   def setCell(cell : Cell, row : Int, column : Int) {
@@ -50,6 +51,8 @@ class Matrix {
   
   def toHTML() : Elem = {
     val htmlCode = 
+    <div>
+    <h1>{name}</h1>
     <table border="1">
     { 
     	for {row <- 0 until getNumberOfRows} 
@@ -80,12 +83,14 @@ class Matrix {
     	</tr>
 	} 
     </table>
+    </div>
     
     htmlCode
   }
   
   def toPCMModel() : pcmmm.Matrix = {
     val model = PcmmmFactory.eINSTANCE.createMatrix
+    model.setName(name)
     val cellsInOrder = cells.values.toList.distinct.sortWith((c1, c2) => comparePosition(c1, c2))
     for (cell <- cellsInOrder) {
       model.getCells().add(cell.toPCMModel)

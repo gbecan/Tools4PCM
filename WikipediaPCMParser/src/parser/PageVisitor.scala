@@ -35,6 +35,8 @@ class PageVisitor extends AstVisitor{
   
   var matrices : ListBuffer[Matrix] = ListBuffer()
   val pcm : PCM = new PCM
+  var section : StringBuilder = new StringBuilder
+  var inTitle : Boolean = false
   
   def visit(e : LazyParsedPage) {
     iterate(e)
@@ -48,6 +50,7 @@ class PageVisitor extends AstVisitor{
 	  val tableVisitor = new TableVisitor
 	  tableVisitor.go(e)
 	  for (matrix <- tableVisitor.matrices) {
+	    matrix.name = section.toString
 	    pcm.addMatrix(matrix)
 	  }
   }
@@ -62,7 +65,9 @@ class PageVisitor extends AstVisitor{
   
   
   def visit(e : Text) {
-
+	  if (inTitle) {
+	    section ++= e.getContent()
+	  }
   }
   
   def visit(e : Whitespace) {
@@ -70,6 +75,10 @@ class PageVisitor extends AstVisitor{
   }
   
   def visit(e : Section) {
+	  inTitle = true
+	  section = new StringBuilder
+	  dispatch(e.getTitle())
+	  inTitle = false
 	  iterate(e)
   }
   
