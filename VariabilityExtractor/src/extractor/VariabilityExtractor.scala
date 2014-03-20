@@ -22,7 +22,8 @@ class VariabilityExtractor {
   private val variabilityConceptExtractor = new VariabilityConceptExtractor
   private val cellContentInterpreter = new CellContentInterpreter(Nil)
   private val domainExtractor = new DomainExtractor
-  private var parameters : Map[String,List[String]] = Map()
+  private var simpleParameters : Map[String, Int] = Map()
+  private var complexParameters : Map[String,List[String]] = Map()
   
   def setPatternInterpreters(interpreters : List[PatternInterpreter]) {
     cellContentInterpreter.setInterpreters(interpreters)
@@ -36,7 +37,10 @@ class VariabilityExtractor {
 	  }).toList
 	  cellContentInterpreter.setInterpreters(patternInterpreters)
 	  
-	  parameters = configParser.extractionParameters.map(e => (e._1,e._2.toList)).toMap
+	  simpleParameters = configParser.simpleParameters.map(e => (e._1,e._2.toInt)).toMap
+	  complexParameters = configParser.complexParameters.map(e => (e._1,e._2.toList)).toMap
+//	  println(simpleParameters)
+//	  println(complexParameters)
   }
   
   def concept2PatternInterpreter(pattern : Concept) : PatternInterpreter = {
@@ -55,6 +59,11 @@ class VariabilityExtractor {
     
   def extractVariability(pcm : PCM) {
 	  // Normalize PCM
+	  val matricesToIgnore = complexParameters.get("ignore-matrix")
+	  if (matricesToIgnore.isDefined) {
+	    pcmNormalizer.removeMatrices(pcm, matricesToIgnore.get)
+	  }
+	  
 	  for  (matrix <- pcm.getMatrices()) {
 		  pcmNormalizer.setHeaders(matrix) // FIXME : requires configuration
 	  }

@@ -11,9 +11,6 @@ import java.util.ListIterator
 
 class PCMNormalizer {
   
-  // TODO : remove matrices without variability (user input)
-  
-  
   def setHeaders(matrix : Matrix, numberOfRows : Int = 1, numberOfColumns : Int = 1) {
     val it = matrix.getCells().listIterator()
     while(it.hasNext()) {
@@ -68,6 +65,17 @@ class PCMNormalizer {
     // Change cell to new cell
     it.remove()
     it.add(newCell)
+  }
+  
+  
+  def removeMatrices(pcm : PCM, matrixNames : List[String]) {
+	  val it = pcm.getMatrices().iterator()
+	  while(it.hasNext()) {
+		  val matrix = it.next()
+		  if (matrixNames.contains(matrix.getName())) {
+			  it.remove()
+		  }
+	  }
   }
   
 }
