@@ -20,7 +20,7 @@ class VariabilityExtractor {
 
   private val pcmNormalizer = new PCMNormalizer
   private val variabilityConceptExtractor = new VariabilityConceptExtractor
-  private val cellContentInterpreter = new CellContentInterpreter(Nil)
+  private val cellContentInterpreter = new CellContentInterpreter
   private val domainExtractor = new DomainExtractor
   private var simpleParameters : Map[String, Int] = Map()
   private var complexParameters : Map[String,List[String]] = Map()

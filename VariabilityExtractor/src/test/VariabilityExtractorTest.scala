@@ -90,7 +90,7 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	    
 	    // Load configuration
 	    val configFile = "input/configs/" + file.getName.substring(0, file.getName.size - 4) + ".config"  
-	    variabilityExtractor.parseConfigurationFile(configFile)
+//	    variabilityExtractor.parseConfigurationFile(configFile)
 	    
 	    // Extract variability
 	    variabilityExtractor.extractVariability(pcm)

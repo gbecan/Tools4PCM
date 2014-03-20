@@ -24,7 +24,7 @@ abstract class PatternInterpreter(
 	private var validProducts : List[Product] = Nil
     private var validFeatures : List[Feature] = Nil
     
-    var cellContentInterpreter : CellContentInterpreter = new CellContentInterpreter(Nil)
+    var cellContentInterpreter : CellContentInterpreter = _
     
     def setCellContentInterpreter(interpreter : CellContentInterpreter) {
 	  cellContentInterpreter = interpreter

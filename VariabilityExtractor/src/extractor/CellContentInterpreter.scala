@@ -22,11 +22,9 @@ import interpreters.EmptyPatternInterpreter
 import interpreters.SimplePatternInterpreter
 import pcmmm.ValuedCell
 
-class CellContentInterpreter(
-    interpreters : List[PatternInterpreter]
-) {
+class CellContentInterpreter() {
 
-  private var patternInterpreters : List[PatternInterpreter] = if(!interpreters.isEmpty) {interpreters} else {CellContentInterpreter.defaultInterpreters}
+  private var patternInterpreters : List[PatternInterpreter] = CellContentInterpreter.defaultInterpreters ::: CellContentInterpreter.defaultGreedyInterpreters 
   
   def setInterpreters(interpreters : List[PatternInterpreter]) {
       patternInterpreters = CellContentInterpreter.defaultInterpreters :::
