@@ -14,14 +14,16 @@ public class ParserTools {
 	// (sections like, figures, lists ...)
 	public ArrayList<Concept> patterns;
 	public ArrayList<String> warnings;
-	public Map<String,List<String>> extractionParameters;
+	public Map<String,List<String>> complexParameters;
+	public Map<String,Integer> simpleParameters;
 
 	public static Logger myLogger = Logger.getLogger("ConfigTool");
 
 	public ParserTools() {
 		patterns = new ArrayList<Concept>();
 		warnings = new ArrayList<String>();
-		extractionParameters = new HashMap<String, List<String>>();
+		complexParameters = new HashMap<String, List<String>>();
+		simpleParameters = new HashMap<String, Integer>();
 	}
 
 	/**
@@ -99,22 +101,39 @@ public class ParserTools {
 
 	public void readLine(String s) {
 		// Parse configuration for selecting matrices and cells
-		boolean configLine = readConfig(s);
-
+		boolean ok = false;
+		ok = ok || readSimpleParameter(s);
+		ok = ok || readComplexParameter(s);
+		
 		// Parse rules for detecting variability patterns
-		boolean ruleLine = false;
-		if (!configLine) {
-			ruleLine = readRule(s) != null;
-		}
+		ok = ok || (readRule(s) != null);
 
-		if (!configLine && !ruleLine) {
+		if (!ok) {
 			myLogger.fatal("The line is not written correctly: " + s);
 		}
 		
 	}
+	
+	public boolean readSimpleParameter(String s) {
+		Pattern pattern = Pattern.compile("\\s*(.*?)\\s*=\\s*(\\d+)\\s*");
+		Matcher matcher = pattern.matcher(s);
+		if (matcher.matches()) {
+			String key = matcher.group(1);
+			String value = matcher.group(2);
+			try {
+				Integer intValue = Integer.parseInt(value);
+				simpleParameters.put(key, intValue);
+			} catch (NumberFormatException e) {
+				return false;
+			}
+			return true;
+		} else {
+			return false;
+		}
+	}
 
-	public boolean readConfig(String s) {
-		Pattern configPattern = Pattern.compile("(.*?)=\\{(\".*?\"(,\".*?\")*)?\\}");
+	public boolean readComplexParameter(String s) {
+		Pattern configPattern = Pattern.compile("\\s*(.*?)\\s*=\\s*\\{(\".*?\"(,\".*?\")*)?\\}\\s*");
 		Matcher configMatcher = configPattern.matcher(s);
 		if (configMatcher.matches()) {
 			String key = configMatcher.group(1);
@@ -128,7 +147,7 @@ public class ParserTools {
 					}
 				}
 			}
-			extractionParameters.put(key, parameters);
+			complexParameters.put(key, parameters);
 			return true;
 		} else   {
 			return false;
