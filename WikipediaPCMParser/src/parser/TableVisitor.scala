@@ -57,7 +57,7 @@ class TableVisitor extends AstVisitor {
 		
 	private var inXMLElement : Boolean = false
 
-	private val trimPattern : Pattern = Pattern.compile("\\s*(.*?)\\s*")
+	private val trimPattern : Pattern = Pattern.compile("\\s*([\\s\\S]*?)\\s*")
 	/**
 	 * Remove spaces before and after the string
 	 */
@@ -146,8 +146,6 @@ class TableVisitor extends AstVisitor {
 	}
 	
 	def handleCell(e : AstNode, isHeader : Boolean) {
-//		println(e)
-
 		rowspan = 1
 		colspan = 1
 
@@ -160,7 +158,7 @@ class TableVisitor extends AstVisitor {
 
 		cellContent = new StringBuilder()
 		iterate(e)
-
+		
 		if(!inXMLElement) {
 		  val cell = new Cell(trim(cellContent.toString), isHeader, row, rowspan, column, colspan)
 			
@@ -170,7 +168,7 @@ class TableVisitor extends AstVisitor {
 		  }
 		  
 		  column += colspan
-		} 
+		}
 	} 
 
 	
@@ -227,6 +225,7 @@ class TableVisitor extends AstVisitor {
 	    case "abbr" =>
 	    case "center" =>
 //	    case "span" =>
+	    case "p" => cellContent += '\n'
 	    case _ => inXMLElement = true 
 	  }
 	}

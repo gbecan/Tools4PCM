@@ -164,7 +164,7 @@ class ParserTest extends FlatSpec with Matchers {
 	     if (article.startsWith("//")) {
 	       result ++= "IGNORED : " + article
 	     } else {
-	    	 result ++= article + "\n"
+	    	 result ++= article
 	    	 var retry = false
 	    	 do {
 	    		 try {

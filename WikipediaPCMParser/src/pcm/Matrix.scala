@@ -59,7 +59,7 @@ class Matrix {
 	    yield <tr> 
       	  {
 		    for {column <- 0 until getNumberOfColumns} 
-		  	yield <th>
+		  	yield <td>
 		  	{
 		  	  val cell = cells.get((row, column))
 		  	  if (cell.isDefined) {
@@ -78,7 +78,7 @@ class Matrix {
 		  	    "/!\\ Not defined /!\\"
 		  	  }
 		  	}
-		  	</th>
+		  	</td>
 		  }
     	</tr>
 	} 
