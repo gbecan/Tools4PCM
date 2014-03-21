@@ -59,14 +59,7 @@ class VariabilityExtractor {
     
   def extractVariability(pcm : PCM) {
 	  // Normalize PCM
-	  val matricesToIgnore = complexParameters.get("ignore-matrix")
-	  if (matricesToIgnore.isDefined) {
-	    pcmNormalizer.removeMatrices(pcm, matricesToIgnore.get)
-	  }
-	  
-	  for  (matrix <- pcm.getMatrices()) {
-		  pcmNormalizer.setHeaders(matrix) // FIXME : requires configuration
-	  }
+	  pcmNormalizer.normalizePCM(pcm, simpleParameters, complexParameters)
 
 	  // Extract features and products from headers
 	  variabilityConceptExtractor.extractConceptsFromHeaders(pcm)

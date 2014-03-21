@@ -12,6 +12,38 @@ import org.eclipse.emf.common.util.EList
 
 class PCMNormalizer {
   
+  
+  def normalizePCM(pcm : PCM, simpleParameters : Map[String,Int], complexParameters : Map[String, List[String]]) {
+	  // Ignore matrices
+	  val matricesToIgnore = complexParameters.get("ignore-matrix")
+	  if (matricesToIgnore.isDefined) {
+		  removeMatrices(pcm, matricesToIgnore.get)
+	  }
+
+	  // Set headers
+	  for  (matrix <- pcm.getMatrices()) {
+		  setHeaders(matrix) // FIXME : requires configuration
+	  }
+
+	  // Ignore rows and columns
+	  val rowsToIgnore = complexParameters.get("ignore-row")
+	  if (rowsToIgnore.isDefined) {
+		  val indexOfRowsToIgnore : List[Int] = rowsToIgnore.get.toList.filter(e => 
+		  try {
+			  e.toInt 
+			  true
+		  } 
+		  catch {
+		  case e: Exception => false
+		  }).map(e => e.toInt)
+
+		  for (matrix <- pcm.getMatrices()) {
+			  ignoreLinesAndColumns(matrix, indexOfRowsToIgnore, Nil)
+		  }
+
+	  }
+  }
+  
   /**
    * Define headers in a matrix
    * @param matrix 
@@ -51,8 +83,7 @@ class PCMNormalizer {
     }
   }
   
-  def removeHeaderRowsAndColumns(matrix : Matrix, rows : List[Int], columns : List[Int]) {
-    // TODO : change type of cell instead of removing it?
+  def ignoreLinesAndColumns(matrix : Matrix, rows : List[Int], columns : List[Int]) {
 	  val it = matrix.getCells().listIterator()
 	  while(it.hasNext()) {
 	    val cell = it.next()

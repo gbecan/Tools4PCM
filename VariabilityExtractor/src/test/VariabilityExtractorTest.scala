@@ -220,13 +220,9 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	  val file = new File("../WikipediaPCMParser/output/models/Comparison_of_Nikon_DSLR_cameras.pcm")
 	  val pcm = loadPCMModel(file)
 	  
-	  val rowsToRemove = List(4,5,6)
-	  val columnsToRemove = List(9)
-	  
 	  // Set headers
 	  for  (matrix <- pcm.getMatrices()) {
 		  pcmNormalizer.setHeaders(matrix)
-		  pcmNormalizer.removeHeaderRowsAndColumns(matrix, rowsToRemove, columnsToRemove)
 	  }
 	  
 	  // Check matrices
@@ -245,9 +241,6 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	      cell should not be a [Header]
 	    }
 	    
-	    // Check that specified rows and columns are removed
-	    rowsToRemove should not contain row
-	    columnsToRemove should not contain column
 	  }
   }
    
