@@ -18,7 +18,7 @@ abstract class PatternInterpreter(
     regex : String,
     val parameters : List[String]
     ) {
-  
+	
 	private val pattern : Pattern =  Pattern.compile(regex)
 
 	private var validProducts : List[Product] = Nil

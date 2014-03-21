@@ -134,9 +134,12 @@ object CellContentInterpreter {
     )
   val defaultGreedyInterpreters : List[PatternInterpreter] = List(
       new SimplePatternInterpreter(Nil,"\\d+(\\.\\d+)*",Nil),
-      new SimplePatternInterpreter(Nil,"\\w+",Nil), // FIXME : this may contain important key words that should be interpreted differently
-      new MultiplePatternInterpreter(Nil,"([^,]+?),([^,]+?)",Nil)
-//      new MultiplePatternInterpreter(Nil,"(.+?)(?:,(.+?))+",Nil), // FIXME groups not well supported
-//      new MultiplePatternInterpreter(Nil,"(.+?)(?:/(.+?))+",Nil) // FIXME groups not well supported
-    )
+      new SimplePatternInterpreter(Nil,"\\w+",Nil) // FIXME : this may contain important key words that should be interpreted differently
+    ) ::: 
+    (for (n <- 1 to 5) yield {
+    	  new MultiplePatternInterpreter(Nil,
+    	      (for (i <- 1 to n+1) yield {"([^,]+?)"}).mkString("\\s*,\\s*"),
+    	      List("and"))
+    }).toList
+    
 }

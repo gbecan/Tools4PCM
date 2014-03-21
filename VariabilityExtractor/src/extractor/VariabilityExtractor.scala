@@ -15,6 +15,7 @@ import interpreters.BooleanPatternInterpreter
 import interpreters.PartialPatternInterpreter
 import interpreters.EmptyPatternInterpreter
 import interpreters.InconsistentPatternInterpreter
+import interpreters.YesOnlyPatternInterpreter
 
 class VariabilityExtractor {
 
@@ -32,27 +33,30 @@ class VariabilityExtractor {
   def parseConfigurationFile(configFile : String) {
 	  val configParser = new ParserTools
 	  configParser.readParameters(configFile)
-	  val patternInterpreters = (for (pattern <- configParser.patterns) yield {
-		  concept2PatternInterpreter(pattern)
-	  }).toList
+	  val patternInterpreters : List[PatternInterpreter] = (
+	      for (pattern <- configParser.patterns;
+	    	val patternInterpreter = concept2PatternInterpreter(pattern)
+	    	if patternInterpreter.isDefined
+	      ) yield {
+		    patternInterpreter.get
+		  }).toList
 	  cellContentInterpreter.setInterpreters(patternInterpreters)
 	  
 	  simpleParameters = configParser.simpleParameters.map(e => (e._1,e._2.toInt)).toMap
 	  complexParameters = configParser.complexParameters.map(e => (e._1,e._2.toList)).toMap
-//	  println(simpleParameters)
-//	  println(complexParameters)
   }
   
-  def concept2PatternInterpreter(pattern : Concept) : PatternInterpreter = {
+  def concept2PatternInterpreter(pattern : Concept) : Option[PatternInterpreter] = {
     pattern.getName() match {
-      case "Boolean" => new BooleanPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
-      case "Simple" => new SimplePatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
-      case "Partial" => new PartialPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
-      case "Multiple" => new MultiplePatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
-      case "Unknown" => new UnknownPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
-      case "Empty" => new EmptyPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
-      case "Inconsistent" => new InconsistentPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
-      case _ => new UnknownPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList)
+      case "Boolean" => Some(new BooleanPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList))
+      case "Simple" => Some(new SimplePatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList))
+      case "Partial" => Some(new PartialPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList))
+      case "Multiple" => Some(new MultiplePatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList))
+      case "Unknown" => Some(new UnknownPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList))
+      case "Empty" => Some(new EmptyPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList))
+      case "Inconsistent" => Some(new InconsistentPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList))
+      case "YesOnly" => Some(new YesOnlyPatternInterpreter(pattern.getHeaders().toList, pattern.getAssociatedRule(), pattern.getParameters().toList))
+      case _ => None
     }
     
   }
