@@ -245,6 +245,7 @@ class TableVisitor extends AstVisitor {
 	  if (!inXMLElement) {
 	    val value = e.getName() match {
 	      case "nbsp" => 160.toChar.toString
+	      case "times" => 215.toChar.toString
 	      case _ => ""
 	    }
 	    
