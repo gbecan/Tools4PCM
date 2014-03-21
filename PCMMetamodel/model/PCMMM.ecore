@@ -114,4 +114,5 @@
   <eClassifiers xsi:type="ecore:EClass" name="YesNO">
     <eOperations name="eval" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="YesOnly" eSuperTypes="#//Constraint"/>
 </ecore:EPackage>
