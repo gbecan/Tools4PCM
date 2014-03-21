@@ -33,6 +33,11 @@ class PartialPatternInterpreter (
 		   val condInterpretation = cellContentInterpreter.findInterpretation(condition, products, features)
 		   if (condInterpretation.isDefined) {
 		     constraint.setCondition(condInterpretation.get)
+		     // Invert argument and condition if specified by parameter
+		     if (parameters.contains("inverted")) {
+		       constraint.setCondition(constraint.getArgument())
+		       constraint.setArgument(condInterpretation.get)
+		     }
 		   } else {
 		     fullyInterpreted = false
 		   }
