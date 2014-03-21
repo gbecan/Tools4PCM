@@ -21,8 +21,10 @@ class PCMNormalizer {
 	  }
 
 	  // Set headers
+	  val headerRows = simpleParameters.get("header-rows")
+	  val headerColumns= simpleParameters.get("header-columns")
 	  for  (matrix <- pcm.getMatrices()) {
-		  setHeaders(matrix) // FIXME : requires configuration
+		  setHeaders(matrix,headerRows.getOrElse(1),headerColumns.getOrElse(1))
 	  }
 
 	  // Ignore rows and columns
