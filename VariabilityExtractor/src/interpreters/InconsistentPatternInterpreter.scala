@@ -12,10 +12,10 @@ class InconsistentPatternInterpreter (
     parameters : List[String])
     extends PatternInterpreter(validHeaders, regex, parameters) {
   
-  override def createConstraint(s : String, matcher : Matcher, parameters : List[String], products : List[Product], features : List[Feature]) : Constraint = {
+  override def createConstraint(s : String, matcher : Matcher, parameters : List[String], products : List[Product], features : List[Feature]) : Option[Constraint] = {
 		  val constraint = PcmmmFactory.eINSTANCE.createInconsistent()
 		  constraint.setName(s)
-		  constraint
+		  Some(constraint)
   }
 
 }

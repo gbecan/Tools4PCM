@@ -13,7 +13,7 @@ class BooleanPatternInterpreter (
     extends PatternInterpreter(validHeaders, regex, parameters) {
   
  
-  override def createConstraint(s: String, matcher : Matcher, parameters : List[String], products : List[Product], features : List[Feature]) : Constraint = {
+  override def createConstraint(s: String, matcher : Matcher, parameters : List[String], products : List[Product], features : List[Feature]) : Option[Constraint] = {
 		  val constraint = PcmmmFactory.eINSTANCE.createBoolean()
 		  if (!parameters.isEmpty) {
 			  constraint.setValue(parameters.head.toBoolean)
@@ -21,7 +21,7 @@ class BooleanPatternInterpreter (
 			  constraint.setValue(false)
 		  }
 		  constraint.setName(s)
-		  constraint
+		  Some(constraint)
   }
     
 }

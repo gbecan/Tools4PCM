@@ -13,14 +13,18 @@ class PartialPatternInterpreter (
     parameters : List[String])
     extends PatternInterpreter(validHeaders, regex, parameters) {
 
-  override def createConstraint(s : String, matcher : Matcher, parameters : List[String], products : List[Product], features : List[Feature]) : Constraint = {
+  override def createConstraint(s : String, matcher : Matcher, parameters : List[String], products : List[Product], features : List[Feature]) : Option[Constraint] = {
 		 val constraint = PcmmmFactory.eINSTANCE.createPartial()
+		 var fullyInterpreted : Boolean = true
+		 
 		 if (matcher.groupCount() >= 1) {
 		   // Interpret argument
 		   val argument = matcher.group(1)
 		   val argInterpretation = cellContentInterpreter.findInterpretation(argument, products, features)
 		   if (argInterpretation.isDefined) {
 			   constraint.setArgument(argInterpretation.get)  
+		   } else {
+		     fullyInterpreted = false
 		   }
 		 }
 		 if (matcher.groupCount() >= 2) {  
@@ -29,9 +33,16 @@ class PartialPatternInterpreter (
 		   val condInterpretation = cellContentInterpreter.findInterpretation(condition, products, features)
 		   if (condInterpretation.isDefined) {
 		     constraint.setCondition(condInterpretation.get)
+		   } else {
+		     fullyInterpreted = false
 		   }
 		 }
-		 constraint
+		 
+		 if (fullyInterpreted) {
+			 Some(constraint)
+		 } else {
+			 None
+		 }
   }
 
 }

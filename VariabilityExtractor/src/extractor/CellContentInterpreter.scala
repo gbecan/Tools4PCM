@@ -21,10 +21,13 @@ import interpreters.UnknownPatternInterpreter
 import interpreters.EmptyPatternInterpreter
 import interpreters.SimplePatternInterpreter
 import pcmmm.ValuedCell
+import interpreters.MultiplePatternInterpreter
+import interpreters.PartialPatternInterpreter
 
 class CellContentInterpreter() {
 
-  private var patternInterpreters : List[PatternInterpreter] = CellContentInterpreter.defaultInterpreters ::: CellContentInterpreter.defaultGreedyInterpreters 
+  private var patternInterpreters : List[PatternInterpreter] = CellContentInterpreter.defaultInterpreters ::: CellContentInterpreter.defaultGreedyInterpreters
+  patternInterpreters.foreach(_.setCellContentInterpreter(this))
   
   def setInterpreters(interpreters : List[PatternInterpreter]) {
       patternInterpreters = CellContentInterpreter.defaultInterpreters :::
@@ -126,10 +129,14 @@ object CellContentInterpreter {
     	new UnknownPatternInterpreter(Nil,"n/a",Nil),
     	new UnknownPatternInterpreter(Nil,"unknown",Nil),
     	new UnknownPatternInterpreter(Nil,"(-)+",Nil),
-    	new UnknownPatternInterpreter(Nil,"(—)+",Nil)
+    	new UnknownPatternInterpreter(Nil,"(—)+",Nil),
+    	new PartialPatternInterpreter(Nil,"partial",Nil)
     )
   val defaultGreedyInterpreters : List[PatternInterpreter] = List(
       new SimplePatternInterpreter(Nil,"\\d+(\\.\\d+)*",Nil),
-      new SimplePatternInterpreter(Nil,"\\w+",Nil) // FIXME : this may contain important key words that should be interpreted differently
+      new SimplePatternInterpreter(Nil,"\\w+",Nil), // FIXME : this may contain important key words that should be interpreted differently
+      new MultiplePatternInterpreter(Nil,"([^,]+?),([^,]+?)",Nil)
+//      new MultiplePatternInterpreter(Nil,"(.+?)(?:,(.+?))+",Nil), // FIXME groups not well supported
+//      new MultiplePatternInterpreter(Nil,"(.+?)(?:/(.+?))+",Nil) // FIXME groups not well supported
     )
 }
