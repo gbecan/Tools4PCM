@@ -30,20 +30,20 @@ class PCMNormalizer {
       // TODO : handle product and feature clusters
       if (row < numberOfRows && column < numberOfColumns) { // Top left header
         val newCell = PcmmmFactory.eINSTANCE.createExtra
-        copyAndReplaceCell(cells, cell, newCell)
+        copyAndReplaceCell(matrix, cell, newCell)
       } else if (row < numberOfRows) { // Top header
         if (!cell.isInstanceOf[Header]) {
 	        val newCell = PcmmmFactory.eINSTANCE.createHeader
-	        copyAndReplaceCell(cells, cell, newCell)
+	        copyAndReplaceCell(matrix, cell, newCell)
         }
       } else if (column < numberOfColumns) { // Left header
         if (!cell.isInstanceOf[Header]) {
         	val newCell = PcmmmFactory.eINSTANCE.createHeader
-        	copyAndReplaceCell(cells, cell, newCell)
+        	copyAndReplaceCell(matrix, cell, newCell)
         }
       } else { // Inner cell
         val newCell = PcmmmFactory.eINSTANCE.createValuedCell
-        copyAndReplaceCell(cells, cell, newCell)
+        copyAndReplaceCell(matrix, cell, newCell)
       }
       
       
@@ -79,15 +79,17 @@ class PCMNormalizer {
   }
 
   /**
-   * Copy the content of a cell to another one and replace it in the list
-   * @param cells : list of cells containing the old one
+   * Copy the content of a cell to another one and replace it in the matrix
+   * @param matrix : matrix containing the old cell
    * @param cell
    * @param newCell 
    */
-  def copyAndReplaceCell(cells : EList[Cell], cell : Cell, newCell : Cell) {
+  def copyAndReplaceCell(matrix : Matrix, cell : Cell, newCell : Cell) {
     copyCell(cell, newCell)
-    cells.remove()
-    cells.add(newCell)
+    val cellToRemove = matrix.getCells().find(c => 
+      (c.getRow() == cell.getRow()) && (c.getColumn() == cell.getColumn()))
+    matrix.getCells().remove(cellToRemove.get)  
+    matrix.getCells().add(newCell)
   }
   
   
