@@ -168,44 +168,44 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	
 	  for (file <- files) {
 		  // Load model
-	  println(file.getName())
-	  val pcm = loadPCMModel(file)
+		  println(file.getName())
+		  val pcm = loadPCMModel(file)
+		
+		  // Load configuration
+		  val configFile = "input/configs/" + file.getName.substring(0, file.getName.size - 4) + ".config"  
+		  variabilityExtractor.parseConfigurationFile(configFile)
+		
+		  // Extract variability
+		  variabilityExtractor.extractVariability(pcm)
+		
+		  // Validate and save model
+		  val diagnostic = Diagnostician.INSTANCE.validate(pcm)
+		  if (diagnostic.getSeverity() == Diagnostic.OK) {
+			  println("OK")
+		  } else {
+			  println("NOT VALID")
+		  }
 	
-	  // Load configuration
-	  val configFile = "input/configs/" + file.getName.substring(0, file.getName.size - 4) + ".config"  
-	  variabilityExtractor.parseConfigurationFile(configFile)
-	
-	  // Extract variability
-	  variabilityExtractor.extractVariability(pcm)
-	
-	  // Validate and save model
-	  val diagnostic = Diagnostician.INSTANCE.validate(pcm)
-	  if (diagnostic.getSeverity() == Diagnostic.OK) {
-		  println("OK")
-	  } else {
-		  println("NOT VALID")
-	  }
-	
-	  // Save model
-	  savePCMModel(pcm, file.getName())
-	
-	  // Compute stats on interpreted cells
-	  for (matrix <- pcm.getMatrices()) yield {
-		  val cells = matrix.getCells()
-	
-				  val valuedCells = cells.filter(cell => cell.isInstanceOf[ValuedCell])
-				  val interpretedCells = valuedCells.filter(cell => Option(cell.asInstanceOf[ValuedCell].getInterpretation()).isDefined)
-	
-				  if (valuedCells.size > 0) {
-					  sumValuedCells += valuedCells.size
-							  sumInterpretedCells += interpretedCells.size
-							  val averageMatrix : Double = interpretedCells.size.toDouble / valuedCells.size.toDouble
-							  sumAveragePerMatrix += averageMatrix
-							  nbMatrix += 1
-							  println("\t\t" + (averageMatrix * 100).toInt + "% of interpreted cells")
-	  }else {
-		  println("\t\tno valued cells")
-					  }
+		  // Save model
+		  savePCMModel(pcm, file.getName())
+		
+		  // Compute stats on interpreted cells
+		  for (matrix <- pcm.getMatrices()) yield {
+			  val cells = matrix.getCells()
+		
+			  val valuedCells = cells.filter(cell => cell.isInstanceOf[ValuedCell])
+			  val interpretedCells = valuedCells.filter(cell => Option(cell.asInstanceOf[ValuedCell].getInterpretation()).isDefined)
+		
+			  if (valuedCells.size > 0) {
+				  sumValuedCells += valuedCells.size
+				  sumInterpretedCells += interpretedCells.size
+				  val averageMatrix : Double = interpretedCells.size.toDouble / valuedCells.size.toDouble
+				  sumAveragePerMatrix += averageMatrix
+				  nbMatrix += 1
+				  println("\t\t" + (averageMatrix * 100).toInt + "% of interpreted cells")
+			  }else {
+				  println("\t\tno valued cells")
+			  }
 	
 		  }
 	  }
