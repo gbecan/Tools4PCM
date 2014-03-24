@@ -129,8 +129,8 @@ object CellContentInterpreter {
     	new UnknownPatternInterpreter(Nil,"n/a",Nil),
     	new UnknownPatternInterpreter(Nil,"unknown",Nil),
     	new UnknownPatternInterpreter(Nil,"(-)+",Nil),
-    	new UnknownPatternInterpreter(Nil,"(—)+",Nil)
-//    	new PartialPatternInterpreter(Nil,"partial",Nil) // FIXME : no group, but if we add them for now, it will result in a stack overflow
+    	new UnknownPatternInterpreter(Nil,"(—)+",Nil),
+    	new PartialPatternInterpreter(Nil,"(partial)",Nil) // FIXME : no group, but if we add them for now, it will result in a stack overflow
     )
   val defaultGreedyInterpreters : List[PatternInterpreter] = List(
       new SimplePatternInterpreter(Nil,"\\d+(\\.\\d+)*",Nil),

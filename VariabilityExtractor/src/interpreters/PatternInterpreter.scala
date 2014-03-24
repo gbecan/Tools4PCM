@@ -26,6 +26,8 @@ abstract class PatternInterpreter(
     
     var cellContentInterpreter : CellContentInterpreter = _
     
+    protected var lastCall : Option[(String, List[Product], List[Feature])] = None
+    
     def setCellContentInterpreter(interpreter : CellContentInterpreter) {
 	  cellContentInterpreter = interpreter
 	}
@@ -47,20 +49,21 @@ abstract class PatternInterpreter(
     
 	def interpret(s : String, products : List[Product], features : List[Feature]) : Option[Constraint] = {
 
-	  if ((validProducts.isEmpty || !products.intersect(validProducts).isEmpty)
-	  && (validFeatures.isEmpty || !features.intersect(validFeatures).isEmpty)) {
-	  
-		  val matcher = pattern.matcher(format(s))
-		  if (matcher.matches()) {
-			createConstraint(s, matcher, parameters, products, features)
-		  } else {
-		    None
-		  }
+	  if (!lastCall.isDefined || (s, products, features) != lastCall.get) {
+		  lastCall = None
 	    
-	  } else {
-	    None
+		  if ((validProducts.isEmpty || !products.intersect(validProducts).isEmpty)
+				  && (validFeatures.isEmpty || !features.intersect(validFeatures).isEmpty)) {
+		    
+			  val matcher = pattern.matcher(format(s))
+			  if (matcher.matches()) {
+				return createConstraint(s, matcher, parameters, products, features)
+			  }
+			  
+		  }
 	  }
 	  
+	  None
 	}
 	
 	def createConstraint(s : String, matcher : Matcher, parameters : List[String], products : List[Product], features : List[Feature]) : Option[Constraint]
