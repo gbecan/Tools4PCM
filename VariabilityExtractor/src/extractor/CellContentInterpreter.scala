@@ -23,6 +23,7 @@ import interpreters.SimplePatternInterpreter
 import pcmmm.ValuedCell
 import interpreters.MultiplePatternInterpreter
 import interpreters.PartialPatternInterpreter
+import configuration.PCMConfiguration
 
 class CellContentInterpreter() {
 
@@ -41,13 +42,16 @@ class CellContentInterpreter() {
    * @param pcm : model of PCM
    * @param patternInterpreters : variability pattern interpreters
    */
-  def interpretCells(pcm : PCM) {
-    // Configure pattern interpreters to this PCM
-	for (patternInterpreter <- patternInterpreters) {
-		patternInterpreter.config(pcm)
-	}
+  def interpretCells(pcm : PCM, config : PCMConfiguration) {
     
     for (matrix <- pcm.getMatrices) {
+    
+      // Configure pattern interpreters to this matrix
+      val matrixConfig = config.matrixConfigurations.getOrElse(matrix.getName(), config.defaultConfiguration)
+      setInterpreters(matrixConfig.getPatterns)
+      for (patternInterpreter <- patternInterpreters) {
+		patternInterpreter.config(pcm)
+	  }
       
       // Interpret every uninterpreted cells 
       val it = matrix.getCells().listIterator()

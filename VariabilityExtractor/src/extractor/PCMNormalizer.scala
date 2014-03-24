@@ -14,7 +14,7 @@ import configuration.PCMConfiguration
 class PCMNormalizer {
   
   
-  def normalizePCM(pcm : PCM, simpleParameters : Map[String,Int], complexParameters : Map[String, List[String]], config : PCMConfiguration) {
+  def normalizePCM(pcm : PCM, config : PCMConfiguration) {
     
 	  val it = pcm.getMatrices().listIterator()
 	  while (it.hasNext()) {
