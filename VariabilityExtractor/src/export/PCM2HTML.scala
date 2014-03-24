@@ -46,16 +46,19 @@ class PCM2HTML {
     val rows = cells.groupBy(cell => cell.getRow()).toList
     val sortedRows = rows.sortBy(r => r._1).map(r => r._2)
         
-    val htmlCode = 
-    <table border="1">
-    		{for (row <- sortedRows) yield {
-    		  <tr> 
-    		  {for (cell <- row.sortBy(c => c.getColumn())) yield {
-    			  cell2HTML(cell)
-    		  }}
-    		  </tr>
-    		}}
-    </table>
+    val htmlCode =
+    <div>
+    	<h1>{matrix.getName}</h1>
+    	<table border="1">
+			{for (row <- sortedRows) yield {
+				<tr> 
+				{for (cell <- row.sortBy(c => c.getColumn())) yield {
+					cell2HTML(cell)
+				}}
+				</tr>
+    			}}
+    	</table>
+    </div>
     htmlCode
   }
   

@@ -28,7 +28,7 @@ class PCMNormalizer {
 	  }
 
 	  // Ignore rows and columns
-	  val rowsToIgnore = complexParameters.get("ignore-row")
+	  val rowsToIgnore = complexParameters.get("ignore-rows")
 	  val indexOfRowsToIgnore : List[Int] = if (rowsToIgnore.isDefined) {
 		  rowsToIgnore.get.toList.filter(e => 
 		  try {

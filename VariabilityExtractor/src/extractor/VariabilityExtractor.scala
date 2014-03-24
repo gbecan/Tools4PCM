@@ -42,7 +42,7 @@ class VariabilityExtractor {
 		  }).toList
 	  cellContentInterpreter.setInterpreters(patternInterpreters)
 	  
-	  simpleParameters = configParser.simpleParameters.map(e => (e._1,e._2.toInt)).toMap
+	  simpleParameters = simpleParameters.map(e => (e._1,e._2.toInt)).toMap
 	  complexParameters = configParser.complexParameters.map(e => (e._1,e._2.toList)).toMap
   }
   
