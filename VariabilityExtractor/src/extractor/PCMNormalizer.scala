@@ -29,8 +29,8 @@ class PCMNormalizer {
 
 	  // Ignore rows and columns
 	  val rowsToIgnore = complexParameters.get("ignore-row")
-	  if (rowsToIgnore.isDefined) {
-		  val indexOfRowsToIgnore : List[Int] = rowsToIgnore.get.toList.filter(e => 
+	  val indexOfRowsToIgnore : List[Int] = if (rowsToIgnore.isDefined) {
+		  rowsToIgnore.get.toList.filter(e => 
 		  try {
 			  e.toInt 
 			  true
@@ -38,11 +38,26 @@ class PCMNormalizer {
 		  catch {
 		  case e: Exception => false
 		  }).map(e => e.toInt)
-
-		  for (matrix <- pcm.getMatrices()) {
-			  ignoreLinesAndColumns(matrix, indexOfRowsToIgnore, Nil)
-		  }
-
+	  } else {
+	    Nil
+	  }
+	  
+	  val columnsToIgnore = complexParameters.get("ignore-columns")
+	  val indexOfColumnsToIgnore : List[Int] = if (columnsToIgnore.isDefined) {
+		  columnsToIgnore.get.toList.filter(e => 
+		  try {
+			  e.toInt 
+			  true
+		  } 
+		  catch {
+		  case e: Exception => false
+		  }).map(e => e.toInt)
+	  } else {
+	    Nil
+	  }
+	  
+	  for (matrix <- pcm.getMatrices()) {
+			  ignoreLinesAndColumns(matrix, indexOfRowsToIgnore, indexOfColumnsToIgnore)
 	  }
   }
   
