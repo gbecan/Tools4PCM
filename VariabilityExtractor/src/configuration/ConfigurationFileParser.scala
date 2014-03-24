@@ -6,6 +6,14 @@ import scala.collection.mutable.ListBuffer
 import scala.collection.mutable.ListBuffer
 import scala.collection.mutable.ListBuffer
 import scala.collection.mutable.ListBuffer
+import interpreters.BooleanPatternInterpreter
+import interpreters.SimplePatternInterpreter
+import interpreters.PartialPatternInterpreter
+import interpreters.MultiplePatternInterpreter
+import interpreters.UnknownPatternInterpreter
+import interpreters.EmptyPatternInterpreter
+import interpreters.YesOnlyPatternInterpreter
+import interpreters.InconsistentPatternInterpreter
 
 class ConfigurationFileParser {
   
@@ -27,9 +35,28 @@ class ConfigurationFileParser {
   
   def parseLine(line : String) = {
 		var ok : Boolean = false
+		ok = ok || parseContext(line)
+		ok = ok || parseSimpleParameter(line)
+		ok = ok || parseComplexParameter(line)
     	ok = ok || parseRule(line)
   }
   
+  def parseContext(s : String) : Boolean = {
+		val pattern = Pattern
+				.compile("for\\s+(\".*\"(\\s*,\\s*\".*\")*)\\s*:\\s*");
+		val matcher = pattern.matcher(s);
+		if (matcher.matches()) {
+		  matrixConfig = new MatrixConfiguration
+		  for (value <- matcher.group(1).split(",")) {
+		    val matrix = value.substring(value.indexOf("\"")+1,value.lastIndexOf("\""))
+		    pcmConfig.matrixConfigurations += (matrix -> matrixConfig)
+		  }
+		  
+		  true
+		} else {
+		  false
+		}
+  }
   
   /**
    * Parse a pattern configuration
@@ -67,8 +94,26 @@ class ConfigurationFileParser {
 					p += t;
 				}
 			}
-			val patternConfig = new PatternConfiguration(h.toList, ruleName, ruleExp, p.toList)
-			matrixConfig.addPattern(patternConfig)
+
+			val validHeaders = h.toList
+			val parameters = p.toList
+			
+			val patternInterpreter = ruleName match {
+		      case "Boolean" => Some(new BooleanPatternInterpreter(validHeaders, ruleExp, parameters))
+		      case "Simple" => Some(new SimplePatternInterpreter(validHeaders, ruleExp, parameters))
+		      case "Partial" => Some(new PartialPatternInterpreter(validHeaders, ruleExp, parameters))
+		      case "Multiple" => Some(new MultiplePatternInterpreter(validHeaders, ruleExp, parameters))
+		      case "Unknown" => Some(new UnknownPatternInterpreter(validHeaders, ruleExp, parameters))
+		      case "Empty" => Some(new EmptyPatternInterpreter(validHeaders, ruleExp, parameters))
+		      case "Inconsistent" => Some(new InconsistentPatternInterpreter(validHeaders, ruleExp, parameters))
+		      case "YesOnly" => Some(new YesOnlyPatternInterpreter(validHeaders, ruleExp, parameters))
+		      case _ => None
+		    }
+			
+			if (patternInterpreter.isDefined) {
+				matrixConfig.addPattern(patternInterpreter.get)
+			}
+			
 			true
 		} else {
 			false
@@ -76,8 +121,8 @@ class ConfigurationFileParser {
 	}
   
   
-  	def readSimpleParameter(s : String) : Boolean = {
-		val pattern = Pattern.compile("\\s*(.*?)\\s*=\\s*(\\d+)\\s*");
+  	def parseSimpleParameter(s : String) : Boolean = {
+		val pattern = Pattern.compile("\\s*(.*?)\\s*=\\s*(\\w+)\\s*");
 		val matcher = pattern.matcher(s);
 		if (matcher.matches()) {
 			val key = matcher.group(1);
@@ -94,7 +139,7 @@ class ConfigurationFileParser {
 		}
 	}
 
-	def readComplexParameter(s : String) : Boolean = {
+	def parseComplexParameter(s : String) : Boolean = {
 		val configPattern = Pattern.compile("\\s*(.*?)\\s*=\\s*\\{(\".*?\"(,\".*?\")*)?\\}\\s*")
 		val configMatcher = configPattern.matcher(s)
 		if (configMatcher.matches()) {
@@ -121,7 +166,7 @@ class ConfigurationFileParser {
 		}
 	}
 	
-	def convertToListOfInt(strings : List[String]) : List[Int] = {
+	private def convertToListOfInt(strings : List[String]) : List[Int] = {
 	  	val integers : ListBuffer[Int] = ListBuffer()
 	  	for (string <- strings) {
 	  		try {
@@ -134,7 +179,7 @@ class ConfigurationFileParser {
 	  	integers.toList
 	}
 	
-	def convertToInt(string : String) : Int = {
+	private def convertToInt(string : String) : Int = {
 		try {
 			string.toInt
 		} catch {
@@ -142,7 +187,7 @@ class ConfigurationFileParser {
 		}
 	}
 	
-	def convertToBoolean(string : String) : Boolean = {
+	private def convertToBoolean(string : String) : Boolean = {
 		try {
 			string.toBoolean
 		} catch {

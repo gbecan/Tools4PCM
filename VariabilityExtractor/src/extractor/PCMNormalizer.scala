@@ -9,55 +9,23 @@ import pcmmm.Extra
 import pcmmm.Matrix
 import java.util.ListIterator
 import org.eclipse.emf.common.util.EList
+import configuration.PCMConfiguration
 
 class PCMNormalizer {
   
   
-  def normalizePCM(pcm : PCM, simpleParameters : Map[String,Int], complexParameters : Map[String, List[String]]) {
-	  // Ignore matrices
-	  val matricesToIgnore = complexParameters.get("ignore-matrix")
-	  if (matricesToIgnore.isDefined) {
-		  removeMatrices(pcm, matricesToIgnore.get)
-	  }
-
-	  // Set headers
-	  val headerRows = simpleParameters.get("header-rows")
-	  val headerColumns= simpleParameters.get("header-columns")
-	  for  (matrix <- pcm.getMatrices()) {
-		  setHeaders(matrix,headerRows.getOrElse(1),headerColumns.getOrElse(1))
-	  }
-
-	  // Ignore rows and columns
-	  val rowsToIgnore = complexParameters.get("ignore-rows")
-	  val indexOfRowsToIgnore : List[Int] = if (rowsToIgnore.isDefined) {
-		  rowsToIgnore.get.toList.filter(e => 
-		  try {
-			  e.toInt 
-			  true
-		  } 
-		  catch {
-		  case e: Exception => false
-		  }).map(e => e.toInt)
-	  } else {
-	    Nil
-	  }
-	  
-	  val columnsToIgnore = complexParameters.get("ignore-columns")
-	  val indexOfColumnsToIgnore : List[Int] = if (columnsToIgnore.isDefined) {
-		  columnsToIgnore.get.toList.filter(e => 
-		  try {
-			  e.toInt 
-			  true
-		  } 
-		  catch {
-		  case e: Exception => false
-		  }).map(e => e.toInt)
-	  } else {
-	    Nil
-	  }
-	  
-	  for (matrix <- pcm.getMatrices()) {
-			  ignoreLinesAndColumns(matrix, indexOfRowsToIgnore, indexOfColumnsToIgnore)
+  def normalizePCM(pcm : PCM, simpleParameters : Map[String,Int], complexParameters : Map[String, List[String]], config : PCMConfiguration) {
+    
+	  val it = pcm.getMatrices().listIterator()
+	  while (it.hasNext()) {
+		  val matrix = it.next()
+		  val matrixConfig = config.matrixConfigurations.getOrElse(matrix.getName(), config.defaultConfiguration)
+		  if (matrixConfig.ignored) {
+			  it.remove()
+		  } else {
+			  setHeaders(matrix, matrixConfig.headerRows, matrixConfig.headerColumns)
+			  ignoreLinesAndColumns(matrix, matrixConfig.ignoreRows, matrixConfig.ignoreColumns)
+		  }
 	  }
   }
   
@@ -140,15 +108,5 @@ class PCMNormalizer {
     matrix.getCells().add(newCell)
   }
   
-  
-  def removeMatrices(pcm : PCM, matrixNames : List[String]) {
-	  val it = pcm.getMatrices().iterator()
-	  while(it.hasNext()) {
-		  val matrix = it.next()
-		  if (matrixNames.contains(matrix.getName())) {
-			  it.remove()
-		  }
-	  }
-  }
   
 }

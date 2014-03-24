@@ -1,6 +1,7 @@
 package configuration
 
 import scala.collection.mutable.ListBuffer
+import interpreters.PatternInterpreter
 
 class MatrixConfiguration {
 
@@ -12,13 +13,13 @@ class MatrixConfiguration {
   var ignoreRows : List[Int] = Nil
   var ignoreColumns : List[Int] = Nil
   
-  private var patterns : ListBuffer[PatternConfiguration] = ListBuffer()
+  private var patterns : ListBuffer[PatternInterpreter] = ListBuffer()
   
-  def addPattern(pattern : PatternConfiguration) {
+  def addPattern(pattern : PatternInterpreter) {
     	patterns += pattern
   }
   
-  def getPatterns() : List[PatternConfiguration] = {
+  def getPatterns() : List[PatternInterpreter] = {
 		  patterns.toList
   }
 }
