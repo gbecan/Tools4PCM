@@ -19,7 +19,7 @@ abstract class PatternInterpreter(
     val parameters : List[String]
     ) {
 	
-	private val pattern : Pattern =  Pattern.compile(regex, Pattern.UNICODE_CHARACTER_CLASS)
+	private val pattern : Pattern =  Pattern.compile(regex, Pattern.UNICODE_CHARACTER_CLASS | Pattern.CASE_INSENSITIVE)
 
 	private var validProducts : List[Product] = Nil
     private var validFeatures : List[Feature] = Nil
