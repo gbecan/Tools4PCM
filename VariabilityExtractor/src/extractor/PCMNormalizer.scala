@@ -13,20 +13,59 @@ import configuration.PCMConfiguration
 
 class PCMNormalizer {
   
-  
+  /**
+   * Normalize a PCM according to the given configuration
+   * - remove ignored matrices
+   * - add missing cells
+   * - set headers
+   * - convert cells of ignored rows or columns to Extra cell
+   */
   def normalizePCM(pcm : PCM, config : PCMConfiguration) {
     
 	  val it = pcm.getMatrices().listIterator()
 	  while (it.hasNext()) {
 		  val matrix = it.next()
 		  val matrixConfig = config.matrixConfigurations.getOrElse(matrix.getName(), config.defaultConfiguration)
+		  
 		  if (matrixConfig.ignored) {
 			  it.remove()
 		  } else {
+			  normalizeMatrix(matrix)
 			  setHeaders(matrix, matrixConfig.headerRows, matrixConfig.headerColumns)
 			  ignoreLinesAndColumns(matrix, matrixConfig.ignoreRows, matrixConfig.ignoreColumns)
 		  }
 	  }
+  }
+  
+  /**
+   * Add missing cells to create a rectangular matrix
+   */
+  def normalizeMatrix(matrix : Matrix) {
+    // Get all existing cell positions
+    val cellPositions = matrix.getCells().flatMap( c =>
+      		for (row <- c.getRow until c.getRow + c.getRowspan;
+      				column <- c.getColumn until c.getColumn + c.getColspan) yield {
+      			(row, column)
+      		} 
+        ).toList
+        
+    val maxRow = cellPositions.maxBy(p => p._1)._1
+    val maxColumn = cellPositions.maxBy(p => p._2)._2
+
+    // Detect holes in the matrix and add a cell if necessary 
+    for (row <- 0 to maxRow; column <- 0 to maxColumn) {
+      if (!cellPositions.contains((row, column))) {
+    	  val newCell = PcmmmFactory.eINSTANCE.createExtra()
+    	  newCell.setName("")
+    	  newCell.setVerbatim("")
+    	  newCell.setRow(row)
+    	  newCell.setRowspan(1)
+    	  newCell.setColumn(column)
+    	  newCell.setColspan(1)
+    	  matrix.getCells().add(newCell)
+      }
+    }
+    
   }
   
   /**

@@ -131,6 +131,7 @@ class ConfigurationFileParser {
 			  case "header-rows" => matrixConfig.headerRows = convertToInt(value)
 			  case "header-columns" => matrixConfig.headerColumns = convertToInt(value)
 			  case "ignored" => matrixConfig.ignored = convertToBoolean(value)
+			  case "inverted" => matrixConfig.inverted = convertToBoolean(value)
 			  case _ => 
 			}
 			true;

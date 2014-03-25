@@ -6,6 +6,7 @@ import interpreters.PatternInterpreter
 class MatrixConfiguration {
 
   var ignored : Boolean = false
+  var inverted : Boolean = false
   
   var headerRows : Int = 1
   var headerColumns : Int = 1

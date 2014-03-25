@@ -12,6 +12,7 @@ import pcmmm.Constraint
 import pcmmm.Simple
 import pcmmm.Multiple
 import pcmmm.Partial
+import configuration.PCMConfiguration
 
 class VariabilityConceptExtractor {
 
@@ -20,22 +21,23 @@ class VariabilityConceptExtractor {
    * @param pcm : model of PCM
    * @param transposed : true if the rows and columns represent respectively features and products
    */
-  def extractConceptsFromHeaders(pcm : PCM, numberOfRows : Int = 1, numberOfColumns : Int = 1, transposed : Boolean = false) {
+  def extractConceptsFromHeaders(pcm : PCM, config : PCMConfiguration) {
 
 	  for (
 	      matrix <- pcm.getMatrices();
 	      cell <- matrix.getCells().filter(_ .isInstanceOf[Header])
 	  ) {
 
+		  val matrixConfig = config.matrixConfigurations.getOrElse(matrix.getName(), config.defaultConfiguration)
 		  val concept : VariabilityConcept = 
-			  if (cell.getRow() < numberOfRows) {
-			    if (!transposed) {
+			  if (cell.getRow() < matrixConfig.headerRows) {
+			    if (!matrixConfig.inverted) {
 			    	PcmmmFactory.eINSTANCE.createFeature()
 			    } else {
 			    	PcmmmFactory.eINSTANCE.createProduct()
 			    }
 			  } else {
-			    if (!transposed) {
+			    if (!matrixConfig.inverted) {
 			    	PcmmmFactory.eINSTANCE.createProduct()
 			    } else {
 			    	PcmmmFactory.eINSTANCE.createFeature()

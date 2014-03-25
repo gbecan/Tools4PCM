@@ -41,7 +41,7 @@ class VariabilityExtractor {
 	  pcmNormalizer.normalizePCM(pcm, config)
 
 	  // Extract features and products from headers
-	  variabilityConceptExtractor.extractConceptsFromHeaders(pcm)
+	  variabilityConceptExtractor.extractConceptsFromHeaders(pcm, config)
 	  
 	  // Interpret contents in cells (detect variability patterns (e.g. Boolean pattern))
 	  // and specify header products and features related to each cell
