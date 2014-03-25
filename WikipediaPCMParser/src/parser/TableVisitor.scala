@@ -160,6 +160,12 @@ class TableVisitor extends AstVisitor {
 		iterate(e)
 		
 		if(!inXMLElement) {
+		  if (cellContent.toString.startsWith("||")) {
+			  cellContent.delete(0, 2)
+			  currentMatrix.setCell(new Cell("", false, row, 1, column ,1), row, column)
+			  column +=1
+		  }
+		  
 		  val cell = new Cell(trim(cellContent.toString), isHeader, row, rowspan, column, colspan)
 			
 		  // Handle rowspan and colspan

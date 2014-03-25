@@ -30,6 +30,7 @@ import org.sweble.wikitext.`lazy`.utils.XmlCharRef
 import org.sweble.wikitext.`lazy`.parser.Enumeration
 import org.sweble.wikitext.`lazy`.parser.HorizontalRule
 import pcm.Matrix
+import java.util.regex.Pattern
 
 class PageVisitor extends AstVisitor{
   
@@ -37,6 +38,20 @@ class PageVisitor extends AstVisitor{
   val pcm : PCM = new PCM
   var section : StringBuilder = new StringBuilder
   var inTitle : Boolean = false
+  
+  
+  	private val trimPattern : Pattern = Pattern.compile("\\s*([\\s\\S]*?)\\s*")
+	/**
+	 * Remove spaces before and after the string
+	 */
+	def trim(s : String) : String = {
+	  val matcher = trimPattern.matcher(s)
+	  if (matcher.matches() && matcher.groupCount() == 1) {
+		  matcher.group(1)
+	  } else {
+		  ""
+	  }
+	}
   
   def visit(e : LazyParsedPage) {
     iterate(e)
@@ -50,7 +65,7 @@ class PageVisitor extends AstVisitor{
 	  val tableVisitor = new TableVisitor
 	  tableVisitor.go(e)
 	  for (matrix <- tableVisitor.matrices) {
-	    matrix.name = section.toString
+	    matrix.name = trim(section.toString)
 	    pcm.addMatrix(matrix)
 	  }
   }
