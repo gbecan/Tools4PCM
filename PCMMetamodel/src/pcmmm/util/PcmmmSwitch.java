@@ -35,7 +35,6 @@ import pcmmm.ValuedCell;
 import pcmmm.VariabilityConcept;
 import pcmmm.XOr;
 import pcmmm.YesNO;
-import pcmmm.YesOnly;
 
 /**
  * <!-- begin-user-doc -->
@@ -298,13 +297,6 @@ public class PcmmmSwitch<T> extends Switch<T> {
 			case PcmmmPackage.YES_NO: {
 				YesNO yesNO = (YesNO)theEObject;
 				T result = caseYesNO(yesNO);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case PcmmmPackage.YES_ONLY: {
-				YesOnly yesOnly = (YesOnly)theEObject;
-				T result = caseYesOnly(yesOnly);
-				if (result == null) result = caseConstraint(yesOnly);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -759,21 +751,6 @@ public class PcmmmSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseYesNO(YesNO object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Yes Only</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Yes Only</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseYesOnly(YesOnly object) {
 		return null;
 	}
 

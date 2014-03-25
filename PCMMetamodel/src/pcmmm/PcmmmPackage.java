@@ -1844,53 +1844,6 @@ public interface PcmmmPackage extends EPackage {
 
 
 	/**
-	 * The meta object id for the '{@link pcmmm.impl.YesOnlyImpl <em>Yes Only</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see pcmmm.impl.YesOnlyImpl
-	 * @see pcmmm.impl.PcmmmPackageImpl#getYesOnly()
-	 * @generated
-	 */
-	int YES_ONLY = 30;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int YES_ONLY__NAME = CONSTRAINT__NAME;
-
-	/**
-	 * The number of structural features of the '<em>Yes Only</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int YES_ONLY_FEATURE_COUNT = CONSTRAINT_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Eval</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int YES_ONLY___EVAL = CONSTRAINT___EVAL;
-
-	/**
-	 * The number of operations of the '<em>Yes Only</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int YES_ONLY_OPERATION_COUNT = CONSTRAINT_OPERATION_COUNT + 0;
-
-
-	/**
 	 * Returns the meta object for class '{@link pcmmm.AbstractProduct <em>Abstract Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2651,16 +2604,6 @@ public interface PcmmmPackage extends EPackage {
 	EOperation getYesNO__Eval();
 
 	/**
-	 * Returns the meta object for class '{@link pcmmm.YesOnly <em>Yes Only</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Yes Only</em>'.
-	 * @see pcmmm.YesOnly
-	 * @generated
-	 */
-	EClass getYesOnly();
-
-	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3318,16 +3261,6 @@ public interface PcmmmPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation YES_NO___EVAL = eINSTANCE.getYesNO__Eval();
-
-		/**
-		 * The meta object literal for the '{@link pcmmm.impl.YesOnlyImpl <em>Yes Only</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see pcmmm.impl.YesOnlyImpl
-		 * @see pcmmm.impl.PcmmmPackageImpl#getYesOnly()
-		 * @generated
-		 */
-		EClass YES_ONLY = eINSTANCE.getYesOnly();
 
 	}
 

@@ -238,15 +238,6 @@ public interface PcmmmFactory extends EFactory {
 	YesNO createYesNO();
 
 	/**
-	 * Returns a new object of class '<em>Yes Only</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Yes Only</em>'.
-	 * @generated
-	 */
-	YesOnly createYesOnly();
-
-	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

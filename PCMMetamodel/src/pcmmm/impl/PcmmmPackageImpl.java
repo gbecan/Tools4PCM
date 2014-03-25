@@ -38,7 +38,6 @@ import pcmmm.ValuedCell;
 import pcmmm.VariabilityConcept;
 import pcmmm.XOr;
 import pcmmm.YesNO;
-import pcmmm.YesOnly;
 
 /**
  * <!-- begin-user-doc -->
@@ -256,13 +255,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * @generated
 	 */
 	private EClass yesNOEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass yesOnlyEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -978,15 +970,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getYesOnly() {
-		return yesOnlyEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public PcmmmFactory getPcmmmFactory() {
 		return (PcmmmFactory)getEFactoryInstance();
 	}
@@ -1111,8 +1094,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 
 		yesNOEClass = createEClass(YES_NO);
 		createEOperation(yesNOEClass, YES_NO___EVAL);
-
-		yesOnlyEClass = createEClass(YES_ONLY);
 	}
 
 	/**
@@ -1163,7 +1144,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		orEClass.getESuperTypes().add(this.getMultiple());
 		xOrEClass.getESuperTypes().add(this.getMultiple());
 		orderedDomainEClass.getESuperTypes().add(this.getDomain());
-		yesOnlyEClass.getESuperTypes().add(this.getConstraint());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(abstractProductEClass, AbstractProduct.class, "AbstractProduct", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1269,8 +1249,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		initEClass(yesNOEClass, YesNO.class, "YesNO", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEOperation(getYesNO__Eval(), ecorePackage.getEBoolean(), "eval", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		initEClass(yesOnlyEClass, YesOnly.class, "YesOnly", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);
