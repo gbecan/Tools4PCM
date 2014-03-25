@@ -19,7 +19,7 @@ abstract class PatternInterpreter(
     val parameters : List[String]
     ) {
 	
-	private val pattern : Pattern =  Pattern.compile(regex)
+	private val pattern : Pattern =  Pattern.compile(regex, Pattern.UNICODE_CHARACTER_CLASS)
 
 	private var validProducts : List[Product] = Nil
     private var validFeatures : List[Feature] = Nil
@@ -49,27 +49,28 @@ abstract class PatternInterpreter(
     
 	def interpret(s : String, products : List[Product], features : List[Feature]) : Option[Constraint] = {
 
+	  var result : Option[Constraint] = None
+	  
 	  if (!lastCall.isDefined || (s, products, features) != lastCall.get) {
-		  lastCall = None
-	    
 		  if ((validProducts.isEmpty || !products.intersect(validProducts).isEmpty)
 				  && (validFeatures.isEmpty || !features.intersect(validFeatures).isEmpty)) {
 		    
 			  val matcher = pattern.matcher(format(s))
 			  if (matcher.matches()) {
-				return createConstraint(s, matcher, parameters, products, features)
+				result = createConstraint(s, matcher, parameters, products, features)
 			  }
 			  
 		  }
-	  }
-	  
-	  None
+	  } 
+
+	  lastCall = None
+	  result
 	}
 	
 	def createConstraint(s : String, matcher : Matcher, parameters : List[String], products : List[Product], features : List[Feature]) : Option[Constraint]
 	
 	def format (s : String) : String = {
-	  val words = for (word <- s.split("\\s") if !word.isEmpty()) yield word
+	  val words = for (word <- s.split("(?U:\\s)") if !word.isEmpty()) yield word
       val formattedContent = words.mkString("", " ", "").toLowerCase()
       formattedContent
 	}

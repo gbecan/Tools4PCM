@@ -12,7 +12,6 @@ import interpreters.PartialPatternInterpreter
 import interpreters.MultiplePatternInterpreter
 import interpreters.UnknownPatternInterpreter
 import interpreters.EmptyPatternInterpreter
-import interpreters.YesOnlyPatternInterpreter
 import interpreters.InconsistentPatternInterpreter
 
 class ConfigurationFileParser {
@@ -106,7 +105,6 @@ class ConfigurationFileParser {
 		      case "Unknown" => Some(new UnknownPatternInterpreter(validHeaders, ruleExp, parameters))
 		      case "Empty" => Some(new EmptyPatternInterpreter(validHeaders, ruleExp, parameters))
 		      case "Inconsistent" => Some(new InconsistentPatternInterpreter(validHeaders, ruleExp, parameters))
-		      case "YesOnly" => Some(new YesOnlyPatternInterpreter(validHeaders, ruleExp, parameters))
 		      case _ => None
 		    }
 			

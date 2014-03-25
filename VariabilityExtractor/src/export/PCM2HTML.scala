@@ -103,6 +103,6 @@ class PCM2HTML {
   }
   
   def multipleInterpretation2string(interpretation : Multiple) : String = {
-		  (for (c <- interpretation.getContraints()) yield {interpretation2String(c)}).mkString(",")
+		  (for (c <- interpretation.getContraints()) yield {interpretation2String(c)}).mkString(", ")
   }
 }

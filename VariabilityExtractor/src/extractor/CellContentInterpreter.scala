@@ -61,7 +61,7 @@ class CellContentInterpreter() {
           case valuedCell : ValuedCell if !Option(valuedCell.getInterpretation()).isDefined =>
 	           // Find concepts in headers of this cell
 	           val (products, features) = findConceptsFor(valuedCell, matrix)
-	        		   
+	       
 	           // Find interpretation
 	           val interpretation = findInterpretation(valuedCell.getVerbatim(), products, features)
 		       
@@ -129,7 +129,7 @@ object CellContentInterpreter {
 		new EmptyPatternInterpreter(Nil,"",Nil),
     	new BooleanPatternInterpreter(Nil,"yes|true|✓",List("true")),
     	new BooleanPatternInterpreter(Nil,"no|false",List("false")),
-    	new UnknownPatternInterpreter(Nil,"\\?",Nil),
+    	new UnknownPatternInterpreter(Nil,"\\?+",Nil),
     	new UnknownPatternInterpreter(Nil,"n/a",Nil),
     	new UnknownPatternInterpreter(Nil,"unknown",Nil),
     	new UnknownPatternInterpreter(Nil,"(-)+",Nil),
@@ -141,9 +141,9 @@ object CellContentInterpreter {
       new SimplePatternInterpreter(Nil,"\\w+",Nil), // FIXME : this may contain important key words that should be interpreted differently
       new MultiplePatternInterpreter(Nil, "(\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?)", List("and"))
     ) ::: 
-    (for (n <- 1 to 5) yield {
+    (for (n <- 1 to 20) yield {
     	  new MultiplePatternInterpreter(Nil,
-    	      (for (i <- 1 to n+1) yield {"([^,]+?)"}).mkString("\\s*,\\s*"),
+    	      (for (i <- 1 to n+1) yield {"([^,]+)"}).mkString("\\s*,\\s*"),
     	      List("and"))
     }).toList
     
