@@ -51,8 +51,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Extra" eSuperTypes="#//Cell"/>
   <eClassifiers xsi:type="ecore:EClass" name="Constraint" abstract="true">
-    <eOperations name="eval"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="confident" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Boolean" eSuperTypes="#//Constraint">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>

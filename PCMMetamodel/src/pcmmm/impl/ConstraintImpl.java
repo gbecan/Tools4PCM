@@ -2,17 +2,11 @@
  */
 package pcmmm.impl;
 
-import java.lang.reflect.InvocationTargetException;
-
+import java.lang.Boolean;
 import org.eclipse.emf.common.notify.Notification;
-
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import pcmmm.Constraint;
 import pcmmm.PcmmmPackage;
 
@@ -24,6 +18,7 @@ import pcmmm.PcmmmPackage;
  * The following features are implemented:
  * <ul>
  *   <li>{@link pcmmm.impl.ConstraintImpl#getName <em>Name</em>}</li>
+ *   <li>{@link pcmmm.impl.ConstraintImpl#isConfident <em>Confident</em>}</li>
  * </ul>
  * </p>
  *
@@ -49,6 +44,26 @@ public abstract class ConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * @ordered
 	 */
 	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #isConfident() <em>Confident</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isConfident()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean CONFIDENT_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isConfident() <em>Confident</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isConfident()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean confident = CONFIDENT_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -95,10 +110,20 @@ public abstract class ConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void eval() {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+	public boolean isConfident() {
+		return confident;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setConfident(boolean newConfident) {
+		boolean oldConfident = confident;
+		confident = newConfident;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.CONSTRAINT__CONFIDENT, oldConfident, confident));
 	}
 
 	/**
@@ -111,6 +136,8 @@ public abstract class ConstraintImpl extends MinimalEObjectImpl.Container implem
 		switch (featureID) {
 			case PcmmmPackage.CONSTRAINT__NAME:
 				return getName();
+			case PcmmmPackage.CONSTRAINT__CONFIDENT:
+				return isConfident();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -125,6 +152,9 @@ public abstract class ConstraintImpl extends MinimalEObjectImpl.Container implem
 		switch (featureID) {
 			case PcmmmPackage.CONSTRAINT__NAME:
 				setName((String)newValue);
+				return;
+			case PcmmmPackage.CONSTRAINT__CONFIDENT:
+				setConfident((Boolean)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -141,6 +171,9 @@ public abstract class ConstraintImpl extends MinimalEObjectImpl.Container implem
 			case PcmmmPackage.CONSTRAINT__NAME:
 				setName(NAME_EDEFAULT);
 				return;
+			case PcmmmPackage.CONSTRAINT__CONFIDENT:
+				setConfident(CONFIDENT_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -155,23 +188,10 @@ public abstract class ConstraintImpl extends MinimalEObjectImpl.Container implem
 		switch (featureID) {
 			case PcmmmPackage.CONSTRAINT__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case PcmmmPackage.CONSTRAINT__CONFIDENT:
+				return confident != CONFIDENT_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case PcmmmPackage.CONSTRAINT___EVAL:
-				eval();
-				return null;
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 	/**
@@ -186,6 +206,8 @@ public abstract class ConstraintImpl extends MinimalEObjectImpl.Container implem
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (name: ");
 		result.append(name);
+		result.append(", confident: ");
+		result.append(confident);
 		result.append(')');
 		return result.toString();
 	}

@@ -637,8 +637,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getConstraint__Eval() {
-		return constraintEClass.getEOperations().get(0);
+	public EAttribute getConstraint_Confident() {
+		return (EAttribute)constraintEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1040,7 +1040,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 
 		constraintEClass = createEClass(CONSTRAINT);
 		createEAttribute(constraintEClass, CONSTRAINT__NAME);
-		createEOperation(constraintEClass, CONSTRAINT___EVAL);
+		createEAttribute(constraintEClass, CONSTRAINT__CONFIDENT);
 
 		booleanEClass = createEClass(BOOLEAN);
 		createEAttribute(booleanEClass, BOOLEAN__VALUE);
@@ -1193,8 +1193,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 
 		initEClass(constraintEClass, Constraint.class, "Constraint", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getConstraint_Name(), ecorePackage.getEString(), "name", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEOperation(getConstraint__Eval(), null, "eval", 0, 1, IS_UNIQUE, IS_ORDERED);
+		initEAttribute(getConstraint_Confident(), ecorePackage.getEBoolean(), "confident", null, 0, 1, Constraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(booleanEClass, pcmmm.Boolean.class, "Boolean", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getBoolean_Value(), ecorePackage.getEBoolean(), "value", null, 0, 1, pcmmm.Boolean.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

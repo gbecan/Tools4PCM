@@ -854,22 +854,22 @@ public interface PcmmmPackage extends EPackage {
 	int CONSTRAINT__NAME = 0;
 
 	/**
+	 * The feature id for the '<em><b>Confident</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT__CONFIDENT = 1;
+
+	/**
 	 * The number of structural features of the '<em>Constraint</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONSTRAINT_FEATURE_COUNT = 1;
-
-	/**
-	 * The operation id for the '<em>Eval</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONSTRAINT___EVAL = 0;
+	int CONSTRAINT_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Constraint</em>' class.
@@ -878,7 +878,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONSTRAINT_OPERATION_COUNT = 1;
+	int CONSTRAINT_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link pcmmm.impl.BooleanImpl <em>Boolean</em>}' class.
@@ -900,6 +900,15 @@ public interface PcmmmPackage extends EPackage {
 	int BOOLEAN__NAME = CONSTRAINT__NAME;
 
 	/**
+	 * The feature id for the '<em><b>Confident</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOLEAN__CONFIDENT = CONSTRAINT__CONFIDENT;
+
+	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -916,15 +925,6 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int BOOLEAN_FEATURE_COUNT = CONSTRAINT_FEATURE_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Eval</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BOOLEAN___EVAL = CONSTRAINT___EVAL;
 
 	/**
 	 * The number of operations of the '<em>Boolean</em>' class.
@@ -955,6 +955,15 @@ public interface PcmmmPackage extends EPackage {
 	int PARTIAL__NAME = CONSTRAINT__NAME;
 
 	/**
+	 * The feature id for the '<em><b>Confident</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTIAL__CONFIDENT = CONSTRAINT__CONFIDENT;
+
+	/**
 	 * The feature id for the '<em><b>Condition</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -980,15 +989,6 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int PARTIAL_FEATURE_COUNT = CONSTRAINT_FEATURE_COUNT + 2;
-
-	/**
-	 * The operation id for the '<em>Eval</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARTIAL___EVAL = CONSTRAINT___EVAL;
 
 	/**
 	 * The number of operations of the '<em>Partial</em>' class.
@@ -1019,6 +1019,15 @@ public interface PcmmmPackage extends EPackage {
 	int SIMPLE__NAME = CONSTRAINT__NAME;
 
 	/**
+	 * The feature id for the '<em><b>Confident</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIMPLE__CONFIDENT = CONSTRAINT__CONFIDENT;
+
+	/**
 	 * The feature id for the '<em><b>Concept</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1035,15 +1044,6 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int SIMPLE_FEATURE_COUNT = CONSTRAINT_FEATURE_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Eval</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SIMPLE___EVAL = CONSTRAINT___EVAL;
 
 	/**
 	 * The number of operations of the '<em>Simple</em>' class.
@@ -1074,6 +1074,15 @@ public interface PcmmmPackage extends EPackage {
 	int MULTIPLE__NAME = CONSTRAINT__NAME;
 
 	/**
+	 * The feature id for the '<em><b>Confident</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTIPLE__CONFIDENT = CONSTRAINT__CONFIDENT;
+
+	/**
 	 * The feature id for the '<em><b>Contraints</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1090,15 +1099,6 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int MULTIPLE_FEATURE_COUNT = CONSTRAINT_FEATURE_COUNT + 1;
-
-	/**
-	 * The operation id for the '<em>Eval</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MULTIPLE___EVAL = CONSTRAINT___EVAL;
 
 	/**
 	 * The number of operations of the '<em>Multiple</em>' class.
@@ -1129,6 +1129,15 @@ public interface PcmmmPackage extends EPackage {
 	int UNKNOWN__NAME = CONSTRAINT__NAME;
 
 	/**
+	 * The feature id for the '<em><b>Confident</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNKNOWN__CONFIDENT = CONSTRAINT__CONFIDENT;
+
+	/**
 	 * The number of structural features of the '<em>Unknown</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1136,15 +1145,6 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int UNKNOWN_FEATURE_COUNT = CONSTRAINT_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Eval</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UNKNOWN___EVAL = CONSTRAINT___EVAL;
 
 	/**
 	 * The number of operations of the '<em>Unknown</em>' class.
@@ -1175,6 +1175,15 @@ public interface PcmmmPackage extends EPackage {
 	int EMPTY__NAME = CONSTRAINT__NAME;
 
 	/**
+	 * The feature id for the '<em><b>Confident</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMPTY__CONFIDENT = CONSTRAINT__CONFIDENT;
+
+	/**
 	 * The number of structural features of the '<em>Empty</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1182,15 +1191,6 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int EMPTY_FEATURE_COUNT = CONSTRAINT_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Eval</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EMPTY___EVAL = CONSTRAINT___EVAL;
 
 	/**
 	 * The number of operations of the '<em>Empty</em>' class.
@@ -1221,6 +1221,15 @@ public interface PcmmmPackage extends EPackage {
 	int INCONSISTENT__NAME = CONSTRAINT__NAME;
 
 	/**
+	 * The feature id for the '<em><b>Confident</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INCONSISTENT__CONFIDENT = CONSTRAINT__CONFIDENT;
+
+	/**
 	 * The number of structural features of the '<em>Inconsistent</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1228,15 +1237,6 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int INCONSISTENT_FEATURE_COUNT = CONSTRAINT_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Eval</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INCONSISTENT___EVAL = CONSTRAINT___EVAL;
 
 	/**
 	 * The number of operations of the '<em>Inconsistent</em>' class.
@@ -1403,6 +1403,15 @@ public interface PcmmmPackage extends EPackage {
 	int AND__NAME = MULTIPLE__NAME;
 
 	/**
+	 * The feature id for the '<em><b>Confident</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AND__CONFIDENT = MULTIPLE__CONFIDENT;
+
+	/**
 	 * The feature id for the '<em><b>Contraints</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1419,15 +1428,6 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int AND_FEATURE_COUNT = MULTIPLE_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Eval</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int AND___EVAL = MULTIPLE___EVAL;
 
 	/**
 	 * The number of operations of the '<em>And</em>' class.
@@ -1458,6 +1458,15 @@ public interface PcmmmPackage extends EPackage {
 	int OR__NAME = MULTIPLE__NAME;
 
 	/**
+	 * The feature id for the '<em><b>Confident</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OR__CONFIDENT = MULTIPLE__CONFIDENT;
+
+	/**
 	 * The feature id for the '<em><b>Contraints</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1474,15 +1483,6 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int OR_FEATURE_COUNT = MULTIPLE_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Eval</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OR___EVAL = MULTIPLE___EVAL;
 
 	/**
 	 * The number of operations of the '<em>Or</em>' class.
@@ -1513,6 +1513,15 @@ public interface PcmmmPackage extends EPackage {
 	int XOR__NAME = MULTIPLE__NAME;
 
 	/**
+	 * The feature id for the '<em><b>Confident</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XOR__CONFIDENT = MULTIPLE__CONFIDENT;
+
+	/**
 	 * The feature id for the '<em><b>Contraints</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1529,15 +1538,6 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int XOR_FEATURE_COUNT = MULTIPLE_FEATURE_COUNT + 0;
-
-	/**
-	 * The operation id for the '<em>Eval</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int XOR___EVAL = MULTIPLE___EVAL;
 
 	/**
 	 * The number of operations of the '<em>XOr</em>' class.
@@ -2216,14 +2216,15 @@ public interface PcmmmPackage extends EPackage {
 	EAttribute getConstraint_Name();
 
 	/**
-	 * Returns the meta object for the '{@link pcmmm.Constraint#eval() <em>Eval</em>}' operation.
+	 * Returns the meta object for the attribute '{@link pcmmm.Constraint#isConfident <em>Confident</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Eval</em>' operation.
-	 * @see pcmmm.Constraint#eval()
+	 * @return the meta object for the attribute '<em>Confident</em>'.
+	 * @see pcmmm.Constraint#isConfident()
+	 * @see #getConstraint()
 	 * @generated
 	 */
-	EOperation getConstraint__Eval();
+	EAttribute getConstraint_Confident();
 
 	/**
 	 * Returns the meta object for class '{@link pcmmm.Boolean <em>Boolean</em>}'.
@@ -2933,12 +2934,12 @@ public interface PcmmmPackage extends EPackage {
 		EAttribute CONSTRAINT__NAME = eINSTANCE.getConstraint_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Eval</b></em>' operation.
+		 * The meta object literal for the '<em><b>Confident</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONSTRAINT___EVAL = eINSTANCE.getConstraint__Eval();
+		EAttribute CONSTRAINT__CONFIDENT = eINSTANCE.getConstraint_Confident();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.BooleanImpl <em>Boolean</em>}' class.
