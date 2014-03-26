@@ -88,7 +88,7 @@ class PCM2HTML {
 		    case i : Empty => "Empty(" + i.getName() + ")"
 		    case i : Inconsistent => "Inconsistent(" + i.getName() + ")"
 		    case i : Simple => "Simple(" + i.getName() + ")"
-		    case i : Partial => "Partial(" + interpretation2String(i.getArgument()) + "," +
+		    case i : Partial => "Partial(" + interpretation2String(i.getArgument()) + ", " +
 		    					 interpretation2String(i.getCondition()) + ")"
 		    case i : And => "And(" + multipleInterpretation2string(i) + ")"
 		    case i : XOr => "XOr(" + multipleInterpretation2string(i) + ")"

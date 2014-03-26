@@ -16,7 +16,8 @@ import extractor.CellContentInterpreter
 abstract class PatternInterpreter(
 	val validHeaders : List[String],
     regex : String,
-    val parameters : List[String]
+    val parameters : List[String],
+    val confident : Boolean
     ) {
 	
 	private val pattern : Pattern =  Pattern.compile(regex, Pattern.UNICODE_CHARACTER_CLASS | Pattern.CASE_INSENSITIVE)

@@ -111,7 +111,10 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 		  val cells = matrix.getCells()
 		  
 		  val valuedCells = cells.filter(cell => cell.isInstanceOf[ValuedCell])
-		  val interpretedCells = valuedCells.filter(cell => Option(cell.asInstanceOf[ValuedCell].getInterpretation()).isDefined)
+		   val interpretedCells = valuedCells.filter(cell => 
+			    Option(cell.asInstanceOf[ValuedCell].getInterpretation()).isDefined &&
+			    cell.asInstanceOf[ValuedCell].getInterpretation().isConfident
+			    )
 		  
 		  if (valuedCells.size > 0) {
 			  sumValuedCells += valuedCells.size
@@ -181,9 +184,9 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 		  // Validate and save model
 		  val diagnostic = Diagnostician.INSTANCE.validate(pcm)
 		  if (diagnostic.getSeverity() == Diagnostic.OK) {
-			  println("OK")
+			  println("... model is OK")
 		  } else {
-			  println("NOT VALID")
+			  println("... model is NOT VALID")
 		  }
 	
 		  // Save model
@@ -194,7 +197,10 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 			  val cells = matrix.getCells()
 		
 			  val valuedCells = cells.filter(cell => cell.isInstanceOf[ValuedCell])
-			  val interpretedCells = valuedCells.filter(cell => Option(cell.asInstanceOf[ValuedCell].getInterpretation()).isDefined)
+			  val interpretedCells = valuedCells.filter(cell => 
+			    Option(cell.asInstanceOf[ValuedCell].getInterpretation()).isDefined &&
+			    cell.asInstanceOf[ValuedCell].getInterpretation().isConfident
+			    )
 		
 			  if (valuedCells.size > 0) {
 				  sumValuedCells += valuedCells.size
@@ -202,7 +208,7 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 				  val averageMatrix : Double = interpretedCells.size.toDouble / valuedCells.size.toDouble
 				  sumAveragePerMatrix += averageMatrix
 				  nbMatrix += 1
-				  println("\t\t" + (averageMatrix * 100).toInt + "% of interpreted cells")
+				  println("\t\t" + (averageMatrix * 100).toInt + "% of cells with confident interpretation")
 			  }else {
 				  println("\t\tno valued cells")
 			  }

@@ -10,8 +10,9 @@ import pcmmm.Feature
 class MultiplePatternInterpreter (
     validHeaders : List[String],
     regex : String,
-    parameters : List[String])
-    extends PatternInterpreter(validHeaders, regex, parameters) {
+    parameters : List[String],
+    confident : Boolean)
+    extends PatternInterpreter(validHeaders, regex, parameters, confident) {
 
   override def createConstraint(s : String, matcher : Matcher, parameters : List[String], products : List[Product], features : List[Feature]) : Option[Constraint] = {
 		  val constraint = parameters match {
@@ -20,7 +21,8 @@ class MultiplePatternInterpreter (
 		    case "or" :: Nil => PcmmmFactory.eINSTANCE.createOr()
 		    case _ => PcmmmFactory.eINSTANCE.createMultiple()
 		  }
-		  var fullyInterpreted : Boolean = true 
+		  var fullyInterpreted : Boolean = true
+		  var subConstraintsConfidence = true
 		  for (groupID <- 1 to matcher.groupCount()) {
 			  val subConstraint = matcher.group(groupID)
 			  if (subConstraint != null) {
@@ -28,6 +30,7 @@ class MultiplePatternInterpreter (
 				  val subCInterpretation = cellContentInterpreter.findInterpretation(subConstraint, products, features)
 				  if (subCInterpretation.isDefined) {
 				    constraint.getContraints().add(subCInterpretation.get)
+				    subConstraintsConfidence = subConstraintsConfidence && subCInterpretation.get.isConfident()
 				  } else {
 				    fullyInterpreted = false
 				  }
@@ -35,6 +38,7 @@ class MultiplePatternInterpreter (
 			  
 		  }
 		  if (fullyInterpreted) {
+			  constraint.setConfident(confident && subConstraintsConfidence)
 			  Some(constraint)
 		  } else {
 			  None

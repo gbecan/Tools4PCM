@@ -98,13 +98,13 @@ class ConfigurationFileParser {
 			val parameters = p.toList
 			
 			val patternInterpreter = ruleName match {
-		      case "Boolean" => Some(new BooleanPatternInterpreter(validHeaders, ruleExp, parameters))
-		      case "Simple" => Some(new SimplePatternInterpreter(validHeaders, ruleExp, parameters))
-		      case "Partial" => Some(new PartialPatternInterpreter(validHeaders, ruleExp, parameters))
-		      case "Multiple" => Some(new MultiplePatternInterpreter(validHeaders, ruleExp, parameters))
-		      case "Unknown" => Some(new UnknownPatternInterpreter(validHeaders, ruleExp, parameters))
-		      case "Empty" => Some(new EmptyPatternInterpreter(validHeaders, ruleExp, parameters))
-		      case "Inconsistent" => Some(new InconsistentPatternInterpreter(validHeaders, ruleExp, parameters))
+		      case "Boolean" => Some(new BooleanPatternInterpreter(validHeaders, ruleExp, parameters, true))
+		      case "Simple" => Some(new SimplePatternInterpreter(validHeaders, ruleExp, parameters, true))
+		      case "Partial" => Some(new PartialPatternInterpreter(validHeaders, ruleExp, parameters, true))
+		      case "Multiple" => Some(new MultiplePatternInterpreter(validHeaders, ruleExp, parameters, true))
+		      case "Unknown" => Some(new UnknownPatternInterpreter(validHeaders, ruleExp, parameters, true))
+		      case "Empty" => Some(new EmptyPatternInterpreter(validHeaders, ruleExp, parameters, true))
+		      case "Inconsistent" => Some(new InconsistentPatternInterpreter(validHeaders, ruleExp, parameters, true))
 		      case _ => None
 		    }
 			

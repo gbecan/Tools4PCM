@@ -24,6 +24,7 @@ import pcmmm.ValuedCell
 import interpreters.MultiplePatternInterpreter
 import interpreters.PartialPatternInterpreter
 import configuration.PCMConfiguration
+import interpreters.SimplePatternInterpreter
 
 class CellContentInterpreter() {
 
@@ -126,25 +127,27 @@ class CellContentInterpreter() {
 
 object CellContentInterpreter {
   val defaultInterpreters : List[PatternInterpreter] = List(
-		new EmptyPatternInterpreter(Nil,"",Nil),
-    	new BooleanPatternInterpreter(Nil,"yes|true|✓",List("true")),
-    	new BooleanPatternInterpreter(Nil,"no|false",List("false")),
-    	new UnknownPatternInterpreter(Nil,"\\?+",Nil),
-    	new UnknownPatternInterpreter(Nil,"n/a",Nil),
-    	new UnknownPatternInterpreter(Nil,"unknown",Nil),
-    	new UnknownPatternInterpreter(Nil,"(-)+",Nil),
-    	new UnknownPatternInterpreter(Nil,"(—)+",Nil),
-    	new PartialPatternInterpreter(Nil,"(partial)",Nil)
+		new EmptyPatternInterpreter(Nil,"",Nil, true),
+    	new BooleanPatternInterpreter(Nil,"yes|true|✓",List("true"), true),
+    	new BooleanPatternInterpreter(Nil,"no|false",List("false"), true),
+    	new UnknownPatternInterpreter(Nil,"\\?+",Nil, true),
+    	new UnknownPatternInterpreter(Nil,"n/a",Nil, true),
+    	new UnknownPatternInterpreter(Nil,"unknown",Nil, true),
+    	new UnknownPatternInterpreter(Nil,"(-)+",Nil, true),
+    	new UnknownPatternInterpreter(Nil,"(—)+",Nil, true),
+    	new PartialPatternInterpreter(Nil,"(partial)",Nil, true)
     )
   val defaultGreedyInterpreters : List[PatternInterpreter] = List(
-      new SimplePatternInterpreter(Nil,"\\d+(\\.\\d+)*",Nil),
-      new SimplePatternInterpreter(Nil,"\\w+",Nil), // FIXME : this may contain important key words that should be interpreted differently
-      new MultiplePatternInterpreter(Nil, "(\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?)", List("and"))
+      new SimplePatternInterpreter(Nil,"\\d+(\\.\\d+)*",Nil, true),
+      new MultiplePatternInterpreter(Nil, "(\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?)", List("and"), true)
     ) ::: 
     (for (n <- 1 to 20) yield {
     	  new MultiplePatternInterpreter(Nil,
     	      (for (i <- 1 to n+1) yield {"([^,]+)"}).mkString("\\s*,\\s*"),
-    	      List("and"))
-    }).toList
+    	      List("and"), true)
+    }).toList ::: List(
+    		new SimplePatternInterpreter(Nil, ".*", Nil, false)
+    ) 
+    
     
 }

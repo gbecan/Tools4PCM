@@ -15,7 +15,6 @@ import interpreters.BooleanPatternInterpreter
 import interpreters.PartialPatternInterpreter
 import interpreters.EmptyPatternInterpreter
 import interpreters.InconsistentPatternInterpreter
-import interpreters.YesOnlyPatternInterpreter
 import configuration.ConfigurationFileParser
 import configuration.PCMConfiguration
 import configuration.PCMConfiguration
