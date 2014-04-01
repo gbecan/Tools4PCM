@@ -2,6 +2,7 @@
  */
 package pcmmm.impl;
 
+import com.google.gwt.user.client.rpc.GwtTransient;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -40,6 +41,7 @@ public class OrderedDomainImpl extends DomainImpl implements OrderedDomain {
 	 * @generated
 	 * @ordered
 	 */
+	@GwtTransient
 	protected EList<OrderedDomain> previous;
 
 	/**
@@ -50,6 +52,7 @@ public class OrderedDomainImpl extends DomainImpl implements OrderedDomain {
 	 * @generated
 	 * @ordered
 	 */
+	@GwtTransient
 	protected EList<OrderedDomain> next;
 
 	/**

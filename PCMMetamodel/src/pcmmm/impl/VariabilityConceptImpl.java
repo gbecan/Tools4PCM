@@ -2,6 +2,7 @@
  */
 package pcmmm.impl;
 
+import com.google.gwt.user.client.rpc.GwtTransient;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -55,6 +56,7 @@ public abstract class VariabilityConceptImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 * @ordered
 	 */
+	@GwtTransient
 	protected String name = NAME_EDEFAULT;
 
 	/**
@@ -65,6 +67,7 @@ public abstract class VariabilityConceptImpl extends MinimalEObjectImpl.Containe
 	 * @generated
 	 * @ordered
 	 */
+	@GwtTransient
 	protected EList<ValuedCell> constraints;
 
 	/**

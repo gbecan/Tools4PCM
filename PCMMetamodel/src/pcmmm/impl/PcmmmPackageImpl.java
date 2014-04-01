@@ -2,6 +2,8 @@
  */
 package pcmmm.impl;
 
+import com.google.gwt.user.client.rpc.IsSerializable;
+import org.eclipse.emf.common.util.Reflect;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EOperation;
@@ -297,6 +299,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	public static PcmmmPackage init() {
 		if (isInited) return (PcmmmPackage)EPackage.Registry.INSTANCE.getEPackage(PcmmmPackage.eNS_URI);
 
+		initializeRegistryHelpers();
+
 		// Obtain or create and register package
 		PcmmmPackageImpl thePcmmmPackage = (PcmmmPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof PcmmmPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new PcmmmPackageImpl());
 
@@ -315,6 +319,562 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(PcmmmPackage.eNS_URI, thePcmmmPackage);
 		return thePcmmmPackage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static void initializeRegistryHelpers() {
+		Reflect.register
+			(AbstractProduct.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof AbstractProduct;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new AbstractProduct[size];
+				 }
+			 });
+		Reflect.register
+			(Cell.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Cell;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Cell[size];
+				 }
+			 });
+		Reflect.register
+			(AbstractFeature.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof AbstractFeature;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new AbstractFeature[size];
+				 }
+			 });
+		Reflect.register
+			(pcmmm.PCM.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof pcmmm.PCM;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new pcmmm.PCM[size];
+				 }
+			 });
+		Reflect.register
+			(Matrix.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Matrix;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Matrix[size];
+				 }
+			 });
+		Reflect.register
+			(ProductFamily.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof ProductFamily;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new ProductFamily[size];
+				 }
+			 });
+		Reflect.register
+			(Product.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Product;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Product[size];
+				 }
+			 });
+		Reflect.register
+			(FeatureFamily.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof FeatureFamily;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new FeatureFamily[size];
+				 }
+			 });
+		Reflect.register
+			(Feature.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Feature;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Feature[size];
+				 }
+			 });
+		Reflect.register
+			(VariabilityConcept.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof VariabilityConcept;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new VariabilityConcept[size];
+				 }
+			 });
+		Reflect.register
+			(Header.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Header;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Header[size];
+				 }
+			 });
+		Reflect.register
+			(Extra.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Extra;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Extra[size];
+				 }
+			 });
+		Reflect.register
+			(Constraint.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Constraint;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Constraint[size];
+				 }
+			 });
+		Reflect.register
+			(pcmmm.Boolean.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof pcmmm.Boolean;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new pcmmm.Boolean[size];
+				 }
+			 });
+		Reflect.register
+			(Partial.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Partial;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Partial[size];
+				 }
+			 });
+		Reflect.register
+			(Simple.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Simple;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Simple[size];
+				 }
+			 });
+		Reflect.register
+			(Multiple.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Multiple;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Multiple[size];
+				 }
+			 });
+		Reflect.register
+			(Unknown.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Unknown;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Unknown[size];
+				 }
+			 });
+		Reflect.register
+			(Empty.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Empty;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Empty[size];
+				 }
+			 });
+		Reflect.register
+			(Inconsistent.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Inconsistent;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Inconsistent[size];
+				 }
+			 });
+		Reflect.register
+			(ValuedCell.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof ValuedCell;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new ValuedCell[size];
+				 }
+			 });
+		Reflect.register
+			(And.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof And;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new And[size];
+				 }
+			 });
+		Reflect.register
+			(Or.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Or;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Or[size];
+				 }
+			 });
+		Reflect.register
+			(XOr.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof XOr;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new XOr[size];
+				 }
+			 });
+		Reflect.register
+			(Domain.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Domain;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Domain[size];
+				 }
+			 });
+		Reflect.register
+			(Interval.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Interval;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Interval[size];
+				 }
+			 });
+		Reflect.register
+			(DomainCollection.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof DomainCollection;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new DomainCollection[size];
+				 }
+			 });
+		Reflect.register
+			(Type.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof Type;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new Type[size];
+				 }
+			 });
+		Reflect.register
+			(OrderedDomain.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof OrderedDomain;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new OrderedDomain[size];
+				 }
+			 });
+		Reflect.register
+			(YesNO.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof YesNO;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new YesNO[size];
+				 }
+			 });
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static class WhiteList implements IsSerializable, EBasicWhiteList {
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected AbstractProduct abstractProduct;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Cell cell;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected AbstractFeature abstractFeature;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected pcmmm.PCM pcm;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Matrix matrix;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected ProductFamily productFamily;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Product product;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected FeatureFamily featureFamily;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Feature feature;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected VariabilityConcept variabilityConcept;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Header header;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Extra extra;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Constraint constraint;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected pcmmm.Boolean boolean_;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Partial partial;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Simple simple;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Multiple multiple;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Unknown unknown;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Empty empty;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Inconsistent inconsistent;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected ValuedCell valuedCell;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected And and;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Or or;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected XOr xOr;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Domain domain;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Interval interval;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected DomainCollection domainCollection;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected Type type;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected OrderedDomain orderedDomain;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected YesNO yesNO;
+
 	}
 
 	/**

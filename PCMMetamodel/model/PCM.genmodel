@@ -2,8 +2,8 @@
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/PCMMetamodel/src" modelPluginID="PCMMetamodel"
     modelName="PCM" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
-    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
-    operationReflection="true" importOrganizing="true">
+    testsDirectory="" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" runtimePlatform="GWT" importOrganizing="true">
   <foreignModel>../../PCM2VM/PCM.ecore</foreignModel>
   <foreignModel>../../PCM2VM/PCMMM.ecore</foreignModel>
   <genPackages prefix="Pcmmm" disposableProviderFactory="true" ecorePackage="PCMMM.ecore#/">
@@ -13,13 +13,19 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//Cell/verbatim"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//Cell/note"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//Cell/link"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//Cell/row"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//Cell/rowspan"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//Cell/column"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//Cell/colspan"/>
     </genClasses>
     <genClasses image="false" ecoreClass="PCMMM.ecore#//AbstractFeature"/>
     <genClasses ecoreClass="PCMMM.ecore#//PCM">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//PCM/title"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//PCM/description"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PCMMM.ecore#//PCM/matrix"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PCMMM.ecore#//PCM/matrices"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//PCM/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PCMMM.ecore#//PCM/concepts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PCMMM.ecore#//PCM/domainCollection"/>
     </genClasses>
     <genClasses ecoreClass="PCMMM.ecore#//Matrix">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//Matrix/name"/>
@@ -33,14 +39,6 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PCMMM.ecore#//FeatureFamily/features"/>
     </genClasses>
     <genClasses ecoreClass="PCMMM.ecore#//Feature"/>
-    <genClasses ecoreClass="PCMMM.ecore#//ProductComparisonPage">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PCMMM.ecore#//ProductComparisonPage/perspectives"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//ProductComparisonPage/title"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//ProductComparisonPage/description"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PCMMM.ecore#//ProductComparisonPage/concepts"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//ProductComparisonPage/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PCMMM.ecore#//ProductComparisonPage/domainCollection"/>
-    </genClasses>
     <genClasses image="false" ecoreClass="PCMMM.ecore#//VariabilityConcept">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//VariabilityConcept/name"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PCMMM.ecore#//VariabilityConcept/constraints"/>
@@ -51,9 +49,11 @@
     <genClasses ecoreClass="PCMMM.ecore#//Extra"/>
     <genClasses image="false" ecoreClass="PCMMM.ecore#//Constraint">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//Constraint/name"/>
-      <genOperations ecoreOperation="PCMMM.ecore#//Constraint/eval"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//Constraint/confident"/>
     </genClasses>
-    <genClasses ecoreClass="PCMMM.ecore#//Boolean"/>
+    <genClasses ecoreClass="PCMMM.ecore#//Boolean">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//Boolean/value"/>
+    </genClasses>
     <genClasses ecoreClass="PCMMM.ecore#//Partial">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PCMMM.ecore#//Partial/condition"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PCMMM.ecore#//Partial/argument"/>
@@ -64,20 +64,18 @@
     <genClasses ecoreClass="PCMMM.ecore#//Multiple">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PCMMM.ecore#//Multiple/contraints"/>
     </genClasses>
-    <genClasses ecoreClass="PCMMM.ecore#//Unknwon"/>
+    <genClasses ecoreClass="PCMMM.ecore#//Unknown"/>
     <genClasses ecoreClass="PCMMM.ecore#//Empty"/>
     <genClasses ecoreClass="PCMMM.ecore#//Inconsistent"/>
     <genClasses ecoreClass="PCMMM.ecore#//ValuedCell">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PCMMM.ecore#//ValuedCell/interpretation"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PCMMM.ecore#//ValuedCell/concepts"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PCMMM.ecore#//ValuedCell/myHeaderProducts"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PCMMM.ecore#//ValuedCell/myHeaderFeatures"/>
     </genClasses>
     <genClasses ecoreClass="PCMMM.ecore#//And"/>
     <genClasses ecoreClass="PCMMM.ecore#//Or"/>
     <genClasses ecoreClass="PCMMM.ecore#//XOr"/>
-    <genClasses image="false" ecoreClass="PCMMM.ecore#//AbsValuedCell">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PCMMM.ecore#//AbsValuedCell/myHeaderProduct"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PCMMM.ecore#//AbsValuedCell/myHeaderFeature"/>
-    </genClasses>
     <genClasses ecoreClass="PCMMM.ecore#//Domain">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PCMMM.ecore#//Domain/intervals"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PCMMM.ecore#//Domain/domainLitteral"/>

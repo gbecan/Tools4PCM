@@ -53,18 +53,6 @@ public class YesNOImpl extends MinimalEObjectImpl.Container implements YesNO {
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case PcmmmPackage.YES_NO___EVAL:
-				return eval();
-		}
-		return super.eInvoke(operationID, arguments);
-	}
+
 
 } //YesNOImpl

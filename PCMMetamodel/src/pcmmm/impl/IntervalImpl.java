@@ -2,6 +2,7 @@
  */
 package pcmmm.impl;
 
+import com.google.gwt.user.client.rpc.GwtTransient;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
@@ -45,6 +46,7 @@ public class IntervalImpl extends MinimalEObjectImpl.Container implements Interv
 	 * @generated
 	 * @ordered
 	 */
+	@GwtTransient
 	protected String name = NAME_EDEFAULT;
 
 	/**
@@ -65,6 +67,7 @@ public class IntervalImpl extends MinimalEObjectImpl.Container implements Interv
 	 * @generated
 	 * @ordered
 	 */
+	@GwtTransient
 	protected String value = VALUE_EDEFAULT;
 
 	/**

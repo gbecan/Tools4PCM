@@ -2,6 +2,7 @@
  */
 package pcmmm.impl;
 
+import com.google.gwt.user.client.rpc.GwtTransient;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -40,6 +41,7 @@ public class ProductFamilyImpl extends AbstractProductImpl implements ProductFam
 	 * @generated
 	 * @ordered
 	 */
+	@GwtTransient
 	protected EList<AbstractProduct> products;
 
 	/**

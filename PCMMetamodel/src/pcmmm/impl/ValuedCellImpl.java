@@ -2,6 +2,7 @@
  */
 package pcmmm.impl;
 
+import com.google.gwt.user.client.rpc.GwtTransient;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -50,6 +51,7 @@ public class ValuedCellImpl extends CellImpl implements ValuedCell {
 	 * @generated
 	 * @ordered
 	 */
+	@GwtTransient
 	protected Constraint interpretation;
 
 	/**
@@ -60,6 +62,7 @@ public class ValuedCellImpl extends CellImpl implements ValuedCell {
 	 * @generated
 	 * @ordered
 	 */
+	@GwtTransient
 	protected EList<VariabilityConcept> concepts;
 
 	/**
@@ -70,6 +73,7 @@ public class ValuedCellImpl extends CellImpl implements ValuedCell {
 	 * @generated
 	 * @ordered
 	 */
+	@GwtTransient
 	protected EList<AbstractProduct> myHeaderProducts;
 
 	/**
@@ -80,6 +84,7 @@ public class ValuedCellImpl extends CellImpl implements ValuedCell {
 	 * @generated
 	 * @ordered
 	 */
+	@GwtTransient
 	protected EList<AbstractFeature> myHeaderFeatures;
 
 	/**

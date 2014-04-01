@@ -2,6 +2,7 @@
  */
 package pcmmm.impl;
 
+import com.google.gwt.user.client.rpc.GwtTransient;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -49,6 +50,7 @@ public class DomainImpl extends MinimalEObjectImpl.Container implements Domain {
 	 * @generated
 	 * @ordered
 	 */
+	@GwtTransient
 	protected EList<Interval> intervals;
 
 	/**
@@ -59,6 +61,7 @@ public class DomainImpl extends MinimalEObjectImpl.Container implements Domain {
 	 * @generated
 	 * @ordered
 	 */
+	@GwtTransient
 	protected EList<String> domainLitteral;
 
 	/**
@@ -79,6 +82,7 @@ public class DomainImpl extends MinimalEObjectImpl.Container implements Domain {
 	 * @generated
 	 * @ordered
 	 */
+	@GwtTransient
 	protected String name = NAME_EDEFAULT;
 
 	/**
@@ -89,6 +93,7 @@ public class DomainImpl extends MinimalEObjectImpl.Container implements Domain {
 	 * @generated
 	 * @ordered
 	 */
+	@GwtTransient
 	protected Type domainType;
 
 	/**
