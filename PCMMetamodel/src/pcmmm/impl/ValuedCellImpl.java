@@ -4,21 +4,14 @@ package pcmmm.impl;
 
 import com.google.gwt.user.client.rpc.GwtTransient;
 import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
-
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.Constraint;
@@ -168,7 +161,7 @@ public class ValuedCellImpl extends CellImpl implements ValuedCell {
 	 */
 	public EList<AbstractProduct> getMyHeaderProducts() {
 		if (myHeaderProducts == null) {
-			myHeaderProducts = new EObjectResolvingEList<AbstractProduct>(AbstractProduct.class, this, PcmmmPackage.VALUED_CELL__MY_HEADER_PRODUCTS);
+			myHeaderProducts = new EObjectWithInverseResolvingEList.ManyInverse<AbstractProduct>(AbstractProduct.class, this, PcmmmPackage.VALUED_CELL__MY_HEADER_PRODUCTS, PcmmmPackage.ABSTRACT_PRODUCT__MY_VALUED_CELLS);
 		}
 		return myHeaderProducts;
 	}
@@ -180,7 +173,7 @@ public class ValuedCellImpl extends CellImpl implements ValuedCell {
 	 */
 	public EList<AbstractFeature> getMyHeaderFeatures() {
 		if (myHeaderFeatures == null) {
-			myHeaderFeatures = new EObjectResolvingEList<AbstractFeature>(AbstractFeature.class, this, PcmmmPackage.VALUED_CELL__MY_HEADER_FEATURES);
+			myHeaderFeatures = new EObjectWithInverseResolvingEList.ManyInverse<AbstractFeature>(AbstractFeature.class, this, PcmmmPackage.VALUED_CELL__MY_HEADER_FEATURES, PcmmmPackage.ABSTRACT_FEATURE__MY_VALUED_CELLS);
 		}
 		return myHeaderFeatures;
 	}
@@ -196,6 +189,10 @@ public class ValuedCellImpl extends CellImpl implements ValuedCell {
 		switch (featureID) {
 			case PcmmmPackage.VALUED_CELL__CONCEPTS:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getConcepts()).basicAdd(otherEnd, msgs);
+			case PcmmmPackage.VALUED_CELL__MY_HEADER_PRODUCTS:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getMyHeaderProducts()).basicAdd(otherEnd, msgs);
+			case PcmmmPackage.VALUED_CELL__MY_HEADER_FEATURES:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getMyHeaderFeatures()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -212,6 +209,10 @@ public class ValuedCellImpl extends CellImpl implements ValuedCell {
 				return basicSetInterpretation(null, msgs);
 			case PcmmmPackage.VALUED_CELL__CONCEPTS:
 				return ((InternalEList<?>)getConcepts()).basicRemove(otherEnd, msgs);
+			case PcmmmPackage.VALUED_CELL__MY_HEADER_PRODUCTS:
+				return ((InternalEList<?>)getMyHeaderProducts()).basicRemove(otherEnd, msgs);
+			case PcmmmPackage.VALUED_CELL__MY_HEADER_FEATURES:
+				return ((InternalEList<?>)getMyHeaderFeatures()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}

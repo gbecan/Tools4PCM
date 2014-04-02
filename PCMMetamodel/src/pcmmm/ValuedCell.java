@@ -71,6 +71,7 @@ public interface ValuedCell extends Cell {
 	/**
 	 * Returns the value of the '<em><b>My Header Products</b></em>' reference list.
 	 * The list contents are of type {@link pcmmm.AbstractProduct}.
+	 * It is bidirectional and its opposite is '{@link pcmmm.AbstractProduct#getMyValuedCells <em>My Valued Cells</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>My Header Products</em>' reference list isn't clear,
@@ -79,7 +80,8 @@ public interface ValuedCell extends Cell {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>My Header Products</em>' reference list.
 	 * @see pcmmm.PcmmmPackage#getValuedCell_MyHeaderProducts()
-	 * @model required="true"
+	 * @see pcmmm.AbstractProduct#getMyValuedCells
+	 * @model opposite="myValuedCells" required="true"
 	 * @generated
 	 */
 	EList<AbstractProduct> getMyHeaderProducts();
@@ -87,6 +89,7 @@ public interface ValuedCell extends Cell {
 	/**
 	 * Returns the value of the '<em><b>My Header Features</b></em>' reference list.
 	 * The list contents are of type {@link pcmmm.AbstractFeature}.
+	 * It is bidirectional and its opposite is '{@link pcmmm.AbstractFeature#getMyValuedCells <em>My Valued Cells</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>My Header Features</em>' reference list isn't clear,
@@ -95,7 +98,8 @@ public interface ValuedCell extends Cell {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>My Header Features</em>' reference list.
 	 * @see pcmmm.PcmmmPackage#getValuedCell_MyHeaderFeatures()
-	 * @model required="true"
+	 * @see pcmmm.AbstractFeature#getMyValuedCells
+	 * @model opposite="myValuedCells" required="true"
 	 * @generated
 	 */
 	EList<AbstractFeature> getMyHeaderFeatures();

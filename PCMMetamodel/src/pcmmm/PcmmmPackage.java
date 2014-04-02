@@ -132,13 +132,22 @@ public interface PcmmmPackage extends EPackage {
 	int ABSTRACT_PRODUCT__CONSTRAINTS = VARIABILITY_CONCEPT__CONSTRAINTS;
 
 	/**
+	 * The feature id for the '<em><b>My Valued Cells</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABSTRACT_PRODUCT__MY_VALUED_CELLS = VARIABILITY_CONCEPT_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Abstract Product</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ABSTRACT_PRODUCT_FEATURE_COUNT = VARIABILITY_CONCEPT_FEATURE_COUNT + 0;
+	int ABSTRACT_PRODUCT_FEATURE_COUNT = VARIABILITY_CONCEPT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Abstract Product</em>' class.
@@ -278,13 +287,22 @@ public interface PcmmmPackage extends EPackage {
 	int ABSTRACT_FEATURE__CONSTRAINTS = VARIABILITY_CONCEPT__CONSTRAINTS;
 
 	/**
+	 * The feature id for the '<em><b>My Valued Cells</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABSTRACT_FEATURE__MY_VALUED_CELLS = VARIABILITY_CONCEPT_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Abstract Feature</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ABSTRACT_FEATURE_FEATURE_COUNT = VARIABILITY_CONCEPT_FEATURE_COUNT + 0;
+	int ABSTRACT_FEATURE_FEATURE_COUNT = VARIABILITY_CONCEPT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Abstract Feature</em>' class.
@@ -452,6 +470,15 @@ public interface PcmmmPackage extends EPackage {
 	int PRODUCT_FAMILY__CONSTRAINTS = ABSTRACT_PRODUCT__CONSTRAINTS;
 
 	/**
+	 * The feature id for the '<em><b>My Valued Cells</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FAMILY__MY_VALUED_CELLS = ABSTRACT_PRODUCT__MY_VALUED_CELLS;
+
+	/**
 	 * The feature id for the '<em><b>Products</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -507,6 +534,15 @@ public interface PcmmmPackage extends EPackage {
 	int PRODUCT__CONSTRAINTS = ABSTRACT_PRODUCT__CONSTRAINTS;
 
 	/**
+	 * The feature id for the '<em><b>My Valued Cells</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT__MY_VALUED_CELLS = ABSTRACT_PRODUCT__MY_VALUED_CELLS;
+
+	/**
 	 * The number of structural features of the '<em>Product</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -551,6 +587,15 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int FEATURE_FAMILY__CONSTRAINTS = ABSTRACT_FEATURE__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>My Valued Cells</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FEATURE_FAMILY__MY_VALUED_CELLS = ABSTRACT_FEATURE__MY_VALUED_CELLS;
 
 	/**
 	 * The feature id for the '<em><b>Features</b></em>' containment reference list.
@@ -606,6 +651,15 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int FEATURE__CONSTRAINTS = ABSTRACT_FEATURE__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>My Valued Cells</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FEATURE__MY_VALUED_CELLS = ABSTRACT_FEATURE__MY_VALUED_CELLS;
 
 	/**
 	 * The number of structural features of the '<em>Feature</em>' class.
@@ -1854,6 +1908,17 @@ public interface PcmmmPackage extends EPackage {
 	EClass getAbstractProduct();
 
 	/**
+	 * Returns the meta object for the reference list '{@link pcmmm.AbstractProduct#getMyValuedCells <em>My Valued Cells</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>My Valued Cells</em>'.
+	 * @see pcmmm.AbstractProduct#getMyValuedCells()
+	 * @see #getAbstractProduct()
+	 * @generated
+	 */
+	EReference getAbstractProduct_MyValuedCells();
+
+	/**
 	 * Returns the meta object for class '{@link pcmmm.Cell <em>Cell</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1960,6 +2025,17 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAbstractFeature();
+
+	/**
+	 * Returns the meta object for the reference list '{@link pcmmm.AbstractFeature#getMyValuedCells <em>My Valued Cells</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>My Valued Cells</em>'.
+	 * @see pcmmm.AbstractFeature#getMyValuedCells()
+	 * @see #getAbstractFeature()
+	 * @generated
+	 */
+	EReference getAbstractFeature_MyValuedCells();
 
 	/**
 	 * Returns the meta object for class '{@link pcmmm.PCM <em>PCM</em>}'.
@@ -2638,6 +2714,14 @@ public interface PcmmmPackage extends EPackage {
 		EClass ABSTRACT_PRODUCT = eINSTANCE.getAbstractProduct();
 
 		/**
+		 * The meta object literal for the '<em><b>My Valued Cells</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ABSTRACT_PRODUCT__MY_VALUED_CELLS = eINSTANCE.getAbstractProduct_MyValuedCells();
+
+		/**
 		 * The meta object literal for the '{@link pcmmm.impl.CellImpl <em>Cell</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2720,6 +2804,14 @@ public interface PcmmmPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ABSTRACT_FEATURE = eINSTANCE.getAbstractFeature();
+
+		/**
+		 * The meta object literal for the '<em><b>My Valued Cells</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ABSTRACT_FEATURE__MY_VALUED_CELLS = eINSTANCE.getAbstractFeature_MyValuedCells();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.PCMImpl <em>PCM</em>}' class.

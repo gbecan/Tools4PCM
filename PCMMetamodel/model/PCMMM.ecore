@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="pcmmm" nsURI="pcmmm" nsPrefix="pcmmm">
-  <eClassifiers xsi:type="ecore:EClass" name="AbstractProduct" abstract="true" eSuperTypes="#//VariabilityConcept"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractProduct" abstract="true" eSuperTypes="#//VariabilityConcept">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="myValuedCells" upperBound="-1"
+        eType="#//ValuedCell" eOpposite="#//ValuedCell/myHeaderProducts"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Cell" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="verbatim" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -12,7 +15,10 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="column" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="colspan" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AbstractFeature" abstract="true" eSuperTypes="#//VariabilityConcept"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractFeature" abstract="true" eSuperTypes="#//VariabilityConcept">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="myValuedCells" upperBound="-1"
+        eType="#//ValuedCell" eOpposite="#//ValuedCell/myHeaderFeatures"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PCM">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" upperBound="-1"
@@ -80,9 +86,9 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="concepts" upperBound="-1"
         eType="#//VariabilityConcept" eOpposite="#//VariabilityConcept/constraints"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="myHeaderProducts" lowerBound="1"
-        upperBound="-1" eType="#//AbstractProduct"/>
+        upperBound="-1" eType="#//AbstractProduct" eOpposite="#//AbstractProduct/myValuedCells"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="myHeaderFeatures" lowerBound="1"
-        upperBound="-1" eType="#//AbstractFeature"/>
+        upperBound="-1" eType="#//AbstractFeature" eOpposite="#//AbstractFeature/myValuedCells"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="And" eSuperTypes="#//Multiple"/>
   <eClassifiers xsi:type="ecore:EClass" name="Or" eSuperTypes="#//Multiple"/>
