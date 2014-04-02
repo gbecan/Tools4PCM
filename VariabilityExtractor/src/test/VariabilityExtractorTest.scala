@@ -27,6 +27,10 @@ import scala.xml.PrettyPrinter
 import pcmmm.ValuedCell
 import org.eclipse.emf.ecore.util.Diagnostician
 import org.eclipse.emf.common.util.Diagnostic
+import clustering.CellClusterer
+import pcmmm.Feature
+import clustering.SimmetricsDissimilarityMetric
+import uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein
 
 class VariabilityExtractorTest extends FlatSpec with Matchers {
 
@@ -90,7 +94,7 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	    
 	    // Load configuration
 	    val configFile = "input/configs/" + file.getName.substring(0, file.getName.size - 4) + ".config"  
-//	    variabilityExtractor.parseConfigurationFile(configFile)
+	    variabilityExtractor.parseConfigurationFile(configFile)
 	    
 	    // Extract variability
 	    variabilityExtractor.extractVariability(pcm)
@@ -250,5 +254,22 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	  }
   }
    
+   "CellCluster" should "cluster cells" in {
+	   val file = new File("output/models/Comparison_of_Nikon_DSLR_cameras.pcm")
+	   val pcm = loadPCMModel(file)
+     
+	   val feature = pcm.getConcepts().find(concept => concept match {
+	     case f : Feature => f.getName() == "ISO max"
+	     case _ => false
+	   }).get.asInstanceOf[Feature]
+	   
+	   val cells = feature.getMyValuedCells()
+
+	   val cellClusterer = new CellClusterer(new SimmetricsDissimilarityMetric(new Levenshtein), 0.4)
+	   val clusters = cellClusterer.cluster(cells.toSet)
+	   for (cluster <- clusters) {
+		   println(for (cell <- cluster) yield {cell.getVerbatim()})
+	   }
+   }
    
 }
