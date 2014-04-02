@@ -31,7 +31,6 @@ import pcmmm.Simple;
 import pcmmm.Unknown;
 import pcmmm.ValuedCell;
 import pcmmm.XOr;
-import pcmmm.YesNO;
 
 /**
  * <!-- begin-user-doc -->
@@ -100,7 +99,6 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 			case PcmmmPackage.INTERVAL: return createInterval();
 			case PcmmmPackage.DOMAIN_COLLECTION: return createDomainCollection();
 			case PcmmmPackage.ORDERED_DOMAIN: return createOrderedDomain();
-			case PcmmmPackage.YES_NO: return createYesNO();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -334,16 +332,6 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 	public OrderedDomain createOrderedDomain() {
 		OrderedDomainImpl orderedDomain = new OrderedDomainImpl();
 		return orderedDomain;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public YesNO createYesNO() {
-		YesNOImpl yesNO = new YesNOImpl();
-		return yesNO;
 	}
 
 	/**

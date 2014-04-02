@@ -35,7 +35,6 @@ import pcmmm.Unknown;
 import pcmmm.ValuedCell;
 import pcmmm.VariabilityConcept;
 import pcmmm.XOr;
-import pcmmm.YesNO;
 
 /**
  * <!-- begin-user-doc -->
@@ -208,10 +207,6 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseOrderedDomain(OrderedDomain object) {
 				return createOrderedDomainAdapter();
-			}
-			@Override
-			public Adapter caseYesNO(YesNO object) {
-				return createYesNOAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -636,20 +631,6 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createOrderedDomainAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link pcmmm.YesNO <em>Yes NO</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see pcmmm.YesNO
-	 * @generated
-	 */
-	public Adapter createYesNOAdapter() {
 		return null;
 	}
 

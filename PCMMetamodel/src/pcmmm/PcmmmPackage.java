@@ -4,7 +4,6 @@ package pcmmm;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -1860,44 +1859,6 @@ public interface PcmmmPackage extends EPackage {
 	int ORDERED_DOMAIN_OPERATION_COUNT = DOMAIN_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link pcmmm.impl.YesNOImpl <em>Yes NO</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see pcmmm.impl.YesNOImpl
-	 * @see pcmmm.impl.PcmmmPackageImpl#getYesNO()
-	 * @generated
-	 */
-	int YES_NO = 29;
-
-	/**
-	 * The number of structural features of the '<em>Yes NO</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int YES_NO_FEATURE_COUNT = 0;
-
-	/**
-	 * The operation id for the '<em>Eval</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int YES_NO___EVAL = 0;
-
-	/**
-	 * The number of operations of the '<em>Yes NO</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int YES_NO_OPERATION_COUNT = 1;
-
-
-	/**
 	 * Returns the meta object for class '{@link pcmmm.AbstractProduct <em>Abstract Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2661,26 +2622,6 @@ public interface PcmmmPackage extends EPackage {
 	EReference getOrderedDomain_Next();
 
 	/**
-	 * Returns the meta object for class '{@link pcmmm.YesNO <em>Yes NO</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Yes NO</em>'.
-	 * @see pcmmm.YesNO
-	 * @generated
-	 */
-	EClass getYesNO();
-
-	/**
-	 * Returns the meta object for the '{@link pcmmm.YesNO#eval() <em>Eval</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Eval</em>' operation.
-	 * @see pcmmm.YesNO#eval()
-	 * @generated
-	 */
-	EOperation getYesNO__Eval();
-
-	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3336,24 +3277,6 @@ public interface PcmmmPackage extends EPackage {
 		 * @generated
 		 */
 		EReference ORDERED_DOMAIN__NEXT = eINSTANCE.getOrderedDomain_Next();
-
-		/**
-		 * The meta object literal for the '{@link pcmmm.impl.YesNOImpl <em>Yes NO</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see pcmmm.impl.YesNOImpl
-		 * @see pcmmm.impl.PcmmmPackageImpl#getYesNO()
-		 * @generated
-		 */
-		EClass YES_NO = eINSTANCE.getYesNO();
-
-		/**
-		 * The meta object literal for the '<em><b>Eval</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation YES_NO___EVAL = eINSTANCE.getYesNO__Eval();
 
 	}
 

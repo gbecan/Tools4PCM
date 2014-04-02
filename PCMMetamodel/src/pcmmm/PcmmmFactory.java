@@ -229,15 +229,6 @@ public interface PcmmmFactory extends EFactory {
 	OrderedDomain createOrderedDomain();
 
 	/**
-	 * Returns a new object of class '<em>Yes NO</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Yes NO</em>'.
-	 * @generated
-	 */
-	YesNO createYesNO();
-
-	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -6,7 +6,6 @@ import com.google.gwt.user.client.rpc.IsSerializable;
 import org.eclipse.emf.common.util.Reflect;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
@@ -39,7 +38,6 @@ import pcmmm.Unknown;
 import pcmmm.ValuedCell;
 import pcmmm.VariabilityConcept;
 import pcmmm.XOr;
-import pcmmm.YesNO;
 
 /**
  * <!-- begin-user-doc -->
@@ -250,13 +248,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * @generated
 	 */
 	private EClass orderedDomainEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass yesNOEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -646,17 +637,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 					 return new OrderedDomain[size];
 				 }
 			 });
-		Reflect.register
-			(YesNO.class, 
-			 new Reflect.Helper() {
-				 public boolean isInstance(Object instance) {
-					 return instance instanceof YesNO;
-				 }
-
-				 public Object newArrayInstance(int size) {
-					 return new YesNO[size];
-				 }
-			 });
 	}
 
 	/**
@@ -867,13 +847,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		 * @generated
 		 */
 		protected OrderedDomain orderedDomain;
-
-		/**
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		protected YesNO yesNO;
 
 	}
 
@@ -1530,24 +1503,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getYesNO() {
-		return yesNOEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getYesNO__Eval() {
-		return yesNOEClass.getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public PcmmmFactory getPcmmmFactory() {
 		return (PcmmmFactory)getEFactoryInstance();
 	}
@@ -1671,9 +1626,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		orderedDomainEClass = createEClass(ORDERED_DOMAIN);
 		createEReference(orderedDomainEClass, ORDERED_DOMAIN__PREVIOUS);
 		createEReference(orderedDomainEClass, ORDERED_DOMAIN__NEXT);
-
-		yesNOEClass = createEClass(YES_NO);
-		createEOperation(yesNOEClass, YES_NO___EVAL);
 	}
 
 	/**
@@ -1826,10 +1778,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		initEClass(orderedDomainEClass, OrderedDomain.class, "OrderedDomain", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getOrderedDomain_Previous(), this.getOrderedDomain(), this.getOrderedDomain_Next(), "previous", null, 0, -1, OrderedDomain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getOrderedDomain_Next(), this.getOrderedDomain(), this.getOrderedDomain_Previous(), "next", null, 0, -1, OrderedDomain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(yesNOEClass, YesNO.class, "YesNO", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEOperation(getYesNO__Eval(), ecorePackage.getEBoolean(), "eval", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
