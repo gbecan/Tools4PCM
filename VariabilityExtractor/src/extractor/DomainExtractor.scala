@@ -7,6 +7,12 @@ import uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein
 import scala.collection.JavaConversions._
 import pcmmm.Feature
 import pcmmm.Cell
+import pcmmm.Multiple
+import pcmmm.ValuedCell
+import pcmmm.Constraint
+import pcmmm.Partial
+import pcmmm.Unknown
+import pcmmm.Inconsistent
 
 class DomainExtractor {
 
@@ -29,19 +35,24 @@ class DomainExtractor {
   }
   
   def extractDomain(pcm : PCM, feature : Feature) {
-	  val values = feature.getMyValuedCells().map(_.getVerbatim()).toList
+	  println("FOR : " + feature.getName())
+	  val values = feature.getMyValuedCells().flatMap(cell => listValues(cell.getInterpretation())).toList
 	  
-    
+	  println("values")
+	  println(values)
+
 	  // Types
+	  val intValues = values.count(_.matches("\\d+"))
+	  val doubleValues = values.count(_.matches("\\d+(\\.\\d+)?"))
+	  val booleanValues = feature.getMyValuedCells().count(_.getInterpretation().isInstanceOf[pcmmm.Boolean])
+	  val unknownValues = feature.getMyValuedCells().count(_.getInterpretation().isInstanceOf[Unknown])
+	  val inconsistentValues = feature.getMyValuedCells().count(_.getInterpretation().isInstanceOf[Inconsistent])
 	  
-//	  val intCells = values.
-    
-    
 	  // Clustering
+	  println("clusters")
 	  val clusters = cellClusterer.cluster(values)
 	  val significantClusters = clusters.filter(cluster => isSignificantCluster(cluster, clusters.size))
 	  
-	  println("FOR : " + feature.getName())
 	  for (cluster <- clusters) {
 		   	println(cluster + " : " + cluster.size )
 	   }
@@ -62,10 +73,19 @@ class DomainExtractor {
 	  // TODO : add the domain to the feature
   }
   
+  def listValues(interpretation : Constraint) : List[String] = {
+     interpretation match {
+	    case c : Multiple => c.getContraints().flatMap(listValues(_)).toList
+	    case c : Partial => listValues(c.getArgument()) ::: listValues(c.getCondition())
+	  	case c => List(c.getName()) 
+	  }
+  }
+  
   def isSignificantCluster(cluster : List[String], nbOfClusters : Int) : Boolean = {
 		val bigClusterThreshold = 0.3
 		(cluster.size.toDouble / nbOfClusters.toDouble) > bigClusterThreshold
   }
   
+
   
 }
