@@ -12,35 +12,39 @@ import ch.usi.inf.sape.hac.dendrogram.DendrogramNode
 import ch.usi.inf.sape.hac.dendrogram.MergeNode
 import ch.usi.inf.sape.hac.dendrogram.ObservationNode
 
-class CellClusterer(
-	val dissimilarityMetric : DissimilarityMetric,
-    val threshold : Double
+class HierarchicalClusterer[T](
+		val dissimilarityMetric : (T,T) => Double,
+		val threshold : Double
 ) {
 
   
-	def cluster(values : Set[Cell]) : Set[Set[Cell]] = {
-		val experiment = new PCMExperiment(values) 
-		val dissimilarityMeasure : DissimilarityMeasure = new CellDissimilarityMeasure(dissimilarityMetric)
+	def cluster(values : List[T]) : Set[List[T]] = {
+		val experiment = new ClusteringExperiment(values.toIndexedSeq) 
+		val dissimilarityMeasure = new ClusteringDissimilarityMeasure(dissimilarityMetric)
 		val agglomerationMethod : AgglomerationMethod = new AverageLinkage
 		val dendrogramBuilder = new DendrogramBuilder(experiment.getNumberOfObservations())
 		val clusterer = new HierarchicalAgglomerativeClusterer(experiment, dissimilarityMeasure, agglomerationMethod)
 		clusterer.cluster(dendrogramBuilder)
-		extractClusters(experiment, dendrogramBuilder.getDendrogram)
+		extractClusters(experiment, threshold, dendrogramBuilder.getDendrogram)
 	}
 	
-	def extractClusters(experiment : PCMExperiment, dendrogram : Dendrogram) : Set[Set[Cell]] = {
-			def extractClustersRecursion(node : DendrogramNode) : Set[Set[Cell]] = {
+	private def extractClusters[T](experiment : ClusteringExperiment[T], threshold : Double, dendrogram : Dendrogram) : Set[List[T]] = {
+			def extractClustersRecursion(node : DendrogramNode) : Set[List[T]] = {
 				node match {
 				  case n : MergeNode if n.getDissimilarity() > threshold => 
 				    extractClustersRecursion(n.getLeft()) union extractClustersRecursion(n.getRight())
 				  case n : MergeNode => 
 				    val left = extractClustersRecursion(n.getLeft())
 				    val right = extractClustersRecursion(n.getRight())
-				    Set((left union right).reduce((s1, s2) => s1 union s2))
-				  case n : ObservationNode => Set(Set(experiment.getObservation(n.getObservation())))
+				    Set((left union right).reduce(_ ::: _))
+				  case n : ObservationNode => Set(List(experiment.getObservation(n.getObservation())))
 				}
 			}
-			extractClustersRecursion(dendrogram.getRoot())
+			if (Option(dendrogram.getRoot()).isDefined) {
+				extractClustersRecursion(dendrogram.getRoot())
+			} else {
+			  Set.empty
+			}
 	}
   
 }

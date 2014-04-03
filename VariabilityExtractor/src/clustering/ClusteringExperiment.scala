@@ -3,15 +3,15 @@ package clustering
 import ch.usi.inf.sape.hac.experiment.Experiment
 import pcmmm.Cell
 
-class PCMExperiment(cells : Set[Cell]) extends Experiment {
+class ClusteringExperiment[T](values : IndexedSeq[T]) extends Experiment {
 
-  val observations : Array[Cell] = cells.toArray
+  val observations = values
   
 	override def getNumberOfObservations() : Int = {
 		observations.size
 	}
   
-	def getObservation(index : Int) : Cell = {
+	def getObservation(index : Int) : T = {
 		observations(index)
 	}
   

@@ -1,35 +1,33 @@
 package test
 
+import java.io.File
+import java.io.FileWriter
+import java.util.Collections
+
+import scala.collection.JavaConversions.asScalaBuffer
+import scala.io.Source
+import scala.xml.PrettyPrinter
+
+import org.eclipse.emf.common.util.Diagnostic
+import org.eclipse.emf.common.util.URI
+import org.eclipse.emf.ecore.resource.Resource
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl
+import org.eclipse.emf.ecore.util.Diagnostician
+import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
 import org.scalatest.FlatSpec
 import org.scalatest.Matchers
-import scala.io.Source
-import java.io.File
-import org.eclipse.emf.ecore.resource.Resource
-import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
-import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl
-import pcmmm.PCM
-import org.eclipse.emf.common.util.URI
-import extractor.VariabilityExtractor
-import java.util.Collections
-import pcmmm.PcmmmPackage
-import extractor.PCMNormalizer
-import scala.collection.JavaConversions._
-import pcmmm.Extra
-import pcmmm.Header
-import interpreters.PatternInterpreter
-import interpreters.SimplePatternInterpreter
-import interpreters.BooleanPatternInterpreter
-import interpreters.MultiplePatternInterpreter
-import interpreters.UnknownPatternInterpreter
+
+import clustering.HierarchicalClusterer
 import export.PCM2HTML
-import java.io.FileWriter
-import scala.xml.PrettyPrinter
-import pcmmm.ValuedCell
-import org.eclipse.emf.ecore.util.Diagnostician
-import org.eclipse.emf.common.util.Diagnostic
-import clustering.CellClusterer
+import extractor.PCMNormalizer
+import extractor.VariabilityExtractor
+import pcmmm.Cell
+import pcmmm.Extra
 import pcmmm.Feature
-import clustering.SimmetricsDissimilarityMetric
+import pcmmm.Header
+import pcmmm.PCM
+import pcmmm.PcmmmPackage
+import pcmmm.ValuedCell
 import uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein
 
 class VariabilityExtractorTest extends FlatSpec with Matchers {
@@ -265,10 +263,16 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	   
 	   val cells = feature.getMyValuedCells()
 
-	   val cellClusterer = new CellClusterer(new SimmetricsDissimilarityMetric(new Levenshtein), 0.4)
-	   val clusters = cellClusterer.cluster(cells.toSet)
+	   val metric = new Levenshtein
+	   val dissimilarityMetric : (Cell, Cell) => Double = (v1, v2) => 
+	     1 - metric.getSimilarity(v1.getVerbatim(), v2.getVerbatim())
+	   val threshold = 0.4
+	   val cellClusterer = new HierarchicalClusterer(dissimilarityMetric, threshold)
+	   
+	   val clusters = cellClusterer.cluster(cells.toList)
 	   for (cluster <- clusters) {
-		   println(for (cell <- cluster) yield {cell.getVerbatim()})
+		   	val verbatims = cluster.toList.map(c => c.getVerbatim())
+			println(verbatims.mkString("{", ", ", "}") + " : " + cluster.size )
 	   }
    }
    

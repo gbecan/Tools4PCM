@@ -7,9 +7,7 @@ import interpreters.BooleanPatternInterpreter
 import interpreters.UnknownPatternInterpreter
 import interpreters.SimplePatternInterpreter
 import interpreters.MultiplePatternInterpreter
-import pcmindexer.ParserTools
 import interpreters.PatternInterpreter
-import pcmindexer.Concept
 import interpreters.PatternInterpreter
 import interpreters.BooleanPatternInterpreter
 import interpreters.PartialPatternInterpreter

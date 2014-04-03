@@ -4,17 +4,17 @@ import ch.usi.inf.sape.hac.experiment.Experiment
 import uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein
 import ch.usi.inf.sape.hac.experiment.DissimilarityMeasure
 
-class CellDissimilarityMeasure
-(val dissimilarityMetric : DissimilarityMetric)
+class ClusteringDissimilarityMeasure[T]
+(val dissimilarityMetric : (T,T) => Double)
 extends DissimilarityMeasure {
 
   
 	override def computeDissimilarity(experiment : Experiment, observation1 : Int, observation2 : Int) : Double = {
-		val pcmExperiment = experiment.asInstanceOf[PCMExperiment]
-		val cell1 = pcmExperiment.getObservation(observation1)
-		val cell2 = pcmExperiment.getObservation(observation2)
+		val clusteringExperiment = experiment.asInstanceOf[ClusteringExperiment[T]]
+		val value1 = clusteringExperiment.getObservation(observation1)
+		val value2 = clusteringExperiment.getObservation(observation2)
 		
-		dissimilarityMetric.dissimilarity(cell1.getVerbatim(), cell2.getVerbatim())
+		dissimilarityMetric(value1, value2)
 	}
   
 }
