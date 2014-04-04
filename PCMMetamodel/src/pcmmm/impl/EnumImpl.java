@@ -4,57 +4,47 @@ package pcmmm.impl;
 
 import com.google.gwt.user.client.rpc.GwtTransient;
 
-import java.lang.Boolean;
+import java.util.Collection;
 
-import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 
 import pcmmm.PcmmmPackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Boolean</b></em>'.
+ * An implementation of the model object '<em><b>Enum</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link pcmmm.impl.BooleanImpl#isValue <em>Value</em>}</li>
+ *   <li>{@link pcmmm.impl.EnumImpl#getValues <em>Values</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
+public class EnumImpl extends DomainImpl implements pcmmm.Enum {
 	/**
-	 * The default value of the '{@link #isValue() <em>Value</em>}' attribute.
+	 * The cached value of the '{@link #getValues() <em>Values</em>}' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isValue()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final boolean VALUE_EDEFAULT = false;
-
-	/**
-	 * The cached value of the '{@link #isValue() <em>Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #isValue()
+	 * @see #getValues()
 	 * @generated
 	 * @ordered
 	 */
 	@GwtTransient
-	protected boolean value = VALUE_EDEFAULT;
+	protected EList<String> values;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BooleanImpl() {
+	protected EnumImpl() {
 		super();
 	}
 
@@ -65,7 +55,7 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return PcmmmPackage.Literals.BOOLEAN;
+		return PcmmmPackage.Literals.ENUM;
 	}
 
 	/**
@@ -73,20 +63,11 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isValue() {
-		return value;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setValue(boolean newValue) {
-		boolean oldValue = value;
-		value = newValue;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.BOOLEAN__VALUE, oldValue, value));
+	public EList<String> getValues() {
+		if (values == null) {
+			values = new EDataTypeUniqueEList<String>(String.class, this, PcmmmPackage.ENUM__VALUES);
+		}
+		return values;
 	}
 
 	/**
@@ -97,8 +78,8 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case PcmmmPackage.BOOLEAN__VALUE:
-				return isValue();
+			case PcmmmPackage.ENUM__VALUES:
+				return getValues();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -108,11 +89,13 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case PcmmmPackage.BOOLEAN__VALUE:
-				setValue((Boolean)newValue);
+			case PcmmmPackage.ENUM__VALUES:
+				getValues().clear();
+				getValues().addAll((Collection<? extends String>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -126,8 +109,8 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case PcmmmPackage.BOOLEAN__VALUE:
-				setValue(VALUE_EDEFAULT);
+			case PcmmmPackage.ENUM__VALUES:
+				getValues().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -141,8 +124,8 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case PcmmmPackage.BOOLEAN__VALUE:
-				return value != VALUE_EDEFAULT;
+			case PcmmmPackage.ENUM__VALUES:
+				return values != null && !values.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -157,10 +140,10 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (value: ");
-		result.append(value);
+		result.append(" (values: ");
+		result.append(values);
 		result.append(')');
 		return result.toString();
 	}
 
-} //BooleanImpl
+} //EnumImpl

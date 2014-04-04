@@ -20,7 +20,6 @@ package pcmmm;
  * @generated
  */
 public interface Feature extends AbstractFeature {
-
 	/**
 	 * Returns the value of the '<em><b>Domain</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -46,4 +45,5 @@ public interface Feature extends AbstractFeature {
 	 * @generated
 	 */
 	void setDomain(Domain value);
+
 } // Feature

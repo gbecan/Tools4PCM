@@ -4,7 +4,9 @@ package pcmmm.util;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
+
 import org.eclipse.emf.ecore.util.Switch;
+
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
@@ -12,23 +14,25 @@ import pcmmm.Cell;
 import pcmmm.Constraint;
 import pcmmm.Domain;
 import pcmmm.DomainCollection;
+import pcmmm.DoubleType;
 import pcmmm.Empty;
 import pcmmm.Extra;
 import pcmmm.Feature;
 import pcmmm.FeatureFamily;
 import pcmmm.Header;
 import pcmmm.Inconsistent;
+import pcmmm.IntType;
 import pcmmm.Interval;
 import pcmmm.Matrix;
 import pcmmm.Multiple;
 import pcmmm.Or;
-import pcmmm.OrderedDomain;
 import pcmmm.PCM;
 import pcmmm.Partial;
 import pcmmm.PcmmmPackage;
 import pcmmm.Product;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
+import pcmmm.StringType;
 import pcmmm.Type;
 import pcmmm.Unknown;
 import pcmmm.ValuedCell;
@@ -271,6 +275,7 @@ public class PcmmmSwitch<T> extends Switch<T> {
 			case PcmmmPackage.INTERVAL: {
 				Interval interval = (Interval)theEObject;
 				T result = caseInterval(interval);
+				if (result == null) result = caseDomain(interval);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -286,10 +291,31 @@ public class PcmmmSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case PcmmmPackage.ORDERED_DOMAIN: {
-				OrderedDomain orderedDomain = (OrderedDomain)theEObject;
-				T result = caseOrderedDomain(orderedDomain);
-				if (result == null) result = caseDomain(orderedDomain);
+			case PcmmmPackage.ENUM: {
+				pcmmm.Enum enum_ = (pcmmm.Enum)theEObject;
+				T result = caseEnum(enum_);
+				if (result == null) result = caseDomain(enum_);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case PcmmmPackage.INT_TYPE: {
+				IntType intType = (IntType)theEObject;
+				T result = caseIntType(intType);
+				if (result == null) result = caseType(intType);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case PcmmmPackage.DOUBLE_TYPE: {
+				DoubleType doubleType = (DoubleType)theEObject;
+				T result = caseDoubleType(doubleType);
+				if (result == null) result = caseType(doubleType);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case PcmmmPackage.STRING_TYPE: {
+				StringType stringType = (StringType)theEObject;
+				T result = caseStringType(stringType);
+				if (result == null) result = caseType(stringType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -718,17 +744,62 @@ public class PcmmmSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Ordered Domain</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Enum</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Ordered Domain</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Enum</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseOrderedDomain(OrderedDomain object) {
+	public T caseEnum(pcmmm.Enum object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Int Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Int Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIntType(IntType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Double Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Double Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDoubleType(DoubleType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>String Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>String Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStringType(StringType object) {
 		return null;
 	}
 

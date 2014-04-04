@@ -3,12 +3,12 @@
 package pcmmm.impl;
 
 import com.google.gwt.user.client.rpc.GwtTransient;
+
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import pcmmm.Interval;
 import pcmmm.PcmmmPackage;
@@ -20,55 +20,55 @@ import pcmmm.PcmmmPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link pcmmm.impl.IntervalImpl#getName <em>Name</em>}</li>
- *   <li>{@link pcmmm.impl.IntervalImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link pcmmm.impl.IntervalImpl#getMin <em>Min</em>}</li>
+ *   <li>{@link pcmmm.impl.IntervalImpl#getMax <em>Max</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class IntervalImpl extends MinimalEObjectImpl.Container implements Interval {
+public class IntervalImpl extends DomainImpl implements Interval {
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * The default value of the '{@link #getMin() <em>Min</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
+	 * @see #getMin()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = null;
+	protected static final String MIN_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * The cached value of the '{@link #getMin() <em>Min</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
+	 * @see #getMin()
 	 * @generated
 	 * @ordered
 	 */
 	@GwtTransient
-	protected String name = NAME_EDEFAULT;
+	protected String min = MIN_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * The default value of the '{@link #getMax() <em>Max</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getValue()
+	 * @see #getMax()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALUE_EDEFAULT = null;
+	protected static final String MAX_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * The cached value of the '{@link #getMax() <em>Max</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getValue()
+	 * @see #getMax()
 	 * @generated
 	 * @ordered
 	 */
 	@GwtTransient
-	protected String value = VALUE_EDEFAULT;
+	protected String max = MAX_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,8 +94,8 @@ public class IntervalImpl extends MinimalEObjectImpl.Container implements Interv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
+	public String getMin() {
+		return min;
 	}
 
 	/**
@@ -103,11 +103,11 @@ public class IntervalImpl extends MinimalEObjectImpl.Container implements Interv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
+	public void setMin(String newMin) {
+		String oldMin = min;
+		min = newMin;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.INTERVAL__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.INTERVAL__MIN, oldMin, min));
 	}
 
 	/**
@@ -115,8 +115,8 @@ public class IntervalImpl extends MinimalEObjectImpl.Container implements Interv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getValue() {
-		return value;
+	public String getMax() {
+		return max;
 	}
 
 	/**
@@ -124,11 +124,11 @@ public class IntervalImpl extends MinimalEObjectImpl.Container implements Interv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(String newValue) {
-		String oldValue = value;
-		value = newValue;
+	public void setMax(String newMax) {
+		String oldMax = max;
+		max = newMax;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.INTERVAL__VALUE, oldValue, value));
+			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.INTERVAL__MAX, oldMax, max));
 	}
 
 	/**
@@ -139,10 +139,10 @@ public class IntervalImpl extends MinimalEObjectImpl.Container implements Interv
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case PcmmmPackage.INTERVAL__NAME:
-				return getName();
-			case PcmmmPackage.INTERVAL__VALUE:
-				return getValue();
+			case PcmmmPackage.INTERVAL__MIN:
+				return getMin();
+			case PcmmmPackage.INTERVAL__MAX:
+				return getMax();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -155,11 +155,11 @@ public class IntervalImpl extends MinimalEObjectImpl.Container implements Interv
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case PcmmmPackage.INTERVAL__NAME:
-				setName((String)newValue);
+			case PcmmmPackage.INTERVAL__MIN:
+				setMin((String)newValue);
 				return;
-			case PcmmmPackage.INTERVAL__VALUE:
-				setValue((String)newValue);
+			case PcmmmPackage.INTERVAL__MAX:
+				setMax((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -173,11 +173,11 @@ public class IntervalImpl extends MinimalEObjectImpl.Container implements Interv
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case PcmmmPackage.INTERVAL__NAME:
-				setName(NAME_EDEFAULT);
+			case PcmmmPackage.INTERVAL__MIN:
+				setMin(MIN_EDEFAULT);
 				return;
-			case PcmmmPackage.INTERVAL__VALUE:
-				setValue(VALUE_EDEFAULT);
+			case PcmmmPackage.INTERVAL__MAX:
+				setMax(MAX_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -191,10 +191,10 @@ public class IntervalImpl extends MinimalEObjectImpl.Container implements Interv
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case PcmmmPackage.INTERVAL__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case PcmmmPackage.INTERVAL__VALUE:
-				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
+			case PcmmmPackage.INTERVAL__MIN:
+				return MIN_EDEFAULT == null ? min != null : !MIN_EDEFAULT.equals(min);
+			case PcmmmPackage.INTERVAL__MAX:
+				return MAX_EDEFAULT == null ? max != null : !MAX_EDEFAULT.equals(max);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -209,10 +209,10 @@ public class IntervalImpl extends MinimalEObjectImpl.Container implements Interv
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", value: ");
-		result.append(value);
+		result.append(" (min: ");
+		result.append(min);
+		result.append(", max: ");
+		result.append(max);
 		result.append(')');
 		return result.toString();
 	}

@@ -4,8 +4,11 @@ package pcmmm.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
+
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
+
 import org.eclipse.emf.ecore.EObject;
+
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
@@ -13,23 +16,25 @@ import pcmmm.Cell;
 import pcmmm.Constraint;
 import pcmmm.Domain;
 import pcmmm.DomainCollection;
+import pcmmm.DoubleType;
 import pcmmm.Empty;
 import pcmmm.Extra;
 import pcmmm.Feature;
 import pcmmm.FeatureFamily;
 import pcmmm.Header;
 import pcmmm.Inconsistent;
+import pcmmm.IntType;
 import pcmmm.Interval;
 import pcmmm.Matrix;
 import pcmmm.Multiple;
 import pcmmm.Or;
-import pcmmm.OrderedDomain;
 import pcmmm.PCM;
 import pcmmm.Partial;
 import pcmmm.PcmmmPackage;
 import pcmmm.Product;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
+import pcmmm.StringType;
 import pcmmm.Type;
 import pcmmm.Unknown;
 import pcmmm.ValuedCell;
@@ -205,8 +210,20 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 				return createTypeAdapter();
 			}
 			@Override
-			public Adapter caseOrderedDomain(OrderedDomain object) {
-				return createOrderedDomainAdapter();
+			public Adapter caseEnum(pcmmm.Enum object) {
+				return createEnumAdapter();
+			}
+			@Override
+			public Adapter caseIntType(IntType object) {
+				return createIntTypeAdapter();
+			}
+			@Override
+			public Adapter caseDoubleType(DoubleType object) {
+				return createDoubleTypeAdapter();
+			}
+			@Override
+			public Adapter caseStringType(StringType object) {
+				return createStringTypeAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -621,16 +638,58 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link pcmmm.OrderedDomain <em>Ordered Domain</em>}'.
+	 * Creates a new adapter for an object of class '{@link pcmmm.Enum <em>Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see pcmmm.OrderedDomain
+	 * @see pcmmm.Enum
 	 * @generated
 	 */
-	public Adapter createOrderedDomainAdapter() {
+	public Adapter createEnumAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link pcmmm.IntType <em>Int Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see pcmmm.IntType
+	 * @generated
+	 */
+	public Adapter createIntTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link pcmmm.DoubleType <em>Double Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see pcmmm.DoubleType
+	 * @generated
+	 */
+	public Adapter createDoubleTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link pcmmm.StringType <em>String Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see pcmmm.StringType
+	 * @generated
+	 */
+	public Adapter createStringTypeAdapter() {
 		return null;
 	}
 

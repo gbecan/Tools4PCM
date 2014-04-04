@@ -193,15 +193,6 @@ public interface PcmmmFactory extends EFactory {
 	XOr createXOr();
 
 	/**
-	 * Returns a new object of class '<em>Domain</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Domain</em>'.
-	 * @generated
-	 */
-	Domain createDomain();
-
-	/**
 	 * Returns a new object of class '<em>Interval</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -220,13 +211,40 @@ public interface PcmmmFactory extends EFactory {
 	DomainCollection createDomainCollection();
 
 	/**
-	 * Returns a new object of class '<em>Ordered Domain</em>'.
+	 * Returns a new object of class '<em>Enum</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ordered Domain</em>'.
+	 * @return a new object of class '<em>Enum</em>'.
 	 * @generated
 	 */
-	OrderedDomain createOrderedDomain();
+	Enum createEnum();
+
+	/**
+	 * Returns a new object of class '<em>Int Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Int Type</em>'.
+	 * @generated
+	 */
+	IntType createIntType();
+
+	/**
+	 * Returns a new object of class '<em>Double Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Double Type</em>'.
+	 * @generated
+	 */
+	DoubleType createDoubleType();
+
+	/**
+	 * Returns a new object of class '<em>String Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>String Type</em>'.
+	 * @generated
+	 */
+	StringType createStringType();
 
 	/**
 	 * Returns the package supported by this factory.

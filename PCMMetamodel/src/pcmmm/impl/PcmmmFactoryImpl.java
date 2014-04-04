@@ -5,22 +5,25 @@ package pcmmm.impl;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
+
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
 import pcmmm.And;
-import pcmmm.Domain;
 import pcmmm.DomainCollection;
+import pcmmm.DoubleType;
 import pcmmm.Empty;
 import pcmmm.Extra;
 import pcmmm.Feature;
 import pcmmm.FeatureFamily;
 import pcmmm.Header;
 import pcmmm.Inconsistent;
+import pcmmm.IntType;
 import pcmmm.Interval;
 import pcmmm.Matrix;
 import pcmmm.Multiple;
 import pcmmm.Or;
-import pcmmm.OrderedDomain;
 import pcmmm.PCM;
 import pcmmm.Partial;
 import pcmmm.PcmmmFactory;
@@ -28,6 +31,7 @@ import pcmmm.PcmmmPackage;
 import pcmmm.Product;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
+import pcmmm.StringType;
 import pcmmm.Unknown;
 import pcmmm.ValuedCell;
 import pcmmm.XOr;
@@ -95,10 +99,12 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 			case PcmmmPackage.AND: return createAnd();
 			case PcmmmPackage.OR: return createOr();
 			case PcmmmPackage.XOR: return createXOr();
-			case PcmmmPackage.DOMAIN: return createDomain();
 			case PcmmmPackage.INTERVAL: return createInterval();
 			case PcmmmPackage.DOMAIN_COLLECTION: return createDomainCollection();
-			case PcmmmPackage.ORDERED_DOMAIN: return createOrderedDomain();
+			case PcmmmPackage.ENUM: return createEnum();
+			case PcmmmPackage.INT_TYPE: return createIntType();
+			case PcmmmPackage.DOUBLE_TYPE: return createDoubleType();
+			case PcmmmPackage.STRING_TYPE: return createStringType();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -299,16 +305,6 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Domain createDomain() {
-		DomainImpl domain = new DomainImpl();
-		return domain;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Interval createInterval() {
 		IntervalImpl interval = new IntervalImpl();
 		return interval;
@@ -329,9 +325,39 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OrderedDomain createOrderedDomain() {
-		OrderedDomainImpl orderedDomain = new OrderedDomainImpl();
-		return orderedDomain;
+	public pcmmm.Enum createEnum() {
+		EnumImpl enum_ = new EnumImpl();
+		return enum_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IntType createIntType() {
+		IntTypeImpl intType = new IntTypeImpl();
+		return intType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DoubleType createDoubleType() {
+		DoubleTypeImpl doubleType = new DoubleTypeImpl();
+		return doubleType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StringType createStringType() {
+		StringTypeImpl stringType = new StringTypeImpl();
+		return stringType;
 	}
 
 	/**

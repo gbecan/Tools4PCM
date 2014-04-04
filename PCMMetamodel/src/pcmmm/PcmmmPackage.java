@@ -1621,31 +1621,13 @@ public interface PcmmmPackage extends EPackage {
 	int DOMAIN = 24;
 
 	/**
-	 * The feature id for the '<em><b>Intervals</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOMAIN__INTERVALS = 0;
-
-	/**
-	 * The feature id for the '<em><b>Domain Litteral</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOMAIN__DOMAIN_LITTERAL = 1;
-
-	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN__NAME = 2;
+	int DOMAIN__NAME = 0;
 
 	/**
 	 * The feature id for the '<em><b>Domain Type</b></em>' containment reference.
@@ -1654,7 +1636,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN__DOMAIN_TYPE = 3;
+	int DOMAIN__DOMAIN_TYPE = 1;
 
 	/**
 	 * The number of structural features of the '<em>Domain</em>' class.
@@ -1663,7 +1645,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_FEATURE_COUNT = 4;
+	int DOMAIN_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Domain</em>' class.
@@ -1691,16 +1673,34 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERVAL__NAME = 0;
+	int INTERVAL__NAME = DOMAIN__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * The feature id for the '<em><b>Domain Type</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERVAL__VALUE = 1;
+	int INTERVAL__DOMAIN_TYPE = DOMAIN__DOMAIN_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Min</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERVAL__MIN = DOMAIN_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Max</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERVAL__MAX = DOMAIN_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Interval</em>' class.
@@ -1709,7 +1709,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERVAL_FEATURE_COUNT = 2;
+	int INTERVAL_FEATURE_COUNT = DOMAIN_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Interval</em>' class.
@@ -1718,7 +1718,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERVAL_OPERATION_COUNT = 0;
+	int INTERVAL_OPERATION_COUNT = DOMAIN_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link pcmmm.impl.DomainCollectionImpl <em>Domain Collection</em>}' class.
@@ -1786,32 +1786,14 @@ public interface PcmmmPackage extends EPackage {
 	int TYPE_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link pcmmm.impl.OrderedDomainImpl <em>Ordered Domain</em>}' class.
+	 * The meta object id for the '{@link pcmmm.impl.EnumImpl <em>Enum</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see pcmmm.impl.OrderedDomainImpl
-	 * @see pcmmm.impl.PcmmmPackageImpl#getOrderedDomain()
+	 * @see pcmmm.impl.EnumImpl
+	 * @see pcmmm.impl.PcmmmPackageImpl#getEnum()
 	 * @generated
 	 */
-	int ORDERED_DOMAIN = 28;
-
-	/**
-	 * The feature id for the '<em><b>Intervals</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_DOMAIN__INTERVALS = DOMAIN__INTERVALS;
-
-	/**
-	 * The feature id for the '<em><b>Domain Litteral</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_DOMAIN__DOMAIN_LITTERAL = DOMAIN__DOMAIN_LITTERAL;
+	int ENUM = 28;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1820,7 +1802,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ORDERED_DOMAIN__NAME = DOMAIN__NAME;
+	int ENUM__NAME = DOMAIN__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Domain Type</b></em>' containment reference.
@@ -1829,43 +1811,128 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ORDERED_DOMAIN__DOMAIN_TYPE = DOMAIN__DOMAIN_TYPE;
+	int ENUM__DOMAIN_TYPE = DOMAIN__DOMAIN_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>Previous</b></em>' reference list.
+	 * The feature id for the '<em><b>Values</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDERED_DOMAIN__PREVIOUS = DOMAIN_FEATURE_COUNT + 0;
+	int ENUM__VALUES = DOMAIN_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Next</b></em>' reference list.
+	 * The number of structural features of the '<em>Enum</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDERED_DOMAIN__NEXT = DOMAIN_FEATURE_COUNT + 1;
+	int ENUM_FEATURE_COUNT = DOMAIN_FEATURE_COUNT + 1;
 
 	/**
-	 * The number of structural features of the '<em>Ordered Domain</em>' class.
+	 * The number of operations of the '<em>Enum</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDERED_DOMAIN_FEATURE_COUNT = DOMAIN_FEATURE_COUNT + 2;
+	int ENUM_OPERATION_COUNT = DOMAIN_OPERATION_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Ordered Domain</em>' class.
+	 * The meta object id for the '{@link pcmmm.impl.IntTypeImpl <em>Int Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see pcmmm.impl.IntTypeImpl
+	 * @see pcmmm.impl.PcmmmPackageImpl#getIntType()
+	 * @generated
+	 */
+	int INT_TYPE = 29;
+
+	/**
+	 * The number of structural features of the '<em>Int Type</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDERED_DOMAIN_OPERATION_COUNT = DOMAIN_OPERATION_COUNT + 0;
+	int INT_TYPE_FEATURE_COUNT = TYPE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Int Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_TYPE_OPERATION_COUNT = TYPE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link pcmmm.impl.DoubleTypeImpl <em>Double Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see pcmmm.impl.DoubleTypeImpl
+	 * @see pcmmm.impl.PcmmmPackageImpl#getDoubleType()
+	 * @generated
+	 */
+	int DOUBLE_TYPE = 30;
+
+	/**
+	 * The number of structural features of the '<em>Double Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOUBLE_TYPE_FEATURE_COUNT = TYPE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Double Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOUBLE_TYPE_OPERATION_COUNT = TYPE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link pcmmm.impl.StringTypeImpl <em>String Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see pcmmm.impl.StringTypeImpl
+	 * @see pcmmm.impl.PcmmmPackageImpl#getStringType()
+	 * @generated
+	 */
+	int STRING_TYPE = 31;
+
+	/**
+	 * The feature id for the '<em><b>EReference0</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRING_TYPE__EREFERENCE0 = TYPE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>String Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRING_TYPE_FEATURE_COUNT = TYPE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>String Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STRING_TYPE_OPERATION_COUNT = TYPE_OPERATION_COUNT + 0;
+
 
 	/**
 	 * Returns the meta object for class '{@link pcmmm.AbstractProduct <em>Abstract Product</em>}'.
@@ -2503,28 +2570,6 @@ public interface PcmmmPackage extends EPackage {
 	EClass getDomain();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link pcmmm.Domain#getIntervals <em>Intervals</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Intervals</em>'.
-	 * @see pcmmm.Domain#getIntervals()
-	 * @see #getDomain()
-	 * @generated
-	 */
-	EReference getDomain_Intervals();
-
-	/**
-	 * Returns the meta object for the attribute list '{@link pcmmm.Domain#getDomainLitteral <em>Domain Litteral</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Domain Litteral</em>'.
-	 * @see pcmmm.Domain#getDomainLitteral()
-	 * @see #getDomain()
-	 * @generated
-	 */
-	EAttribute getDomain_DomainLitteral();
-
-	/**
 	 * Returns the meta object for the attribute '{@link pcmmm.Domain#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2557,26 +2602,26 @@ public interface PcmmmPackage extends EPackage {
 	EClass getInterval();
 
 	/**
-	 * Returns the meta object for the attribute '{@link pcmmm.Interval#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link pcmmm.Interval#getMin <em>Min</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see pcmmm.Interval#getName()
+	 * @return the meta object for the attribute '<em>Min</em>'.
+	 * @see pcmmm.Interval#getMin()
 	 * @see #getInterval()
 	 * @generated
 	 */
-	EAttribute getInterval_Name();
+	EAttribute getInterval_Min();
 
 	/**
-	 * Returns the meta object for the attribute '{@link pcmmm.Interval#getValue <em>Value</em>}'.
+	 * Returns the meta object for the attribute '{@link pcmmm.Interval#getMax <em>Max</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Value</em>'.
-	 * @see pcmmm.Interval#getValue()
+	 * @return the meta object for the attribute '<em>Max</em>'.
+	 * @see pcmmm.Interval#getMax()
 	 * @see #getInterval()
 	 * @generated
 	 */
-	EAttribute getInterval_Value();
+	EAttribute getInterval_Max();
 
 	/**
 	 * Returns the meta object for class '{@link pcmmm.DomainCollection <em>Domain Collection</em>}'.
@@ -2610,36 +2655,66 @@ public interface PcmmmPackage extends EPackage {
 	EClass getType();
 
 	/**
-	 * Returns the meta object for class '{@link pcmmm.OrderedDomain <em>Ordered Domain</em>}'.
+	 * Returns the meta object for class '{@link pcmmm.Enum <em>Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Ordered Domain</em>'.
-	 * @see pcmmm.OrderedDomain
+	 * @return the meta object for class '<em>Enum</em>'.
+	 * @see pcmmm.Enum
 	 * @generated
 	 */
-	EClass getOrderedDomain();
+	EClass getEnum();
 
 	/**
-	 * Returns the meta object for the reference list '{@link pcmmm.OrderedDomain#getPrevious <em>Previous</em>}'.
+	 * Returns the meta object for the attribute list '{@link pcmmm.Enum#getValues <em>Values</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Previous</em>'.
-	 * @see pcmmm.OrderedDomain#getPrevious()
-	 * @see #getOrderedDomain()
+	 * @return the meta object for the attribute list '<em>Values</em>'.
+	 * @see pcmmm.Enum#getValues()
+	 * @see #getEnum()
 	 * @generated
 	 */
-	EReference getOrderedDomain_Previous();
+	EAttribute getEnum_Values();
 
 	/**
-	 * Returns the meta object for the reference list '{@link pcmmm.OrderedDomain#getNext <em>Next</em>}'.
+	 * Returns the meta object for class '{@link pcmmm.IntType <em>Int Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Next</em>'.
-	 * @see pcmmm.OrderedDomain#getNext()
-	 * @see #getOrderedDomain()
+	 * @return the meta object for class '<em>Int Type</em>'.
+	 * @see pcmmm.IntType
 	 * @generated
 	 */
-	EReference getOrderedDomain_Next();
+	EClass getIntType();
+
+	/**
+	 * Returns the meta object for class '{@link pcmmm.DoubleType <em>Double Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Double Type</em>'.
+	 * @see pcmmm.DoubleType
+	 * @generated
+	 */
+	EClass getDoubleType();
+
+	/**
+	 * Returns the meta object for class '{@link pcmmm.StringType <em>String Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>String Type</em>'.
+	 * @see pcmmm.StringType
+	 * @generated
+	 */
+	EClass getStringType();
+
+	/**
+	 * Returns the meta object for the reference '{@link pcmmm.StringType#getEReference0 <em>EReference0</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>EReference0</em>'.
+	 * @see pcmmm.StringType#getEReference0()
+	 * @see #getStringType()
+	 * @generated
+	 */
+	EReference getStringType_EReference0();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -3195,22 +3270,6 @@ public interface PcmmmPackage extends EPackage {
 		EClass DOMAIN = eINSTANCE.getDomain();
 
 		/**
-		 * The meta object literal for the '<em><b>Intervals</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DOMAIN__INTERVALS = eINSTANCE.getDomain_Intervals();
-
-		/**
-		 * The meta object literal for the '<em><b>Domain Litteral</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute DOMAIN__DOMAIN_LITTERAL = eINSTANCE.getDomain_DomainLitteral();
-
-		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3237,20 +3296,20 @@ public interface PcmmmPackage extends EPackage {
 		EClass INTERVAL = eINSTANCE.getInterval();
 
 		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Min</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERVAL__NAME = eINSTANCE.getInterval_Name();
+		EAttribute INTERVAL__MIN = eINSTANCE.getInterval_Min();
 
 		/**
-		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Max</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute INTERVAL__VALUE = eINSTANCE.getInterval_Value();
+		EAttribute INTERVAL__MAX = eINSTANCE.getInterval_Max();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.DomainCollectionImpl <em>Domain Collection</em>}' class.
@@ -3281,30 +3340,60 @@ public interface PcmmmPackage extends EPackage {
 		EClass TYPE = eINSTANCE.getType();
 
 		/**
-		 * The meta object literal for the '{@link pcmmm.impl.OrderedDomainImpl <em>Ordered Domain</em>}' class.
+		 * The meta object literal for the '{@link pcmmm.impl.EnumImpl <em>Enum</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see pcmmm.impl.OrderedDomainImpl
-		 * @see pcmmm.impl.PcmmmPackageImpl#getOrderedDomain()
+		 * @see pcmmm.impl.EnumImpl
+		 * @see pcmmm.impl.PcmmmPackageImpl#getEnum()
 		 * @generated
 		 */
-		EClass ORDERED_DOMAIN = eINSTANCE.getOrderedDomain();
+		EClass ENUM = eINSTANCE.getEnum();
 
 		/**
-		 * The meta object literal for the '<em><b>Previous</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Values</b></em>' attribute list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDERED_DOMAIN__PREVIOUS = eINSTANCE.getOrderedDomain_Previous();
+		EAttribute ENUM__VALUES = eINSTANCE.getEnum_Values();
 
 		/**
-		 * The meta object literal for the '<em><b>Next</b></em>' reference list feature.
+		 * The meta object literal for the '{@link pcmmm.impl.IntTypeImpl <em>Int Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see pcmmm.impl.IntTypeImpl
+		 * @see pcmmm.impl.PcmmmPackageImpl#getIntType()
+		 * @generated
+		 */
+		EClass INT_TYPE = eINSTANCE.getIntType();
+
+		/**
+		 * The meta object literal for the '{@link pcmmm.impl.DoubleTypeImpl <em>Double Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see pcmmm.impl.DoubleTypeImpl
+		 * @see pcmmm.impl.PcmmmPackageImpl#getDoubleType()
+		 * @generated
+		 */
+		EClass DOUBLE_TYPE = eINSTANCE.getDoubleType();
+
+		/**
+		 * The meta object literal for the '{@link pcmmm.impl.StringTypeImpl <em>String Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see pcmmm.impl.StringTypeImpl
+		 * @see pcmmm.impl.PcmmmPackageImpl#getStringType()
+		 * @generated
+		 */
+		EClass STRING_TYPE = eINSTANCE.getStringType();
+
+		/**
+		 * The meta object literal for the '<em><b>EReference0</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDERED_DOMAIN__NEXT = eINSTANCE.getOrderedDomain_Next();
+		EReference STRING_TYPE__EREFERENCE0 = eINSTANCE.getStringType_EReference0();
 
 	}
 

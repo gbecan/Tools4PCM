@@ -20,7 +20,6 @@ package pcmmm;
  * @generated
  */
 public interface Boolean extends Constraint {
-
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -46,4 +45,5 @@ public interface Boolean extends Constraint {
 	 * @generated
 	 */
 	void setValue(boolean value);
+
 } // Boolean

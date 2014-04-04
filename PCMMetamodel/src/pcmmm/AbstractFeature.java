@@ -4,7 +4,6 @@ package pcmmm;
 
 import org.eclipse.emf.common.util.EList;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Abstract Feature</b></em>'.
@@ -22,7 +21,6 @@ import org.eclipse.emf.common.util.EList;
  * @generated
  */
 public interface AbstractFeature extends VariabilityConcept {
-
 	/**
 	 * Returns the value of the '<em><b>My Valued Cells</b></em>' reference list.
 	 * The list contents are of type {@link pcmmm.ValuedCell}.
@@ -40,4 +38,5 @@ public interface AbstractFeature extends VariabilityConcept {
 	 * @generated
 	 */
 	EList<ValuedCell> getMyValuedCells();
+
 } // AbstractFeature

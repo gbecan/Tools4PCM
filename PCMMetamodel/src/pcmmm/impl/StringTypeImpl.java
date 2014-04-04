@@ -4,57 +4,48 @@ package pcmmm.impl;
 
 import com.google.gwt.user.client.rpc.GwtTransient;
 
-import java.lang.Boolean;
-
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import pcmmm.PcmmmPackage;
+import pcmmm.StringType;
+import pcmmm.Type;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Boolean</b></em>'.
+ * An implementation of the model object '<em><b>String Type</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link pcmmm.impl.BooleanImpl#isValue <em>Value</em>}</li>
+ *   <li>{@link pcmmm.impl.StringTypeImpl#getEReference0 <em>EReference0</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
+public class StringTypeImpl extends TypeImpl implements StringType {
 	/**
-	 * The default value of the '{@link #isValue() <em>Value</em>}' attribute.
+	 * The cached value of the '{@link #getEReference0() <em>EReference0</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isValue()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final boolean VALUE_EDEFAULT = false;
-
-	/**
-	 * The cached value of the '{@link #isValue() <em>Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #isValue()
+	 * @see #getEReference0()
 	 * @generated
 	 * @ordered
 	 */
 	@GwtTransient
-	protected boolean value = VALUE_EDEFAULT;
+	protected Type eReference0;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BooleanImpl() {
+	protected StringTypeImpl() {
 		super();
 	}
 
@@ -65,7 +56,7 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return PcmmmPackage.Literals.BOOLEAN;
+		return PcmmmPackage.Literals.STRING_TYPE;
 	}
 
 	/**
@@ -73,8 +64,16 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean isValue() {
-		return value;
+	public Type getEReference0() {
+		if (eReference0 != null && eReference0.eIsProxy()) {
+			InternalEObject oldEReference0 = (InternalEObject)eReference0;
+			eReference0 = (Type)eResolveProxy(oldEReference0);
+			if (eReference0 != oldEReference0) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, PcmmmPackage.STRING_TYPE__EREFERENCE0, oldEReference0, eReference0));
+			}
+		}
+		return eReference0;
 	}
 
 	/**
@@ -82,11 +81,20 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setValue(boolean newValue) {
-		boolean oldValue = value;
-		value = newValue;
+	public Type basicGetEReference0() {
+		return eReference0;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setEReference0(Type newEReference0) {
+		Type oldEReference0 = eReference0;
+		eReference0 = newEReference0;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.BOOLEAN__VALUE, oldValue, value));
+			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.STRING_TYPE__EREFERENCE0, oldEReference0, eReference0));
 	}
 
 	/**
@@ -97,8 +105,9 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case PcmmmPackage.BOOLEAN__VALUE:
-				return isValue();
+			case PcmmmPackage.STRING_TYPE__EREFERENCE0:
+				if (resolve) return getEReference0();
+				return basicGetEReference0();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -111,8 +120,8 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case PcmmmPackage.BOOLEAN__VALUE:
-				setValue((Boolean)newValue);
+			case PcmmmPackage.STRING_TYPE__EREFERENCE0:
+				setEReference0((Type)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -126,8 +135,8 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case PcmmmPackage.BOOLEAN__VALUE:
-				setValue(VALUE_EDEFAULT);
+			case PcmmmPackage.STRING_TYPE__EREFERENCE0:
+				setEReference0((Type)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -141,26 +150,10 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case PcmmmPackage.BOOLEAN__VALUE:
-				return value != VALUE_EDEFAULT;
+			case PcmmmPackage.STRING_TYPE__EREFERENCE0:
+				return eReference0 != null;
 		}
 		return super.eIsSet(featureID);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (value: ");
-		result.append(value);
-		result.append(')');
-		return result.toString();
-	}
-
-} //BooleanImpl
+} //StringTypeImpl

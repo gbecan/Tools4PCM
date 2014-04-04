@@ -2,8 +2,6 @@
  */
 package pcmmm;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -14,50 +12,16 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link pcmmm.Domain#getIntervals <em>Intervals</em>}</li>
- *   <li>{@link pcmmm.Domain#getDomainLitteral <em>Domain Litteral</em>}</li>
  *   <li>{@link pcmmm.Domain#getName <em>Name</em>}</li>
  *   <li>{@link pcmmm.Domain#getDomainType <em>Domain Type</em>}</li>
  * </ul>
  * </p>
  *
  * @see pcmmm.PcmmmPackage#getDomain()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface Domain extends EObject {
-	/**
-	 * Returns the value of the '<em><b>Intervals</b></em>' containment reference list.
-	 * The list contents are of type {@link pcmmm.Interval}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Intervals</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Intervals</em>' containment reference list.
-	 * @see pcmmm.PcmmmPackage#getDomain_Intervals()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<Interval> getIntervals();
-
-	/**
-	 * Returns the value of the '<em><b>Domain Litteral</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.String}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Domain Litteral</em>' attribute list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Domain Litteral</em>' attribute list.
-	 * @see pcmmm.PcmmmPackage#getDomain_DomainLitteral()
-	 * @model
-	 * @generated
-	 */
-	EList<String> getDomainLitteral();
-
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -95,7 +59,7 @@ public interface Domain extends EObject {
 	 * @return the value of the '<em>Domain Type</em>' containment reference.
 	 * @see #setDomainType(Type)
 	 * @see pcmmm.PcmmmPackage#getDomain_DomainType()
-	 * @model containment="true"
+	 * @model containment="true" required="true"
 	 * @generated
 	 */
 	Type getDomainType();

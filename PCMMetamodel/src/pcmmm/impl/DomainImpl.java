@@ -3,12 +3,9 @@
 package pcmmm.impl;
 
 import com.google.gwt.user.client.rpc.GwtTransient;
-import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -16,12 +13,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
-
 import pcmmm.Domain;
-import pcmmm.Interval;
 import pcmmm.PcmmmPackage;
 import pcmmm.Type;
 
@@ -32,8 +24,6 @@ import pcmmm.Type;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link pcmmm.impl.DomainImpl#getIntervals <em>Intervals</em>}</li>
- *   <li>{@link pcmmm.impl.DomainImpl#getDomainLitteral <em>Domain Litteral</em>}</li>
  *   <li>{@link pcmmm.impl.DomainImpl#getName <em>Name</em>}</li>
  *   <li>{@link pcmmm.impl.DomainImpl#getDomainType <em>Domain Type</em>}</li>
  * </ul>
@@ -41,29 +31,7 @@ import pcmmm.Type;
  *
  * @generated
  */
-public class DomainImpl extends MinimalEObjectImpl.Container implements Domain {
-	/**
-	 * The cached value of the '{@link #getIntervals() <em>Intervals</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getIntervals()
-	 * @generated
-	 * @ordered
-	 */
-	@GwtTransient
-	protected EList<Interval> intervals;
-
-	/**
-	 * The cached value of the '{@link #getDomainLitteral() <em>Domain Litteral</em>}' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDomainLitteral()
-	 * @generated
-	 * @ordered
-	 */
-	@GwtTransient
-	protected EList<String> domainLitteral;
-
+public abstract class DomainImpl extends MinimalEObjectImpl.Container implements Domain {
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -113,30 +81,6 @@ public class DomainImpl extends MinimalEObjectImpl.Container implements Domain {
 	@Override
 	protected EClass eStaticClass() {
 		return PcmmmPackage.Literals.DOMAIN;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Interval> getIntervals() {
-		if (intervals == null) {
-			intervals = new EObjectContainmentEList<Interval>(Interval.class, this, PcmmmPackage.DOMAIN__INTERVALS);
-		}
-		return intervals;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<String> getDomainLitteral() {
-		if (domainLitteral == null) {
-			domainLitteral = new EDataTypeUniqueEList<String>(String.class, this, PcmmmPackage.DOMAIN__DOMAIN_LITTERAL);
-		}
-		return domainLitteral;
 	}
 
 	/**
@@ -211,8 +155,6 @@ public class DomainImpl extends MinimalEObjectImpl.Container implements Domain {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case PcmmmPackage.DOMAIN__INTERVALS:
-				return ((InternalEList<?>)getIntervals()).basicRemove(otherEnd, msgs);
 			case PcmmmPackage.DOMAIN__DOMAIN_TYPE:
 				return basicSetDomainType(null, msgs);
 		}
@@ -227,10 +169,6 @@ public class DomainImpl extends MinimalEObjectImpl.Container implements Domain {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case PcmmmPackage.DOMAIN__INTERVALS:
-				return getIntervals();
-			case PcmmmPackage.DOMAIN__DOMAIN_LITTERAL:
-				return getDomainLitteral();
 			case PcmmmPackage.DOMAIN__NAME:
 				return getName();
 			case PcmmmPackage.DOMAIN__DOMAIN_TYPE:
@@ -244,18 +182,9 @@ public class DomainImpl extends MinimalEObjectImpl.Container implements Domain {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case PcmmmPackage.DOMAIN__INTERVALS:
-				getIntervals().clear();
-				getIntervals().addAll((Collection<? extends Interval>)newValue);
-				return;
-			case PcmmmPackage.DOMAIN__DOMAIN_LITTERAL:
-				getDomainLitteral().clear();
-				getDomainLitteral().addAll((Collection<? extends String>)newValue);
-				return;
 			case PcmmmPackage.DOMAIN__NAME:
 				setName((String)newValue);
 				return;
@@ -274,12 +203,6 @@ public class DomainImpl extends MinimalEObjectImpl.Container implements Domain {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case PcmmmPackage.DOMAIN__INTERVALS:
-				getIntervals().clear();
-				return;
-			case PcmmmPackage.DOMAIN__DOMAIN_LITTERAL:
-				getDomainLitteral().clear();
-				return;
 			case PcmmmPackage.DOMAIN__NAME:
 				setName(NAME_EDEFAULT);
 				return;
@@ -298,10 +221,6 @@ public class DomainImpl extends MinimalEObjectImpl.Container implements Domain {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case PcmmmPackage.DOMAIN__INTERVALS:
-				return intervals != null && !intervals.isEmpty();
-			case PcmmmPackage.DOMAIN__DOMAIN_LITTERAL:
-				return domainLitteral != null && !domainLitteral.isEmpty();
 			case PcmmmPackage.DOMAIN__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case PcmmmPackage.DOMAIN__DOMAIN_TYPE:
@@ -320,9 +239,7 @@ public class DomainImpl extends MinimalEObjectImpl.Container implements Domain {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (domainLitteral: ");
-		result.append(domainLitteral);
-		result.append(", name: ");
+		result.append(" (name: ");
 		result.append(name);
 		result.append(')');
 		return result.toString();

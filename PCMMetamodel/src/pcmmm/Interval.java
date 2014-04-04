@@ -2,7 +2,6 @@
  */
 package pcmmm;
 
-import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -12,8 +11,8 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link pcmmm.Interval#getName <em>Name</em>}</li>
- *   <li>{@link pcmmm.Interval#getValue <em>Value</em>}</li>
+ *   <li>{@link pcmmm.Interval#getMin <em>Min</em>}</li>
+ *   <li>{@link pcmmm.Interval#getMax <em>Max</em>}</li>
  * </ul>
  * </p>
  *
@@ -21,57 +20,57 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface Interval extends EObject {
+public interface Interval extends Domain {
 	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * Returns the value of the '<em><b>Min</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Min</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see pcmmm.PcmmmPackage#getInterval_Name()
+	 * @return the value of the '<em>Min</em>' attribute.
+	 * @see #setMin(String)
+	 * @see pcmmm.PcmmmPackage#getInterval_Min()
 	 * @model
 	 * @generated
 	 */
-	String getName();
+	String getMin();
 
 	/**
-	 * Sets the value of the '{@link pcmmm.Interval#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link pcmmm.Interval#getMin <em>Min</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
+	 * @param value the new value of the '<em>Min</em>' attribute.
+	 * @see #getMin()
 	 * @generated
 	 */
-	void setName(String value);
+	void setMin(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Value</b></em>' attribute.
+	 * Returns the value of the '<em><b>Max</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Max</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Value</em>' attribute.
-	 * @see #setValue(String)
-	 * @see pcmmm.PcmmmPackage#getInterval_Value()
+	 * @return the value of the '<em>Max</em>' attribute.
+	 * @see #setMax(String)
+	 * @see pcmmm.PcmmmPackage#getInterval_Max()
 	 * @model
 	 * @generated
 	 */
-	String getValue();
+	String getMax();
 
 	/**
-	 * Sets the value of the '{@link pcmmm.Interval#getValue <em>Value</em>}' attribute.
+	 * Sets the value of the '{@link pcmmm.Interval#getMax <em>Max</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Value</em>' attribute.
-	 * @see #getValue()
+	 * @param value the new value of the '<em>Max</em>' attribute.
+	 * @see #getMax()
 	 * @generated
 	 */
-	void setValue(String value);
+	void setMax(String value);
 
 } // Interval

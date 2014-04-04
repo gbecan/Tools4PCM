@@ -3,11 +3,16 @@
 package pcmmm.impl;
 
 import com.google.gwt.user.client.rpc.GwtTransient;
+
 import java.lang.Boolean;
+
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EClass;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
 import pcmmm.Constraint;
 import pcmmm.PcmmmPackage;
 

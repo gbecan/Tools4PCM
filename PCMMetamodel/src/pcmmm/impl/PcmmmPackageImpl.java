@@ -3,12 +3,16 @@
 package pcmmm.impl;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
+
 import org.eclipse.emf.common.util.Reflect;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
+
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
@@ -16,23 +20,25 @@ import pcmmm.Cell;
 import pcmmm.Constraint;
 import pcmmm.Domain;
 import pcmmm.DomainCollection;
+import pcmmm.DoubleType;
 import pcmmm.Empty;
 import pcmmm.Extra;
 import pcmmm.Feature;
 import pcmmm.FeatureFamily;
 import pcmmm.Header;
 import pcmmm.Inconsistent;
+import pcmmm.IntType;
 import pcmmm.Interval;
 import pcmmm.Matrix;
 import pcmmm.Multiple;
 import pcmmm.Or;
-import pcmmm.OrderedDomain;
 import pcmmm.Partial;
 import pcmmm.PcmmmFactory;
 import pcmmm.PcmmmPackage;
 import pcmmm.Product;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
+import pcmmm.StringType;
 import pcmmm.Type;
 import pcmmm.Unknown;
 import pcmmm.ValuedCell;
@@ -247,7 +253,28 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass orderedDomainEClass = null;
+	private EClass enumEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass intTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass doubleTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass stringTypeEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -627,17 +654,51 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 				 }
 			 });
 		Reflect.register
-			(OrderedDomain.class, 
+			(pcmmm.Enum.class, 
 			 new Reflect.Helper() {
 				 public boolean isInstance(Object instance) {
-					 return instance instanceof OrderedDomain;
+					 return instance instanceof pcmmm.Enum;
 				 }
 
 				 public Object newArrayInstance(int size) {
-					 return new OrderedDomain[size];
+					 return new pcmmm.Enum[size];
+				 }
+			 });
+		Reflect.register
+			(IntType.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof IntType;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new IntType[size];
+				 }
+			 });
+		Reflect.register
+			(DoubleType.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof DoubleType;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new DoubleType[size];
+				 }
+			 });
+		Reflect.register
+			(StringType.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof StringType;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new StringType[size];
 				 }
 			 });
 	}
+
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -846,7 +907,28 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		protected OrderedDomain orderedDomain;
+		protected pcmmm.Enum enum_;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected IntType intType;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected DoubleType doubleType;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected StringType stringType;
 
 	}
 
@@ -1395,26 +1477,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDomain_Intervals() {
-		return (EReference)domainEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getDomain_DomainLitteral() {
-		return (EAttribute)domainEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getDomain_Name() {
-		return (EAttribute)domainEClass.getEStructuralFeatures().get(2);
+		return (EAttribute)domainEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1423,7 +1487,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * @generated
 	 */
 	public EReference getDomain_DomainType() {
-		return (EReference)domainEClass.getEStructuralFeatures().get(3);
+		return (EReference)domainEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1440,7 +1504,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInterval_Name() {
+	public EAttribute getInterval_Min() {
 		return (EAttribute)intervalEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1449,7 +1513,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInterval_Value() {
+	public EAttribute getInterval_Max() {
 		return (EAttribute)intervalEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1485,8 +1549,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getOrderedDomain() {
-		return orderedDomainEClass;
+	public EClass getEnum() {
+		return enumEClass;
 	}
 
 	/**
@@ -1494,8 +1558,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getOrderedDomain_Previous() {
-		return (EReference)orderedDomainEClass.getEStructuralFeatures().get(0);
+	public EAttribute getEnum_Values() {
+		return (EAttribute)enumEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1503,8 +1567,35 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getOrderedDomain_Next() {
-		return (EReference)orderedDomainEClass.getEStructuralFeatures().get(1);
+	public EClass getIntType() {
+		return intTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDoubleType() {
+		return doubleTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getStringType() {
+		return stringTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getStringType_EReference0() {
+		return (EReference)stringTypeEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1619,23 +1710,27 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		xOrEClass = createEClass(XOR);
 
 		domainEClass = createEClass(DOMAIN);
-		createEReference(domainEClass, DOMAIN__INTERVALS);
-		createEAttribute(domainEClass, DOMAIN__DOMAIN_LITTERAL);
 		createEAttribute(domainEClass, DOMAIN__NAME);
 		createEReference(domainEClass, DOMAIN__DOMAIN_TYPE);
 
 		intervalEClass = createEClass(INTERVAL);
-		createEAttribute(intervalEClass, INTERVAL__NAME);
-		createEAttribute(intervalEClass, INTERVAL__VALUE);
+		createEAttribute(intervalEClass, INTERVAL__MIN);
+		createEAttribute(intervalEClass, INTERVAL__MAX);
 
 		domainCollectionEClass = createEClass(DOMAIN_COLLECTION);
 		createEReference(domainCollectionEClass, DOMAIN_COLLECTION__DOMAINS);
 
 		typeEClass = createEClass(TYPE);
 
-		orderedDomainEClass = createEClass(ORDERED_DOMAIN);
-		createEReference(orderedDomainEClass, ORDERED_DOMAIN__PREVIOUS);
-		createEReference(orderedDomainEClass, ORDERED_DOMAIN__NEXT);
+		enumEClass = createEClass(ENUM);
+		createEAttribute(enumEClass, ENUM__VALUES);
+
+		intTypeEClass = createEClass(INT_TYPE);
+
+		doubleTypeEClass = createEClass(DOUBLE_TYPE);
+
+		stringTypeEClass = createEClass(STRING_TYPE);
+		createEReference(stringTypeEClass, STRING_TYPE__EREFERENCE0);
 	}
 
 	/**
@@ -1685,7 +1780,11 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		andEClass.getESuperTypes().add(this.getMultiple());
 		orEClass.getESuperTypes().add(this.getMultiple());
 		xOrEClass.getESuperTypes().add(this.getMultiple());
-		orderedDomainEClass.getESuperTypes().add(this.getDomain());
+		intervalEClass.getESuperTypes().add(this.getDomain());
+		enumEClass.getESuperTypes().add(this.getDomain());
+		intTypeEClass.getESuperTypes().add(this.getType());
+		doubleTypeEClass.getESuperTypes().add(this.getType());
+		stringTypeEClass.getESuperTypes().add(this.getType());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(abstractProductEClass, AbstractProduct.class, "AbstractProduct", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1771,24 +1870,28 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 
 		initEClass(xOrEClass, XOr.class, "XOr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(domainEClass, Domain.class, "Domain", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getDomain_Intervals(), this.getInterval(), null, "intervals", null, 0, -1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getDomain_DomainLitteral(), ecorePackage.getEString(), "domainLitteral", null, 0, -1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(domainEClass, Domain.class, "Domain", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDomain_Name(), ecorePackage.getEString(), "name", null, 1, 1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDomain_DomainType(), this.getType(), null, "domainType", null, 0, 1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDomain_DomainType(), this.getType(), null, "domainType", null, 1, 1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(intervalEClass, Interval.class, "Interval", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getInterval_Name(), ecorePackage.getEString(), "name", null, 0, 1, Interval.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getInterval_Value(), ecorePackage.getEString(), "value", null, 0, 1, Interval.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInterval_Min(), ecorePackage.getEString(), "min", null, 0, 1, Interval.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInterval_Max(), ecorePackage.getEString(), "max", null, 0, 1, Interval.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(domainCollectionEClass, DomainCollection.class, "DomainCollection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDomainCollection_Domains(), this.getDomain(), null, "domains", null, 0, -1, DomainCollection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(typeEClass, Type.class, "Type", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(orderedDomainEClass, OrderedDomain.class, "OrderedDomain", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderedDomain_Previous(), this.getOrderedDomain(), this.getOrderedDomain_Next(), "previous", null, 0, -1, OrderedDomain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderedDomain_Next(), this.getOrderedDomain(), this.getOrderedDomain_Previous(), "next", null, 0, -1, OrderedDomain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(enumEClass, pcmmm.Enum.class, "Enum", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getEnum_Values(), ecorePackage.getEString(), "values", null, 0, -1, pcmmm.Enum.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(intTypeEClass, IntType.class, "IntType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(doubleTypeEClass, DoubleType.class, "DoubleType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(stringTypeEClass, StringType.class, "StringType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getStringType_EReference0(), this.getType(), null, "EReference0", null, 0, 1, StringType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
