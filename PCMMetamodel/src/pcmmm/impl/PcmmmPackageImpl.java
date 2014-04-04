@@ -1116,6 +1116,15 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getFeature_Domain() {
+		return (EReference)featureEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getVariabilityConcept() {
 		return variabilityConceptEClass;
 	}
@@ -1563,6 +1572,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		createEReference(featureFamilyEClass, FEATURE_FAMILY__FEATURES);
 
 		featureEClass = createEClass(FEATURE);
+		createEReference(featureEClass, FEATURE__DOMAIN);
 
 		variabilityConceptEClass = createEClass(VARIABILITY_CONCEPT);
 		createEAttribute(variabilityConceptEClass, VARIABILITY_CONCEPT__NAME);
@@ -1715,6 +1725,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		initEReference(getFeatureFamily_Features(), this.getAbstractFeature(), null, "features", null, 1, -1, FeatureFamily.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(featureEClass, Feature.class, "Feature", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getFeature_Domain(), this.getDomain(), null, "domain", null, 1, 1, Feature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(variabilityConceptEClass, VariabilityConcept.class, "VariabilityConcept", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getVariabilityConcept_Name(), ecorePackage.getEString(), "name", null, 0, 1, VariabilityConcept.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

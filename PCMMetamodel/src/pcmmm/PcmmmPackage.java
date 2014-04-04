@@ -661,13 +661,22 @@ public interface PcmmmPackage extends EPackage {
 	int FEATURE__MY_VALUED_CELLS = ABSTRACT_FEATURE__MY_VALUED_CELLS;
 
 	/**
+	 * The feature id for the '<em><b>Domain</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FEATURE__DOMAIN = ABSTRACT_FEATURE_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Feature</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FEATURE_FEATURE_COUNT = ABSTRACT_FEATURE_FEATURE_COUNT + 0;
+	int FEATURE_FEATURE_COUNT = ABSTRACT_FEATURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Feature</em>' class.
@@ -2169,6 +2178,17 @@ public interface PcmmmPackage extends EPackage {
 	EClass getFeature();
 
 	/**
+	 * Returns the meta object for the reference '{@link pcmmm.Feature#getDomain <em>Domain</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Domain</em>'.
+	 * @see pcmmm.Feature#getDomain()
+	 * @see #getFeature()
+	 * @generated
+	 */
+	EReference getFeature_Domain();
+
+	/**
 	 * Returns the meta object for class '{@link pcmmm.VariabilityConcept <em>Variability Concept</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2893,6 +2913,14 @@ public interface PcmmmPackage extends EPackage {
 		 * @generated
 		 */
 		EClass FEATURE = eINSTANCE.getFeature();
+
+		/**
+		 * The meta object literal for the '<em><b>Domain</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FEATURE__DOMAIN = eINSTANCE.getFeature_Domain();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.VariabilityConceptImpl <em>Variability Concept</em>}' class.
