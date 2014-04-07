@@ -3,11 +3,9 @@ package test
 import java.io.File
 import java.io.FileWriter
 import java.util.Collections
-
 import scala.collection.JavaConversions.asScalaBuffer
 import scala.io.Source
 import scala.xml.PrettyPrinter
-
 import org.eclipse.emf.common.util.Diagnostic
 import org.eclipse.emf.common.util.URI
 import org.eclipse.emf.ecore.resource.Resource
@@ -16,7 +14,6 @@ import org.eclipse.emf.ecore.util.Diagnostician
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
 import org.scalatest.FlatSpec
 import org.scalatest.Matchers
-
 import clustering.HierarchicalClusterer
 import export.PCM2HTML
 import extractor.PCMNormalizer
@@ -29,6 +26,8 @@ import pcmmm.PCM
 import pcmmm.PcmmmPackage
 import pcmmm.ValuedCell
 import uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein
+import extractor.DomainExtractor
+import pcmmm.Enum
 
 class VariabilityExtractorTest extends FlatSpec with Matchers {
 
@@ -146,6 +145,7 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	  variabilityExtractor.extractVariability(pcm)
 	  savePCMModel(pcm, file.getName())
 	  
+	  // Compute number of interpreted cells
 	  for (matrix <- pcm.getMatrices()) {
 		  val valuedCells = matrix.getCells().filter(cell => cell.isInstanceOf[ValuedCell])
 		  val interpretedCells = valuedCells.filter(cell => Option(cell.asInstanceOf[ValuedCell].getInterpretation()).isDefined)
@@ -153,8 +153,25 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 			  println((interpretedCells.size * 100) / valuedCells.size + "% of non extra cells"  + 
 			      " (" + interpretedCells.size + "/" + valuedCells.size + ")")
 		  }
-		  
 	  }
+      
+      // Compute warnings
+      for (matrix <- pcm.getMatrices();
+    		  cell <- matrix.getCells() if cell.isInstanceOf[ValuedCell]) {
+    	  val valuedCell = cell.asInstanceOf[ValuedCell]
+    	  val headerFeature = valuedCell.getMyHeaderFeatures().head.asInstanceOf[Feature]
+    	  val domain = headerFeature.getDomain().asInstanceOf[Enum]
+    	  
+    	  val domainExtractor = new DomainExtractor
+    	  val values = domainExtractor.listValues(valuedCell.getInterpretation()).map(_.getName())
+    	  
+    	  for (value <- values if !domain.getValues().contains(value)) {
+    		  println("WARNING : \"" + value + 
+    		      "\" in cell (" + 
+    		      cell.getRow() + "," + cell.getColumn() + 
+    		      ") is inconsistent")
+    	  }
+      }
   }
   
   it should "run on the test set" in {

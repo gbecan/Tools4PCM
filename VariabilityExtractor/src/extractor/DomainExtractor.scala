@@ -15,6 +15,7 @@ import pcmmm.Unknown
 import pcmmm.Inconsistent
 import pcmmm.Empty
 import pcmmm.Domain
+import pcmmm.StringType
 
 class DomainExtractor {
 
@@ -38,66 +39,78 @@ class DomainExtractor {
   }
   
   def extractDomain(pcm : PCM, feature : Feature) : Domain = {
-	  println("FOR : " + feature.getName())
-	  val significantCells = feature.getMyValuedCells().filter(_ match {
-	    case _ : Inconsistent => false
-	    case _ : Unknown => false
-	    case _ : Empty => false
-	    case _ => true
-	  }) 
+	  val values = feature.getMyValuedCells().flatMap(cell => listValues(cell.getInterpretation())).toList
 	  
-	  println("CHECK : " + significantCells.forall(!_.isInstanceOf[Unknown]))
-	  
-	  val values = significantCells.flatMap(cell => listValues(cell.getInterpretation())).toList
-	  
-	  println("values")
-	  println(values)
-
-	  // Types
-	  val intValues = (
+	  // Separate values according to types
+	  val intDomain = (
 	      PcmmmFactory.eINSTANCE.createIntType(), 
-	      values.filter(_.matches("\\d+"))
+	      values.filter(_.getName.matches("\\d+"))
 	      )
-	  val doubleValues = (
+	  val doubleDomain = (
 	      PcmmmFactory.eINSTANCE.createDoubleType(),
-	      values.filter(_.matches("\\d+(\\.\\d+)?"))
+	      values.filter(_.getName.matches("\\d+(\\.\\d+)?"))
 	      )
-	  val booleanValues = feature.getMyValuedCells().filter(_.getInterpretation().isInstanceOf[pcmmm.Boolean])
-	  val unknownValues = feature.getMyValuedCells().filter(_.getInterpretation().isInstanceOf[Unknown])
-	  val inconsistentValues = feature.getMyValuedCells().filter(_.getInterpretation().isInstanceOf[Inconsistent])
-
+	  val booleanDomain = (
+	      PcmmmFactory.eINSTANCE.createBooleanType(),
+	      values.filter(_.isInstanceOf[pcmmm.Boolean])
+	      )
+	  val stringDomain = (PcmmmFactory.eINSTANCE.createStringType(),
+	      values
+	      )
+	      
+	  // Get most represented type
+	  val mainType = List(intDomain,doubleDomain,booleanDomain,stringDomain).maxBy(_._2.size)
 	  
 	  
-	  // Clustering
-	  println("clusters")
-	  val clusters = cellClusterer.cluster(values)
-	  val significantClusters = clusters.filter(cluster => isSignificantCluster(cluster, clusters.size))
-	  
-	  for (cluster <- clusters) {
-		   	println(cluster + " : " + cluster.size )
-	   }
-	  println()
+	  // Cluster values if the type is String
+	  val domainValues = if (mainType._1.isInstanceOf[StringType]) {
+		  
+		  val clusters = cellClusterer.cluster(values.map(_.getName()))
+		  val significantClusters = clusters.filter(cluster => isSignificantCluster(cluster, clusters.size))
+		  
+//		  println("clusters")
+//		  for (cluster <- clusters) {
+//			   	println(cluster + " : " + cluster.size )
+//		   }
+//		  println()
+		  
+		  if (significantClusters.isEmpty) {
+		    Nil
+		  } else {
+		    significantClusters.reduceLeft(_ union _)
+		  }
+	  } else {
+		  mainType._2.map(_.getName())
+	  }
 	  
 	  // Create domain
 	  val domain = PcmmmFactory.eINSTANCE.createEnum()
-	  val domainValues = if (significantClusters.isEmpty) {
-	    Set.empty
-	  } else {
-	    significantClusters.reduceLeft(_ union _)
-	  }
 	  domain.getValues().addAll(domainValues)
+	  domain.setDomainType(mainType._1)
 	  
 	  // Add domain to the feature
 	  feature.setDomain(domain)
 	  
+//	  println("FOR : " + feature.getName())
+//	  println("\ttype : " + domain.getDomainType())
+//	  println("\tvalues : " + domain.getValues())
+	  
 	  domain
   }
   
-  def listValues(interpretation : Constraint) : List[String] = {
+  /**
+   * List Simple and Boolean constraints from the interpretation of a cell
+   * (Unknown, Empty and Inconsistent constraints are ignored)
+   * (Partial and Multiple constraints are decomposed) 
+   */
+  def listValues(interpretation : Constraint) : List[Constraint] = {
      interpretation match {
+       	case _ : Inconsistent => Nil
+	    case _ : Unknown => Nil
+	    case _ : Empty => Nil
 	    case c : Multiple => c.getContraints().flatMap(listValues(_)).toList
 	    case c : Partial => listValues(c.getArgument()) ::: listValues(c.getCondition())
-	  	case c if Option(c).isDefined => List(c.getName())
+	  	case c if Option(c).isDefined => List(c)
 	  	case _ => Nil
 	  }
   }
