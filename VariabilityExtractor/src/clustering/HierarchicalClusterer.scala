@@ -18,7 +18,7 @@ class HierarchicalClusterer[T](
 ) {
 
   
-	def cluster(values : List[T]) : Set[List[T]] = {
+	def cluster(values : List[T]) : List[List[T]] = {
 		val experiment = new ClusteringExperiment(values.toIndexedSeq) 
 		val dissimilarityMeasure = new ClusteringDissimilarityMeasure(dissimilarityMetric)
 		val agglomerationMethod : AgglomerationMethod = new AverageLinkage
@@ -28,22 +28,22 @@ class HierarchicalClusterer[T](
 		extractClusters(experiment, threshold, dendrogramBuilder.getDendrogram)
 	}
 	
-	private def extractClusters[T](experiment : ClusteringExperiment[T], threshold : Double, dendrogram : Dendrogram) : Set[List[T]] = {
-			def extractClustersRecursion(node : DendrogramNode) : Set[List[T]] = {
+	private def extractClusters[T](experiment : ClusteringExperiment[T], threshold : Double, dendrogram : Dendrogram) : List[List[T]] = {
+			def extractClustersRecursion(node : DendrogramNode) : List[List[T]] = {
 				node match {
 				  case n : MergeNode if n.getDissimilarity() > threshold => 
 				    extractClustersRecursion(n.getLeft()) union extractClustersRecursion(n.getRight())
 				  case n : MergeNode => 
 				    val left = extractClustersRecursion(n.getLeft())
 				    val right = extractClustersRecursion(n.getRight())
-				    Set((left union right).reduce(_ ::: _))
-				  case n : ObservationNode => Set(List(experiment.getObservation(n.getObservation())))
+				    List((left ::: right).flatten)
+				  case n : ObservationNode => List(experiment.getObservation(n.getObservation) :: Nil) //Set(List(experiment.getObservation(n.getObservation())))
 				}
 			}
 			if (Option(dendrogram.getRoot()).isDefined) {
 				extractClustersRecursion(dendrogram.getRoot())
 			} else {
-			  Set.empty
+			  Nil
 			}
 	}
   

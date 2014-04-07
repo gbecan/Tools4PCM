@@ -13,6 +13,8 @@ import pcmmm.Constraint
 import pcmmm.Partial
 import pcmmm.Unknown
 import pcmmm.Inconsistent
+import pcmmm.Empty
+import pcmmm.Domain
 
 class DomainExtractor {
 
@@ -25,28 +27,46 @@ class DomainExtractor {
 	  val domainCollection = PcmmmFactory.eINSTANCE.createDomainCollection()
 	  pcm.setDomainCollection(domainCollection)
 	  
-	  for (concept <- pcm.getConcepts()) {
+	  val domains = for (concept <- pcm.getConcepts()) yield {
 		  concept match {
 		    case feature : Feature if !feature.getMyValuedCells().isEmpty() => 
-		      extractDomain(pcm, feature)
-		    case _ => 
+		     	Some(extractDomain(pcm, feature))
+		    case _ => None
 		  }
 	  } 
+	  domainCollection.getDomains().addAll(domains.flatten.toList)
   }
   
-  def extractDomain(pcm : PCM, feature : Feature) {
+  def extractDomain(pcm : PCM, feature : Feature) : Domain = {
 	  println("FOR : " + feature.getName())
-	  val values = feature.getMyValuedCells().flatMap(cell => listValues(cell.getInterpretation())).toList
+	  val significantCells = feature.getMyValuedCells().filter(_ match {
+	    case _ : Inconsistent => false
+	    case _ : Unknown => false
+	    case _ : Empty => false
+	    case _ => true
+	  }) 
+	  
+	  println("CHECK : " + significantCells.forall(!_.isInstanceOf[Unknown]))
+	  
+	  val values = significantCells.flatMap(cell => listValues(cell.getInterpretation())).toList
 	  
 	  println("values")
 	  println(values)
 
 	  // Types
-	  val intValues = values.count(_.matches("\\d+"))
-	  val doubleValues = values.count(_.matches("\\d+(\\.\\d+)?"))
-	  val booleanValues = feature.getMyValuedCells().count(_.getInterpretation().isInstanceOf[pcmmm.Boolean])
-	  val unknownValues = feature.getMyValuedCells().count(_.getInterpretation().isInstanceOf[Unknown])
-	  val inconsistentValues = feature.getMyValuedCells().count(_.getInterpretation().isInstanceOf[Inconsistent])
+	  val intValues = (
+	      PcmmmFactory.eINSTANCE.createIntType(), 
+	      values.filter(_.matches("\\d+"))
+	      )
+	  val doubleValues = (
+	      PcmmmFactory.eINSTANCE.createDoubleType(),
+	      values.filter(_.matches("\\d+(\\.\\d+)?"))
+	      )
+	  val booleanValues = feature.getMyValuedCells().filter(_.getInterpretation().isInstanceOf[pcmmm.Boolean])
+	  val unknownValues = feature.getMyValuedCells().filter(_.getInterpretation().isInstanceOf[Unknown])
+	  val inconsistentValues = feature.getMyValuedCells().filter(_.getInterpretation().isInstanceOf[Inconsistent])
+
+	  
 	  
 	  // Clustering
 	  println("clusters")
@@ -59,25 +79,26 @@ class DomainExtractor {
 	  println()
 	  
 	  // Create domain
-	  val domain = PcmmmFactory.eINSTANCE.createDomain()
+	  val domain = PcmmmFactory.eINSTANCE.createEnum()
 	  val domainValues = if (significantClusters.isEmpty) {
 	    Set.empty
 	  } else {
 	    significantClusters.reduceLeft(_ union _)
 	  }
-	  domain.getDomainLitteral().addAll(domainValues)
+	  domain.getValues().addAll(domainValues)
 	  
-	  // Add domain to the PCM and the feature
-	  val domains = pcm.getDomainCollection().getDomains()
-	  domains.add(domain)
-	  // TODO : add the domain to the feature
+	  // Add domain to the feature
+	  feature.setDomain(domain)
+	  
+	  domain
   }
   
   def listValues(interpretation : Constraint) : List[String] = {
      interpretation match {
 	    case c : Multiple => c.getContraints().flatMap(listValues(_)).toList
 	    case c : Partial => listValues(c.getArgument()) ::: listValues(c.getCondition())
-	  	case c => List(c.getName()) 
+	  	case c if Option(c).isDefined => List(c.getName())
+	  	case _ => Nil
 	  }
   }
   
