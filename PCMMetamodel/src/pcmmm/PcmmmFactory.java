@@ -247,6 +247,15 @@ public interface PcmmmFactory extends EFactory {
 	StringType createStringType();
 
 	/**
+	 * Returns a new object of class '<em>Boolean Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Boolean Type</em>'.
+	 * @generated
+	 */
+	BooleanType createBooleanType();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

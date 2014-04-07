@@ -1935,6 +1935,35 @@ public interface PcmmmPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link pcmmm.impl.BooleanTypeImpl <em>Boolean Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see pcmmm.impl.BooleanTypeImpl
+	 * @see pcmmm.impl.PcmmmPackageImpl#getBooleanType()
+	 * @generated
+	 */
+	int BOOLEAN_TYPE = 32;
+
+	/**
+	 * The number of structural features of the '<em>Boolean Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOLEAN_TYPE_FEATURE_COUNT = TYPE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Boolean Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOLEAN_TYPE_OPERATION_COUNT = TYPE_OPERATION_COUNT + 0;
+
+
+	/**
 	 * Returns the meta object for class '{@link pcmmm.AbstractProduct <em>Abstract Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2717,6 +2746,16 @@ public interface PcmmmPackage extends EPackage {
 	EReference getStringType_EReference0();
 
 	/**
+	 * Returns the meta object for class '{@link pcmmm.BooleanType <em>Boolean Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Boolean Type</em>'.
+	 * @see pcmmm.BooleanType
+	 * @generated
+	 */
+	EClass getBooleanType();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3394,6 +3433,16 @@ public interface PcmmmPackage extends EPackage {
 		 * @generated
 		 */
 		EReference STRING_TYPE__EREFERENCE0 = eINSTANCE.getStringType_EReference0();
+
+		/**
+		 * The meta object literal for the '{@link pcmmm.impl.BooleanTypeImpl <em>Boolean Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see pcmmm.impl.BooleanTypeImpl
+		 * @see pcmmm.impl.PcmmmPackageImpl#getBooleanType()
+		 * @generated
+		 */
+		EClass BOOLEAN_TYPE = eINSTANCE.getBooleanType();
 
 	}
 

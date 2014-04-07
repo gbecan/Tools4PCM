@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
+import pcmmm.BooleanType;
 import pcmmm.Cell;
 import pcmmm.Constraint;
 import pcmmm.Domain;
@@ -275,6 +276,13 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * @generated
 	 */
 	private EClass stringTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass booleanTypeEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -697,6 +705,17 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 					 return new StringType[size];
 				 }
 			 });
+		Reflect.register
+			(BooleanType.class, 
+			 new Reflect.Helper() {
+				 public boolean isInstance(Object instance) {
+					 return instance instanceof BooleanType;
+				 }
+
+				 public Object newArrayInstance(int size) {
+					 return new BooleanType[size];
+				 }
+			 });
 	}
 
 
@@ -929,6 +948,13 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		 * @generated
 		 */
 		protected StringType stringType;
+
+		/**
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		protected BooleanType booleanType;
 
 	}
 
@@ -1603,6 +1629,15 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getBooleanType() {
+		return booleanTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PcmmmFactory getPcmmmFactory() {
 		return (PcmmmFactory)getEFactoryInstance();
 	}
@@ -1731,6 +1766,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 
 		stringTypeEClass = createEClass(STRING_TYPE);
 		createEReference(stringTypeEClass, STRING_TYPE__EREFERENCE0);
+
+		booleanTypeEClass = createEClass(BOOLEAN_TYPE);
 	}
 
 	/**
@@ -1785,6 +1822,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		intTypeEClass.getESuperTypes().add(this.getType());
 		doubleTypeEClass.getESuperTypes().add(this.getType());
 		stringTypeEClass.getESuperTypes().add(this.getType());
+		booleanTypeEClass.getESuperTypes().add(this.getType());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(abstractProductEClass, AbstractProduct.class, "AbstractProduct", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1892,6 +1930,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 
 		initEClass(stringTypeEClass, StringType.class, "StringType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getStringType_EReference0(), this.getType(), null, "EReference0", null, 0, 1, StringType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(booleanTypeEClass, BooleanType.class, "BooleanType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

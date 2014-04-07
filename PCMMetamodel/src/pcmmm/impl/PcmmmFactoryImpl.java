@@ -11,6 +11,7 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
 import pcmmm.And;
+import pcmmm.BooleanType;
 import pcmmm.DomainCollection;
 import pcmmm.DoubleType;
 import pcmmm.Empty;
@@ -105,6 +106,7 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 			case PcmmmPackage.INT_TYPE: return createIntType();
 			case PcmmmPackage.DOUBLE_TYPE: return createDoubleType();
 			case PcmmmPackage.STRING_TYPE: return createStringType();
+			case PcmmmPackage.BOOLEAN_TYPE: return createBooleanType();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -358,6 +360,16 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 	public StringType createStringType() {
 		StringTypeImpl stringType = new StringTypeImpl();
 		return stringType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BooleanType createBooleanType() {
+		BooleanTypeImpl booleanType = new BooleanTypeImpl();
+		return booleanType;
 	}
 
 	/**

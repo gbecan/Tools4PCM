@@ -10,6 +10,7 @@ import org.eclipse.emf.ecore.util.Switch;
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
+import pcmmm.BooleanType;
 import pcmmm.Cell;
 import pcmmm.Constraint;
 import pcmmm.Domain;
@@ -316,6 +317,13 @@ public class PcmmmSwitch<T> extends Switch<T> {
 				StringType stringType = (StringType)theEObject;
 				T result = caseStringType(stringType);
 				if (result == null) result = caseType(stringType);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case PcmmmPackage.BOOLEAN_TYPE: {
+				BooleanType booleanType = (BooleanType)theEObject;
+				T result = caseBooleanType(booleanType);
+				if (result == null) result = caseType(booleanType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -800,6 +808,21 @@ public class PcmmmSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseStringType(StringType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Boolean Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Boolean Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBooleanType(BooleanType object) {
 		return null;
 	}
 

@@ -12,6 +12,7 @@ import org.eclipse.emf.ecore.EObject;
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
+import pcmmm.BooleanType;
 import pcmmm.Cell;
 import pcmmm.Constraint;
 import pcmmm.Domain;
@@ -224,6 +225,10 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseStringType(StringType object) {
 				return createStringTypeAdapter();
+			}
+			@Override
+			public Adapter caseBooleanType(BooleanType object) {
+				return createBooleanTypeAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -690,6 +695,20 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createStringTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link pcmmm.BooleanType <em>Boolean Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see pcmmm.BooleanType
+	 * @generated
+	 */
+	public Adapter createBooleanTypeAdapter() {
 		return null;
 	}
 
