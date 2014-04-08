@@ -234,7 +234,11 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 		  // Extract variability
 		  variabilityExtractor.extractVariability(pcm)
 		
-		  // Validate and save model
+		  // Compute warnings
+		  val warnings = computeWarnings(pcm)
+		  setWarningAsInconsistentCell(warnings)
+		  
+		  // Validate model
 		  val diagnostic = Diagnostician.INSTANCE.validate(pcm)
 		  if (diagnostic.getSeverity() == Diagnostic.OK) {
 			  println("... model is OK")
@@ -268,8 +272,8 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	
 		  }
 		  
-      // Compute warnings
-	  computeWarnings(pcm).foreach(warning => 
+      // Display warnings
+	  warnings.foreach(warning => 
 	    println("WARNING : \"" + warning._2 + 
     		      "\" in cell (" + 
     		      warning._1.getRow() + "," + warning._1.getColumn() + 

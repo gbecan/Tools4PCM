@@ -26,7 +26,7 @@ class MultiplePatternInterpreter (
 		  for (groupID <- 1 to matcher.groupCount()) {
 			  val subConstraint = matcher.group(groupID)
 			  if (subConstraint != null) {
-				  lastCall = Some(format(s), products, features) 
+				  lastCall = Some(s, products, features) 
 				  val subCInterpretation = cellContentInterpreter.findInterpretation(subConstraint, products, features)
 				  if (subCInterpretation.isDefined) {
 				    constraint.getContraints().add(subCInterpretation.get)

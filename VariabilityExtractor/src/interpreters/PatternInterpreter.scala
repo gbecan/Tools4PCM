@@ -20,7 +20,7 @@ abstract class PatternInterpreter(
     val confident : Boolean
     ) {
 	
-	private val pattern : Pattern =  Pattern.compile(regex, Pattern.UNICODE_CHARACTER_CLASS | Pattern.CASE_INSENSITIVE)
+	private val pattern : Pattern =  Pattern.compile(regex, Pattern.UNICODE_CHARACTER_CLASS | Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE)
 
 	private var validProducts : List[Product] = Nil
     private var validFeatures : List[Feature] = Nil
@@ -56,7 +56,8 @@ abstract class PatternInterpreter(
 		  if ((validProducts.isEmpty || !products.intersect(validProducts).isEmpty)
 				  && (validFeatures.isEmpty || !features.intersect(validFeatures).isEmpty)) {
 		    
-			  val matcher = pattern.matcher(format(s))
+//			  val matcher = pattern.matcher(format(s))
+		    val matcher = pattern.matcher(s)
 			  if (matcher.matches()) {
 				result = createConstraint(s, matcher, parameters, products, features)
 			  }
