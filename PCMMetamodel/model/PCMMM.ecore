@@ -97,7 +97,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Or" eSuperTypes="#//Multiple"/>
   <eClassifiers xsi:type="ecore:EClass" name="XOr" eSuperTypes="#//Multiple"/>
   <eClassifiers xsi:type="ecore:EClass" name="Domain" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="domainType" lowerBound="1"
         eType="#//Type" containment="true"/>
   </eClassifiers>
