@@ -21,7 +21,7 @@ class DomainExtractor {
 
   val metric = new Levenshtein
   val dissimilarityMetric : (String, String) => Double = (v1, v2) => 
-	     1 - metric.getSimilarity(v1, v2)
+	     1 - metric.getSimilarity(v1.toLowerCase(), v2.toLowerCase())
   val cellClusterer = new HierarchicalClusterer(dissimilarityMetric, 0.5)
   
   def extractDomains(pcm : PCM) {
@@ -31,14 +31,15 @@ class DomainExtractor {
 	  val domains = for (concept <- pcm.getConcepts()) yield {
 		  concept match {
 		    case feature : Feature if !feature.getMyValuedCells().isEmpty() => 
-		     	Some(extractDomain(pcm, feature))
+		     	Some(extractDomain(feature))
+		    case feature : Feature => Some(setDefaultDomain(feature))
 		    case _ => None
 		  }
 	  } 
 	  domainCollection.getDomains().addAll(domains.flatten.toList)
   }
   
-  def extractDomain(pcm : PCM, feature : Feature) : Domain = {
+  def extractDomain(feature : Feature) : Domain = {
 	  val values = feature.getMyValuedCells().flatMap(cell => listValues(cell.getInterpretation())).toList
 	  
 	  // Separate values according to types
@@ -120,6 +121,13 @@ class DomainExtractor {
 		(cluster.size.toDouble / nbOfClusters.toDouble) > bigClusterThreshold
   }
   
+  
+  def setDefaultDomain(feature : Feature) : Domain = {
+		  val domain = PcmmmFactory.eINSTANCE.createEnum()
+		  domain.setDomainType(PcmmmFactory.eINSTANCE.createBooleanType())
+		  feature.setDomain(domain)
+		  domain
+  }
 
   
 }

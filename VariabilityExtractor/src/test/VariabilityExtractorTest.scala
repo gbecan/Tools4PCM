@@ -28,6 +28,7 @@ import pcmmm.ValuedCell
 import uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein
 import extractor.DomainExtractor
 import pcmmm.Enum
+import pcmmm.PcmmmFactory
 
 class VariabilityExtractorTest extends FlatSpec with Matchers {
 
@@ -75,6 +76,34 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	    
   }
   
+  def computeWarnings(pcm : PCM) : List[(ValuedCell, String)] = {
+	var warnings : List[(ValuedCell, String)] = Nil 
+      for (matrix <- pcm.getMatrices();
+    		  cell <- matrix.getCells() if cell.isInstanceOf[ValuedCell]) {
+    	  val valuedCell = cell.asInstanceOf[ValuedCell]
+    	  val headerFeature = valuedCell.getMyHeaderFeatures().head.asInstanceOf[Feature]
+    	  val domain = headerFeature.getDomain().asInstanceOf[Enum]
+    	  
+    	  val domainExtractor = new DomainExtractor
+    	  val values = domainExtractor.listValues(valuedCell.getInterpretation()).map(_.getName())
+    	  
+    	  for (value <- values if !domain.getValues().contains(value)) {
+    		warnings ::= (valuedCell, value)
+    	  }
+      }
+	warnings
+  }
+  
+  def setWarningAsInconsistentCell(warnings : List[(ValuedCell, String)]) {
+	for (warning <- warnings) {
+		val cell = warning._1
+		val interpretation = PcmmmFactory.eINSTANCE.createInconsistent()
+		interpretation.setName(cell.getVerbatim())
+		cell.setInterpretation(interpretation)
+	}
+  } 
+  
+ 
   "VariabilityExtractor" should "run on every input file" in {
 	  val variabilityExtractor = new VariabilityExtractor
     
@@ -143,7 +172,23 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	  val variabilityExtractor = new VariabilityExtractor
       variabilityExtractor.parseConfigurationFile(configFile.getAbsolutePath())
 	  variabilityExtractor.extractVariability(pcm)
+	  
+	  // Compute warnings
+	  val warnings = computeWarnings(pcm)
+	  setWarningAsInconsistentCell(warnings)
+	  
+	  // Save model
 	  savePCMModel(pcm, file.getName())
+	  
+	  // Validate model
+	  val diagnostic = Diagnostician.INSTANCE.validate(pcm)
+	  if (diagnostic.getSeverity() == Diagnostic.OK) {
+		println("OK")
+	  } else {
+	    println(diagnostic.getSeverity())
+	    println(diagnostic)
+		println("NOT VALID")
+	  }
 	  
 	  // Compute number of interpreted cells
 	  for (matrix <- pcm.getMatrices()) {
@@ -155,23 +200,12 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 		  }
 	  }
       
-      // Compute warnings
-      for (matrix <- pcm.getMatrices();
-    		  cell <- matrix.getCells() if cell.isInstanceOf[ValuedCell]) {
-    	  val valuedCell = cell.asInstanceOf[ValuedCell]
-    	  val headerFeature = valuedCell.getMyHeaderFeatures().head.asInstanceOf[Feature]
-    	  val domain = headerFeature.getDomain().asInstanceOf[Enum]
-    	  
-    	  val domainExtractor = new DomainExtractor
-    	  val values = domainExtractor.listValues(valuedCell.getInterpretation()).map(_.getName())
-    	  
-    	  for (value <- values if !domain.getValues().contains(value)) {
-    		  println("WARNING : \"" + value + 
+      // Display warnings
+	  warnings.foreach(warning => 
+	    println("WARNING : \"" + warning._2 + 
     		      "\" in cell (" + 
-    		      cell.getRow() + "," + cell.getColumn() + 
-    		      ") is inconsistent")
-    	  }
-      }
+    		      warning._1.getRow() + "," + warning._1.getColumn() + 
+    		      ") is inconsistent"))
   }
   
   it should "run on the test set" in {
@@ -233,6 +267,13 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 			  }
 	
 		  }
+		  
+      // Compute warnings
+	  computeWarnings(pcm).foreach(warning => 
+	    println("WARNING : \"" + warning._2 + 
+    		      "\" in cell (" + 
+    		      warning._1.getRow() + "," + warning._1.getColumn() + 
+    		      ") is inconsistent"))
 	  }
 	
 	  println("Average per cell : " + ((sumInterpretedCells * 100) / sumValuedCells).toInt + "%" + " (" + sumInterpretedCells.toInt + "/" + sumValuedCells.toInt + ")")

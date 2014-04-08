@@ -19,7 +19,6 @@ import pcmmm.Multiple
 import pcmmm.And
 import pcmmm.XOr
 import pcmmm.Or
-import pcmmm.YesOnly
 
 class PCM2HTML {
 
@@ -94,7 +93,6 @@ class PCM2HTML {
 		    case i : XOr => "XOr(" + multipleInterpretation2string(i) + ")"
 		    case i : Or => "Or(" + multipleInterpretation2string(i) + ")"
 		    case i : Multiple => "Multiple(" + multipleInterpretation2string(i) + ")"
-		    case i : YesOnly => "YesOnly(" + i.getName() + ")"
 			}
 		  } else {
 		    ""
