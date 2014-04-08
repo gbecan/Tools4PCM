@@ -16,6 +16,7 @@ import pcmmm.Inconsistent
 import pcmmm.Empty
 import pcmmm.Domain
 import pcmmm.StringType
+import uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWaterman
 
 class DomainExtractor {
 
@@ -56,7 +57,7 @@ class DomainExtractor {
 	      values.filter(_.isInstanceOf[pcmmm.Boolean])
 	      )
 	  val stringDomain = (PcmmmFactory.eINSTANCE.createStringType(),
-	      values
+	      values//.filter(!_.isInstanceOf[pcmmm.Boolean])
 	      )
 	      
 	  // Get most represented type
@@ -67,13 +68,7 @@ class DomainExtractor {
 	  val domainValues = if (mainType._1.isInstanceOf[StringType]) {
 		  
 		  val clusters = cellClusterer.cluster(values.map(_.getName()))
-		  val significantClusters = clusters.filter(cluster => isSignificantCluster(cluster, clusters.size))
-		  
-//		  println("clusters")
-//		  for (cluster <- clusters) {
-//			   	println(cluster + " : " + cluster.size )
-//		   }
-//		  println()
+		  val significantClusters = selectSignificantClusters(clusters, values.size)
 		  
 		  if (significantClusters.isEmpty) {
 		    Nil
@@ -91,10 +86,6 @@ class DomainExtractor {
 	  
 	  // Add domain to the feature
 	  feature.setDomain(domain)
-	  
-//	  println("FOR : " + feature.getName())
-//	  println("\ttype : " + domain.getDomainType())
-//	  println("\tvalues : " + domain.getValues())
 	  
 	  domain
   }
@@ -116,9 +107,35 @@ class DomainExtractor {
 	  }
   }
   
-  def isSignificantCluster(cluster : List[String], nbOfClusters : Int) : Boolean = {
-		val bigClusterThreshold = 0.3
-		(cluster.size.toDouble / nbOfClusters.toDouble) > bigClusterThreshold
+  /**
+   * Select clusters that are significant enough to be integrated in the domain of a feature
+   */
+  def selectSignificantClusters(clusters : List[List[String]], nbOfValues : Int) : List[List[String]] = {
+		var significantClusters : List[List[String]] = Nil
+		
+//		println("--------------->\t" + clusters )
+//  		clusters.foreach(cluster => {println(cluster.distinct)
+//  		    println(cluster.distinct.size)})
+		
+		val bigClusterThreshold = 0.20
+		
+		for (cluster <- clusters) {
+		  
+			// Big clusters
+			if ((cluster.size.toDouble / nbOfValues.toDouble) > bigClusterThreshold) {
+				significantClusters ::= cluster
+			} 
+			// Same value written 10 times
+			else if (cluster.distinct.size == 1 && cluster.size >= 10) {
+//				println("===========>\t" + cluster )
+				significantClusters ::= cluster
+			}
+		}
+		
+
+		
+		
+		significantClusters
   }
   
   
