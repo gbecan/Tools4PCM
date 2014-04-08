@@ -1,0 +1,1418 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="">
+    <cells xsi:type="pcmmm:Header" name="0,0: architecture" verbatim="Architecture" rowspan="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: family" verbatim="Family" rowspan="2" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: code name" verbatim="Code Name" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: model group" verbatim="Model Group" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: speed (mhz)" verbatim="Speed (MHz)" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: socket" verbatim="Socket" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: process (nm)" verbatim="Process (nm)" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: cores" verbatim="Cores" rowspan="2" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: fsb/ht(mhz)" verbatim="FSB/HT(MHz)" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: cache (kib)" verbatim="Cache (KiB)" rowspan="1" column="9" colspan="3"/>
+    <cells xsi:type="pcmmm:Header" name="0,12: memory controller" verbatim="Memory Controller" rowspan="2" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,13: supported features" verbatim="Supported Features" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,14: tdp (watts)" verbatim="TDP (watts)" rowspan="2" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,15: gflops/watt" verbatim="GFLOPS/watt" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,16: processing power (gflops)" verbatim="Processing Power (GFLOPS)" rowspan="2" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,9: l1" verbatim="L1" row="1" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,10: l2" verbatim="L2" row="1" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,11: l3" verbatim="L3" row="1" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: am386" verbatim="Am386" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: am386" verbatim="Am386" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: sx/sxl/sxlv" verbatim="Sx/SxL/SxLV" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: " verbatim="" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: 25-40" verbatim="25-40" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: 100 pqfp" verbatim="100 PQFP" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: " verbatim="" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: 1" verbatim="1" row="2" rowspan="32" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: " verbatim="" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,9: " verbatim="" row="2" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,10: " verbatim="" row="2" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,11: " verbatim="" row="2" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,12: " verbatim="" row="2" rowspan="26" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,13: " verbatim="" row="2" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,14: " verbatim="" row="2" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,15: " verbatim="" row="2" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,16: " verbatim="" row="2" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: am486" verbatim="Am486" row="3" rowspan="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: am486" verbatim="Am486" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: 25-120" verbatim="25-120" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: 168 pin pga 208 sqfp" verbatim="168 pin PGA&#xA;208 SQFP" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: " verbatim="" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: " verbatim="" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: 8" verbatim="8" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: " verbatim="" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,9: " verbatim="" row="3" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,10: " verbatim="" row="3" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,11: " verbatim="" row="3" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,13: " verbatim="" row="3" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,14: " verbatim="" row="3" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,15: " verbatim="" row="3" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,16: " verbatim="" row="3" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: enhanced am486" verbatim="Enhanced Am486" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: " verbatim="" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: " verbatim="" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: 66-120" verbatim="66-120" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: 168 pin pga 208 sqfp" verbatim="168 pin PGA&#xA;208 SQFP" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: " verbatim="" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,8: " verbatim="" row="4" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,9: 8, 8/16" verbatim="8, 8/16" row="4" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,10: " verbatim="" row="4" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,11: " verbatim="" row="4" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,13: " verbatim="" row="4" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,14: " verbatim="" row="4" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,15: " verbatim="" row="4" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,16: " verbatim="" row="4" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: am5x86" verbatim="Am5x86" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: am5x86" verbatim="Am5x86" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: x5-133" verbatim="X5-133" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: " verbatim="" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: 133" verbatim="133" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: socket 3 socket 2 socket 1 168 pin" verbatim="Socket 3&#xA;Socket 2&#xA;Socket 1&#xA;168 pin" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: 350" verbatim="350" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,8: 33" verbatim="33" row="5" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,9: 16" verbatim="16" row="5" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,10: " verbatim="" row="5" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,11: " verbatim="" row="5" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,13: " verbatim="" row="5" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,14: " verbatim="" row="5" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,15: " verbatim="" row="5" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,16: " verbatim="" row="5" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: k5" verbatim="K5" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: amd k5" verbatim="AMD K5" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: ssa/5, 5k86" verbatim="SSA/5, 5k86" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: " verbatim="" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: 75&#x2013;133" verbatim="75&#x2013;133" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: socket 5 socket 7" verbatim="Socket 5&#xA;Socket 7" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: 500, 350" verbatim="500, 350" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,8: 50, 60, 66" verbatim="50, 60, 66" row="6" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,9: 8+16" verbatim="8+16" row="6" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,10: 0" verbatim="0" row="6" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,11: " verbatim="" row="6" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,13: " verbatim="" row="6" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,14: " verbatim="" row="6" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,15: " verbatim="" row="6" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,16: " verbatim="" row="6" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: k6" verbatim="K6" row="7" rowspan="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: amd k6" verbatim="AMD K6" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: model 6, littlefoot" verbatim="Model 6, Littlefoot" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: " verbatim="" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: 166-300" verbatim="166-300" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: socket 7" verbatim="Socket 7" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: 350, 250" verbatim="350, 250" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,8: 50, 60, 66" verbatim="50, 60, 66" row="7" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,9: 32+32" verbatim="32+32" row="7" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,10: 0" verbatim="0" row="7" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,11: " verbatim="" row="7" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,13: mmx" verbatim="MMX" row="7" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,14: " verbatim="" row="7" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,15: " verbatim="" row="7" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,16: " verbatim="" row="7" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: amd k6-2" verbatim="AMD K6-2" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: chomper, chomper extended, mobile" verbatim="Chomper, Chomper Extended, mobile" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: " verbatim="" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: 166-550" verbatim="166-550" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: super socket 7" verbatim="Super Socket 7" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: 250, 180" verbatim="250, 180" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,8: 66, 95, 97, 100" verbatim="66, 95, 97, 100" row="8" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,9: 32+32" verbatim="32+32" row="8" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,10: 0, 128" verbatim="0, 128" row="8" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,11: " verbatim="" row="8" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,13: mmx, 3dnow!" verbatim="MMX, 3DNow!" row="8" rowspan="5" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,14: " verbatim="" row="8" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,15: " verbatim="" row="8" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,16: " verbatim="" row="8" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: k6-3" verbatim="K6-3" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: sharptooth" verbatim="Sharptooth" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: " verbatim="" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: 400-550" verbatim="400-550" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: super socket 7" verbatim="Super Socket 7" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: 250, 180" verbatim="250, 180" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,8: 66, 95, 96.2, 100" verbatim="66, 95, 96.2, 100" row="9" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,9: 32+32" verbatim="32+32" row="9" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,10: 256" verbatim="256" row="9" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,11: 512, 1024" verbatim="512, 1024" row="9" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,14: " verbatim="" row="9" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,15: " verbatim="" row="9" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,16: " verbatim="" row="9" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: k7" verbatim="K7" row="10" rowspan="18" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: athlon" verbatim="Athlon" row="10" rowspan="3" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: argon" verbatim="Argon" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: " verbatim="" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: 500-700" verbatim="500-700" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: slot a" verbatim="Slot A" row="10" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: 250" verbatim="250" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,8: 100" verbatim="100" row="10" rowspan="3" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,9: 64+64" verbatim="64+64" row="10" rowspan="54" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,10: 512" verbatim="512" row="10" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,11: " verbatim="" row="10" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,14: " verbatim="" row="10" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,15: " verbatim="" row="10" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,16: " verbatim="" row="10" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: pluto/orion" verbatim="Pluto/Orion" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: " verbatim="" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: 550-1000" verbatim="550-1000" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: 180" verbatim="180" row="11" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,11: " verbatim="" row="11" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,14: " verbatim="" row="11" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,15: " verbatim="" row="11" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,16: " verbatim="" row="11" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: thunderbird" verbatim="Thunderbird" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: " verbatim="" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: 1000-1400" verbatim="1000-1400" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: slot a socket a" verbatim="Slot A&#xA;Socket A" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,10: 256" verbatim="256" row="12" rowspan="4" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,11: " verbatim="" row="12" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,14: " verbatim="" row="12" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,15: " verbatim="" row="12" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,16: " verbatim="" row="12" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: athlon xp/mp" verbatim="Athlon XP/MP" row="13" rowspan="4" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: palomino" verbatim="Palomino" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: " verbatim="" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: 1333-1733" verbatim="1333-1733" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: socket a" verbatim="Socket A" row="13" rowspan="15" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: 180" verbatim="180" row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,8: 133" verbatim="133" row="13" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,11: " verbatim="" row="13" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,13: mmx, 3dnow!+, sse" verbatim="MMX, 3DNow!+, SSE" row="13" rowspan="15" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,14: " verbatim="" row="13" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,15: " verbatim="" row="13" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,16: " verbatim="" row="13" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: thoroughbred" verbatim="Thoroughbred" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: " verbatim="" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: 1400-2250" verbatim="1400-2250" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: 130" verbatim="130" row="14" rowspan="3" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,8: 133, 166, 200" verbatim="133, 166, 200" row="14" rowspan="3" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,11: " verbatim="" row="14" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,14: " verbatim="" row="14" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,15: " verbatim="" row="14" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,16: " verbatim="" row="14" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: thorton" verbatim="Thorton" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: " verbatim="" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: 1667-2200" verbatim="1667-2200" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,11: " verbatim="" row="15" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,14: " verbatim="" row="15" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,15: " verbatim="" row="15" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,16: " verbatim="" row="15" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: barton" verbatim="Barton" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: 2500+ - 3200+" verbatim="2500+ - 3200+" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: 1833-2333" verbatim="1833-2333" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,10: 512" verbatim="512" row="16" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,11: " verbatim="" row="16" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,14: " verbatim="" row="16" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,15: " verbatim="" row="16" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,16: " verbatim="" row="16" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: duron" verbatim="Duron" row="17" rowspan="3" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: spitfire" verbatim="Spitfire" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: " verbatim="" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: 600-950" verbatim="600-950" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,6: 180" verbatim="180" row="17" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,8: 100" verbatim="100" row="17" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,10: 64" verbatim="64" row="17" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,11: " verbatim="" row="17" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,14: " verbatim="" row="17" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,15: " verbatim="" row="17" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,16: " verbatim="" row="17" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: morgan" verbatim="Morgan" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: " verbatim="" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: 900-1300" verbatim="900-1300" row="18" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,10: 64" verbatim="64" row="18" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,11: " verbatim="" row="18" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,14: " verbatim="" row="18" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,15: " verbatim="" row="18" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,16: " verbatim="" row="18" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: applebred" verbatim="Applebred" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: " verbatim="" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: 1400, 1600, 1800" verbatim="1400, 1600, 1800" row="19" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,6: 130" verbatim="130" row="19" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,8: 133" verbatim="133" row="19" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,10: 64" verbatim="64" row="19" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,11: " verbatim="" row="19" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,14: " verbatim="" row="19" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,15: " verbatim="" row="19" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,16: " verbatim="" row="19" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,1: athlon 4" verbatim="Athlon 4" row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,2: corvette" verbatim="Corvette" row="20" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,3: " verbatim="" row="20" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,4: 850-1400" verbatim="850-1400" row="20" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,6: 180" verbatim="180" row="20" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,8: 100" verbatim="100" row="20" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,10: 256" verbatim="256" row="20" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,11: " verbatim="" row="20" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,14: " verbatim="" row="20" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,15: " verbatim="" row="20" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,16: " verbatim="" row="20" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,1: athlon xp-m" verbatim="Athlon XP-M" row="21" rowspan="2" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,2: thoroughbred" verbatim="Thoroughbred" row="21" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,3: " verbatim="" row="21" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,4: 1400-2133" verbatim="1400-2133" row="21" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,6: 130" verbatim="130" row="21" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,8: 100, 133" verbatim="100, 133" row="21" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,11: " verbatim="" row="21" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,14: " verbatim="" row="21" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,15: " verbatim="" row="21" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,16: " verbatim="" row="21" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,2: barton" verbatim="Barton" row="22" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,3: " verbatim="" row="22" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,4: 1667-2200" verbatim="1667-2200" row="22" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,8: 133" verbatim="133" row="22" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,10: 512" verbatim="512" row="22" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,11: " verbatim="" row="22" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,14: " verbatim="" row="22" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,15: " verbatim="" row="22" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,16: " verbatim="" row="22" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,1: mobile duron" verbatim="Mobile Duron" row="23" rowspan="2" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,2: spitfire" verbatim="Spitfire" row="23" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,3: " verbatim="" row="23" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,4: 600, 700" verbatim="600, 700" row="23" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,6: 180" verbatim="180" row="23" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,8: 100" verbatim="100" row="23" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,10: 64" verbatim="64" row="23" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,11: " verbatim="" row="23" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,14: " verbatim="" row="23" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,15: " verbatim="" row="23" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,16: " verbatim="" row="23" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,2: camaro" verbatim="Camaro" row="24" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,3: " verbatim="" row="24" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,4: 800-1300" verbatim="800-1300" row="24" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,10: 64" verbatim="64" row="24" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,11: " verbatim="" row="24" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,14: " verbatim="" row="24" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,15: " verbatim="" row="24" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,16: " verbatim="" row="24" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,1: sempron" verbatim="Sempron" row="25" rowspan="3" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,2: thoroughbred-b" verbatim="Thoroughbred-B" row="25" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,3: " verbatim="" row="25" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,4: 1500-2000" verbatim="1500-2000" row="25" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,6: 130" verbatim="130" row="25" rowspan="6" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,8: 166" verbatim="166" row="25" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,10: 256" verbatim="256" row="25" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,11: " verbatim="" row="25" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,14: " verbatim="" row="25" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,15: " verbatim="" row="25" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,16: " verbatim="" row="25" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,2: thorton" verbatim="Thorton" row="26" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,3: " verbatim="" row="26" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,4: 1500-2000" verbatim="1500-2000" row="26" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,11: " verbatim="" row="26" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,14: " verbatim="" row="26" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,15: " verbatim="" row="26" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,16: " verbatim="" row="26" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,2: barton" verbatim="Barton" row="27" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,3: " verbatim="" row="27" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,4: 2000&#x2013;2200" verbatim="2000&#x2013;2200" row="27" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,8: 166, 200" verbatim="166, 200" row="27" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,10: 512" verbatim="512" row="27" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,11: " verbatim="" row="27" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,14: " verbatim="" row="27" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,15: " verbatim="" row="27" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,16: " verbatim="" row="27" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="28,0: k8" verbatim="K8" row="28" rowspan="77" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,1: opteron" verbatim="Opteron" row="28" rowspan="12" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,2: sledgehammer" verbatim="Sledgehammer" row="28" rowspan="3" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,3: 100" verbatim="100" row="28" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,4: 1400-2400" verbatim="1400-2400" row="28" rowspan="3" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,5: socket 940" verbatim="Socket 940" row="28" rowspan="3" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,8: 800" verbatim="800" row="28" rowspan="6" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,10: 1024" verbatim="1024" row="28" rowspan="18" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,11: " verbatim="" row="28" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,12: ddr" verbatim="DDR" row="28" rowspan="9" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,13: mmx, 3dnow!+, sse, sse2, amd64, powernow!, ccnuma" verbatim="MMX, 3DNow!+, SSE, SSE2, AMD64, PowerNow!, ccNUMA" row="28" rowspan="6" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,14: " verbatim="" row="28" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,15: " verbatim="" row="28" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,16: " verbatim="" row="28" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,3: 200" verbatim="200" row="29" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,11: " verbatim="" row="29" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,14: " verbatim="" row="29" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,15: " verbatim="" row="29" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,16: " verbatim="" row="29" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,3: 800" verbatim="800" row="30" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,11: " verbatim="" row="30" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,14: " verbatim="" row="30" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,15: " verbatim="" row="30" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,16: " verbatim="" row="30" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,2: venus" verbatim="Venus" row="31" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,3: 100" verbatim="100" row="31" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,4: 1600-3000" verbatim="1600-3000" row="31" rowspan="3" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,5: socket 939" verbatim="Socket 939" row="31" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,6: 90" verbatim="90" row="31" rowspan="9" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,11: " verbatim="" row="31" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,14: " verbatim="" row="31" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,15: " verbatim="" row="31" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,16: " verbatim="" row="31" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,2: troy" verbatim="Troy" row="32" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,3: 200" verbatim="200" row="32" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,5: socket 940" verbatim="Socket 940" row="32" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,11: " verbatim="" row="32" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,14: " verbatim="" row="32" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,15: " verbatim="" row="32" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,16: " verbatim="" row="32" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,2: athens" verbatim="Athens" row="33" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,3: 800" verbatim="800" row="33" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,11: " verbatim="" row="33" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,14: " verbatim="" row="33" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,15: " verbatim="" row="33" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,16: " verbatim="" row="33" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,2: denmark" verbatim="Denmark" row="34" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,3: 100" verbatim="100" row="34" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,4: 1600-3200" verbatim="1600-3200" row="34" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,5: socket 939" verbatim="Socket 939" row="34" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,7: 2" verbatim="2" row="34" rowspan="6" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,8: 1000" verbatim="1000" row="34" rowspan="6" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,11: " verbatim="" row="34" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,13: mmx, 3dnow!+, sse, sse2 amd64, powernow!, nx bit" verbatim="MMX, 3DNow!+, SSE, SSE2 AMD64, PowerNow!, NX Bit" row="34" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,14: " verbatim="" row="34" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,15: " verbatim="" row="34" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,16: " verbatim="" row="34" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,2: italy" verbatim="Italy" row="35" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,3: 200" verbatim="200" row="35" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,4: 1600-3200" verbatim="1600-3200" row="35" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,5: socket 940" verbatim="Socket 940" row="35" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,11: " verbatim="" row="35" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,13: mmx, 3dnow!+, sse, sse2 amd64, powernow!, nx bit, " verbatim="MMX, 3DNow!+, SSE, SSE2 AMD64, PowerNow!, NX Bit, ccNUMA" row="35" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,14: " verbatim="" row="35" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,15: " verbatim="" row="35" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,16: " verbatim="" row="35" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,2: egypt" verbatim="Egypt" row="36" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,3: 800" verbatim="800" row="36" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,4: 1600-3200" verbatim="1600-3200" row="36" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,11: " verbatim="" row="36" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,14: " verbatim="" row="36" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,15: " verbatim="" row="36" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,16: " verbatim="" row="36" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,2: santa ana" verbatim="Santa Ana" row="37" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,3: 1200" verbatim="1200" row="37" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,4: 1800-3200" verbatim="1800-3200" row="37" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,5: socket am2" verbatim="Socket AM2" row="37" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,11: " verbatim="" row="37" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,12: ddr2" verbatim="DDR2" row="37" rowspan="3" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,13: mmx, 3dnow!+, sse, sse2 amd64, powernow!, nx bit" verbatim="MMX, 3DNow!+, SSE, SSE2 AMD64, PowerNow!, NX Bit" row="37" rowspan="3" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,14: " verbatim="" row="37" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,15: " verbatim="" row="37" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,16: " verbatim="" row="37" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,2: santa rosa" verbatim="Santa Rosa" row="38" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,3: 2200" verbatim="2200" row="38" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,4: 1800-3200" verbatim="1800-3200" row="38" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,5: socket f" verbatim="Socket F" row="38" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,11: " verbatim="" row="38" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,14: " verbatim="" row="38" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,15: " verbatim="" row="38" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,16: " verbatim="" row="38" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,3: 8200" verbatim="8200" row="39" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,4: 2000-3000" verbatim="2000-3000" row="39" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,11: " verbatim="" row="39" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,14: " verbatim="" row="39" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,15: " verbatim="" row="39" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,16: " verbatim="" row="39" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,1: athlon 64 fx" verbatim="Athlon 64 FX" row="40" rowspan="6" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,2: sledgehammer" verbatim="Sledgehammer" row="40" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,3: " verbatim="" row="40" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,4: 2200, 2400" verbatim="2200, 2400" row="40" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,5: socket 940" verbatim="Socket 940" row="40" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,6: 130" verbatim="130" row="40" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,7: 1" verbatim="1" row="40" rowspan="3" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,8: 800" verbatim="800" row="40" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,11: " verbatim="" row="40" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,12: ddr" verbatim="DDR" row="40" rowspan="4" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,13: mmx, 3dnow!+, sse, sse2, sse3, amd64, cool'n'quiet" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, AMD64, Cool'n'Quiet, NX Bit" row="40" rowspan="4" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,14: " verbatim="" row="40" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,15: " verbatim="" row="40" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,16: " verbatim="" row="40" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,2: clawhammer" verbatim="Clawhammer" row="41" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,3: " verbatim="" row="41" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,4: 2400, 2400" verbatim="2400, 2400" row="41" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,5: socket 939" verbatim="Socket 939" row="41" rowspan="3" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,8: 1000" verbatim="1000" row="41" rowspan="5" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,11: " verbatim="" row="41" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,14: " verbatim="" row="41" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,15: " verbatim="" row="41" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,16: " verbatim="" row="41" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,2: san diego" verbatim="San Diego" row="42" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,3: " verbatim="" row="42" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,4: 2600, 2800" verbatim="2600, 2800" row="42" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,6: 90" verbatim="90" row="42" rowspan="4" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,11: " verbatim="" row="42" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,14: " verbatim="" row="42" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,15: " verbatim="" row="42" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,16: " verbatim="" row="42" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,2: toledo" verbatim="Toledo" row="43" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,3: " verbatim="" row="43" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,4: 2600" verbatim="2600" row="43" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,7: 2" verbatim="2" row="43" rowspan="3" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,11: " verbatim="" row="43" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,14: " verbatim="" row="43" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,15: " verbatim="" row="43" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,16: " verbatim="" row="43" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,2: windsor" verbatim="Windsor" row="44" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,3: " verbatim="" row="44" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,4: 2000-3200" verbatim="2000-3200" row="44" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,5: socket am2" verbatim="Socket AM2" row="44" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,11: " verbatim="" row="44" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,12: ddr2" verbatim="DDR2" row="44" rowspan="2" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,13: mmx, 3dnow!+, sse, sse2, sse3, amd64, cool'n'quiet" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, AMD64, Cool'n'Quiet, NX Bit, AMD-V" row="44" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,14: " verbatim="" row="44" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,15: " verbatim="" row="44" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,16: " verbatim="" row="44" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,3: " verbatim="" row="45" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,4: 2600, 2800, 3000" verbatim="2600, 2800, 3000" row="45" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,5: socket f" verbatim="Socket F" row="45" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,11: " verbatim="" row="45" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,14: " verbatim="" row="45" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,15: " verbatim="" row="45" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,16: " verbatim="" row="45" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,1: athlon 64" verbatim="Athlon 64" row="46" rowspan="10" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,2: clawhammer" verbatim="Clawhammer" row="46" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,3: " verbatim="" row="46" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,4: 2000-2600" verbatim="2000-2600" row="46" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,5: socket 754" verbatim="Socket 754" row="46" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,6: 130" verbatim="130" row="46" rowspan="4" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,7: 1" verbatim="1" row="46" rowspan="10" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,8: 800" verbatim="800" row="46" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,10: 1024" verbatim="1024" row="46" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,11: " verbatim="" row="46" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,12: ddr" verbatim="DDR" row="46" rowspan="5" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,13: mmx, 3dnow!+, sse, sse2, amd64, cool'n'quiet, nx b" verbatim="MMX, 3DNow!+, SSE, SSE2, AMD64, Cool'n'Quiet, NX Bit (not in CG stepping)" row="46" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,14: " verbatim="" row="46" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,15: " verbatim="" row="46" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,16: " verbatim="" row="46" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,3: " verbatim="" row="47" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,5: socket 939" verbatim="Socket 939" row="47" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,8: 1000" verbatim="1000" row="47" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,11: " verbatim="" row="47" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,14: " verbatim="" row="47" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,15: " verbatim="" row="47" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,16: " verbatim="" row="47" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,2: newcastle" verbatim="Newcastle" row="48" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,3: " verbatim="" row="48" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,4: 1800-2400" verbatim="1800-2400" row="48" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,5: socket 754" verbatim="Socket 754" row="48" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,8: 800" verbatim="800" row="48" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,10: 512" verbatim="512" row="48" rowspan="5" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,11: " verbatim="" row="48" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,13: mmx, 3dnow!+, sse, sse2, amd64, cool'n'quiet, nx b" verbatim="MMX, 3DNow!+, SSE, SSE2, AMD64, Cool'n'Quiet, NX Bit" row="48" rowspan="3" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,14: " verbatim="" row="48" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,15: " verbatim="" row="48" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,16: " verbatim="" row="48" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,3: " verbatim="" row="49" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,5: socket 939" verbatim="Socket 939" row="49" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,8: 1000" verbatim="1000" row="49" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,11: " verbatim="" row="49" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,14: " verbatim="" row="49" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,15: " verbatim="" row="49" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,16: " verbatim="" row="49" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,2: winchester" verbatim="Winchester" row="50" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,3: " verbatim="" row="50" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,4: 1800-2200" verbatim="1800-2200" row="50" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,5: socket 939" verbatim="Socket 939" row="50" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,6: 90" verbatim="90" row="50" rowspan="5" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,11: " verbatim="" row="50" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,14: " verbatim="" row="50" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,15: " verbatim="" row="50" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,16: " verbatim="" row="50" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,2: venice" verbatim="Venice" row="51" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,3: " verbatim="" row="51" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,4: 1800-2400" verbatim="1800-2400" row="51" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,5: socket 754" verbatim="Socket 754" row="51" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,8: 800" verbatim="800" row="51" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,11: " verbatim="" row="51" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,12: ddr2" verbatim="DDR2" row="51" rowspan="5" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,13: mmx, 3dnow!+, sse, sse2, sse3, amd64, cool'n'quiet" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, AMD64, Cool'n'Quiet, NX Bit" row="51" rowspan="3" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,14: " verbatim="" row="51" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,15: " verbatim="" row="51" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,16: " verbatim="" row="51" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,3: " verbatim="" row="52" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,5: socket 939" verbatim="Socket 939" row="52" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,8: 1000" verbatim="1000" row="52" rowspan="12" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,11: " verbatim="" row="52" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,14: " verbatim="" row="52" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,15: " verbatim="" row="52" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,16: " verbatim="" row="52" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,2: san diego" verbatim="San Diego" row="53" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,3: " verbatim="" row="53" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,4: 2200-2600" verbatim="2200-2600" row="53" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,5: socket 939" verbatim="Socket 939" row="53" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,10: 1024" verbatim="1024" row="53" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,11: " verbatim="" row="53" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,14: " verbatim="" row="53" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,15: " verbatim="" row="53" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,16: " verbatim="" row="53" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,2: orleans" verbatim="Orleans" row="54" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,3: " verbatim="" row="54" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,4: 1800-2600" verbatim="1800-2600" row="54" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,5: socket am2" verbatim="Socket AM2" row="54" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,10: 512" verbatim="512" row="54" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,11: " verbatim="" row="54" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,13: mmx, 3dnow!+, sse, sse2, sse3, amd64, cool'n'quiet" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, AMD64, Cool'n'Quiet, NX Bit, AMD-V" row="54" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,14: " verbatim="" row="54" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,15: " verbatim="" row="54" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,16: " verbatim="" row="54" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,2: lima" verbatim="Lima" row="55" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,3: " verbatim="" row="55" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,4: 2000-2800" verbatim="2000-2800" row="55" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,6: 65" verbatim="65" row="55" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,11: " verbatim="" row="55" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,14: " verbatim="" row="55" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,15: " verbatim="" row="55" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,16: " verbatim="" row="55" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,1: athlon 64 x2" verbatim="Athlon 64 X2" row="56" rowspan="8" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,2: manchester" verbatim="Manchester" row="56" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,3: 3600+" verbatim="3600+" row="56" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,4: 2000" verbatim="2000" row="56" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,5: socket 939" verbatim="Socket 939" row="56" rowspan="4" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,6: 90" verbatim="90" row="56" rowspan="7" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,7: 2" verbatim="2" row="56" rowspan="8" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,10: 256 pc, fs" verbatim="256 PC, FS" row="56" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,11: " verbatim="" row="56" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,12: ddr" verbatim="DDR" row="56" rowspan="4" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,13: mmx, 3dnow!+, sse, sse2, sse3, amd64, cool'n'quiet" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, AMD64, Cool'n'Quiet, NX Bit" row="56" rowspan="4" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,14: " verbatim="" row="56" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,15: " verbatim="" row="56" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,16: " verbatim="" row="56" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,3: 3800+, 4200+, 4600+" verbatim="3800+, 4200+, 4600+" row="57" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,4: 2000, 2200, 2400" verbatim="2000, 2200, 2400" row="57" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,10: 512 pc, fs" verbatim="512 PC, FS" row="57" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,11: " verbatim="" row="57" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,14: " verbatim="" row="57" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,15: " verbatim="" row="57" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,16: " verbatim="" row="57" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,2: toledo" verbatim="Toledo" row="58" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,3: 3800+, 4200+, 4600+" verbatim="3800+, 4200+, 4600+" row="58" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,4: 2000, 2200, 2400" verbatim="2000, 2200, 2400" row="58" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,11: " verbatim="" row="58" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,14: " verbatim="" row="58" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,15: " verbatim="" row="58" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,16: " verbatim="" row="58" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,3: 4400+, 4800+" verbatim="4400+, 4800+" row="59" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,4: 2200, 2400" verbatim="2200, 2400" row="59" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,10: 1024 pc, fs" verbatim="1024 PC, FS" row="59" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,11: " verbatim="" row="59" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,14: " verbatim="" row="59" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,15: " verbatim="" row="59" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,16: " verbatim="" row="59" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,2: windsor" verbatim="Windsor" row="60" rowspan="3" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,3: 3600+" verbatim="3600+" row="60" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,4: 2000" verbatim="2000" row="60" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,5: socket am2" verbatim="Socket AM2" row="60" rowspan="4" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,10: 256 pc, fs" verbatim="256 PC, FS" row="60" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,11: " verbatim="" row="60" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,12: ddr2" verbatim="DDR2" row="60" rowspan="4" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,13: mmx, 3dnow!+, sse, sse2, sse3, amd64, cool'n'quiet" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, AMD64, Cool'n'Quiet, NX Bit, AMD-V" row="60" rowspan="4" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,14: " verbatim="" row="60" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,15: " verbatim="" row="60" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,16: " verbatim="" row="60" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,3: 3800+, 4200+, 4600+, 5000+, 5400+" verbatim="3800+, 4200+, 4600+, 5000+, 5400+" row="61" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,4: 2000, 2200, 2400, 2600, 2800" verbatim="2000, 2200, 2400, 2600, 2800" row="61" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,10: 512 pc, fs" verbatim="512 PC, FS" row="61" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,11: " verbatim="" row="61" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,14: " verbatim="" row="61" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,15: " verbatim="" row="61" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,16: " verbatim="" row="61" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,3: 4000+, 4400+, 4800+, 5200+, 5600+, 6000+, 6400+" verbatim="4000+, 4400+, 4800+, 5200+, 5600+, 6000+, 6400+" row="62" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,4: 2000, 2200, 2400, 2600, 2800, 3000, 3200" verbatim="2000, 2200, 2400, 2600, 2800, 3000, 3200" row="62" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,10: 1024 pc, fs" verbatim="1024 PC, FS" row="62" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,11: " verbatim="" row="62" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,14: " verbatim="" row="62" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,15: " verbatim="" row="62" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,16: " verbatim="" row="62" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,2: brisbane" verbatim="Brisbane" row="63" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,3: 3600+, 3800+, 4000+, 4200+, 4400+, 4600+, 4800+, 5" verbatim="3600+, 3800+, 4000+, 4200+, 4400+, 4600+, 4800+, 5000+, 5200+, 5400+, 5600+, 5800+, 6000+" row="63" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,4: 1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 27" verbatim="1900, 2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700, 2800, 2900, 3000, 3100" row="63" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,6: 65" verbatim="65" row="63" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,10: 512 pc, fs" verbatim="512 PC, FS" row="63" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,11: " verbatim="" row="63" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,14: " verbatim="" row="63" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,15: " verbatim="" row="63" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,16: " verbatim="" row="63" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,1: sempron" verbatim="Sempron" row="64" rowspan="17" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,2: paris" verbatim="Paris" row="64" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,3: 3000+" verbatim="3000+" row="64" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,4: 1800" verbatim="1800" row="64" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,5: socket 754" verbatim="Socket 754" row="64" rowspan="9" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,6: 130" verbatim="130" row="64" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,7: 1" verbatim="1" row="64" rowspan="37" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,8: 800" verbatim="800" row="64" rowspan="41" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,9: 64+64" verbatim="64+64" row="64" rowspan="41" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,10: 128" verbatim="128" row="64" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,11: " verbatim="" row="64" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,12: " verbatim="" row="64" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,13: mmx, 3dnow!+, sse, sse2, sse3, cool'n'quiet, nx bi" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, Cool'n'Quiet, NX Bit" row="64" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,14: " verbatim="" row="64" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,15: " verbatim="" row="64" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,16: " verbatim="" row="64" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,3: 3100+" verbatim="3100+" row="65" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,4: 1800" verbatim="1800" row="65" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,10: 256" verbatim="256" row="65" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,11: " verbatim="" row="65" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,12: " verbatim="" row="65" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,14: " verbatim="" row="65" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,15: " verbatim="" row="65" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,16: " verbatim="" row="65" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,2: palermo" verbatim="Palermo" row="66" rowspan="11" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,3: 2500+" verbatim="2500+" row="66" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,4: 1400" verbatim="1400" row="66" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,6: 90" verbatim="90" row="66" rowspan="13" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,10: 256" verbatim="256" row="66" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,11: " verbatim="" row="66" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,12: " verbatim="" row="66" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,13: mmx, 3dnow!+, sse, sse2, sse3, amd64, nx bit, amd6" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, AMD64, NX Bit, AMD64" row="66" rowspan="3" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,14: " verbatim="" row="66" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,15: " verbatim="" row="66" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,16: " verbatim="" row="66" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,3: 2600+" verbatim="2600+" row="67" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,4: 1600" verbatim="1600" row="67" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,10: 128" verbatim="128" row="67" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,11: " verbatim="" row="67" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,12: " verbatim="" row="67" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,14: " verbatim="" row="67" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,15: " verbatim="" row="67" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,16: " verbatim="" row="67" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="68,3: 2800+" verbatim="2800+" row="68" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="68,10: 256" verbatim="256" row="68" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="68,11: " verbatim="" row="68" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="68,12: " verbatim="" row="68" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="68,14: " verbatim="" row="68" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="68,15: " verbatim="" row="68" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="68,16: " verbatim="" row="68" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,3: 3000+" verbatim="3000+" row="69" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,4: 1800" verbatim="1800" row="69" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,10: 128" verbatim="128" row="69" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,11: " verbatim="" row="69" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,12: " verbatim="" row="69" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,13: mmx, 3dnow!+, sse, sse2, sse3, amd64, cool'n'quiet" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, AMD64, Cool'n'Quiet, NX Bit" row="69" rowspan="4" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,14: " verbatim="" row="69" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,15: " verbatim="" row="69" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,16: " verbatim="" row="69" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="70,3: 3100+" verbatim="3100+" row="70" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="70,10: 256" verbatim="256" row="70" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="70,11: " verbatim="" row="70" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="70,12: " verbatim="" row="70" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="70,14: " verbatim="" row="70" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="70,15: " verbatim="" row="70" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="70,16: " verbatim="" row="70" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="71,3: 3300+" verbatim="3300+" row="71" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="71,4: 2000" verbatim="2000" row="71" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="71,10: 128" verbatim="128" row="71" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="71,11: " verbatim="" row="71" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="71,12: " verbatim="" row="71" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="71,14: " verbatim="" row="71" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="71,15: " verbatim="" row="71" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="71,16: " verbatim="" row="71" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="72,3: 3400+" verbatim="3400+" row="72" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="72,10: 256" verbatim="256" row="72" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="72,11: " verbatim="" row="72" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="72,12: " verbatim="" row="72" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="72,14: " verbatim="" row="72" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="72,15: " verbatim="" row="72" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="72,16: " verbatim="" row="72" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,3: 3000+" verbatim="3000+" row="73" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,4: 1800" verbatim="1800" row="73" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,5: socket 939" verbatim="Socket 939" row="73" rowspan="4" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,10: 128" verbatim="128" row="73" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,11: " verbatim="" row="73" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,12: " verbatim="" row="73" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,13: mmx, 3dnow!+, sse, sse2, sse3, amd64, nx bit" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, AMD64, NX Bit" row="73" rowspan="4" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,14: " verbatim="" row="73" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,15: " verbatim="" row="73" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,16: " verbatim="" row="73" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="74,3: 3200+" verbatim="3200+" row="74" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="74,10: 256" verbatim="256" row="74" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="74,11: " verbatim="" row="74" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="74,12: " verbatim="" row="74" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="74,14: " verbatim="" row="74" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="74,15: " verbatim="" row="74" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="74,16: " verbatim="" row="74" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="75,3: 3400+" verbatim="3400+" row="75" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="75,4: 2000" verbatim="2000" row="75" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="75,10: 128" verbatim="128" row="75" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="75,11: " verbatim="" row="75" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="75,12: " verbatim="" row="75" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="75,14: " verbatim="" row="75" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="75,15: " verbatim="" row="75" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="75,16: " verbatim="" row="75" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="76,3: 3500+" verbatim="3500+" row="76" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="76,10: 256" verbatim="256" row="76" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="76,11: " verbatim="" row="76" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="76,12: " verbatim="" row="76" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="76,14: " verbatim="" row="76" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="76,15: " verbatim="" row="76" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="76,16: " verbatim="" row="76" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,2: manila" verbatim="Manila" row="77" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,3: 2800+, 3200+, 3500+" verbatim="2800+, 3200+, 3500+" row="77" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,4: 1600, 1800, 2000" verbatim="1600, 1800, 2000" row="77" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,5: socket am2" verbatim="Socket AM2" row="77" rowspan="4" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,10: 128" verbatim="128" row="77" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,11: " verbatim="" row="77" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,12: " verbatim="" row="77" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,13: " verbatim="" row="77" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,14: " verbatim="" row="77" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,15: " verbatim="" row="77" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,16: " verbatim="" row="77" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,3: 3000+, 3400+, 3600+, 3800+" verbatim="3000+, 3400+, 3600+, 3800+" row="78" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,4: 1600, 1800, 2000, 2200" verbatim="1600, 1800, 2000, 2200" row="78" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,10: 256" verbatim="256" row="78" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,11: " verbatim="" row="78" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,12: " verbatim="" row="78" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,13: " verbatim="" row="78" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,14: " verbatim="" row="78" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,15: " verbatim="" row="78" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,16: " verbatim="" row="78" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,2: sparta" verbatim="Sparta" row="79" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,3: le-1100, le-1150" verbatim="LE-1100, LE-1150" row="79" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,4: 1900, 2000" verbatim="1900, 2000" row="79" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,6: 65" verbatim="65" row="79" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,11: " verbatim="" row="79" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,12: " verbatim="" row="79" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,13: " verbatim="" row="79" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,14: " verbatim="" row="79" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,15: " verbatim="" row="79" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,3: le-1200, le-1250, le-1300" verbatim="LE-1200, LE-1250, LE-1300" row="80" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,4: 2100, 2200, 2300" verbatim="2100, 2200, 2300" row="80" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,10: 512" verbatim="512" row="80" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,11: " verbatim="" row="80" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,12: " verbatim="" row="80" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,13: " verbatim="" row="80" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,14: " verbatim="" row="80" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,15: " verbatim="" row="80" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,16: " verbatim="" row="80" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,1: mobile athlon 64" verbatim="Mobile Athlon 64" row="81" rowspan="5" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,2: clawhammer" verbatim="Clawhammer" row="81" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,3: 2700+" verbatim="2700+" row="81" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,4: 1600" verbatim="1600" row="81" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,5: socket 754" verbatim="Socket 754" row="81" rowspan="15" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,6: 130" verbatim="130" row="81" rowspan="3" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,10: 512" verbatim="512" row="81" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,11: " verbatim="" row="81" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,12: " verbatim="" row="81" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,13: mmx, 3dnow!+, sse, sse2, nx bit, amd64" verbatim="MMX, 3DNow!+, SSE, SSE2, NX bit, AMD64" row="81" rowspan="5" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,14: " verbatim="" row="81" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,15: " verbatim="" row="81" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,16: " verbatim="" row="81" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="82,3: 2800+, 3000+, 3200+, 3400+, 3700+" verbatim="2800+, 3000+, 3200+, 3400+, 3700+" row="82" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="82,4: 1600, 1800, 2000, 2200, 2400" verbatim="1600, 1800, 2000, 2200, 2400" row="82" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="82,10: 1024" verbatim="1024" row="82" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="82,11: " verbatim="" row="82" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="82,12: " verbatim="" row="82" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="82,14: " verbatim="" row="82" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="82,15: " verbatim="" row="82" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="82,16: " verbatim="" row="82" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,2: odessa" verbatim="Odessa" row="83" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,3: 2700+, 2800+, 3000+" verbatim="2700+, 2800+, 3000+" row="83" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,4: 1600, 1800, 2000" verbatim="1600, 1800, 2000" row="83" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,10: 512" verbatim="512" row="83" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,11: " verbatim="" row="83" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,12: " verbatim="" row="83" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,14: " verbatim="" row="83" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,15: " verbatim="" row="83" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,16: " verbatim="" row="83" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,2: oakville" verbatim="Oakville" row="84" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,3: 2700+, 2800+, 3000+" verbatim="2700+, 2800+, 3000+" row="84" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,4: 1600, 1800, 2000" verbatim="1600, 1800, 2000" row="84" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,6: 90" verbatim="90" row="84" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,10: 512" verbatim="512" row="84" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,11: " verbatim="" row="84" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,12: " verbatim="" row="84" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,14: " verbatim="" row="84" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,15: " verbatim="" row="84" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,16: " verbatim="" row="84" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,2: newark" verbatim="Newark" row="85" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,3: 3000+, 3200+, 3400+, 3700+, 4000+" verbatim="3000+, 3200+, 3400+, 3700+, 4000+" row="85" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,4: 1800, 2000, 2200, 2400, 2600" verbatim="1800, 2000, 2200, 2400, 2600" row="85" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,10: 1024" verbatim="1024" row="85" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,11: " verbatim="" row="85" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,12: " verbatim="" row="85" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,14: " verbatim="" row="85" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,15: " verbatim="" row="85" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,16: " verbatim="" row="85" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,1: mobile sempron" verbatim="Mobile Sempron" row="86" rowspan="12" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,2: dublin" verbatim="Dublin" row="86" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,3: " verbatim="" row="86" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,4: 1600, 1800" verbatim="1600, 1800" row="86" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,6: 130" verbatim="130" row="86" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,10: 128" verbatim="128" row="86" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,11: " verbatim="" row="86" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,12: " verbatim="" row="86" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,13: mmx, 3dnow!+, sse, sse2, nx bit, amd64" verbatim="MMX, 3DNow!+, SSE, SSE2, NX bit, AMD64" row="86" rowspan="6" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,14: " verbatim="" row="86" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,15: " verbatim="" row="86" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,16: " verbatim="" row="86" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="87,3: " verbatim="" row="87" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="87,4: 1600" verbatim="1600" row="87" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="87,10: 256" verbatim="256" row="87" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="87,11: " verbatim="" row="87" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="87,12: " verbatim="" row="87" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="87,14: " verbatim="" row="87" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="87,15: " verbatim="" row="87" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="87,16: " verbatim="" row="87" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,2: georgetown" verbatim="Georgetown" row="88" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,3: " verbatim="" row="88" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,4: 1600, 1800, 2000" verbatim="1600, 1800, 2000" row="88" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,6: 90" verbatim="90" row="88" rowspan="15" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,10: 128" verbatim="128" row="88" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,11: " verbatim="" row="88" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,12: " verbatim="" row="88" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,14: " verbatim="" row="88" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,15: " verbatim="" row="88" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,16: " verbatim="" row="88" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="89,3: " verbatim="" row="89" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="89,4: 1600, 1800" verbatim="1600, 1800" row="89" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="89,10: 256" verbatim="256" row="89" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="89,11: " verbatim="" row="89" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="89,12: " verbatim="" row="89" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="89,14: " verbatim="" row="89" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="89,15: " verbatim="" row="89" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="89,16: " verbatim="" row="89" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,2: sonora" verbatim="Sonora" row="90" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,3: " verbatim="" row="90" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,4: 1600, 1800" verbatim="1600, 1800" row="90" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,10: 128" verbatim="128" row="90" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,11: " verbatim="" row="90" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,12: " verbatim="" row="90" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,14: " verbatim="" row="90" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,15: " verbatim="" row="90" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,16: " verbatim="" row="90" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="91,3: " verbatim="" row="91" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="91,4: 1600, 1800" verbatim="1600, 1800" row="91" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="91,10: 256" verbatim="256" row="91" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="91,11: " verbatim="" row="91" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="91,12: " verbatim="" row="91" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="91,14: " verbatim="" row="91" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="91,15: " verbatim="" row="91" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="91,16: " verbatim="" row="91" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="92,2: albany" verbatim="Albany" row="92" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="92,3: " verbatim="" row="92" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="92,4: 1800, 2000, 2200" verbatim="1800, 2000, 2200" row="92" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="92,10: 128" verbatim="128" row="92" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="92,11: " verbatim="" row="92" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="92,12: " verbatim="" row="92" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="92,13: mmx, 3dnow!+, sse, sse2, sse3, nx bit, amd64" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, NX bit, AMD64" row="92" rowspan="4" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="92,14: " verbatim="" row="92" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="92,15: " verbatim="" row="92" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="92,16: " verbatim="" row="92" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="93,3: " verbatim="" row="93" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="93,4: 1800, 2000" verbatim="1800, 2000" row="93" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="93,10: 256" verbatim="256" row="93" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="93,11: " verbatim="" row="93" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="93,12: " verbatim="" row="93" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="93,14: " verbatim="" row="93" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="93,15: " verbatim="" row="93" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="93,16: " verbatim="" row="93" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="94,2: roma" verbatim="Roma" row="94" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="94,3: " verbatim="" row="94" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="94,4: 1800, 2000" verbatim="1800, 2000" row="94" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="94,10: 128" verbatim="128" row="94" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="94,11: " verbatim="" row="94" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="94,12: " verbatim="" row="94" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="94,14: " verbatim="" row="94" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="94,15: " verbatim="" row="94" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="94,16: " verbatim="" row="94" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="95,3: " verbatim="" row="95" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="95,4: 1600, 1800, 2000" verbatim="1600, 1800, 2000" row="95" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="95,10: 256" verbatim="256" row="95" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="95,11: " verbatim="" row="95" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="95,12: " verbatim="" row="95" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="95,14: " verbatim="" row="95" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="95,15: " verbatim="" row="95" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="95,16: " verbatim="" row="95" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="96,2: keene" verbatim="Keene" row="96" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="96,3: " verbatim="" row="96" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="96,4: 1800, 2000" verbatim="1800, 2000" row="96" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="96,5: socket s1" verbatim="Socket S1" row="96" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="96,10: 256" verbatim="256" row="96" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="96,11: " verbatim="" row="96" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="96,12: " verbatim="" row="96" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="96,13: mmx, 3dnow!+, sse, sse2, sse3, nx bit, amd64, powe" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, NX bit, AMD64, PowerNow!" row="96" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="96,14: " verbatim="" row="96" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="96,15: " verbatim="" row="96" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="96,16: " verbatim="" row="96" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="97,3: " verbatim="" row="97" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="97,4: 1600, 1800, 2000" verbatim="1600, 1800, 2000" row="97" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="97,10: 512" verbatim="512" row="97" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="97,11: " verbatim="" row="97" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="97,12: " verbatim="" row="97" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="97,14: " verbatim="" row="97" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="97,15: " verbatim="" row="97" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="97,16: " verbatim="" row="97" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="98,1: turion 64" verbatim="Turion 64" row="98" rowspan="3" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="98,2: lancaster" verbatim="Lancaster" row="98" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="98,3: mt-28, mt-32, ml-42" verbatim="MT-28, MT-32, ML-42" row="98" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="98,4: 1600 1800, 2400" verbatim="1600 1800, 2400" row="98" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="98,5: socket 754" verbatim="Socket 754" row="98" rowspan="3" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="98,10: 512" verbatim="512" row="98" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="98,11: " verbatim="" row="98" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="98,12: " verbatim="" row="98" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="98,13: mmx, 3dnow!+, sse, sse2, sse3, nx bit, amd64" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, NX bit, AMD64" row="98" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="98,14: " verbatim="" row="98" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="98,15: " verbatim="" row="98" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="98,16: " verbatim="" row="98" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="99,3: mt-30, mt-34, mt-37, mt-40, ml-44" verbatim="MT-30, MT-34, MT-37, MT-40, ML-44" row="99" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="99,4: 1600, 1800, 2000, 2200, 2400" verbatim="1600, 1800, 2000, 2200, 2400" row="99" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="99,10: 1024" verbatim="1024" row="99" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="99,11: " verbatim="" row="99" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="99,12: " verbatim="" row="99" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="99,13: mmx, 3dnow!+, sse, sse2, sse3, nx bit, amd64" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, NX bit, AMD64" row="99" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="99,14: " verbatim="" row="99" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="99,15: " verbatim="" row="99" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="99,16: " verbatim="" row="99" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="100,2: richmond" verbatim="Richmond" row="100" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="100,3: mk-36, mk-38" verbatim="MK-36, MK-38" row="100" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="100,4: 2000, 2200" verbatim="2000, 2200" row="100" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="100,10: 512" verbatim="512" row="100" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="100,11: " verbatim="" row="100" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="100,12: " verbatim="" row="100" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="100,13: mmx, 3dnow!+, sse, sse2, sse3, nx bit, amd64" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, NX bit, AMD64" row="100" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="100,14: " verbatim="" row="100" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="100,15: " verbatim="" row="100" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="100,16: " verbatim="" row="100" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="101,1: turion 64 x2" verbatim="Turion 64 X2" row="101" rowspan="4" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="101,2: taylor" verbatim="Taylor" row="101" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="101,3: tl-50" verbatim="TL-50" row="101" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="101,4: 1600" verbatim="1600" row="101" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="101,5: socket s1" verbatim="Socket S1" row="101" rowspan="4" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="101,7: 2" verbatim="2" row="101" rowspan="4" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="101,10: 256" verbatim="256" row="101" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="101,11: " verbatim="" row="101" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="101,12: " verbatim="" row="101" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="101,13: mmx, 3dnow!+, sse, sse2, sse3, nx bit, amd64" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, NX bit, AMD64" row="101" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="101,14: " verbatim="" row="101" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="101,15: " verbatim="" row="101" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="101,16: " verbatim="" row="101" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="102,2: trinidad" verbatim="Trinidad" row="102" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="102,3: tl-52, tl-56, tl-60, tl-64" verbatim="TL-52, TL-56, TL-60, TL-64" row="102" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="102,4: 1600, 1800, 2000, 2200" verbatim="1600, 1800, 2000, 2200" row="102" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="102,10: 512" verbatim="512" row="102" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="102,11: " verbatim="" row="102" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="102,12: " verbatim="" row="102" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="102,13: mmx, 3dnow!+, sse, sse2, sse3, nx bit, amd64" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, NX bit, AMD64" row="102" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="102,14: " verbatim="" row="102" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="102,15: " verbatim="" row="102" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="102,16: " verbatim="" row="102" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="103,2: tyler" verbatim="Tyler" row="103" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="103,3: tk-53, tk-55, tk-57" verbatim="TK-53, TK-55, TK-57" row="103" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="103,4: 1700, 1800, 1900" verbatim="1700, 1800, 1900" row="103" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="103,6: 65" verbatim="65" row="103" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="103,10: 256" verbatim="256" row="103" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="103,11: " verbatim="" row="103" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="103,12: " verbatim="" row="103" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="103,13: mmx, 3dnow!+, sse, sse2, sse3, nx bit, amd64" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, NX bit, AMD64" row="103" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="103,14: " verbatim="" row="103" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="103,15: " verbatim="" row="103" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="103,16: " verbatim="" row="103" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="104,3: tl-56, tl-58, tl-60, tl-62, tl-64, tl-66, tl-68" verbatim="TL-56, TL-58, TL-60, TL-62, TL-64, TL-66, TL-68" row="104" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="104,4: 1800, 1900, 2000, 2100, 2200, 2300, 2400" verbatim="1800, 1900, 2000, 2100, 2200, 2300, 2400" row="104" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="104,10: 512" verbatim="512" row="104" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="104,11: " verbatim="" row="104" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="104,12: " verbatim="" row="104" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="104,13: mmx, 3dnow!+, sse, sse2, sse3, nx bit, amd64" verbatim="MMX, 3DNow!+, SSE, SSE2, SSE3, NX bit, AMD64" row="104" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="104,14: " verbatim="" row="104" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="104,15: " verbatim="" row="104" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="104,16: " verbatim="" row="104" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="105,0: architecture" verbatim="Architecture" row="105" rowspan="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="105,1: family" verbatim="Family" row="105" rowspan="2" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="105,2: code name" verbatim="Code Name" row="105" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="105,3: model group" verbatim="Model Group" row="105" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="105,4: speed (mhz)" verbatim="Speed (MHz)" row="105" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="105,5: socket" verbatim="Socket" row="105" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="105,6: process (nm)" verbatim="Process (nm)" row="105" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="105,7: cores" verbatim="Cores" row="105" rowspan="2" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="105,8: fsb/ht(mhz)" verbatim="FSB/HT(MHz)" row="105" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="105,9: cache (kib)" verbatim="Cache (KiB)" row="105" rowspan="1" column="9" colspan="3"/>
+    <cells xsi:type="pcmmm:Header" name="105,12: memory controller" verbatim="Memory Controller" row="105" rowspan="2" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="105,13: supported features" verbatim="Supported Features" row="105" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="105,14: tdp (watts)" verbatim="TDP (watts)" row="105" rowspan="2" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="105,15: gflops/watt" verbatim="GFLOPS/watt" row="105" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="105,16: processing power (gflops)" verbatim="Processing Power (GFLOPS)" row="105" rowspan="2" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="106,9: l1" verbatim="L1" row="106" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="106,10: l2" verbatim="L2" row="106" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="106,11: l3" verbatim="L3" row="106" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="107,0: k10" verbatim="K10" row="107" rowspan="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,1: opteron" verbatim="Opteron" row="107" rowspan="2" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,2: barcelona" verbatim="Barcelona" row="107" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,3: " verbatim="" row="107" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,4: 1700-2500" verbatim="1700-2500" row="107" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,5: socket f" verbatim="Socket F" row="107" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,6: 65" verbatim="65" row="107" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,7: 4" verbatim="4" row="107" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,8: 1000" verbatim="1000" row="107" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,9: 64+64" verbatim="64+64" row="107" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,10: 256, 512" verbatim="256, 512" row="107" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,11: 2048" verbatim="2048" row="107" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,12: " verbatim="" row="107" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, PowerNow!, ccNUMA" row="107" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,14: " verbatim="" row="107" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,15: " verbatim="" row="107" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="107,16: " verbatim="" row="107" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="108,2: budapest" verbatim="Budapest" row="108" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="108,3: " verbatim="" row="108" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="108,4: 1700-2500" verbatim="1700-2500" row="108" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="108,5: socket am2" verbatim="Socket AM2" row="108" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="108,6: 65" verbatim="65" row="108" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="108,7: 4" verbatim="4" row="108" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="108,8: 1000" verbatim="1000" row="108" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="108,9: 64+64" verbatim="64+64" row="108" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="108,10: 256, 512" verbatim="256, 512" row="108" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="108,11: 2048" verbatim="2048" row="108" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="108,12: " verbatim="" row="108" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="108,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, PowerNow!" row="108" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="108,14: " verbatim="" row="108" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="108,15: " verbatim="" row="108" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="108,16: " verbatim="" row="108" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,1: phenom" verbatim="Phenom" row="109" rowspan="2" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,2: agena" verbatim="Agena" row="109" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,3: " verbatim="" row="109" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,4: 1800-2600" verbatim="1800-2600" row="109" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,5: socket am2+" verbatim="Socket AM2+" row="109" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,6: 65" verbatim="65" row="109" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,7: 4" verbatim="4" row="109" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,8: 1600, 1800, 2000" verbatim="1600, 1800, 2000" row="109" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,9: 64+64" verbatim="64+64" row="109" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,10: 512" verbatim="512" row="109" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,11: 2048" verbatim="2048" row="109" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,12: " verbatim="" row="109" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, Cool'n'Quiet" row="109" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,14: " verbatim="" row="109" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,15: " verbatim="" row="109" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="109,16: " verbatim="" row="109" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="110,2: toliman" verbatim="Toliman" row="110" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="110,3: " verbatim="" row="110" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="110,4: 1900-2400" verbatim="1900-2400" row="110" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="110,5: socket am2+" verbatim="Socket AM2+" row="110" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="110,6: 65" verbatim="65" row="110" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="110,7: 3" verbatim="3" row="110" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="110,8: 1600, 1800" verbatim="1600, 1800" row="110" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="110,9: 64+64" verbatim="64+64" row="110" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="110,10: 512" verbatim="512" row="110" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="110,11: 2048" verbatim="2048" row="110" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="110,12: " verbatim="" row="110" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="110,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, Cool'n'Quiet" row="110" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="110,14: " verbatim="" row="110" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="110,15: " verbatim="" row="110" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="110,16: " verbatim="" row="110" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,1: athlon x2" verbatim="Athlon X2" row="111" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,2: kuma" verbatim="Kuma" row="111" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,3: " verbatim="" row="111" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,4: 2300-2900" verbatim="2300-2900" row="111" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,5: socket am2+" verbatim="Socket AM2+" row="111" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,6: 65" verbatim="65" row="111" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,7: 2" verbatim="2" row="111" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,8: 1600, 1800" verbatim="1600, 1800" row="111" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,9: 64+64" verbatim="64+64" row="111" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,10: 1024" verbatim="1024" row="111" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,11: 2048(7000 series only)" verbatim="2048(7000 Series ONLY)" row="111" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,12: " verbatim="" row="111" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, Cool'n'Quiet" row="111" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,14: " verbatim="" row="111" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,15: " verbatim="" row="111" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="111,16: " verbatim="" row="111" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,1: athlon" verbatim="Athlon" row="112" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,2: lima" verbatim="Lima" row="112" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,3: " verbatim="" row="112" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,4: 2400&#x2013;2700" verbatim="2400&#x2013;2700" row="112" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,5: socket am2+" verbatim="Socket AM2+" row="112" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,6: 65" verbatim="65" row="112" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,7: 1" verbatim="1" row="112" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,8: 1600, 1800" verbatim="1600, 1800" row="112" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,9: 64+64" verbatim="64+64" row="112" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,10: 512, 1024" verbatim="512, 1024" row="112" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,11: " verbatim="" row="112" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,12: " verbatim="" row="112" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, Cool'n'Quiet" row="112" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,14: " verbatim="" row="112" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,15: " verbatim="" row="112" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="112,16: " verbatim="" row="112" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,1: sempron" verbatim="Sempron" row="113" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,2: sparta" verbatim="Sparta" row="113" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,3: " verbatim="" row="113" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,4: 2700" verbatim="2700" row="113" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,5: socket am2+" verbatim="Socket AM2+" row="113" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,6: 65" verbatim="65" row="113" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,7: 1" verbatim="1" row="113" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,8: 1600" verbatim="1600" row="113" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,9: 64+64" verbatim="64+64" row="113" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,10: 512" verbatim="512" row="113" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,11: " verbatim="" row="113" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,12: " verbatim="" row="113" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, Cool'n'Quiet" row="113" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,14: " verbatim="" row="113" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,15: " verbatim="" row="113" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="113,16: " verbatim="" row="113" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="114,0: architecture" verbatim="Architecture" row="114" rowspan="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="114,1: family" verbatim="Family" row="114" rowspan="2" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="114,2: code name" verbatim="Code Name" row="114" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="114,3: model group" verbatim="Model Group" row="114" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="114,4: speed (mhz)" verbatim="Speed (MHz)" row="114" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="114,5: socket" verbatim="Socket" row="114" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="114,6: process (nm)" verbatim="Process (nm)" row="114" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="114,7: cores" verbatim="Cores" row="114" rowspan="2" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="114,8: fsb/ht(mhz)" verbatim="FSB/HT(MHz)" row="114" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="114,9: cache (kib)" verbatim="Cache (KiB)" row="114" rowspan="1" column="9" colspan="3"/>
+    <cells xsi:type="pcmmm:Header" name="114,12: memory controller" verbatim="Memory Controller" row="114" rowspan="2" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="114,13: supported features" verbatim="Supported Features" row="114" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="114,14: tdp (watts)" verbatim="TDP (watts)" row="114" rowspan="2" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="114,15: gflops/watt" verbatim="GFLOPS/watt" row="114" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="114,16: processing power (gflops)" verbatim="Processing Power (GFLOPS)" row="114" rowspan="2" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="115,9: l1" verbatim="L1" row="115" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="115,10: l2" verbatim="L2" row="115" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="115,11: l3" verbatim="L3" row="115" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="116,0: k10.5" verbatim="K10.5" row="116" rowspan="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,1: phenom ii" verbatim="Phenom II" row="116" rowspan="5" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,2: thuban" verbatim="Thuban" row="116" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,3: 1100t, 1090t, 1075t, 1055t, 1045t" verbatim="1100T, 1090T, 1075T, 1055T, 1045T" row="116" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,4: 2600-3300" verbatim="2600-3300" row="116" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,5: socket am2+ socket am3" verbatim="Socket AM2+&#xA;Socket AM3" row="116" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,6: 45" verbatim="45" row="116" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,7: 6/6" verbatim="6/6" row="116" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,8: 1800, 2000" verbatim="1800, 2000" row="116" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,9: 64+64" verbatim="64+64" row="116" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,10: 512" verbatim="512" row="116" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,11: 6144" verbatim="6144" row="116" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,12: ddr2 ddr3" verbatim="DDR2&#xA;DDR3" row="116" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, Cool'n'Quiet" row="116" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,14: " verbatim="" row="116" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,15: " verbatim="" row="116" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="116,16: " verbatim="" row="116" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="117,2: zosma" verbatim="Zosma" row="117" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="117,3: 840t, 960t, 970" verbatim="840T, 960T, 970" row="117" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="117,4: 3000-3400" verbatim="3000-3400" row="117" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="117,5: socket am2+ socket am3" verbatim="Socket AM2+&#xA;Socket AM3" row="117" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="117,6: 45" verbatim="45" row="117" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="117,7: 4/6" verbatim="4/6" row="117" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="117,8: 1800, 2000" verbatim="1800, 2000" row="117" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="117,9: 64+64" verbatim="64+64" row="117" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="117,10: 512" verbatim="512" row="117" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="117,11: 6144" verbatim="6144" row="117" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="117,12: ddr2 ddr3" verbatim="DDR2&#xA;DDR3" row="117" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="117,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, Cool'n'Quiet" row="117" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="117,14: " verbatim="" row="117" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="117,15: " verbatim="" row="117" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="117,16: " verbatim="" row="117" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="118,2: deneb" verbatim="Deneb" row="118" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="118,3: 980, 975, 970, 965, 955, 945, 940, 925, 920, 910e," verbatim="980, 975, 970, 965, 955, 945, 940, 925, 920, 910e, 905e, 830, 820, 810, 805" row="118" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="118,4: 2500-3700" verbatim="2500-3700" row="118" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="118,5: socket am2+ socket am3" verbatim="Socket AM2+&#xA;Socket AM3" row="118" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="118,6: 45" verbatim="45" row="118" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="118,7: 4/4" verbatim="4/4" row="118" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="118,8: 1800, 2000" verbatim="1800, 2000" row="118" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="118,9: 64+64" verbatim="64+64" row="118" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="118,10: 512" verbatim="512" row="118" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="118,11: 6144 (805-820 only 4096)" verbatim="6144 (805-820 only 4096)" row="118" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="118,12: ddr2 ddr3" verbatim="DDR2&#xA;DDR3" row="118" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="118,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, Cool'n'Quiet" row="118" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="118,14: " verbatim="" row="118" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="118,15: " verbatim="" row="118" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="118,16: " verbatim="" row="118" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="119,2: heka" verbatim="Heka" row="119" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="119,3: 740, 720, 705e" verbatim="740, 720, 705e" row="119" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="119,4: 2500&#x2013;2800" verbatim="2500&#x2013;2800" row="119" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="119,5: socket am2+ socket am3" verbatim="Socket AM2+&#xA;Socket AM3" row="119" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="119,6: 45" verbatim="45" row="119" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="119,7: 3/4" verbatim="3/4" row="119" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="119,8: 2000" verbatim="2000" row="119" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="119,9: 64+64" verbatim="64+64" row="119" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="119,10: 512" verbatim="512" row="119" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="119,11: 6144" verbatim="6144" row="119" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="119,12: ddr2 ddr3" verbatim="DDR2&#xA;DDR3" row="119" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="119,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, Cool'n'Quiet" row="119" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="119,14: " verbatim="" row="119" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="119,15: " verbatim="" row="119" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="119,16: " verbatim="" row="119" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="120,2: callisto" verbatim="Callisto" row="120" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="120,3: 570, 565, 560, 555, 550, 545" verbatim="570, 565, 560, 555, 550, 545" row="120" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="120,4: 3000-3400" verbatim="3000-3400" row="120" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="120,5: socket am2+ socket am3" verbatim="Socket AM2+&#xA;Socket AM3" row="120" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="120,6: 45" verbatim="45" row="120" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="120,7: 2/4" verbatim="2/4" row="120" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="120,8: 2000" verbatim="2000" row="120" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="120,9: 64+64" verbatim="64+64" row="120" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="120,10: 512" verbatim="512" row="120" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="120,11: 6144" verbatim="6144" row="120" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="120,12: ddr2 ddr3" verbatim="DDR2&#xA;DDR3" row="120" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="120,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, Cool'n'Quiet" row="120" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="120,14: " verbatim="" row="120" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="120,15: " verbatim="" row="120" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="120,16: " verbatim="" row="120" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,1: athlon ii" verbatim="Athlon II" row="121" rowspan="3" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,2: propus" verbatim="Propus" row="121" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,3: " verbatim="" row="121" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,4: 2200&#x2013;2800" verbatim="2200&#x2013;2800" row="121" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,5: socket am2+ socket am3" verbatim="Socket AM2+&#xA;Socket AM3" row="121" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,6: 45" verbatim="45" row="121" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,7: 4" verbatim="4" row="121" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,8: 2000" verbatim="2000" row="121" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,9: 64+64" verbatim="64+64" row="121" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,10: 512" verbatim="512" row="121" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,11: " verbatim="" row="121" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,12: ddr2 ddr3" verbatim="DDR2&#xA;DDR3" row="121" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, Cool'n'Quiet" row="121" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,14: " verbatim="" row="121" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,15: " verbatim="" row="121" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="121,16: " verbatim="" row="121" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="122,2: rana" verbatim="Rana" row="122" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="122,3: " verbatim="" row="122" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="122,4: 2200&#x2013;3100" verbatim="2200&#x2013;3100" row="122" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="122,5: socket am2+ socket am3" verbatim="Socket AM2+&#xA;Socket AM3" row="122" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="122,6: 45" verbatim="45" row="122" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="122,7: 3" verbatim="3" row="122" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="122,8: 2000" verbatim="2000" row="122" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="122,9: 64+64" verbatim="64+64" row="122" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="122,10: 512" verbatim="512" row="122" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="122,11: " verbatim="" row="122" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="122,12: ddr2 ddr3" verbatim="DDR2&#xA;DDR3" row="122" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="122,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, Cool'n'Quiet" row="122" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="122,14: " verbatim="" row="122" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="122,15: " verbatim="" row="122" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="122,16: " verbatim="" row="122" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="123,2: regor" verbatim="Regor" row="123" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="123,3: " verbatim="" row="123" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="123,4: 2800-3000" verbatim="2800-3000" row="123" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="123,5: socket am2+ socket am3" verbatim="Socket AM2+&#xA;Socket AM3" row="123" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="123,6: 45" verbatim="45" row="123" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="123,7: 2" verbatim="2" row="123" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="123,8: 2000" verbatim="2000" row="123" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="123,9: 64+64" verbatim="64+64" row="123" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="123,10: 512, 1024" verbatim="512, 1024" row="123" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="123,11: " verbatim="" row="123" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="123,12: ddr2 ddr3" verbatim="DDR2&#xA;DDR3" row="123" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="123,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, Cool'n'Quiet" row="123" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="123,14: " verbatim="" row="123" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="123,15: " verbatim="" row="123" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="123,16: " verbatim="" row="123" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,1: sempron" verbatim="Sempron" row="124" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,2: sargas" verbatim="Sargas" row="124" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,3: 140" verbatim="140" row="124" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,4: 2700" verbatim="2700" row="124" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,5: socket am2+ socket am3" verbatim="Socket AM2+&#xA;Socket AM3" row="124" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,6: 45" verbatim="45" row="124" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,7: 1" verbatim="1" row="124" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,8: ?" verbatim="?" row="124" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,9: " verbatim="" row="124" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,10: 1024" verbatim="1024" row="124" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,11: &#xa0;" verbatim="&#xa0;" row="124" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,12: ddr2 ddr3" verbatim="DDR2&#xA;DDR3" row="124" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, PowerNow!" row="124" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,14: " verbatim="" row="124" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,15: " verbatim="" row="124" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="124,16: " verbatim="" row="124" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,1: turion ii" verbatim="Turion II" row="125" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,2: caspian" verbatim="Caspian" row="125" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,3: &#xa0;" verbatim="&#xa0;" row="125" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,4: 2000-2700" verbatim="2000-2700" row="125" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,5: socket s1g3" verbatim="Socket S1G3" row="125" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,6: 45" verbatim="45" row="125" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,7: 2" verbatim="2" row="125" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,8: 1800, 1600" verbatim="1800, 1600" row="125" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,9: ?" verbatim="?" row="125" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,10: 512, 1024" verbatim="512, 1024" row="125" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,11: &#xa0;" verbatim="&#xa0;" row="125" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,12: ddr2" verbatim="DDR2" row="125" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,13: mmx, sse, sse2, sse3, sse4a, enhanced 3dnow!, nx b" verbatim="MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, PowerNow!" row="125" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,14: " verbatim="" row="125" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,15: " verbatim="" row="125" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="125,16: " verbatim="" row="125" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="126,0: architecture" verbatim="Architecture" row="126" rowspan="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="126,1: family" verbatim="Family" row="126" rowspan="2" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="126,2: code name" verbatim="Code Name" row="126" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="126,3: model group" verbatim="Model Group" row="126" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="126,4: speed (mhz)" verbatim="Speed (MHz)" row="126" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="126,5: socket" verbatim="Socket" row="126" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="126,6: process (nm)" verbatim="Process (nm)" row="126" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="126,7: cores" verbatim="Cores" row="126" rowspan="2" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="126,8: fsb/ht(mhz)" verbatim="FSB/HT(MHz)" row="126" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="126,9: cache (mb)" verbatim="Cache (MB)" row="126" rowspan="1" column="9" colspan="3"/>
+    <cells xsi:type="pcmmm:Header" name="126,12: memory controller" verbatim="Memory Controller" row="126" rowspan="2" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="126,13: supported features" verbatim="Supported Features" row="126" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="126,14: tdp (watts)" verbatim="TDP (watts)" row="126" rowspan="2" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="126,15: gflops/watt" verbatim="GFLOPS/watt" row="126" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="126,16: processing power (gflops)" verbatim="Processing Power (GFLOPS)" row="126" rowspan="2" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="127,9: l1" verbatim="L1" row="127" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="127,10: l2" verbatim="L2" row="127" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="127,11: l3" verbatim="L3" row="127" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="128,0: 15h &quot;bulldozer&quot;" verbatim="15h &quot;Bulldozer&quot;" row="128" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,1: fx, opteron" verbatim="FX, Opteron" row="128" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,2: zambezi, interlagos" verbatim="Zambezi, Interlagos" row="128" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,3: 4100, 4120, 4130, 4150, 4170, 6100, 6120, 6130, 62" verbatim="4100, 4120, 4130, 4150, 4170, 6100, 6120, 6130, 6200, 8100, 8120, 8140, 8150, 8170" row="128" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,4: 2800-4500 (includes turbo boost)" verbatim="2800-4500 (Includes Turbo Boost)" row="128" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,5: socket am3+ socket am3" verbatim="Socket AM3+&#xA;Socket AM3" row="128" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,6: 32" verbatim="32" row="128" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,7: 4/6/8*" verbatim="4/6/8*" row="128" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,8: 2600" verbatim="2600" row="128" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,9: 4 x 256 kb instr, 8 x 16 kb data" verbatim="4 x 256 KB Instr, 8 x 16 KB Data" row="128" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,10: 4 x 2" verbatim="4 x 2" row="128" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,11: 8" verbatim="8" row="128" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,12: ddr3" verbatim="DDR3" row="128" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,13: avx, sse4.2, sse4.1, aes, clmul, xop, fma4, cvt16," verbatim="AVX, SSE4.2, SSE4.1, AES, CLMUL, XOP, FMA4, CVT16, MMX, SSE, SSE2, SSE3, SSE4a, Enhanced 3DNow!, NX bit, AMD64, AMD-V, Cool'n'Quiet" row="128" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,14: " verbatim="" row="128" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,15: " verbatim="" row="128" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="128,16: " verbatim="" row="128" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="129,0: ? &quot;piledriver&quot;" verbatim="? &quot;Piledriver&quot;" row="129" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,1: fx, opteron, apu" verbatim="FX, Opteron, APU" row="129" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,2: vishera" verbatim="Vishera" row="129" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,3: 4300, 4320, 4350, 6300, 6350, 8300, 8320, 8350, 93" verbatim="4300, 4320, 4350, 6300, 6350, 8300, 8320, 8350, 9370, 9590" row="129" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,4: 3300-4800 (includes turbo boost)" verbatim="3300-4800 (Includes Turbo Boost)" row="129" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,5: socket am3+ socket fm2 fs1r2 fp2" verbatim="Socket AM3+&#xA;Socket FM2&#xA;FS1r2&#xA;FP2" row="129" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,6: 32" verbatim="32" row="129" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,7: 4/6/8*" verbatim="4/6/8*" row="129" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,8: 2200" verbatim="2200" row="129" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,9: ?" verbatim="?" row="129" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,10: 4 x 2, 3 x 2, 2 x 2, 1" verbatim="4 x 2, 3 x 2, 2 x 2, 1" row="129" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,11: 8, 4" verbatim="8, 4" row="129" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,12: ddr3" verbatim="DDR3" row="129" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,13: ?" verbatim="?" row="129" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,14: " verbatim="" row="129" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,15: " verbatim="" row="129" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="129,16: " verbatim="" row="129" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="130,0: ? &quot;steamroller&quot;" verbatim="? &quot;Steamroller&quot;" row="130" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,1: fx, apu" verbatim="FX, APU" row="130" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,2: kaveri, berlin" verbatim="Kaveri, Berlin" row="130" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,3: " verbatim="" row="130" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,4: " verbatim="" row="130" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,5: socket fm2 fm2+" verbatim="Socket FM2&#xA;FM2+" row="130" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,6: 28" verbatim="28" row="130" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,7: " verbatim="" row="130" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,8: " verbatim="" row="130" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,9: " verbatim="" row="130" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,10: " verbatim="" row="130" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,11: " verbatim="" row="130" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,12: " verbatim="" row="130" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,13: " verbatim="" row="130" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,14: " verbatim="" row="130" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,15: " verbatim="" row="130" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="130,16: " verbatim="" row="130" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="131,0: ? &quot;excavator&quot;" verbatim="? &quot;Excavator&quot;" row="131" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,1: apu" verbatim="APU" row="131" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,2: carrizo" verbatim="Carrizo" row="131" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,3: " verbatim="" row="131" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,4: " verbatim="" row="131" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,5: " verbatim="" row="131" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,6: " verbatim="" row="131" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,7: " verbatim="" row="131" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,8: " verbatim="" row="131" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,9: " verbatim="" row="131" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,10: " verbatim="" row="131" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,11: " verbatim="" row="131" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,12: " verbatim="" row="131" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,13: " verbatim="" row="131" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,14: " verbatim="" row="131" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,15: " verbatim="" row="131" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="131,16: " verbatim="" row="131" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="132,0: architecture" verbatim="Architecture" row="132" rowspan="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="132,1: family" verbatim="Family" row="132" rowspan="2" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="132,2: code name" verbatim="Code Name" row="132" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="132,3: model group" verbatim="Model Group" row="132" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="132,4: speed (mhz)" verbatim="Speed (MHz)" row="132" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="132,5: socket" verbatim="Socket" row="132" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="132,6: process (nm)" verbatim="Process (nm)" row="132" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="132,7: cores" verbatim="Cores" row="132" rowspan="2" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="132,8: fsb/ht(mhz)" verbatim="FSB/HT(MHz)" row="132" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="132,9: cache (mb)" verbatim="Cache (MB)" row="132" rowspan="1" column="9" colspan="3"/>
+    <cells xsi:type="pcmmm:Header" name="132,12: memory controller" verbatim="Memory Controller" row="132" rowspan="2" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="132,13: supported features" verbatim="Supported Features" row="132" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="132,14: tdp (watts)" verbatim="TDP (watts)" row="132" rowspan="2" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="132,15: gflops/watt" verbatim="GFLOPS/watt" row="132" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="132,16: processing power (gflops)" verbatim="Processing Power (GFLOPS)" row="132" rowspan="2" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="133,9: l1" verbatim="L1" row="133" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="133,10: l2" verbatim="L2" row="133" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="133,11: l3" verbatim="L3" row="133" rowspan="1" column="11" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

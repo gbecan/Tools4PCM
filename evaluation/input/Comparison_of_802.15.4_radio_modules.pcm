@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="Transceiver-only modules">
+    <cells xsi:type="pcmmm:Header" name="0,0: manufacturer" verbatim="Manufacturer" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: module" verbatim="Module" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: transceiver chip" verbatim="Transceiver Chip" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: antenna" verbatim="Antenna" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: sleep" verbatim="Sleep" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: tx" verbatim="TX" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: rx" verbatim="RX" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: tx power" verbatim="TX Power" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: sensitivity" verbatim="Sensitivity" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: pcb size" verbatim="PCB Size" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,10: released" verbatim="Released" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,11: interfacing" verbatim="Interfacing" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,12: protocol stacks" verbatim="Protocol stacks" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: flexipanel ltd" verbatim="FlexiPanel Ltd" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: easybee summary datasheet" verbatim="EasyBee summary datasheet" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: texas instruments cc2420 datasheet errata" verbatim="Texas Instruments CC2420 datasheet errata" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: integral" verbatim="integral" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: " verbatim="" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: 18&#xa0;ma" verbatim="18&#xa0;mA" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: 20&#xa0;ma" verbatim="20&#xa0;mA" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: 0&#xa0;dbm" verbatim="0&#xa0;dBm" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,8: " verbatim="" row="1" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,9: 26&#xa0;mm x 20&#xa0;mm" verbatim="26&#xa0;mm x 20&#xa0;mm" row="1" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,10: mar, 2008" verbatim="Mar, 2008" row="1" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,11: ?" verbatim="?" row="1" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,12: zigbee stack" verbatim="ZigBee stack" row="1" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: embit" verbatim="Embit" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: emb-trx169pa, 169&#xa0;mhz webpage" verbatim="EMB-TRX169PA, 169&#xa0;MHz&#xA;webpage" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: cc1120 datasheet" verbatim="CC1120 datasheet" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: u.fl connector" verbatim="U.FL connector" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: &lt;1&#xa0;&#xb5;a" verbatim="&lt;1&#xa0;&#xb5;A" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: 400 &#xa0;ma @ +27 dbm" verbatim="400 &#xa0;mA @ +27 dBm" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: 27&#xa0;ma (full sens.)" verbatim="27&#xa0;mA (full sens.)" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: 27&#xa0;dbm" verbatim="27&#xa0;dBm" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: -122&#xa0;dbm" verbatim="-122&#xa0;dBm" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,9: 16&#xa0;mm x 26&#xa0;mm" verbatim="16&#xa0;mm x 26&#xa0;mm" row="2" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,10: 2013" verbatim="2013" row="2" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,11: uart, spi, jtag" verbatim="UART, SPI, JTAG" row="2" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,12: wireless m-bus stack" verbatim="Wireless M-Bus stack" row="2" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: microchip technology" verbatim="Microchip Technology" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: mrf24j40madatasheet" verbatim="MRF24J40MAdatasheet" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: mrf24j40 datasheet" verbatim="MRF24J40 datasheet" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: pcb trace" verbatim="PCB trace" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: 2&#xa0;&#xb5;a" verbatim="2&#xa0;&#xb5;A" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: 23&#xa0;ma" verbatim="23&#xa0;mA" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: 19&#xa0;ma" verbatim="19&#xa0;mA" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: 0&#xa0;dbm" verbatim="0&#xa0;dBm" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: -94&#xa0;dbm" verbatim="-94&#xa0;dBm" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,9: 17.8&#xa0;mm x 27.9&#xa0;mm" verbatim="17.8&#xa0;mm x 27.9&#xa0;mm" row="3" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,10: jun, 2008" verbatim="Jun, 2008" row="3" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,11: spi" verbatim="SPI" row="3" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,12: microchip zigbee miwi miwi p2p" verbatim="Microchip ZigBee MiWi MiWi P2P" row="3" rowspan="1" column="12" colspan="1"/>
+  </matrices>
+  <matrices name="Integrated MCU and transceiver modules">
+    <cells xsi:type="pcmmm:Header" name="0,0: manufacturer" verbatim="Manufacturer" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: module" verbatim="Module" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: soc/sip chip" verbatim="SOC/SIP Chip" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: mcu core" verbatim="MCU core" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: ram" verbatim="RAM" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: flash" verbatim="Flash" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: antenna" verbatim="Antenna" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: sleep" verbatim="Sleep" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: tx" verbatim="TX" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: rx" verbatim="RX" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,10: tx power" verbatim="TX Power" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,11: sensitivity" verbatim="Sensitivity" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,12: pcb size" verbatim="PCB Size" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,13: released" verbatim="Released" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,14: interfacing" verbatim="Interfacing" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,15: firmware options" verbatim="Firmware options" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: atmel" verbatim="Atmel" row="1" rowspan="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: zigbit 2.4&#xa0;ghz (atzb-24-b0) datasheet" verbatim="ZigBit 2.4&#xa0;GHz  (ATZB-24-B0) datasheet" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: at86rf230 datasheet" verbatim="AT86RF230 datasheet" row="1" rowspan="4" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: 8-bit atmega 1281v" verbatim="8-bit ATmega 1281v" row="1" rowspan="5" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: 8&#xa0;kb" verbatim="8&#xa0;kB" row="1" rowspan="5" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="1" rowspan="5" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: rf output" verbatim="RF output" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: &lt; 6&#xa0;&#xb5;a" verbatim="&lt; 6&#xa0;&#xb5;A" row="1" rowspan="5" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,8: 18&#xa0;ma" verbatim="18&#xa0;mA" row="1" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,9: 19&#xa0;ma" verbatim="19&#xa0;mA" row="1" rowspan="2" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,10: -17&#xa0;dbm to 3&#xa0;dbm" verbatim="-17&#xa0;dBm to 3&#xa0;dBm" row="1" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,11: -101&#xa0;dbm" verbatim="-101&#xa0;dBm" row="1" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,12: 18.8&#xa0;mm x 13.5&#xa0;mm x 2.0&#xa0;mm" verbatim="18.8&#xa0;mm x 13.5&#xa0;mm x 2.0&#xa0;mm" row="1" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,13: 2009" verbatim="2009" row="1" rowspan="5" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,14: uart, usart, spi, i&#xb2;c, jtag" verbatim="UART, USART, SPI, I&#xb2;C, JTAG" row="1" rowspan="5" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,15: bitcloud - zigbee pro, wireless mcu software, bitc" verbatim="BitCloud - ZigBee PRO, Wireless MCU Software, BitCloud stack, SerialNet, OpenMAC" row="1" rowspan="5" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: zigbit 2.4&#xa0;ghz (atzb-24-a2) datasheet" verbatim="ZigBit 2.4&#xa0;GHz (ATZB-24-A2) datasheet" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: balanced dual chip antenna" verbatim="balanced dual chip antenna" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,12: 24&#xa0;mm x 13.5&#xa0;mm x 2.0&#xa0;mm" verbatim="24&#xa0;mm x 13.5&#xa0;mm x 2.0&#xa0;mm" row="2" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: zigbit 2.4&#xa0;ghz amplified (atzb-a24-u0) datasheet" verbatim="ZigBit 2.4&#xa0;GHz Amplified (ATZB-A24-U0) datasheet" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: rf output" verbatim="RF output" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: 50&#xa0;ma" verbatim="50&#xa0;mA" row="3" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,9: 23&#xa0;ma" verbatim="23&#xa0;mA" row="3" rowspan="2" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,10: up to 20&#xa0;dbm" verbatim="Up to 20&#xa0;dBm" row="3" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,11: -104&#xa0;dbm" verbatim="-104&#xa0;dBm" row="3" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,12: 38&#xa0;mm x 13.5&#xa0;mm x 2.0&#xa0;mm" verbatim="38&#xa0;mm x 13.5&#xa0;mm x 2.0&#xa0;mm" row="3" rowspan="2" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: zigbit 2.4&#xa0;ghz amplified (atzb-a24-ufl) datasheet" verbatim="ZigBit 2.4&#xa0;GHz Amplified (ATZB-A24-UFL) datasheet" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: u.fl connector" verbatim="U.FL connector" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: zigbit 700/800/900&#xa0;mhz (atzb-900-b0) datasheet" verbatim="ZigBit 700/800/900&#xa0;MHz (ATZB-900-B0) datasheet" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: at86rf212 datasheet" verbatim="AT86RF212 datasheet" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: rf output" verbatim="RF output" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,8: 26&#xa0;ma" verbatim="26&#xa0;mA" row="5" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,9: 11&#xa0;ma" verbatim="11&#xa0;mA" row="5" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,10: up to 11&#xa0;dbm" verbatim="Up to 11&#xa0;dBm" row="5" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,11: -110&#xa0;dbm" verbatim="-110&#xa0;dBm" row="5" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,12: 24&#xa0;mm x 13.5&#xa0;mm x 2.8&#xa0;mm" verbatim="24&#xa0;mm x 13.5&#xa0;mm x 2.8&#xa0;mm" row="5" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: california eastern laboratories" verbatim="California Eastern Laboratories" row="6" rowspan="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: zicm357sp2 datasheet brochure" verbatim="ZICM357SP2 datasheet brochure" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: em357 datasheet brochure" verbatim="EM357 datasheet brochure" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: 32 bit, arm cortex-m3" verbatim="32 bit, ARM Cortex-M3" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: 12&#xa0;kb" verbatim="12&#xa0;kB" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: 192&#xa0;kb" verbatim="192&#xa0;kB" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: pcb trace antenna or rf port for external antenna" verbatim="PCB Trace Antenna or RF Port for External Antenna" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: 1&#xa0;ua" verbatim="1&#xa0;uA" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,8: 58&#xa0;ma" verbatim="58&#xa0;mA" row="6" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,9: 34&#xa0;ma" verbatim="34&#xa0;mA" row="6" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,10: 20&#xa0;dbm" verbatim="20&#xa0;dBm" row="6" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,11: -103&#xa0;dbm" verbatim="-103&#xa0;dBm" row="6" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,12: 23.9&#xa0;mm x 16.6&#xa0;mm" verbatim="23.9&#xa0;mm x 16.6&#xa0;mm" row="6" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,13: apr, 2012" verbatim="Apr, 2012" row="6" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,14: uart, spi, twi" verbatim="UART, SPI, TWI" row="6" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,15: zigbee pro stack: emberznet pro" verbatim="ZigBee PRO stack: EmberZNet PRO" row="6" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: zicm357sp0 datasheet brochure" verbatim="ZICM357SP0 datasheet brochure" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: em357 datasheet brochure" verbatim="EM357 datasheet brochure" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: 32 bit, arm cortex-m3" verbatim="32 bit, ARM Cortex-M3" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: 12&#xa0;kb" verbatim="12&#xa0;kB" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: 192&#xa0;kb" verbatim="192&#xa0;kB" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: pcb trace antenna or rf port for external antenna" verbatim="PCB Trace Antenna or RF Port for External Antenna" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: 1&#xa0;ua" verbatim="1&#xa0;uA" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,8: 31&#xa0;ma" verbatim="31&#xa0;mA" row="7" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,9: 30&#xa0;ma" verbatim="30&#xa0;mA" row="7" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,10: 8&#xa0;dbm" verbatim="8&#xa0;dBm" row="7" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,11: -100&#xa0;dbm" verbatim="-100&#xa0;dBm" row="7" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,12: 23.9&#xa0;mm x 16.6&#xa0;mm" verbatim="23.9&#xa0;mm x 16.6&#xa0;mm" row="7" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,13: apr, 2012" verbatim="Apr, 2012" row="7" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,14: uart, spi, twi" verbatim="UART, SPI, TWI" row="7" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,15: zigbee pro stack: emberznet pro" verbatim="ZigBee PRO stack: EmberZNet PRO" row="7" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: zicm2410p0 datasheet brochure" verbatim="ZICM2410P0 datasheet brochure" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: zic2410 datasheet brochure" verbatim="ZIC2410 datasheet brochure" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: 8-bit 8051" verbatim="8-bit 8051" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: 8&#xa0;kb" verbatim="8&#xa0;kB" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: 96&#xa0;kb" verbatim="96&#xa0;kB" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: pcb trace antenna or u.fl connector" verbatim="PCB Trace Antenna or U.FL connector" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: 0.3&#xa0;&#xb5;a" verbatim="0.3&#xa0;&#xb5;A" row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,8: 44&#xa0;ma" verbatim="44&#xa0;mA" row="8" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,9: 35&#xa0;ma" verbatim="35&#xa0;mA" row="8" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,10: 6.1&#xa0;dbm" verbatim="6.1&#xa0;dBm" row="8" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,11: -97&#xa0;dbm" verbatim="-97&#xa0;dBm" row="8" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,12: 25.4&#xa0;mm x 34.3&#xa0;mm" verbatim="25.4&#xa0;mm x 34.3&#xa0;mm" row="8" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,13: mar, 2009" verbatim="Mar, 2009" row="8" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,14: uart, spi, i&#xb2;s" verbatim="UART, SPI, I&#xb2;S" row="8" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,15: cel zigbee stack synapse snap stack" verbatim="CEL ZigBee Stack Synapse SNAP Stack" row="8" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,0: digi international" verbatim="Digi International" row="9" rowspan="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: series 1 xbee manual" verbatim="Series 1 XBee manual" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: freescale mc13193 datasheet" verbatim="Freescale MC13193 datasheet" row="9" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: 8-bit 689s08a hcs08" verbatim="8-bit 689S08A HCS08" row="9" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: 4&#xa0;kb" verbatim="4&#xa0;kB" row="9" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: 60&#xa0;kb" verbatim="60&#xa0;kB" row="9" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: integrated whip, chip or u.fl connector, rpsma con" verbatim="integrated Whip, chip or U.FL connector, RPSMA connector" row="9" rowspan="4" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: 10&#xa0;&#xb5;a, 50&#xa0;&#xb5;a" verbatim="10&#xa0;&#xb5;A, 50&#xa0;&#xb5;A" row="9" rowspan="2" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,8: 45&#xa0;ma" verbatim="45&#xa0;mA" row="9" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,9: 50&#xa0;ma" verbatim="50&#xa0;mA" row="9" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,10: 0&#xa0;dbm" verbatim="0&#xa0;dBm" row="9" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,11: -92&#xa0;dbm" verbatim="-92&#xa0;dBm" row="9" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,12: 24.38&#xa0;mm x 27.61&#xa0;mm" verbatim="24.38&#xa0;mm x 27.61&#xa0;mm" row="9" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,13: dec, 2006" verbatim="Dec, 2006" row="9" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,14: uart" verbatim="UART" row="9" rowspan="4" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,15: zigbee stack, digimesh network protocol" verbatim="ZigBee stack, DigiMesh network protocol" row="9" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: series 1 xbee-pro manual" verbatim="Series 1 XBee-PRO manual" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,8: 250&#xa0;ma, 340&#xa0;ma, 180&#xa0;ma" verbatim="250&#xa0;mA, 340&#xa0;mA, 180&#xa0;mA" row="10" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,9: 55&#xa0;ma" verbatim="55&#xa0;mA" row="10" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,10: 18&#xa0;dbm, 10&#xa0;dbm" verbatim="18&#xa0;dBm, 10&#xa0;dBm" row="10" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,11: -100&#xa0;dbm" verbatim="-100&#xa0;dBm" row="10" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,12: 24.38&#xa0;mm x 32.94&#xa0;mm" verbatim="24.38&#xa0;mm x 32.94&#xa0;mm" row="10" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: series 2 xbee zb manual" verbatim="Series 2 XBee ZB manual" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: ember (now silicon labs) em250 factsheet datasheet" verbatim="Ember (now Silicon Labs) EM250 factsheet datasheet" row="11" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: 16-bit 12&#xa0;mhz risc" verbatim="16-bit 12&#xa0;MHz RISC" row="11" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: 5&#xa0;kb" verbatim="5&#xa0;kB" row="11" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="11" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,7: 1&#xa0;&#xb5;a" verbatim="1&#xa0;&#xb5;A" row="11" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,8: 40&#xa0;ma, 35&#xa0;ma" verbatim="40&#xa0;mA, 35&#xa0;mA" row="11" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,9: 40&#xa0;ma, 38&#xa0;ma" verbatim="40&#xa0;mA, 38&#xa0;mA" row="11" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,10: 3&#xa0;dbm, 1&#xa0;dbm" verbatim="3&#xa0;dBm, 1&#xa0;dBm" row="11" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,11: -96&#xa0;dbm, -95&#xa0;dbm" verbatim="-96&#xa0;dBm, -95&#xa0;dBm" row="11" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,12: 24.38&#xa0;mm x 27.61&#xa0;mm" verbatim="24.38&#xa0;mm x 27.61&#xa0;mm" row="11" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,13: apr, 2008" verbatim="Apr, 2008" row="11" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,15: ember znet" verbatim="Ember ZNet" row="11" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: series 2 xbee-pro zb manual" verbatim="Series 2 XBee-PRO ZB manual" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,7: 10&#xa0;&#xb5;a" verbatim="10&#xa0;&#xb5;A" row="12" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,8: 295&#xa0;ma, 170&#xa0;ma" verbatim="295&#xa0;mA, 170&#xa0;mA" row="12" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,9: 45&#xa0;ma" verbatim="45&#xa0;mA" row="12" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,10: 17&#xa0;dbm, 10&#xa0;dbm" verbatim="17&#xa0;dBm, 10&#xa0;dBm" row="12" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,11: -102&#xa0;dbm" verbatim="-102&#xa0;dBm" row="12" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,12: 24.38&#xa0;mm x 32.94&#xa0;mm" verbatim="24.38&#xa0;mm x 32.94&#xa0;mm" row="12" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,0: dresden elektronik" verbatim="Dresden elektronik" row="13" rowspan="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: derfmega128-22m00 2.4 ghz datasheet" verbatim="deRFmega128-22M00 2.4 GHz&#xA; datasheet" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: atmega128rfa1 datasheet" verbatim="ATmega128RFA1&#xA; datasheet" row="13" rowspan="3" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: 8-bit atmega" verbatim="8-bit ATmega" row="13" rowspan="3" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: 16&#xa0;kb" verbatim="16&#xa0;kB" row="13" rowspan="3" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="13" rowspan="3" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: chip ceramic antenna" verbatim="Chip ceramic antenna" row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,7: &lt; 1 &#xb5;a" verbatim="&lt; 1 &#xb5;A" row="13" rowspan="3" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,8: 18&#xa0;ma" verbatim="18&#xa0;mA" row="13" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,9: 18&#xa0;ma" verbatim="18&#xa0;mA" row="13" rowspan="2" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,10: +3&#xa0;dbm" verbatim="+3&#xa0;dBm" row="13" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,11: -98&#xa0;dbm" verbatim="-98&#xa0;dBm" row="13" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,12: 23.6&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" verbatim="23.6&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" row="13" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,13: 2012" verbatim="2012" row="13" rowspan="3" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,14: jtag, uart, i&#xb2;c, adc, spi, gpio" verbatim="JTAG, UART, I&#xb2;C, ADC, SPI, GPIO" row="13" rowspan="3" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,15: mac stack zigbee (bitcloud) 6lowpan atmel" verbatim="MAC stack&#xA;&#xA; ZigBee (BitCloud)&#xA;&#xA; 6LoWPAN&#xA;&#xA; Atmel" row="13" rowspan="12" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: derfmega128-22m10 2.4 ghz datasheet" verbatim="deRFmega128-22M10 2.4 GHz&#xA; datasheet" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: rf pads" verbatim="RF pads" row="14" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,12: 19.0&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" verbatim="19.0&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" row="14" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: derfmega128-22m12 2.4 ghz datasheet" verbatim="deRFmega128-22M12 2.4 GHz&#xA; datasheet" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,8: 198&#xa0;ma" verbatim="198&#xa0;mA" row="15" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,9: 22&#xa0;ma" verbatim="22&#xa0;mA" row="15" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,10: +22&#xa0;dbm" verbatim="+22&#xa0;dBm" row="15" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,11: -105&#xa0;dbm" verbatim="-105&#xa0;dBm" row="15" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,12: 21.5&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" verbatim="21.5&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" row="15" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: derfmega256-23m00 2.4 ghz datasheet" verbatim="deRFmega256-23M00 2.4 GHz&#xA; datasheet" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: atmega256rfr2 datasheet" verbatim="ATmega256RFR2&#xA; datasheet" row="16" rowspan="3" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: 8-bit atmega" verbatim="8-bit ATmega" row="16" rowspan="3" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: 32&#xa0;kb" verbatim="32&#xa0;kB" row="16" rowspan="3" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: 256&#xa0;kb" verbatim="256&#xa0;kB" row="16" rowspan="3" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,6: chip ceramic antenna" verbatim="Chip ceramic antenna" row="16" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,7: &lt;&#xa0;1&#xa0;&#xb5;a" verbatim="&lt;&#xa0;1&#xa0;&#xb5;A" row="16" rowspan="3" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,8: 19&#xa0;ma" verbatim="19&#xa0;mA" row="16" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,9: 11&#xa0;ma" verbatim="11&#xa0;mA" row="16" rowspan="2" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,10: +3.5&#xa0;dbm" verbatim="+3.5&#xa0;dBm" row="16" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,11: -98&#xa0;dbm" verbatim="-98&#xa0;dBm" row="16" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,12: 23.6&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" verbatim="23.6&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" row="16" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,13: 2013" verbatim="2013" row="16" rowspan="5" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,14: jtag, uart, i&#xb2;c, adc, spi, gpio" verbatim="JTAG, UART, I&#xb2;C, ADC, SPI, GPIO" row="16" rowspan="3" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: derfmega256-23m10 2.4 ghz datasheet" verbatim="deRFmega256-23M10 2.4 GHz&#xA; datasheet" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,6: rf pads" verbatim="RF pads" row="17" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,12: 19.0&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" verbatim="19.0&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" row="17" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: derfmega256-23m12 2.4 ghz datasheet" verbatim="deRFmega256-23M12 2.4 GHz&#xA; datasheet" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,8: 233&#xa0;ma" verbatim="233&#xa0;mA" row="18" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,9: 17&#xa0;ma" verbatim="17&#xa0;mA" row="18" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,10: 23&#xa0;dbm" verbatim="23&#xa0;dBm" row="18" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,11: -104&#xa0;dbm" verbatim="-104&#xa0;dBm" row="18" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,12: 21.5&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" verbatim="21.5&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" row="18" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: derfsam3-23m10-2 2.4 ghz datasheet" verbatim="deRFsam3-23M10-2 2.4 GHz&#xA; datasheet" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: atsam3s4a datasheet at86rf232 datasheet" verbatim="ATSAM3S4A&#xA; datasheet&#xA;&#xA; AT86RF232&#xA; datasheet" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: 32-bit arm cortex-m3" verbatim="32-bit ARM Cortex-M3" row="19" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: 48&#xa0;kb" verbatim="48&#xa0;kB" row="19" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,5: 256&#xa0;kb" verbatim="256&#xa0;kB" row="19" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,6: rf&#xa0;pads" verbatim="RF&#xa0;pads" row="19" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,7: &lt;&#xa0;6&#xa0;&#xb5;a" verbatim="&lt;&#xa0;6&#xa0;&#xb5;A" row="19" rowspan="2" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,8: 45&#xa0;ma" verbatim="45&#xa0;mA" row="19" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,9: 41&#xa0;ma" verbatim="41&#xa0;mA" row="19" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,10: +3&#xa0;dbm" verbatim="+3&#xa0;dBm" row="19" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,11: -100&#xa0;dbm" verbatim="-100&#xa0;dBm" row="19" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,12: 21.5&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" verbatim="21.5&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" row="19" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,14: jtag, uart, i&#xb2;c, adc, spi, gpio, usb" verbatim="JTAG, UART, I&#xb2;C, ADC, SPI, GPIO, USB" row="19" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,1: derfsam3-13m10&#xa0;868,&#xa0;915&#xa0;mhz datasheet" verbatim="deRFsam3-13M10&#xa0;868,&#xa0;915&#xa0;MHz&#xA; datasheet" row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,2: atsam3s4a datasheet at86rf212 datasheet" verbatim="ATSAM3S4A&#xA; datasheet&#xA;&#xA; AT86RF212&#xA; datasheet" row="20" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,8: 50&#xa0;ma" verbatim="50&#xa0;mA" row="20" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,9: 37&#xa0;ma" verbatim="37&#xa0;mA" row="20" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,10: +5&#xa0;or +10&#xa0;dbm" verbatim="+5&#xa0;or +10&#xa0;dBm" row="20" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,11: -110&#xa0;dbm" verbatim="-110&#xa0;dBm" row="20" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,12: 21.5&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" verbatim="21.5&#xa0;mm&#xa0;x 13.2&#xa0;mm&#xa0;x 3.0 mm" row="20" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,14: jtag, uart, i&#xb2;c, adc, spi, gpio, usb" verbatim="JTAG, UART, I&#xb2;C, ADC, SPI, GPIO, USB" row="20" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,1: derfusb-23e00&#xa0;2.4&#xa0;ghz derfusb-23e06&#xa0;2.4&#xa0;ghz datash" verbatim="deRFusb-23E00&#xa0;2.4&#xa0;GHz&#xA;deRFusb-23E06&#xa0;2.4&#xa0;GHz&#xA; datasheet" row="21" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,2: atsam3s4b datasheet at86rf231 datasheet" verbatim="ATSAM3S4B&#xA; datasheet&#xA;&#xA;AT86RF231&#xA; datasheet" row="21" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,3: 32-bit arm cortex-m3" verbatim="32-bit ARM Cortex-M3" row="21" rowspan="4" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,4: 48&#xa0;kb" verbatim="48&#xa0;kB" row="21" rowspan="4" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,5: 256&#xa0;kb" verbatim="256&#xa0;kB" row="21" rowspan="4" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,6: chip ceramic antenna" verbatim="Chip ceramic antenna" row="21" rowspan="4" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,7: 32&#xa0;ma" verbatim="32&#xa0;mA" row="21" rowspan="4" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,8: 51&#xa0;ma" verbatim="51&#xa0;mA" row="21" rowspan="4" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,9: 45&#xa0;ma" verbatim="45&#xa0;mA" row="21" rowspan="4" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,10: +3&#xa0;dbm" verbatim="+3&#xa0;dBm" row="21" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,11: -97&#xa0;dbm" verbatim="-97&#xa0;dBm" row="21" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,12: 71.0&#xa0;mm&#xa0;x 23.0&#xa0;mm&#xa0;x 8.7 mm" verbatim="71.0&#xa0;mm&#xa0;x 23.0&#xa0;mm&#xa0;x 8.7 mm" row="21" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,13: 2012" verbatim="2012" row="21" rowspan="4" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,14: usb, optional: jtag, debug" verbatim="USB, optional: JTAG, Debug" row="21" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,1: derfusb-23e00&#xa0;jtag&#xa0;2.4&#xa0;ghz derfusb-23e06&#xa0;jtag&#xa0;2.4&#xa0;" verbatim="deRFusb-23E00&#xa0;JTAG&#xa0;2.4&#xa0;GHz&#xA;deRFusb-23E06&#xa0;JTAG&#xa0;2.4&#xa0;GHz&#xA; datasheet" row="22" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,12: 63.5&#xa0;mm&#xa0;x 19.0&#xa0;mm&#xa0;x 9.5 mm" verbatim="63.5&#xa0;mm&#xa0;x 19.0&#xa0;mm&#xa0;x 9.5 mm" row="22" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,14: usb, jtag, debug" verbatim="USB, JTAG, Debug" row="22" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,1: derfusb-13e00&#xa0;868,&#xa0;915&#xa0;mhz derfusb-13e06&#xa0;868,&#xa0;915&#xa0;" verbatim="deRFusb-13E00&#xa0;868,&#xa0;915&#xa0;MHz&#xA;deRFusb-13E06&#xa0;868,&#xa0;915&#xa0;MHz&#xA; datasheet" row="23" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,2: atsam3s4b datasheet at86rf212 datasheet" verbatim="ATSAM3S4B&#xA; datasheet&#xA;&#xA;AT86RF212&#xA; datasheet" row="23" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,10: +9&#xa0;dbm" verbatim="+9&#xa0;dBm" row="23" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,11: -106&#xa0;dbm" verbatim="-106&#xa0;dBm" row="23" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,12: 71.0&#xa0;mm&#xa0;x 23.0&#xa0;mm&#xa0;x 8.7 mm" verbatim="71.0&#xa0;mm&#xa0;x 23.0&#xa0;mm&#xa0;x 8.7 mm" row="23" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,14: usb, optional: jtag, debug" verbatim="USB, optional: JTAG, Debug" row="23" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,1: derfusb-13e00&#xa0;jtag&#xa0;868,&#xa0;915&#xa0;mhz derfusb-13e06&#xa0;jtag" verbatim="deRFusb-13E00&#xa0;JTAG&#xa0;868,&#xa0;915&#xa0;MHz&#xA;deRFusb-13E06&#xa0;JTAG&#xa0;868,&#xa0;915&#xa0;MHz&#xA; datasheet" row="24" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,12: 63.5&#xa0;mm&#xa0;x 19.0&#xa0;mm&#xa0;x 9.5 mm" verbatim="63.5&#xa0;mm&#xa0;x 19.0&#xa0;mm&#xa0;x 9.5 mm" row="24" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,14: usb, jtag, debug" verbatim="USB, JTAG, Debug" row="24" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,0: embit" verbatim="Embit" row="25" rowspan="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,1: emb-wmb169pa, 169&#xa0;mhz webpage datasheet brochure" verbatim="EMB-WMB169PA, 169&#xa0;MHz&#xA; webpage datasheet brochure" row="25" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,2: msp430f534x datasheet" verbatim="MSP430F534x&#xA; datasheet" row="25" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,3: 16 bit msp430" verbatim="16 bit MSP430" row="25" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,4: 10&#xa0;kb / 8&#xa0;kb / 6&#xa0;kb" verbatim="10&#xa0;kB / 8&#xa0;kB / 6&#xa0;kB" row="25" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,5: 128&#xa0;kb / 96&#xa0;kb / 64&#xa0;kb" verbatim="128&#xa0;kB / 96&#xa0;kB / 64&#xa0;kB" row="25" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,6: rf pads, u.fl connector" verbatim="RF Pads, U.FL Connector" row="25" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,7: &lt;2&#xa0;ua" verbatim="&lt;2&#xa0;uA" row="25" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,8: 57&#xa0;ma@ +15dbm" verbatim="57&#xa0;mA@ +15dBm" row="25" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,9: 27&#xa0;ma (full sens.)" verbatim="27&#xa0;mA (full sens.)" row="25" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,10: up to 30&#xa0;dbm" verbatim="up to 30&#xa0;dBm" row="25" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,11: -122&#xa0;dbm" verbatim="-122&#xa0;dBm" row="25" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,12: 29&#xa0;mm x 22&#xa0;mm" verbatim="29&#xa0;mm x 22&#xa0;mm" row="25" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,13: 2012" verbatim="2012" row="25" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,14: uart, spi, jtag" verbatim="UART, SPI, JTAG" row="25" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,15: wireless m-bus stack" verbatim="Wireless M-Bus stack" row="25" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,1: emb-wmb868, 868&#xa0;mhz webpage datasheet brochure" verbatim="EMB-WMB868, 868&#xa0;MHz&#xA; webpage datasheet brochure" row="26" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,2: msp430f534x datasheet" verbatim="MSP430F534x&#xA; datasheet" row="26" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,3: 16 bit msp430" verbatim="16 bit MSP430" row="26" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,4: 10&#xa0;kb / 8&#xa0;kb / 6&#xa0;kb" verbatim="10&#xa0;kB / 8&#xa0;kB / 6&#xa0;kB" row="26" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,5: 128&#xa0;kb / 96&#xa0;kb / 64&#xa0;kb" verbatim="128&#xa0;kB / 96&#xa0;kB / 64&#xa0;kB" row="26" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,6: rf pads, u.fl connector" verbatim="RF Pads, U.FL Connector" row="26" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,7: &lt;2&#xa0;ua" verbatim="&lt;2&#xa0;uA" row="26" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,8: 57&#xa0;ma@ +15dbm" verbatim="57&#xa0;mA@ +15dBm" row="26" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,9: 27&#xa0;ma (full sens.)" verbatim="27&#xa0;mA (full sens.)" row="26" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,10: 15&#xa0;dbm" verbatim="15&#xa0;dBm" row="26" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,11: -122&#xa0;dbm" verbatim="-122&#xa0;dBm" row="26" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,12: 29&#xa0;mm x 22&#xa0;mm" verbatim="29&#xa0;mm x 22&#xa0;mm" row="26" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,13: 2012" verbatim="2012" row="26" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,14: uart, spi, jtag" verbatim="UART, SPI, JTAG" row="26" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,15: wireless m-bus stack" verbatim="Wireless M-Bus stack" row="26" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,1: emb-z2530pa, 2.4&#xa0;ghz webpage datasheet brochure" verbatim="EMB-Z2530PA, 2.4&#xa0;GHz&#xA; webpage datasheet brochure" row="27" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,2: cc2530 datasheet" verbatim="CC2530&#xA; datasheet" row="27" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,3: 8 bit 8051" verbatim="8 bit 8051" row="27" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,4: 8&#xa0;kb" verbatim="8&#xa0;kB" row="27" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,5: 256&#xa0;kb" verbatim="256&#xa0;kB" row="27" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,6: pcb antenna, u.fl connector, wire antenna opt" verbatim="PCB Antenna, U.FL Connector, Wire Antenna opt" row="27" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,7: &lt;1.1&#xa0;ua" verbatim="&lt;1.1&#xa0;uA" row="27" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,8: 135&#xa0;ma@ +20dbm" verbatim="135&#xa0;mA@ +20dBm" row="27" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,9: 28&#xa0;ma" verbatim="28&#xa0;mA" row="27" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,10: 20&#xa0;dbm" verbatim="20&#xa0;dBm" row="27" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,11: -100&#xa0;dbm" verbatim="-100&#xa0;dBm" row="27" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,12: 29&#xa0;mm x 22&#xa0;mm" verbatim="29&#xa0;mm x 22&#xa0;mm" row="27" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,13: 2011" verbatim="2011" row="27" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,14: uart, spi, jtag" verbatim="UART, SPI, JTAG" row="27" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,15: timac (ieee 802.15.4), zstack (zigbee)" verbatim="TIMAC (IEEE 802.15.4), ZStack (ZigBee)" row="27" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,1: emb-zrf212b, 868&#xa0;mhz, 915&#xa0;mhz webpage datasheet br" verbatim="EMB-ZRF212B, 868&#xa0;MHz, 915&#xa0;MHz&#xA; webpage datasheet brochure" row="28" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,2: atxmega128d3 datasheet" verbatim="ATxmega128D3&#xA; datasheet" row="28" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,3: 8/16 bit avr xmega" verbatim="8/16 bit AVR XMEGA" row="28" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,4: 8&#xa0;kb" verbatim="8&#xa0;kB" row="28" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="28" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,6: ceramic antenna, u.fl connector, rf pads" verbatim="Ceramic Antenna, U.FL Connector, RF pads" row="28" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,7: 1.3&#xa0;ua" verbatim="1.3&#xa0;uA" row="28" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,8: 17&#xa0;ma@ +5dbm" verbatim="17&#xa0;mA@ +5dBm" row="28" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,9: 10&#xa0;ma" verbatim="10&#xa0;mA" row="28" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,10: 10&#xa0;dbm" verbatim="10&#xa0;dBm" row="28" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,11: -110&#xa0;dbm" verbatim="-110&#xa0;dBm" row="28" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,12: 29&#xa0;mm x 22&#xa0;mm" verbatim="29&#xa0;mm x 22&#xa0;mm" row="28" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,13: 2013" verbatim="2013" row="28" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,14: uart, spi, jtag" verbatim="UART, SPI, JTAG" row="28" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,15: atmel lightweight mesh, atmel mac (ieee 802.15.4)," verbatim="Atmel Lightweight Mesh, Atmel MAC (IEEE 802.15.4), Atmel BitCloud (ZigBee PRO)" row="28" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,1: emb-zrf231pa, 2.4&#xa0;ghz webpage datasheet brochure" verbatim="EMB-ZRF231PA, 2.4&#xa0;GHz&#xA; webpage datasheet brochure" row="29" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,2: atxmega256a3u datasheet" verbatim="ATxmega256A3U&#xA; datasheet" row="29" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,3: 8/16 bit avr xmega" verbatim="8/16 bit AVR XMEGA" row="29" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,4: 16&#xa0;kb" verbatim="16&#xa0;kB" row="29" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,5: 256&#xa0;kb" verbatim="256&#xa0;kB" row="29" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,6: pcb antenna, u.fl connector, rf pads" verbatim="PCB Antenna, U.FL Connector, RF pads" row="29" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,7: &lt;1.1&#xa0;ua" verbatim="&lt;1.1&#xa0;uA" row="29" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,8: 132&#xa0;ma@ +20dbm" verbatim="132&#xa0;mA@ +20dBm" row="29" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,9: 24&#xa0;ma" verbatim="24&#xa0;mA" row="29" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,10: 20&#xa0;dbm" verbatim="20&#xa0;dBm" row="29" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,11: -105&#xa0;dbm" verbatim="-105&#xa0;dBm" row="29" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,12: 29&#xa0;mm x 22&#xa0;mm" verbatim="29&#xa0;mm x 22&#xa0;mm" row="29" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,13: 2011" verbatim="2011" row="29" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,14: uart, spi, jtag" verbatim="UART, SPI, JTAG" row="29" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,15: atmel lightweight mesh, atmel mac (ieee 802.15.4)," verbatim="Atmel Lightweight Mesh, Atmel MAC (IEEE 802.15.4), Atmel BitCloud (ZigBee PRO)" row="29" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,0: jennic" verbatim="Jennic" row="30" rowspan="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,1: jn5139-xxx-m00 product brief" verbatim="JN5139-xxx-M00 Product brief" row="30" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,2: jn5139 product brief" verbatim="JN5139 Product brief" row="30" rowspan="5" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,3: 16&#xa0;mhz 32-bit risc" verbatim="16&#xa0;MHz 32-bit RISC" row="30" rowspan="5" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,4: 96&#xa0;kb" verbatim="96&#xa0;kB" row="30" rowspan="5" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,5: 192&#xa0;kb" verbatim="192&#xa0;kB" row="30" rowspan="5" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,6: on board" verbatim="on board" row="30" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,7: 2.6&#xa0;&#xb5;a" verbatim="2.6&#xa0;&#xb5;A" row="30" rowspan="5" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,8: 37&#xa0;ma" verbatim="37&#xa0;mA" row="30" rowspan="3" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,9: 37&#xa0;ma" verbatim="37&#xa0;mA" row="30" rowspan="3" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,10: 2.5&#xa0;dbm" verbatim="2.5&#xa0;dBm" row="30" rowspan="3" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,11: -96&#xa0;dbm" verbatim="-96&#xa0;dBm" row="30" rowspan="3" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,12: 18&#xa0;mm x 30&#xa0;mm" verbatim="18&#xa0;mm x 30&#xa0;mm" row="30" rowspan="3" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,13: jun 2008" verbatim="Jun 2008" row="30" rowspan="5" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,14: uart, spi" verbatim="UART, SPI" row="30" rowspan="5" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,15: jennet stack zigbee stack" verbatim="JenNet stack ZigBee stack" row="30" rowspan="5" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,1: jn5139-xxx-m01 product brief" verbatim="JN5139-xxx-M01 Product brief" row="31" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,6: sma connector" verbatim="SMA connector" row="31" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,1: jn5139-xxx-m03 product brief" verbatim="JN5139-xxx-M03 Product brief" row="32" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,6: u.fl connector" verbatim="U.FL connector" row="32" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,1: jn5139-xxx-m02 product brief" verbatim="JN5139-xxx-M02 Product brief" row="33" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,6: sma connector" verbatim="SMA connector" row="33" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,8: 125&#xa0;ma" verbatim="125&#xa0;mA" row="33" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,9: 45&#xa0;ma" verbatim="45&#xa0;mA" row="33" rowspan="2" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,10: 19&#xa0;dbm" verbatim="19&#xa0;dBm" row="33" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,11: -100&#xa0;dbm" verbatim="-100&#xa0;dBm" row="33" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,12: 18&#xa0;mm x41&#xa0;mm" verbatim="18&#xa0;mm x41&#xa0;mm" row="33" rowspan="2" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,1: jn5139-xxx-m04 product brief" verbatim="JN5139-xxx-M04 Product brief" row="34" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,6: u.fl connector" verbatim="U.FL connector" row="34" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,0: nivis, llc." verbatim="Nivis, LLC." row="35" rowspan="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,1: versanode 210 datasheet" verbatim="VersaNode 210 datasheet" row="35" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,2: mc13224v datasheet" verbatim="MC13224V datasheet" row="35" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,3: 32-bit arm7" verbatim="32-bit ARM7" row="35" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,4: 96&#xa0;kb" verbatim="96&#xa0;kB" row="35" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="35" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,6: mmcx connector" verbatim="MMCX Connector" row="35" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,7: 15&#xa0;&#xb5;a" verbatim="15&#xa0;&#xb5;A" row="35" rowspan="2" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,8: 60&#xa0;ma" verbatim="60&#xa0;mA" row="35" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,9: 21&#xa0;ma" verbatim="21&#xa0;mA" row="35" rowspan="2" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,10: 10&#xa0;dbm" verbatim="10&#xa0;dBm" row="35" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,11: -98&#xa0;dbm" verbatim="-98&#xa0;dBm" row="35" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,12: 20&#xa0;mm x 25&#xa0;mm" verbatim="20&#xa0;mm x 25&#xa0;mm" row="35" rowspan="2" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,13: 2009" verbatim="2009" row="35" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,14: uart, spi" verbatim="UART, SPI" row="35" rowspan="2" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,15: nivis isa100.11a" verbatim="Nivis ISA100.11a" row="35" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,1: versanode 220 datasheet" verbatim="VersaNode 220 datasheet" row="36" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,13: 2010" verbatim="2010" row="36" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,15: nivis wirelesshart" verbatim="Nivis WirelessHART" row="36" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,0: panasonic" verbatim="Panasonic" row="37" rowspan="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,1: pan4551 datasheet" verbatim="PAN4551 datasheet" row="37" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,2: mc13193 datasheet" verbatim="MC13193 datasheet" row="37" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,3: 8-bit mc9s08gt60 hc08" verbatim="8-bit MC9S08GT60 HC08" row="37" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,4: 4&#xa0;kb" verbatim="4&#xa0;kB" row="37" rowspan="3" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,5: 60&#xa0;kb" verbatim="60&#xa0;kB" row="37" rowspan="3" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,6: pcb pad, u.fl connector, internal" verbatim="PCB pad, U.FL connector, internal" row="37" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,7: 37&#xa0;&#xb5;a, 3&#xa0;&#xb5;a, 0.3&#xa0;&#xb5;a" verbatim="37&#xa0;&#xb5;A, 3&#xa0;&#xb5;A, 0.3&#xa0;&#xb5;A" row="37" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,8: 31&#xa0;ma, 22&#xa0;ma" verbatim="31&#xa0;mA, 22&#xa0;mA" row="37" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,9: 38&#xa0;ma" verbatim="38&#xa0;mA" row="37" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,10: 0&#xa0;dbm, -20&#xa0;dbm" verbatim="0&#xa0;dBm, -20&#xa0;dBm" row="37" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,11: -98&#xa0;dbm" verbatim="-98&#xa0;dBm" row="37" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,12: 20&#xa0;mm x 26&#xa0;mm x 3&#xa0;mm" verbatim="20&#xa0;mm x 26&#xa0;mm x 3&#xa0;mm" row="37" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,13: oct, 2005" verbatim="Oct, 2005" row="37" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,14: uart" verbatim="UART" row="37" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,15: freescale z-stack" verbatim="Freescale Z-Stack" row="37" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,1: pan4555 datasheet" verbatim="PAN4555 datasheet" row="38" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,2: mc1321x datasheet" verbatim="MC1321x datasheet" row="38" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,3: 8-bit mc9s08gt hc08" verbatim="8-bit MC9S08GT HC08" row="38" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,6: rf out or ceramic antenna" verbatim="RF out or ceramic antenna" row="38" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,7: 0.25&#xa0;&#xb5;a, 1.9&#xa0;&#xb5;a, 36&#xa0;&#xb5;a, 1.6&#xa0;ma" verbatim="0.25&#xa0;&#xb5;A, 1.9&#xa0;&#xb5;A, 36&#xa0;&#xb5;A, 1.6&#xa0;mA" row="38" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,8: 36.5&#xa0;ma" verbatim="36.5&#xa0;mA" row="38" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,9: 37&#xa0;ma" verbatim="37&#xa0;mA" row="38" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,10: -4&#xa0;dbm, 0&#xa0;dbm" verbatim="-4&#xa0;dBm, 0&#xa0;dBm" row="38" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,11: -92&#xa0;dbm" verbatim="-92&#xa0;dBm" row="38" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,12: 12.2&#xa0;mm x 16.4&#xa0;mm x 2.2&#xa0;mm" verbatim="12.2&#xa0;mm x 16.4&#xa0;mm x 2.2&#xa0;mm" row="38" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,13: 2008" verbatim="2008" row="38" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,14: uart, spi" verbatim="UART, SPI" row="38" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,15: freescale beestack" verbatim="Freescale Beestack" row="38" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,1: pan4561 brochure" verbatim="PAN4561 brochure" row="39" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,2: mc13213 datasheet" verbatim="MC13213 datasheet" row="39" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,6: smd rf out, ceramic antenna or u.fl" verbatim="SMD RF out, ceramic antenna or U.FL" row="39" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,7: 1.6&#xa0;ma, 50&#xa0;&#xb5;a, 16&#xa0;&#xb5;a, 2&#xa0;&#xb5;a" verbatim="1.6&#xa0;mA, 50&#xa0;&#xb5;A, 16&#xa0;&#xb5;A, 2&#xa0;&#xb5;A" row="39" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,8: 202&#xa0;ma" verbatim="202&#xa0;mA" row="39" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,9: 45&#xa0;ma" verbatim="45&#xa0;mA" row="39" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,10: 20&#xa0;dbm" verbatim="20&#xa0;dBm" row="39" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,11: -105&#xa0;dbm" verbatim="-105&#xa0;dBm" row="39" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,12: 35&#xa0;mm x 15&#xa0;mm" verbatim="35&#xa0;mm x 15&#xa0;mm" row="39" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,13: jan, 2009" verbatim="Jan, 2009" row="39" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,14: uart, i&#xb2;c" verbatim="UART, I&#xb2;C" row="39" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,1: pan4570 datasheet" verbatim="PAN4570 datasheet" row="40" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,2: ember (now silicon labs) em250 factsheet datasheet" verbatim="Ember (now Silicon Labs) EM250 factsheet datasheet" row="40" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,3: 16-bit 12&#xa0;mhz risc" verbatim="16-bit 12&#xa0;MHz RISC" row="40" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,4: 5&#xa0;kb" verbatim="5&#xa0;kB" row="40" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="40" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,7: 1&#xa0;&#xb5;a, 1.5&#xa0;&#xb5;a" verbatim="1&#xa0;&#xb5;A, 1.5&#xa0;&#xb5;A" row="40" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,8: 35.5&#xa0;ma, 41.5&#xa0;ma, 28&#xa0;ma" verbatim="35.5&#xa0;mA, 41.5&#xa0;mA, 28&#xa0;mA" row="40" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,9: 35.5&#xa0;ma, 37.5&#xa0;ma" verbatim="35.5&#xa0;mA, 37.5&#xa0;mA" row="40" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,10: 3&#xa0;dbm, 5&#xa0;dbm, -32&#xa0;dbm" verbatim="3&#xa0;dBm, 5&#xa0;dBm, -32&#xa0;dBm" row="40" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,11: -97&#xa0;dbm" verbatim="-97&#xa0;dBm" row="40" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,12: 26.5&#xa0;mm x 20&#xa0;mm x 2.8&#xa0;mm" verbatim="26.5&#xa0;mm x 20&#xa0;mm x 2.8&#xa0;mm" row="40" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,13: 2006" verbatim="2006" row="40" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,14: uart, spi, i&#xb2;c" verbatim="UART, SPI, I&#xb2;C" row="40" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,15: ember znet stack" verbatim="Ember ZNet Stack" row="40" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,0: radiocrafts" verbatim="Radiocrafts" row="41" rowspan="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,1: rc2200datasheet" verbatim="RC2200datasheet" row="41" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,2: texas instruments cc2420 datasheet errata" verbatim="Texas Instruments CC2420 datasheet errata" row="41" rowspan="5" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,3: 8-bit atmega128" verbatim="8-bit ATmega128" row="41" rowspan="4" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,4: 4&#xa0;kb" verbatim="4&#xa0;kB" row="41" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="41" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,6: integrated, mmcx connector or rf on pin connector" verbatim="integrated, MMCX connector or RF on pin connector" row="41" rowspan="4" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,7: 23&#xa0;&#xb5;a, 1.3&#xa0;&#xb5;a" verbatim="23&#xa0;&#xb5;A, 1.3&#xa0;&#xb5;A" row="41" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,8: 27&#xa0;ma" verbatim="27&#xa0;mA" row="41" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,9: 30&#xa0;ma" verbatim="30&#xa0;mA" row="41" rowspan="2" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,10: 0&#xa0;dbm" verbatim="0&#xa0;dBm" row="41" rowspan="4" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,11: -94&#xa0;dbm" verbatim="-94&#xa0;dBm" row="41" rowspan="4" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,12: 16.5&#xa0;mm x 29.2&#xa0;mm x 3.5&#xa0;mm" verbatim="16.5&#xa0;mm x 29.2&#xa0;mm x 3.5&#xa0;mm" row="41" rowspan="4" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,13: 2008" verbatim="2008" row="41" rowspan="4" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,14: uart, spi, jtag, isp" verbatim="UART, SPI, JTAG, ISP" row="41" rowspan="5" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,15: texas instruments z-stack or any third-party zigbe" verbatim="Texas Instruments Z-stack or any third-party ZigBee stack" row="41" rowspan="9" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,1: rc2201datasheet" verbatim="RC2201datasheet" row="42" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,4: 8&#xa0;kb" verbatim="8&#xa0;kB" row="42" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,7: 1.3&#xa0;&#xb5;a" verbatim="1.3&#xa0;&#xb5;A" row="42" rowspan="2" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,1: rc2202datasheet" verbatim="RC2202datasheet" row="43" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,4: 2&#xa0;kb" verbatim="2&#xa0;kB" row="43" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,5: 32&#xa0;kb" verbatim="32&#xa0;kB" row="43" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,8: 23&#xa0;ma" verbatim="23&#xa0;mA" row="43" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,9: 26&#xa0;ma" verbatim="26&#xa0;mA" row="43" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,1: rc2204datasheet" verbatim="RC2204datasheet" row="44" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,4: 4&#xa0;kb" verbatim="4&#xa0;kB" row="44" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,5: 64&#xa0;kb" verbatim="64&#xa0;kB" row="44" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,7: 23&#xa0;&#xb5;a, 1.3&#xa0;&#xb5;a" verbatim="23&#xa0;&#xb5;A, 1.3&#xa0;&#xb5;A" row="44" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,8: 27&#xa0;ma" verbatim="27&#xa0;mA" row="44" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,9: 30&#xa0;ma" verbatim="30&#xa0;mA" row="44" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,1: rc2201hp datasheet" verbatim="RC2201HP datasheet" row="45" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,3: 8-bit atmega1281" verbatim="8-bit ATmega1281" row="45" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,4: 8&#xa0;kb" verbatim="8&#xa0;kB" row="45" rowspan="5" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="45" rowspan="3" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,6: integrated or rf-on-pin connector" verbatim="integrated or RF-on-pin connector" row="45" rowspan="5" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,7: 40&#xa0;&#xb5;a, 2&#xa0;&#xb5;a" verbatim="40&#xa0;&#xb5;A, 2&#xa0;&#xb5;A" row="45" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,8: 140&#xa0;ma" verbatim="140&#xa0;mA" row="45" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,9: 28&#xa0;ma" verbatim="28&#xa0;mA" row="45" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,10: 17&#xa0;dbm" verbatim="17&#xa0;dBm" row="45" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,11: -92&#xa0;dbm" verbatim="-92&#xa0;dBm" row="45" rowspan="5" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,12: 16.5&#xa0;mm x 35.6&#xa0;mm x 3.5&#xa0;mm" verbatim="16.5&#xa0;mm x 35.6&#xa0;mm x 3.5&#xa0;mm" row="45" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,13: jan 2008" verbatim="Jan 2008" row="45" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,1: rc2300 datasheet" verbatim="RC2300 datasheet" row="46" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,2: texas instruments cc2430 (cc2431 for location engi" verbatim="Texas Instruments CC2430 (CC2431 for location engine option)datasheet errata" row="46" rowspan="4" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,3: 8-bit 8051" verbatim="8-bit 8051" row="46" rowspan="4" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,7: 300&#xa0;&#xb5;a, 0.9&#xa0;&#xb5;a, 0.6&#xa0;&#xb5;a" verbatim="300&#xa0;&#xb5;A, 0.9&#xa0;&#xb5;A, 0.6&#xa0;&#xb5;A" row="46" rowspan="4" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,8: 27&#xa0;ma" verbatim="27&#xa0;mA" row="46" rowspan="4" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,9: 27&#xa0;ma" verbatim="27&#xa0;mA" row="46" rowspan="4" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,10: 0&#xa0;dbm" verbatim="0&#xa0;dBm" row="46" rowspan="4" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,12: 12.7&#xa0;mm x 25.4&#xa0;mm x 2.5&#xa0;mm" verbatim="12.7&#xa0;mm x 25.4&#xa0;mm x 2.5&#xa0;mm" row="46" rowspan="4" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,13: jul 2008" verbatim="Jul 2008" row="46" rowspan="4" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,14: uart, spi, proprietary serial debugging interface" verbatim="UART, SPI, proprietary serial debugging interface" row="46" rowspan="4" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,1: rc2301 datasheet" verbatim="RC2301 datasheet" row="47" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,1: rc2302 datasheet" verbatim="RC2302 datasheet" row="48" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,5: 32&#xa0;kb" verbatim="32&#xa0;kB" row="48" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,1: rc2304 datasheet" verbatim="RC2304 datasheet" row="49" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,5: 64&#xa0;kb" verbatim="64&#xa0;kB" row="49" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,0: rf monolithics" verbatim="RF Monolithics" row="50" rowspan="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,1: zmn2405 datasheet" verbatim="ZMN2405 datasheet" row="50" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,2: texas instruments cc2430 datasheet errata" verbatim="Texas Instruments CC2430 datasheet errata" row="50" rowspan="7" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,3: 8-bit 8051" verbatim="8-bit 8051" row="50" rowspan="7" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,4: 8&#xa0;kb" verbatim="8&#xa0;kB" row="50" rowspan="7" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="50" rowspan="7" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,6: rfio pad" verbatim="RFIO pad" row="50" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,7: 3&#xa0;&#xb5;a" verbatim="3&#xa0;&#xb5;A" row="50" rowspan="7" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,8: 28&#xa0;ma" verbatim="28&#xa0;mA" row="50" rowspan="3" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,9: 27&#xa0;ma" verbatim="27&#xa0;mA" row="50" rowspan="3" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,10: 0&#xa0;dbm" verbatim="0&#xa0;dBm" row="50" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,11: -92 dbm" verbatim="-92 dBm" row="50" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,12: 30.5&#xa0;mm x 21.2&#xa0;mm" verbatim="30.5&#xa0;mm x 21.2&#xa0;mm" row="50" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,13: 2008" verbatim="2008" row="50" rowspan="7" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,14: uart, spi," verbatim="UART, SPI," row="50" rowspan="7" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,15: zigbee stack, rfm&#x2019;s csm standard module applicatio" verbatim="ZigBee stack, RFM&#x2019;s CSM standard module application profile" row="50" rowspan="7" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,1: zmn2430 datasheet" verbatim="ZMN2430 datasheet" row="51" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,12: 25&#xa0;mm x 20.3&#xa0;mm" verbatim="25&#xa0;mm x 20.3&#xa0;mm" row="51" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,1: zmn2430a datasheet" verbatim="ZMN2430A datasheet" row="52" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,6: built-in" verbatim="built-in" row="52" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,10: -2&#xa0;dbm" verbatim="-2&#xa0;dBm" row="52" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,11: -90&#xa0;dbm" verbatim="-90&#xa0;dBm" row="52" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,12: 25&#xa0;mm x 26.9&#xa0;mm" verbatim="25&#xa0;mm x 26.9&#xa0;mm" row="52" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,1: zmn2405hp datasheet" verbatim="ZMN2405HP datasheet" row="53" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,6: rfio pad" verbatim="RFIO pad" row="53" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,8: 130&#xa0;ma" verbatim="130&#xa0;mA" row="53" rowspan="4" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,9: 33&#xa0;ma" verbatim="33&#xa0;mA" row="53" rowspan="4" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,10: 17&#xa0;dbm" verbatim="17&#xa0;dBm" row="53" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,11: -95&#xa0;dbm" verbatim="-95&#xa0;dBm" row="53" rowspan="4" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,12: 40.6&#xa0;mm x 21.2&#xa0;mm" verbatim="40.6&#xa0;mm x 21.2&#xa0;mm" row="53" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,1: zmn2405hpa datasheet" verbatim="ZMN2405HPA datasheet" row="54" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,6: built-in" verbatim="built-in" row="54" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,10: 15&#xa0;dbm" verbatim="15&#xa0;dBm" row="54" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,12: 47&#xa0;mm x 21.2&#xa0;mm" verbatim="47&#xa0;mm x 21.2&#xa0;mm" row="54" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,1: zmn2430hp datasheet" verbatim="ZMN2430HP datasheet" row="55" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,6: rfio pad" verbatim="RFIO pad" row="55" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,10: 17&#xa0;dbm" verbatim="17&#xa0;dBm" row="55" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,12: 30.48&#xa0;mm x 25&#xa0;mm" verbatim="30.48&#xa0;mm x 25&#xa0;mm" row="55" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,1: zmn2430hpa datasheet" verbatim="ZMN2430HPA datasheet" row="56" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,6: built-in" verbatim="built-in" row="56" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,10: 15&#xa0;dbm" verbatim="15&#xa0;dBm" row="56" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,12: 36.83&#xa0;mm x 25&#xa0;mm" verbatim="36.83&#xa0;mm x 25&#xa0;mm" row="56" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,0: radios, inc." verbatim="Radios, Inc." row="57" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,1: mxr-em20 datasheet" verbatim="MXR-EM20 datasheet" row="57" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,2: ember 2420 datasheet" verbatim="Ember 2420 datasheet" row="57" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,3: 8-bit atmega128l" verbatim="8-bit ATmega128L" row="57" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,4: 4&#xa0;kb" verbatim="4&#xa0;kB" row="57" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="57" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,6: rf on pin" verbatim="RF on pin" row="57" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,7: 20&#xa0;&#xb5;a" verbatim="20&#xa0;&#xb5;A" row="57" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,8: 17.4&#xa0;ma" verbatim="17.4&#xa0;mA" row="57" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,9: 19.7&#xa0;ma" verbatim="19.7&#xa0;mA" row="57" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,10: 0&#xa0;dbm" verbatim="0&#xa0;dBm" row="57" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,11: -94&#xa0;dbm" verbatim="-94&#xa0;dBm" row="57" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,12: 25.4&#xa0;mm x 18.4&#xa0;mm" verbatim="25.4&#xa0;mm x 18.4&#xa0;mm" row="57" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,13: oct, 2005" verbatim="Oct, 2005" row="57" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,14: spi" verbatim="SPI" row="57" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,15: zigbee stack" verbatim="ZigBee stack" row="57" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,0: flexipanel ltd" verbatim="FlexiPanel Ltd" row="58" rowspan="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,1: pixie summary datasheet" verbatim="Pixie summary datasheet" row="58" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,2: texas instruments cc2420 datasheet errata" verbatim="Texas Instruments CC2420 datasheet errata" row="58" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,3: pic18lf4620" verbatim="PIC18LF4620" row="58" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,4: 4&#xa0;kb" verbatim="4&#xa0;kB" row="58" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,5: 64&#xa0;kb" verbatim="64&#xa0;kB" row="58" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,6: integral" verbatim="integral" row="58" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,7: 2&#xa0;&#xb5;a" verbatim="2&#xa0;&#xb5;A" row="58" rowspan="2" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,8: 25&#xa0;ma" verbatim="25&#xa0;mA" row="58" rowspan="2" column="8" colspan="2"/>
+    <cells xsi:type="pcmmm:Extra" name="58,10: 0&#xa0;dbm" verbatim="0&#xa0;dBm" row="58" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,11: " verbatim="" row="58" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,12: " verbatim="" row="58" rowspan="2" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,13: mar, 2008" verbatim="Mar, 2008" row="58" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,14: uart, spi" verbatim="UART, SPI" row="58" rowspan="2" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,15: microchip zigbee" verbatim="Microchip ZigBee" row="58" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,1: pixie lite summary datasheet" verbatim="Pixie Lite summary datasheet" row="59" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,3: pic18lf2520" verbatim="PIC18LF2520" row="59" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,4: 1.5&#xa0;kb" verbatim="1.5&#xa0;kB" row="59" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,5: 32&#xa0;kb" verbatim="32&#xa0;kB" row="59" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,16: " verbatim="" row="59" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,0: telegesis ltd" verbatim="Telegesis Ltd" row="60" rowspan="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,1: etrx2 brochure datasheet" verbatim="ETRX2 brochure datasheet" row="60" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,2: ember (now silicon labs) em250 factsheet datasheet" verbatim="Ember (now Silicon Labs) EM250 factsheet datasheet" row="60" rowspan="3" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,3: 16-bit 12&#xa0;mhz risc" verbatim="16-bit 12&#xa0;MHz RISC" row="60" rowspan="3" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,4: 5&#xa0;kb" verbatim="5&#xa0;kB" row="60" rowspan="3" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="60" rowspan="3" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,6: integrated, u.fl connector or 50&#x3c9; pad" verbatim="integrated, U.FL connector or 50&#x3a9; pad" row="60" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,7: 1&#xa0;&#xb5;a, 1.5&#xa0;&#xb5;a" verbatim="1&#xa0;&#xb5;A, 1.5&#xa0;&#xb5;A" row="60" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,8: 35.5&#xa0;ma, 41.5&#xa0;ma, 28&#xa0;ma" verbatim="35.5&#xa0;mA, 41.5&#xa0;mA, 28&#xa0;mA" row="60" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,9: 35.5&#xa0;ma, 37.5&#xa0;ma" verbatim="35.5&#xa0;mA, 37.5&#xa0;mA" row="60" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,10: 3&#xa0;dbm, 5&#xa0;dbm" verbatim="3&#xa0;dBm, 5&#xa0;dBm" row="60" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,11: &#x2212;94&#xa0;dbm, &#x2212;95&#xa0;dbm, &#x2212;98&#xa0;dbm, &#x2212;99&#xa0;dbm" verbatim="&#x2212;94&#xa0;dBm, &#x2212;95&#xa0;dBm, &#x2212;98&#xa0;dBm, &#x2212;99&#xa0;dBm" row="60" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,12: 37.75&#xa0;mm x 20.45&#xa0;mm" verbatim="37.75&#xa0;mm x 20.45&#xa0;mm" row="60" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,13: 2008" verbatim="2008" row="60" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,14: sif, uart, i&#xb2;c, spi" verbatim="SIF, UART, I&#xb2;C, SPI" row="60" rowspan="2" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,15: ember znet stack" verbatim="Ember ZNet Stack" row="60" rowspan="5" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,1: etrx2-pa brochure datasheet" verbatim="ETRX2-PA brochure datasheet" row="61" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,7: 0.8&#xa0;&#xb5;a, 1.5&#xa0;&#xb5;a, 3&#xa0;&#xb5;a, 3.5&#xa0;&#xb5;a" verbatim="0.8&#xa0;&#xb5;A, 1.5&#xa0;&#xb5;A, 3&#xa0;&#xb5;A, 3.5&#xa0;&#xb5;A" row="61" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,8: 56&#xa0;ma, 63&#xa0;ma, 106&#xa0;ma, 120&#xa0;ma, 121&#xa0;ma" verbatim="56&#xa0;mA, 63&#xa0;mA, 106&#xa0;mA, 120&#xa0;mA, 121&#xa0;mA" row="61" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,9: 37&#xa0;ma" verbatim="37&#xa0;mA" row="61" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,10: 0&#xa0;dbm, 10&#xa0;dbm, 18.5&#xa0;dbm, 17.5&#xa0;dbm" verbatim="0&#xa0;dBm, 10&#xa0;dBm, 18.5&#xa0;dBm, 17.5&#xa0;dBm" row="61" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,11: &#x2212;92&#xa0;dbm, &#x2212;93&#xa0;dbm, &#x2212;96&#xa0;dbm, &#x2212;97&#xa0;dbm" verbatim="&#x2212;92&#xa0;dBm, &#x2212;93&#xa0;dBm, &#x2212;96&#xa0;dBm, &#x2212;97&#xa0;dBm" row="61" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,12: 37.75&#xa0;mm x 20.5&#xa0;mm" verbatim="37.75&#xa0;mm x 20.5&#xa0;mm" row="61" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,13: 2009" verbatim="2009" row="61" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,1: etrx2usb brochure datasheet" verbatim="ETRX2USB brochure datasheet" row="62" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,6: integrated" verbatim="integrated" row="62" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,7: 32&#xa0;ma, 27&#xa0;ma, 26&#xa0;ma" verbatim="32&#xa0;mA, 27&#xa0;mA, 26&#xa0;mA" row="62" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,8: 55&#xa0;ma, 62&#xa0;ma" verbatim="55&#xa0;mA, 62&#xa0;mA" row="62" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,9: 62&#xa0;ma" verbatim="62&#xa0;mA" row="62" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,10: 3&#xa0;dbm, 18&#xa0;dbm" verbatim="3&#xa0;dBm, 18&#xa0;dBm" row="62" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,11: " verbatim="" row="62" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,12: " verbatim="" row="62" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,13: 2008" verbatim="2008" row="62" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,14: sif" verbatim="SIF" row="62" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,1: etrx351 brochure datasheet" verbatim="ETRX351 brochure datasheet" row="63" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,2: silicon labs (former ember) em351 factsheetdatashe" verbatim="Silicon Labs (former Ember) EM351 factsheetdatasheet" row="63" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,3: 32-bit arm cortex -m3 processor" verbatim="32-bit ARM Cortex -M3 Processor" row="63" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,4: 12&#xa0;kb" verbatim="12&#xa0;kB" row="63" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="63" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,6: integrated chip antenna or u.fl coaxial connector" verbatim="Integrated chip antenna or U.FL coaxial connector" row="63" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,7: &lt;1&#xa0;&#xb5;a" verbatim="&lt;1&#xa0;&#xb5;A" row="63" rowspan="2" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,8: 31&#xa0;ma" verbatim="31&#xa0;mA" row="63" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,9: 22&#xa0;ma" verbatim="22&#xa0;mA" row="63" rowspan="2" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,10: 8&#xa0;dbm" verbatim="8&#xa0;dBm" row="63" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,11: &#x2212;102&#xa0;dbm" verbatim="&#x2212;102&#xa0;dBm" row="63" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,12: 25&#xa0;mm x 19&#xa0;mm" verbatim="25&#xa0;mm x 19&#xa0;mm" row="63" rowspan="2" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,13: 2011" verbatim="2011" row="63" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,14: " verbatim="" row="63" rowspan="2" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,1: etrx357 brochure datasheet" verbatim="ETRX357 brochure datasheet" row="64" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,2: silicon labs (former ember) em357 factsheetdatashe" verbatim="Silicon Labs (former Ember) EM357 factsheetdatasheet" row="64" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,5: 192&#xa0;kb" verbatim="192&#xa0;kB" row="64" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,0: sena technologies" verbatim="Sena Technologies" row="65" rowspan="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,1: probee-ze10 product brief datasheet" verbatim="ProBee-ZE10 Product Brief datasheet" row="65" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,2: ember (now silicon labs) em250 factsheetdatasheet" verbatim="Ember (now Silicon Labs) EM250 factsheetdatasheet" row="65" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,3: 16-bit 12&#xa0;mhz risc" verbatim="16-bit 12&#xa0;MHz RISC" row="65" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,4: 5&#xa0;kb" verbatim="5&#xa0;kB" row="65" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="65" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,6: integrated chip, u.fl connector, rpsma connector" verbatim="Integrated chip, U.FL connector, RPSMA Connector" row="65" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,7: &#x2264;&#xa0;2&#xa0;&#xb5;a" verbatim="&#x2264;&#xa0;2&#xa0;&#xb5;A" row="65" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,8: 190&#xa0;ma" verbatim="190&#xa0;mA" row="65" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,9: 45&#xa0;ma" verbatim="45&#xa0;mA" row="65" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,10: 20&#xa0;dbm" verbatim="20&#xa0;dBm" row="65" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,11: -102&#xa0;dbm" verbatim="-102&#xa0;dBm" row="65" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,12: 51.7&#xa0;mm x 23.0&#xa0;mm x 11.15&#xa0;mm" verbatim="51.7&#xa0;mm x 23.0&#xa0;mm x 11.15&#xa0;mm" row="65" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,13: 2010&#xa0;oct" verbatim="2010&#xa0;Oct" row="65" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,14: uart" verbatim="UART" row="65" rowspan="2" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,15: ember znet stack" verbatim="Ember ZNet Stack" row="65" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,1: probee-ze20s dip/smd product brief datasheet" verbatim="ProBee-ZE20S DIP/SMD Product Brief datasheet" row="66" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,2: ember (now silicon labs) em357 factsheetdatasheet" verbatim="Ember (now Silicon Labs) EM357 factsheetdatasheet" row="66" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,3: 32-bit arm cortex -m3 processor" verbatim="32-bit ARM Cortex -M3 Processor" row="66" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,4: 12&#xa0;kb" verbatim="12&#xa0;kB" row="66" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,5: 192&#xa0;kb" verbatim="192&#xa0;kB" row="66" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,6: integrated chip,u.fl connector,rpsma connector" verbatim="Integrated chip,U.FL connector,RPSMA Connector" row="66" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,7: &lt;&#xa0;1&#xa0;&#xb5;a" verbatim="&lt;&#xa0;1&#xa0;&#xb5;A" row="66" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,8: 33&#xa0;ma" verbatim="33&#xa0;mA" row="66" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,9: 28&#xa0;ma" verbatim="28&#xa0;mA" row="66" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,10: 8&#xa0;dbm" verbatim="8&#xa0;dBm" row="66" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,11: -100&#xa0;dbm/max.-102&#xa0;dbm" verbatim="-100&#xa0;dBm/Max.-102&#xa0;dBm" row="66" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,12: smd size: 31.6&#xa0;mm x 18.6&#xa0;mm, dip size 32.8&#xa0;mm x 21" verbatim="SMD Size: 31.6&#xa0;mm X 18.6&#xa0;mm, DIP Size 32.8&#xa0;mm X 21.0&#xa0;mm" row="66" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,13: 2011&#xa0;oct" verbatim="2011&#xa0;Oct" row="66" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,0: mmb research" verbatim="MMB Research" row="67" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,1: z357pa10 datasheet" verbatim="Z357PA10 datasheet" row="67" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,2: ember (now silicon labs) em357 overviewdatasheet" verbatim="Ember (now Silicon Labs) EM357 Overviewdatasheet" row="67" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,3: 32-bit arm cortex m3" verbatim="32-bit ARM Cortex M3" row="67" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,4: 12&#xa0;kb" verbatim="12&#xa0;kB" row="67" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,5: 192&#xa0;kb on-chip, 512&#xa0;kb on-board" verbatim="192&#xa0;kB on-chip, 512&#xa0;kB on-board" row="67" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,6: u.fl, on-board chip ceramic" verbatim="U.FL, on-board chip ceramic" row="67" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,7: 0.65&#xa0;&#xb5;a" verbatim="0.65&#xa0;&#xb5;A" row="67" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,8: 205 ma at 20 dbm tx power" verbatim="205 mA at 20 dBm TX power" row="67" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,9: 28 ma" verbatim="28 mA" row="67" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,10: 20 dbm max., software programmable" verbatim="20 dBm max., software programmable" row="67" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,11: ~ -100 dbm" verbatim="~ -100 dBm" row="67" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,12: 34.73 mm x 28.43 mm x 4.45 mm" verbatim="34.73 mm x 28.43 mm x 4.45 mm" row="67" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,13: " verbatim="" row="67" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,14: uart and spi" verbatim="UART and SPI" row="67" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,15: ember's (now silicon labs') emberznetpro with mmb'" verbatim="Ember's (now Silicon Labs') EmberZNetPRO with MMB's RapidSE (for Smart Energy) or RapidHA (for Home Automation) software" row="67" rowspan="1" column="15" colspan="1"/>
+  </matrices>
+  <matrices name="Discontinued transceiver-only modules">
+    <cells xsi:type="pcmmm:Header" name="0,0: manufacturer" verbatim="Manufacturer" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: module" verbatim="Module" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: transceiver chip" verbatim="Transceiver Chip" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: antenna" verbatim="Antenna" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: sleep" verbatim="Sleep" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: tx" verbatim="TX" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: rx" verbatim="RX" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: tx power" verbatim="TX Power" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: sensitivity" verbatim="Sensitivity" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: pcb size" verbatim="PCB Size" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,10: released" verbatim="Released" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,11: interfacing" verbatim="Interfacing" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,12: protocol stacks" verbatim="Protocol stacks" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: uniband" verbatim="Uniband" row="1" rowspan="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: u-force manual" verbatim="U-Force manual" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: uz2400 manual, errata" verbatim="UZ2400 manual, errata" row="1" rowspan="3" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: pcb trace" verbatim="PCB trace" row="1" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: 2&#xa0;&#xb5;a" verbatim="2&#xa0;&#xb5;A" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: 24&#xa0;ma" verbatim="24&#xa0;mA" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: 20&#xa0;ma" verbatim="20&#xa0;mA" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: 0&#xa0;dbm" verbatim="0&#xa0;dBm" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,8: -96&#xa0;dbm" verbatim="-96&#xa0;dBm" row="1" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,9: 28.5&#xa0;mm x 14&#xa0;mm" verbatim="28.5&#xa0;mm x 14&#xa0;mm" row="1" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,10: oct, 2007" verbatim="Oct, 2007" row="1" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,11: spi" verbatim="SPI" row="1" rowspan="3" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,12: microchip zigbee" verbatim="Microchip ZigBee" row="1" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: u-power500 manual" verbatim="U-Power500 manual" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: 3&#xa0;&#xb5;a" verbatim="3&#xa0;&#xb5;A" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: 54&#xa0;ma" verbatim="54&#xa0;mA" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: 26&#xa0;ma" verbatim="26&#xa0;mA" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: 11&#xa0;dbm" verbatim="11&#xa0;dBm" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: -101&#xa0;dbm" verbatim="-101&#xa0;dBm" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,9: 48.3&#xa0;mm x 14&#xa0;mm" verbatim="48.3&#xa0;mm x 14&#xa0;mm" row="2" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,10: oct, 2007" verbatim="Oct, 2007" row="2" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,12: microchip zigbee" verbatim="Microchip ZigBee" row="2" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: u-power1000 manual" verbatim="U-Power1000 manual" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: sma connector" verbatim="SMA connector" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: " verbatim="" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: 154&#xa0;ma" verbatim="154&#xa0;mA" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: 32&#xa0;ma" verbatim="32&#xa0;mA" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: 22&#xa0;dbm" verbatim="22&#xa0;dBm" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: -101&#xa0;dbm" verbatim="-101&#xa0;dBm" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,9: 36&#xa0;mm x 14&#xa0;mm" verbatim="36&#xa0;mm x 14&#xa0;mm" row="3" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,10: oct, 2007" verbatim="Oct, 2007" row="3" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,12: microchip zigbee" verbatim="Microchip ZigBee" row="3" rowspan="1" column="12" colspan="1"/>
+  </matrices>
+  <matrices name="Discontinued integrated MCU and transceiver modules">
+    <cells xsi:type="pcmmm:Header" name="0,0: manufacturer" verbatim="Manufacturer" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: module" verbatim="Module" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: soc/sip chip" verbatim="SOC/SIP Chip" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: mcu core" verbatim="MCU core" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: ram" verbatim="RAM" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: flash" verbatim="Flash" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: antenna" verbatim="Antenna" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: sleep" verbatim="Sleep" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: tx" verbatim="TX" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: rx" verbatim="RX" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,10: tx power" verbatim="TX Power" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,11: sensitivity" verbatim="Sensitivity" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,12: pcb size" verbatim="PCB Size" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,13: released" verbatim="Released" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,14: interfacing" verbatim="Interfacing" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,15: firmware options" verbatim="Firmware options" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: meshnetics" verbatim="MeshNetics" row="1" rowspan="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: zdm-a1281-b0 (mnzb-24-b0) datasheet" verbatim="ZDM-A1281-B0 (MNZB-24-B0) datasheet" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: at86rf230 datasheet" verbatim="AT86RF230 datasheet" row="1" rowspan="4" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: 8-bit atmega 1281v" verbatim="8-bit ATmega 1281v" row="1" rowspan="5" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: 8&#xa0;kb" verbatim="8&#xa0;kB" row="1" rowspan="5" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="1" rowspan="5" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: rf output" verbatim="RF output" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: 6&#xa0;&#xb5;a" verbatim="6&#xa0;&#xb5;A" row="1" rowspan="5" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,8: 18&#xa0;ma" verbatim="18&#xa0;mA" row="1" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,9: 19&#xa0;ma" verbatim="19&#xa0;mA" row="1" rowspan="2" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,10: -17&#xa0;dbm to 3&#xa0;dbm" verbatim="-17&#xa0;dBm to 3&#xa0;dBm" row="1" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,11: -101&#xa0;dbm" verbatim="-101&#xa0;dBm" row="1" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,12: 18.8&#xa0;mm x 13.5&#xa0;mm x 2.0&#xa0;mm" verbatim="18.8&#xa0;mm x 13.5&#xa0;mm x 2.0&#xa0;mm" row="1" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,13: 2008" verbatim="2008" row="1" rowspan="5" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,14: uart, usart, spi, i&#xb2;c, jtag" verbatim="UART, USART, SPI, I&#xb2;C, JTAG" row="1" rowspan="5" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,15: bitcloud stack, serialnet, openmac" verbatim="BitCloud stack, SerialNet, OpenMAC" row="1" rowspan="5" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: zdm-a1281-a2 (mnzb-24-a2) datasheet" verbatim="ZDM-A1281-A2 (MNZB-24-A2) datasheet" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: balanced dual chip antenna" verbatim="balanced dual chip antenna" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,12: 24&#xa0;mm x 13.5&#xa0;mm x 2&#xa0;mm" verbatim="24&#xa0;mm x 13.5&#xa0;mm x 2&#xa0;mm" row="2" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: zdm-a1281-pn0 (mnzb-a24-u0) datasheet" verbatim="ZDM-A1281-PN0 (MNZB-A24-U0) datasheet" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: rf output" verbatim="RF output" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: 50&#xa0;ma" verbatim="50&#xa0;mA" row="3" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,9: 23&#xa0;ma" verbatim="23&#xa0;mA" row="3" rowspan="2" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,10: 20&#xa0;dbm" verbatim="20&#xa0;dBm" row="3" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,11: -104&#xa0;dbm" verbatim="-104&#xa0;dBm" row="3" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,12: 38&#xa0;mm x 13.5&#xa0;mm x 2&#xa0;mm" verbatim="38&#xa0;mm x 13.5&#xa0;mm x 2&#xa0;mm" row="3" rowspan="2" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: zdm-a1281-pn (mnzb-a24-ufl) datasheet" verbatim="ZDM-A1281-PN (MNZB-A24-UFL) datasheet" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: u.fl connector" verbatim="U.FL connector" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: zigbit 900 (mnzb-900-b0) datasheet" verbatim="ZigBit 900 (MNZB-900-B0) datasheet" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: at86rf212 datasheet" verbatim="AT86RF212 datasheet" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: rf output" verbatim="RF output" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,8: 26&#xa0;ma" verbatim="26&#xa0;mA" row="5" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,9: 11&#xa0;ma" verbatim="11&#xa0;mA" row="5" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,10: 11&#xa0;dbm" verbatim="11&#xa0;dBm" row="5" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,11: -110 dbm" verbatim="-110 dBm" row="5" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,12: 24&#xa0;mm x 13.5&#xa0;mm x 2.8&#xa0;mm" verbatim="24&#xa0;mm x 13.5&#xa0;mm x 2.8&#xa0;mm" row="5" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: california eastern laboratories" verbatim="California Eastern Laboratories" row="6" rowspan="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: zfsm-101 datasheet brochure" verbatim="ZFSM-101 datasheet brochure" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: freescale mc13192 datasheet" verbatim="Freescale MC13192 datasheet" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: 8-bit hc08 mc9s08gt60" verbatim="8-bit HC08 MC9S08GT60" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: 4&#xa0;kb" verbatim="4&#xa0;kB" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: 60&#xa0;kb" verbatim="60&#xa0;kB" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: pcb trace" verbatim="PCB trace" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: 3.0&#xa0;&#xb5;a, &lt;1&#xa0;&#xb5;a" verbatim="3.0&#xa0;&#xb5;A, &lt;1&#xa0;&#xb5;A" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,8: 150&#xa0;ma" verbatim="150&#xa0;mA" row="6" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,9: 42&#xa0;ma" verbatim="42&#xa0;mA" row="6" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,10: 20&#xa0;dbm" verbatim="20&#xa0;dBm" row="6" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,11: -92&#xa0;dbm" verbatim="-92&#xa0;dBm" row="6" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,12: 25&#xa0;mm x 36&#xa0;mm" verbatim="25&#xa0;mm x 36&#xa0;mm" row="6" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,13: may, 2008" verbatim="May, 2008" row="6" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,14: uart" verbatim="UART" row="6" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,15: freescale beestack" verbatim="Freescale Beestack" row="6" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: zfsm-201-1 datasheet brochure" verbatim="ZFSM-201-1 datasheet brochure" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: freescale mc13224v datasheet" verbatim="Freescale MC13224V datasheet" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: 32-bit arm7" verbatim="32-bit ARM7" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: 96&#xa0;kb" verbatim="96&#xa0;kB" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="7" rowspan="5" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: pcb trace antenna or mmcx connector" verbatim="PCB Trace Antenna or MMCX connector" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: 1.1&#xa0;&#xb5;a" verbatim="1.1&#xa0;&#xb5;A" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,8: 193&#xa0;ma" verbatim="193&#xa0;mA" row="7" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,9: 30&#xa0;ma" verbatim="30&#xa0;mA" row="7" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,10: 20&#xa0;dbm" verbatim="20&#xa0;dBm" row="7" rowspan="3" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,11: -100&#xa0;dbm" verbatim="-100&#xa0;dBm" row="7" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,12: 25.4&#xa0;mm x 36.5&#xa0;mm" verbatim="25.4&#xa0;mm x 36.5&#xa0;mm" row="7" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,13: jun, 2008" verbatim="Jun, 2008" row="7" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,14: uart, spi, jtag, i&#xb2;s, i&#xb2;c, keyboard" verbatim="UART, SPI, JTAG, I&#xb2;S, I&#xb2;C, keyboard" row="7" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: zaxm-201 datasheet brochure" verbatim="ZAXM-201 datasheet brochure" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: ember (now silicon labs) em250 factsheet datasheet" verbatim="Ember (now Silicon Labs) EM250 factsheet datasheet" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: 16-bit 12&#xa0;mhz risc" verbatim="16-bit 12&#xa0;MHz RISC" row="8" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: 5&#xa0;kb" verbatim="5&#xa0;kB" row="8" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: pcb trace antenna (optional mmcx connector)" verbatim="PCB Trace Antenna (optional MMCX connector)" row="8" rowspan="4" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: 1&#xa0;&#xb5;a" verbatim="1&#xa0;&#xb5;A" row="8" rowspan="2" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,8: 170&#xa0;ma" verbatim="170&#xa0;mA" row="8" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,9: 37&#xa0;ma" verbatim="37&#xa0;mA" row="8" rowspan="2" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,11: -97 dbm" verbatim="-97 dBm" row="8" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,12: 25&#xa0;mm x 33&#xa0;mm" verbatim="25&#xa0;mm x 33&#xa0;mm" row="8" rowspan="2" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,13: 2009" verbatim="2009" row="8" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,14: uart, spi, i&#xb2;c" verbatim="UART, SPI, I&#xb2;C" row="8" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,15: ember znet pro 3.1" verbatim="Ember Znet Pro 3.1" row="8" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: zalm-301 datasheet brochure" verbatim="ZALM-301 datasheet brochure" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: ember (now silicon labs) em260 network processor f" verbatim="Ember (now Silicon Labs) EM260 network processor factsheet datasheet" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,14: uart, spi" verbatim="UART, SPI" row="9" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: zmxm-400 datasheet brochure" verbatim="ZMXM-400 datasheet brochure" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: ti cc2430 datasheet errata" verbatim="TI CC2430 datasheet errata" row="10" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: 8 bit, 8051" verbatim="8 bit, 8051" row="10" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: 8&#xa0;kb" verbatim="8&#xa0;kB" row="10" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: 5&#xa0;&#xb5;a" verbatim="5&#xa0;&#xb5;A" row="10" rowspan="2" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,8: 50&#xa0;ma" verbatim="50&#xa0;mA" row="10" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,9: 27&#xa0;ma" verbatim="27&#xa0;mA" row="10" rowspan="2" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,10: 10&#xa0;dbm" verbatim="10&#xa0;dBm" row="10" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,11: -92&#xa0;dbm" verbatim="-92&#xa0;dBm" row="10" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,12: 23&#xa0;mm x 29&#xa0;mm" verbatim="23&#xa0;mm x 29&#xa0;mm" row="10" rowspan="2" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,13: may, 2008" verbatim="May, 2008" row="10" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,14: uart" verbatim="UART" row="10" rowspan="2" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,15: texas instruments z-stack" verbatim="Texas Instruments Z-stack" row="10" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: zmxm-401 datasheet brochure" verbatim="ZMXM-401 datasheet brochure" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,8: 130&#xa0;ma" verbatim="130&#xa0;mA" row="11" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,10: 20&#xa0;dbm" verbatim="20&#xa0;dBm" row="11" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,0: crossbow technology" verbatim="Crossbow Technology" row="12" rowspan="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: iris (xm2110ca) brochure, datasheet" verbatim="IRIS (XM2110CA) brochure, datasheet" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: atmega128l + at86rf230 datasheet" verbatim="ATmega128L + AT86RF230 datasheet" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: 8-bit atmega1281" verbatim="8-bit ATmega1281" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: 8&#xa0;kb" verbatim="8&#xa0;kB" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="12" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,6: internal" verbatim="internal" row="12" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,7: 8&#xa0;&#xb5;a" verbatim="8&#xa0;&#xb5;A" row="12" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,8: 10&#xa0;ma, 13&#xa0;ma, 17&#xa0;ma" verbatim="10&#xa0;mA, 13&#xa0;mA, 17&#xa0;mA" row="12" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,9: 16&#xa0;ma" verbatim="16&#xa0;mA" row="12" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,10: -17&#xa0;dbm, -3&#xa0;dbm, 3&#xa0;dbm" verbatim="-17&#xa0;dBm, -3&#xa0;dBm, 3&#xa0;dBm" row="12" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,11: -101&#xa0;dbm" verbatim="-101&#xa0;dBm" row="12" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,12: 58&#xa0;mm x 32&#xa0;mm x 7&#xa0;mm" verbatim="58&#xa0;mm x 32&#xa0;mm x 7&#xa0;mm" row="12" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,13: apr, 2007" verbatim="Apr, 2007" row="12" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,14: uart, spi, i&#xb2;c, 51-pin expansion connector" verbatim="UART, SPI, I&#xb2;C, 51-pin expansion connector" row="12" rowspan="2" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,15: zigbee stack, moteworks platform" verbatim="ZigBee stack, Moteworks platform" row="12" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: micaz (mpr2400) datasheet" verbatim="MICAz (MPR2400) datasheet" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: texas instruments cc2420 datasheet errata" verbatim="Texas Instruments CC2420 datasheet errata" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: 8-bit atmega128l" verbatim="8-bit ATmega128L" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: 4&#xa0;kb" verbatim="4&#xa0;kB" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: mmcx connector" verbatim="MMCX connector" row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,7: 15&#xa0;&#xb5;a" verbatim="15&#xa0;&#xb5;A" row="13" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,8: 11&#xa0;ma, 14&#xa0;ma, 17.4&#xa0;ma" verbatim="11&#xa0;mA, 14&#xa0;mA, 17.4&#xa0;mA" row="13" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,9: 19.7&#xa0;ma" verbatim="19.7&#xa0;mA" row="13" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,10: -10&#xa0;dbm, -5&#xa0;dbm, 0&#xa0;dbm" verbatim="-10&#xa0;dBm, -5&#xa0;dBm, 0&#xa0;dBm" row="13" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,11: -94&#xa0;dbm" verbatim="-94&#xa0;dBm" row="13" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,12: 58&#xa0;mm x 32&#xa0;mm x 7&#xa0;mm" verbatim="58&#xa0;mm x 32&#xa0;mm x 7&#xa0;mm" row="13" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,13: sep, 2005" verbatim="Sep, 2005" row="13" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,0: radiopulse" verbatim="RadioPulse" row="14" rowspan="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: lm2400-c/r/s datasheet" verbatim="LM2400-C/R/S datasheet" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: mg2400-f48 datasheet errata" verbatim="MG2400-F48 datasheet errata" row="14" rowspan="2" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: 8-bit 8051" verbatim="8-bit 8051" row="14" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: 4&#xa0;kb" verbatim="4&#xa0;kB" row="14" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: 64&#xa0;kb" verbatim="64&#xa0;kB" row="14" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: sma connector (lm2400-s) or receptacle type connec" verbatim="SMA connector (LM2400-S) or receptacle type connector (LM2400-C/R)" row="14" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,7: 13&#xa0;&#xb5;a" verbatim="13&#xa0;&#xb5;A" row="14" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,8: 35&#xa0;ma" verbatim="35&#xa0;mA" row="14" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,9: 29&#xa0;ma" verbatim="29&#xa0;mA" row="14" rowspan="2" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,10: 7&#xa0;dbm" verbatim="7&#xa0;dBm" row="14" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,11: -99&#xa0;dbm" verbatim="-99&#xa0;dBm" row="14" rowspan="2" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,12: 33&#xa0;mm x 25&#xa0;mm" verbatim="33&#xa0;mm x 25&#xa0;mm" row="14" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,13: nov, 2006" verbatim="Nov, 2006" row="14" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,14: uart" verbatim="UART" row="14" rowspan="2" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,15: zigbee stack" verbatim="ZigBee stack" row="14" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: lm2400-pc/pr/ps datasheet" verbatim="LM2400-PC/PR/PS datasheet" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,6: sma connector (lm2400-ps) or receptacle type conne" verbatim="SMA connector (LM2400-PS) or receptacle type connector (LM2400-PC/PR)" row="15" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,7: 18&#xa0;&#xb5;a" verbatim="18&#xa0;&#xb5;A" row="15" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,8: 95&#xa0;ma" verbatim="95&#xa0;mA" row="15" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,10: 14&#xa0;dbm" verbatim="14&#xa0;dBm" row="15" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,12: 38&#xa0;mm x 27&#xa0;mm" verbatim="38&#xa0;mm x 27&#xa0;mm" row="15" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,0: redwire, llc" verbatim="Redwire, LLC" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: redbee" verbatim="Redbee" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: mc13224v" verbatim="MC13224V" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: 32-bit arm7" verbatim="32-bit ARM7" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: 96&#xa0;kb" verbatim="96&#xa0;kB" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: 120&#xa0;kb" verbatim="120&#xa0;kB" row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,6: pcb" verbatim="PCB" row="16" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,7: 1.1&#xa0;&#xb5;a" verbatim="1.1&#xa0;&#xb5;A" row="16" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,8: 30&#xa0;ma" verbatim="30&#xa0;mA" row="16" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,9: 25&#xa0;ma" verbatim="25&#xa0;mA" row="16" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,10: 6&#xa0;dbm" verbatim="6&#xa0;dBm" row="16" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,11: -100&#xa0;dbm" verbatim="-100&#xa0;dBm" row="16" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,12: 1.25&quot; x 1.5&quot; x 0.3&quot;" verbatim="1.25&quot; x 1.5&quot; x 0.3&quot;" row="16" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,13: july, 2009" verbatim="July, 2009" row="16" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,14: uart bootloader" verbatim="UART bootloader" row="16" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,15: contiki, freescale beestack, gcc" verbatim="Contiki, Freescale Beestack, GCC" row="16" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,0: stmicroelectronics" verbatim="STMicroelectronics" row="17" rowspan="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: spzb250 datasheet" verbatim="SPZB250 datasheet" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: sn250 datasheet" verbatim="SN250 datasheet" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: 16-bit xap2b" verbatim="16-bit XAP2b" row="17" rowspan="2" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: 5&#xa0;kb" verbatim="5&#xa0;kB" row="17" rowspan="2" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,5: 128&#xa0;kb" verbatim="128&#xa0;kB" row="17" rowspan="2" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,6: integrated murata antenna" verbatim="Integrated murata antenna" row="17" rowspan="2" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,7: 2&#xa0;&#xb5;a" verbatim="2&#xa0;&#xb5;A" row="17" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,8: 36&#xa0;ma" verbatim="36&#xa0;mA" row="17" rowspan="2" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,9: 36&#xa0;ma" verbatim="36&#xa0;mA" row="17" rowspan="2" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,10: 3&#xa0;dbm" verbatim="3&#xa0;dBm" row="17" rowspan="2" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,11: -92&#xa0;dbm" verbatim="-92&#xa0;dBm" row="17" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,12: 26.5&#xa0;mm x 16.4&#xa0;mm" verbatim="26.5&#xa0;mm x 16.4&#xa0;mm" row="17" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,13: aug, 2008" verbatim="Aug, 2008" row="17" rowspan="2" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,14: uart, spi, i&#xb2;c" verbatim="UART, SPI, I&#xb2;C" row="17" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,15: ember znet" verbatim="Ember Znet" row="17" rowspan="2" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: spzb260 datasheet" verbatim="SPZB260 datasheet" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: sn260 network processor datasheet" verbatim="SN260 network processor datasheet" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,7: 1&#xa0;&#xb5;a" verbatim="1&#xa0;&#xb5;A" row="18" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,11: -95&#xa0;dbm" verbatim="-95&#xa0;dBm" row="18" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,12: 25&#xa0;mm x 13.7&#xa0;mm" verbatim="25&#xa0;mm x 13.7&#xa0;mm" row="18" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,14: spi" verbatim="SPI" row="18" rowspan="1" column="14" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

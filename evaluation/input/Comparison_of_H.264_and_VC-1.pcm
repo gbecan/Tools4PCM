@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="Overview">
+    <cells xsi:type="pcmmm:Header" name="0,0: !vc-1" verbatim="!VC-1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: h.264" verbatim="H.264" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: goals" verbatim="Goals" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: designed to offer very high image quality with exc" verbatim="Designed to offer very high image quality with excellent compression efficiency" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: designed to meet a variety of industry needs with " verbatim="Designed to meet a variety of industry needs with many profiles and levels, allowing for varying compression, quality and CPU usage levels, where the lowest level is for portable devices, designed with low CPU usage in mind, while the high levels are designed with very high quality and compression efficiency in mind[]" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: example industry use" verbatim="Example industry use" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: supports 4:2:0 compression / color space" verbatim="Supports 4:2:0 compression / color space" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: supports studio archiving requirements with 4:4:4 " verbatim="Supports studio archiving requirements with 4:4:4 color space; &#xA; separate black and white (BW) video mode" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: licensing costs" verbatim="Licensing costs" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: similar" verbatim="Similar" row="3" rowspan="1" column="1" colspan="2"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: documentation" verbatim="Documentation" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: not free. reference decoder, comes with external d" verbatim="Not free.  Reference decoder, comes with external documentation." row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: ? avc/h264 licensing costs and terms from mpeg la." verbatim="? AVC/H264 Licensing costs and terms from MPEG LA. Reference encoder and decoder free as well. Additionally, JVT &amp; M4IF mailing lists are available where one may receive answers on AVC related questions." row="4" rowspan="1" column="2" colspan="1"/>
+  </matrices>
+  <matrices name="Terminology">
+    <cells xsi:type="pcmmm:Header" name="0,0: feature" verbatim="Feature" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: vc-1" verbatim="VC-1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: h.264" verbatim="H.264" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: partition sizes" verbatim="Partition sizes" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: 16&#xd7;16 and 8&#xd7;8" verbatim="16&#xd7;16 and 8&#xd7;8" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: 16&#xd7;16, 16&#xd7;8, 8&#xd7;16, 8&#xd7;8, 8&#xd7;4, 4&#xd7;8, and 4&#xd7;4" verbatim="16&#xd7;16, 16&#xd7;8, 8&#xd7;16, 8&#xd7;8, 8&#xd7;4, 4&#xd7;8, and 4&#xd7;4" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: integer transform" verbatim="Integer transform" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: 8&#xd7;8, 4&#xd7;8, 8&#xd7;4, and 4&#xd7;4" verbatim="8&#xd7;8, 4&#xd7;8, 8&#xd7;4, and 4&#xd7;4" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: 4&#xd7;4; 8&#xd7;8 available in high profile only" verbatim="4&#xd7;4; 8&#xd7;8 available in High Profile only" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: frame" verbatim="Frame" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: used for progressive or interlaced content" verbatim="Used for progressive or interlaced content" row="3" rowspan="1" column="1" colspan="2"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: macroblock sizes" verbatim="Macroblock sizes" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: 16&#xd7;16 only" verbatim="16&#xd7;16 only" row="4" rowspan="1" column="1" colspan="2"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: motion vector" verbatim="Motion vector" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: two dimensional vector offset from current positio" verbatim="Two dimensional vector offset from current position to reference frame" row="5" rowspan="1" column="1" colspan="2"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: picture" verbatim="Picture" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: a field or frame" verbatim="A field or frame" row="6" rowspan="1" column="1" colspan="2"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: skipped macroblock" verbatim="Skipped macroblock" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: no data is encoded for macroblock" verbatim="No data is encoded for macroblock" row="7" rowspan="1" column="1" colspan="2"/>
+  </matrices>
+  <matrices name="Features">
+    <cells xsi:type="pcmmm:Header" name="0,0: !vc-1" verbatim="!VC-1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: h.264" verbatim="H.264" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: bitstream formats" verbatim="Bitstream formats" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: single bit stream" verbatim="single bit stream" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: nal and byte stream" verbatim="NAL and byte stream" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: bitstream format" verbatim="Bitstream format" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: in advanced profile, each bitstream data unit has " verbatim="In advanced profile, each Bitstream Data Unit has its own header.&#xA;Simple and Main profile provide neither sequence nor entry point headers." row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: sps (sequence parameter set), pps (picture paramet" verbatim="SPS (sequence parameter set),&#xA; PPS (picture parameters set),&#xA; slice header, macroblock" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: deblocking filter" verbatim="Deblocking filter" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: in-loop filter and overlap transform" verbatim="In-loop filter and overlap transform" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: in-loop only" verbatim="In-loop only" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: cabac" verbatim="CABAC" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: no" verbatim="No" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: only supported in main and higher profiles" verbatim="Only supported in Main and higher profiles" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: variable transform size" verbatim="Variable transform size" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: yes" verbatim="Yes" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: only in high profile and above" verbatim="Only in High profile and above" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: slice" verbatim="Slice" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: contiguous (integer number of macroblock rows only" verbatim="Contiguous (integer number of macroblock rows only)" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: contiguous or non-contiguous" verbatim="Contiguous or non-contiguous" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: sub-pixel interpolation methods" verbatim="Sub-pixel interpolation methods" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: bicubic, bilinear" verbatim="bicubic, bilinear" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: 6-tap filter for half pixels; averaging for quarte" verbatim="6-tap filter for half pixels; averaging for quarter pixels" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,0: variable length coding" verbatim="Variable Length Coding" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: yes" verbatim="Yes" row="8" rowspan="1" column="1" colspan="2"/>
+    <cells xsi:type="pcmmm:Extra" name="9,0: b frame used for predicting other pictures" verbatim="B frame used for predicting other pictures" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: yes" verbatim="Yes" row="9" rowspan="1" column="1" colspan="2"/>
+  </matrices>
+</pcmmm:PCM>

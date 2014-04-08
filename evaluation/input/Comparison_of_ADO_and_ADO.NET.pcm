@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="">
+    <cells xsi:type="pcmmm:Header" name="0,0: " verbatim="" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: ado" verbatim="ADO" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: ado.net" verbatim="ADO.NET" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: business model" verbatim="Business Model" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: connection-oriented models used mostly" verbatim="Connection-oriented Models used mostly" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: disconnected models are used:message-like models." verbatim="Disconnected models are used:Message-like Models." row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: disconnected access" verbatim="Disconnected Access" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: provided by record set" verbatim="Provided by Record set" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: provided by data adapter and data set" verbatim="Provided by Data Adapter and Data set" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: xml support" verbatim="XML Support" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: limited" verbatim="Limited" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: robust support" verbatim="Robust Support" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: connection model" verbatim="Connection Model" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: client application needs to be connected always to" verbatim="Client application needs to be connected always to data-server while working on the data, unless using client-side cursors or a disconnected Record set" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: client disconnected as soon as the data is process" verbatim="Client disconnected as soon as the data is processed. DataSet is disconnected at all times." row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: data passing" verbatim="Data Passing" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: ado objects communicate in binary mode." verbatim="ADO objects communicate in binary mode." row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: ado.net uses xml for passing the data." verbatim="ADO.NET uses XML for passing the data." row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: control of data access behaviors" verbatim="Control of data access behaviors" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: includes implicit behaviors that may not always be" verbatim="Includes implicit behaviors that may not always be required in an application and that may therefore limit performance." row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: provides well-defined, factored components with pr" verbatim="Provides well-defined, factored components with predictable behavior, performance, and semantics." row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: design-time support" verbatim="Design-time support" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: derives information about data implicitly at run t" verbatim="Derives information about data implicitly at run time, based on metadata that is often expensive to obtain." row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: leverages known metadata at design time in order t" verbatim="Leverages known metadata at design time in order to provide better run-time performance and more consistent run-time behavior." row="7" rowspan="1" column="2" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

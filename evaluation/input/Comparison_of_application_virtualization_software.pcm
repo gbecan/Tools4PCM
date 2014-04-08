@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="Comparison of virtual machines">
+    <cells xsi:type="pcmmm:Header" name="0,0: virtual machine" verbatim="Virtual machine" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: machine model" verbatim="Machine model" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: memory management" verbatim="Memory management" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: code security" verbatim="Code security" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: interpreter" verbatim="Interpreter" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: jit" verbatim="JIT" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: precompilation" verbatim="Precompilation" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: shared libraries" verbatim="Shared libraries" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: common language object model" verbatim="Common Language Object Model" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: dynamic typing" verbatim="Dynamic typing" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: clr" verbatim="CLR" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: stack" verbatim="stack" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: automatic or manual" verbatim="automatic or manual" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: no" verbatim="No" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: yes" verbatim="Yes" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: yes" verbatim="Yes" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: yes" verbatim="Yes" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,8: yes" verbatim="Yes" row="1" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,9: yes" verbatim="Yes" row="1" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: dis (inferno)" verbatim="Dis (Inferno)" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: register" verbatim="register" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: automatic" verbatim="automatic" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: yes" verbatim="Yes" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: yes" verbatim="Yes" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: yes" verbatim="Yes" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: yes" verbatim="Yes" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: no" verbatim="No" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,9: no" verbatim="No" row="2" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: dotgnu portable.net" verbatim="DotGNU Portable.NET" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: stack" verbatim="stack" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: automatic or manual" verbatim="automatic or manual" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: no" verbatim="No" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: no" verbatim="No" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: yes" verbatim="Yes" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: yes" verbatim="Yes" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: yes" verbatim="Yes" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: yes" verbatim="Yes" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,9: no" verbatim="No" row="3" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: java virtual machine (jvm)" verbatim="Java Virtual Machine (JVM)" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: stack" verbatim="stack" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: automatic" verbatim="automatic" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: yes" verbatim="Yes" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: yes" verbatim="Yes" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: yes" verbatim="Yes" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: yes" verbatim="Yes" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: yes" verbatim="Yes" row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,8: yes" verbatim="Yes" row="4" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,9: yes" verbatim="Yes" row="4" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: jikesrvm" verbatim="JikesRVM" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: stack" verbatim="stack" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: automatic" verbatim="automatic" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: no" verbatim="No" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: no" verbatim="No" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: yes" verbatim="Yes" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: no" verbatim="No" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: ?" verbatim="?" row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,8: no" verbatim="No" row="5" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,9: no" verbatim="No" row="5" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: llvm" verbatim="LLVM" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: register" verbatim="register" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: manual" verbatim="manual" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: no" verbatim="No" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: yes" verbatim="Yes" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: yes" verbatim="Yes" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: yes" verbatim="Yes" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: yes" verbatim="Yes" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,8: yes" verbatim="Yes" row="6" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,9: no" verbatim="No" row="6" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: mono" verbatim="Mono" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: stack" verbatim="stack" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: automatic or manual" verbatim="automatic or manual" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: yes" verbatim="Yes" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: yes" verbatim="Yes" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: yes" verbatim="Yes" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: yes" verbatim="Yes" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: yes" verbatim="Yes" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,8: yes" verbatim="Yes" row="7" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,9: yes" verbatim="Yes" row="7" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: parrot" verbatim="Parrot" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: register" verbatim="register" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: automatic" verbatim="automatic" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: no" verbatim="No" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: yes" verbatim="Yes" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: no" verbatim="No" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: yes" verbatim="Yes" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: yes" verbatim="Yes" row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,8: yes" verbatim="Yes" row="8" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,9: yes" verbatim="Yes" row="8" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: dalvik" verbatim="Dalvik" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: register" verbatim="register" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: automatic" verbatim="automatic" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: yes" verbatim="Yes" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: yes" verbatim="Yes" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: yes" verbatim="Yes" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: ?" verbatim="?" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: ?" verbatim="?" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,8: no" verbatim="No" row="9" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,9: no" verbatim="No" row="9" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: libjit" verbatim="libJIT" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: stack" verbatim="stack" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: manual" verbatim="manual" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: no" verbatim="No" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: no" verbatim="No" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: yes" verbatim="Yes" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: no" verbatim="No" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: no" verbatim="No" row="10" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,8: ?" verbatim="?" row="10" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,9: no" verbatim="No" row="10" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: squeak" verbatim="Squeak" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: stack" verbatim="stack" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: automatic" verbatim="automatic" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: no" verbatim="No" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: yes" verbatim="Yes" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: yes" verbatim="Yes" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: source to bytecode" verbatim="source to bytecode" row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,7: yes" verbatim="Yes" row="11" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,8: no" verbatim="No" row="11" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,9: yes" verbatim="Yes" row="11" rowspan="1" column="9" colspan="1"/>
+  </matrices>
+  <matrices name="List of application virtual machine implementations">
+    <cells xsi:type="pcmmm:Header" name="0,0: virtual machine" verbatim="Virtual machine" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: languages" verbatim="Languages" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: comments" verbatim="Comments" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: interpreter" verbatim="Interpreter" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: jit" verbatim="JIT" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: implementation language" verbatim="Implementation Language" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: sloc" verbatim="SLoC" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: adobe flash player (aka tamarin)" verbatim="Adobe Flash Player (aka Tamarin)" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: actionscript, swf (file format)" verbatim="ActionScript, SWF (file format)" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: interactive web authoring tool. bytecode is named " verbatim="interactive web authoring tool. bytecode is named &quot;ActionScript Byte Code (.abc)&quot;" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: yes" verbatim="Yes" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: c++" verbatim="C++" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: 135k (initially released)" verbatim="135k (initially released)" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: beam" verbatim="BEAM" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: erlang, reia, lisp flavoured erlang, elixir" verbatim="Erlang, Reia, Lisp Flavoured Erlang, Elixir" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: there exists a native-code compiler, hipe." verbatim="There exists a native-code compiler, HiPE." row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: no" verbatim="No" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: c" verbatim="C" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: 247k" verbatim="247k" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: clipper p-code" verbatim="Clipper p-code" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: clipper, harbour" verbatim="Clipper, Harbour" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: plankton, hvm" verbatim="plankton, HVM" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: yes" verbatim="Yes" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: no" verbatim="No" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: c" verbatim="C" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: " verbatim="" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: dis (inferno)" verbatim="Dis (Inferno)" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: limbo" verbatim="Limbo" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: dis virtual machine specification" verbatim="Dis Virtual Machine Specification" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: yes" verbatim="Yes" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: yes" verbatim="Yes" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: c" verbatim="C" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: 15k + 2850 per jit arch + 500 per host os" verbatim="15k + 2850 per JIT arch + 500 per host OS" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: dotgnu/portable.net" verbatim="DotGNU/Portable.NET" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: cli languages including: c#" verbatim="CLI languages including: C#" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: clone of common language runtime" verbatim="Clone of Common Language Runtime" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: no" verbatim="No" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: yes" verbatim="Yes" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: c, c#" verbatim="C, C#" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: " verbatim="" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: forth" verbatim="Forth" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: forth" verbatim="Forth" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: features are simplified, usually include assembler" verbatim="Features are simplified, usually include assembler, compiler, text-level and binary-level interpreters, sometimes editor, debugger and OS. Compilation speeds are >20 SKLOC/S and behave much like JIT." row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: yes" verbatim="Yes" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: no" verbatim="No" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: forth, forth assembler" verbatim="Forth, Forth Assembler" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: 2.8k to 5.6k; advanced, professional implementatio" verbatim="2.8K to 5.6K; advanced, professional implementations are smaller." row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: glulx" verbatim="Glulx" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: glulx, z-code" verbatim="Glulx, Z-code" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: " verbatim="" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: " verbatim="" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: " verbatim="" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: " verbatim="" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: " verbatim="" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: icon" verbatim="Icon" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: icon" verbatim="Icon" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: " verbatim="" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: " verbatim="" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: " verbatim="" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: " verbatim="" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: " verbatim="" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: jvm" verbatim="JVM" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: java, jython, groovy, jruby, c, c++, clojure, scal" verbatim="Java, Jython, Groovy, JRuby, C, C++, Clojure, Scala and several others" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: reference implementation by sun ; openjdk: code un" verbatim="Reference implementation by Sun ; OpenJDK: code under GPL ; IcedTea: code and tools under GPL" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: yes" verbatim="Yes" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: yes" verbatim="Yes" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: jdk, openjdk &amp; icedtea with regular jit : java, c," verbatim="JDK, OpenJDK &amp; IcedTea with regular JIT : Java, C, ASM ; IcedTea with the &quot;Zero&quot; JIT : Java, C" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: jvm is around 6500k lines; tck is 80k tests and ar" verbatim="JVM is around 6500k lines; TCK is 80k tests and around 1000k lines" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: llvm" verbatim="LLVM" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: c, c++, objective-c, ada, fortran, and rust" verbatim="C, C++, Objective-C, Ada, Fortran, and Rust" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: msil, c and c++ output are supported. actionscript" verbatim="MSIL, C and C++ output are supported. ActionScript Byte Code output is supported by Adobe Alchemy. bytecode is named &quot;LLVM Bytecode (.bc)&quot;. assembly is named &quot;LLVM Assembly Language (*.ll)&quot;." row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: yes" verbatim="Yes" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: yes" verbatim="Yes" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: c++" verbatim="C++" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: 811k" verbatim="811k" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: lua" verbatim="Lua" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: lua" verbatim="Lua" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: " verbatim="" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: yes" verbatim="Yes" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: luajit" verbatim="LuaJIT" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: c" verbatim="C" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: 13k + 7k luajit" verbatim="13k + 7k LuaJIT" row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: mmix" verbatim="MMIX" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: mmixal" verbatim="MMIXAL" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: " verbatim="" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: " verbatim="" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: " verbatim="" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: " verbatim="" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,6: " verbatim="" row="12" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: mono" verbatim="Mono" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: cli languages including: c#, vb.net, ironpython, i" verbatim="CLI languages including: C#, VB.NET, IronPython, IronRuby, and others" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: clone of common language runtime." verbatim="clone of Common Language Runtime." row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: yes" verbatim="Yes" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: yes" verbatim="Yes" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: c#, c" verbatim="C#, C" row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: 2332k" verbatim="2332k" row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: oz" verbatim="Oz" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: oz, alice" verbatim="Oz, Alice" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: " verbatim="" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: " verbatim="" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: " verbatim="" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: " verbatim="" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: " verbatim="" row="14" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: nekovm" verbatim="NekoVM" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: currently neko and haxe" verbatim="currently Neko and haXe" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: " verbatim="" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: yes" verbatim="Yes" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: x86 only" verbatim="x86 only" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: c" verbatim="C" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,6: 46k" verbatim="46k" row="15" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: o-code machine" verbatim="O-code machine" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: bcpl" verbatim="BCPL" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: " verbatim="" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: " verbatim="" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: " verbatim="" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: " verbatim="" row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,6: " verbatim="" row="16" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: p-code machine" verbatim="p-code machine" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: pascal" verbatim="Pascal" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: ucsd pascal, widespread in late 70s including appl" verbatim="UCSD Pascal, widespread in late 70s including Apple II" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: " verbatim="" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: " verbatim="" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,5: " verbatim="" row="17" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,6: " verbatim="" row="17" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="18,0: parrot" verbatim="Parrot" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: perl (6 &amp; 5), nqp-rx, pir, pasm, pbc, basic, bc, c" verbatim="Perl (6 &amp; 5), NQP-rx, PIR, PASM, PBC, BASIC, bc, C, ECMAScript, Lisp, Lua, m4, Tcl, WMLScript, XML, and others" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: " verbatim="" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: yes" verbatim="Yes" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: yes" verbatim="Yes" row="18" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,5: c, perl" verbatim="C, Perl" row="18" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,6: 111k&#xa0;c, 240k&#xa0;perl" verbatim="111k&#xa0;C, 240k&#xa0;Perl" row="18" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="19,0: perl virtual machine" verbatim="Perl virtual machine" row="19" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: perl" verbatim="Perl" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: op-code tree walker" verbatim="op-code tree walker" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: yes" verbatim="Yes" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: no" verbatim="No" row="19" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,5: c, perl" verbatim="C, Perl" row="19" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,6: 175k&#xa0;c, 9k&#xa0;perl" verbatim="175k&#xa0;C, 9k&#xa0;Perl" row="19" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="20,0: cpython" verbatim="CPython" row="20" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,1: python" verbatim="Python" row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,2: " verbatim="" row="20" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,3: yes" verbatim="Yes" row="20" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,4: psyco" verbatim="Psyco" row="20" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,5: c" verbatim="C" row="20" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,6: 387k&#xa0;c, 368k&#xa0;python, 10k&#xa0;asm, 31k&#xa0;psyco" verbatim="387k&#xa0;C, 368k&#xa0;Python, 10k&#xa0;ASM, 31k&#xa0;Psyco" row="20" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="21,0: pypy" verbatim="PyPy" row="21" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,1: python" verbatim="Python" row="21" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,2: self-hosting implementation of python, next genera" verbatim="Self-hosting implementation of Python, next generation of Psyco" row="21" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,3: yes" verbatim="Yes" row="21" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,4: yes" verbatim="Yes" row="21" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,5: python" verbatim="Python" row="21" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,6: " verbatim="" row="21" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="22,0: rubinius" verbatim="Rubinius" row="22" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,1: ruby" verbatim="Ruby" row="22" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,2: virtual machine for another ruby implementation" verbatim="Virtual machine for another Ruby implementation" row="22" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,3: yes" verbatim="Yes" row="22" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,4: yes" verbatim="Yes" row="22" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,5: c++, ruby" verbatim="C++, Ruby" row="22" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,6: " verbatim="" row="22" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="23,0: silverlight" verbatim="Silverlight" row="23" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,1: c#, vb.net" verbatim="C#, VB.NET" row="23" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,2: a micro-version of microsoft .net framework to let" verbatim="A Micro-version of Microsoft .NET Framework to let applications run sandboxed inside browser" row="23" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,3: yes" verbatim="Yes" row="23" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,4: yes" verbatim="Yes" row="23" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,5: c++" verbatim="C++" row="23" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,6: 7mb (initially released)" verbatim="7MB (initially released)" row="23" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="24,0: seam" verbatim="SEAM" row="24" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,1: alice" verbatim="Alice" row="24" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,2: " verbatim="" row="24" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,3: " verbatim="" row="24" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,4: " verbatim="" row="24" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,5: " verbatim="" row="24" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,6: " verbatim="" row="24" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="25,0: scummvm" verbatim="ScummVM" row="25" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,1: scumm" verbatim="Scumm" row="25" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,2: computer game engine" verbatim="Computer game engine" row="25" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,3: " verbatim="" row="25" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,4: " verbatim="" row="25" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,5: " verbatim="" row="25" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,6: " verbatim="" row="25" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="26,0: secd" verbatim="SECD" row="26" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,1: iswim, lispkit lisp" verbatim="ISWIM, Lispkit Lisp" row="26" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,2: " verbatim="" row="26" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,3: " verbatim="" row="26" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,4: " verbatim="" row="26" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,5: " verbatim="" row="26" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,6: " verbatim="" row="26" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="27,0: squirrel" verbatim="Squirrel" row="27" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,1: squirrel" verbatim="Squirrel" row="27" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,2: " verbatim="" row="27" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,3: yes" verbatim="Yes" row="27" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,4: squirrel_jit" verbatim="Squirrel_JIT" row="27" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,5: c++" verbatim="C++" row="27" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,6: 12k" verbatim="12k" row="27" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="28,0: smalltalk" verbatim="Smalltalk" row="28" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,1: smalltalk" verbatim="Smalltalk" row="28" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,2: " verbatim="" row="28" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,3: " verbatim="" row="28" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,4: " verbatim="" row="28" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,5: " verbatim="" row="28" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,6: " verbatim="" row="28" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,0: sqlite" verbatim="SQLite" row="29" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,1: sqlite opcodes" verbatim="SQLite opcodes" row="29" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,2: virtual database engine" verbatim="Virtual database engine" row="29" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,3: " verbatim="" row="29" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,4: " verbatim="" row="29" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,5: " verbatim="" row="29" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,6: " verbatim="" row="29" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="30,0: squeak" verbatim="Squeak" row="30" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,1: squeak smalltalk" verbatim="Squeak Smalltalk" row="30" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,2: self hosting implementation of squeak virtual mach" verbatim="Self hosting implementation of Squeak virtual machine.  Rich multi-media support." row="30" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,3: yes" verbatim="Yes" row="30" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,4: coghttp://www.mirandabanda.org/cog/ &amp; exupery" verbatim="Coghttp://www.mirandabanda.org/cog/ &amp; Exupery" row="30" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,5: smalltalk/slang" verbatim="Smalltalk/Slang" row="30" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,6: 110k smalltalk, ~300k c" verbatim="110k Smalltalk, ~300K C" row="30" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="31,0: taogroup vp/vp2" verbatim="TaoGroup VP/VP2" row="31" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,1: c, java" verbatim="C, Java" row="31" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,2: proprietary embedded vm" verbatim="Proprietary embedded VM" row="31" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,3: " verbatim="" row="31" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,4: " verbatim="" row="31" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,5: " verbatim="" row="31" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,6: " verbatim="" row="31" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="32,0: tracemonkey" verbatim="TraceMonkey" row="32" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,1: javascript" verbatim="JavaScript" row="32" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,2: based on tamarin" verbatim="Based on Tamarin" row="32" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,3: no" verbatim="No" row="32" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,4: yes" verbatim="Yes" row="32" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,5: c++" verbatim="C++" row="32" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,6: 173k" verbatim="173k" row="32" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="33,0: translator engine[]" verbatim="Translator Engine[]" row="33" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,1: flat file tables/global c++ variable declarations" verbatim="Flat File Tables/Global C++ variable declarations" row="33" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,2: ide, programming by demonstration" verbatim="IDE, programming by demonstration" row="33" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,3: " verbatim="" row="33" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,4: " verbatim="" row="33" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,5: " verbatim="" row="33" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,6: " verbatim="" row="33" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="34,0: truetype" verbatim="TrueType" row="34" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,1: truetype" verbatim="TrueType" row="34" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,2: font rendering engine" verbatim="Font rendering engine" row="34" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,3: yes" verbatim="Yes" row="34" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,4: no" verbatim="No" row="34" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,5: c (typically)" verbatim="C (typically)" row="34" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,6: " verbatim="" row="34" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="35,0: valgrind" verbatim="Valgrind" row="35" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,1: x86/x86-64 binaries" verbatim="x86/x86-64 binaries" row="35" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,2: checking of memory accesses and leaks under linux" verbatim="Checking of memory accesses and leaks under Linux" row="35" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,3: " verbatim="" row="35" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,4: " verbatim="" row="35" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,5: c" verbatim="C" row="35" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,6: 467k" verbatim="467k" row="35" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="36,0: visualworks" verbatim="VisualWorks" row="36" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,1: smalltalk" verbatim="Smalltalk" row="36" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,2: " verbatim="" row="36" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,3: no" verbatim="No" row="36" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,4: yes" verbatim="Yes" row="36" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,5: c" verbatim="C" row="36" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,6: " verbatim="" row="36" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="37,0: vmkit" verbatim="VMKit" row="37" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,1: " verbatim="" row="37" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,2: jvm and cli virtual machine based on llvm." verbatim="JVM and CLI virtual machine based on LLVM." row="37" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,3: no" verbatim="No" row="37" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,4: yes" verbatim="Yes" row="37" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,5: " verbatim="" row="37" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,6: " verbatim="" row="37" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="38,0: vx32 virtual machine" verbatim="Vx32 virtual machine" row="38" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,1: x86 binaries" verbatim="x86 binaries" row="38" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,2: application-level virtualization for native code" verbatim="Application-level virtualization for native code" row="38" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,3: no" verbatim="No" row="38" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,4: yes" verbatim="Yes" row="38" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,5: " verbatim="" row="38" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,6: " verbatim="" row="38" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="39,0: waba" verbatim="Waba" row="39" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,1: " verbatim="" row="39" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,2: virtual machine for small devices, similar to java" verbatim="Virtual machine for small devices, similar to Java" row="39" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,3: " verbatim="" row="39" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,4: " verbatim="" row="39" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,5: " verbatim="" row="39" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,6: " verbatim="" row="39" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="40,0: yet another ruby vm (yarv)" verbatim="Yet Another Ruby VM (YARV)" row="40" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,1: ruby" verbatim="Ruby" row="40" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,2: virtual machine of the reference implementation fo" verbatim="Virtual machine of the reference implementation for Ruby 1.9 and newer versions" row="40" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,3: yes" verbatim="Yes" row="40" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,4: yes" verbatim="Yes" row="40" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,5: c" verbatim="C" row="40" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,6: " verbatim="" row="40" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="41,0: z-machine" verbatim="Z-machine" row="41" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,1: z-code" verbatim="Z-Code" row="41" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,2: " verbatim="" row="41" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,3: " verbatim="" row="41" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,4: " verbatim="" row="41" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,5: " verbatim="" row="41" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,6: " verbatim="" row="41" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="42,0: zend engine" verbatim="Zend Engine" row="42" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,1: php" verbatim="PHP" row="42" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,2: " verbatim="" row="42" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,3: yes" verbatim="Yes" row="42" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,4: no" verbatim="No" row="42" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,5: c" verbatim="C" row="42" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,6: 75k" verbatim="75k" row="42" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="43,0: libjit library for just-in-time compilation" verbatim="libJIT Library for Just-In-Time compilation" row="43" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,1: common intermediate language java bytecode domain-" verbatim="Common Intermediate Language Java bytecode Domain-specific programming language" row="43" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,2: virtual machine is used in portable.net just-in-ti" verbatim="Virtual machine is used in Portable.NET Just-In-Time compiler, ILDJIT, HornetsEye" row="43" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,3: yes" verbatim="Yes" row="43" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,4: yes" verbatim="Yes" row="43" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,5: c, ia32, arm, amd64, alpha, low-level cpu architec" verbatim="C, ia32, arm, amd64, alpha, low-level CPU architecture specific machine code" row="43" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,6: " verbatim="" row="43" rowspan="1" column="6" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

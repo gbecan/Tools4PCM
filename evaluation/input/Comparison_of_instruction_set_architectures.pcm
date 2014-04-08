@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="Instruction sets">
+    <cells xsi:type="pcmmm:Header" name="0,0: instruction set" verbatim="Instruction set" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: bits" verbatim="Bits" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: version" verbatim="Version" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: introduced" verbatim="Introduced" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: max # operand" verbatim="Max # operand" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: type" verbatim="Type" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: design" verbatim="Design" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: registers" verbatim="Registers" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: instruction encoding" verbatim="Instruction encoding" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: branch evaluation" verbatim="Branch evaluation" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,10: endianness" verbatim="Endianness" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,11: extensions" verbatim="Extensions" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,12: open" verbatim="Open" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,13: royalty free" verbatim="Royalty free" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: alpha" verbatim="Alpha" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: 64" verbatim="64" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: " verbatim="" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: 1992" verbatim="1992" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: 3" verbatim="3" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: register register" verbatim="Register Register" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: risc" verbatim="RISC" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: 32" verbatim="32" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,8: fixed (32-bit)" verbatim="Fixed (32-bit)" row="1" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,9: condition register" verbatim="Condition register" row="1" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,10: bi" verbatim="Bi" row="1" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,11: , , ," verbatim=", , ," row="1" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,12: no" verbatim="No" row="1" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,13: unknown" verbatim="Unknown" row="1" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: arm" verbatim="ARM" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: 32" verbatim="32" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: armv7 and earlier" verbatim="ARMv7 and earlier" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: 1983" verbatim="1983" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: 3" verbatim="3" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: register register" verbatim="Register Register" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: risc" verbatim="RISC" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: 16 (including pc and sp)" verbatim="16 (including PC and SP)" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: fixed (32-bit), thumb: fixed (16-bit), thumb-2: va" verbatim="Fixed (32-bit), Thumb: Fixed (16-bit), Thumb-2: Variable (16 and 32-bit)" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,9: condition code" verbatim="Condition code" row="2" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,10: bi" verbatim="Bi" row="2" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,11: neon, jazelle, , trustzone, lpae" verbatim="NEON, Jazelle, , TrustZone, LPAE" row="2" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,12: unknown" verbatim="Unknown" row="2" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,13: no" verbatim="No" row="2" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: armv8-a" verbatim="ARMv8-A" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: 64/32" verbatim="64/32" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: armv8-a" verbatim="ARMv8-A" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: 2011" verbatim="2011" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: 3" verbatim="3" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: register register" verbatim="Register Register" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: risc" verbatim="RISC" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: 31" verbatim="31" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: fixed (32-bit). in armv7 compatibility mode: thumb" verbatim="Fixed (32-bit). In ARMv7 compatibility mode: Thumb: Fixed (16-bit), Thumb-2: Variable (16 and 32-bit), A64" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,9: condition code" verbatim="Condition code" row="3" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,10: bi" verbatim="Bi" row="3" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,11: neon, jazelle, , trustzone" verbatim="NEON, Jazelle, , TrustZone" row="3" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,12: unknown" verbatim="Unknown" row="3" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,13: no" verbatim="No" row="3" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: avr32" verbatim="AVR32" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: 32" verbatim="32" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: rev 2" verbatim="Rev 2" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: 2006" verbatim="2006" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: 2-3" verbatim="2-3" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: " verbatim="" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: risc" verbatim="RISC" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: 15" verbatim="15" row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,8: variable" verbatim="Variable" row="4" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,9: " verbatim="" row="4" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,10: big" verbatim="Big" row="4" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,11: java virtual machine" verbatim="Java Virtual Machine" row="4" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,12: unknown" verbatim="Unknown" row="4" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,13: unknown" verbatim="Unknown" row="4" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: blackfin" verbatim="Blackfin" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: 32" verbatim="32" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: " verbatim="" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: 2000" verbatim="2000" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: " verbatim="" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: " verbatim="" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: risc" verbatim="RISC" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: 8" verbatim="8" row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,8: " verbatim="" row="5" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,9: " verbatim="" row="5" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,10: little" verbatim="Little" row="5" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,11: " verbatim="" row="5" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,12: unknown" verbatim="Unknown" row="5" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,13: unknown" verbatim="Unknown" row="5" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: dlx" verbatim="DLX" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: 32" verbatim="32" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: " verbatim="" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: 1990" verbatim="1990" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: 3" verbatim="3" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: " verbatim="" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: risc" verbatim="RISC" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: 32" verbatim="32" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,8: fixed (32-bit)" verbatim="Fixed (32-bit)" row="6" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,9: " verbatim="" row="6" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,10: big" verbatim="Big" row="6" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,11: " verbatim="" row="6" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,12: unknown" verbatim="Unknown" row="6" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,13: unknown" verbatim="Unknown" row="6" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: esi-risc" verbatim="eSi-RISC" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: 16/32" verbatim="16/32" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: " verbatim="" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: 2009" verbatim="2009" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: 3" verbatim="3" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: register register" verbatim="Register Register" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: risc" verbatim="RISC" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: 8-72" verbatim="8-72" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,8: variable (16 or 32-bit)" verbatim="Variable (16 or 32-bit)" row="7" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,9: compare and branch and condition register" verbatim="Compare and branch and condition register" row="7" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,10: bi" verbatim="Bi" row="7" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,11: user-defined instructions" verbatim="User-defined instructions" row="7" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,12: no" verbatim="No" row="7" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,13: no" verbatim="No" row="7" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,0: itanium (ia-64)" verbatim="Itanium (IA-64)" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: 64" verbatim="64" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: " verbatim="" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: 2001" verbatim="2001" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: " verbatim="" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: register register" verbatim="Register Register" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: epic" verbatim="EPIC" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: 128" verbatim="128" row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,8: " verbatim="" row="8" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,9: condition register" verbatim="Condition register" row="8" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,10: bi (selectable)" verbatim="Bi (selectable)" row="8" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,11: intel virtualization technology" verbatim="Intel Virtualization Technology" row="8" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,12: no" verbatim="No" row="8" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,13: no" verbatim="No" row="8" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,0: m32r" verbatim="M32R" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: 32" verbatim="32" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: " verbatim="" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: 1997" verbatim="1997" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: " verbatim="" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: " verbatim="" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: risc" verbatim="RISC" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: 16" verbatim="16" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,8: fixed (16- or 32-bit)" verbatim="Fixed (16- or 32-bit)" row="9" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,9: " verbatim="" row="9" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,10: bi" verbatim="Bi" row="9" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,11: " verbatim="" row="9" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,12: unknown" verbatim="Unknown" row="9" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,13: unknown" verbatim="Unknown" row="9" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,0: motorola 68k" verbatim="Motorola 68k" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: 32" verbatim="32" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: " verbatim="" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: 1979" verbatim="1979" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: 2" verbatim="2" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: register memory" verbatim="Register Memory" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: cisc" verbatim="CISC" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: 8 data and 8 address" verbatim="8 data and 8 address" row="10" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,8: variable" verbatim="Variable" row="10" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,9: condition register" verbatim="Condition register" row="10" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,10: big" verbatim="Big" row="10" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,11: " verbatim="" row="10" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,12: unknown" verbatim="Unknown" row="10" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,13: unknown" verbatim="Unknown" row="10" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,0: mico32" verbatim="Mico32" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: 32" verbatim="32" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: " verbatim="" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: 2006" verbatim="2006" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: 3" verbatim="3" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: register register" verbatim="Register Register" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: risc" verbatim="RISC" row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,7: 32" verbatim="32" row="11" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,8: fixed (32-bit)" verbatim="Fixed (32-bit)" row="11" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,9: compare and branch" verbatim="Compare and branch" row="11" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,10: big" verbatim="Big" row="11" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,11: user-defined instructions" verbatim="User-defined instructions" row="11" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,12: yes" verbatim="Yes" row="11" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,13: yes" verbatim="Yes" row="11" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,0: mips" verbatim="MIPS" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: 64 (32&#x2192;64)" verbatim="64 (32&#x2192;64)" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: 5" verbatim="5" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: 1981" verbatim="1981" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: 1-3" verbatim="1-3" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: register register" verbatim="Register Register" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,6: risc" verbatim="RISC" row="12" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,7: 4-31" verbatim="4-31" row="12" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,8: fixed (32-bit)" verbatim="Fixed (32-bit)" row="12" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,9: condition register" verbatim="Condition register" row="12" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,10: bi" verbatim="Bi" row="12" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,11: mdmx, mips-3d" verbatim="MDMX, MIPS-3D" row="12" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,12: unknown" verbatim="Unknown" row="12" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,13: no" verbatim="No" row="12" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,0: mmix" verbatim="MMIX" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: 64" verbatim="64" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: " verbatim="" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: 1999" verbatim="1999" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: 3" verbatim="3" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: register register" verbatim="Register Register" row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: risc" verbatim="RISC" row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,7: 256" verbatim="256" row="13" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,8: fixed (32-bit)" verbatim="Fixed (32-bit)" row="13" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,9: " verbatim="" row="13" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,10: big" verbatim="Big" row="13" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,11: " verbatim="" row="13" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,12: yes" verbatim="Yes" row="13" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,13: yes" verbatim="Yes" row="13" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,0: 6502" verbatim="6502" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: 8" verbatim="8" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: " verbatim="" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: 1975" verbatim="1975" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: 1" verbatim="1" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: register memory" verbatim="Register Memory" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: cisc" verbatim="CISC" row="14" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,7: 1" verbatim="1" row="14" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,8: variable (8 to 32&#xa0;bits)" verbatim="Variable (8 to 32&#xa0;bits)" row="14" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,9: condition register" verbatim="Condition register" row="14" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,10: little" verbatim="Little" row="14" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,11: " verbatim="" row="14" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,12: " verbatim="" row="14" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,13: " verbatim="" row="14" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,0: 65k" verbatim="65k" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: 64&#xa0;(8&#x2192;64)" verbatim="64&#xa0;(8&#x2192;64)" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: " verbatim="" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: 2006?" verbatim="2006?" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: 1" verbatim="1" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: memory memory[]" verbatim="Memory Memory[]" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,6: cisc" verbatim="CISC" row="15" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,7: 1" verbatim="1" row="15" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,8: variable (8&#xa0;bits to 256&#xa0;bytes)" verbatim="Variable (8&#xa0;bits to 256&#xa0;bytes)" row="15" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,9: compare and branch[]" verbatim="Compare and branch[]" row="15" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,10: little" verbatim="Little" row="15" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,11: " verbatim="" row="15" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,12: " verbatim="" row="15" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,13: " verbatim="" row="15" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,0: ns320xx" verbatim="NS320xx" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: 32" verbatim="32" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: " verbatim="" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: 1982" verbatim="1982" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: 5" verbatim="5" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: memory memory" verbatim="Memory Memory" row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,6: cisc" verbatim="CISC" row="16" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,7: 8" verbatim="8" row="16" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,8: variable huffman coded, up to 23&#xa0;bytes long" verbatim="Variable Huffman coded, up to 23&#xa0;bytes long" row="16" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,9: condition code" verbatim="Condition Code" row="16" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,10: little" verbatim="Little" row="16" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,11: bitblt instructions" verbatim="BitBlt instructions" row="16" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,12: unknown" verbatim="Unknown" row="16" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,13: unknown" verbatim="Unknown" row="16" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,0: pa-risc (hp/pa)" verbatim="PA-RISC (HP/PA)" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: 64 (32&#x2192;64)" verbatim="64 (32&#x2192;64)" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: 2.0" verbatim="2.0" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: 1986" verbatim="1986" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: 3" verbatim="3" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,5: register register" verbatim="Register Register" row="17" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,6: risc" verbatim="RISC" row="17" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,7: 32" verbatim="32" row="17" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,8: fixed (32-bit)" verbatim="Fixed (32-bit)" row="17" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,9: compare and branch" verbatim="Compare and branch" row="17" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,10: big &#x2192; bi" verbatim="Big &#x2192; Bi" row="17" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,11: multimedia acceleration extensions (max), max-2" verbatim="Multimedia Acceleration eXtensions (MAX), MAX-2" row="17" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,12: no" verbatim="No" row="17" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,13: unknown" verbatim="Unknown" row="17" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,0: powerpc" verbatim="PowerPC" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: 32/64&#xa0;(32&#x2192;64)" verbatim="32/64&#xa0;(32&#x2192;64)" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: 2.07" verbatim="2.07" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: 1991" verbatim="1991" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: 3" verbatim="3" row="18" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,5: register register" verbatim="Register Register" row="18" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,6: risc" verbatim="RISC" row="18" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,7: 32" verbatim="32" row="18" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,8: fixed (32-bit), variable" verbatim="Fixed (32-bit), Variable" row="18" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,9: condition code" verbatim="Condition code" row="18" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,10: big/bi" verbatim="Big/Bi" row="18" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,11: altivec, apu, vsx, cell" verbatim="AltiVec, APU, VSX, Cell" row="18" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,12: yes" verbatim="Yes" row="18" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,13: no" verbatim="No" row="18" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,0: s+core" verbatim="S+core" row="19" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: 16/32" verbatim="16/32" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: " verbatim="" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: 2005" verbatim="2005" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: " verbatim="" row="19" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,5: " verbatim="" row="19" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,6: risc" verbatim="RISC" row="19" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,7: " verbatim="" row="19" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,8: " verbatim="" row="19" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,9: " verbatim="" row="19" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,10: little" verbatim="Little" row="19" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,11: " verbatim="" row="19" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,12: unknown" verbatim="Unknown" row="19" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,13: unknown" verbatim="Unknown" row="19" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,0: sparc" verbatim="SPARC" row="20" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,1: 64 (32&#x2192;64)" verbatim="64 (32&#x2192;64)" row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,2: v9" verbatim="V9" row="20" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,3: 1985" verbatim="1985" row="20" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,4: 3" verbatim="3" row="20" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,5: register register" verbatim="Register Register" row="20" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,6: risc" verbatim="RISC" row="20" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,7: 31 (of at least 55)" verbatim="31 (of at least 55)" row="20" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,8: fixed (32-bit)" verbatim="Fixed (32-bit)" row="20" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,9: condition code" verbatim="Condition code" row="20" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,10: big &#x2192; bi" verbatim="Big &#x2192; Bi" row="20" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,11: vis 1.0, 2.0, 3.0" verbatim="VIS 1.0, 2.0, 3.0" row="20" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,12: yes" verbatim="Yes" row="20" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,13: yes" verbatim="Yes" row="20" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,0: superh (sh)" verbatim="SuperH (SH)" row="21" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,1: 32" verbatim="32" row="21" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,2: " verbatim="" row="21" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,3: 1990s" verbatim="1990s" row="21" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,4: 2" verbatim="2" row="21" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,5: register register / register memory" verbatim="Register Register / Register Memory" row="21" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,6: risc" verbatim="RISC" row="21" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,7: 16" verbatim="16" row="21" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,8: fixed (16- or 32-bit), variable" verbatim="Fixed (16- or 32-bit), Variable" row="21" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,9: condition code (single bit)" verbatim="Condition Code (Single Bit)" row="21" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,10: bi" verbatim="Bi" row="21" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,11: " verbatim="" row="21" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,12: unknown" verbatim="Unknown" row="21" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,13: unknown" verbatim="Unknown" row="21" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,0: system/360 / system/370 / z/architecture" verbatim="System/360 / System/370 / z/Architecture" row="22" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,1: 64 (32&#x2192;64)" verbatim="64 (32&#x2192;64)" row="22" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,2: 3" verbatim="3" row="22" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,3: 1964" verbatim="1964" row="22" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,4: " verbatim="" row="22" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,5: register memory / memory memory" verbatim="Register Memory / Memory Memory" row="22" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,6: cisc" verbatim="CISC" row="22" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,7: 16" verbatim="16" row="22" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,8: variable" verbatim="Variable" row="22" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,9: condition code" verbatim="Condition code" row="22" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,10: big" verbatim="Big" row="22" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,11: " verbatim="" row="22" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,12: unknown" verbatim="Unknown" row="22" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,13: unknown" verbatim="Unknown" row="22" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,0: vax" verbatim="VAX" row="23" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,1: 32" verbatim="32" row="23" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,2: " verbatim="" row="23" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,3: 1977" verbatim="1977" row="23" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,4: 6" verbatim="6" row="23" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,5: memory memory" verbatim="Memory Memory" row="23" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,6: cisc" verbatim="CISC" row="23" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,7: 16" verbatim="16" row="23" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,8: variable" verbatim="Variable" row="23" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,9: compare and branch" verbatim="Compare and branch" row="23" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,10: little" verbatim="Little" row="23" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,11: vax vector architecture" verbatim="VAX Vector Architecture" row="23" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,12: unknown" verbatim="Unknown" row="23" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,13: unknown" verbatim="Unknown" row="23" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,0: x86" verbatim="x86" row="24" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,1: 32 (16&#x2192;32)" verbatim="32 (16&#x2192;32)" row="24" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,2: " verbatim="" row="24" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,3: 1978" verbatim="1978" row="24" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,4: 2" verbatim="2" row="24" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,5: register memory" verbatim="Register Memory" row="24" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,6: cisc" verbatim="CISC" row="24" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,7: 8 (including sp and bp)" verbatim="8 (including SP and BP)" row="24" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,8: variable" verbatim="Variable" row="24" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,9: condition code" verbatim="Condition code" row="24" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,10: little" verbatim="Little" row="24" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,11: mmx, 3dnow!, sse, pae" verbatim="MMX, 3DNow!, SSE, PAE" row="24" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,12: no" verbatim="No" row="24" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,13: no" verbatim="No" row="24" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,0: x86-64" verbatim="x86-64" row="25" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,1: 64 (32&#x2192;64)" verbatim="64 (32&#x2192;64)" row="25" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,2: " verbatim="" row="25" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,3: 2003" verbatim="2003" row="25" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,4: 2 (integer) 3 (avx)" verbatim="2 (integer)&#xA;3 (AVX)" row="25" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,5: register memory" verbatim="Register Memory" row="25" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,6: cisc" verbatim="CISC" row="25" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,7: 16 (including sp and bp)" verbatim="16 (including SP and BP)" row="25" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,8: variable" verbatim="Variable" row="25" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,9: condition code" verbatim="Condition code" row="25" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,10: little" verbatim="Little" row="25" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,11: mmx, 3dnow!, pae, avx, aes, fma" verbatim="MMX, 3DNow!, PAE, AVX, AES, FMA" row="25" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,12: no" verbatim="No" row="25" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,13: no" verbatim="No" row="25" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,0: z80" verbatim="Z80" row="26" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,1: 8" verbatim="8" row="26" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,2: " verbatim="" row="26" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,3: 1976" verbatim="1976" row="26" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,4: 2" verbatim="2" row="26" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,5: register memory" verbatim="Register Memory" row="26" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,6: cisc" verbatim="CISC" row="26" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,7: 8" verbatim="8" row="26" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,8: variable (8 to 32&#xa0;bits)" verbatim="Variable (8 to 32&#xa0;bits)" row="26" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,9: condition register" verbatim="Condition register" row="26" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,10: little" verbatim="Little" row="26" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,11: " verbatim="" row="26" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,12: " verbatim="" row="26" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,13: " verbatim="" row="26" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,0: xilinx" verbatim="Xilinx" row="27" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,1: 4&#x2192;48&#x2192;56" verbatim="4&#x2192;48&#x2192;56" row="27" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,2: " verbatim="" row="27" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,3: 2005" verbatim="2005" row="27" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,4: 1" verbatim="1" row="27" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,5: condition code" verbatim="Condition Code" row="27" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,6: fpga" verbatim="FPGA" row="27" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,7: 1" verbatim="1" row="27" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,8: variable (up to 768&#xa0;bytes)" verbatim="Variable (up to 768&#xa0;bytes)" row="27" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,9: condition register" verbatim="Condition register" row="27" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,10: little" verbatim="Little" row="27" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,11: " verbatim="" row="27" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,12: " verbatim="" row="27" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,13: " verbatim="" row="27" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,0: crusoe" verbatim="Crusoe" row="28" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,1: 32" verbatim="32" row="28" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,2: " verbatim="" row="28" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,3: 2000" verbatim="2000" row="28" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,4: 1" verbatim="1" row="28" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,5: register register" verbatim="Register Register" row="28" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,6: vliw" verbatim="VLIW" row="28" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,7: 64" verbatim="64" row="28" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,8: variable (64 or 128&#xa0;bits)" verbatim="Variable (64 or 128&#xa0;bits)" row="28" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,9: condition code" verbatim="Condition code" row="28" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,10: little" verbatim="Little" row="28" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,11: " verbatim="" row="28" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,12: " verbatim="" row="28" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,13: " verbatim="" row="28" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,0: architecture" verbatim="Architecture" row="29" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,1: bits" verbatim="Bits" row="29" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,2: version" verbatim="Version" row="29" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,3: introduced" verbatim="Introduced" row="29" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,4: max # operands" verbatim="Max # operands" row="29" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,5: type" verbatim="Type" row="29" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,6: design" verbatim="Design" row="29" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,7: registers" verbatim="Registers" row="29" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,8: instruction encoding" verbatim="Instruction encoding" row="29" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,9: branch evaluation" verbatim="Branch evaluation" row="29" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,10: endianness" verbatim="Endianness" row="29" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,11: extensions" verbatim="Extensions" row="29" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,12: open" verbatim="Open" row="29" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,13: royalty free" verbatim="Royalty free" row="29" rowspan="1" column="13" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

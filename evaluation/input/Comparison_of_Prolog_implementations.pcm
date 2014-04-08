@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="Main features">
+    <cells xsi:type="pcmmm:Header" name="0,0: platform" verbatim="Platform" rowspan="1" colspan="3"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: features" verbatim="Features" rowspan="1" column="3" colspan="8"/>
+    <cells xsi:type="pcmmm:Header" name="0,11: toolkit" verbatim="Toolkit" rowspan="1" column="11" colspan="3"/>
+    <cells xsi:type="pcmmm:Header" name="0,14: prolog mechanics" verbatim="Prolog Mechanics" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: name" verbatim="Name" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,1: os" verbatim="OS" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,2: licence" verbatim="Licence" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,3: native graphics" verbatim="Native Graphics" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,4: compiled code" verbatim="Compiled Code" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,5: unicode" verbatim="Unicode" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,6: object oriented" verbatim="Object Oriented" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,7: native os control" verbatim="Native OS Control" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,8: stand alone executable" verbatim="Stand Alone Executable" row="1" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,9: c interface" verbatim="C Interface" row="1" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,10: java interface" verbatim="Java Interface" row="1" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,11: interactive interpreter" verbatim="Interactive Interpreter" row="1" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,12: debugger" verbatim="Debugger" row="1" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,13: code profiler" verbatim="Code Profiler" row="1" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,14: syntax" verbatim="Syntax" row="1" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: bprolog" verbatim="BProlog" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: unix, windows, mac os x" verbatim="Unix, Windows, Mac OS X" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: free for non-commercial uses" verbatim="Free for non-commercial uses" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: " verbatim="" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: yes" verbatim="Yes" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: " verbatim="" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: yes" verbatim="Yes" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: yes" verbatim="Yes" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: yes" verbatim="Yes" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,9: yes" verbatim="Yes" row="2" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,10: yes" verbatim="Yes" row="2" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,11: yes" verbatim="Yes" row="2" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,12: yes" verbatim="Yes" row="2" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,13: yes" verbatim="Yes" row="2" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,14: iso-prolog, plus event-handling, clp(fd), and tabl" verbatim="ISO-Prolog, plus event-handling, CLP(FD), and tabling" row="2" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: jiprolog" verbatim="JIProlog" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: jvm, android" verbatim="JVM, Android" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: shareware and commercial" verbatim="Shareware and Commercial" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: yes" verbatim="Yes" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: " verbatim="" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: yes" verbatim="Yes" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: " verbatim="" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: yes via java" verbatim="Yes via Java" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: yes" verbatim="Yes" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,9: yes via java" verbatim="Yes via Java" row="3" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,10: yes" verbatim="Yes" row="3" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,11: yes" verbatim="Yes" row="3" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,12: yes" verbatim="Yes" row="3" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,13: " verbatim="" row="3" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,14: iso-prolog" verbatim="ISO-Prolog" row="3" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: ciao" verbatim="Ciao" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: unix, windows, mac os x" verbatim="Unix, Windows, Mac OS X" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: gpl, lgpl" verbatim="GPL, LGPL" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: " verbatim="" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: yes" verbatim="Yes" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: " verbatim="" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: yes" verbatim="Yes" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: yes" verbatim="Yes" row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,8: yes" verbatim="Yes" row="4" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,9: yes" verbatim="Yes" row="4" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,10: yes" verbatim="Yes" row="4" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,11: yes" verbatim="Yes" row="4" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,12: yes" verbatim="Yes" row="4" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,13: yes" verbatim="Yes" row="4" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,14: iso-prolog, plus extensions" verbatim="ISO-Prolog, plus extensions" row="4" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: dos-prolog" verbatim="DOS-PROLOG" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: ms-dos" verbatim="MS-DOS" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: shareware" verbatim="Shareware" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: yes" verbatim="Yes" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: yes" verbatim="Yes" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: yes" verbatim="Yes" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: " verbatim="" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: yes" verbatim="Yes" row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,8: yes" verbatim="Yes" row="5" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,9: " verbatim="" row="5" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,10: " verbatim="" row="5" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,11: " verbatim="" row="5" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,12: yes" verbatim="Yes" row="5" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,13: " verbatim="" row="5" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,14: edinburgh prolog" verbatim="Edinburgh Prolog" row="5" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: gnu prolog" verbatim="GNU Prolog" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: unix, windows, mac os x" verbatim="Unix, Windows, Mac OS X" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: gpl, lgpl" verbatim="GPL, LGPL" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: " verbatim="" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: yes" verbatim="Yes" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: " verbatim="" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: " verbatim="" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: yes" verbatim="Yes" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,8: yes" verbatim="Yes" row="6" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,9: yes" verbatim="Yes" row="6" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,10: " verbatim="" row="6" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,11: yes" verbatim="Yes" row="6" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,12: yes" verbatim="Yes" row="6" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,13: " verbatim="" row="6" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,14: iso-prolog" verbatim="ISO-Prolog" row="6" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: jekejeke prolog" verbatim="Jekejeke Prolog" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: jvm, android" verbatim="JVM, Android" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: distribution evaluation" verbatim="Distribution Evaluation" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: yes" verbatim="Yes" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: " verbatim="" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: yes" verbatim="Yes" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: " verbatim="" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: yes" verbatim="Yes" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,8: yes" verbatim="Yes" row="7" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,9: " verbatim="" row="7" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,10: yes" verbatim="Yes" row="7" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,11: yes" verbatim="Yes" row="7" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,12: yes" verbatim="Yes" row="7" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,13: yes" verbatim="Yes" row="7" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,14: iso-prolog, java api" verbatim="ISO-Prolog, Java API" row="7" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,0: jlog" verbatim="JLog" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: jvm" verbatim="JVM" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: gpl" verbatim="GPL" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: yes" verbatim="Yes" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: yes" verbatim="Yes" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: " verbatim="" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: " verbatim="" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: " verbatim="" row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,8: " verbatim="" row="8" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,9: " verbatim="" row="8" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,10: yes" verbatim="Yes" row="8" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,11: yes" verbatim="Yes" row="8" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,12: " verbatim="" row="8" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,13: " verbatim="" row="8" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,14: iso-prolog" verbatim="ISO-Prolog" row="8" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,0: jscriptlog" verbatim="JScriptLog" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: web browser" verbatim="Web Browser" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: gpl" verbatim="GPL" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: " verbatim="" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: " verbatim="" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: " verbatim="" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: " verbatim="" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: " verbatim="" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,8: " verbatim="" row="9" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,9: " verbatim="" row="9" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,10: " verbatim="" row="9" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,11: yes" verbatim="Yes" row="9" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,12: " verbatim="" row="9" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,13: " verbatim="" row="9" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,14: iso-prolog" verbatim="ISO-Prolog" row="9" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,0: jtrolog" verbatim="jTrolog" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: jvm" verbatim="JVM" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: lgpl" verbatim="LGPL" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: " verbatim="" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: " verbatim="" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: yes" verbatim="Yes" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: " verbatim="" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: " verbatim="" row="10" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,8: " verbatim="" row="10" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,9: " verbatim="" row="10" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,10: yes" verbatim="Yes" row="10" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,11: yes" verbatim="Yes" row="10" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,12: yes" verbatim="Yes" row="10" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,13: " verbatim="" row="10" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,14: iso-prolog tests" verbatim="ISO-Prolog tests" row="10" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,0: lpa-prolog" verbatim="LPA-PROLOG" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: windows" verbatim="Windows" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: commercial" verbatim="Commercial" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: yes" verbatim="Yes" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: yes" verbatim="Yes" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: yes" verbatim="Yes" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: yes" verbatim="Yes" row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,7: yes" verbatim="Yes" row="11" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,8: yes" verbatim="Yes" row="11" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,9: yes" verbatim="Yes" row="11" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,10: yes" verbatim="Yes" row="11" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,11: yes" verbatim="Yes" row="11" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,12: yes" verbatim="Yes" row="11" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,13: yes" verbatim="Yes" row="11" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,14: edinburgh prolog with extensions" verbatim="Edinburgh Prolog with extensions" row="11" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,0: open prolog" verbatim="Open Prolog" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: mac os" verbatim="Mac OS" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: freeware" verbatim="Freeware" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: " verbatim="" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: " verbatim="" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: " verbatim="" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,6: " verbatim="" row="12" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,7: " verbatim="" row="12" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,8: " verbatim="" row="12" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,9: " verbatim="" row="12" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,10: " verbatim="" row="12" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,11: " verbatim="" row="12" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,12: yes" verbatim="Yes" row="12" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,13: " verbatim="" row="12" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,14: " verbatim="" row="12" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,0: poplog prolog" verbatim="Poplog Prolog" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: linux (32- and 64-bit), unix, windows" verbatim="Linux (32- and 64-bit), Unix, Windows" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: free open source" verbatim="Free Open Source" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: only through pop-11, on linux" verbatim="Only through POP-11, on Linux" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: yes" verbatim="Yes" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: " verbatim="" row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: " verbatim="" row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,7: yes" verbatim="Yes" row="13" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,8: yes" verbatim="Yes" row="13" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,9: yes" verbatim="Yes" row="13" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,10: " verbatim="" row="13" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,11: yes" verbatim="Yes" row="13" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,12: yes" verbatim="Yes" row="13" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,13: " verbatim="" row="13" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,14: edinburgh prolog, with interfaces to poplog common" verbatim="Edinburgh Prolog, with interfaces to Poplog Common Lisp and Pop-11" row="13" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,0: sicstus prolog" verbatim="SICStus Prolog" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: unix, linux, windows, mac os x" verbatim="Unix, Linux, Windows, Mac OS X" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: commercial" verbatim="Commercial" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: yes" verbatim="Yes" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: yes" verbatim="Yes" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: yes" verbatim="Yes" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: yes" verbatim="Yes" row="14" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,7: yes" verbatim="Yes" row="14" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,8: yes" verbatim="Yes" row="14" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,9: yes" verbatim="Yes" row="14" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,10: yes" verbatim="Yes" row="14" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,11: yes" verbatim="Yes" row="14" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,12: yes" verbatim="Yes" row="14" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,13: yes" verbatim="Yes" row="14" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,14: iso-prolog" verbatim="ISO-Prolog" row="14" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,0: strawberry prolog" verbatim="Strawberry Prolog" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: windows, unix" verbatim="Windows, Unix" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: freeware, commercial" verbatim="Freeware, Commercial" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: yes" verbatim="Yes" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: yes" verbatim="Yes" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: yes" verbatim="Yes" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,6: " verbatim="" row="15" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,7: " verbatim="" row="15" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,8: yes" verbatim="Yes" row="15" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,9: " verbatim="" row="15" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,10: " verbatim="" row="15" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,11: " verbatim="" row="15" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,12: yes" verbatim="Yes" row="15" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,13: " verbatim="" row="15" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,14: not iso-prolog + extensions" verbatim="Not ISO-Prolog + extensions" row="15" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,0: swi-prolog" verbatim="SWI-Prolog" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: unix, linux, windows, mac os x" verbatim="Unix, Linux, Windows, Mac OS X" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: lgpl" verbatim="LGPL" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: yes" verbatim="Yes" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: yes" verbatim="Yes" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: yes" verbatim="Yes" row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,6: " verbatim="" row="16" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,7: yes" verbatim="Yes" row="16" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,8: yes" verbatim="Yes" row="16" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,9: yes" verbatim="Yes" row="16" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,10: yes" verbatim="Yes" row="16" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,11: yes" verbatim="Yes" row="16" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,12: yes" verbatim="Yes" row="16" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,13: yes" verbatim="Yes" row="16" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,14: iso-prolog, edinburgh prolog" verbatim="ISO-Prolog, Edinburgh Prolog" row="16" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,0: tuprolog" verbatim="tuProlog" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: jvm, android" verbatim="JVM, Android" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: lgpl" verbatim="LGPL" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: yes" verbatim="Yes" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: " verbatim="" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,5: yes" verbatim="Yes" row="17" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,6: " verbatim="" row="17" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,7: " verbatim="" row="17" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,8: " verbatim="" row="17" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,9: yes" verbatim="Yes" row="17" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,10: yes" verbatim="Yes" row="17" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,11: yes" verbatim="Yes" row="17" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,12: yes" verbatim="Yes" row="17" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,13: " verbatim="" row="17" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,14: iso-prolog" verbatim="ISO-Prolog" row="17" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,0: visual prolog" verbatim="Visual Prolog" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: windows" verbatim="Windows" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: freeware, commercial" verbatim="Freeware, Commercial" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: yes" verbatim="Yes" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: yes" verbatim="Yes" row="18" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,5: yes" verbatim="Yes" row="18" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,6: yes" verbatim="Yes" row="18" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,7: yes" verbatim="Yes" row="18" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,8: yes" verbatim="Yes" row="18" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,9: yes" verbatim="Yes" row="18" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,10: " verbatim="" row="18" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,11: " verbatim="" row="18" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,12: yes" verbatim="Yes" row="18" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,13: yes" verbatim="Yes" row="18" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,14: " verbatim="" row="18" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,0: xsb prolog" verbatim="XSB Prolog" row="19" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: linux, windows, solaris, mac os x" verbatim="Linux, Windows, Solaris, Mac OS X" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: lgpl" verbatim="LGPL" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: " verbatim="" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: yes" verbatim="Yes" row="19" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,5: " verbatim="" row="19" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,6: " verbatim="" row="19" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,7: yes" verbatim="Yes" row="19" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,8: yes" verbatim="Yes" row="19" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,9: yes" verbatim="Yes" row="19" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,10: yes" verbatim="Yes" row="19" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,11: yes" verbatim="Yes" row="19" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,12: yes" verbatim="Yes" row="19" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,13: yes" verbatim="Yes" row="19" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,14: iso-prolog, tabled wfs" verbatim="ISO-Prolog, tabled WFS" row="19" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,0: yap-prolog" verbatim="YAP-Prolog" row="20" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,1: linux, windows, solaris, mac os x, hp-ux" verbatim="Linux, Windows, Solaris, Mac OS X, HP-UX" row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,2: gpl or artistic (user choice)" verbatim="GPL or Artistic (user choice)" row="20" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,3: " verbatim="" row="20" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,4: yes" verbatim="Yes" row="20" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,5: yes" verbatim="Yes" row="20" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,6: " verbatim="" row="20" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,7: yes" verbatim="Yes" row="20" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,8: yes" verbatim="Yes" row="20" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,9: yes" verbatim="Yes" row="20" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,10: yes" verbatim="Yes" row="20" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,11: yes" verbatim="Yes" row="20" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,12: yes" verbatim="Yes" row="20" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,13: " verbatim="" row="20" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,14: edinburgh, iso-prolog, quintus and sicstus prolog " verbatim="Edinburgh, ISO-Prolog, Quintus and SICStus Prolog compatible" row="20" rowspan="1" column="14" colspan="1"/>
+  </matrices>
+  <matrices name="Operating system and Web-related features">
+    <cells xsi:type="pcmmm:Header" name="0,0: " verbatim="" rowspan="1" colspan="5"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: web-related" verbatim="Web-related" rowspan="1" column="5" colspan="4"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: name" verbatim="Name" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,1: conditional compilation" verbatim="Conditional compilation" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,2: sockets" verbatim="Sockets" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,3: multi-threading" verbatim="Multi-threading" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,4: tabling" verbatim="Tabling" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,5: http client" verbatim="HTTP client" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,6: http server" verbatim="HTTP server" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,7: html parser" verbatim="HTML Parser" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,8: rdf triple store" verbatim="RDF Triple store" row="1" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: bprolog" verbatim="BProlog" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: " verbatim="" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: " verbatim="" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: " verbatim="" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: yes" verbatim="Yes" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: " verbatim="" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: " verbatim="" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: " verbatim="" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: " verbatim="" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: ciao" verbatim="Ciao" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: yes" verbatim="Yes" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: yes" verbatim="Yes" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: yes" verbatim="Yes" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: yes" verbatim="Yes" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: yes" verbatim="Yes" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: " verbatim="" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: yes" verbatim="Yes" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: " verbatim="" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: gnu prolog" verbatim="GNU Prolog" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: " verbatim="" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: yes" verbatim="Yes" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: " verbatim="" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: " verbatim="" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: " verbatim="" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: " verbatim="" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: " verbatim="" row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,8: " verbatim="" row="4" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: jekejeke prolog" verbatim="Jekejeke Prolog" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: " verbatim="" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: yes" verbatim="Yes" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: yes" verbatim="Yes" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: " verbatim="" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: yes" verbatim="Yes" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: yes" verbatim="Yes" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: " verbatim="" row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,8: " verbatim="" row="5" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: lpa-prolog" verbatim="LPA-Prolog" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: " verbatim="" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: yes" verbatim="Yes" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: " verbatim="" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: " verbatim="" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: yes" verbatim="Yes" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: yes" verbatim="Yes" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: yes" verbatim="Yes" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,8: " verbatim="" row="6" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: sicstus prolog" verbatim="SICStus Prolog" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: yes" verbatim="Yes" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: yes" verbatim="Yes" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: yes" verbatim="Yes" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: " verbatim="" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: " verbatim="" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: " verbatim="" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: " verbatim="" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,8: " verbatim="" row="7" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,0: swi-prolog" verbatim="SWI-Prolog" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: yes" verbatim="Yes" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: yes" verbatim="Yes" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: yes" verbatim="Yes" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: " verbatim="" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: yes" verbatim="Yes" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: yes" verbatim="Yes" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: yes" verbatim="Yes" row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,8: yes" verbatim="Yes" row="8" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,0: visual prolog" verbatim="Visual Prolog" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: yes" verbatim="Yes" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: yes" verbatim="Yes" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: yes" verbatim="Yes" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: " verbatim="" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: yes" verbatim="Yes" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: " verbatim="" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: yes" verbatim="Yes" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,8: " verbatim="" row="9" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,0: xsb" verbatim="XSB" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: " verbatim="" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: yes" verbatim="Yes" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: yes" verbatim="Yes" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: yes" verbatim="Yes" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: yes" verbatim="Yes" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: " verbatim="" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: " verbatim="" row="10" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,8: " verbatim="" row="10" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,0: yap-prolog" verbatim="YAP-Prolog" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: yes" verbatim="Yes" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: yes" verbatim="Yes" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: yes" verbatim="Yes" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: yes" verbatim="Yes" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: " verbatim="" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: " verbatim="" row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,7: " verbatim="" row="11" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,8: " verbatim="" row="11" rowspan="1" column="8" colspan="1"/>
+  </matrices>
+  <matrices name="Static analysis">
+    <cells xsi:type="pcmmm:Header" name="0,0: name" verbatim="Name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: type checker" verbatim="Type checker" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: determinacy checker" verbatim="Determinacy checker" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: call-pattern checker" verbatim="Call-pattern checker" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: ciao" verbatim="Ciao" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: yes" verbatim="Yes" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: yes" verbatim="Yes" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: gnu prolog" verbatim="GNU Prolog" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: " verbatim="" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: " verbatim="" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: " verbatim="" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: jekejeke prolog" verbatim="Jekejeke Prolog" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: " verbatim="" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: " verbatim="" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: " verbatim="" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: sicstus prolog" verbatim="SICStus Prolog" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: " verbatim="" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: yes" verbatim="Yes" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: " verbatim="" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: swi-prolog" verbatim="SWI-Prolog" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: " verbatim="" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: " verbatim="" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: " verbatim="" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: visual prolog" verbatim="Visual Prolog" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: yes" verbatim="Yes" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: yes" verbatim="Yes" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: yes" verbatim="Yes" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: xsb" verbatim="XSB" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: " verbatim="" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: " verbatim="" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: " verbatim="" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,0: yap-prolog" verbatim="YAP-Prolog" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: " verbatim="" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: " verbatim="" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: " verbatim="" row="8" rowspan="1" column="3" colspan="1"/>
+  </matrices>
+  <matrices name="Optimizations">
+    <cells xsi:type="pcmmm:Header" name="0,0: name" verbatim="Name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: tail-call optimization" verbatim="Tail-Call Optimization" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: choice point elimination" verbatim="Choice Point Elimination" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: environment trimming" verbatim="Environment Trimming" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: just-in-time indexing" verbatim="Just-in-Time Indexing" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: ciao" verbatim="Ciao" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: yes" verbatim="Yes" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: yes" verbatim="Yes" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: ?" verbatim="?" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: gnu prolog" verbatim="GNU Prolog" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: yes" verbatim="Yes" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: yes" verbatim="Yes" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: ?" verbatim="?" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: jekejeke prolog" verbatim="Jekejeke Prolog" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: yes (runtime)" verbatim="Yes (runtime)" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: yes (runtime)" verbatim="Yes (runtime)" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: yes (runtime)" verbatim="Yes (runtime)" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: yes" verbatim="Yes" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: sicstus prolog" verbatim="SICStus Prolog" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: yes" verbatim="Yes" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: yes" verbatim="Yes" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: yes" verbatim="Yes" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: ?" verbatim="?" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: swi-prolog" verbatim="SWI-Prolog" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: yes" verbatim="Yes" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: yes" verbatim="Yes" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: yes" verbatim="Yes" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: yes" verbatim="Yes" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: visual prolog" verbatim="Visual Prolog" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: yes (compile time)" verbatim="Yes (compile time)" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: yes (compile time)" verbatim="Yes (compile time)" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: n/a" verbatim="N/A" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: n/a (compile time)" verbatim="N/A (compile time)" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: xsb" verbatim="XSB" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: yes" verbatim="Yes" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: yes" verbatim="Yes" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: yes" verbatim="Yes" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: ?" verbatim="?" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,0: yap-prolog" verbatim="YAP-Prolog" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: yes" verbatim="Yes" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: yes" verbatim="Yes" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: yes" verbatim="Yes" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: yes" verbatim="Yes" row="8" rowspan="1" column="4" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

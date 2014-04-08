@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="">
+    <cells xsi:type="pcmmm:Header" name="0,0: parameter" verbatim="Parameter" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: crt" verbatim="CRT" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: lcd" verbatim="LCD" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: plasma" verbatim="Plasma" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: oled" verbatim="OLED" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: brightness" verbatim="Brightness" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: some compensate for ambient light[]" verbatim="Some compensate for ambient light[]" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: very poor in direct sunlight without reflective de" verbatim="Very poor in direct sunlight without reflective design (battery powered devices);&#xA;uneven backlighting in older models;&#xA;low temperatures can cause dimming or blackout" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: some panels are highly reflective, should be used " verbatim="Some panels are highly reflective, should be used in a dark environment for optimum picture quality" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: poor in bright ambient light; white color dimmer t" verbatim="Poor in bright ambient light;&#xA;white color dimmer than LCDs of same brightness[]" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: contrast" verbatim="Contrast" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: over 15,000:1" verbatim="Over 15,000:1" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: over 1,000:1" verbatim="Over 1,000:1" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: over 20,000:1" verbatim="Over 20,000:1" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: over 1,000,000:1" verbatim="Over 1,000,000:1" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: color" verbatim="Color" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: excellent" verbatim="Excellent" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: good on most newer models" verbatim="Good on most newer models" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: excellent" verbatim="Excellent" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: vivid and wide gamut, blue oled degrades faster th" verbatim="Vivid and wide gamut,&#xA;blue OLED degrades faster than other colors so manufacturers may overdrive the blue LEDs to compensate, causing oversaturated colors &#xA;organic materials decay over time (2011)" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: color depth" verbatim="Color depth" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: unlimited" verbatim="Unlimited" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: up to 68 &#xd7; 10 [ ]" verbatim="Up to 68 &#xd7; 10&#xA;[ ]" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: 68 &#xd7; 10[ ]" verbatim="68 &#xd7; 10[ ]" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: " verbatim="" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: black level" verbatim="Black level" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: excellent" verbatim="Excellent" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: poor due to bleed through" verbatim="Poor due to bleed through" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: excellent" verbatim="Excellent" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: excellent" verbatim="Excellent" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: ghosting and smearing" verbatim="Ghosting and smearing" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: no ghosting or smearing artifacts; slightly blurry" verbatim="No ghosting or smearing artifacts;&#xA;slightly blurry;&#xA;halo may appear around objects with high contrast to background" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: display motion blur on models with slow response t" verbatim="Display motion blur on models with slow response time, and the elimination technique (strobing backlight) can cause eye-strain" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: none even during fast motion, advancements in 3d h" verbatim="None even during fast motion, advancements in 3D have eliminated phosphor trailing due to the use of fast-switching phosphors" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: none even during fast motion" verbatim="None even during fast motion" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: response time" verbatim="Response time" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: sub-milisecond" verbatim="Sub-milisecond" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: 1&#x2013;8 ms typical (according to manufacturer data), o" verbatim="1&#x2013;8 ms typical (according to manufacturer data), older units could be as slow as 35 ms" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: sub-millisecond" verbatim="Sub-millisecond" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: sub-millisecond" verbatim="Sub-millisecond" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,0: frame rate" verbatim="Frame rate" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: 60&#x2013;85 fps typically, some crts can go even higher;" verbatim="60&#x2013;85 fps typically, some CRTs can go even higher;&#xA;internally, display refreshed at input frame rate speed" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: 60 or 75 fps typically; internally, display usuall" verbatim="60 or 75 fps typically;&#xA;internally, display usually refreshed at 200&#xa0;Hz" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: 60 fps typically, some can do 120 fps; internally," verbatim="60 fps typically, some can do 120 fps;&#xA;internally, display refreshed at 480, 600 or even 3000&#xa0;Hz" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: " verbatim="" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,0: environmental influences" verbatim="Environmental influences" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: magnetic fields may cause distortion or shimmer, e" verbatim="Magnetic fields may cause distortion or shimmer,&#xA;earth's magnetic fields may cause distortion" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: low temperatures can cause slow response, high tem" verbatim="Low temperatures can cause slow response, high temperatures can cause poor contrast" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: high altitude pressure difference may cause poor f" verbatim="High altitude pressure difference may cause poor function or buzzing noises" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: uv exposure can damage, water can damage organic m" verbatim="UV exposure can damage,&#xA;water can damage organic materials" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,0: flicker and eyestrain" verbatim="Flicker and eyestrain" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: part of the screen always lit during refreshes; fl" verbatim="Part of the screen always lit during refreshes;&#xA;flicker noticeable at refresh rates below 85&#xa0;Hz" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: depends; as of 2013, most lcds use pwm (strobing) " verbatim="Depends; as of 2013, most LCDs use PWM (strobing) to dim the backlight which can cause severe eyestrain for some people although the flicker isn't visible because it is normally done at 200&#xa0;Hz or faster" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: poor due to phosphor based but improving in newer " verbatim="Poor due to phosphor based but improving in newer models" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: part of the screen always lit during refreshes due" verbatim="Part of the screen always lit during refreshes due to multiplexing" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,0: weight" verbatim="Weight" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: heavy, especially for larger units, a 20 inches (5" verbatim="Heavy, especially for larger units, a 20 inches (51&#xa0;cm) screen weighs about 50 pounds (23&#xa0;kg)" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: light" verbatim="Light" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: heavy, however, less weight gain per size increase" verbatim="Heavy, however, less weight gain per size increase" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: very light" verbatim="Very light" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,0: size" verbatim="Size" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: bulky depth, 7&quot; smallest possible for color screen" verbatim="Bulky depth, &#xA;7&quot; smallest possible for color screen, &#xA;over 40&quot; is very heavy" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: compact, can be manufactured almost any size and s" verbatim="Compact, &#xA;can be manufactured almost any size and shape, &#xA;very thin allowing mounted distance to user for less focusing-related eyestrain" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: up to 150&quot;(3.8m)" verbatim="Up to 150&quot;(3.8m)" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: compact, can be made in nearly any size or shape." verbatim="Compact, can be made in nearly any size or shape." row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,0: energy consumption and heat generation" verbatim="Energy consumption and heat generation" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: high" verbatim="High" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: low with ccfl backlight 30&#x2013;50% of crt, with led ba" verbatim="Low&#xA;with CCFL backlight 30&#x2013;50% of CRT, with LED backlight 10&#x2013;25% of CRT" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: varies with brightness but usually higher than lcd" verbatim="Varies with brightness but usually higher than LCD" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: varies with brightness but usually lower than lcd " verbatim="Varies with brightness but usually lower than LCD (except when displaying a lot of white area)" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,0: screen burn-in" verbatim="Screen burn-in" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: yes, the reason screensavers became popular" verbatim="Yes, the reason screensavers became popular" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: discoloring may occur due to thermalization, but u" verbatim="Discoloring may occur due to thermalization, but usually it is not permanent;&#xA;dead or stuck pixels may occur in manufacturing or usage" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: severe in early models, dead or stuck pixels may o" verbatim="Severe in early models, dead or stuck pixels may occur in manufacturing or usage" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: yes, dead or stuck pixels may occur in manufacturi" verbatim="Yes, dead or stuck pixels may occur in manufacturing or usage" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,0: maintenance" verbatim="Maintenance" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: hazardous to repair or service due to high-voltage" verbatim="Hazardous to repair or service due to high-voltage, &#xA;requires skilled convergence calibration and adjustments for geographic location changes" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: difficult to replace backlight" verbatim="Difficult to replace backlight" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: " verbatim="" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: " verbatim="" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,0: is compatible with light pen or guns" verbatim="Is compatible with Light pen or guns" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: yes" verbatim="Yes" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: no" verbatim="No" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: no" verbatim="No" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: no" verbatim="No" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,0: electro-magnetic radiation emission" verbatim="Electro-magnetic radiation emission" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: emits strong electromagnetic radiation in the audi" verbatim="Emits strong electromagnetic radiation in the audio-frequency to low-frequency RF range (from the electron beam deflection coils)" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: emits very little electromagnetic radiation" verbatim="Emits very little electromagnetic radiation" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: emits strong radio-frequency electromagnetic radia" verbatim="Emits strong radio-frequency electromagnetic radiation" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: emits very little electromagnetic radiation" verbatim="Emits very little electromagnetic radiation" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,0: other" verbatim="Other" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: no native resolution. currently, the only display " verbatim="No native resolution. Currently, the only display technology capable of multi-syncing (displaying different resolutions and refresh rates without the need for scaling). Display lag is extremely low due to its nature, which does not have the ability to store image data before output, unlike LCDs, plasma displays and OLED displays." row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: the lcd grid can mask effects of spatial and grays" verbatim="The LCD grid can mask effects of spatial and grayscale quantization, creating the illusion of higher image quality. &#xA;Many newer models are powered by an external 12V power supply (for thinness), and could (with a special cable) be connected directly to the computer's power supply, possibly saving power, desk space and wall-outlet space" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: screen-door effects are more noticeable than lcd w" verbatim="Screen-door effects are more noticeable than LCD when up close, or on larger sizes;&#xA;fragile and required to be upright to avoid screen collapse" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: no backlight needed, can be fabricated on flexible" verbatim="No backlight needed, &#xA;can be fabricated on flexible plastic substrates for flexible displays" row="18" rowspan="1" column="4" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>
