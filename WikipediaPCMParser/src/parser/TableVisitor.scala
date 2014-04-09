@@ -155,6 +155,7 @@ class TableVisitor extends AstVisitor {
 	}
 	
 	def handleCell(e : AstNode, isHeader : Boolean) {
+//	  println(e)
 		rowspan = 1
 		colspan = 1
 
@@ -206,7 +207,7 @@ class TableVisitor extends AstVisitor {
 	  if (!ignoredXMLElement) {
 		  if (e.getTitle().getContent().isEmpty()) {
 		    cellContent ++= e.getTarget()
-		  } else {
+		  } else if (!e.getTarget().endsWith(".png")){
 		    dispatch(e.getTitle())
 		  }
 	  }
@@ -215,8 +216,8 @@ class TableVisitor extends AstVisitor {
 	def visit(e : ExternalLink) = {
 	  if (!ignoredXMLElement) {
 		  if (e.getTitle().isEmpty()) {
-		    val target = e.getTarget()
-		    cellContent ++= target.getProtocol() + ":" + target.getPath()
+//		    val target = e.getTarget()
+//		    cellContent ++= target.getProtocol() + ":" + target.getPath()
 		  } else {
 		    dispatch(e.getTitle())
 		  }
