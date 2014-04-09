@@ -247,7 +247,7 @@ class TableVisitor extends AstVisitor {
 		    case "abbr" => false
 		    case "center" => false
 		    case "span" if isSignificantXMLElement(e) => false
-	
+		    case "div" => false
 		    case _ => true
 		  }
 	  
@@ -274,6 +274,7 @@ class TableVisitor extends AstVisitor {
 			
 			significant = name match {
 			  case "class" if value.contains("plainlinks") => false
+			  case "class" if value.contains("flagicon") => false
 			  case "style" if value.contains("display:none") => false
 			  case _ => true
 			}
