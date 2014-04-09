@@ -36,6 +36,7 @@ import org.sweble.wikitext.`lazy`.parser.DefinitionDefinition
 import pcm.Matrix
 import pcm.Cell
 import java.util.regex.Pattern
+import org.sweble.wikitext.`lazy`.parser.ItemizationItem
 
 class TableVisitor extends AstVisitor {
 
@@ -363,7 +364,16 @@ class TableVisitor extends AstVisitor {
 	}
 	
 	def visit(e : Itemization) {
-	  
+		val it = e.getContent().iterator()
+		while(it.hasNext()) {
+		  val item = it.next()
+		  dispatch(item)
+		  cellContent += '\n'
+		}
 	}
 
+	def visit(e : ItemizationItem) {
+		iterate(e)
+	}
+	
 }
