@@ -228,6 +228,7 @@ class TableVisitor extends AstVisitor {
 	  e.getName() match {
 	    case "br" => cellContent += '\n'
 	    case "small" => 
+	    case "big" => 
 	    case "abbr" =>
 	    case "center" =>
 //	    case "span" =>
