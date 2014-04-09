@@ -283,7 +283,10 @@ class TableVisitor extends AstVisitor {
 	}
 
 	def visit(e : XmlElementClose) = {
-		ignoredXMLStack.pop
+	  if (!ignoredXMLStack.isEmpty) {
+		  ignoredXMLStack.pop
+	  }
+
 	}
 
 	def visit(e : XmlElementEmpty) = {

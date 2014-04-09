@@ -23,6 +23,8 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl
 import org.eclipse.emf.common.util.URI
 import java.util.Collections
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
+import java.io.StringWriter
+import java.io.PrintWriter
 
 class ParserTest extends FlatSpec with Matchers {
   
@@ -144,8 +146,12 @@ class ParserTest extends FlatSpec with Matchers {
 	    			 val pcms = testArticle(article)
 	    		 } catch {
 //	    		 case e : UnknownHostException => retry = true 
-	    		 case e : Throwable => result ++= '\n' + e.getLocalizedMessage()
-	    		 }  
+	    		 	case e : Throwable => 
+		    		 	val sw = new StringWriter();
+						val pw = new PrintWriter(sw);
+						e.printStackTrace(pw);
+						result ++= sw.toString();
+	    		 }    
 	    	 } while (retry)
 	     }
 	     result.toString
@@ -171,7 +177,11 @@ class ParserTest extends FlatSpec with Matchers {
 	    			 val pcm = testArticle(article)
 	    		 } catch {
 //	    		 case e : UnknownHostException => retry = true
-	    		 case e : Throwable => result ++= e.getMessage()
+	    		 case e : Throwable => 
+	    		 	val sw = new StringWriter();
+					val pw = new PrintWriter(sw);
+					e.printStackTrace(pw);
+					result ++= sw.toString();
 	    		 }  
 	    	 } while (retry)
 	     }
