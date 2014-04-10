@@ -2,8 +2,6 @@
  */
 package pcmmm.impl;
 
-import com.google.gwt.user.client.rpc.GwtTransient;
-
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
@@ -46,7 +44,6 @@ public class IntervalImpl extends DomainImpl implements Interval {
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected String min = MIN_EDEFAULT;
 
 	/**
@@ -67,7 +64,6 @@ public class IntervalImpl extends DomainImpl implements Interval {
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected String max = MAX_EDEFAULT;
 
 	/**

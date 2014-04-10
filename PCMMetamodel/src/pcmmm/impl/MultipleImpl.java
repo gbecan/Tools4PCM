@@ -2,8 +2,6 @@
  */
 package pcmmm.impl;
 
-import com.google.gwt.user.client.rpc.GwtTransient;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -42,7 +40,6 @@ public class MultipleImpl extends ConstraintImpl implements Multiple {
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected EList<Constraint> contraints;
 
 	/**

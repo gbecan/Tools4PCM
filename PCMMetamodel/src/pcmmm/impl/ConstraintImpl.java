@@ -2,8 +2,6 @@
  */
 package pcmmm.impl;
 
-import com.google.gwt.user.client.rpc.GwtTransient;
-
 import java.lang.Boolean;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -49,7 +47,6 @@ public abstract class ConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected String name = NAME_EDEFAULT;
 
 	/**
@@ -70,7 +67,6 @@ public abstract class ConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected boolean confident = CONFIDENT_EDEFAULT;
 
 	/**

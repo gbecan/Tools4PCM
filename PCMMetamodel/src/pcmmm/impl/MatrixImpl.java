@@ -2,8 +2,6 @@
  */
 package pcmmm.impl;
 
-import com.google.gwt.user.client.rpc.GwtTransient;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -57,7 +55,6 @@ public class MatrixImpl extends MinimalEObjectImpl.Container implements Matrix {
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected String name = NAME_EDEFAULT;
 
 	/**
@@ -68,7 +65,6 @@ public class MatrixImpl extends MinimalEObjectImpl.Container implements Matrix {
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected EList<Cell> cells;
 
 	/**

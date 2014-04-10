@@ -2,8 +2,6 @@
  */
 package pcmmm.impl;
 
-import com.google.gwt.user.client.rpc.GwtTransient;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -64,7 +62,6 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected String title = TITLE_EDEFAULT;
 
 	/**
@@ -75,7 +72,6 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected EList<String> description;
 
 	/**
@@ -86,7 +82,6 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected EList<Matrix> matrices;
 
 	/**
@@ -107,7 +102,6 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected String name = NAME_EDEFAULT;
 
 	/**
@@ -118,7 +112,6 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected EList<VariabilityConcept> concepts;
 
 	/**
@@ -129,7 +122,6 @@ public class PCMImpl extends MinimalEObjectImpl.Container implements PCM {
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected DomainCollection domainCollection;
 
 	/**

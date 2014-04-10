@@ -2,8 +2,6 @@
  */
 package pcmmm.impl;
 
-import com.google.gwt.user.client.rpc.GwtTransient;
-
 import java.lang.Boolean;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -46,7 +44,6 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected boolean value = VALUE_EDEFAULT;
 
 	/**

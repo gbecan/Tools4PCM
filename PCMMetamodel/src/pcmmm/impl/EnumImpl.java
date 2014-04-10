@@ -2,8 +2,6 @@
  */
 package pcmmm.impl;
 
-import com.google.gwt.user.client.rpc.GwtTransient;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.util.EList;
@@ -36,7 +34,6 @@ public class EnumImpl extends DomainImpl implements pcmmm.Enum {
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected EList<String> values;
 
 	/**

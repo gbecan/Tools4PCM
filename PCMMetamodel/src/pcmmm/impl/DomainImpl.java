@@ -2,8 +2,6 @@
  */
 package pcmmm.impl;
 
-import com.google.gwt.user.client.rpc.GwtTransient;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
@@ -50,7 +48,6 @@ public abstract class DomainImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected String name = NAME_EDEFAULT;
 
 	/**
@@ -61,7 +58,6 @@ public abstract class DomainImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected Type domainType;
 
 	/**
