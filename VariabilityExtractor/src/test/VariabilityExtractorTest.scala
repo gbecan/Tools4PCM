@@ -120,7 +120,7 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	    
 	    // Load configuration
 	    val configFile = "input/configs/" + file.getName.substring(0, file.getName.size - 4) + ".config"  
-	    variabilityExtractor.parseConfigurationFile(configFile)
+	    variabilityExtractor.setConfiguration(VariabilityExtractor.parseConfigurationFile(configFile))
 	    
 	    // Extract variability
 	    variabilityExtractor.extractVariability(pcm)
@@ -170,7 +170,7 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	  val pcm = loadPCMModel(file)
 	  
 	  val variabilityExtractor = new VariabilityExtractor
-      variabilityExtractor.parseConfigurationFile(configFile.getAbsolutePath())
+      variabilityExtractor.setConfiguration(VariabilityExtractor.parseConfigurationFile(configFile.getAbsolutePath()))
 	  variabilityExtractor.extractVariability(pcm)
 	  
 	  // Compute warnings
@@ -229,7 +229,7 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 		
 		  // Load configuration
 		  val configFile = "input/configs/" + file.getName.substring(0, file.getName.size - 4) + ".config"  
-		  variabilityExtractor.parseConfigurationFile(configFile)
+		  variabilityExtractor.setConfiguration(VariabilityExtractor.parseConfigurationFile(configFile))
 		
 		  // Extract variability
 		  variabilityExtractor.extractVariability(pcm)
