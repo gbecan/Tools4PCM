@@ -25,6 +25,7 @@ import java.util.Collections
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
 import java.io.StringWriter
 import java.io.PrintWriter
+import parser.WikipediaPCMParser
 
 class ParserTest extends FlatSpec with Matchers {
   
@@ -35,15 +36,21 @@ class ParserTest extends FlatSpec with Matchers {
     val code = reader.mkString
     reader.close
     val parser = new WikipediaPCMParser
-    parser.parse(code)
+    parser.preprocessAndParse(code)
   }
   
   def parseFromTitle(title : String) : PCM = {
     (new WikipediaPCMParser).parseOnlineArticle(title)
   }
   
+  def parseFromOfflineCode(title : String) : PCM = {
+    val parser = new WikipediaPCMParser
+    val code = Source.fromFile("input/" + title.replaceAll(" ", "_") + ".txt").getLines.mkString("\n")
+    parser.parse(code)
+  }
+  
   def testArticle(title : String) : PCM = {
-    val pcm = parseFromTitle(title)
+    val pcm = parseFromOfflineCode(title)
     writeToHTML(title, pcm)
     dumpCellsInFile(title, pcm)
     writeToPCMModel(title, pcm)
@@ -134,33 +141,19 @@ class ParserTest extends FlatSpec with Matchers {
 	   val wikipediaPCMs = wikipediaPCMsFile.getLines.toList
 	   wikipediaPCMsFile.close
 	   
-	   val tasks : Seq[Future[String]] = for(article <- wikipediaPCMs) yield future {
-	     var result = new StringBuilder
+	   for(article <- wikipediaPCMs) {
 	     if (article.startsWith("//")) {
-	       result ++= "IGNORED : " + article
+	       println("IGNORED : " + article)
 	     } else {
-	    	 result ++= article
-	    	 var retry = false
-	    	 do {
-	    		 try {
-	    			 val pcms = testArticle(article)
-	    		 } catch {
-//	    		 case e : UnknownHostException => retry = true 
-	    		 	case e : Throwable => 
-		    		 	val sw = new StringWriter();
-						val pw = new PrintWriter(sw);
-						e.printStackTrace(pw);
-						result ++= sw.toString();
-	    		 }    
-	    	 } while (retry)
+	    	 println(article)
+	    	 try {
+	    		 val pcms = testArticle(article)
+	    	 } catch {
+	    	 case e : Throwable => e.printStackTrace() 
+	    	 }    
 	     }
-	     result.toString
-	   } (executionContext)
+	   } 
 
-       for (task <- tasks) {
-         val result = Await.result(task, 10.minutes)
-         println(result)
-       }
    }
    
    it should "parse these PCMs" in {
@@ -174,7 +167,7 @@ class ParserTest extends FlatSpec with Matchers {
 	    	 var retry = false
 	    	 do {
 	    		 try {
-	    			 val pcm = testArticle(article)
+	    			 val pcms = testArticle(article)
 	    		 } catch {
 //	    		 case e : UnknownHostException => retry = true
 	    		 case e : Throwable => 
@@ -200,6 +193,44 @@ class ParserTest extends FlatSpec with Matchers {
      val pcm = parseFromTitle(title)
      writeToPCMModel(title, pcm)
    }
+   
+   it should "preprocess every available Wikipedia PCM" in {
+      val wikipediaPCMsFile = Source.fromFile("resources/list_of_PCMs.txt")
+	   val wikipediaPCMs = wikipediaPCMsFile.getLines.toList
+	   wikipediaPCMsFile.close
+	   
+	   val tasks : Seq[Future[String]] = for(article <- wikipediaPCMs) yield future {
+	     var result = new StringBuilder
+	     if (article.startsWith("//")) {
+	       result ++= "IGNORED : " + article
+	     } else {
+	    	 result ++= article
+	    	 var retry = false
+	    	 do {
+	    		 try {
+	    			 val parser = new WikipediaPCMParser
+	    			 val preprocessedCode = parser.preprocessOnlineArticle(article)
+	    			 val writer = new FileWriter("input/" + article.replaceAll(" ", "_") + ".txt")
+	    			 writer.write(preprocessedCode)
+	    			 writer.close()
+	    		 } catch {
+//	    		 case e : UnknownHostException => retry = true 
+	    		 	case e : Throwable => 
+		    		 	val sw = new StringWriter();
+						val pw = new PrintWriter(sw);
+						e.printStackTrace(pw);
+						result ++= sw.toString();
+	    		 }    
+	    	 } while (retry)
+	     }
+	     result.toString
+	   } (executionContext)
+
+       for (task <- tasks) {
+         val result = Await.result(task, 10.minutes)
+         println(result)
+       }
+   } 
    
    "Scalaj-http" should "download the code of a wikipedia page" in {
 	   val xmlPage = Http("http://en.wikipedia.org/w/index.php?title=Comparison_of_AMD_processors&action=edit")

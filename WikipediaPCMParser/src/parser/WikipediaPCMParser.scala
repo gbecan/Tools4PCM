@@ -28,7 +28,7 @@ class WikipediaPCMParser {
    */
   def parseOnlineArticle(title : String) : PCM = {
     val code = retrieveCodeFromOnlineArticle(title)
-    parse(code)
+    preprocessAndParse(code)
   }
   
   /**
@@ -57,10 +57,17 @@ class WikipediaPCMParser {
   
   
   /**
-   * Parse PCM from MediaWiki code 
+   * Preprocess then parse PCM from MediaWiki code 
    */
-  def parse(code : String) : PCM = {
+  def preprocessAndParse(code : String) : PCM = {
     val preprocessedCode = preprocess(code)
+    parseAndNormalizePCM(preprocessedCode)
+  }
+  
+  /**
+   * Parse preprocessed MediaWiki code
+   */
+  def parse(preprocessedCode : String) : PCM = {
     parseAndNormalizePCM(preprocessedCode)
   }
   
@@ -85,6 +92,16 @@ class WikipediaPCMParser {
     visitor.pcm
   }
   
+  
+  /**
+   * Retrieve Wikimedia code from online article and expand templates
+   * @param title : online article title
+   * @return preprocessed code of the article (without templates)
+   */
+  def preprocessOnlineArticle(title : String) : String = {
+    val code = retrieveCodeFromOnlineArticle(title)
+    preprocess(code)
+  }
   
   
 }

@@ -156,7 +156,6 @@ class TableVisitor extends AstVisitor {
 	}
 	
 	def handleCell(e : AstNode, isHeader : Boolean) {
-//	  println(e)
 		rowspan = 1
 		colspan = 1
 
