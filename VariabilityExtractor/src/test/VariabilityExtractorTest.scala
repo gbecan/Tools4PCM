@@ -235,8 +235,8 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 		  variabilityExtractor.extractVariability(pcm)
 		
 		  // Compute warnings
-		  val warnings = computeWarnings(pcm)
-		  setWarningAsInconsistentCell(warnings)
+//		  val warnings = computeWarnings(pcm)
+//		  setWarningAsInconsistentCell(warnings)
 		  
 		  // Validate model
 		  val diagnostic = Diagnostician.INSTANCE.validate(pcm)
@@ -273,11 +273,11 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 		  }
 		  
       // Display warnings
-	  warnings.foreach(warning => 
-	    println("WARNING : \"" + warning._2 + 
-    		      "\" in cell (" + 
-    		      warning._1.getRow() + "," + warning._1.getColumn() + 
-    		      ") is inconsistent"))
+//	  warnings.foreach(warning => 
+//	    println("WARNING : \"" + warning._2 + 
+//    		      "\" in cell (" + 
+//    		      warning._1.getRow() + "," + warning._1.getColumn() + 
+//    		      ") is inconsistent"))
 	  }
 	
 	  println("Average per cell : " + ((sumInterpretedCells * 100) / sumValuedCells).toInt + "%" + " (" + sumInterpretedCells.toInt + "/" + sumValuedCells.toInt + ")")

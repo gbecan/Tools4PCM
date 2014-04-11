@@ -136,17 +136,44 @@ object CellContentInterpreter {
     	new UnknownPatternInterpreter(Nil,"(-)+",Nil, true),
     	new UnknownPatternInterpreter(Nil,"(—)+",Nil, true),
     	new PartialPatternInterpreter(Nil,"(partial)",Nil, true)
+		
     )
   val defaultGreedyInterpreters : List[PatternInterpreter] = List(
+      // numbers
       new SimplePatternInterpreter(Nil,"\\d+(\\.\\d+)*",Nil, true),
-      new MultiplePatternInterpreter(Nil, "(\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?)", List("and"), true)
+      // dimensions
+      new MultiplePatternInterpreter(Nil, "(\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?)", List("and"), true),
+      // date XX/XX/XXXX
+      new SimplePatternInterpreter(Nil, "\\d{2}/\\d{2}/\\d{4}", Nil, true),
+      // foo (bar)
+      new PartialPatternInterpreter(Nil,"([^,/]+?)\\s*\\((.+)\\)",Nil,false),
+      // yes, with some condition
+      new PartialPatternInterpreter(Nil,"(yes),?\\s*(.*)",Nil, false)
     ) ::: 
+    // values separated by comas
     (for (n <- 1 to 20) yield {
     	  new MultiplePatternInterpreter(Nil,
-    	      (for (i <- 1 to n+1) yield {"([^,]+)"}).mkString("\\s*,\\s*"),
+    	      (for (i <- 1 to n+1) yield {"([^,]+?)"}).mkString("\\s*,\\s+"),
+    	      List("and"), true)
+    }).toList ::: 
+    // values separated by semi colons
+    (for (n <- 1 to 20) yield {
+    	  new MultiplePatternInterpreter(Nil,
+    	      (for (i <- 1 to n+1) yield {"([^;]+?)"}).mkString("\\s*;\\s+"),
+    	      List("and"), true)
+    }).toList ::: 
+    // values separated by slashes 
+    (for (n <- 1 to 5) yield {
+    	  new MultiplePatternInterpreter(Nil,
+    	      (for (i <- 1 to n+1) yield {"([^/]+?)"}).mkString("\\s*/\\s*"),
     	      List("and"), true)
     }).toList ::: List(
-    		new SimplePatternInterpreter(Nil, ".*", Nil, false)
+        // foo OR bar
+        new MultiplePatternInterpreter(Nil,"(.+)\\sor\\s(.+)", List("or"), false),
+        // foo AND bar
+        new MultiplePatternInterpreter(Nil,"(.+)\\sand\\s(.+)", List("and"), false),
+        // everything
+        new SimplePatternInterpreter(Nil, ".*", Nil, false)
     ) 
     
     

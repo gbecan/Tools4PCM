@@ -20,7 +20,8 @@ abstract class PatternInterpreter(
     val confident : Boolean
     ) {
 	
-	private val pattern : Pattern =  Pattern.compile(regex, Pattern.UNICODE_CHARACTER_CLASS | Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE)
+	private val pattern : Pattern =  Pattern.compile(regex, Pattern.UNICODE_CHARACTER_CLASS | 
+	    Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE | Pattern.DOTALL)
 
 	private var validProducts : List[Product] = Nil
     private var validFeatures : List[Feature] = Nil
