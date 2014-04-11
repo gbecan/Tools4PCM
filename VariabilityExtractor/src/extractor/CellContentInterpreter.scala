@@ -48,7 +48,7 @@ class CellContentInterpreter() {
     for (matrix <- pcm.getMatrices) {
     
       // Configure pattern interpreters to this matrix
-      val matrixConfig = config.matrixConfigurations.getOrElse(matrix.getName(), config.defaultConfiguration)
+      val matrixConfig = config.getConfig(matrix)
       setInterpreters(matrixConfig.getPatterns)
       for (patternInterpreter <- patternInterpreters) {
 		patternInterpreter.config(pcm)

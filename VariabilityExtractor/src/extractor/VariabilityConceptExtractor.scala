@@ -28,7 +28,7 @@ class VariabilityConceptExtractor {
 	      cell <- matrix.getCells().filter(_ .isInstanceOf[Header])
 	  ) {
 
-		  val matrixConfig = config.matrixConfigurations.getOrElse(matrix.getName(), config.defaultConfiguration)
+		  val matrixConfig = config.getConfig(matrix)
 		  val concept : VariabilityConcept = 
 			  if (cell.getRow() < matrixConfig.headerRows) {
 			    if (!matrixConfig.inverted) {

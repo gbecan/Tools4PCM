@@ -32,23 +32,36 @@ class ConfigurationFileParser {
   }
   
   
-  def parseLine(line : String) = {
+  def parseLine(line : String) : Boolean = {
 		var ok : Boolean = false
 		ok = ok || parseContext(line)
 		ok = ok || parseSimpleParameter(line)
 		ok = ok || parseComplexParameter(line)
     	ok = ok || parseRule(line)
+    	ok
   }
   
   def parseContext(s : String) : Boolean = {
+    	val matrixID = "\".*?\"(?:\\[\\d+\\])?"
 		val pattern = Pattern
-				.compile("for\\s+(\".*\"(\\s*,\\s*\".*\")*)\\s*:\\s*");
+				.compile("for\\s+(" + matrixID + "(?:\\s*,\\s*" + matrixID + ")*)\\s*:\\s*");
 		val matcher = pattern.matcher(s);
 		if (matcher.matches()) {
 		  matrixConfig = new MatrixConfiguration
-		  for (value <- matcher.group(1).split(",")) {
-		    val matrix = value.substring(value.indexOf("\"")+1,value.lastIndexOf("\""))
-		    pcmConfig.matrixConfigurations += (matrix -> matrixConfig)
+		  for (value <- matcher.group(1).split("\\s*,\\s*")) {
+		    val firstQuote = value.indexOf("\"")
+		    val lastQuote = value.lastIndexOf("\"")
+		    val firstBracket = value.lastIndexOf("[")
+		    val lastBracket = value.lastIndexOf("]")
+		    
+		    val matrix = value.substring(firstQuote+1, lastQuote)
+		    val index = if (firstBracket != -1) {
+		    	Integer.parseInt(value.substring(firstBracket+1, lastBracket))
+		    } else {
+		    	-1
+		    }
+		    
+		    pcmConfig.matrixConfigurations += ((matrix, index) -> matrixConfig)
 		  }
 		  
 		  true
