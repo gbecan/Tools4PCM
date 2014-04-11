@@ -553,6 +553,15 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getMatrix_Id() {
+		return (EAttribute)matrixEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getProductFamily() {
 		return productFamilyEClass;
 	}
@@ -1071,6 +1080,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		matrixEClass = createEClass(MATRIX);
 		createEAttribute(matrixEClass, MATRIX__NAME);
 		createEReference(matrixEClass, MATRIX__CELLS);
+		createEAttribute(matrixEClass, MATRIX__ID);
 
 		productFamilyEClass = createEClass(PRODUCT_FAMILY);
 		createEReference(productFamilyEClass, PRODUCT_FAMILY__PRODUCTS);
@@ -1235,6 +1245,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		initEClass(matrixEClass, Matrix.class, "Matrix", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMatrix_Name(), ecorePackage.getEString(), "name", null, 0, 1, Matrix.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMatrix_Cells(), this.getCell(), null, "cells", null, 0, -1, Matrix.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMatrix_Id(), ecorePackage.getEString(), "id", null, 0, 1, Matrix.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productFamilyEClass, ProductFamily.class, "ProductFamily", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductFamily_Products(), this.getAbstractProduct(), null, "products", null, 0, -1, ProductFamily.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

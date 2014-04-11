@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link pcmmm.Matrix#getName <em>Name</em>}</li>
  *   <li>{@link pcmmm.Matrix#getCells <em>Cells</em>}</li>
+ *   <li>{@link pcmmm.Matrix#getId <em>Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -65,5 +66,31 @@ public interface Matrix extends EObject {
 	 * @generated
 	 */
 	EList<Cell> getCells();
+
+	/**
+	 * Returns the value of the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Id</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Id</em>' attribute.
+	 * @see #setId(String)
+	 * @see pcmmm.PcmmmPackage#getMatrix_Id()
+	 * @model
+	 * @generated
+	 */
+	String getId();
+
+	/**
+	 * Sets the value of the '{@link pcmmm.Matrix#getId <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Id</em>' attribute.
+	 * @see #getId()
+	 * @generated
+	 */
+	void setId(String value);
 
 } // Matrix

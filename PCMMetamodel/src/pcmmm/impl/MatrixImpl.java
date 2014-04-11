@@ -31,6 +31,7 @@ import pcmmm.PcmmmPackage;
  * <ul>
  *   <li>{@link pcmmm.impl.MatrixImpl#getName <em>Name</em>}</li>
  *   <li>{@link pcmmm.impl.MatrixImpl#getCells <em>Cells</em>}</li>
+ *   <li>{@link pcmmm.impl.MatrixImpl#getId <em>Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -66,6 +67,26 @@ public class MatrixImpl extends MinimalEObjectImpl.Container implements Matrix {
 	 * @ordered
 	 */
 	protected EList<Cell> cells;
+
+	/**
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getId()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ID_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getId()
+	 * @generated
+	 * @ordered
+	 */
+	protected String id = ID_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -124,6 +145,27 @@ public class MatrixImpl extends MinimalEObjectImpl.Container implements Matrix {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getId() {
+		return id;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setId(String newId) {
+		String oldId = id;
+		id = newId;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.MATRIX__ID, oldId, id));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -145,6 +187,8 @@ public class MatrixImpl extends MinimalEObjectImpl.Container implements Matrix {
 				return getName();
 			case PcmmmPackage.MATRIX__CELLS:
 				return getCells();
+			case PcmmmPackage.MATRIX__ID:
+				return getId();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -165,6 +209,9 @@ public class MatrixImpl extends MinimalEObjectImpl.Container implements Matrix {
 				getCells().clear();
 				getCells().addAll((Collection<? extends Cell>)newValue);
 				return;
+			case PcmmmPackage.MATRIX__ID:
+				setId((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -183,6 +230,9 @@ public class MatrixImpl extends MinimalEObjectImpl.Container implements Matrix {
 			case PcmmmPackage.MATRIX__CELLS:
 				getCells().clear();
 				return;
+			case PcmmmPackage.MATRIX__ID:
+				setId(ID_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -199,6 +249,8 @@ public class MatrixImpl extends MinimalEObjectImpl.Container implements Matrix {
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case PcmmmPackage.MATRIX__CELLS:
 				return cells != null && !cells.isEmpty();
+			case PcmmmPackage.MATRIX__ID:
+				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -215,6 +267,8 @@ public class MatrixImpl extends MinimalEObjectImpl.Container implements Matrix {
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (name: ");
 		result.append(name);
+		result.append(", id: ");
+		result.append(id);
 		result.append(')');
 		return result.toString();
 	}

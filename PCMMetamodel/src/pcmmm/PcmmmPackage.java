@@ -423,13 +423,22 @@ public interface PcmmmPackage extends EPackage {
 	int MATRIX__CELLS = 1;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MATRIX__ID = 2;
+
+	/**
 	 * The number of structural features of the '<em>Matrix</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MATRIX_FEATURE_COUNT = 2;
+	int MATRIX_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Matrix</em>' class.
@@ -2212,6 +2221,17 @@ public interface PcmmmPackage extends EPackage {
 	EReference getMatrix_Cells();
 
 	/**
+	 * Returns the meta object for the attribute '{@link pcmmm.Matrix#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see pcmmm.Matrix#getId()
+	 * @see #getMatrix()
+	 * @generated
+	 */
+	EAttribute getMatrix_Id();
+
+	/**
 	 * Returns the meta object for class '{@link pcmmm.ProductFamily <em>Product Family</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2971,6 +2991,14 @@ public interface PcmmmPackage extends EPackage {
 		 * @generated
 		 */
 		EReference MATRIX__CELLS = eINSTANCE.getMatrix_Cells();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MATRIX__ID = eINSTANCE.getMatrix_Id();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.ProductFamilyImpl <em>Product Family</em>}' class.
