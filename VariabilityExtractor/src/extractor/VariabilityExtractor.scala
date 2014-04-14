@@ -5,7 +5,7 @@ import scala.collection.JavaConversions._
 import interpreters.PatternInterpreter
 import interpreters.BooleanPatternInterpreter
 import interpreters.UnknownPatternInterpreter
-import interpreters.SimplePatternInterpreter
+import interpreters.VariabilityConceptRefPatternInterpreter
 import interpreters.MultiplePatternInterpreter
 import interpreters.PatternInterpreter
 import interpreters.PatternInterpreter

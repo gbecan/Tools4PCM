@@ -7,7 +7,7 @@ import scala.collection.mutable.ListBuffer
 import scala.collection.mutable.ListBuffer
 import scala.collection.mutable.ListBuffer
 import interpreters.BooleanPatternInterpreter
-import interpreters.SimplePatternInterpreter
+import interpreters.VariabilityConceptRefPatternInterpreter
 import interpreters.PartialPatternInterpreter
 import interpreters.MultiplePatternInterpreter
 import interpreters.UnknownPatternInterpreter
@@ -112,7 +112,7 @@ class ConfigurationFileParser {
 			
 			val patternInterpreter = ruleName match {
 		      case "Boolean" => Some(new BooleanPatternInterpreter(validHeaders, ruleExp, parameters, true))
-		      case "Simple" => Some(new SimplePatternInterpreter(validHeaders, ruleExp, parameters, true))
+		      case "Simple" => Some(new VariabilityConceptRefPatternInterpreter(validHeaders, ruleExp, parameters, true))
 		      case "Partial" => Some(new PartialPatternInterpreter(validHeaders, ruleExp, parameters, true))
 		      case "Multiple" => Some(new MultiplePatternInterpreter(validHeaders, ruleExp, parameters, true))
 		      case "Unknown" => Some(new UnknownPatternInterpreter(validHeaders, ruleExp, parameters, true))

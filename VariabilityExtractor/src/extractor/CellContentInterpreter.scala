@@ -19,12 +19,12 @@ import interpreters.PatternInterpreter
 import interpreters.BooleanPatternInterpreter
 import interpreters.UnknownPatternInterpreter
 import interpreters.EmptyPatternInterpreter
-import interpreters.SimplePatternInterpreter
+import interpreters.VariabilityConceptRefPatternInterpreter
 import pcmmm.ValuedCell
 import interpreters.MultiplePatternInterpreter
 import interpreters.PartialPatternInterpreter
 import configuration.PCMConfiguration
-import interpreters.SimplePatternInterpreter
+import interpreters.VariabilityConceptRefPatternInterpreter
 
 class CellContentInterpreter() {
 
@@ -140,11 +140,11 @@ object CellContentInterpreter {
     )
   val defaultGreedyInterpreters : List[PatternInterpreter] = List(
       // numbers
-      new SimplePatternInterpreter(Nil,"\\d+(\\.\\d+)*",Nil, true),
+      new VariabilityConceptRefPatternInterpreter(Nil,"\\d+(\\.\\d+)*",Nil, true),
       // dimensions
       new MultiplePatternInterpreter(Nil, "(\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?)", List("and"), true),
       // date XX/XX/XXXX
-      new SimplePatternInterpreter(Nil, "\\d{2}/\\d{2}/\\d{4}", Nil, true),
+      new VariabilityConceptRefPatternInterpreter(Nil, "\\d{2}/\\d{2}/\\d{4}", Nil, true),
       // foo (bar)
       new PartialPatternInterpreter(Nil,"([^,/]+?)\\s*\\((.+)\\)",Nil,false),
       // yes, with some condition
@@ -173,7 +173,7 @@ object CellContentInterpreter {
         // foo AND bar
         new MultiplePatternInterpreter(Nil,"(.+)\\sand\\s(.+)", List("and"), false),
         // everything
-        new SimplePatternInterpreter(Nil, ".*", Nil, false)
+        new VariabilityConceptRefPatternInterpreter(Nil, ".*", Nil, false)
     ) 
     
     

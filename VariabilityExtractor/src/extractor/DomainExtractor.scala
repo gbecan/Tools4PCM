@@ -15,7 +15,6 @@ import pcmmm.Unknown
 import pcmmm.Inconsistent
 import pcmmm.Empty
 import pcmmm.Domain
-import pcmmm.StringType
 import uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWaterman
 
 class DomainExtractor {
