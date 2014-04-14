@@ -19,6 +19,9 @@ import pcmmm.Multiple
 import pcmmm.And
 import pcmmm.XOr
 import pcmmm.Or
+import pcmmm.Integer
+import pcmmm.Double
+import pcmmm.VariabilityConceptRef
 
 class PCM2HTML {
 
@@ -82,11 +85,14 @@ class PCM2HTML {
   def interpretation2String(interpretation : Constraint) : String = {
 		  if (Option(interpretation).isDefined) {
 			interpretation match {
-		    case i : Boolean => "Boolean(" + i.getName() + ", " + i.isValue() + ")"
-		    case i : Unknown => "Unknown(" + i.getName() + ")"
-		    case i : Empty => "Empty(" + i.getName() + ")"
-		    case i : Inconsistent => "Inconsistent(" + i.getName() + ")"
-		    case i : Simple => "Simple(" + i.getName() + ")"
+		    case i : Boolean => "Boolean(" + i.getVerbatim() + ", " + i.isValue() + ")"
+		    case i : Integer => "Integer(" + i.getVerbatim() + ", " + i.getValue() + ")"
+		    case i : Double => "Double(" + i.getVerbatim() + ", " + i.getValue() + ")"
+		    case i : VariabilityConceptRef => "VarConceptRef(" + i.getVerbatim() + ", " + i.getConcept().getName() + ")"
+		    case i : Unknown => "Unknown(" + i.getVerbatim() + ")"
+		    case i : Empty => "Empty(" + i.getVerbatim() + ")"
+		    case i : Inconsistent => "Inconsistent(" + i.getVerbatim() + ")"
+		    case i : Simple => "Simple(" + i.getVerbatim() + ")"
 		    case i : Partial => "Partial(" + interpretation2String(i.getArgument()) + ", " +
 		    					 interpretation2String(i.getCondition()) + ")"
 		    case i : And => "And(" + multipleInterpretation2string(i) + ")"

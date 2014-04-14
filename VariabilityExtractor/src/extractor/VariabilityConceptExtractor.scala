@@ -13,6 +13,7 @@ import pcmmm.Simple
 import pcmmm.Multiple
 import pcmmm.Partial
 import configuration.PCMConfiguration
+import pcmmm.VariabilityConceptRef
 
 class VariabilityConceptExtractor {
 
@@ -67,8 +68,8 @@ class VariabilityConceptExtractor {
   
   private def extractVariabilityConcepts(pcm : PCM, interpretation : Constraint) : Set[VariabilityConcept] = {
 	  interpretation match {
-	    case c : Simple =>
-	      val concept = getConcept(pcm, c.getName())
+	    case c : VariabilityConceptRef =>
+	      val concept = getConcept(pcm, c.getVerbatim())
 	      c.setConcept(concept)
 	      Set(concept)
 	    case c : Multiple => 

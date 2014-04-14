@@ -16,12 +16,15 @@ import pcmmm.Inconsistent
 import pcmmm.Empty
 import pcmmm.Domain
 import uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWaterman
+import pcmmm.Integer
+import pcmmm.VariabilityConceptRef
+import pcmmm.Simple
 
 class DomainExtractor {
 
   val metric = new Levenshtein
-  val dissimilarityMetric : (String, String) => Double = (v1, v2) => 
-	     1 - metric.getSimilarity(v1.toLowerCase(), v2.toLowerCase())
+  val dissimilarityMetric : (Simple, Simple) => Double = (v1, v2) => 
+	     1 - metric.getSimilarity(v1.getVerbatim().toLowerCase(), v2.getVerbatim().toLowerCase())
   val cellClusterer = new HierarchicalClusterer(dissimilarityMetric, 0.5)
   
   def extractDomains(pcm : PCM) {
@@ -43,30 +46,18 @@ class DomainExtractor {
 	  val values = feature.getMyValuedCells().flatMap(cell => listValues(cell.getInterpretation())).toList
 	  
 	  // Separate values according to types
-	  val intDomain = (
-	      PcmmmFactory.eINSTANCE.createIntType(), 
-	      values.filter(_.getName.matches("\\d+"))
-	      )
-	  val doubleDomain = (
-	      PcmmmFactory.eINSTANCE.createDoubleType(),
-	      values.filter(_.getName.matches("\\d+(\\.\\d+)?"))
-	      )
-	  val booleanDomain = (
-	      PcmmmFactory.eINSTANCE.createBooleanType(),
-	      values.filter(_.isInstanceOf[pcmmm.Boolean])
-	      )
-	  val stringDomain = (PcmmmFactory.eINSTANCE.createStringType(),
-	      values//.filter(!_.isInstanceOf[pcmmm.Boolean])
-	      )
+	  val numberDomain = values.filter(v => v.isInstanceOf[Integer] || v.isInstanceOf[Double])
+	  val booleanDomain = values.filter(_.isInstanceOf[pcmmm.Boolean])
+	  val variabilityConceptDomain = values.filter(_.isInstanceOf[VariabilityConceptRef])
 	      
 	  // Get most represented type
-	  val mainType = List(intDomain,doubleDomain,booleanDomain,stringDomain).maxBy(_._2.size)
+	  val mainType = List(numberDomain, booleanDomain, variabilityConceptDomain).maxBy(_.size)
 	  
 	  
 	  // Cluster values if the type is String
-	  val domainValues = if (mainType._1.isInstanceOf[StringType]) {
+	  val domainValues = if (!mainType.isEmpty && mainType.head.isInstanceOf[VariabilityConceptRef]) {
 		  
-		  val clusters = cellClusterer.cluster(values.map(_.getName()))
+		  val clusters = cellClusterer.cluster(values)
 		  val significantClusters = selectSignificantClusters(clusters, values.size)
 		  
 		  if (significantClusters.isEmpty) {
@@ -75,13 +66,12 @@ class DomainExtractor {
 		    significantClusters.reduceLeft(_ union _)
 		  }
 	  } else {
-		  mainType._2.map(_.getName())
+		  mainType
 	  }
 	  
 	  // Create domain
 	  val domain = PcmmmFactory.eINSTANCE.createEnum()
 	  domain.getValues().addAll(domainValues)
-	  domain.setDomainType(mainType._1)
 	  
 	  // Add domain to the feature
 	  feature.setDomain(domain)
@@ -94,14 +84,14 @@ class DomainExtractor {
    * (Unknown, Empty and Inconsistent constraints are ignored)
    * (Partial and Multiple constraints are decomposed) 
    */
-  def listValues(interpretation : Constraint) : List[Constraint] = {
+  def listValues(interpretation : Constraint) : List[Simple] = {
      interpretation match {
        	case _ : Inconsistent => Nil
 	    case _ : Unknown => Nil
 	    case _ : Empty => Nil
 	    case c : Multiple => c.getContraints().flatMap(listValues(_)).toList
 	    case c : Partial => listValues(c.getArgument()) ::: listValues(c.getCondition())
-	  	case c if Option(c).isDefined => List(c)
+	  	case c : Simple if Option(c).isDefined => List(c)
 	  	case _ => Nil
 	  }
   }
@@ -109,8 +99,8 @@ class DomainExtractor {
   /**
    * Select clusters that are significant enough to be integrated in the domain of a feature
    */
-  def selectSignificantClusters(clusters : List[List[String]], nbOfValues : Int) : List[List[String]] = {
-		var significantClusters : List[List[String]] = Nil
+  def selectSignificantClusters(clusters : List[List[Simple]], nbOfValues : Int) : List[List[Simple]] = {
+		var significantClusters : List[List[Simple]] = Nil
 		
 //		println("--------------->\t" + clusters )
 //  		clusters.foreach(cluster => {println(cluster.distinct)
@@ -131,16 +121,12 @@ class DomainExtractor {
 			}
 		}
 		
-
-		
-		
 		significantClusters
   }
   
   
   def setDefaultDomain(feature : Feature) : Domain = {
 		  val domain = PcmmmFactory.eINSTANCE.createEnum()
-		  domain.setDomainType(PcmmmFactory.eINSTANCE.createBooleanType())
 		  feature.setDomain(domain)
 		  domain
   }

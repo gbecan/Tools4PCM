@@ -25,6 +25,9 @@ import interpreters.MultiplePatternInterpreter
 import interpreters.PartialPatternInterpreter
 import configuration.PCMConfiguration
 import interpreters.VariabilityConceptRefPatternInterpreter
+import interpreters.PatternInterpreter
+import interpreters.DoublePatternInterpreter
+import interpreters.IntegerPatternInterpreter
 
 class CellContentInterpreter() {
 
@@ -139,8 +142,10 @@ object CellContentInterpreter {
 		
     )
   val defaultGreedyInterpreters : List[PatternInterpreter] = List(
-      // numbers
-      new VariabilityConceptRefPatternInterpreter(Nil,"\\d+(\\.\\d+)*",Nil, true),
+      // int
+      new IntegerPatternInterpreter(Nil,"\\d+",Nil, true),
+      // double
+      new DoublePatternInterpreter(Nil,"\\d+(\\.\\d+)*",Nil, true),
       // dimensions
       new MultiplePatternInterpreter(Nil, "(\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?)", List("and"), true),
       // date XX/XX/XXXX
