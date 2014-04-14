@@ -16,7 +16,7 @@ import pcmmm.Simple;
  *
  * @generated
  */
-public class SimpleImpl extends ConstraintImpl implements Simple {
+public abstract class SimpleImpl extends ConstraintImpl implements Simple {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

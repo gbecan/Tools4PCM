@@ -74,7 +74,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="argument" lowerBound="1"
         eType="#//Constraint" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Simple" eSuperTypes="#//Constraint"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Simple" abstract="true" eSuperTypes="#//Constraint"/>
   <eClassifiers xsi:type="ecore:EClass" name="Multiple" eSuperTypes="#//Constraint">
     <eStructuralFeatures xsi:type="ecore:EReference" name="contraints" upperBound="-1"
         eType="#//Constraint" containment="true"/>

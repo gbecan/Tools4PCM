@@ -112,15 +112,6 @@ public interface PcmmmFactory extends EFactory {
 	Partial createPartial();
 
 	/**
-	 * Returns a new object of class '<em>Simple</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Simple</em>'.
-	 * @generated
-	 */
-	Simple createSimple();
-
-	/**
 	 * Returns a new object of class '<em>Multiple</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

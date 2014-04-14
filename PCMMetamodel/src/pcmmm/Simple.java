@@ -10,7 +10,7 @@ package pcmmm;
  *
  *
  * @see pcmmm.PcmmmPackage#getSimple()
- * @model
+ * @model abstract="true"
  * @generated
  */
 public interface Simple extends Constraint {

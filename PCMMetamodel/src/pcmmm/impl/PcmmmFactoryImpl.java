@@ -5,11 +5,8 @@ package pcmmm.impl;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
 import pcmmm.And;
 import pcmmm.DomainCollection;
 import pcmmm.Empty;
@@ -27,7 +24,6 @@ import pcmmm.PcmmmFactory;
 import pcmmm.PcmmmPackage;
 import pcmmm.Product;
 import pcmmm.ProductFamily;
-import pcmmm.Simple;
 import pcmmm.Unknown;
 import pcmmm.ValuedCell;
 import pcmmm.VariabilityConceptRef;
@@ -87,7 +83,6 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 			case PcmmmPackage.EXTRA: return createExtra();
 			case PcmmmPackage.BOOLEAN: return createBoolean();
 			case PcmmmPackage.PARTIAL: return createPartial();
-			case PcmmmPackage.SIMPLE: return createSimple();
 			case PcmmmPackage.MULTIPLE: return createMultiple();
 			case PcmmmPackage.UNKNOWN: return createUnknown();
 			case PcmmmPackage.EMPTY: return createEmpty();
@@ -204,16 +199,6 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 	public Partial createPartial() {
 		PartialImpl partial = new PartialImpl();
 		return partial;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Simple createSimple() {
-		SimpleImpl simple = new SimpleImpl();
-		return simple;
 	}
 
 	/**
