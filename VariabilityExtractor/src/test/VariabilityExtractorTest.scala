@@ -224,7 +224,7 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	
 	  for (file <- files) {
 		  // Load model
-		  println(file.getName())
+		  println(file.getName())	
 		  val pcm = loadPCMModel(file)
 		
 		  // Load configuration

@@ -48,7 +48,7 @@ class ConfigurationFileParser {
 		val matcher = pattern.matcher(s);
 		if (matcher.matches()) {
 		  matrixConfig = new MatrixConfiguration
-		  for (value <- matcher.group(1).split("\\s*,\\s*")) {
+		  for (value <- matcher.group(1).split("(?<![^\"\\]])\\s*,\\s*")) {
 		    val firstQuote = value.indexOf("\"")
 		    val lastQuote = value.lastIndexOf("\"")
 		    val firstBracket = value.lastIndexOf("[")
