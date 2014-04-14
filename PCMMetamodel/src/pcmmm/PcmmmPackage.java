@@ -934,13 +934,22 @@ public interface PcmmmPackage extends EPackage {
 	int CONSTRAINT__CONFIDENT = 1;
 
 	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT__VERBATIM = 2;
+
+	/**
 	 * The number of structural features of the '<em>Constraint</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONSTRAINT_FEATURE_COUNT = 2;
+	int CONSTRAINT_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Constraint</em>' class.
@@ -978,6 +987,15 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int SIMPLE__CONFIDENT = CONSTRAINT__CONFIDENT;
+
+	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIMPLE__VERBATIM = CONSTRAINT__VERBATIM;
 
 	/**
 	 * The number of structural features of the '<em>Simple</em>' class.
@@ -1024,6 +1042,15 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int BOOLEAN__CONFIDENT = SIMPLE__CONFIDENT;
+
+	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOLEAN__VERBATIM = SIMPLE__VERBATIM;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -1079,6 +1106,15 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int PARTIAL__CONFIDENT = CONSTRAINT__CONFIDENT;
+
+	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTIAL__VERBATIM = CONSTRAINT__VERBATIM;
 
 	/**
 	 * The feature id for the '<em><b>Condition</b></em>' containment reference.
@@ -1145,6 +1181,15 @@ public interface PcmmmPackage extends EPackage {
 	int MULTIPLE__CONFIDENT = CONSTRAINT__CONFIDENT;
 
 	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTIPLE__VERBATIM = CONSTRAINT__VERBATIM;
+
+	/**
 	 * The feature id for the '<em><b>Contraints</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1200,6 +1245,15 @@ public interface PcmmmPackage extends EPackage {
 	int UNKNOWN__CONFIDENT = CONSTRAINT__CONFIDENT;
 
 	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNKNOWN__VERBATIM = CONSTRAINT__VERBATIM;
+
+	/**
 	 * The number of structural features of the '<em>Unknown</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1246,6 +1300,15 @@ public interface PcmmmPackage extends EPackage {
 	int EMPTY__CONFIDENT = CONSTRAINT__CONFIDENT;
 
 	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMPTY__VERBATIM = CONSTRAINT__VERBATIM;
+
+	/**
 	 * The number of structural features of the '<em>Empty</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1290,6 +1353,15 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int INCONSISTENT__CONFIDENT = CONSTRAINT__CONFIDENT;
+
+	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INCONSISTENT__VERBATIM = CONSTRAINT__VERBATIM;
 
 	/**
 	 * The number of structural features of the '<em>Inconsistent</em>' class.
@@ -1474,6 +1546,15 @@ public interface PcmmmPackage extends EPackage {
 	int AND__CONFIDENT = MULTIPLE__CONFIDENT;
 
 	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AND__VERBATIM = MULTIPLE__VERBATIM;
+
+	/**
 	 * The feature id for the '<em><b>Contraints</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1529,6 +1610,15 @@ public interface PcmmmPackage extends EPackage {
 	int OR__CONFIDENT = MULTIPLE__CONFIDENT;
 
 	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OR__VERBATIM = MULTIPLE__VERBATIM;
+
+	/**
 	 * The feature id for the '<em><b>Contraints</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1582,6 +1672,15 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int XOR__CONFIDENT = MULTIPLE__CONFIDENT;
+
+	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XOR__VERBATIM = MULTIPLE__VERBATIM;
 
 	/**
 	 * The feature id for the '<em><b>Contraints</b></em>' containment reference list.
@@ -1759,6 +1858,15 @@ public interface PcmmmPackage extends EPackage {
 	int VARIABILITY_CONCEPT_REF__CONFIDENT = SIMPLE__CONFIDENT;
 
 	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VARIABILITY_CONCEPT_REF__VERBATIM = SIMPLE__VERBATIM;
+
+	/**
 	 * The feature id for the '<em><b>Concept</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1814,6 +1922,15 @@ public interface PcmmmPackage extends EPackage {
 	int INTEGER__CONFIDENT = SIMPLE__CONFIDENT;
 
 	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTEGER__VERBATIM = SIMPLE__VERBATIM;
+
+	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1867,6 +1984,15 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int DOUBLE__CONFIDENT = SIMPLE__CONFIDENT;
+
+	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOUBLE__VERBATIM = SIMPLE__VERBATIM;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -2322,6 +2448,17 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getConstraint_Confident();
+
+	/**
+	 * Returns the meta object for the attribute '{@link pcmmm.Constraint#getVerbatim <em>Verbatim</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Verbatim</em>'.
+	 * @see pcmmm.Constraint#getVerbatim()
+	 * @see #getConstraint()
+	 * @generated
+	 */
+	EAttribute getConstraint_Verbatim();
 
 	/**
 	 * Returns the meta object for class '{@link pcmmm.Boolean <em>Boolean</em>}'.
@@ -3015,6 +3152,14 @@ public interface PcmmmPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CONSTRAINT__CONFIDENT = eINSTANCE.getConstraint_Confident();
+
+		/**
+		 * The meta object literal for the '<em><b>Verbatim</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONSTRAINT__VERBATIM = eINSTANCE.getConstraint_Verbatim();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.BooleanImpl <em>Boolean</em>}' class.
