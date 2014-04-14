@@ -2,6 +2,8 @@
  */
 package pcmmm.impl;
 
+import java.lang.Integer;
+
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;

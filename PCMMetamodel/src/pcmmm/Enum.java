@@ -22,19 +22,19 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface Enum extends Domain {
 	/**
-	 * Returns the value of the '<em><b>Values</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.String}.
+	 * Returns the value of the '<em><b>Values</b></em>' reference list.
+	 * The list contents are of type {@link pcmmm.Simple}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Values</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Values</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Values</em>' attribute list.
+	 * @return the value of the '<em>Values</em>' reference list.
 	 * @see pcmmm.PcmmmPackage#getEnum_Values()
 	 * @model
 	 * @generated
 	 */
-	EList<String> getValues();
+	EList<Simple> getValues();
 
 } // Enum

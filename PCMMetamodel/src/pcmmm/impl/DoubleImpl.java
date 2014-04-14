@@ -2,47 +2,56 @@
  */
 package pcmmm.impl;
 
+import java.lang.Double;
+
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import pcmmm.PcmmmPackage;
-import pcmmm.StringType;
-import pcmmm.Type;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>String Type</b></em>'.
+ * An implementation of the model object '<em><b>Double</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link pcmmm.impl.StringTypeImpl#getEReference0 <em>EReference0</em>}</li>
+ *   <li>{@link pcmmm.impl.DoubleImpl#getValue <em>Value</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class StringTypeImpl extends TypeImpl implements StringType {
+public class DoubleImpl extends SimpleImpl implements pcmmm.Double {
 	/**
-	 * The cached value of the '{@link #getEReference0() <em>EReference0</em>}' reference.
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEReference0()
+	 * @see #getValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected Type eReference0;
+	protected static final double VALUE_EDEFAULT = 0.0;
+
+	/**
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected double value = VALUE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected StringTypeImpl() {
+	protected DoubleImpl() {
 		super();
 	}
 
@@ -53,7 +62,7 @@ public class StringTypeImpl extends TypeImpl implements StringType {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return PcmmmPackage.Literals.STRING_TYPE;
+		return PcmmmPackage.Literals.DOUBLE;
 	}
 
 	/**
@@ -61,16 +70,8 @@ public class StringTypeImpl extends TypeImpl implements StringType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Type getEReference0() {
-		if (eReference0 != null && eReference0.eIsProxy()) {
-			InternalEObject oldEReference0 = (InternalEObject)eReference0;
-			eReference0 = (Type)eResolveProxy(oldEReference0);
-			if (eReference0 != oldEReference0) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, PcmmmPackage.STRING_TYPE__EREFERENCE0, oldEReference0, eReference0));
-			}
-		}
-		return eReference0;
+	public double getValue() {
+		return value;
 	}
 
 	/**
@@ -78,20 +79,11 @@ public class StringTypeImpl extends TypeImpl implements StringType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Type basicGetEReference0() {
-		return eReference0;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setEReference0(Type newEReference0) {
-		Type oldEReference0 = eReference0;
-		eReference0 = newEReference0;
+	public void setValue(double newValue) {
+		double oldValue = value;
+		value = newValue;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.STRING_TYPE__EREFERENCE0, oldEReference0, eReference0));
+			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.DOUBLE__VALUE, oldValue, value));
 	}
 
 	/**
@@ -102,9 +94,8 @@ public class StringTypeImpl extends TypeImpl implements StringType {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case PcmmmPackage.STRING_TYPE__EREFERENCE0:
-				if (resolve) return getEReference0();
-				return basicGetEReference0();
+			case PcmmmPackage.DOUBLE__VALUE:
+				return getValue();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -117,8 +108,8 @@ public class StringTypeImpl extends TypeImpl implements StringType {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case PcmmmPackage.STRING_TYPE__EREFERENCE0:
-				setEReference0((Type)newValue);
+			case PcmmmPackage.DOUBLE__VALUE:
+				setValue((Double)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -132,8 +123,8 @@ public class StringTypeImpl extends TypeImpl implements StringType {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case PcmmmPackage.STRING_TYPE__EREFERENCE0:
-				setEReference0((Type)null);
+			case PcmmmPackage.DOUBLE__VALUE:
+				setValue(VALUE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -147,10 +138,26 @@ public class StringTypeImpl extends TypeImpl implements StringType {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case PcmmmPackage.STRING_TYPE__EREFERENCE0:
-				return eReference0 != null;
+			case PcmmmPackage.DOUBLE__VALUE:
+				return value != VALUE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //StringTypeImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (value: ");
+		result.append(value);
+		result.append(')');
+		return result.toString();
+	}
+
+} //DoubleImpl

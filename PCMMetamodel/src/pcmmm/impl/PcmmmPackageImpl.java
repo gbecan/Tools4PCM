@@ -12,20 +12,16 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
-import pcmmm.BooleanType;
 import pcmmm.Cell;
 import pcmmm.Constraint;
 import pcmmm.Domain;
 import pcmmm.DomainCollection;
-import pcmmm.DoubleType;
 import pcmmm.Empty;
 import pcmmm.Extra;
 import pcmmm.Feature;
 import pcmmm.FeatureFamily;
 import pcmmm.Header;
 import pcmmm.Inconsistent;
-import pcmmm.IntType;
-import pcmmm.Interval;
 import pcmmm.Matrix;
 import pcmmm.Multiple;
 import pcmmm.Or;
@@ -35,11 +31,10 @@ import pcmmm.PcmmmPackage;
 import pcmmm.Product;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
-import pcmmm.StringType;
-import pcmmm.Type;
 import pcmmm.Unknown;
 import pcmmm.ValuedCell;
 import pcmmm.VariabilityConcept;
+import pcmmm.VariabilityConceptRef;
 import pcmmm.XOr;
 
 /**
@@ -229,21 +224,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass intervalEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass domainCollectionEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass typeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -257,28 +238,21 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass intTypeEClass = null;
+	private EClass variabilityConceptRefEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass doubleTypeEClass = null;
+	private EClass integerEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass stringTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass booleanTypeEClass = null;
+	private EClass doubleEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -760,15 +734,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getSimple_Concept() {
-		return (EReference)simpleEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getMultiple() {
 		return multipleEClass;
 	}
@@ -904,42 +869,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDomain_DomainType() {
-		return (EReference)domainEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getInterval() {
-		return intervalEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getInterval_Min() {
-		return (EAttribute)intervalEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getInterval_Max() {
-		return (EAttribute)intervalEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getDomainCollection() {
 		return domainCollectionEClass;
 	}
@@ -958,15 +887,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getType() {
-		return typeEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getEnum() {
 		return enumEClass;
 	}
@@ -976,8 +896,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnum_Values() {
-		return (EAttribute)enumEClass.getEStructuralFeatures().get(0);
+	public EReference getEnum_Values() {
+		return (EReference)enumEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -985,8 +905,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getIntType() {
-		return intTypeEClass;
+	public EClass getVariabilityConceptRef() {
+		return variabilityConceptRefEClass;
 	}
 
 	/**
@@ -994,8 +914,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getDoubleType() {
-		return doubleTypeEClass;
+	public EReference getVariabilityConceptRef_Concept() {
+		return (EReference)variabilityConceptRefEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1003,8 +923,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getStringType() {
-		return stringTypeEClass;
+	public EClass getInteger() {
+		return integerEClass;
 	}
 
 	/**
@@ -1012,8 +932,8 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getStringType_EReference0() {
-		return (EReference)stringTypeEClass.getEStructuralFeatures().get(0);
+	public EAttribute getInteger_Value() {
+		return (EAttribute)integerEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1021,8 +941,17 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getBooleanType() {
-		return booleanTypeEClass;
+	public EClass getDouble() {
+		return doubleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDouble_Value() {
+		return (EAttribute)doubleEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1114,7 +1043,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		createEReference(partialEClass, PARTIAL__ARGUMENT);
 
 		simpleEClass = createEClass(SIMPLE);
-		createEReference(simpleEClass, SIMPLE__CONCEPT);
 
 		multipleEClass = createEClass(MULTIPLE);
 		createEReference(multipleEClass, MULTIPLE__CONTRAINTS);
@@ -1139,28 +1067,21 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 
 		domainEClass = createEClass(DOMAIN);
 		createEAttribute(domainEClass, DOMAIN__NAME);
-		createEReference(domainEClass, DOMAIN__DOMAIN_TYPE);
-
-		intervalEClass = createEClass(INTERVAL);
-		createEAttribute(intervalEClass, INTERVAL__MIN);
-		createEAttribute(intervalEClass, INTERVAL__MAX);
 
 		domainCollectionEClass = createEClass(DOMAIN_COLLECTION);
 		createEReference(domainCollectionEClass, DOMAIN_COLLECTION__DOMAINS);
 
-		typeEClass = createEClass(TYPE);
-
 		enumEClass = createEClass(ENUM);
-		createEAttribute(enumEClass, ENUM__VALUES);
+		createEReference(enumEClass, ENUM__VALUES);
 
-		intTypeEClass = createEClass(INT_TYPE);
+		variabilityConceptRefEClass = createEClass(VARIABILITY_CONCEPT_REF);
+		createEReference(variabilityConceptRefEClass, VARIABILITY_CONCEPT_REF__CONCEPT);
 
-		doubleTypeEClass = createEClass(DOUBLE_TYPE);
+		integerEClass = createEClass(INTEGER);
+		createEAttribute(integerEClass, INTEGER__VALUE);
 
-		stringTypeEClass = createEClass(STRING_TYPE);
-		createEReference(stringTypeEClass, STRING_TYPE__EREFERENCE0);
-
-		booleanTypeEClass = createEClass(BOOLEAN_TYPE);
+		doubleEClass = createEClass(DOUBLE);
+		createEAttribute(doubleEClass, DOUBLE__VALUE);
 	}
 
 	/**
@@ -1199,7 +1120,7 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		featureEClass.getESuperTypes().add(this.getAbstractFeature());
 		headerEClass.getESuperTypes().add(this.getCell());
 		extraEClass.getESuperTypes().add(this.getCell());
-		booleanEClass.getESuperTypes().add(this.getConstraint());
+		booleanEClass.getESuperTypes().add(this.getSimple());
 		partialEClass.getESuperTypes().add(this.getConstraint());
 		simpleEClass.getESuperTypes().add(this.getConstraint());
 		multipleEClass.getESuperTypes().add(this.getConstraint());
@@ -1210,12 +1131,10 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		andEClass.getESuperTypes().add(this.getMultiple());
 		orEClass.getESuperTypes().add(this.getMultiple());
 		xOrEClass.getESuperTypes().add(this.getMultiple());
-		intervalEClass.getESuperTypes().add(this.getDomain());
 		enumEClass.getESuperTypes().add(this.getDomain());
-		intTypeEClass.getESuperTypes().add(this.getType());
-		doubleTypeEClass.getESuperTypes().add(this.getType());
-		stringTypeEClass.getESuperTypes().add(this.getType());
-		booleanTypeEClass.getESuperTypes().add(this.getType());
+		variabilityConceptRefEClass.getESuperTypes().add(this.getSimple());
+		integerEClass.getESuperTypes().add(this.getSimple());
+		doubleEClass.getESuperTypes().add(this.getSimple());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(abstractProductEClass, AbstractProduct.class, "AbstractProduct", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1279,7 +1198,6 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 		initEReference(getPartial_Argument(), this.getConstraint(), null, "argument", null, 1, 1, Partial.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(simpleEClass, Simple.class, "Simple", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getSimple_Concept(), this.getVariabilityConcept(), null, "concept", null, 1, 1, Simple.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(multipleEClass, Multiple.class, "Multiple", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMultiple_Contraints(), this.getConstraint(), null, "contraints", null, 0, -1, Multiple.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1304,28 +1222,21 @@ public class PcmmmPackageImpl extends EPackageImpl implements PcmmmPackage {
 
 		initEClass(domainEClass, Domain.class, "Domain", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDomain_Name(), ecorePackage.getEString(), "name", null, 0, 1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDomain_DomainType(), this.getType(), null, "domainType", null, 1, 1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(intervalEClass, Interval.class, "Interval", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getInterval_Min(), ecorePackage.getEString(), "min", null, 0, 1, Interval.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getInterval_Max(), ecorePackage.getEString(), "max", null, 0, 1, Interval.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(domainCollectionEClass, DomainCollection.class, "DomainCollection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDomainCollection_Domains(), this.getDomain(), null, "domains", null, 0, -1, DomainCollection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(typeEClass, Type.class, "Type", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
 		initEClass(enumEClass, pcmmm.Enum.class, "Enum", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getEnum_Values(), ecorePackage.getEString(), "values", null, 0, -1, pcmmm.Enum.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEnum_Values(), this.getSimple(), null, "values", null, 0, -1, pcmmm.Enum.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(intTypeEClass, IntType.class, "IntType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(variabilityConceptRefEClass, VariabilityConceptRef.class, "VariabilityConceptRef", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getVariabilityConceptRef_Concept(), this.getVariabilityConcept(), null, "concept", null, 0, 1, VariabilityConceptRef.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(doubleTypeEClass, DoubleType.class, "DoubleType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(integerEClass, pcmmm.Integer.class, "Integer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getInteger_Value(), ecorePackage.getEInt(), "value", null, 0, 1, pcmmm.Integer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(stringTypeEClass, StringType.class, "StringType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getStringType_EReference0(), this.getType(), null, "EReference0", null, 0, 1, StringType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(booleanTypeEClass, BooleanType.class, "BooleanType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(doubleEClass, pcmmm.Double.class, "Double", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDouble_Value(), ecorePackage.getEDouble(), "value", null, 0, 1, pcmmm.Double.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

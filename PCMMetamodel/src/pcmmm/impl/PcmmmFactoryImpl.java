@@ -11,17 +11,13 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
 import pcmmm.And;
-import pcmmm.BooleanType;
 import pcmmm.DomainCollection;
-import pcmmm.DoubleType;
 import pcmmm.Empty;
 import pcmmm.Extra;
 import pcmmm.Feature;
 import pcmmm.FeatureFamily;
 import pcmmm.Header;
 import pcmmm.Inconsistent;
-import pcmmm.IntType;
-import pcmmm.Interval;
 import pcmmm.Matrix;
 import pcmmm.Multiple;
 import pcmmm.Or;
@@ -32,9 +28,9 @@ import pcmmm.PcmmmPackage;
 import pcmmm.Product;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
-import pcmmm.StringType;
 import pcmmm.Unknown;
 import pcmmm.ValuedCell;
+import pcmmm.VariabilityConceptRef;
 import pcmmm.XOr;
 
 /**
@@ -100,13 +96,11 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 			case PcmmmPackage.AND: return createAnd();
 			case PcmmmPackage.OR: return createOr();
 			case PcmmmPackage.XOR: return createXOr();
-			case PcmmmPackage.INTERVAL: return createInterval();
 			case PcmmmPackage.DOMAIN_COLLECTION: return createDomainCollection();
 			case PcmmmPackage.ENUM: return createEnum();
-			case PcmmmPackage.INT_TYPE: return createIntType();
-			case PcmmmPackage.DOUBLE_TYPE: return createDoubleType();
-			case PcmmmPackage.STRING_TYPE: return createStringType();
-			case PcmmmPackage.BOOLEAN_TYPE: return createBooleanType();
+			case PcmmmPackage.VARIABILITY_CONCEPT_REF: return createVariabilityConceptRef();
+			case PcmmmPackage.INTEGER: return createInteger();
+			case PcmmmPackage.DOUBLE: return createDouble();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -307,16 +301,6 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Interval createInterval() {
-		IntervalImpl interval = new IntervalImpl();
-		return interval;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public DomainCollection createDomainCollection() {
 		DomainCollectionImpl domainCollection = new DomainCollectionImpl();
 		return domainCollection;
@@ -337,9 +321,9 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntType createIntType() {
-		IntTypeImpl intType = new IntTypeImpl();
-		return intType;
+	public VariabilityConceptRef createVariabilityConceptRef() {
+		VariabilityConceptRefImpl variabilityConceptRef = new VariabilityConceptRefImpl();
+		return variabilityConceptRef;
 	}
 
 	/**
@@ -347,9 +331,9 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DoubleType createDoubleType() {
-		DoubleTypeImpl doubleType = new DoubleTypeImpl();
-		return doubleType;
+	public pcmmm.Integer createInteger() {
+		IntegerImpl integer = new IntegerImpl();
+		return integer;
 	}
 
 	/**
@@ -357,19 +341,9 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public StringType createStringType() {
-		StringTypeImpl stringType = new StringTypeImpl();
-		return stringType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public BooleanType createBooleanType() {
-		BooleanTypeImpl booleanType = new BooleanTypeImpl();
-		return booleanType;
+	public pcmmm.Double createDouble() {
+		DoubleImpl double_ = new DoubleImpl();
+		return double_;
 	}
 
 	/**

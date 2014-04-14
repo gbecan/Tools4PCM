@@ -2,56 +2,56 @@
  */
 package pcmmm.impl;
 
+import java.lang.Integer;
+
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import pcmmm.Domain;
 import pcmmm.PcmmmPackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Domain</b></em>'.
+ * An implementation of the model object '<em><b>Integer</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link pcmmm.impl.DomainImpl#getName <em>Name</em>}</li>
+ *   <li>{@link pcmmm.impl.IntegerImpl#getValue <em>Value</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public abstract class DomainImpl extends MinimalEObjectImpl.Container implements Domain {
+public class IntegerImpl extends SimpleImpl implements pcmmm.Integer {
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
+	 * @see #getValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = null;
+	protected static final int VALUE_EDEFAULT = 0;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getName()
+	 * @see #getValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected String name = NAME_EDEFAULT;
+	protected int value = VALUE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected DomainImpl() {
+	protected IntegerImpl() {
 		super();
 	}
 
@@ -62,7 +62,7 @@ public abstract class DomainImpl extends MinimalEObjectImpl.Container implements
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return PcmmmPackage.Literals.DOMAIN;
+		return PcmmmPackage.Literals.INTEGER;
 	}
 
 	/**
@@ -70,8 +70,8 @@ public abstract class DomainImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
+	public int getValue() {
+		return value;
 	}
 
 	/**
@@ -79,11 +79,11 @@ public abstract class DomainImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
+	public void setValue(int newValue) {
+		int oldValue = value;
+		value = newValue;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.DOMAIN__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, PcmmmPackage.INTEGER__VALUE, oldValue, value));
 	}
 
 	/**
@@ -94,8 +94,8 @@ public abstract class DomainImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case PcmmmPackage.DOMAIN__NAME:
-				return getName();
+			case PcmmmPackage.INTEGER__VALUE:
+				return getValue();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -108,8 +108,8 @@ public abstract class DomainImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case PcmmmPackage.DOMAIN__NAME:
-				setName((String)newValue);
+			case PcmmmPackage.INTEGER__VALUE:
+				setValue((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -123,8 +123,8 @@ public abstract class DomainImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case PcmmmPackage.DOMAIN__NAME:
-				setName(NAME_EDEFAULT);
+			case PcmmmPackage.INTEGER__VALUE:
+				setValue(VALUE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -138,8 +138,8 @@ public abstract class DomainImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case PcmmmPackage.DOMAIN__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case PcmmmPackage.INTEGER__VALUE:
+				return value != VALUE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -154,10 +154,10 @@ public abstract class DomainImpl extends MinimalEObjectImpl.Container implements
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
+		result.append(" (value: ");
+		result.append(value);
 		result.append(')');
 		return result.toString();
 	}
 
-} //DomainImpl
+} //IntegerImpl

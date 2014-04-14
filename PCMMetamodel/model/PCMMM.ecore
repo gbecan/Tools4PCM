@@ -64,7 +64,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="confident" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Boolean" eSuperTypes="#//Constraint">
+  <eClassifiers xsi:type="ecore:EClass" name="Boolean" eSuperTypes="#//Simple">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Partial" eSuperTypes="#//Constraint">
@@ -73,10 +73,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="argument" lowerBound="1"
         eType="#//Constraint" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Simple" eSuperTypes="#//Constraint">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="concept" lowerBound="1"
-        eType="#//VariabilityConcept"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Simple" eSuperTypes="#//Constraint"/>
   <eClassifiers xsi:type="ecore:EClass" name="Multiple" eSuperTypes="#//Constraint">
     <eStructuralFeatures xsi:type="ecore:EReference" name="contraints" upperBound="-1"
         eType="#//Constraint" containment="true"/>
@@ -99,26 +96,22 @@
   <eClassifiers xsi:type="ecore:EClass" name="XOr" eSuperTypes="#//Multiple"/>
   <eClassifiers xsi:type="ecore:EClass" name="Domain" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="domainType" lowerBound="1"
-        eType="#//Type" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Interval" eSuperTypes="#//Domain">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="min" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="max" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DomainCollection">
     <eStructuralFeatures xsi:type="ecore:EReference" name="domains" upperBound="-1"
         eType="#//Domain" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Type" abstract="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Enum" eSuperTypes="#//Domain">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="values" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="values" upperBound="-1"
+        eType="#//Simple"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="IntType" eSuperTypes="#//Type"/>
-  <eClassifiers xsi:type="ecore:EClass" name="DoubleType" eSuperTypes="#//Type"/>
-  <eClassifiers xsi:type="ecore:EClass" name="StringType" eSuperTypes="#//Type">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference0" eType="#//Type"/>
+  <eClassifiers xsi:type="ecore:EClass" name="VariabilityConceptRef" eSuperTypes="#//Simple">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="concept" eType="#//VariabilityConcept"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BooleanType" eSuperTypes="#//Type"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Integer" eSuperTypes="#//Simple">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Double" eSuperTypes="#//Simple">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+  </eClassifiers>
 </ecore:EPackage>

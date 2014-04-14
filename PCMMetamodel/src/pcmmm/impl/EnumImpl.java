@@ -8,9 +8,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 import pcmmm.PcmmmPackage;
+import pcmmm.Simple;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,14 +28,14 @@ import pcmmm.PcmmmPackage;
  */
 public class EnumImpl extends DomainImpl implements pcmmm.Enum {
 	/**
-	 * The cached value of the '{@link #getValues() <em>Values</em>}' attribute list.
+	 * The cached value of the '{@link #getValues() <em>Values</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getValues()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<String> values;
+	protected EList<Simple> values;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -60,9 +61,9 @@ public class EnumImpl extends DomainImpl implements pcmmm.Enum {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<String> getValues() {
+	public EList<Simple> getValues() {
 		if (values == null) {
-			values = new EDataTypeUniqueEList<String>(String.class, this, PcmmmPackage.ENUM__VALUES);
+			values = new EObjectResolvingEList<Simple>(Simple.class, this, PcmmmPackage.ENUM__VALUES);
 		}
 		return values;
 	}
@@ -92,7 +93,7 @@ public class EnumImpl extends DomainImpl implements pcmmm.Enum {
 		switch (featureID) {
 			case PcmmmPackage.ENUM__VALUES:
 				getValues().clear();
-				getValues().addAll((Collection<? extends String>)newValue);
+				getValues().addAll((Collection<? extends Simple>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -125,22 +126,6 @@ public class EnumImpl extends DomainImpl implements pcmmm.Enum {
 				return values != null && !values.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (values: ");
-		result.append(values);
-		result.append(')');
-		return result.toString();
 	}
 
 } //EnumImpl

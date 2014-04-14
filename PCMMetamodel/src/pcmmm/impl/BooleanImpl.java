@@ -25,7 +25,7 @@ import pcmmm.PcmmmPackage;
  *
  * @generated
  */
-public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
+public class BooleanImpl extends SimpleImpl implements pcmmm.Boolean {
 	/**
 	 * The default value of the '{@link #isValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->

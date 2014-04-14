@@ -10,20 +10,16 @@ import org.eclipse.emf.ecore.util.Switch;
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
-import pcmmm.BooleanType;
 import pcmmm.Cell;
 import pcmmm.Constraint;
 import pcmmm.Domain;
 import pcmmm.DomainCollection;
-import pcmmm.DoubleType;
 import pcmmm.Empty;
 import pcmmm.Extra;
 import pcmmm.Feature;
 import pcmmm.FeatureFamily;
 import pcmmm.Header;
 import pcmmm.Inconsistent;
-import pcmmm.IntType;
-import pcmmm.Interval;
 import pcmmm.Matrix;
 import pcmmm.Multiple;
 import pcmmm.Or;
@@ -33,11 +29,10 @@ import pcmmm.PcmmmPackage;
 import pcmmm.Product;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
-import pcmmm.StringType;
-import pcmmm.Type;
 import pcmmm.Unknown;
 import pcmmm.ValuedCell;
 import pcmmm.VariabilityConcept;
+import pcmmm.VariabilityConceptRef;
 import pcmmm.XOr;
 
 /**
@@ -190,6 +185,7 @@ public class PcmmmSwitch<T> extends Switch<T> {
 			case PcmmmPackage.BOOLEAN: {
 				pcmmm.Boolean boolean_ = (pcmmm.Boolean)theEObject;
 				T result = caseBoolean(boolean_);
+				if (result == null) result = caseSimple(boolean_);
 				if (result == null) result = caseConstraint(boolean_);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -273,22 +269,9 @@ public class PcmmmSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case PcmmmPackage.INTERVAL: {
-				Interval interval = (Interval)theEObject;
-				T result = caseInterval(interval);
-				if (result == null) result = caseDomain(interval);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case PcmmmPackage.DOMAIN_COLLECTION: {
 				DomainCollection domainCollection = (DomainCollection)theEObject;
 				T result = caseDomainCollection(domainCollection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case PcmmmPackage.TYPE: {
-				Type type = (Type)theEObject;
-				T result = caseType(type);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -299,31 +282,27 @@ public class PcmmmSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case PcmmmPackage.INT_TYPE: {
-				IntType intType = (IntType)theEObject;
-				T result = caseIntType(intType);
-				if (result == null) result = caseType(intType);
+			case PcmmmPackage.VARIABILITY_CONCEPT_REF: {
+				VariabilityConceptRef variabilityConceptRef = (VariabilityConceptRef)theEObject;
+				T result = caseVariabilityConceptRef(variabilityConceptRef);
+				if (result == null) result = caseSimple(variabilityConceptRef);
+				if (result == null) result = caseConstraint(variabilityConceptRef);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case PcmmmPackage.DOUBLE_TYPE: {
-				DoubleType doubleType = (DoubleType)theEObject;
-				T result = caseDoubleType(doubleType);
-				if (result == null) result = caseType(doubleType);
+			case PcmmmPackage.INTEGER: {
+				pcmmm.Integer integer = (pcmmm.Integer)theEObject;
+				T result = caseInteger(integer);
+				if (result == null) result = caseSimple(integer);
+				if (result == null) result = caseConstraint(integer);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case PcmmmPackage.STRING_TYPE: {
-				StringType stringType = (StringType)theEObject;
-				T result = caseStringType(stringType);
-				if (result == null) result = caseType(stringType);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case PcmmmPackage.BOOLEAN_TYPE: {
-				BooleanType booleanType = (BooleanType)theEObject;
-				T result = caseBooleanType(booleanType);
-				if (result == null) result = caseType(booleanType);
+			case PcmmmPackage.DOUBLE: {
+				pcmmm.Double double_ = (pcmmm.Double)theEObject;
+				T result = caseDouble(double_);
+				if (result == null) result = caseSimple(double_);
+				if (result == null) result = caseConstraint(double_);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -707,21 +686,6 @@ public class PcmmmSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Interval</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Interval</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseInterval(Interval object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Domain Collection</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -733,21 +697,6 @@ public class PcmmmSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDomainCollection(DomainCollection object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseType(Type object) {
 		return null;
 	}
 
@@ -767,62 +716,47 @@ public class PcmmmSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Int Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Variability Concept Ref</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Int Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Variability Concept Ref</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseIntType(IntType object) {
+	public T caseVariabilityConceptRef(VariabilityConceptRef object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Double Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Integer</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Double Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Integer</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseDoubleType(DoubleType object) {
+	public T caseInteger(pcmmm.Integer object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>String Type</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Double</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>String Type</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Double</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseStringType(StringType object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Boolean Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Boolean Type</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseBooleanType(BooleanType object) {
+	public T caseDouble(pcmmm.Double object) {
 		return null;
 	}
 

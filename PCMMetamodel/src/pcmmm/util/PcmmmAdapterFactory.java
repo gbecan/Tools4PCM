@@ -12,20 +12,16 @@ import org.eclipse.emf.ecore.EObject;
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
-import pcmmm.BooleanType;
 import pcmmm.Cell;
 import pcmmm.Constraint;
 import pcmmm.Domain;
 import pcmmm.DomainCollection;
-import pcmmm.DoubleType;
 import pcmmm.Empty;
 import pcmmm.Extra;
 import pcmmm.Feature;
 import pcmmm.FeatureFamily;
 import pcmmm.Header;
 import pcmmm.Inconsistent;
-import pcmmm.IntType;
-import pcmmm.Interval;
 import pcmmm.Matrix;
 import pcmmm.Multiple;
 import pcmmm.Or;
@@ -35,11 +31,10 @@ import pcmmm.PcmmmPackage;
 import pcmmm.Product;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
-import pcmmm.StringType;
-import pcmmm.Type;
 import pcmmm.Unknown;
 import pcmmm.ValuedCell;
 import pcmmm.VariabilityConcept;
+import pcmmm.VariabilityConceptRef;
 import pcmmm.XOr;
 
 /**
@@ -199,36 +194,24 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 				return createDomainAdapter();
 			}
 			@Override
-			public Adapter caseInterval(Interval object) {
-				return createIntervalAdapter();
-			}
-			@Override
 			public Adapter caseDomainCollection(DomainCollection object) {
 				return createDomainCollectionAdapter();
-			}
-			@Override
-			public Adapter caseType(Type object) {
-				return createTypeAdapter();
 			}
 			@Override
 			public Adapter caseEnum(pcmmm.Enum object) {
 				return createEnumAdapter();
 			}
 			@Override
-			public Adapter caseIntType(IntType object) {
-				return createIntTypeAdapter();
+			public Adapter caseVariabilityConceptRef(VariabilityConceptRef object) {
+				return createVariabilityConceptRefAdapter();
 			}
 			@Override
-			public Adapter caseDoubleType(DoubleType object) {
-				return createDoubleTypeAdapter();
+			public Adapter caseInteger(pcmmm.Integer object) {
+				return createIntegerAdapter();
 			}
 			@Override
-			public Adapter caseStringType(StringType object) {
-				return createStringTypeAdapter();
-			}
-			@Override
-			public Adapter caseBooleanType(BooleanType object) {
-				return createBooleanTypeAdapter();
+			public Adapter caseDouble(pcmmm.Double object) {
+				return createDoubleAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -601,20 +584,6 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link pcmmm.Interval <em>Interval</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see pcmmm.Interval
-	 * @generated
-	 */
-	public Adapter createIntervalAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link pcmmm.DomainCollection <em>Domain Collection</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -625,20 +594,6 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDomainCollectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link pcmmm.Type <em>Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see pcmmm.Type
-	 * @generated
-	 */
-	public Adapter createTypeAdapter() {
 		return null;
 	}
 
@@ -657,58 +612,44 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link pcmmm.IntType <em>Int Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link pcmmm.VariabilityConceptRef <em>Variability Concept Ref</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see pcmmm.IntType
+	 * @see pcmmm.VariabilityConceptRef
 	 * @generated
 	 */
-	public Adapter createIntTypeAdapter() {
+	public Adapter createVariabilityConceptRefAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link pcmmm.DoubleType <em>Double Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link pcmmm.Integer <em>Integer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see pcmmm.DoubleType
+	 * @see pcmmm.Integer
 	 * @generated
 	 */
-	public Adapter createDoubleTypeAdapter() {
+	public Adapter createIntegerAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link pcmmm.StringType <em>String Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link pcmmm.Double <em>Double</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see pcmmm.StringType
+	 * @see pcmmm.Double
 	 * @generated
 	 */
-	public Adapter createStringTypeAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link pcmmm.BooleanType <em>Boolean Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see pcmmm.BooleanType
-	 * @generated
-	 */
-	public Adapter createBooleanTypeAdapter() {
+	public Adapter createDoubleAdapter() {
 		return null;
 	}
 

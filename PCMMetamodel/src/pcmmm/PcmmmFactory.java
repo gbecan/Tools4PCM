@@ -193,15 +193,6 @@ public interface PcmmmFactory extends EFactory {
 	XOr createXOr();
 
 	/**
-	 * Returns a new object of class '<em>Interval</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Interval</em>'.
-	 * @generated
-	 */
-	Interval createInterval();
-
-	/**
 	 * Returns a new object of class '<em>Domain Collection</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -220,40 +211,31 @@ public interface PcmmmFactory extends EFactory {
 	Enum createEnum();
 
 	/**
-	 * Returns a new object of class '<em>Int Type</em>'.
+	 * Returns a new object of class '<em>Variability Concept Ref</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Int Type</em>'.
+	 * @return a new object of class '<em>Variability Concept Ref</em>'.
 	 * @generated
 	 */
-	IntType createIntType();
+	VariabilityConceptRef createVariabilityConceptRef();
 
 	/**
-	 * Returns a new object of class '<em>Double Type</em>'.
+	 * Returns a new object of class '<em>Integer</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Double Type</em>'.
+	 * @return a new object of class '<em>Integer</em>'.
 	 * @generated
 	 */
-	DoubleType createDoubleType();
+	Integer createInteger();
 
 	/**
-	 * Returns a new object of class '<em>String Type</em>'.
+	 * Returns a new object of class '<em>Double</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>String Type</em>'.
+	 * @return a new object of class '<em>Double</em>'.
 	 * @generated
 	 */
-	StringType createStringType();
-
-	/**
-	 * Returns a new object of class '<em>Boolean Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Boolean Type</em>'.
-	 * @generated
-	 */
-	BooleanType createBooleanType();
+	Double createDouble();
 
 	/**
 	 * Returns the package supported by this factory.
