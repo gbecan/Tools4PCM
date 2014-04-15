@@ -3,6 +3,8 @@ package org.inria.familiar.pcmgwt.server;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.inria.familiar.pcmgwt.shared.Constraint;
+
 import pcmmm.And;
 import pcmmm.Boolean;
 import pcmmm.Cell;
@@ -62,54 +64,82 @@ public class PcmConverter extends PcmmmSwitch{
 	@Override
 	public Object caseValuedCell(ValuedCell object) {
 		
-		
-		
-		org.inria.familiar.pcmgwt.shared.Cell c = new org.inria.familiar.pcmgwt.shared.Cell(object.getColumn(),object.getRow(),object.getVerbatim(),(org.inria.familiar.pcmgwt.shared.Type) doSwitch(object.getInterpretation()) );
+		Constraint cons = (Constraint) doSwitch(object.getInterpretation());
+		//cons.setName(object.getInterpretation().getName());
+		org.inria.familiar.pcmgwt.shared.Cell c = new org.inria.familiar.pcmgwt.shared.Cell(object.getColumn(),object.getRow(),object.getVerbatim(),cons );
 		m.getCells().add(c);
 		return super.caseValuedCell(object);
 	}
 	
 	@Override
 	public Object caseBoolean(Boolean object) {
-		return org.inria.familiar.pcmgwt.shared.Type.Boolean;
+		
+		
+		return new Constraint(org.inria.familiar.pcmgwt.shared.Type.Boolean,object.getName());
 	}
 
 	@Override
 	public Object casePartial(Partial object) {
-		return org.inria.familiar.pcmgwt.shared.Type.Partial;
-	}
-
-	@Override
-	public Object caseSimple(Simple object) {
-		return org.inria.familiar.pcmgwt.shared.Type.Simple;
-	}
-
-	@Override
-	public Object caseMultiple(Multiple object) {
-		return org.inria.familiar.pcmgwt.shared.Type.Multiple;
+		Constraint res = new Constraint(org.inria.familiar.pcmgwt.shared.Type.Multiple,object.getName());
+			res.getConstraints().add((Constraint) doSwitch(object.getCondition()));
+			res.getConstraints().add((Constraint) doSwitch(object.getArgument()));
+			return res;
 		
 	}
 
 	@Override
+	public Object caseSimple(Simple object) {
+		return new Constraint(org.inria.familiar.pcmgwt.shared.Type.Simple,object.getName());
+	}
+
+	@Override
+	public Object caseMultiple(Multiple object) {
+		
+		Constraint res = new Constraint(org.inria.familiar.pcmgwt.shared.Type.Multiple,object.getName());
+		for (pcmmm.Constraint co :   object.getContraints()){
+			res.getConstraints().add((Constraint) doSwitch(co));
+		}
+		
+		
+		return 	res;
+	}
+
+	@Override
 	public Object caseUnknown(Unknown object) {
-		return org.inria.familiar.pcmgwt.shared.Type.Unknown;
+		return new Constraint(org.inria.familiar.pcmgwt.shared.Type.Unknown,object.getName());
 	}
 
 
 
 	@Override
 	public Object caseAnd(And object) {
-		return org.inria.familiar.pcmgwt.shared.Type.And;
+		Constraint res = new Constraint(org.inria.familiar.pcmgwt.shared.Type.And,object.getName());
+		for (pcmmm.Constraint co :   object.getContraints()){
+			res.getConstraints().add((Constraint) doSwitch(co));
+		}
+		
+		
+		return 	res;
 	}
 
 	@Override
 	public Object caseOr(Or object) {
-		return org.inria.familiar.pcmgwt.shared.Type.Or;
+		Constraint res = new Constraint(org.inria.familiar.pcmgwt.shared.Type.Or,object.getName());
+		for (pcmmm.Constraint co :   object.getContraints()){
+			res.getConstraints().add((Constraint) doSwitch(co));
+		}
+		
+		
+		return 	res;
 	}
 
 	@Override
 	public Object caseXOr(XOr object) {
-		return org.inria.familiar.pcmgwt.shared.Type.Xor;
+		Constraint res = new Constraint(org.inria.familiar.pcmgwt.shared.Type.Xor,object.getName());
+		for (pcmmm.Constraint co :   object.getContraints()){
+			res.getConstraints().add((Constraint) doSwitch(co));
+		}
+		return 	res;
 	}
 	
 	@Override

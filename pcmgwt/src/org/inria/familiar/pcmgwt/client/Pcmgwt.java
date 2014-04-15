@@ -1,220 +1,189 @@
 package org.inria.familiar.pcmgwt.client;
 
-import java.util.List;
-
+import org.inria.familiar.pcmgwt.client.download.HTML5Download;
+import org.inria.familiar.pcmgwt.client.handler.ValidateHandler;
 import org.inria.familiar.pcmgwt.shared.Matrix;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.i18n.client.NumberFormat;
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.smartgwt.client.types.HoverMode;
-import com.smartgwt.client.util.SC;
-import com.smartgwt.client.widgets.cube.CubeGrid;
-import com.smartgwt.client.widgets.events.HoverEvent;
-import com.smartgwt.client.widgets.events.HoverHandler;
-import com.smartgwt.client.widgets.grid.CellFormatter;
-import com.smartgwt.client.widgets.grid.CellValueHoverFormatter;
-import com.smartgwt.client.widgets.grid.HoverCustomizer;
-import com.smartgwt.client.widgets.grid.ListGridRecord;
+import com.google.gwt.user.client.ui.HorizontalPanel;
+import com.google.gwt.user.client.ui.RootPanel;
+import com.smartgwt.client.data.DataSource;
+import com.smartgwt.client.data.fields.DataSourceTextField;
+import com.smartgwt.client.types.Overflow;
+import com.smartgwt.client.widgets.HTMLFlow;
+import com.smartgwt.client.widgets.IButton;
+import com.smartgwt.client.widgets.Label;
+import com.smartgwt.client.widgets.RichTextEditor;
+import com.smartgwt.client.widgets.Window;
+import com.smartgwt.client.widgets.events.ClickEvent;
+import com.smartgwt.client.widgets.events.CloseClickEvent;
+import com.smartgwt.client.widgets.events.CloseClickHandler;
+import com.smartgwt.client.widgets.form.DynamicForm;
+import com.smartgwt.client.widgets.form.fields.TextItem;
+import com.smartgwt.client.widgets.form.validator.RegExpValidator;
+import com.smartgwt.client.widgets.layout.HLayout;
+import com.smartgwt.client.widgets.layout.VLayout;
+import com.smartgwt.client.widgets.menu.Menu;
+import com.smartgwt.client.widgets.menu.MenuItem;
+import com.smartgwt.client.widgets.tab.Tab;
+import com.smartgwt.client.widgets.tab.TabSet;
+
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
  */
 public class Pcmgwt implements EntryPoint {
 	/**
-	 * The message displayed to the user when the server cannot be reached or
-	 * returns an error.
-	 */
-	private static final String SERVER_ERROR = "An error occurred while "
-			+ "attempting to contact the server. Please check your network "
-			+ "connection and try again.";
-
-	/**
-	 * Create a remote service proxy to talk to the server-side Greeting service.
+	 * Create a remote service proxy to talk to the server-side Greeting
+	 * service.
 	 */
 	private final GreetingServiceAsync greetingService = (GreetingServiceAsync) GWT
 			.create(GreetingService.class);
+
+	
+
+	Matrix matrix;
 
 	/**
 	 * This is the entry point method.
 	 */
 	public void onModuleLoad() {
-		/* final ListGrid countryGrid = new ListGrid() {  
-	            @Override  
-	            protected Canvas createRecordComponent(final ListGridRecord record, Integer colNum) {  
-	  
-	                String fieldName = this.getFieldName(colNum);  
-	  
-	                if (fieldName.equals("iconField")) {  
-	                    HLayout recordCanvas = new HLayout(3);  
-	                    recordCanvas.setHeight(22);  
-	                    recordCanvas.setAlign(Alignment.CENTER);  
-	                    ImgButton editImg = new ImgButton();  
-	                    editImg.setShowDown(false);  
-	                    editImg.setShowRollOver(false);  
-	                    editImg.setLayoutAlign(Alignment.CENTER);  
-	                    editImg.setSrc("silk/comment_edit.png");  
-	                    editImg.setPrompt("Edit Comments");  
-	                    editImg.setHeight(16);  
-	                    editImg.setWidth(16);  
-	                    editImg.addClickHandler(new ClickHandler() {  
-	                        public void onClick(ClickEvent event) {  
-	                            SC.say("Edit Comment Icon Clicked for country : " + record.getAttribute("countryName"));  
-	                        }  
-	                    });  
-	  
-	                    ImgButton chartImg = new ImgButton();  
-	                    chartImg.setShowDown(false);  
-	                    chartImg.setShowRollOver(false);  
-	                    chartImg.setAlign(Alignment.CENTER);  
-	                    chartImg.setSrc("silk/chart_bar.png");  
-	                    chartImg.setPrompt("View Chart");  
-	                    chartImg.setHeight(16);  
-	                    chartImg.setWidth(16);  
-	                    chartImg.addClickHandler(new ClickHandler() {  
-	                        public void onClick(ClickEvent event) {  
-	                            SC.say("Chart Icon Clicked for country : " + record.getAttribute("countryName"));  
-	                        }  
-	                    });  
-	  
-	                    recordCanvas.addMember(editImg);  
-	                    recordCanvas.addMember(chartImg);  
-	                    return recordCanvas;  
-	                } else if (fieldName.equals("buttonField")) {  
-	                    IButton button = new IButton();  
-	                    button.setHeight(18);  
-	                    button.setWidth(65);                      
-	                    button.setIcon("flags/16/" + record.getAttribute("countryCode") + ".png");  
-	                    button.setTitle("Info");  
-	                    button.addClickHandler(new ClickHandler() {  
-	                        public void onClick(ClickEvent event) {  
-	                            SC.say(record.getAttribute("countryName") + " info button clicked.");  
-	                        }  
-	                    });  
-	                    return button;  
-	                } else {  
-	                    return null;  
-	                }  
-	  
-	            }  
-	        };  
-	        countryGrid.setShowRecordComponents(true);          
-	        countryGrid.setShowRecordComponentsByCell(true);  
-	        countryGrid.setCanRemoveRecords(true);  
-	  
-	        countryGrid.setWidth(550);  
-	        countryGrid.setHeight(224);  
-	        countryGrid.setShowAllRecords(true);  
-	  
-	        ListGridField countryCodeField = new ListGridField("countryCode", "Flag", 40);  
-	        countryCodeField.setAlign(Alignment.CENTER);  
-	        countryCodeField.setType(ListGridFieldType.IMAGE);  
-	        countryCodeField.setImageURLPrefix("flags/16/");  
-	        countryCodeField.setImageURLSuffix(".png");  
-	  
-	        ListGridField nameField = new ListGridField("countryName", "Country");  
-	        ListGridField capitalField = new ListGridField("capital", "Capital");  
-	        ListGridField continentField = new ListGridField("continent", "Continent");  
-	  
-	        ListGridField buttonField = new ListGridField("buttonField", "Info");  
-	        buttonField.setAlign(Alignment.CENTER);  
-	          
-	        ListGridField iconField = new ListGridField("iconField", "Comments/Stats");  
-	        iconField.setWidth(100);  
-	  
-	        countryGrid.setFields(countryCodeField, nameField, capitalField, continentField, buttonField, iconField);  
-	        countryGrid.setCanResizeFields(true);  
-	        countryGrid.setData(CountrySampleData.getRecords());  
-	  
-	        countryGrid.draw();  
 		
- */
-		
-		greetingService.loadModel(new AsyncCallback<List<Matrix>>() {
-			
+		final TabSet theTabs = new TabSet();
+		theTabs.setWidth100();
+		theTabs.setHeight100();
+		Menu m1 = new Menu();
+		MenuItem m2 = new MenuItem();
+		m1.addItem(m2);
+		theTabs.setContextMenu(m1);
+
+		theTabs.setCanCloseTabs(false);
+
+		Tab item = new Tab();
+		item.setTitle("Contact");
+		final Tab item1 = new Tab();
+		item1.setTitle("Experiment");
+
+		VLayout layout1 = new VLayout();
+
+		layout1.setMembersMargin(5);
+
+		final RichTextEditor richTextEditor = new RichTextEditor();
+		richTextEditor.setHeight(155);
+		richTextEditor.setOverflow(Overflow.HIDDEN);
+		richTextEditor.setCanDragResize(true);
+		richTextEditor.setShowEdges(true);
+
+		richTextEditor.setHeight100();
+		// Standard control group options include
+		// "fontControls", "formatControls", "styleControls" and "colorControls"
+		// richTextEditor.setControlGroups(new String[]{"fontControls",
+		// "styleControls"});
+		layout1.addMember(richTextEditor);
+
+		Tab item2 = new Tab();
+		item2.setTitle("Comments");
+		item2.setPane(layout1);
+
+		final DynamicForm form = new DynamicForm();
+		form.setWidth(400);
+
+		TextItem firstName = new TextItem("firstName", "First name");
+		firstName.setMask(">?<??????????????");
+		firstName.setHint("<nobr>>?<??????????????<nobr>");
+
+		TextItem lastName = new TextItem("lastName", "Last name");
+		lastName.setMask(">?<??????????????");
+		lastName.setHint("<nobr>>?<??????????????<nobr>");
+
+		DataSource dataSource = new DataSource();
+		dataSource.setID("regularExpression");
+
+		RegExpValidator regExpValidator = new RegExpValidator();
+		regExpValidator
+				.setExpression("^([a-zA-Z0-9_.\\-+])+@(([a-zA-Z0-9\\-])+\\.)+[a-zA-Z0-9]{2,4}$");
+
+		DataSourceTextField dsTextField = new DataSourceTextField("email");
+		dsTextField.setTitle("Email");
+		dsTextField.setValidators(regExpValidator);
+
+		dataSource.setFields(dsTextField);
+
+		final DynamicForm form1 = new DynamicForm();
+		form1.setWidth(400);
+		form1.setDataSource(dataSource);
+
+		form.setFields(firstName, lastName);
+
+		IButton validateButton = new IButton();
+		validateButton.setTitle("Start");
+		validateButton
+				.addClickHandler(new ValidateHandler(form,form1, theTabs, item1, greetingService));
+		VLayout vLayout = new VLayout();
+		vLayout.setMembersMargin(10);
+		vLayout.addMember(form);
+		vLayout.addMember(form1);
+		vLayout.addMember(validateButton);
+
+		// vLayout.draw();
+		item.setPane(vLayout);
+
+		theTabs.setTabs(item, item1, item2);
+
+		IButton submit = new IButton();
+		submit.setTitle("Submit");
+		submit.addClickHandler(new com.smartgwt.client.widgets.events.ClickHandler() {
+
 			@Override
-			public void onSuccess(List<Matrix> result) {
-				System.err.println(result.size());
+			public void onClick(ClickEvent event) {
+				com.google.gwt.user.client.ui.Anchor h = HTML5Download.get().generateTextDownloadLink(ExperimentDataCellSingleton.getInstance().toCsv(), "DownloadData.txt", "DownloadExperimentalData");
 				
-				CubeGrid cubeGrid = new CubeGrid();  
-		        
-				//in order to enable charting, the Drawing module must be present  
-		        if(SC.hasDrawing()) {  
-		            cubeGrid.setEnableCharting(true);  
-		        }  
-		        cubeGrid.setData(MatrixCellData.getData(result));  
-		  
-		        cubeGrid.setWidth100();  
-		        cubeGrid.setHeight100();  
-		        //cubeGrid.setHideEmptyFacetValues(true);  
-		        cubeGrid.setShowCellContextMenus(true);  
-		        
-		        
-		        
-		        
-		        final NumberFormat numberFormat = NumberFormat.getFormat("0,000");  
-		  
-		        
-		        cubeGrid.setHoverCustomizer(new HoverCustomizer() {
-					
+				greetingService.createExperimentdata(ExperimentDataCellSingleton.getInstance().getData(), ExperimentDataCellSingleton.getInstance().getDatas(), new AsyncCallback<Boolean>() {
+
 					@Override
-					public String hoverHTML(Object value, ListGridRecord record, int rowNum,
-							int colNum) {
-						// TODO Auto-generated method stub
-						return "C'est trop cool";
+					public void onFailure(Throwable caught) {
+						
+						caught.printStackTrace();
+						System.err.println("data not saved");
+					}
+
+					@Override
+					public void onSuccess(Boolean result) {
+						System.err.println("data saved");
 					}
 				});
-		        cubeGrid.setHoverMode(HoverMode.DETAILS);
-		        cubeGrid.setHoverDelay(10);
-		        cubeGrid.setCanSort(true);
-		        cubeGrid.setCanEdit(true);
-		        cubeGrid.addHoverHandler(new HoverHandler() {
-					
-					@Override
-					public void onHover(HoverEvent event) {
-						System.err.println("toto");
-					}
-				});
-		        
-//		        cubeGrid.
-		        
-		        cubeGrid.setCellFormatter(new CellFormatter() {  
-		            public String format(Object value, ListGridRecord record, int rowNum, int colNum) {  
-		                if (value == null) return null;  
-		                try {  
-		                    return numberFormat.format(((Number) value).longValue());  
-		                } catch (Exception e) {  
-		                		return value.toString();  
-		                }  
+				
+				final Window winModal = new Window();  
+		        winModal.setWidth(250);  
+		        winModal.setHeight(22);
+		        winModal.setTitle("");  
+		        winModal.setShowMinimizeButton(false);  
+		        winModal.setIsModal(true);  
+		        winModal.setShowModalMask(true);  
+		        winModal.centerInPage();  
+		        winModal.addCloseClickHandler(new CloseClickHandler() {  
+		            public void onCloseClick(CloseClickEvent event) {  
+		                winModal.destroy();  
 		            }  
 		        });  
-		        
-		        
-		        
-		        
-		  
-		        //cubeGrid.setColumnFacets("quarter", "month", "metric");  
-		        //cubeGrid.setRowFacets("region", "product");  
-		        cubeGrid.setRowFacets("product");  
-		        cubeGrid.setColumnFacets("feature");  
-		        
-/*		        Window.alert(""+cubeGrid.getGridComponents().length);
-		        
-		        for (ListGridComponent c :   cubeGrid.getGridComponents()){
-		        	System.err.println(c.name());
-		        	System.err.println(c.getValue());
-		        }*/
-		        
-		        cubeGrid.draw();  
+		        winModal.addChild(h);
+				winModal.show();
+
 				
-			}
-			
-			@Override
-			public void onFailure(Throwable caught) {
-				// TODO Auto-generated method stub
 				
 			}
 		});
+
 		
-  }
+		
+		VLayout vLayoutRoot = new VLayout();
+		vLayoutRoot.setWidth100();
+		vLayoutRoot.setHeight100();
+		vLayoutRoot.setMembersMargin(10);
+		vLayoutRoot.addMember(theTabs);
+		vLayoutRoot.addMember(submit);
+		vLayoutRoot.draw();
+
+	}
 }
