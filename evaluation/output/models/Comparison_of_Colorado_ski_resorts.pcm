@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="" id="_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: nearest city" verbatim="Nearest city" rowspan="1" column="1" colspan="1" concept="//@concepts.0"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: skiable area (acres)" verbatim="Skiable area (acres)" rowspan="1" column="2" colspan="1" concept="//@concepts.1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: top elevation (feet)" verbatim="Top elevation (feet)" rowspan="1" column="3" colspan="1" concept="//@concepts.2"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: base elevation (feet)" verbatim="Base elevation (feet)" rowspan="1" column="4" colspan="1" concept="//@concepts.3"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: vertical (feet)" verbatim="Vertical (feet)" rowspan="1" column="5" colspan="1" concept="//@concepts.4"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: runs" verbatim="Runs" rowspan="1" column="6" colspan="1" concept="//@concepts.5"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: lifts" verbatim="Lifts" rowspan="1" column="7" colspan="1" concept="//@concepts.6"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: snowfall (in/year)" verbatim="Snowfall (in/year)" rowspan="1" column="8" colspan="1" concept="//@concepts.7"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: arapahoe basin" verbatim="Arapahoe Basin" row="1" rowspan="1" colspan="1" concept="//@concepts.8"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: aspen highlands" verbatim="Aspen Highlands" row="2" rowspan="1" colspan="1" concept="//@concepts.9"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: aspen mountain" verbatim="Aspen Mountain" row="3" rowspan="1" colspan="1" concept="//@concepts.10"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: beaver creek" verbatim="Beaver Creek" row="4" rowspan="1" colspan="1" concept="//@concepts.11"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: breckenridge" verbatim="Breckenridge" row="5" rowspan="1" colspan="1" concept="//@concepts.12"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: buttermilk" verbatim="Buttermilk" row="6" rowspan="1" colspan="1" concept="//@concepts.13"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: copper mountain" verbatim="Copper Mountain" row="7" rowspan="1" colspan="1" concept="//@concepts.14"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: crested butte" verbatim="Crested Butte" row="8" rowspan="1" colspan="1" concept="//@concepts.15"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: durango" verbatim="Durango" row="9" rowspan="1" colspan="1" concept="//@concepts.16"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: echo mountain" verbatim="Echo Mountain" row="10" rowspan="1" colspan="1" concept="//@concepts.17"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: eldora" verbatim="Eldora" row="11" rowspan="1" colspan="1" concept="//@concepts.18"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: hesperus" verbatim="Hesperus" row="12" rowspan="1" colspan="1" concept="//@concepts.19"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: keystone" verbatim="Keystone" row="13" rowspan="1" colspan="1" concept="//@concepts.20"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: loveland" verbatim="Loveland" row="14" rowspan="1" colspan="1" concept="//@concepts.21"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: monarch" verbatim="Monarch" row="15" rowspan="1" colspan="1" concept="//@concepts.22"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: powderhorn" verbatim="Powderhorn" row="16" rowspan="1" colspan="1" concept="//@concepts.23"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: silverton mountain" verbatim="Silverton Mountain" row="17" rowspan="1" colspan="1" concept="//@concepts.24"/>
+    <cells xsi:type="pcmmm:Header" name="18,0: ski cooper" verbatim="Ski Cooper" row="18" rowspan="1" colspan="1" concept="//@concepts.25"/>
+    <cells xsi:type="pcmmm:Header" name="19,0: snowmass" verbatim="Snowmass" row="19" rowspan="1" colspan="1" concept="//@concepts.26"/>
+    <cells xsi:type="pcmmm:Header" name="20,0: ski granby ranch" verbatim="Ski Granby Ranch" row="20" rowspan="1" colspan="1" concept="//@concepts.27"/>
+    <cells xsi:type="pcmmm:Header" name="21,0: steamboat" verbatim="Steamboat" row="21" rowspan="1" colspan="1" concept="//@concepts.28"/>
+    <cells xsi:type="pcmmm:Header" name="22,0: sunlight" verbatim="Sunlight" row="22" rowspan="1" colspan="1" concept="//@concepts.29"/>
+    <cells xsi:type="pcmmm:Header" name="23,0: telluride" verbatim="Telluride" row="23" rowspan="1" colspan="1" concept="//@concepts.30"/>
+    <cells xsi:type="pcmmm:Header" name="24,0: vail" verbatim="Vail" row="24" rowspan="1" colspan="1" concept="//@concepts.31"/>
+    <cells xsi:type="pcmmm:Header" name="25,0: winter park" verbatim="Winter Park" row="25" rowspan="1" colspan="1" concept="//@concepts.32"/>
+    <cells xsi:type="pcmmm:Header" name="26,0: wolf creek" verbatim="Wolf Creek" row="26" rowspan="1" colspan="1" concept="//@concepts.33"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: name" verbatim="Name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: keystone, colorado" verbatim="Keystone, Colorado" row="1" rowspan="1" column="1" colspan="1" concepts="//@concepts.20 //@concepts.34" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Keystone" verbatim="Keystone" concept="//@concepts.20"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: 900" verbatim="900" row="1" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="900" confident="true" verbatim="900" value="900"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: 13050" verbatim="13050" row="1" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="13050" confident="true" verbatim="13050" value="13050"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,4: 10780" verbatim="10780" row="1" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="10780" confident="true" verbatim="10780" value="10780"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,5: 2270" verbatim="2270" row="1" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="2270" confident="true" verbatim="2270" value="2270"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,6: 105" verbatim="105" row="1" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="105" confident="true" verbatim="105" value="105"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,7: 7" verbatim="7" row="1" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="7" confident="true" verbatim="7" value="7"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,8: 350" verbatim="350" row="1" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="350" confident="true" verbatim="350" value="350"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: aspen, colorado" verbatim="Aspen, Colorado" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.35 //@concepts.34" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Aspen" verbatim="Aspen" concept="//@concepts.35"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: 1010" verbatim="1010" row="2" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1010" confident="true" verbatim="1010" value="1010"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: 11678" verbatim="11678" row="2" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="11678" confident="true" verbatim="11678" value="11678"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,4: 8040" verbatim="8040" row="2" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="8040" confident="true" verbatim="8040" value="8040"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,5: 3638" verbatim="3638" row="2" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="3638" confident="true" verbatim="3638" value="3638"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,6: 118" verbatim="118" row="2" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="118" confident="true" verbatim="118" value="118"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,7: 5" verbatim="5" row="2" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="5" confident="true" verbatim="5" value="5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,8: 300" verbatim="300" row="2" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="300" confident="true" verbatim="300" value="300"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: aspen, colorado" verbatim="Aspen, Colorado" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.35 //@concepts.34" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Aspen" verbatim="Aspen" concept="//@concepts.35"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: 673" verbatim="673" row="3" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="673" confident="true" verbatim="673" value="673"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: 11212" verbatim="11212" row="3" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="11212" confident="true" verbatim="11212" value="11212"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,4: 7945" verbatim="7945" row="3" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="7945" confident="true" verbatim="7945" value="7945"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,5: 3267" verbatim="3267" row="3" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="3267" confident="true" verbatim="3267" value="3267"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,6: 76" verbatim="76" row="3" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="76" confident="true" verbatim="76" value="76"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,7: 8" verbatim="8" row="3" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="8" confident="true" verbatim="8" value="8"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,8: 300" verbatim="300" row="3" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="300" confident="true" verbatim="300" value="300"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: avon, colorado" verbatim="Avon, Colorado" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.36 //@concepts.34" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Avon" verbatim="Avon" concept="//@concepts.36"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: 1825" verbatim="1825" row="4" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1825" confident="true" verbatim="1825" value="1825"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: 11440" verbatim="11440" row="4" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="11440" confident="true" verbatim="11440" value="11440"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,4: 8100" verbatim="8100" row="4" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="8100" confident="true" verbatim="8100" value="8100"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,5: 3340" verbatim="3340" row="4" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="3340" confident="true" verbatim="3340" value="3340"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,6: 149" verbatim="149" row="4" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="149" confident="true" verbatim="149" value="149"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,7: 17" verbatim="17" row="4" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="17" confident="true" verbatim="17" value="17"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,8: 330" verbatim="330" row="4" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="330" confident="true" verbatim="330" value="330"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: breckenridge, colorado" verbatim="Breckenridge, Colorado" row="5" rowspan="1" column="1" colspan="1" concepts="//@concepts.12 //@concepts.34" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Breckenridge" verbatim="Breckenridge" concept="//@concepts.12"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: 2358" verbatim="2358" row="5" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2358" confident="true" verbatim="2358" value="2358"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,3: 12998" verbatim="12998" row="5" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="12998" confident="true" verbatim="12998" value="12998"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,4: 9600" verbatim="9600" row="5" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="9600" confident="true" verbatim="9600" value="9600"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,5: 3398" verbatim="3398" row="5" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="3398" confident="true" verbatim="3398" value="3398"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,6: 155" verbatim="155" row="5" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="155" confident="true" verbatim="155" value="155"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,7: 30" verbatim="30" row="5" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="30" confident="true" verbatim="30" value="30"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,8: 360" verbatim="360" row="5" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="360" confident="true" verbatim="360" value="360"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,1: aspen, colorado" verbatim="Aspen, Colorado" row="6" rowspan="1" column="1" colspan="1" concepts="//@concepts.35 //@concepts.34" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Aspen" verbatim="Aspen" concept="//@concepts.35"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,2: 435" verbatim="435" row="6" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="435" confident="true" verbatim="435" value="435"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,3: 9900" verbatim="9900" row="6" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="9900" confident="true" verbatim="9900" value="9900"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,4: 7870" verbatim="7870" row="6" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="7870" confident="true" verbatim="7870" value="7870"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,5: 2030" verbatim="2030" row="6" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="2030" confident="true" verbatim="2030" value="2030"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,6: 44" verbatim="44" row="6" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="44" confident="true" verbatim="44" value="44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,7: 9" verbatim="9" row="6" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="9" confident="true" verbatim="9" value="9"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,8: 200" verbatim="200" row="6" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="200" confident="true" verbatim="200" value="200"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,1: copper mountain, colorado" verbatim="Copper Mountain, Colorado" row="7" rowspan="1" column="1" colspan="1" concepts="//@concepts.14 //@concepts.34" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Copper Mountain" verbatim="Copper Mountain" concept="//@concepts.14"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,2: 2465" verbatim="2465" row="7" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2465" confident="true" verbatim="2465" value="2465"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,3: 12313" verbatim="12313" row="7" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="12313" confident="true" verbatim="12313" value="12313"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,4: 9712" verbatim="9712" row="7" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="9712" confident="true" verbatim="9712" value="9712"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,5: 2601" verbatim="2601" row="7" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="2601" confident="true" verbatim="2601" value="2601"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,6: 125" verbatim="125" row="7" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="125" confident="true" verbatim="125" value="125"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,7: 22" verbatim="22" row="7" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="22" confident="true" verbatim="22" value="22"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,8: 320" verbatim="320" row="7" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="320" confident="true" verbatim="320" value="320"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,1: crested butte, colorado" verbatim="Crested Butte, Colorado" row="8" rowspan="1" column="1" colspan="1" concepts="//@concepts.15 //@concepts.34" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Crested Butte" verbatim="Crested Butte" concept="//@concepts.15"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,2: 1125" verbatim="1125" row="8" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1125" confident="true" verbatim="1125" value="1125"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,3: 12162" verbatim="12162" row="8" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="12162" confident="true" verbatim="12162" value="12162"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,4: 9375" verbatim="9375" row="8" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="9375" confident="true" verbatim="9375" value="9375"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,5: 2785" verbatim="2785" row="8" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="2785" confident="true" verbatim="2785" value="2785"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,6: 121" verbatim="121" row="8" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="121" confident="true" verbatim="121" value="121"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,7: 15" verbatim="15" row="8" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="15" confident="true" verbatim="15" value="15"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,8: 300" verbatim="300" row="8" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="300" confident="true" verbatim="300" value="300"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,1: durango, colorado" verbatim="Durango, Colorado" row="9" rowspan="1" column="1" colspan="1" concepts="//@concepts.16 //@concepts.34" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Durango" verbatim="Durango" concept="//@concepts.16"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,2: 1200" verbatim="1200" row="9" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1200" confident="true" verbatim="1200" value="1200"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,3: 10822" verbatim="10822" row="9" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="10822" confident="true" verbatim="10822" value="10822"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,4: 8793" verbatim="8793" row="9" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="8793" confident="true" verbatim="8793" value="8793"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,5: 2029" verbatim="2029" row="9" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="2029" confident="true" verbatim="2029" value="2029"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,6: 85" verbatim="85" row="9" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="85" confident="true" verbatim="85" value="85"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,7: 10" verbatim="10" row="9" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="10" confident="true" verbatim="10" value="10"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,8: 260" verbatim="260" row="9" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="260" confident="true" verbatim="260" value="260"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,1: evergreen, colorado" verbatim="Evergreen, Colorado" row="10" rowspan="1" column="1" colspan="1" concepts="//@concepts.37 //@concepts.34" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Evergreen" verbatim="Evergreen" concept="//@concepts.37"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,2: 75" verbatim="75" row="10" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="75" confident="true" verbatim="75" value="75"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,3: 10650" verbatim="10650" row="10" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="10650" confident="true" verbatim="10650" value="10650"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,4: 10050" verbatim="10050" row="10" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="10050" confident="true" verbatim="10050" value="10050"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,5: 600" verbatim="600" row="10" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="600" confident="true" verbatim="600" value="600"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,6: 13" verbatim="13" row="10" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="13" confident="true" verbatim="13" value="13"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,7: 3" verbatim="3" row="10" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="3" confident="true" verbatim="3" value="3"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,8: 275" verbatim="275" row="10" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="275" confident="true" verbatim="275" value="275"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,1: nederland, colorado" verbatim="Nederland, Colorado" row="11" rowspan="1" column="1" colspan="1" concepts="//@concepts.38 //@concepts.34" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Nederland" verbatim="Nederland" concept="//@concepts.38"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,2: 680" verbatim="680" row="11" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="680" confident="true" verbatim="680" value="680"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,3: 10800" verbatim="10800" row="11" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="10800" confident="true" verbatim="10800" value="10800"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,4: 9200" verbatim="9200" row="11" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="9200" confident="true" verbatim="9200" value="9200"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,5: 1600" verbatim="1600" row="11" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="1600" confident="true" verbatim="1600" value="1600"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,6: 53" verbatim="53" row="11" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="53" confident="true" verbatim="53" value="53"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,7: 12" verbatim="12" row="11" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="12" confident="true" verbatim="12" value="12"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,8: 300" verbatim="300" row="11" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="300" confident="true" verbatim="300" value="300"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,1: hesperus, colorado" verbatim="Hesperus, Colorado" row="12" rowspan="1" column="1" colspan="1" concepts="//@concepts.19 //@concepts.34" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Hesperus" verbatim="Hesperus" concept="//@concepts.19"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,2: 80" verbatim="80" row="12" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="80" confident="true" verbatim="80" value="80"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,3: 8880" verbatim="8880" row="12" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="8880" confident="true" verbatim="8880" value="8880"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,4: 8100" verbatim="8100" row="12" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="8100" confident="true" verbatim="8100" value="8100"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,5: 700" verbatim="700" row="12" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="700" confident="true" verbatim="700" value="700"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,6: 13" verbatim="13" row="12" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="13" confident="true" verbatim="13" value="13"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,7: 2" verbatim="2" row="12" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="2" confident="true" verbatim="2" value="2"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,8: 150" verbatim="150" row="12" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="150" confident="true" verbatim="150" value="150"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,1: keystone, colorado" verbatim="Keystone, Colorado" row="13" rowspan="1" column="1" colspan="1" concepts="//@concepts.20 //@concepts.34" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Keystone" verbatim="Keystone" concept="//@concepts.20"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,2: 3148" verbatim="3148" row="13" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="3148" confident="true" verbatim="3148" value="3148"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,3: 12408" verbatim="12408" row="13" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="12408" confident="true" verbatim="12408" value="12408"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,4: 9280" verbatim="9280" row="13" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="9280" confident="true" verbatim="9280" value="9280"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,5: 3128" verbatim="3128" row="13" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="3128" confident="true" verbatim="3128" value="3128"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,6: 135" verbatim="135" row="13" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="135" confident="true" verbatim="135" value="135"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,7: 19" verbatim="19" row="13" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="19" confident="true" verbatim="19" value="19"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,8: 300" verbatim="300" row="13" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="300" confident="true" verbatim="300" value="300"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,1: silverthorne, colorado" verbatim="Silverthorne, Colorado" row="14" rowspan="1" column="1" colspan="1" concepts="//@concepts.39 //@concepts.34" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Silverthorne" verbatim="Silverthorne" concept="//@concepts.39"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,2: 1365" verbatim="1365" row="14" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1365" confident="true" verbatim="1365" value="1365"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,3: 13010" verbatim="13010" row="14" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="13010" confident="true" verbatim="13010" value="13010"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,4: 10800" verbatim="10800" row="14" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="10800" confident="true" verbatim="10800" value="10800"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,5: 2210" verbatim="2210" row="14" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="2210" confident="true" verbatim="2210" value="2210"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,6: 77" verbatim="77" row="14" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="77" confident="true" verbatim="77" value="77"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,7: 11" verbatim="11" row="14" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="11" confident="true" verbatim="11" value="11"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,8: 420" verbatim="420" row="14" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="420" confident="true" verbatim="420" value="420"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,1: salida, colorado" verbatim="Salida, Colorado" row="15" rowspan="1" column="1" colspan="1" concepts="//@concepts.40 //@concepts.34" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Salida" verbatim="Salida" concept="//@concepts.40"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,2: 800" verbatim="800" row="15" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="800" confident="true" verbatim="800" value="800"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,3: 11960" verbatim="11960" row="15" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="11960" confident="true" verbatim="11960" value="11960"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,4: 10790" verbatim="10790" row="15" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="10790" confident="true" verbatim="10790" value="10790"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,5: 1170" verbatim="1170" row="15" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="1170" confident="true" verbatim="1170" value="1170"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,6: 54" verbatim="54" row="15" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="54" confident="true" verbatim="54" value="54"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,7: 5" verbatim="5" row="15" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="5" confident="true" verbatim="5" value="5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,8: 375" verbatim="375" row="15" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="375" confident="true" verbatim="375" value="375"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,1: grand junction, colorado" verbatim="Grand Junction, Colorado" row="16" rowspan="1" column="1" colspan="1" concepts="//@concepts.41 //@concepts.34" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Grand Junction" verbatim="Grand Junction" concept="//@concepts.41"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,2: 1600" verbatim="1600" row="16" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1600" confident="true" verbatim="1600" value="1600"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,3: 9850" verbatim="9850" row="16" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="9850" confident="true" verbatim="9850" value="9850"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,4: 8200" verbatim="8200" row="16" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="8200" confident="true" verbatim="8200" value="8200"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,5: 1650" verbatim="1650" row="16" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="1650" confident="true" verbatim="1650" value="1650"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,6: 37" verbatim="37" row="16" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="37" confident="true" verbatim="37" value="37"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,7: 4" verbatim="4" row="16" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="4" confident="true" verbatim="4" value="4"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,8: 250" verbatim="250" row="16" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="250" confident="true" verbatim="250" value="250"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,1: silverton, colorado" verbatim="Silverton, Colorado" row="17" rowspan="1" column="1" colspan="1" concepts="//@concepts.42 //@concepts.34" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Silverton" verbatim="Silverton" concept="//@concepts.42"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,2: 1819" verbatim="1819" row="17" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1819" confident="true" verbatim="1819" value="1819"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,3: 12300" verbatim="12300" row="17" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="12300" confident="true" verbatim="12300" value="12300"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,4: 10400" verbatim="10400" row="17" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="10400" confident="true" verbatim="10400" value="10400"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,5: 3087" verbatim="3087" row="17" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="3087" confident="true" verbatim="3087" value="3087"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,6: n/a" verbatim="N/A" row="17" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,7: 1" verbatim="1" row="17" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="1" confident="true" verbatim="1" value="1"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,8: 460" verbatim="460" row="17" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="460" confident="true" verbatim="460" value="460"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,1: leadville, colorado" verbatim="Leadville, Colorado" row="18" rowspan="1" column="1" colspan="1" concepts="//@concepts.43 //@concepts.34" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Leadville" verbatim="Leadville" concept="//@concepts.43"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,2: 400" verbatim="400" row="18" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="400" confident="true" verbatim="400" value="400"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,3: 11700" verbatim="11700" row="18" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="11700" confident="true" verbatim="11700" value="11700"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,4: 10500" verbatim="10500" row="18" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="10500" confident="true" verbatim="10500" value="10500"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,5: 1200" verbatim="1200" row="18" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="1200" confident="true" verbatim="1200" value="1200"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,6: 26" verbatim="26" row="18" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="26" confident="true" verbatim="26" value="26"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,7: 4" verbatim="4" row="18" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="4" confident="true" verbatim="4" value="4"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,8: 250" verbatim="250" row="18" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="250" confident="true" verbatim="250" value="250"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,1: aspen, colorado" verbatim="Aspen, Colorado" row="19" rowspan="1" column="1" colspan="1" concepts="//@concepts.35 //@concepts.34" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Aspen" verbatim="Aspen" concept="//@concepts.35"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,2: 3332" verbatim="3332" row="19" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="3332" confident="true" verbatim="3332" value="3332"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,3: 12510" verbatim="12510" row="19" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="12510" confident="true" verbatim="12510" value="12510"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,4: 8104" verbatim="8104" row="19" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="8104" confident="true" verbatim="8104" value="8104"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,5: 4406" verbatim="4406" row="19" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="4406" confident="true" verbatim="4406" value="4406"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,6: 88" verbatim="88" row="19" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="88" confident="true" verbatim="88" value="88"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,7: 21" verbatim="21" row="19" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="21" confident="true" verbatim="21" value="21"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,8: 300" verbatim="300" row="19" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="300" confident="true" verbatim="300" value="300"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,1: granby, colorado" verbatim="Granby, Colorado" row="20" rowspan="1" column="1" colspan="1" concepts="//@concepts.44 //@concepts.34" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Granby" verbatim="Granby" concept="//@concepts.44"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,2: 406" verbatim="406" row="20" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="406" confident="true" verbatim="406" value="406"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,3: 9202" verbatim="9202" row="20" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="9202" confident="true" verbatim="9202" value="9202"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,4: 8202" verbatim="8202" row="20" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="8202" confident="true" verbatim="8202" value="8202"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,5: 1000" verbatim="1000" row="20" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="1000" confident="true" verbatim="1000" value="1000"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,6: 35" verbatim="35" row="20" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="35" confident="true" verbatim="35" value="35"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,7: 6" verbatim="6" row="20" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="6" confident="true" verbatim="6" value="6"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,8: 220" verbatim="220" row="20" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="220" confident="true" verbatim="220" value="220"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,1: steamboat springs, colorado" verbatim="Steamboat Springs, Colorado" row="21" rowspan="1" column="1" colspan="1" concepts="//@concepts.45 //@concepts.34" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Steamboat Springs" verbatim="Steamboat Springs" concept="//@concepts.45"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,2: 2965" verbatim="2965" row="21" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2965" confident="true" verbatim="2965" value="2965"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,3: 10568" verbatim="10568" row="21" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="10568" confident="true" verbatim="10568" value="10568"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,4: 6900" verbatim="6900" row="21" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="6900" confident="true" verbatim="6900" value="6900"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,5: 3668" verbatim="3668" row="21" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="3668" confident="true" verbatim="3668" value="3668"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,6: 165" verbatim="165" row="21" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="165" confident="true" verbatim="165" value="165"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,7: 16" verbatim="16" row="21" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="16" confident="true" verbatim="16" value="16"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,8: 349" verbatim="349" row="21" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="349" confident="true" verbatim="349" value="349"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,1: glenwood springs, colorado" verbatim="Glenwood Springs, Colorado" row="22" rowspan="1" column="1" colspan="1" concepts="//@concepts.46 //@concepts.34" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Glenwood Springs" verbatim="Glenwood Springs" concept="//@concepts.46"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,2: 470" verbatim="470" row="22" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="470" confident="true" verbatim="470" value="470"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,3: 9895" verbatim="9895" row="22" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="9895" confident="true" verbatim="9895" value="9895"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,4: 7885" verbatim="7885" row="22" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="7885" confident="true" verbatim="7885" value="7885"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,5: 2010" verbatim="2010" row="22" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="2010" confident="true" verbatim="2010" value="2010"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,6: 67" verbatim="67" row="22" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="67" confident="true" verbatim="67" value="67"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,7: 4" verbatim="4" row="22" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="4" confident="true" verbatim="4" value="4"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,8: 252" verbatim="252" row="22" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="252" confident="true" verbatim="252" value="252"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,1: telluride, colorado" verbatim="Telluride, Colorado" row="23" rowspan="1" column="1" colspan="1" concepts="//@concepts.30 //@concepts.34" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Telluride" verbatim="Telluride" concept="//@concepts.30"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,2: 2000" verbatim="2000" row="23" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2000" confident="true" verbatim="2000" value="2000"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,3: 12570" verbatim="12570" row="23" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="12570" confident="true" verbatim="12570" value="12570"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,4: 8725" verbatim="8725" row="23" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="8725" confident="true" verbatim="8725" value="8725"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,5: 3845" verbatim="3845" row="23" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="3845" confident="true" verbatim="3845" value="3845"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,6: 120" verbatim="120" row="23" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="120" confident="true" verbatim="120" value="120"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,7: 18" verbatim="18" row="23" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="18" confident="true" verbatim="18" value="18"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,8: 315" verbatim="315" row="23" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="315" confident="true" verbatim="315" value="315"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,1: vail, colorado" verbatim="Vail, Colorado" row="24" rowspan="1" column="1" colspan="1" concepts="//@concepts.31 //@concepts.34" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Vail" verbatim="Vail" concept="//@concepts.31"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,2: 5289" verbatim="5289" row="24" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="5289" confident="true" verbatim="5289" value="5289"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,3: 12250" verbatim="12250" row="24" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="12250" confident="true" verbatim="12250" value="12250"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,4: 8120" verbatim="8120" row="24" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="8120" confident="true" verbatim="8120" value="8120"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,5: 4130" verbatim="4130" row="24" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="4130" confident="true" verbatim="4130" value="4130"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,6: 193" verbatim="193" row="24" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="193" confident="true" verbatim="193" value="193"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,7: 34" verbatim="34" row="24" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="34" confident="true" verbatim="34" value="34"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,8: 370" verbatim="370" row="24" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="370" confident="true" verbatim="370" value="370"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,1: winter park, colorado" verbatim="Winter Park, Colorado" row="25" rowspan="1" column="1" colspan="1" concepts="//@concepts.32 //@concepts.34" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Winter Park" verbatim="Winter Park" concept="//@concepts.32"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,2: 2762" verbatim="2762" row="25" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2762" confident="true" verbatim="2762" value="2762"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,3: 12060" verbatim="12060" row="25" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="12060" confident="true" verbatim="12060" value="12060"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,4: 9000" verbatim="9000" row="25" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="9000" confident="true" verbatim="9000" value="9000"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,5: 3060" verbatim="3060" row="25" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="3060" confident="true" verbatim="3060" value="3060"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,6: 134" verbatim="134" row="25" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="134" confident="true" verbatim="134" value="134"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,7: 25" verbatim="25" row="25" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="25" confident="true" verbatim="25" value="25"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,8: 365" verbatim="365" row="25" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="365" confident="true" verbatim="365" value="365"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,1: pagosa springs, colorado" verbatim="Pagosa Springs, Colorado" row="26" rowspan="1" column="1" colspan="1" concepts="//@concepts.47 //@concepts.34" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Pagosa Springs" verbatim="Pagosa Springs" concept="//@concepts.47"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Colorado" verbatim="Colorado" concept="//@concepts.34"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,2: 1600" verbatim="1600" row="26" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1600" confident="true" verbatim="1600" value="1600"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,3: 11904" verbatim="11904" row="26" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="11904" confident="true" verbatim="11904" value="11904"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,4: 10300" verbatim="10300" row="26" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Integer" name="10300" confident="true" verbatim="10300" value="10300"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,5: 1604" verbatim="1604" row="26" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Integer" name="1604" confident="true" verbatim="1604" value="1604"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,6: 77" verbatim="77" row="26" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="77" confident="true" verbatim="77" value="77"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,7: 7" verbatim="7" row="26" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="7" confident="true" verbatim="7" value="7"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,8: 480" verbatim="480" row="26" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="480" confident="true" verbatim="480" value="480"/>
+    </cells>
+  </matrices>
+  <concepts xsi:type="pcmmm:Feature" name="Nearest city" myValuedCells="//@matrices.0/@cells.35 //@matrices.0/@cells.43 //@matrices.0/@cells.51 //@matrices.0/@cells.59 //@matrices.0/@cells.67 //@matrices.0/@cells.75 //@matrices.0/@cells.83 //@matrices.0/@cells.91 //@matrices.0/@cells.99 //@matrices.0/@cells.107 //@matrices.0/@cells.115 //@matrices.0/@cells.123 //@matrices.0/@cells.131 //@matrices.0/@cells.139 //@matrices.0/@cells.147 //@matrices.0/@cells.155 //@matrices.0/@cells.163 //@matrices.0/@cells.171 //@matrices.0/@cells.179 //@matrices.0/@cells.187 //@matrices.0/@cells.195 //@matrices.0/@cells.203 //@matrices.0/@cells.211 //@matrices.0/@cells.219 //@matrices.0/@cells.227 //@matrices.0/@cells.235" domain="//@domainCollection/@domains.0"/>
+  <concepts xsi:type="pcmmm:Feature" name="Skiable area (acres)" myValuedCells="//@matrices.0/@cells.36 //@matrices.0/@cells.44 //@matrices.0/@cells.52 //@matrices.0/@cells.60 //@matrices.0/@cells.68 //@matrices.0/@cells.76 //@matrices.0/@cells.84 //@matrices.0/@cells.92 //@matrices.0/@cells.100 //@matrices.0/@cells.108 //@matrices.0/@cells.116 //@matrices.0/@cells.124 //@matrices.0/@cells.132 //@matrices.0/@cells.140 //@matrices.0/@cells.148 //@matrices.0/@cells.156 //@matrices.0/@cells.164 //@matrices.0/@cells.172 //@matrices.0/@cells.180 //@matrices.0/@cells.188 //@matrices.0/@cells.196 //@matrices.0/@cells.204 //@matrices.0/@cells.212 //@matrices.0/@cells.220 //@matrices.0/@cells.228 //@matrices.0/@cells.236" domain="//@domainCollection/@domains.1"/>
+  <concepts xsi:type="pcmmm:Feature" name="Top elevation (feet)" myValuedCells="//@matrices.0/@cells.37 //@matrices.0/@cells.45 //@matrices.0/@cells.53 //@matrices.0/@cells.61 //@matrices.0/@cells.69 //@matrices.0/@cells.77 //@matrices.0/@cells.85 //@matrices.0/@cells.93 //@matrices.0/@cells.101 //@matrices.0/@cells.109 //@matrices.0/@cells.117 //@matrices.0/@cells.125 //@matrices.0/@cells.133 //@matrices.0/@cells.141 //@matrices.0/@cells.149 //@matrices.0/@cells.157 //@matrices.0/@cells.165 //@matrices.0/@cells.173 //@matrices.0/@cells.181 //@matrices.0/@cells.189 //@matrices.0/@cells.197 //@matrices.0/@cells.205 //@matrices.0/@cells.213 //@matrices.0/@cells.221 //@matrices.0/@cells.229 //@matrices.0/@cells.237" domain="//@domainCollection/@domains.2"/>
+  <concepts xsi:type="pcmmm:Feature" name="Base elevation (feet)" myValuedCells="//@matrices.0/@cells.38 //@matrices.0/@cells.46 //@matrices.0/@cells.54 //@matrices.0/@cells.62 //@matrices.0/@cells.70 //@matrices.0/@cells.78 //@matrices.0/@cells.86 //@matrices.0/@cells.94 //@matrices.0/@cells.102 //@matrices.0/@cells.110 //@matrices.0/@cells.118 //@matrices.0/@cells.126 //@matrices.0/@cells.134 //@matrices.0/@cells.142 //@matrices.0/@cells.150 //@matrices.0/@cells.158 //@matrices.0/@cells.166 //@matrices.0/@cells.174 //@matrices.0/@cells.182 //@matrices.0/@cells.190 //@matrices.0/@cells.198 //@matrices.0/@cells.206 //@matrices.0/@cells.214 //@matrices.0/@cells.222 //@matrices.0/@cells.230 //@matrices.0/@cells.238" domain="//@domainCollection/@domains.3"/>
+  <concepts xsi:type="pcmmm:Feature" name="Vertical (feet)" myValuedCells="//@matrices.0/@cells.39 //@matrices.0/@cells.47 //@matrices.0/@cells.55 //@matrices.0/@cells.63 //@matrices.0/@cells.71 //@matrices.0/@cells.79 //@matrices.0/@cells.87 //@matrices.0/@cells.95 //@matrices.0/@cells.103 //@matrices.0/@cells.111 //@matrices.0/@cells.119 //@matrices.0/@cells.127 //@matrices.0/@cells.135 //@matrices.0/@cells.143 //@matrices.0/@cells.151 //@matrices.0/@cells.159 //@matrices.0/@cells.167 //@matrices.0/@cells.175 //@matrices.0/@cells.183 //@matrices.0/@cells.191 //@matrices.0/@cells.199 //@matrices.0/@cells.207 //@matrices.0/@cells.215 //@matrices.0/@cells.223 //@matrices.0/@cells.231 //@matrices.0/@cells.239" domain="//@domainCollection/@domains.4"/>
+  <concepts xsi:type="pcmmm:Feature" name="Runs" myValuedCells="//@matrices.0/@cells.40 //@matrices.0/@cells.48 //@matrices.0/@cells.56 //@matrices.0/@cells.64 //@matrices.0/@cells.72 //@matrices.0/@cells.80 //@matrices.0/@cells.88 //@matrices.0/@cells.96 //@matrices.0/@cells.104 //@matrices.0/@cells.112 //@matrices.0/@cells.120 //@matrices.0/@cells.128 //@matrices.0/@cells.136 //@matrices.0/@cells.144 //@matrices.0/@cells.152 //@matrices.0/@cells.160 //@matrices.0/@cells.168 //@matrices.0/@cells.176 //@matrices.0/@cells.184 //@matrices.0/@cells.192 //@matrices.0/@cells.200 //@matrices.0/@cells.208 //@matrices.0/@cells.216 //@matrices.0/@cells.224 //@matrices.0/@cells.232 //@matrices.0/@cells.240" domain="//@domainCollection/@domains.5"/>
+  <concepts xsi:type="pcmmm:Feature" name="Lifts" myValuedCells="//@matrices.0/@cells.41 //@matrices.0/@cells.49 //@matrices.0/@cells.57 //@matrices.0/@cells.65 //@matrices.0/@cells.73 //@matrices.0/@cells.81 //@matrices.0/@cells.89 //@matrices.0/@cells.97 //@matrices.0/@cells.105 //@matrices.0/@cells.113 //@matrices.0/@cells.121 //@matrices.0/@cells.129 //@matrices.0/@cells.137 //@matrices.0/@cells.145 //@matrices.0/@cells.153 //@matrices.0/@cells.161 //@matrices.0/@cells.169 //@matrices.0/@cells.177 //@matrices.0/@cells.185 //@matrices.0/@cells.193 //@matrices.0/@cells.201 //@matrices.0/@cells.209 //@matrices.0/@cells.217 //@matrices.0/@cells.225 //@matrices.0/@cells.233 //@matrices.0/@cells.241" domain="//@domainCollection/@domains.6"/>
+  <concepts xsi:type="pcmmm:Feature" name="Snowfall (in/year)" myValuedCells="//@matrices.0/@cells.42 //@matrices.0/@cells.50 //@matrices.0/@cells.58 //@matrices.0/@cells.66 //@matrices.0/@cells.74 //@matrices.0/@cells.82 //@matrices.0/@cells.90 //@matrices.0/@cells.98 //@matrices.0/@cells.106 //@matrices.0/@cells.114 //@matrices.0/@cells.122 //@matrices.0/@cells.130 //@matrices.0/@cells.138 //@matrices.0/@cells.146 //@matrices.0/@cells.154 //@matrices.0/@cells.162 //@matrices.0/@cells.170 //@matrices.0/@cells.178 //@matrices.0/@cells.186 //@matrices.0/@cells.194 //@matrices.0/@cells.202 //@matrices.0/@cells.210 //@matrices.0/@cells.218 //@matrices.0/@cells.226 //@matrices.0/@cells.234 //@matrices.0/@cells.242" domain="//@domainCollection/@domains.7"/>
+  <concepts xsi:type="pcmmm:Product" name="Arapahoe Basin" myValuedCells="//@matrices.0/@cells.35 //@matrices.0/@cells.36 //@matrices.0/@cells.37 //@matrices.0/@cells.38 //@matrices.0/@cells.39 //@matrices.0/@cells.40 //@matrices.0/@cells.41 //@matrices.0/@cells.42"/>
+  <concepts xsi:type="pcmmm:Product" name="Aspen Highlands" myValuedCells="//@matrices.0/@cells.43 //@matrices.0/@cells.44 //@matrices.0/@cells.45 //@matrices.0/@cells.46 //@matrices.0/@cells.47 //@matrices.0/@cells.48 //@matrices.0/@cells.49 //@matrices.0/@cells.50"/>
+  <concepts xsi:type="pcmmm:Product" name="Aspen Mountain" myValuedCells="//@matrices.0/@cells.51 //@matrices.0/@cells.52 //@matrices.0/@cells.53 //@matrices.0/@cells.54 //@matrices.0/@cells.55 //@matrices.0/@cells.56 //@matrices.0/@cells.57 //@matrices.0/@cells.58"/>
+  <concepts xsi:type="pcmmm:Product" name="Beaver Creek" myValuedCells="//@matrices.0/@cells.59 //@matrices.0/@cells.60 //@matrices.0/@cells.61 //@matrices.0/@cells.62 //@matrices.0/@cells.63 //@matrices.0/@cells.64 //@matrices.0/@cells.65 //@matrices.0/@cells.66"/>
+  <concepts xsi:type="pcmmm:Product" name="Breckenridge" constraints="//@matrices.0/@cells.67" myValuedCells="//@matrices.0/@cells.67 //@matrices.0/@cells.68 //@matrices.0/@cells.69 //@matrices.0/@cells.70 //@matrices.0/@cells.71 //@matrices.0/@cells.72 //@matrices.0/@cells.73 //@matrices.0/@cells.74"/>
+  <concepts xsi:type="pcmmm:Product" name="Buttermilk" myValuedCells="//@matrices.0/@cells.75 //@matrices.0/@cells.76 //@matrices.0/@cells.77 //@matrices.0/@cells.78 //@matrices.0/@cells.79 //@matrices.0/@cells.80 //@matrices.0/@cells.81 //@matrices.0/@cells.82"/>
+  <concepts xsi:type="pcmmm:Product" name="Copper Mountain" constraints="//@matrices.0/@cells.83" myValuedCells="//@matrices.0/@cells.83 //@matrices.0/@cells.84 //@matrices.0/@cells.85 //@matrices.0/@cells.86 //@matrices.0/@cells.87 //@matrices.0/@cells.88 //@matrices.0/@cells.89 //@matrices.0/@cells.90"/>
+  <concepts xsi:type="pcmmm:Product" name="Crested Butte" constraints="//@matrices.0/@cells.91" myValuedCells="//@matrices.0/@cells.91 //@matrices.0/@cells.92 //@matrices.0/@cells.93 //@matrices.0/@cells.94 //@matrices.0/@cells.95 //@matrices.0/@cells.96 //@matrices.0/@cells.97 //@matrices.0/@cells.98"/>
+  <concepts xsi:type="pcmmm:Product" name="Durango" constraints="//@matrices.0/@cells.99" myValuedCells="//@matrices.0/@cells.99 //@matrices.0/@cells.100 //@matrices.0/@cells.101 //@matrices.0/@cells.102 //@matrices.0/@cells.103 //@matrices.0/@cells.104 //@matrices.0/@cells.105 //@matrices.0/@cells.106"/>
+  <concepts xsi:type="pcmmm:Product" name="Echo Mountain" myValuedCells="//@matrices.0/@cells.107 //@matrices.0/@cells.108 //@matrices.0/@cells.109 //@matrices.0/@cells.110 //@matrices.0/@cells.111 //@matrices.0/@cells.112 //@matrices.0/@cells.113 //@matrices.0/@cells.114"/>
+  <concepts xsi:type="pcmmm:Product" name="Eldora" myValuedCells="//@matrices.0/@cells.115 //@matrices.0/@cells.116 //@matrices.0/@cells.117 //@matrices.0/@cells.118 //@matrices.0/@cells.119 //@matrices.0/@cells.120 //@matrices.0/@cells.121 //@matrices.0/@cells.122"/>
+  <concepts xsi:type="pcmmm:Product" name="Hesperus" constraints="//@matrices.0/@cells.123" myValuedCells="//@matrices.0/@cells.123 //@matrices.0/@cells.124 //@matrices.0/@cells.125 //@matrices.0/@cells.126 //@matrices.0/@cells.127 //@matrices.0/@cells.128 //@matrices.0/@cells.129 //@matrices.0/@cells.130"/>
+  <concepts xsi:type="pcmmm:Product" name="Keystone" constraints="//@matrices.0/@cells.35 //@matrices.0/@cells.131" myValuedCells="//@matrices.0/@cells.131 //@matrices.0/@cells.132 //@matrices.0/@cells.133 //@matrices.0/@cells.134 //@matrices.0/@cells.135 //@matrices.0/@cells.136 //@matrices.0/@cells.137 //@matrices.0/@cells.138"/>
+  <concepts xsi:type="pcmmm:Product" name="Loveland" myValuedCells="//@matrices.0/@cells.139 //@matrices.0/@cells.140 //@matrices.0/@cells.141 //@matrices.0/@cells.142 //@matrices.0/@cells.143 //@matrices.0/@cells.144 //@matrices.0/@cells.145 //@matrices.0/@cells.146"/>
+  <concepts xsi:type="pcmmm:Product" name="Monarch" myValuedCells="//@matrices.0/@cells.147 //@matrices.0/@cells.148 //@matrices.0/@cells.149 //@matrices.0/@cells.150 //@matrices.0/@cells.151 //@matrices.0/@cells.152 //@matrices.0/@cells.153 //@matrices.0/@cells.154"/>
+  <concepts xsi:type="pcmmm:Product" name="Powderhorn" myValuedCells="//@matrices.0/@cells.155 //@matrices.0/@cells.156 //@matrices.0/@cells.157 //@matrices.0/@cells.158 //@matrices.0/@cells.159 //@matrices.0/@cells.160 //@matrices.0/@cells.161 //@matrices.0/@cells.162"/>
+  <concepts xsi:type="pcmmm:Product" name="Silverton Mountain" myValuedCells="//@matrices.0/@cells.163 //@matrices.0/@cells.164 //@matrices.0/@cells.165 //@matrices.0/@cells.166 //@matrices.0/@cells.167 //@matrices.0/@cells.168 //@matrices.0/@cells.169 //@matrices.0/@cells.170"/>
+  <concepts xsi:type="pcmmm:Product" name="Ski Cooper" myValuedCells="//@matrices.0/@cells.171 //@matrices.0/@cells.172 //@matrices.0/@cells.173 //@matrices.0/@cells.174 //@matrices.0/@cells.175 //@matrices.0/@cells.176 //@matrices.0/@cells.177 //@matrices.0/@cells.178"/>
+  <concepts xsi:type="pcmmm:Product" name="Snowmass" myValuedCells="//@matrices.0/@cells.179 //@matrices.0/@cells.180 //@matrices.0/@cells.181 //@matrices.0/@cells.182 //@matrices.0/@cells.183 //@matrices.0/@cells.184 //@matrices.0/@cells.185 //@matrices.0/@cells.186"/>
+  <concepts xsi:type="pcmmm:Product" name="Ski Granby Ranch" myValuedCells="//@matrices.0/@cells.187 //@matrices.0/@cells.188 //@matrices.0/@cells.189 //@matrices.0/@cells.190 //@matrices.0/@cells.191 //@matrices.0/@cells.192 //@matrices.0/@cells.193 //@matrices.0/@cells.194"/>
+  <concepts xsi:type="pcmmm:Product" name="Steamboat" myValuedCells="//@matrices.0/@cells.195 //@matrices.0/@cells.196 //@matrices.0/@cells.197 //@matrices.0/@cells.198 //@matrices.0/@cells.199 //@matrices.0/@cells.200 //@matrices.0/@cells.201 //@matrices.0/@cells.202"/>
+  <concepts xsi:type="pcmmm:Product" name="Sunlight" myValuedCells="//@matrices.0/@cells.203 //@matrices.0/@cells.204 //@matrices.0/@cells.205 //@matrices.0/@cells.206 //@matrices.0/@cells.207 //@matrices.0/@cells.208 //@matrices.0/@cells.209 //@matrices.0/@cells.210"/>
+  <concepts xsi:type="pcmmm:Product" name="Telluride" constraints="//@matrices.0/@cells.211" myValuedCells="//@matrices.0/@cells.211 //@matrices.0/@cells.212 //@matrices.0/@cells.213 //@matrices.0/@cells.214 //@matrices.0/@cells.215 //@matrices.0/@cells.216 //@matrices.0/@cells.217 //@matrices.0/@cells.218"/>
+  <concepts xsi:type="pcmmm:Product" name="Vail" constraints="//@matrices.0/@cells.219" myValuedCells="//@matrices.0/@cells.219 //@matrices.0/@cells.220 //@matrices.0/@cells.221 //@matrices.0/@cells.222 //@matrices.0/@cells.223 //@matrices.0/@cells.224 //@matrices.0/@cells.225 //@matrices.0/@cells.226"/>
+  <concepts xsi:type="pcmmm:Product" name="Winter Park" constraints="//@matrices.0/@cells.227" myValuedCells="//@matrices.0/@cells.227 //@matrices.0/@cells.228 //@matrices.0/@cells.229 //@matrices.0/@cells.230 //@matrices.0/@cells.231 //@matrices.0/@cells.232 //@matrices.0/@cells.233 //@matrices.0/@cells.234"/>
+  <concepts xsi:type="pcmmm:Product" name="Wolf Creek" myValuedCells="//@matrices.0/@cells.235 //@matrices.0/@cells.236 //@matrices.0/@cells.237 //@matrices.0/@cells.238 //@matrices.0/@cells.239 //@matrices.0/@cells.240 //@matrices.0/@cells.241 //@matrices.0/@cells.242"/>
+  <concepts xsi:type="pcmmm:Feature" name="Colorado" constraints="//@matrices.0/@cells.35 //@matrices.0/@cells.43 //@matrices.0/@cells.51 //@matrices.0/@cells.59 //@matrices.0/@cells.67 //@matrices.0/@cells.75 //@matrices.0/@cells.83 //@matrices.0/@cells.91 //@matrices.0/@cells.99 //@matrices.0/@cells.107 //@matrices.0/@cells.115 //@matrices.0/@cells.123 //@matrices.0/@cells.131 //@matrices.0/@cells.139 //@matrices.0/@cells.147 //@matrices.0/@cells.155 //@matrices.0/@cells.163 //@matrices.0/@cells.171 //@matrices.0/@cells.179 //@matrices.0/@cells.187 //@matrices.0/@cells.195 //@matrices.0/@cells.203 //@matrices.0/@cells.211 //@matrices.0/@cells.219 //@matrices.0/@cells.227 //@matrices.0/@cells.235" domain="//@domainCollection/@domains.8"/>
+  <concepts xsi:type="pcmmm:Feature" name="Aspen" constraints="//@matrices.0/@cells.43 //@matrices.0/@cells.51 //@matrices.0/@cells.75 //@matrices.0/@cells.179" domain="//@domainCollection/@domains.9"/>
+  <concepts xsi:type="pcmmm:Feature" name="Avon" constraints="//@matrices.0/@cells.59" domain="//@domainCollection/@domains.10"/>
+  <concepts xsi:type="pcmmm:Feature" name="Evergreen" constraints="//@matrices.0/@cells.107" domain="//@domainCollection/@domains.11"/>
+  <concepts xsi:type="pcmmm:Feature" name="Nederland" constraints="//@matrices.0/@cells.115" domain="//@domainCollection/@domains.12"/>
+  <concepts xsi:type="pcmmm:Feature" name="Silverthorne" constraints="//@matrices.0/@cells.139" domain="//@domainCollection/@domains.13"/>
+  <concepts xsi:type="pcmmm:Feature" name="Salida" constraints="//@matrices.0/@cells.147" domain="//@domainCollection/@domains.14"/>
+  <concepts xsi:type="pcmmm:Feature" name="Grand Junction" constraints="//@matrices.0/@cells.155" domain="//@domainCollection/@domains.15"/>
+  <concepts xsi:type="pcmmm:Feature" name="Silverton" constraints="//@matrices.0/@cells.163" domain="//@domainCollection/@domains.16"/>
+  <concepts xsi:type="pcmmm:Feature" name="Leadville" constraints="//@matrices.0/@cells.171" domain="//@domainCollection/@domains.17"/>
+  <concepts xsi:type="pcmmm:Feature" name="Granby" constraints="//@matrices.0/@cells.187" domain="//@domainCollection/@domains.18"/>
+  <concepts xsi:type="pcmmm:Feature" name="Steamboat Springs" constraints="//@matrices.0/@cells.195" domain="//@domainCollection/@domains.19"/>
+  <concepts xsi:type="pcmmm:Feature" name="Glenwood Springs" constraints="//@matrices.0/@cells.203" domain="//@domainCollection/@domains.20"/>
+  <concepts xsi:type="pcmmm:Feature" name="Pagosa Springs" constraints="//@matrices.0/@cells.235" domain="//@domainCollection/@domains.21"/>
+  <domainCollection>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.35/@interpretation/@contraints.1 //@matrices.0/@cells.43/@interpretation/@contraints.1 //@matrices.0/@cells.51/@interpretation/@contraints.1 //@matrices.0/@cells.59/@interpretation/@contraints.1 //@matrices.0/@cells.67/@interpretation/@contraints.1 //@matrices.0/@cells.75/@interpretation/@contraints.1 //@matrices.0/@cells.83/@interpretation/@contraints.1 //@matrices.0/@cells.91/@interpretation/@contraints.1 //@matrices.0/@cells.99/@interpretation/@contraints.1 //@matrices.0/@cells.107/@interpretation/@contraints.1 //@matrices.0/@cells.115/@interpretation/@contraints.1 //@matrices.0/@cells.123/@interpretation/@contraints.1 //@matrices.0/@cells.131/@interpretation/@contraints.1 //@matrices.0/@cells.139/@interpretation/@contraints.1 //@matrices.0/@cells.147/@interpretation/@contraints.1 //@matrices.0/@cells.155/@interpretation/@contraints.1 //@matrices.0/@cells.163/@interpretation/@contraints.1 //@matrices.0/@cells.171/@interpretation/@contraints.1 //@matrices.0/@cells.179/@interpretation/@contraints.1 //@matrices.0/@cells.187/@interpretation/@contraints.1 //@matrices.0/@cells.195/@interpretation/@contraints.1 //@matrices.0/@cells.203/@interpretation/@contraints.1 //@matrices.0/@cells.211/@interpretation/@contraints.1 //@matrices.0/@cells.219/@interpretation/@contraints.1 //@matrices.0/@cells.227/@interpretation/@contraints.1 //@matrices.0/@cells.235/@interpretation/@contraints.1"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.36/@interpretation //@matrices.0/@cells.44/@interpretation //@matrices.0/@cells.52/@interpretation //@matrices.0/@cells.60/@interpretation //@matrices.0/@cells.68/@interpretation //@matrices.0/@cells.76/@interpretation //@matrices.0/@cells.84/@interpretation //@matrices.0/@cells.92/@interpretation //@matrices.0/@cells.100/@interpretation //@matrices.0/@cells.108/@interpretation //@matrices.0/@cells.116/@interpretation //@matrices.0/@cells.124/@interpretation //@matrices.0/@cells.132/@interpretation //@matrices.0/@cells.140/@interpretation //@matrices.0/@cells.148/@interpretation //@matrices.0/@cells.156/@interpretation //@matrices.0/@cells.164/@interpretation //@matrices.0/@cells.172/@interpretation //@matrices.0/@cells.180/@interpretation //@matrices.0/@cells.188/@interpretation //@matrices.0/@cells.196/@interpretation //@matrices.0/@cells.204/@interpretation //@matrices.0/@cells.212/@interpretation //@matrices.0/@cells.220/@interpretation //@matrices.0/@cells.228/@interpretation //@matrices.0/@cells.236/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.37/@interpretation //@matrices.0/@cells.45/@interpretation //@matrices.0/@cells.53/@interpretation //@matrices.0/@cells.61/@interpretation //@matrices.0/@cells.69/@interpretation //@matrices.0/@cells.77/@interpretation //@matrices.0/@cells.85/@interpretation //@matrices.0/@cells.93/@interpretation //@matrices.0/@cells.101/@interpretation //@matrices.0/@cells.109/@interpretation //@matrices.0/@cells.117/@interpretation //@matrices.0/@cells.125/@interpretation //@matrices.0/@cells.133/@interpretation //@matrices.0/@cells.141/@interpretation //@matrices.0/@cells.149/@interpretation //@matrices.0/@cells.157/@interpretation //@matrices.0/@cells.165/@interpretation //@matrices.0/@cells.173/@interpretation //@matrices.0/@cells.181/@interpretation //@matrices.0/@cells.189/@interpretation //@matrices.0/@cells.197/@interpretation //@matrices.0/@cells.205/@interpretation //@matrices.0/@cells.213/@interpretation //@matrices.0/@cells.221/@interpretation //@matrices.0/@cells.229/@interpretation //@matrices.0/@cells.237/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.38/@interpretation //@matrices.0/@cells.46/@interpretation //@matrices.0/@cells.54/@interpretation //@matrices.0/@cells.62/@interpretation //@matrices.0/@cells.70/@interpretation //@matrices.0/@cells.78/@interpretation //@matrices.0/@cells.86/@interpretation //@matrices.0/@cells.94/@interpretation //@matrices.0/@cells.102/@interpretation //@matrices.0/@cells.110/@interpretation //@matrices.0/@cells.118/@interpretation //@matrices.0/@cells.126/@interpretation //@matrices.0/@cells.134/@interpretation //@matrices.0/@cells.142/@interpretation //@matrices.0/@cells.150/@interpretation //@matrices.0/@cells.158/@interpretation //@matrices.0/@cells.166/@interpretation //@matrices.0/@cells.174/@interpretation //@matrices.0/@cells.182/@interpretation //@matrices.0/@cells.190/@interpretation //@matrices.0/@cells.198/@interpretation //@matrices.0/@cells.206/@interpretation //@matrices.0/@cells.214/@interpretation //@matrices.0/@cells.222/@interpretation //@matrices.0/@cells.230/@interpretation //@matrices.0/@cells.238/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.39/@interpretation //@matrices.0/@cells.47/@interpretation //@matrices.0/@cells.55/@interpretation //@matrices.0/@cells.63/@interpretation //@matrices.0/@cells.71/@interpretation //@matrices.0/@cells.79/@interpretation //@matrices.0/@cells.87/@interpretation //@matrices.0/@cells.95/@interpretation //@matrices.0/@cells.103/@interpretation //@matrices.0/@cells.111/@interpretation //@matrices.0/@cells.119/@interpretation //@matrices.0/@cells.127/@interpretation //@matrices.0/@cells.135/@interpretation //@matrices.0/@cells.143/@interpretation //@matrices.0/@cells.151/@interpretation //@matrices.0/@cells.159/@interpretation //@matrices.0/@cells.167/@interpretation //@matrices.0/@cells.175/@interpretation //@matrices.0/@cells.183/@interpretation //@matrices.0/@cells.191/@interpretation //@matrices.0/@cells.199/@interpretation //@matrices.0/@cells.207/@interpretation //@matrices.0/@cells.215/@interpretation //@matrices.0/@cells.223/@interpretation //@matrices.0/@cells.231/@interpretation //@matrices.0/@cells.239/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.40/@interpretation //@matrices.0/@cells.48/@interpretation //@matrices.0/@cells.56/@interpretation //@matrices.0/@cells.64/@interpretation //@matrices.0/@cells.72/@interpretation //@matrices.0/@cells.80/@interpretation //@matrices.0/@cells.88/@interpretation //@matrices.0/@cells.96/@interpretation //@matrices.0/@cells.104/@interpretation //@matrices.0/@cells.112/@interpretation //@matrices.0/@cells.120/@interpretation //@matrices.0/@cells.128/@interpretation //@matrices.0/@cells.136/@interpretation //@matrices.0/@cells.144/@interpretation //@matrices.0/@cells.152/@interpretation //@matrices.0/@cells.160/@interpretation //@matrices.0/@cells.176/@interpretation //@matrices.0/@cells.184/@interpretation //@matrices.0/@cells.192/@interpretation //@matrices.0/@cells.200/@interpretation //@matrices.0/@cells.208/@interpretation //@matrices.0/@cells.216/@interpretation //@matrices.0/@cells.224/@interpretation //@matrices.0/@cells.232/@interpretation //@matrices.0/@cells.240/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.41/@interpretation //@matrices.0/@cells.49/@interpretation //@matrices.0/@cells.57/@interpretation //@matrices.0/@cells.65/@interpretation //@matrices.0/@cells.73/@interpretation //@matrices.0/@cells.81/@interpretation //@matrices.0/@cells.89/@interpretation //@matrices.0/@cells.97/@interpretation //@matrices.0/@cells.105/@interpretation //@matrices.0/@cells.113/@interpretation //@matrices.0/@cells.121/@interpretation //@matrices.0/@cells.129/@interpretation //@matrices.0/@cells.137/@interpretation //@matrices.0/@cells.145/@interpretation //@matrices.0/@cells.153/@interpretation //@matrices.0/@cells.161/@interpretation //@matrices.0/@cells.169/@interpretation //@matrices.0/@cells.177/@interpretation //@matrices.0/@cells.185/@interpretation //@matrices.0/@cells.193/@interpretation //@matrices.0/@cells.201/@interpretation //@matrices.0/@cells.209/@interpretation //@matrices.0/@cells.217/@interpretation //@matrices.0/@cells.225/@interpretation //@matrices.0/@cells.233/@interpretation //@matrices.0/@cells.241/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.42/@interpretation //@matrices.0/@cells.50/@interpretation //@matrices.0/@cells.58/@interpretation //@matrices.0/@cells.66/@interpretation //@matrices.0/@cells.74/@interpretation //@matrices.0/@cells.82/@interpretation //@matrices.0/@cells.90/@interpretation //@matrices.0/@cells.98/@interpretation //@matrices.0/@cells.106/@interpretation //@matrices.0/@cells.114/@interpretation //@matrices.0/@cells.122/@interpretation //@matrices.0/@cells.130/@interpretation //@matrices.0/@cells.138/@interpretation //@matrices.0/@cells.146/@interpretation //@matrices.0/@cells.154/@interpretation //@matrices.0/@cells.162/@interpretation //@matrices.0/@cells.170/@interpretation //@matrices.0/@cells.178/@interpretation //@matrices.0/@cells.186/@interpretation //@matrices.0/@cells.194/@interpretation //@matrices.0/@cells.202/@interpretation //@matrices.0/@cells.210/@interpretation //@matrices.0/@cells.218/@interpretation //@matrices.0/@cells.226/@interpretation //@matrices.0/@cells.234/@interpretation //@matrices.0/@cells.242/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+  </domainCollection>
+</pcmmm:PCM>

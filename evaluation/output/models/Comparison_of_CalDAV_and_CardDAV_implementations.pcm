@@ -1,0 +1,1261 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="Client implementations" id="Client implementations_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: platform" verbatim="Platform" rowspan="1" column="1" colspan="1" concept="//@concepts.0"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: license" verbatim="License" rowspan="1" column="2" colspan="1" concept="//@concepts.1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: caldav events" verbatim="CalDAV Events" rowspan="1" column="3" colspan="1" concept="//@concepts.2"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: caldav tasks" verbatim="CalDAV Tasks" rowspan="1" column="4" colspan="1" concept="//@concepts.3"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: carddav" verbatim="CardDAV" rowspan="1" column="5" colspan="1" concept="//@concepts.4"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: busycal" verbatim="BusyCal" row="1" rowspan="1" colspan="1" concept="//@concepts.5"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: agendav" verbatim="AgenDAV" row="2" rowspan="1" colspan="1" concept="//@concepts.6"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: calendarsync" verbatim="CalendarSync" row="3" rowspan="1" colspan="1" concept="//@concepts.7"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: caldav tasksync free" verbatim="CalDAV Tasksync free" row="4" rowspan="1" colspan="1" concept="//@concepts.8"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: acal" verbatim="aCal" row="5" rowspan="1" colspan="1" concept="//@concepts.9"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: androidcaldavsyncadapater" verbatim="AndroidCaldavSyncAdapater" row="6" rowspan="1" colspan="1" concept="//@concepts.10"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: contactsync" verbatim="ContactSync" row="7" rowspan="1" colspan="1" concept="//@concepts.11"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: caldav-sync" verbatim="CalDAV-Sync" row="8" rowspan="1" colspan="1" concept="//@concepts.12"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: carddav-sync" verbatim="CardDAV-Sync" row="9" rowspan="1" colspan="1" concept="//@concepts.13"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: caldavzap" verbatim="CalDavZAP" row="10" rowspan="1" colspan="1" concept="//@concepts.14"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: carddavmate" verbatim="CardDavMATE" row="11" rowspan="1" colspan="1" concept="//@concepts.15"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: chandler desktop" verbatim="Chandler Desktop" row="12" rowspan="1" colspan="1" concept="//@concepts.16"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: daylite" verbatim="Daylite" row="13" rowspan="1" colspan="1" concept="//@concepts.17"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: davdroid" verbatim="DAVdroid" row="14" rowspan="1" colspan="1" concept="//@concepts.18"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: em client" verbatim="eM Client" row="15" rowspan="1" colspan="1" concept="//@concepts.19"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: fantastical" verbatim="Fantastical" row="16" rowspan="1" colspan="1" concept="//@concepts.20"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: jqcaldav" verbatim="jqCalDAV" row="17" rowspan="1" colspan="1" concept="//@concepts.21"/>
+    <cells xsi:type="pcmmm:Header" name="18,0: kcarddav" verbatim="KCardDAV" row="18" rowspan="1" colspan="1" concept="//@concepts.22"/>
+    <cells xsi:type="pcmmm:Header" name="19,0: lightning" verbatim="Lightning" row="19" rowspan="1" colspan="1" concept="//@concepts.23"/>
+    <cells xsi:type="pcmmm:Header" name="20,0: mulberry" verbatim="Mulberry" row="20" rowspan="1" colspan="1" concept="//@concepts.24"/>
+    <cells xsi:type="pcmmm:Header" name="21,0: pycarddav" verbatim="pyCardDAV" row="21" rowspan="1" colspan="1" concept="//@concepts.25"/>
+    <cells xsi:type="pcmmm:Header" name="22,0: inverse sogo connector/integrator" verbatim="Inverse SOGo Connector/Integrator" row="22" rowspan="1" colspan="1" concept="//@concepts.26"/>
+    <cells xsi:type="pcmmm:Header" name="23,0: evolution" verbatim="Evolution" row="23" rowspan="1" colspan="1" concept="//@concepts.27"/>
+    <cells xsi:type="pcmmm:Header" name="24,0: calendars/reminders/contacts/mail" verbatim="Calendars/Reminders/Contacts/Mail" row="24" rowspan="1" colspan="1" concept="//@concepts.28"/>
+    <cells xsi:type="pcmmm:Header" name="25,0: surgate outlook sync client" verbatim="SurGATE Outlook Sync Client" row="25" rowspan="1" colspan="1" concept="//@concepts.29"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: client name" verbatim="Client name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: mac os x" verbatim="Mac OS X" row="1" rowspan="1" column="1" colspan="1" concepts="//@concepts.60" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Mac OS X" verbatim="Mac OS X" concept="//@concepts.60"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: proprietary" verbatim="Proprietary" row="1" rowspan="1" column="2" colspan="1" concepts="//@concepts.61" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.61"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,4: no" verbatim="No" row="1" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,5: n/a" verbatim="N/A" row="1" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: cross-platform javascript web application" verbatim="Cross-platform JavaScript Web application" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.62" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Cross-platform JavaScript Web application" verbatim="Cross-platform JavaScript Web application" concept="//@concepts.62"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: gpl" verbatim="GPL" row="2" rowspan="1" column="2" colspan="1" concepts="//@concepts.63" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.63"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,4: n/a" verbatim="N/A" row="2" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,5: n/a" verbatim="N/A" row="2" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: android app" verbatim="Android App" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.64" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Android App" verbatim="Android App" concept="//@concepts.64"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: ?" verbatim="?" row="3" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: yes" verbatim="Yes" row="3" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,4: n/a" verbatim="N/A" row="3" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,5: n/a" verbatim="N/A" row="3" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: android app" verbatim="Android App" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.64" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Android App" verbatim="Android App" concept="//@concepts.64"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: ?" verbatim="?" row="4" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: n/a" verbatim="N/A" row="4" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,4: yes" verbatim="Yes" row="4" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,5: n/a" verbatim="N/A" row="4" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: android app" verbatim="Android App" row="5" rowspan="1" column="1" colspan="1" concepts="//@concepts.64" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Android App" verbatim="Android App" concept="//@concepts.64"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: gpl" verbatim="GPL" row="5" rowspan="1" column="2" colspan="1" concepts="//@concepts.63" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.63"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,3: yes" verbatim="Yes" row="5" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,4: yes" verbatim="Yes" row="5" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,5: n/a" verbatim="N/A" row="5" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,1: android app" verbatim="Android App" row="6" rowspan="1" column="1" colspan="1" concepts="//@concepts.64" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Android App" verbatim="Android App" concept="//@concepts.64"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,2: gpl" verbatim="GPL" row="6" rowspan="1" column="2" colspan="1" concepts="//@concepts.63" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.63"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,3: yes" verbatim="Yes" row="6" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,4: n/a" verbatim="N/A" row="6" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,5: n/a" verbatim="N/A" row="6" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,1: android app" verbatim="Android App" row="7" rowspan="1" column="1" colspan="1" concepts="//@concepts.64" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Android App" verbatim="Android App" concept="//@concepts.64"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,2: ?" verbatim="?" row="7" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,3: n/a" verbatim="N/A" row="7" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,4: n/a" verbatim="N/A" row="7" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,5: yes" verbatim="Yes" row="7" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,1: android app" verbatim="Android App" row="8" rowspan="1" column="1" colspan="1" concepts="//@concepts.64" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Android App" verbatim="Android App" concept="//@concepts.64"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,2: proprietary" verbatim="Proprietary" row="8" rowspan="1" column="2" colspan="1" concepts="//@concepts.61" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.61"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,3: yes" verbatim="Yes" row="8" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,4: yes" verbatim="Yes" row="8" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,5: n/a" verbatim="N/A" row="8" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,1: android app" verbatim="Android App" row="9" rowspan="1" column="1" colspan="1" concepts="//@concepts.64" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Android App" verbatim="Android App" concept="//@concepts.64"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,2: ?" verbatim="?" row="9" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,3: n/a" verbatim="N/A" row="9" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,4: n/a" verbatim="N/A" row="9" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,5: yes" verbatim="Yes" row="9" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,1: cross-platform javascript web application" verbatim="Cross-platform JavaScript Web application" row="10" rowspan="1" column="1" colspan="1" concepts="//@concepts.62" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Cross-platform JavaScript Web application" verbatim="Cross-platform JavaScript Web application" concept="//@concepts.62"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,2: agpl" verbatim="AGPL" row="10" rowspan="1" column="2" colspan="1" concepts="//@concepts.65" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="AGPL" verbatim="AGPL" concept="//@concepts.65"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,3: yes" verbatim="Yes" row="10" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,4: yes" verbatim="Yes" row="10" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,5: n/a" verbatim="N/A" row="10" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,1: cross-platform javascript web application" verbatim="Cross-platform JavaScript Web application" row="11" rowspan="1" column="1" colspan="1" concepts="//@concepts.62" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Cross-platform JavaScript Web application" verbatim="Cross-platform JavaScript Web application" concept="//@concepts.62"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,2: agpl" verbatim="AGPL" row="11" rowspan="1" column="2" colspan="1" concepts="//@concepts.65" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="AGPL" verbatim="AGPL" concept="//@concepts.65"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,3: n/a" verbatim="N/A" row="11" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,4: n/a" verbatim="N/A" row="11" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,5: yes" verbatim="Yes" row="11" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,1: cross-platform python" verbatim="Cross-platform Python" row="12" rowspan="1" column="1" colspan="1" concepts="//@concepts.66" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Cross-platform Python" verbatim="Cross-platform Python" concept="//@concepts.66"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,2: apache" verbatim="Apache" row="12" rowspan="1" column="2" colspan="1" concepts="//@concepts.67" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Apache" verbatim="Apache" concept="//@concepts.67"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,3: yes" verbatim="Yes" row="12" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,4: yes" verbatim="Yes" row="12" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,5: no" verbatim="No" row="12" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,1: mac os x" verbatim="Mac OS X" row="13" rowspan="1" column="1" colspan="1" concepts="//@concepts.60" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Mac OS X" verbatim="Mac OS X" concept="//@concepts.60"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,2: proprietary" verbatim="Proprietary" row="13" rowspan="1" column="2" colspan="1" concepts="//@concepts.61" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.61"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,3: yes" verbatim="Yes" row="13" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,4: no" verbatim="No" row="13" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,5: no" verbatim="No" row="13" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,1: android app" verbatim="Android App" row="14" rowspan="1" column="1" colspan="1" concepts="//@concepts.64" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Android App" verbatim="Android App" concept="//@concepts.64"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,2: gpl" verbatim="GPL" row="14" rowspan="1" column="2" colspan="1" concepts="//@concepts.63" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.63"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,3: yes" verbatim="Yes" row="14" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,4: ?" verbatim="?" row="14" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,5: yes" verbatim="Yes" row="14" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,1: microsoft windows" verbatim="Microsoft Windows" row="15" rowspan="1" column="1" colspan="1" concepts="//@concepts.68" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft Windows" verbatim="Microsoft Windows" concept="//@concepts.68"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,2: proprietary" verbatim="Proprietary" row="15" rowspan="1" column="2" colspan="1" concepts="//@concepts.61" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.61"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,3: yes" verbatim="Yes" row="15" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,4: yes" verbatim="Yes" row="15" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,5: yes" verbatim="Yes" row="15" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,1: mac os x" verbatim="Mac OS X" row="16" rowspan="1" column="1" colspan="1" concepts="//@concepts.60" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Mac OS X" verbatim="Mac OS X" concept="//@concepts.60"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,2: proprietary" verbatim="Proprietary" row="16" rowspan="1" column="2" colspan="1" concepts="//@concepts.61" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.61"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,3: yes" verbatim="Yes" row="16" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,4: ?" verbatim="?" row="16" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,5: no" verbatim="No" row="16" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,1: cross-platform javascript web application" verbatim="Cross-platform JavaScript Web application" row="17" rowspan="1" column="1" colspan="1" concepts="//@concepts.62" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Cross-platform JavaScript Web application" verbatim="Cross-platform JavaScript Web application" concept="//@concepts.62"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,2: mit" verbatim="MIT" row="17" rowspan="1" column="2" colspan="1" concepts="//@concepts.69" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="MIT" verbatim="MIT" concept="//@concepts.69"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,3: yes" verbatim="Yes" row="17" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,4: yes" verbatim="Yes" row="17" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,5: n/a" verbatim="N/A" row="17" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,1: cross-platform kontact add-on" verbatim="Cross-platform Kontact add-on" row="18" rowspan="1" column="1" colspan="1" concepts="//@concepts.70" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Cross-platform Kontact add-on" verbatim="Cross-platform Kontact add-on" concept="//@concepts.70"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,2: gpl" verbatim="GPL" row="18" rowspan="1" column="2" colspan="1" concepts="//@concepts.63" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.63"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,3: n/a" verbatim="N/A" row="18" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,4: n/a" verbatim="N/A" row="18" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,5: yes" verbatim="Yes" row="18" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,1: cross-platform thunderbird add-on" verbatim="Cross-platform Thunderbird Add-on" row="19" rowspan="1" column="1" colspan="1" concepts="//@concepts.71" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Cross-platform Thunderbird Add-on" verbatim="Cross-platform Thunderbird Add-on" concept="//@concepts.71"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,2: mpl/gpl/lgpl" verbatim="MPL/GPL/LGPL" row="19" rowspan="1" column="2" colspan="1" concepts="//@concepts.72 //@concepts.63 //@concepts.73" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MPL" verbatim="MPL" concept="//@concepts.72"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.63"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="LGPL" verbatim="LGPL" concept="//@concepts.73"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,3: yes" verbatim="Yes" row="19" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,4: yes" verbatim="Yes" row="19" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,5: n/a" verbatim="N/A" row="19" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,1: cross-platform" verbatim="Cross-platform" row="20" rowspan="1" column="1" colspan="1" concepts="//@concepts.74" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Cross-platform" verbatim="Cross-platform" concept="//@concepts.74"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,2: apache" verbatim="Apache" row="20" rowspan="1" column="2" colspan="1" concepts="//@concepts.67" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Apache" verbatim="Apache" concept="//@concepts.67"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,3: yes" verbatim="Yes" row="20" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,4: yes" verbatim="Yes" row="20" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,5: yes" verbatim="Yes" row="20" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,1: cross-platform python" verbatim="Cross-platform Python" row="21" rowspan="1" column="1" colspan="1" concepts="//@concepts.66" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Cross-platform Python" verbatim="Cross-platform Python" concept="//@concepts.66"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,2: mit" verbatim="MIT" row="21" rowspan="1" column="2" colspan="1" concepts="//@concepts.69" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="MIT" verbatim="MIT" concept="//@concepts.69"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,3: n/a" verbatim="N/A" row="21" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,4: n/a" verbatim="N/A" row="21" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,5: yes" verbatim="Yes" row="21" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,1: cross-platform thunderbird add-on" verbatim="Cross-platform Thunderbird Add-on" row="22" rowspan="1" column="1" colspan="1" concepts="//@concepts.71" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Cross-platform Thunderbird Add-on" verbatim="Cross-platform Thunderbird Add-on" concept="//@concepts.71"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,2: mpl/gpl/lgpl" verbatim="MPL/GPL/LGPL" row="22" rowspan="1" column="2" colspan="1" concepts="//@concepts.72 //@concepts.63 //@concepts.73" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MPL" verbatim="MPL" concept="//@concepts.72"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.63"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="LGPL" verbatim="LGPL" concept="//@concepts.73"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,3: yes" verbatim="Yes" row="22" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,4: yes" verbatim="Yes" row="22" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,5: yes" verbatim="Yes" row="22" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,1: cross-platform" verbatim="Cross-platform" row="23" rowspan="1" column="1" colspan="1" concepts="//@concepts.74" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Cross-platform" verbatim="Cross-platform" concept="//@concepts.74"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,2: gpl" verbatim="GPL" row="23" rowspan="1" column="2" colspan="1" concepts="//@concepts.63" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.63"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,3: yes" verbatim="Yes" row="23" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,4: yes" verbatim="Yes" row="23" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,5: cards via webdav" verbatim="Cards via WebDAV" row="23" rowspan="1" column="5" colspan="1" concepts="//@concepts.75" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Cards via WebDAV" verbatim="Cards via WebDAV" concept="//@concepts.75"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,1: ios and mac os x" verbatim="iOS and Mac OS X" row="24" rowspan="1" column="1" colspan="1" concepts="//@concepts.76 //@concepts.60" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="iOS" verbatim="iOS" concept="//@concepts.76"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Mac OS X" verbatim="Mac OS X" concept="//@concepts.60"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,2: proprietary" verbatim="Proprietary" row="24" rowspan="1" column="2" colspan="1" concepts="//@concepts.61" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.61"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,3: yes" verbatim="Yes" row="24" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,4: yes" verbatim="Yes" row="24" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,5: yes" verbatim="Yes" row="24" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,1: microsoft windows" verbatim="Microsoft Windows" row="25" rowspan="1" column="1" colspan="1" concepts="//@concepts.68" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft Windows" verbatim="Microsoft Windows" concept="//@concepts.68"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,2: proprietary" verbatim="Proprietary" row="25" rowspan="1" column="2" colspan="1" concepts="//@concepts.61" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.61"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,3: yes" verbatim="Yes" row="25" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,4: yes" verbatim="Yes" row="25" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,5: yes" verbatim="Yes" row="25" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+  </matrices>
+  <matrices name="Server implementations" id="Server implementations_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: lic." verbatim="Lic." rowspan="1" column="1" colspan="1" concept="//@concepts.30"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: rfc 2616 http 1.1 spec." verbatim="RFC 2616 HTTP 1.1 spec." rowspan="1" column="2" colspan="1" concept="//@concepts.31"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: rfc 2617 http access auth." verbatim="RFC 2617 HTTP access auth." rowspan="1" column="3" colspan="1" concept="//@concepts.32"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: rfc 2518 web dav spec." verbatim="RFC 2518 Web DAV spec." rowspan="1" column="4" colspan="1" concept="//@concepts.33"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: rfc 3253 web dav ext." verbatim="RFC 3253 Web DAV ext." rowspan="1" column="5" colspan="1" concept="//@concepts.34"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: rfc 3744 web dav acl" verbatim="RFC 3744 Web DAV ACL" rowspan="1" column="6" colspan="1" concept="//@concepts.35"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: rfc 4324 ical cap spec." verbatim="RFC 4324 iCal CAP spec." rowspan="1" column="7" colspan="1" concept="//@concepts.36"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: rfc 4709 web dav mount" verbatim="RFC 4709 Web DAV mount" rowspan="1" column="8" colspan="1" concept="//@concepts.37"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: rfc 4791 cal dav spec." verbatim="RFC 4791 Cal DAV spec." rowspan="1" column="9" colspan="1" concept="//@concepts.38"/>
+    <cells xsi:type="pcmmm:Header" name="0,10: rfc 4918 web dav ext." verbatim="RFC 4918 Web DAV ext." rowspan="1" column="10" colspan="1" concept="//@concepts.39"/>
+    <cells xsi:type="pcmmm:Header" name="0,11: rfc 5397 web dav principal" verbatim="RFC 5397 Web DAV principal" rowspan="1" column="11" colspan="1" concept="//@concepts.40"/>
+    <cells xsi:type="pcmmm:Header" name="0,12: rfc 5545 rev. ical spec." verbatim="RFC 5545 rev. iCal spec." rowspan="1" column="12" colspan="1" concept="//@concepts.41"/>
+    <cells xsi:type="pcmmm:Header" name="0,13: rfc 5546 ical itip spec." verbatim="RFC 5546 iCal iTIP spec." rowspan="1" column="13" colspan="1" concept="//@concepts.42"/>
+    <cells xsi:type="pcmmm:Header" name="0,14: rfc 5689 webdav ext. mkcol" verbatim="RFC 5689 WebDAV ext. MKCOL" rowspan="1" column="14" colspan="1" concept="//@concepts.43"/>
+    <cells xsi:type="pcmmm:Header" name="0,15: rfc 6352 card dav vcard" verbatim="RFC 6352 Card DAV vCard" rowspan="1" column="15" colspan="1" concept="//@concepts.44"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: apple calendar and contacts server" verbatim="Apple Calendar and Contacts Server" row="1" rowspan="1" colspan="1" concept="//@concepts.45"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: ba&#xef;kal" verbatim="Ba&#xef;kal" row="2" rowspan="1" colspan="1" concept="//@concepts.46"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: bedework" verbatim="Bedework" row="3" rowspan="1" colspan="1" concept="//@concepts.47"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: calypso" verbatim="Calypso" row="4" rowspan="1" colspan="1" concept="//@concepts.48"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: davical" verbatim="DAViCal" row="5" rowspan="1" colspan="1" concept="//@concepts.49"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: davmail" verbatim="DavMail" row="6" rowspan="1" colspan="1" concept="//@concepts.50"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: daylite server" verbatim="Daylite Server" row="7" rowspan="1" colspan="1" concept="//@concepts.51"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: group-office" verbatim="Group-Office" row="8" rowspan="1" colspan="1" concept="//@concepts.52"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: it hit webdav server engine for .net" verbatim="IT Hit WebDAV Server Engine for .Net" row="9" rowspan="1" colspan="1" concept="//@concepts.53"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: owncloud" verbatim="ownCloud" row="10" rowspan="1" colspan="1" concept="//@concepts.54"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: radicale" verbatim="Radicale" row="11" rowspan="1" colspan="1" concept="//@concepts.55"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: sabredav" verbatim="SabreDAV" row="12" rowspan="1" colspan="1" concept="//@concepts.56"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: tryton" verbatim="Tryton" row="13" rowspan="1" colspan="1" concept="//@concepts.57"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: zimbra" verbatim="Zimbra" row="14" rowspan="1" colspan="1" concept="//@concepts.58"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: fennel" verbatim="Fennel" row="15" rowspan="1" colspan="1" concept="//@concepts.59"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: server name" verbatim="Server name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: apache" verbatim="Apache" row="1" rowspan="1" column="1" colspan="1" concepts="//@concepts.67" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.30">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Apache" verbatim="Apache" concept="//@concepts.67"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: yes" verbatim="Yes" row="1" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.31">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.32">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,4: yes" verbatim="Yes" row="1" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.33">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,5: yes" verbatim="Yes" row="1" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.34">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,6: ?" verbatim="?" row="1" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.35">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,7: yes" verbatim="Yes" row="1" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.36">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,8: yes" verbatim="Yes" row="1" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.37">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,9: yes" verbatim="Yes" row="1" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.38">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,10: yes" verbatim="Yes" row="1" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.39">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,11: yes" verbatim="Yes" row="1" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.40">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,12: yes" verbatim="Yes" row="1" rowspan="1" column="12" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.41">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,13: yes" verbatim="Yes" row="1" rowspan="1" column="13" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,14: yes" verbatim="Yes" row="1" rowspan="1" column="14" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,15: yes" verbatim="Yes" row="1" rowspan="1" column="15" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: gpl" verbatim="GPL" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.63" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.30">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.63"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: yes" verbatim="Yes" row="2" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.31">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.32">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,4: yes" verbatim="Yes" row="2" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.33">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,5: ?" verbatim="?" row="2" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.34">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,6: some" verbatim="Some" row="2" rowspan="1" column="6" colspan="1" concepts="//@concepts.77" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.35">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Some" verbatim="Some" concept="//@concepts.77"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,7: yes" verbatim="Yes" row="2" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.36">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,8: yes" verbatim="Yes" row="2" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.37">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,9: yes" verbatim="Yes" row="2" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.38">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,10: yes" verbatim="Yes" row="2" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.39">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,11: yes" verbatim="Yes" row="2" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.40">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,12: yes" verbatim="Yes" row="2" rowspan="1" column="12" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.41">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,13: ?" verbatim="?" row="2" rowspan="1" column="13" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,14: yes" verbatim="Yes" row="2" rowspan="1" column="14" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,15: yes" verbatim="Yes" row="2" rowspan="1" column="15" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: apache" verbatim="Apache" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.67" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.30">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Apache" verbatim="Apache" concept="//@concepts.67"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: ?" verbatim="?" row="3" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.31">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: ?" verbatim="?" row="3" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.32">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,4: ?" verbatim="?" row="3" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.33">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,5: ?" verbatim="?" row="3" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.34">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,6: ?" verbatim="?" row="3" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.35">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,7: ?" verbatim="?" row="3" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.36">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,8: ?" verbatim="?" row="3" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.37">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,9: yes" verbatim="Yes" row="3" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.38">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,10: ?" verbatim="?" row="3" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.39">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,11: ?" verbatim="?" row="3" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.40">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,12: yes" verbatim="Yes" row="3" rowspan="1" column="12" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.41">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,13: yes" verbatim="Yes" row="3" rowspan="1" column="13" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,14: ?" verbatim="?" row="3" rowspan="1" column="14" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,15: yes" verbatim="Yes" row="3" rowspan="1" column="15" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: gpl" verbatim="GPL" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.63" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.30">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.63"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: yes" verbatim="Yes" row="4" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.31">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: yes" verbatim="Yes" row="4" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.32">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,4: yes" verbatim="Yes" row="4" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.33">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,5: no" verbatim="No" row="4" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.34">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,6: ?" verbatim="?" row="4" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.35">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,7: no" verbatim="No" row="4" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.36">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,8: no" verbatim="No" row="4" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.37">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,9: yes" verbatim="Yes" row="4" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.38">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,10: yes" verbatim="Yes" row="4" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.39">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,11: no" verbatim="No" row="4" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.40">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,12: yes" verbatim="Yes" row="4" rowspan="1" column="12" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.41">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,13: yes" verbatim="Yes" row="4" rowspan="1" column="13" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,14: ?" verbatim="?" row="4" rowspan="1" column="14" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,15: ?" verbatim="?" row="4" rowspan="1" column="15" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: gpl" verbatim="GPL" row="5" rowspan="1" column="1" colspan="1" concepts="//@concepts.63" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.30">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.63"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: yes" verbatim="Yes" row="5" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.31">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,3: ?" verbatim="?" row="5" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.32">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,4: ?" verbatim="?" row="5" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.33">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,5: yes" verbatim="Yes" row="5" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.34">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,6: yes" verbatim="Yes" row="5" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.35">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,7: yes" verbatim="Yes" row="5" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.36">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,8: yes" verbatim="Yes" row="5" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.37">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,9: yes" verbatim="Yes" row="5" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.38">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,10: yes" verbatim="Yes" row="5" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.39">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,11: yes" verbatim="Yes" row="5" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.40">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,12: yes" verbatim="Yes" row="5" rowspan="1" column="12" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.41">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,13: yes" verbatim="Yes" row="5" rowspan="1" column="13" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,14: yes" verbatim="Yes" row="5" rowspan="1" column="14" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,15: yes" verbatim="Yes" row="5" rowspan="1" column="15" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,1: gpl" verbatim="GPL" row="6" rowspan="1" column="1" colspan="1" concepts="//@concepts.63" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.30">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.63"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,2: ?" verbatim="?" row="6" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.31">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,3: ?" verbatim="?" row="6" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.32">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,4: ?" verbatim="?" row="6" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.33">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,5: ?" verbatim="?" row="6" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.34">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,6: ?" verbatim="?" row="6" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.35">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,7: ?" verbatim="?" row="6" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.36">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,8: ?" verbatim="?" row="6" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.37">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,9: ?" verbatim="?" row="6" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.38">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,10: ?" verbatim="?" row="6" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.39">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,11: ?" verbatim="?" row="6" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.40">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,12: ?" verbatim="?" row="6" rowspan="1" column="12" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.41">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,13: ?" verbatim="?" row="6" rowspan="1" column="13" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,14: ?" verbatim="?" row="6" rowspan="1" column="14" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,15: ?" verbatim="?" row="6" rowspan="1" column="15" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,1: proprietary" verbatim="Proprietary" row="7" rowspan="1" column="1" colspan="1" concepts="//@concepts.61" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.30">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.61"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,2: yes" verbatim="Yes" row="7" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.31">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,3: yes" verbatim="Yes" row="7" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.32">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,4: yes" verbatim="Yes" row="7" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.33">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,5: yes" verbatim="Yes" row="7" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.34">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,6: yes" verbatim="Yes" row="7" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.35">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,7: no" verbatim="No" row="7" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.36">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,8: no" verbatim="No" row="7" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.37">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,9: yes" verbatim="Yes" row="7" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.38">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,10: yes" verbatim="Yes" row="7" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.39">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,11: yes" verbatim="Yes" row="7" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.40">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,12: no" verbatim="No" row="7" rowspan="1" column="12" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.41">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,13: no" verbatim="No" row="7" rowspan="1" column="13" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,14: yes" verbatim="Yes" row="7" rowspan="1" column="14" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,15: yes" verbatim="Yes" row="7" rowspan="1" column="15" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,1: agpl/commercial" verbatim="AGPL/Commercial" row="8" rowspan="1" column="1" colspan="1" concepts="//@concepts.65 //@concepts.78" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.30">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="AGPL" verbatim="AGPL" concept="//@concepts.65"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.78"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,2: yes" verbatim="Yes" row="8" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.31">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,3: yes" verbatim="Yes" row="8" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.32">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,4: yes" verbatim="Yes" row="8" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.33">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,5: ?" verbatim="?" row="8" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.34">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,6: some" verbatim="Some" row="8" rowspan="1" column="6" colspan="1" concepts="//@concepts.77" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.35">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Some" verbatim="Some" concept="//@concepts.77"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,7: ?" verbatim="?" row="8" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.36">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,8: yes" verbatim="Yes" row="8" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.37">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,9: yes" verbatim="Yes" row="8" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.38">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,10: yes" verbatim="Yes" row="8" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.39">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,11: yes" verbatim="Yes" row="8" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.40">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,12: yes" verbatim="Yes" row="8" rowspan="1" column="12" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.41">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,13: ?" verbatim="?" row="8" rowspan="1" column="13" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,14: yes" verbatim="Yes" row="8" rowspan="1" column="14" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,15: yes" verbatim="Yes" row="8" rowspan="1" column="15" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,1: commercial" verbatim="Commercial" row="9" rowspan="1" column="1" colspan="1" concepts="//@concepts.78" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.30">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.78"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,2: yes" verbatim="Yes" row="9" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.31">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,3: yes" verbatim="Yes" row="9" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.32">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,4: yes" verbatim="Yes" row="9" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.33">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,5: yes" verbatim="Yes" row="9" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.34">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,6: yes" verbatim="Yes" row="9" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.35">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,7: ?" verbatim="?" row="9" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.36">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,8: ?" verbatim="?" row="9" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.37">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,9: yes" verbatim="Yes" row="9" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.38">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,10: yes" verbatim="Yes" row="9" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.39">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,11: yes" verbatim="Yes" row="9" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.40">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,12: ?" verbatim="?" row="9" rowspan="1" column="12" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.41">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,13: yes" verbatim="Yes" row="9" rowspan="1" column="13" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,14: yes" verbatim="Yes" row="9" rowspan="1" column="14" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,15: yes" verbatim="Yes" row="9" rowspan="1" column="15" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,1: agplv3" verbatim="AGPLv3" row="10" rowspan="1" column="1" colspan="1" concepts="//@concepts.79" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.30">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="AGPLv3" verbatim="AGPLv3" concept="//@concepts.79"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,2: ?" verbatim="?" row="10" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.31">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,3: ?" verbatim="?" row="10" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.32">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,4: ?" verbatim="?" row="10" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.33">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,5: ?" verbatim="?" row="10" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.34">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,6: ?" verbatim="?" row="10" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.35">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,7: ?" verbatim="?" row="10" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.36">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,8: ?" verbatim="?" row="10" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.37">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,9: yes" verbatim="Yes" row="10" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.38">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,10: ?" verbatim="?" row="10" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.39">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,11: ?" verbatim="?" row="10" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.40">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,12: ?" verbatim="?" row="10" rowspan="1" column="12" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.41">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,13: ?" verbatim="?" row="10" rowspan="1" column="13" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,14: ?" verbatim="?" row="10" rowspan="1" column="14" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,15: yes" verbatim="Yes" row="10" rowspan="1" column="15" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,1: gpl" verbatim="GPL" row="11" rowspan="1" column="1" colspan="1" concepts="//@concepts.63" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.30">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.63"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,2: yes" verbatim="Yes" row="11" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.31">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,3: yes" verbatim="Yes" row="11" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.32">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,4: yes" verbatim="Yes" row="11" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.33">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,5: no" verbatim="No" row="11" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.34">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,6: yes" verbatim="Yes" row="11" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.35">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,7: no" verbatim="No" row="11" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.36">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,8: no" verbatim="No" row="11" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.37">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,9: yes" verbatim="Yes" row="11" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.38">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,10: yes" verbatim="Yes" row="11" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.39">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,11: yes" verbatim="Yes" row="11" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.40">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,12: yes" verbatim="Yes" row="11" rowspan="1" column="12" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.41">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,13: yes" verbatim="Yes" row="11" rowspan="1" column="13" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,14: yes" verbatim="Yes" row="11" rowspan="1" column="14" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,15: yes" verbatim="Yes" row="11" rowspan="1" column="15" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,1: bsd" verbatim="BSD" row="12" rowspan="1" column="1" colspan="1" concepts="//@concepts.80" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.30">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="BSD" verbatim="BSD" concept="//@concepts.80"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,2: yes" verbatim="Yes" row="12" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.31">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,3: yes" verbatim="Yes" row="12" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.32">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,4: yes" verbatim="Yes" row="12" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.33">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,5: ?" verbatim="?" row="12" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.34">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,6: some" verbatim="Some" row="12" rowspan="1" column="6" colspan="1" concepts="//@concepts.77" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.35">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Some" verbatim="Some" concept="//@concepts.77"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,7: ?" verbatim="?" row="12" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.36">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,8: yes" verbatim="Yes" row="12" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.37">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,9: yes" verbatim="Yes" row="12" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.38">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,10: yes" verbatim="Yes" row="12" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.39">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,11: yes" verbatim="Yes" row="12" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.40">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,12: yes" verbatim="Yes" row="12" rowspan="1" column="12" colspan="1" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.41">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,13: ?" verbatim="?" row="12" rowspan="1" column="13" colspan="1" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,14: yes" verbatim="Yes" row="12" rowspan="1" column="14" colspan="1" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,15: yes" verbatim="Yes" row="12" rowspan="1" column="15" colspan="1" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,1: gpl" verbatim="GPL" row="13" rowspan="1" column="1" colspan="1" concepts="//@concepts.63" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.30">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.63"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,2: yes" verbatim="Yes" row="13" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.31">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,3: yes" verbatim="Yes" row="13" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.32">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,4: yes" verbatim="Yes" row="13" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.33">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,5: ?" verbatim="?" row="13" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.34">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,6: ?" verbatim="?" row="13" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.35">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,7: ?" verbatim="?" row="13" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.36">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,8: ?" verbatim="?" row="13" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.37">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,9: yes" verbatim="Yes" row="13" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.38">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,10: ?" verbatim="?" row="13" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.39">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,11: yes" verbatim="Yes" row="13" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.40">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,12: yes" verbatim="Yes" row="13" rowspan="1" column="12" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.41">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,13: ?" verbatim="?" row="13" rowspan="1" column="13" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,14: ?" verbatim="?" row="13" rowspan="1" column="14" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,15: yes" verbatim="Yes" row="13" rowspan="1" column="15" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,1: zpl" verbatim="ZPL" row="14" rowspan="1" column="1" colspan="1" concepts="//@concepts.81" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.30">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="ZPL" verbatim="ZPL" concept="//@concepts.81"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,2: yes" verbatim="Yes" row="14" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.31">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,3: yes" verbatim="Yes" row="14" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.32">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,4: yes" verbatim="Yes" row="14" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.33">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,5: ?" verbatim="?" row="14" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.34">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,6: ?" verbatim="?" row="14" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.35">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,7: ?" verbatim="?" row="14" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.36">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,8: ?" verbatim="?" row="14" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.37">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,9: yes" verbatim="Yes" row="14" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.38">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,10: ?" verbatim="?" row="14" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.39">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,11: yes" verbatim="Yes" row="14" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.40">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,12: ?" verbatim="?" row="14" rowspan="1" column="12" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.41">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,13: ?" verbatim="?" row="14" rowspan="1" column="13" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,14: ?" verbatim="?" row="14" rowspan="1" column="14" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,15: yes" verbatim="Yes" row="14" rowspan="1" column="15" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,1: gplv3" verbatim="GPLv3" row="15" rowspan="1" column="1" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.30">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPLv3" verbatim="GPLv3" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,2: ?" verbatim="?" row="15" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.31">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,3: ?" verbatim="?" row="15" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.32">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,4: ?" verbatim="?" row="15" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.33">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,5: ?" verbatim="?" row="15" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.34">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,6: ?" verbatim="?" row="15" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.35">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,7: ?" verbatim="?" row="15" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.36">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,8: ?" verbatim="?" row="15" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.37">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,9: ?" verbatim="?" row="15" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.38">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,10: ?" verbatim="?" row="15" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.39">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,11: ?" verbatim="?" row="15" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.40">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,12: ?" verbatim="?" row="15" rowspan="1" column="12" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.41">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,13: ?" verbatim="?" row="15" rowspan="1" column="13" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,14: ?" verbatim="?" row="15" rowspan="1" column="14" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,15: ?" verbatim="?" row="15" rowspan="1" column="15" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+  </matrices>
+  <concepts xsi:type="pcmmm:Feature" name="Platform" myValuedCells="//@matrices.0/@cells.31 //@matrices.0/@cells.36 //@matrices.0/@cells.41 //@matrices.0/@cells.46 //@matrices.0/@cells.51 //@matrices.0/@cells.56 //@matrices.0/@cells.61 //@matrices.0/@cells.66 //@matrices.0/@cells.71 //@matrices.0/@cells.76 //@matrices.0/@cells.81 //@matrices.0/@cells.86 //@matrices.0/@cells.91 //@matrices.0/@cells.96 //@matrices.0/@cells.101 //@matrices.0/@cells.106 //@matrices.0/@cells.111 //@matrices.0/@cells.116 //@matrices.0/@cells.121 //@matrices.0/@cells.126 //@matrices.0/@cells.131 //@matrices.0/@cells.136 //@matrices.0/@cells.141 //@matrices.0/@cells.146 //@matrices.0/@cells.151" domain="//@domainCollection/@domains.0"/>
+  <concepts xsi:type="pcmmm:Feature" name="License" myValuedCells="//@matrices.0/@cells.32 //@matrices.0/@cells.37 //@matrices.0/@cells.42 //@matrices.0/@cells.47 //@matrices.0/@cells.52 //@matrices.0/@cells.57 //@matrices.0/@cells.62 //@matrices.0/@cells.67 //@matrices.0/@cells.72 //@matrices.0/@cells.77 //@matrices.0/@cells.82 //@matrices.0/@cells.87 //@matrices.0/@cells.92 //@matrices.0/@cells.97 //@matrices.0/@cells.102 //@matrices.0/@cells.107 //@matrices.0/@cells.112 //@matrices.0/@cells.117 //@matrices.0/@cells.122 //@matrices.0/@cells.127 //@matrices.0/@cells.132 //@matrices.0/@cells.137 //@matrices.0/@cells.142 //@matrices.0/@cells.147 //@matrices.0/@cells.152" domain="//@domainCollection/@domains.1"/>
+  <concepts xsi:type="pcmmm:Feature" name="CalDAV Events" myValuedCells="//@matrices.0/@cells.33 //@matrices.0/@cells.38 //@matrices.0/@cells.43 //@matrices.0/@cells.48 //@matrices.0/@cells.53 //@matrices.0/@cells.58 //@matrices.0/@cells.63 //@matrices.0/@cells.68 //@matrices.0/@cells.73 //@matrices.0/@cells.78 //@matrices.0/@cells.83 //@matrices.0/@cells.88 //@matrices.0/@cells.93 //@matrices.0/@cells.98 //@matrices.0/@cells.103 //@matrices.0/@cells.108 //@matrices.0/@cells.113 //@matrices.0/@cells.118 //@matrices.0/@cells.123 //@matrices.0/@cells.128 //@matrices.0/@cells.133 //@matrices.0/@cells.138 //@matrices.0/@cells.143 //@matrices.0/@cells.148 //@matrices.0/@cells.153" domain="//@domainCollection/@domains.2"/>
+  <concepts xsi:type="pcmmm:Feature" name="CalDAV Tasks" myValuedCells="//@matrices.0/@cells.34 //@matrices.0/@cells.39 //@matrices.0/@cells.44 //@matrices.0/@cells.49 //@matrices.0/@cells.54 //@matrices.0/@cells.59 //@matrices.0/@cells.64 //@matrices.0/@cells.69 //@matrices.0/@cells.74 //@matrices.0/@cells.79 //@matrices.0/@cells.84 //@matrices.0/@cells.89 //@matrices.0/@cells.94 //@matrices.0/@cells.99 //@matrices.0/@cells.104 //@matrices.0/@cells.109 //@matrices.0/@cells.114 //@matrices.0/@cells.119 //@matrices.0/@cells.124 //@matrices.0/@cells.129 //@matrices.0/@cells.134 //@matrices.0/@cells.139 //@matrices.0/@cells.144 //@matrices.0/@cells.149 //@matrices.0/@cells.154" domain="//@domainCollection/@domains.3"/>
+  <concepts xsi:type="pcmmm:Feature" name="CardDAV" myValuedCells="//@matrices.0/@cells.35 //@matrices.0/@cells.40 //@matrices.0/@cells.45 //@matrices.0/@cells.50 //@matrices.0/@cells.55 //@matrices.0/@cells.60 //@matrices.0/@cells.65 //@matrices.0/@cells.70 //@matrices.0/@cells.75 //@matrices.0/@cells.80 //@matrices.0/@cells.85 //@matrices.0/@cells.90 //@matrices.0/@cells.95 //@matrices.0/@cells.100 //@matrices.0/@cells.105 //@matrices.0/@cells.110 //@matrices.0/@cells.115 //@matrices.0/@cells.120 //@matrices.0/@cells.125 //@matrices.0/@cells.130 //@matrices.0/@cells.135 //@matrices.0/@cells.140 //@matrices.0/@cells.145 //@matrices.0/@cells.150 //@matrices.0/@cells.155" domain="//@domainCollection/@domains.4"/>
+  <concepts xsi:type="pcmmm:Product" name="BusyCal" myValuedCells="//@matrices.0/@cells.31 //@matrices.0/@cells.32 //@matrices.0/@cells.33 //@matrices.0/@cells.34 //@matrices.0/@cells.35"/>
+  <concepts xsi:type="pcmmm:Product" name="AgenDAV" myValuedCells="//@matrices.0/@cells.36 //@matrices.0/@cells.37 //@matrices.0/@cells.38 //@matrices.0/@cells.39 //@matrices.0/@cells.40"/>
+  <concepts xsi:type="pcmmm:Product" name="CalendarSync" myValuedCells="//@matrices.0/@cells.41 //@matrices.0/@cells.42 //@matrices.0/@cells.43 //@matrices.0/@cells.44 //@matrices.0/@cells.45"/>
+  <concepts xsi:type="pcmmm:Product" name="CalDAV Tasksync free" myValuedCells="//@matrices.0/@cells.46 //@matrices.0/@cells.47 //@matrices.0/@cells.48 //@matrices.0/@cells.49 //@matrices.0/@cells.50"/>
+  <concepts xsi:type="pcmmm:Product" name="aCal" myValuedCells="//@matrices.0/@cells.51 //@matrices.0/@cells.52 //@matrices.0/@cells.53 //@matrices.0/@cells.54 //@matrices.0/@cells.55"/>
+  <concepts xsi:type="pcmmm:Product" name="AndroidCaldavSyncAdapater" myValuedCells="//@matrices.0/@cells.56 //@matrices.0/@cells.57 //@matrices.0/@cells.58 //@matrices.0/@cells.59 //@matrices.0/@cells.60"/>
+  <concepts xsi:type="pcmmm:Product" name="ContactSync" myValuedCells="//@matrices.0/@cells.61 //@matrices.0/@cells.62 //@matrices.0/@cells.63 //@matrices.0/@cells.64 //@matrices.0/@cells.65"/>
+  <concepts xsi:type="pcmmm:Product" name="CalDAV-Sync" myValuedCells="//@matrices.0/@cells.66 //@matrices.0/@cells.67 //@matrices.0/@cells.68 //@matrices.0/@cells.69 //@matrices.0/@cells.70"/>
+  <concepts xsi:type="pcmmm:Product" name="CardDAV-Sync" myValuedCells="//@matrices.0/@cells.71 //@matrices.0/@cells.72 //@matrices.0/@cells.73 //@matrices.0/@cells.74 //@matrices.0/@cells.75"/>
+  <concepts xsi:type="pcmmm:Product" name="CalDavZAP" myValuedCells="//@matrices.0/@cells.76 //@matrices.0/@cells.77 //@matrices.0/@cells.78 //@matrices.0/@cells.79 //@matrices.0/@cells.80"/>
+  <concepts xsi:type="pcmmm:Product" name="CardDavMATE" myValuedCells="//@matrices.0/@cells.81 //@matrices.0/@cells.82 //@matrices.0/@cells.83 //@matrices.0/@cells.84 //@matrices.0/@cells.85"/>
+  <concepts xsi:type="pcmmm:Product" name="Chandler Desktop" myValuedCells="//@matrices.0/@cells.86 //@matrices.0/@cells.87 //@matrices.0/@cells.88 //@matrices.0/@cells.89 //@matrices.0/@cells.90"/>
+  <concepts xsi:type="pcmmm:Product" name="Daylite" myValuedCells="//@matrices.0/@cells.91 //@matrices.0/@cells.92 //@matrices.0/@cells.93 //@matrices.0/@cells.94 //@matrices.0/@cells.95"/>
+  <concepts xsi:type="pcmmm:Product" name="DAVdroid" myValuedCells="//@matrices.0/@cells.96 //@matrices.0/@cells.97 //@matrices.0/@cells.98 //@matrices.0/@cells.99 //@matrices.0/@cells.100"/>
+  <concepts xsi:type="pcmmm:Product" name="eM Client" myValuedCells="//@matrices.0/@cells.101 //@matrices.0/@cells.102 //@matrices.0/@cells.103 //@matrices.0/@cells.104 //@matrices.0/@cells.105"/>
+  <concepts xsi:type="pcmmm:Product" name="Fantastical" myValuedCells="//@matrices.0/@cells.106 //@matrices.0/@cells.107 //@matrices.0/@cells.108 //@matrices.0/@cells.109 //@matrices.0/@cells.110"/>
+  <concepts xsi:type="pcmmm:Product" name="jqCalDAV" myValuedCells="//@matrices.0/@cells.111 //@matrices.0/@cells.112 //@matrices.0/@cells.113 //@matrices.0/@cells.114 //@matrices.0/@cells.115"/>
+  <concepts xsi:type="pcmmm:Product" name="KCardDAV" myValuedCells="//@matrices.0/@cells.116 //@matrices.0/@cells.117 //@matrices.0/@cells.118 //@matrices.0/@cells.119 //@matrices.0/@cells.120"/>
+  <concepts xsi:type="pcmmm:Product" name="Lightning" myValuedCells="//@matrices.0/@cells.121 //@matrices.0/@cells.122 //@matrices.0/@cells.123 //@matrices.0/@cells.124 //@matrices.0/@cells.125"/>
+  <concepts xsi:type="pcmmm:Product" name="Mulberry" myValuedCells="//@matrices.0/@cells.126 //@matrices.0/@cells.127 //@matrices.0/@cells.128 //@matrices.0/@cells.129 //@matrices.0/@cells.130"/>
+  <concepts xsi:type="pcmmm:Product" name="pyCardDAV" myValuedCells="//@matrices.0/@cells.131 //@matrices.0/@cells.132 //@matrices.0/@cells.133 //@matrices.0/@cells.134 //@matrices.0/@cells.135"/>
+  <concepts xsi:type="pcmmm:Product" name="Inverse SOGo Connector/Integrator" myValuedCells="//@matrices.0/@cells.136 //@matrices.0/@cells.137 //@matrices.0/@cells.138 //@matrices.0/@cells.139 //@matrices.0/@cells.140"/>
+  <concepts xsi:type="pcmmm:Product" name="Evolution" myValuedCells="//@matrices.0/@cells.141 //@matrices.0/@cells.142 //@matrices.0/@cells.143 //@matrices.0/@cells.144 //@matrices.0/@cells.145"/>
+  <concepts xsi:type="pcmmm:Product" name="Calendars/Reminders/Contacts/Mail" myValuedCells="//@matrices.0/@cells.146 //@matrices.0/@cells.147 //@matrices.0/@cells.148 //@matrices.0/@cells.149 //@matrices.0/@cells.150"/>
+  <concepts xsi:type="pcmmm:Product" name="SurGATE Outlook Sync Client" myValuedCells="//@matrices.0/@cells.151 //@matrices.0/@cells.152 //@matrices.0/@cells.153 //@matrices.0/@cells.154 //@matrices.0/@cells.155"/>
+  <concepts xsi:type="pcmmm:Feature" name="Lic." myValuedCells="//@matrices.1/@cells.31 //@matrices.1/@cells.46 //@matrices.1/@cells.61 //@matrices.1/@cells.76 //@matrices.1/@cells.91 //@matrices.1/@cells.106 //@matrices.1/@cells.121 //@matrices.1/@cells.136 //@matrices.1/@cells.151 //@matrices.1/@cells.166 //@matrices.1/@cells.181 //@matrices.1/@cells.196 //@matrices.1/@cells.211 //@matrices.1/@cells.226 //@matrices.1/@cells.241" domain="//@domainCollection/@domains.5"/>
+  <concepts xsi:type="pcmmm:Feature" name="RFC 2616 HTTP 1.1 spec." myValuedCells="//@matrices.1/@cells.32 //@matrices.1/@cells.47 //@matrices.1/@cells.62 //@matrices.1/@cells.77 //@matrices.1/@cells.92 //@matrices.1/@cells.107 //@matrices.1/@cells.122 //@matrices.1/@cells.137 //@matrices.1/@cells.152 //@matrices.1/@cells.167 //@matrices.1/@cells.182 //@matrices.1/@cells.197 //@matrices.1/@cells.212 //@matrices.1/@cells.227 //@matrices.1/@cells.242" domain="//@domainCollection/@domains.6"/>
+  <concepts xsi:type="pcmmm:Feature" name="RFC 2617 HTTP access auth." myValuedCells="//@matrices.1/@cells.33 //@matrices.1/@cells.48 //@matrices.1/@cells.63 //@matrices.1/@cells.78 //@matrices.1/@cells.93 //@matrices.1/@cells.108 //@matrices.1/@cells.123 //@matrices.1/@cells.138 //@matrices.1/@cells.153 //@matrices.1/@cells.168 //@matrices.1/@cells.183 //@matrices.1/@cells.198 //@matrices.1/@cells.213 //@matrices.1/@cells.228 //@matrices.1/@cells.243" domain="//@domainCollection/@domains.7"/>
+  <concepts xsi:type="pcmmm:Feature" name="RFC 2518 Web DAV spec." myValuedCells="//@matrices.1/@cells.34 //@matrices.1/@cells.49 //@matrices.1/@cells.64 //@matrices.1/@cells.79 //@matrices.1/@cells.94 //@matrices.1/@cells.109 //@matrices.1/@cells.124 //@matrices.1/@cells.139 //@matrices.1/@cells.154 //@matrices.1/@cells.169 //@matrices.1/@cells.184 //@matrices.1/@cells.199 //@matrices.1/@cells.214 //@matrices.1/@cells.229 //@matrices.1/@cells.244" domain="//@domainCollection/@domains.8"/>
+  <concepts xsi:type="pcmmm:Feature" name="RFC 3253 Web DAV ext." myValuedCells="//@matrices.1/@cells.35 //@matrices.1/@cells.50 //@matrices.1/@cells.65 //@matrices.1/@cells.80 //@matrices.1/@cells.95 //@matrices.1/@cells.110 //@matrices.1/@cells.125 //@matrices.1/@cells.140 //@matrices.1/@cells.155 //@matrices.1/@cells.170 //@matrices.1/@cells.185 //@matrices.1/@cells.200 //@matrices.1/@cells.215 //@matrices.1/@cells.230 //@matrices.1/@cells.245" domain="//@domainCollection/@domains.9"/>
+  <concepts xsi:type="pcmmm:Feature" name="RFC 3744 Web DAV ACL" myValuedCells="//@matrices.1/@cells.36 //@matrices.1/@cells.51 //@matrices.1/@cells.66 //@matrices.1/@cells.81 //@matrices.1/@cells.96 //@matrices.1/@cells.111 //@matrices.1/@cells.126 //@matrices.1/@cells.141 //@matrices.1/@cells.156 //@matrices.1/@cells.171 //@matrices.1/@cells.186 //@matrices.1/@cells.201 //@matrices.1/@cells.216 //@matrices.1/@cells.231 //@matrices.1/@cells.246" domain="//@domainCollection/@domains.10"/>
+  <concepts xsi:type="pcmmm:Feature" name="RFC 4324 iCal CAP spec." myValuedCells="//@matrices.1/@cells.37 //@matrices.1/@cells.52 //@matrices.1/@cells.67 //@matrices.1/@cells.82 //@matrices.1/@cells.97 //@matrices.1/@cells.112 //@matrices.1/@cells.127 //@matrices.1/@cells.142 //@matrices.1/@cells.157 //@matrices.1/@cells.172 //@matrices.1/@cells.187 //@matrices.1/@cells.202 //@matrices.1/@cells.217 //@matrices.1/@cells.232 //@matrices.1/@cells.247" domain="//@domainCollection/@domains.11"/>
+  <concepts xsi:type="pcmmm:Feature" name="RFC 4709 Web DAV mount" myValuedCells="//@matrices.1/@cells.38 //@matrices.1/@cells.53 //@matrices.1/@cells.68 //@matrices.1/@cells.83 //@matrices.1/@cells.98 //@matrices.1/@cells.113 //@matrices.1/@cells.128 //@matrices.1/@cells.143 //@matrices.1/@cells.158 //@matrices.1/@cells.173 //@matrices.1/@cells.188 //@matrices.1/@cells.203 //@matrices.1/@cells.218 //@matrices.1/@cells.233 //@matrices.1/@cells.248" domain="//@domainCollection/@domains.12"/>
+  <concepts xsi:type="pcmmm:Feature" name="RFC 4791 Cal DAV spec." myValuedCells="//@matrices.1/@cells.39 //@matrices.1/@cells.54 //@matrices.1/@cells.69 //@matrices.1/@cells.84 //@matrices.1/@cells.99 //@matrices.1/@cells.114 //@matrices.1/@cells.129 //@matrices.1/@cells.144 //@matrices.1/@cells.159 //@matrices.1/@cells.174 //@matrices.1/@cells.189 //@matrices.1/@cells.204 //@matrices.1/@cells.219 //@matrices.1/@cells.234 //@matrices.1/@cells.249" domain="//@domainCollection/@domains.13"/>
+  <concepts xsi:type="pcmmm:Feature" name="RFC 4918 Web DAV ext." myValuedCells="//@matrices.1/@cells.40 //@matrices.1/@cells.55 //@matrices.1/@cells.70 //@matrices.1/@cells.85 //@matrices.1/@cells.100 //@matrices.1/@cells.115 //@matrices.1/@cells.130 //@matrices.1/@cells.145 //@matrices.1/@cells.160 //@matrices.1/@cells.175 //@matrices.1/@cells.190 //@matrices.1/@cells.205 //@matrices.1/@cells.220 //@matrices.1/@cells.235 //@matrices.1/@cells.250" domain="//@domainCollection/@domains.14"/>
+  <concepts xsi:type="pcmmm:Feature" name="RFC 5397 Web DAV principal" myValuedCells="//@matrices.1/@cells.41 //@matrices.1/@cells.56 //@matrices.1/@cells.71 //@matrices.1/@cells.86 //@matrices.1/@cells.101 //@matrices.1/@cells.116 //@matrices.1/@cells.131 //@matrices.1/@cells.146 //@matrices.1/@cells.161 //@matrices.1/@cells.176 //@matrices.1/@cells.191 //@matrices.1/@cells.206 //@matrices.1/@cells.221 //@matrices.1/@cells.236 //@matrices.1/@cells.251" domain="//@domainCollection/@domains.15"/>
+  <concepts xsi:type="pcmmm:Feature" name="RFC 5545 rev. iCal spec." myValuedCells="//@matrices.1/@cells.42 //@matrices.1/@cells.57 //@matrices.1/@cells.72 //@matrices.1/@cells.87 //@matrices.1/@cells.102 //@matrices.1/@cells.117 //@matrices.1/@cells.132 //@matrices.1/@cells.147 //@matrices.1/@cells.162 //@matrices.1/@cells.177 //@matrices.1/@cells.192 //@matrices.1/@cells.207 //@matrices.1/@cells.222 //@matrices.1/@cells.237 //@matrices.1/@cells.252" domain="//@domainCollection/@domains.16"/>
+  <concepts xsi:type="pcmmm:Feature" name="RFC 5546 iCal iTIP spec." myValuedCells="//@matrices.1/@cells.43 //@matrices.1/@cells.58 //@matrices.1/@cells.73 //@matrices.1/@cells.88 //@matrices.1/@cells.103 //@matrices.1/@cells.118 //@matrices.1/@cells.133 //@matrices.1/@cells.148 //@matrices.1/@cells.163 //@matrices.1/@cells.178 //@matrices.1/@cells.193 //@matrices.1/@cells.208 //@matrices.1/@cells.223 //@matrices.1/@cells.238 //@matrices.1/@cells.253" domain="//@domainCollection/@domains.17"/>
+  <concepts xsi:type="pcmmm:Feature" name="RFC 5689 WebDAV ext. MKCOL" myValuedCells="//@matrices.1/@cells.44 //@matrices.1/@cells.59 //@matrices.1/@cells.74 //@matrices.1/@cells.89 //@matrices.1/@cells.104 //@matrices.1/@cells.119 //@matrices.1/@cells.134 //@matrices.1/@cells.149 //@matrices.1/@cells.164 //@matrices.1/@cells.179 //@matrices.1/@cells.194 //@matrices.1/@cells.209 //@matrices.1/@cells.224 //@matrices.1/@cells.239 //@matrices.1/@cells.254" domain="//@domainCollection/@domains.18"/>
+  <concepts xsi:type="pcmmm:Feature" name="RFC 6352 Card DAV vCard" myValuedCells="//@matrices.1/@cells.45 //@matrices.1/@cells.60 //@matrices.1/@cells.75 //@matrices.1/@cells.90 //@matrices.1/@cells.105 //@matrices.1/@cells.120 //@matrices.1/@cells.135 //@matrices.1/@cells.150 //@matrices.1/@cells.165 //@matrices.1/@cells.180 //@matrices.1/@cells.195 //@matrices.1/@cells.210 //@matrices.1/@cells.225 //@matrices.1/@cells.240 //@matrices.1/@cells.255" domain="//@domainCollection/@domains.19"/>
+  <concepts xsi:type="pcmmm:Product" name="Apple Calendar and Contacts Server" myValuedCells="//@matrices.1/@cells.31 //@matrices.1/@cells.32 //@matrices.1/@cells.33 //@matrices.1/@cells.34 //@matrices.1/@cells.35 //@matrices.1/@cells.36 //@matrices.1/@cells.37 //@matrices.1/@cells.38 //@matrices.1/@cells.39 //@matrices.1/@cells.40 //@matrices.1/@cells.41 //@matrices.1/@cells.42 //@matrices.1/@cells.43 //@matrices.1/@cells.44 //@matrices.1/@cells.45"/>
+  <concepts xsi:type="pcmmm:Product" name="Ba&#xef;kal" myValuedCells="//@matrices.1/@cells.46 //@matrices.1/@cells.47 //@matrices.1/@cells.48 //@matrices.1/@cells.49 //@matrices.1/@cells.50 //@matrices.1/@cells.51 //@matrices.1/@cells.52 //@matrices.1/@cells.53 //@matrices.1/@cells.54 //@matrices.1/@cells.55 //@matrices.1/@cells.56 //@matrices.1/@cells.57 //@matrices.1/@cells.58 //@matrices.1/@cells.59 //@matrices.1/@cells.60"/>
+  <concepts xsi:type="pcmmm:Product" name="Bedework" myValuedCells="//@matrices.1/@cells.61 //@matrices.1/@cells.62 //@matrices.1/@cells.63 //@matrices.1/@cells.64 //@matrices.1/@cells.65 //@matrices.1/@cells.66 //@matrices.1/@cells.67 //@matrices.1/@cells.68 //@matrices.1/@cells.69 //@matrices.1/@cells.70 //@matrices.1/@cells.71 //@matrices.1/@cells.72 //@matrices.1/@cells.73 //@matrices.1/@cells.74 //@matrices.1/@cells.75"/>
+  <concepts xsi:type="pcmmm:Product" name="Calypso" myValuedCells="//@matrices.1/@cells.76 //@matrices.1/@cells.77 //@matrices.1/@cells.78 //@matrices.1/@cells.79 //@matrices.1/@cells.80 //@matrices.1/@cells.81 //@matrices.1/@cells.82 //@matrices.1/@cells.83 //@matrices.1/@cells.84 //@matrices.1/@cells.85 //@matrices.1/@cells.86 //@matrices.1/@cells.87 //@matrices.1/@cells.88 //@matrices.1/@cells.89 //@matrices.1/@cells.90"/>
+  <concepts xsi:type="pcmmm:Product" name="DAViCal" myValuedCells="//@matrices.1/@cells.91 //@matrices.1/@cells.92 //@matrices.1/@cells.93 //@matrices.1/@cells.94 //@matrices.1/@cells.95 //@matrices.1/@cells.96 //@matrices.1/@cells.97 //@matrices.1/@cells.98 //@matrices.1/@cells.99 //@matrices.1/@cells.100 //@matrices.1/@cells.101 //@matrices.1/@cells.102 //@matrices.1/@cells.103 //@matrices.1/@cells.104 //@matrices.1/@cells.105"/>
+  <concepts xsi:type="pcmmm:Product" name="DavMail" myValuedCells="//@matrices.1/@cells.106 //@matrices.1/@cells.107 //@matrices.1/@cells.108 //@matrices.1/@cells.109 //@matrices.1/@cells.110 //@matrices.1/@cells.111 //@matrices.1/@cells.112 //@matrices.1/@cells.113 //@matrices.1/@cells.114 //@matrices.1/@cells.115 //@matrices.1/@cells.116 //@matrices.1/@cells.117 //@matrices.1/@cells.118 //@matrices.1/@cells.119 //@matrices.1/@cells.120"/>
+  <concepts xsi:type="pcmmm:Product" name="Daylite Server" myValuedCells="//@matrices.1/@cells.121 //@matrices.1/@cells.122 //@matrices.1/@cells.123 //@matrices.1/@cells.124 //@matrices.1/@cells.125 //@matrices.1/@cells.126 //@matrices.1/@cells.127 //@matrices.1/@cells.128 //@matrices.1/@cells.129 //@matrices.1/@cells.130 //@matrices.1/@cells.131 //@matrices.1/@cells.132 //@matrices.1/@cells.133 //@matrices.1/@cells.134 //@matrices.1/@cells.135"/>
+  <concepts xsi:type="pcmmm:Product" name="Group-Office" myValuedCells="//@matrices.1/@cells.136 //@matrices.1/@cells.137 //@matrices.1/@cells.138 //@matrices.1/@cells.139 //@matrices.1/@cells.140 //@matrices.1/@cells.141 //@matrices.1/@cells.142 //@matrices.1/@cells.143 //@matrices.1/@cells.144 //@matrices.1/@cells.145 //@matrices.1/@cells.146 //@matrices.1/@cells.147 //@matrices.1/@cells.148 //@matrices.1/@cells.149 //@matrices.1/@cells.150"/>
+  <concepts xsi:type="pcmmm:Product" name="IT Hit WebDAV Server Engine for .Net" myValuedCells="//@matrices.1/@cells.151 //@matrices.1/@cells.152 //@matrices.1/@cells.153 //@matrices.1/@cells.154 //@matrices.1/@cells.155 //@matrices.1/@cells.156 //@matrices.1/@cells.157 //@matrices.1/@cells.158 //@matrices.1/@cells.159 //@matrices.1/@cells.160 //@matrices.1/@cells.161 //@matrices.1/@cells.162 //@matrices.1/@cells.163 //@matrices.1/@cells.164 //@matrices.1/@cells.165"/>
+  <concepts xsi:type="pcmmm:Product" name="ownCloud" myValuedCells="//@matrices.1/@cells.166 //@matrices.1/@cells.167 //@matrices.1/@cells.168 //@matrices.1/@cells.169 //@matrices.1/@cells.170 //@matrices.1/@cells.171 //@matrices.1/@cells.172 //@matrices.1/@cells.173 //@matrices.1/@cells.174 //@matrices.1/@cells.175 //@matrices.1/@cells.176 //@matrices.1/@cells.177 //@matrices.1/@cells.178 //@matrices.1/@cells.179 //@matrices.1/@cells.180"/>
+  <concepts xsi:type="pcmmm:Product" name="Radicale" myValuedCells="//@matrices.1/@cells.181 //@matrices.1/@cells.182 //@matrices.1/@cells.183 //@matrices.1/@cells.184 //@matrices.1/@cells.185 //@matrices.1/@cells.186 //@matrices.1/@cells.187 //@matrices.1/@cells.188 //@matrices.1/@cells.189 //@matrices.1/@cells.190 //@matrices.1/@cells.191 //@matrices.1/@cells.192 //@matrices.1/@cells.193 //@matrices.1/@cells.194 //@matrices.1/@cells.195"/>
+  <concepts xsi:type="pcmmm:Product" name="SabreDAV" myValuedCells="//@matrices.1/@cells.196 //@matrices.1/@cells.197 //@matrices.1/@cells.198 //@matrices.1/@cells.199 //@matrices.1/@cells.200 //@matrices.1/@cells.201 //@matrices.1/@cells.202 //@matrices.1/@cells.203 //@matrices.1/@cells.204 //@matrices.1/@cells.205 //@matrices.1/@cells.206 //@matrices.1/@cells.207 //@matrices.1/@cells.208 //@matrices.1/@cells.209 //@matrices.1/@cells.210"/>
+  <concepts xsi:type="pcmmm:Product" name="Tryton" myValuedCells="//@matrices.1/@cells.211 //@matrices.1/@cells.212 //@matrices.1/@cells.213 //@matrices.1/@cells.214 //@matrices.1/@cells.215 //@matrices.1/@cells.216 //@matrices.1/@cells.217 //@matrices.1/@cells.218 //@matrices.1/@cells.219 //@matrices.1/@cells.220 //@matrices.1/@cells.221 //@matrices.1/@cells.222 //@matrices.1/@cells.223 //@matrices.1/@cells.224 //@matrices.1/@cells.225"/>
+  <concepts xsi:type="pcmmm:Product" name="Zimbra" myValuedCells="//@matrices.1/@cells.226 //@matrices.1/@cells.227 //@matrices.1/@cells.228 //@matrices.1/@cells.229 //@matrices.1/@cells.230 //@matrices.1/@cells.231 //@matrices.1/@cells.232 //@matrices.1/@cells.233 //@matrices.1/@cells.234 //@matrices.1/@cells.235 //@matrices.1/@cells.236 //@matrices.1/@cells.237 //@matrices.1/@cells.238 //@matrices.1/@cells.239 //@matrices.1/@cells.240"/>
+  <concepts xsi:type="pcmmm:Product" name="Fennel" myValuedCells="//@matrices.1/@cells.241 //@matrices.1/@cells.242 //@matrices.1/@cells.243 //@matrices.1/@cells.244 //@matrices.1/@cells.245 //@matrices.1/@cells.246 //@matrices.1/@cells.247 //@matrices.1/@cells.248 //@matrices.1/@cells.249 //@matrices.1/@cells.250 //@matrices.1/@cells.251 //@matrices.1/@cells.252 //@matrices.1/@cells.253 //@matrices.1/@cells.254 //@matrices.1/@cells.255"/>
+  <concepts xsi:type="pcmmm:Feature" name="Mac OS X" constraints="//@matrices.0/@cells.31 //@matrices.0/@cells.91 //@matrices.0/@cells.106 //@matrices.0/@cells.146" domain="//@domainCollection/@domains.20"/>
+  <concepts xsi:type="pcmmm:Feature" name="Proprietary" constraints="//@matrices.0/@cells.32 //@matrices.0/@cells.67 //@matrices.0/@cells.92 //@matrices.0/@cells.102 //@matrices.0/@cells.107 //@matrices.0/@cells.147 //@matrices.0/@cells.152 //@matrices.1/@cells.121" domain="//@domainCollection/@domains.21"/>
+  <concepts xsi:type="pcmmm:Feature" name="Cross-platform JavaScript Web application" constraints="//@matrices.0/@cells.36 //@matrices.0/@cells.76 //@matrices.0/@cells.81 //@matrices.0/@cells.111" domain="//@domainCollection/@domains.22"/>
+  <concepts xsi:type="pcmmm:Feature" name="GPL" constraints="//@matrices.0/@cells.37 //@matrices.0/@cells.52 //@matrices.0/@cells.57 //@matrices.0/@cells.97 //@matrices.0/@cells.117 //@matrices.0/@cells.122 //@matrices.0/@cells.137 //@matrices.0/@cells.142 //@matrices.1/@cells.46 //@matrices.1/@cells.76 //@matrices.1/@cells.91 //@matrices.1/@cells.106 //@matrices.1/@cells.181 //@matrices.1/@cells.211" domain="//@domainCollection/@domains.23"/>
+  <concepts xsi:type="pcmmm:Feature" name="Android App" constraints="//@matrices.0/@cells.41 //@matrices.0/@cells.46 //@matrices.0/@cells.51 //@matrices.0/@cells.56 //@matrices.0/@cells.61 //@matrices.0/@cells.66 //@matrices.0/@cells.71 //@matrices.0/@cells.96" domain="//@domainCollection/@domains.24"/>
+  <concepts xsi:type="pcmmm:Feature" name="AGPL" constraints="//@matrices.0/@cells.77 //@matrices.0/@cells.82 //@matrices.1/@cells.136" domain="//@domainCollection/@domains.25"/>
+  <concepts xsi:type="pcmmm:Feature" name="Cross-platform Python" constraints="//@matrices.0/@cells.86 //@matrices.0/@cells.131" domain="//@domainCollection/@domains.26"/>
+  <concepts xsi:type="pcmmm:Feature" name="Apache" constraints="//@matrices.0/@cells.87 //@matrices.0/@cells.127 //@matrices.1/@cells.31 //@matrices.1/@cells.61" domain="//@domainCollection/@domains.27"/>
+  <concepts xsi:type="pcmmm:Feature" name="Microsoft Windows" constraints="//@matrices.0/@cells.101 //@matrices.0/@cells.151" domain="//@domainCollection/@domains.28"/>
+  <concepts xsi:type="pcmmm:Feature" name="MIT" constraints="//@matrices.0/@cells.112 //@matrices.0/@cells.132" domain="//@domainCollection/@domains.29"/>
+  <concepts xsi:type="pcmmm:Feature" name="Cross-platform Kontact add-on" constraints="//@matrices.0/@cells.116" domain="//@domainCollection/@domains.30"/>
+  <concepts xsi:type="pcmmm:Feature" name="Cross-platform Thunderbird Add-on" constraints="//@matrices.0/@cells.121 //@matrices.0/@cells.136" domain="//@domainCollection/@domains.31"/>
+  <concepts xsi:type="pcmmm:Feature" name="MPL" constraints="//@matrices.0/@cells.122 //@matrices.0/@cells.137" domain="//@domainCollection/@domains.32"/>
+  <concepts xsi:type="pcmmm:Feature" name="LGPL" constraints="//@matrices.0/@cells.122 //@matrices.0/@cells.137" domain="//@domainCollection/@domains.33"/>
+  <concepts xsi:type="pcmmm:Feature" name="Cross-platform" constraints="//@matrices.0/@cells.126 //@matrices.0/@cells.141" domain="//@domainCollection/@domains.34"/>
+  <concepts xsi:type="pcmmm:Feature" name="Cards via WebDAV" constraints="//@matrices.0/@cells.145" domain="//@domainCollection/@domains.35"/>
+  <concepts xsi:type="pcmmm:Feature" name="iOS" constraints="//@matrices.0/@cells.146" domain="//@domainCollection/@domains.36"/>
+  <concepts xsi:type="pcmmm:Feature" name="Some" constraints="//@matrices.1/@cells.51 //@matrices.1/@cells.141 //@matrices.1/@cells.201" domain="//@domainCollection/@domains.37"/>
+  <concepts xsi:type="pcmmm:Feature" name="Commercial" constraints="//@matrices.1/@cells.136 //@matrices.1/@cells.151" domain="//@domainCollection/@domains.38"/>
+  <concepts xsi:type="pcmmm:Feature" name="AGPLv3" constraints="//@matrices.1/@cells.166" domain="//@domainCollection/@domains.39"/>
+  <concepts xsi:type="pcmmm:Feature" name="BSD" constraints="//@matrices.1/@cells.196" domain="//@domainCollection/@domains.40"/>
+  <concepts xsi:type="pcmmm:Feature" name="ZPL" constraints="//@matrices.1/@cells.226" domain="//@domainCollection/@domains.41"/>
+  <concepts xsi:type="pcmmm:Feature" name="GPLv3" constraints="//@matrices.1/@cells.241" domain="//@domainCollection/@domains.42"/>
+  <domainCollection>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.41/@interpretation //@matrices.0/@cells.46/@interpretation //@matrices.0/@cells.51/@interpretation //@matrices.0/@cells.56/@interpretation //@matrices.0/@cells.61/@interpretation //@matrices.0/@cells.66/@interpretation //@matrices.0/@cells.71/@interpretation //@matrices.0/@cells.96/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.37/@interpretation //@matrices.0/@cells.52/@interpretation //@matrices.0/@cells.57/@interpretation //@matrices.0/@cells.97/@interpretation //@matrices.0/@cells.117/@interpretation //@matrices.0/@cells.122/@interpretation/@contraints.1 //@matrices.0/@cells.137/@interpretation/@contraints.1 //@matrices.0/@cells.142/@interpretation //@matrices.0/@cells.77/@interpretation //@matrices.0/@cells.82/@interpretation //@matrices.0/@cells.122/@interpretation/@contraints.2 //@matrices.0/@cells.137/@interpretation/@contraints.2 //@matrices.0/@cells.122/@interpretation/@contraints.0 //@matrices.0/@cells.137/@interpretation/@contraints.0 //@matrices.0/@cells.32/@interpretation //@matrices.0/@cells.67/@interpretation //@matrices.0/@cells.92/@interpretation //@matrices.0/@cells.102/@interpretation //@matrices.0/@cells.107/@interpretation //@matrices.0/@cells.147/@interpretation //@matrices.0/@cells.152/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.33/@interpretation //@matrices.0/@cells.38/@interpretation //@matrices.0/@cells.43/@interpretation //@matrices.0/@cells.53/@interpretation //@matrices.0/@cells.58/@interpretation //@matrices.0/@cells.68/@interpretation //@matrices.0/@cells.78/@interpretation //@matrices.0/@cells.88/@interpretation //@matrices.0/@cells.93/@interpretation //@matrices.0/@cells.98/@interpretation //@matrices.0/@cells.103/@interpretation //@matrices.0/@cells.108/@interpretation //@matrices.0/@cells.113/@interpretation //@matrices.0/@cells.123/@interpretation //@matrices.0/@cells.128/@interpretation //@matrices.0/@cells.138/@interpretation //@matrices.0/@cells.143/@interpretation //@matrices.0/@cells.148/@interpretation //@matrices.0/@cells.153/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.34/@interpretation //@matrices.0/@cells.49/@interpretation //@matrices.0/@cells.54/@interpretation //@matrices.0/@cells.69/@interpretation //@matrices.0/@cells.79/@interpretation //@matrices.0/@cells.89/@interpretation //@matrices.0/@cells.94/@interpretation //@matrices.0/@cells.104/@interpretation //@matrices.0/@cells.114/@interpretation //@matrices.0/@cells.124/@interpretation //@matrices.0/@cells.129/@interpretation //@matrices.0/@cells.139/@interpretation //@matrices.0/@cells.144/@interpretation //@matrices.0/@cells.149/@interpretation //@matrices.0/@cells.154/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.65/@interpretation //@matrices.0/@cells.75/@interpretation //@matrices.0/@cells.85/@interpretation //@matrices.0/@cells.90/@interpretation //@matrices.0/@cells.95/@interpretation //@matrices.0/@cells.100/@interpretation //@matrices.0/@cells.105/@interpretation //@matrices.0/@cells.110/@interpretation //@matrices.0/@cells.120/@interpretation //@matrices.0/@cells.130/@interpretation //@matrices.0/@cells.135/@interpretation //@matrices.0/@cells.140/@interpretation //@matrices.0/@cells.150/@interpretation //@matrices.0/@cells.155/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.46/@interpretation //@matrices.1/@cells.76/@interpretation //@matrices.1/@cells.91/@interpretation //@matrices.1/@cells.106/@interpretation //@matrices.1/@cells.181/@interpretation //@matrices.1/@cells.211/@interpretation //@matrices.1/@cells.136/@interpretation/@contraints.0 //@matrices.1/@cells.226/@interpretation //@matrices.1/@cells.166/@interpretation //@matrices.1/@cells.241/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.32/@interpretation //@matrices.1/@cells.47/@interpretation //@matrices.1/@cells.77/@interpretation //@matrices.1/@cells.92/@interpretation //@matrices.1/@cells.122/@interpretation //@matrices.1/@cells.137/@interpretation //@matrices.1/@cells.152/@interpretation //@matrices.1/@cells.182/@interpretation //@matrices.1/@cells.197/@interpretation //@matrices.1/@cells.212/@interpretation //@matrices.1/@cells.227/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.33/@interpretation //@matrices.1/@cells.48/@interpretation //@matrices.1/@cells.78/@interpretation //@matrices.1/@cells.123/@interpretation //@matrices.1/@cells.138/@interpretation //@matrices.1/@cells.153/@interpretation //@matrices.1/@cells.183/@interpretation //@matrices.1/@cells.198/@interpretation //@matrices.1/@cells.213/@interpretation //@matrices.1/@cells.228/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.34/@interpretation //@matrices.1/@cells.49/@interpretation //@matrices.1/@cells.79/@interpretation //@matrices.1/@cells.124/@interpretation //@matrices.1/@cells.139/@interpretation //@matrices.1/@cells.154/@interpretation //@matrices.1/@cells.184/@interpretation //@matrices.1/@cells.199/@interpretation //@matrices.1/@cells.214/@interpretation //@matrices.1/@cells.229/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.35/@interpretation //@matrices.1/@cells.80/@interpretation //@matrices.1/@cells.95/@interpretation //@matrices.1/@cells.125/@interpretation //@matrices.1/@cells.155/@interpretation //@matrices.1/@cells.185/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.96/@interpretation //@matrices.1/@cells.126/@interpretation //@matrices.1/@cells.156/@interpretation //@matrices.1/@cells.186/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.37/@interpretation //@matrices.1/@cells.52/@interpretation //@matrices.1/@cells.82/@interpretation //@matrices.1/@cells.97/@interpretation //@matrices.1/@cells.127/@interpretation //@matrices.1/@cells.187/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.38/@interpretation //@matrices.1/@cells.53/@interpretation //@matrices.1/@cells.83/@interpretation //@matrices.1/@cells.98/@interpretation //@matrices.1/@cells.128/@interpretation //@matrices.1/@cells.143/@interpretation //@matrices.1/@cells.188/@interpretation //@matrices.1/@cells.203/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.39/@interpretation //@matrices.1/@cells.54/@interpretation //@matrices.1/@cells.69/@interpretation //@matrices.1/@cells.84/@interpretation //@matrices.1/@cells.99/@interpretation //@matrices.1/@cells.129/@interpretation //@matrices.1/@cells.144/@interpretation //@matrices.1/@cells.159/@interpretation //@matrices.1/@cells.174/@interpretation //@matrices.1/@cells.189/@interpretation //@matrices.1/@cells.204/@interpretation //@matrices.1/@cells.219/@interpretation //@matrices.1/@cells.234/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.40/@interpretation //@matrices.1/@cells.55/@interpretation //@matrices.1/@cells.85/@interpretation //@matrices.1/@cells.100/@interpretation //@matrices.1/@cells.130/@interpretation //@matrices.1/@cells.145/@interpretation //@matrices.1/@cells.160/@interpretation //@matrices.1/@cells.190/@interpretation //@matrices.1/@cells.205/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.41/@interpretation //@matrices.1/@cells.56/@interpretation //@matrices.1/@cells.86/@interpretation //@matrices.1/@cells.101/@interpretation //@matrices.1/@cells.131/@interpretation //@matrices.1/@cells.146/@interpretation //@matrices.1/@cells.161/@interpretation //@matrices.1/@cells.191/@interpretation //@matrices.1/@cells.206/@interpretation //@matrices.1/@cells.221/@interpretation //@matrices.1/@cells.236/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.42/@interpretation //@matrices.1/@cells.57/@interpretation //@matrices.1/@cells.72/@interpretation //@matrices.1/@cells.87/@interpretation //@matrices.1/@cells.102/@interpretation //@matrices.1/@cells.132/@interpretation //@matrices.1/@cells.147/@interpretation //@matrices.1/@cells.192/@interpretation //@matrices.1/@cells.207/@interpretation //@matrices.1/@cells.222/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.43/@interpretation //@matrices.1/@cells.73/@interpretation //@matrices.1/@cells.88/@interpretation //@matrices.1/@cells.103/@interpretation //@matrices.1/@cells.133/@interpretation //@matrices.1/@cells.163/@interpretation //@matrices.1/@cells.193/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.44/@interpretation //@matrices.1/@cells.59/@interpretation //@matrices.1/@cells.104/@interpretation //@matrices.1/@cells.134/@interpretation //@matrices.1/@cells.149/@interpretation //@matrices.1/@cells.164/@interpretation //@matrices.1/@cells.194/@interpretation //@matrices.1/@cells.209/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.45/@interpretation //@matrices.1/@cells.60/@interpretation //@matrices.1/@cells.75/@interpretation //@matrices.1/@cells.105/@interpretation //@matrices.1/@cells.135/@interpretation //@matrices.1/@cells.150/@interpretation //@matrices.1/@cells.165/@interpretation //@matrices.1/@cells.180/@interpretation //@matrices.1/@cells.195/@interpretation //@matrices.1/@cells.210/@interpretation //@matrices.1/@cells.225/@interpretation //@matrices.1/@cells.240/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+  </domainCollection>
+</pcmmm:PCM>

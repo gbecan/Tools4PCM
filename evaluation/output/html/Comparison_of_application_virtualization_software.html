@@ -1,0 +1,701 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <div>
+      <h1>Comparison of virtual machines</h1>
+      <table border="1">
+        <tr>
+          <td rowspan="1" colspan="1"> Extra(Virtual machine) </td>
+          <td rowspan="1" colspan="1"> Header(Machine model) </td>
+          <td rowspan="1" colspan="1"> Header(Memory management) </td>
+          <td rowspan="1" colspan="1"> Header(Code security) </td>
+          <td rowspan="1" colspan="1"> Header(Interpreter) </td>
+          <td rowspan="1" colspan="1"> Header(JIT) </td>
+          <td rowspan="1" colspan="1"> Header(Precompilation) </td>
+          <td rowspan="1" colspan="1"> Header(Shared libraries) </td>
+          <td rowspan="1" colspan="1"> Header(Common Language Object Model) </td>
+          <td rowspan="1" colspan="1"> Header(Dynamic typing) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(CLR) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(stack, stack) </td>
+          <td rowspan="1" colspan="1">
+            Or(VarConceptRef(automatic, automatic), VarConceptRef(manual, manual))
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Dis (Inferno)) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(register, register) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(automatic, automatic) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(DotGNU Portable.NET) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(stack, stack) </td>
+          <td rowspan="1" colspan="1">
+            Or(VarConceptRef(automatic, automatic), VarConceptRef(manual, manual))
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Java Virtual Machine (JVM)) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(stack, stack) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(automatic, automatic) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(JikesRVM) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(stack, stack) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(automatic, automatic) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Unknown(?) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(LLVM) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(register, register) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(manual, manual) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Mono) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(stack, stack) </td>
+          <td rowspan="1" colspan="1">
+            Or(VarConceptRef(automatic, automatic), VarConceptRef(manual, manual))
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Parrot) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(register, register) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(automatic, automatic) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Dalvik) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(register, register) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(automatic, automatic) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Unknown(?) </td>
+          <td rowspan="1" colspan="1"> Unknown(?) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(libJIT) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(stack, stack) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(manual, manual) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Unknown(?) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Squeak) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(stack, stack) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(automatic, automatic) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(source to bytecode, source to bytecode)
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h1>List of application virtual machine implementations</h1>
+      <table border="1">
+        <tr>
+          <td rowspan="1" colspan="1"> Extra(Virtual machine) </td>
+          <td rowspan="1" colspan="1"> Header(Languages) </td>
+          <td rowspan="1" colspan="1"> Header(Comments) </td>
+          <td rowspan="1" colspan="1"> Header(Interpreter) </td>
+          <td rowspan="1" colspan="1"> Header(JIT) </td>
+          <td rowspan="1" colspan="1"> Header(Implementation Language) </td>
+          <td rowspan="1" colspan="1"> Header(SLoC) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Adobe Flash Player (aka Tamarin)) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(ActionScript, ActionScript), Partial(VarConceptRef(SWF, SWF), VarConceptRef(file format, file format)))
+          </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(interactive web authoring tool. bytecode is named &quot;ActionScript Byte Code (.abc)&quot;, interactive web authoring tool. bytecode is named &quot;ActionScript Byte Code (.abc)&quot;)
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(C++, C++) </td>
+          <td rowspan="1" colspan="1">
+            Partial(VarConceptRef(135k, 135k), VarConceptRef(initially released, initially released))
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(BEAM) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(Erlang, Erlang), VarConceptRef(Reia, Reia), VarConceptRef(Lisp Flavoured Erlang, Lisp Flavoured Erlang), VarConceptRef(Elixir, Elixir))
+          </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(There exists a native-code compiler, There exists a native-code compiler), VarConceptRef(HiPE., HiPE.))
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(C, C) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(247k, 247k) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Clipper p-code) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(Clipper, Clipper), VarConceptRef(Harbour, Harbour))
+          </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(plankton, plankton), VarConceptRef(HVM, HVM))
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(C, C) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Dis (Inferno)) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Limbo, Limbo) </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(Dis Virtual Machine Specification, Dis Virtual Machine Specification)
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(C, C) </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(15k + 2850 per JIT arch + 500 per host OS, 15k + 2850 per JIT arch + 500 per host OS)
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(DotGNU/Portable.NET) </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(CLI languages including: C#, CLI languages including: C#)
+          </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(Clone of Common Language Runtime, Clone of Common Language Runtime)
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(C, C), VarConceptRef(C#, C#))
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Forth) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Forth, Forth) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(Features are simplified, Features are simplified), VarConceptRef(usually include assembler, usually include assembler), VarConceptRef(compiler, compiler), And(VarConceptRef(text-level, text-level), VarConceptRef(binary-level interpreters, binary-level interpreters)), VarConceptRef(sometimes editor, sometimes editor), And(And(VarConceptRef(debugger, debugger), VarConceptRef(OS. Compilation speeds are &gt;20 SKLOC, OS. Compilation speeds are &gt;20 SKLOC)), And(VarConceptRef(S, S), VarConceptRef(behave much like JIT., behave much like JIT.))))
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(Forth, Forth), VarConceptRef(Forth Assembler, Forth Assembler))
+          </td>
+          <td rowspan="1" colspan="1">
+            And(And(VarConceptRef(2.8K to 5.6K, 2.8K to 5.6K), VarConceptRef(advanced, advanced)), VarConceptRef(professional implementations are smaller., professional implementations are smaller.))
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Glulx) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(Glulx, Glulx), VarConceptRef(Z-code, Z-code))
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Icon) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Icon, Icon) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(JVM) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(Java, Java), VarConceptRef(Jython, Jython), VarConceptRef(Groovy, Groovy), VarConceptRef(JRuby, JRuby), VarConceptRef(C, C), VarConceptRef(C++, C++), VarConceptRef(Clojure, Clojure), And(VarConceptRef(Scala, Scala), VarConceptRef(several others, several others)))
+          </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(Reference implementation by Sun, Reference implementation by Sun), VarConceptRef(OpenJDK: code under GPL, OpenJDK: code under GPL), And(VarConceptRef(IcedTea: code, IcedTea: code), VarConceptRef(tools under GPL, tools under GPL)))
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(JDK, JDK), VarConceptRef(OpenJDK &amp; IcedTea with regular JIT : Java, OpenJDK &amp; IcedTea with regular JIT : Java), VarConceptRef(C, C), And(VarConceptRef(ASM, ASM), VarConceptRef(IcedTea with the &quot;Zero&quot; JIT : Java, IcedTea with the &quot;Zero&quot; JIT : Java)), VarConceptRef(C, C))
+          </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(JVM is around 6500k lines, JVM is around 6500k lines), And(VarConceptRef(TCK is 80k tests, TCK is 80k tests), VarConceptRef(around 1000k lines, around 1000k lines)))
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(LLVM) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(C, C), VarConceptRef(C++, C++), VarConceptRef(Objective-C, Objective-C), VarConceptRef(Ada, Ada), VarConceptRef(Fortran, Fortran), VarConceptRef(and Rust, and Rust))
+          </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(MSIL, MSIL), And(VarConceptRef(C, C), VarConceptRef(C++ output are supported. ActionScript Byte Code output is supported by Adobe Alchemy. bytecode is named &quot;LLVM Bytecode (.bc)&quot;. assembly is named &quot;LLVM Assembly Language (*.ll)&quot;., C++ output are supported. ActionScript Byte Code output is supported by Adobe Alchemy. bytecode is named &quot;LLVM Bytecode (.bc)&quot;. assembly is named &quot;LLVM Assembly Language (*.ll)&quot;.)))
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(C++, C++) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(811k, 811k) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Lua) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Lua, Lua) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(LuaJIT, LuaJIT) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(C, C) </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(13k + 7k LuaJIT, 13k + 7k LuaJIT)
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(MMIX) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(MMIXAL, MMIXAL) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Mono) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(CLI languages including: C#, CLI languages including: C#), VarConceptRef(VB.NET, VB.NET), VarConceptRef(IronPython, IronPython), VarConceptRef(IronRuby, IronRuby), VarConceptRef(and others, and others))
+          </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(clone of Common Language Runtime., clone of Common Language Runtime.)
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(C#, C#), VarConceptRef(C, C))
+          </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(2332k, 2332k) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Oz) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(Oz, Oz), VarConceptRef(Alice, Alice))
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(NekoVM) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(currently Neko, currently Neko), VarConceptRef(haXe, haXe))
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(x86 only, x86 only) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(C, C) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(46k, 46k) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(O-code machine) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(BCPL, BCPL) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(p-code machine) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Pascal, Pascal) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(UCSD Pascal, UCSD Pascal), VarConceptRef(widespread in late 70s including Apple II, widespread in late 70s including Apple II))
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Parrot) </td>
+          <td rowspan="1" colspan="1">
+            And(Partial(VarConceptRef(Perl, Perl), VarConceptRef(6 &amp; 5, 6 &amp; 5)), VarConceptRef(NQP-rx, NQP-rx), VarConceptRef(PIR, PIR), VarConceptRef(PASM, PASM), VarConceptRef(PBC, PBC), VarConceptRef(BASIC, BASIC), VarConceptRef(bc, bc), VarConceptRef(C, C), VarConceptRef(ECMAScript, ECMAScript), VarConceptRef(Lisp, Lisp), VarConceptRef(Lua, Lua), VarConceptRef(m4, m4), VarConceptRef(Tcl, Tcl), VarConceptRef(WMLScript, WMLScript), VarConceptRef(XML, XML), VarConceptRef(and others, and others))
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(C, C), VarConceptRef(Perl, Perl))
+          </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(111k C, 111k C), VarConceptRef(240k Perl, 240k Perl))
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Perl virtual machine) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Perl, Perl) </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(op-code tree walker, op-code tree walker)
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(C, C), VarConceptRef(Perl, Perl))
+          </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(175k C, 175k C), VarConceptRef(9k Perl, 9k Perl))
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(CPython) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Python, Python) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Psyco, Psyco) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(C, C) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(387k C, 387k C), VarConceptRef(368k Python, 368k Python), VarConceptRef(10k ASM, 10k ASM), VarConceptRef(31k Psyco, 31k Psyco))
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(PyPy) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Python, Python) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(Self-hosting implementation of Python, Self-hosting implementation of Python), VarConceptRef(next generation of Psyco, next generation of Psyco))
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Python, Python) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Rubinius) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Ruby, Ruby) </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(Virtual machine for another Ruby implementation, Virtual machine for another Ruby implementation)
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(C++, C++), VarConceptRef(Ruby, Ruby))
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Silverlight) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(C#, C#), VarConceptRef(VB.NET, VB.NET))
+          </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(A Micro-version of Microsoft .NET Framework to let applications run sandboxed inside browser, A Micro-version of Microsoft .NET Framework to let applications run sandboxed inside browser)
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(C++, C++) </td>
+          <td rowspan="1" colspan="1">
+            Partial(VarConceptRef(7MB, 7MB), VarConceptRef(initially released, initially released))
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(SEAM) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Alice, Alice) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(ScummVM) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Scumm, Scumm) </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(Computer game engine, Computer game engine)
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(SECD) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(ISWIM, ISWIM), VarConceptRef(Lispkit Lisp, Lispkit Lisp))
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Squirrel) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Squirrel, Squirrel) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Squirrel_JIT, Squirrel_JIT) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(C++, C++) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(12k, 12k) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Smalltalk) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Smalltalk, Smalltalk) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(SQLite) </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(SQLite opcodes, SQLite opcodes)
+          </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(Virtual database engine, Virtual database engine)
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Squeak) </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(Squeak Smalltalk, Squeak Smalltalk)
+          </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(Self hosting implementation of Squeak virtual machine.  Rich multi-media support., Self hosting implementation of Squeak virtual machine.  Rich multi-media support.)
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(Cog &amp; Exupery, Cog &amp; Exupery)
+          </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(Smalltalk, Smalltalk), VarConceptRef(Slang, Slang))
+          </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(110k Smalltalk, 110k Smalltalk), VarConceptRef(~300K C, ~300K C))
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(TaoGroup VP/VP2) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(C, C), VarConceptRef(Java, Java))
+          </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(Proprietary embedded VM, Proprietary embedded VM)
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(TraceMonkey) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(JavaScript, JavaScript) </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(Based on Tamarin, Based on Tamarin)
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(C++, C++) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(173k, 173k) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Translator Engine) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(Flat File Tables, Flat File Tables), VarConceptRef(Global C++ variable declarations, Global C++ variable declarations))
+          </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(IDE, IDE), VarConceptRef(programming by demonstration, programming by demonstration))
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(TrueType) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(TrueType, TrueType) </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(Font rendering engine, Font rendering engine)
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1">
+            Partial(VarConceptRef(C, C), VarConceptRef(typically, typically))
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Valgrind) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(x86, x86), VarConceptRef(x86-64 binaries, x86-64 binaries))
+          </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(Checking of memory accesses, Checking of memory accesses), VarConceptRef(leaks under Linux, leaks under Linux))
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(C, C) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(467k, 467k) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(VisualWorks) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Smalltalk, Smalltalk) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(C, C) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(VMKit) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(JVM, JVM), VarConceptRef(CLI virtual machine based on LLVM., CLI virtual machine based on LLVM.))
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Vx32 virtual machine) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(x86 binaries, x86 binaries) </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(Application-level virtualization for native code, Application-level virtualization for native code)
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Waba) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(Virtual machine for small devices, Virtual machine for small devices), VarConceptRef(similar to Java, similar to Java))
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Yet Another Ruby VM (YARV)) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Ruby, Ruby) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(Virtual machine of the reference implementation for Ruby 1.9, Virtual machine of the reference implementation for Ruby 1.9), VarConceptRef(newer versions, newer versions))
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(C, C) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Z-machine) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(Z-Code, Z-Code) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1"> Header(Zend Engine) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(PHP, PHP) </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(No, false) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(C, C) </td>
+          <td rowspan="1" colspan="1"> VarConceptRef(75k, 75k) </td>
+        </tr>
+        <tr>
+          <td rowspan="1" colspan="1">
+            Header(libJIT Library for Just-In-Time compilation)
+          </td>
+          <td rowspan="1" colspan="1">
+            VarConceptRef(Common Intermediate Language Java bytecode Domain-specific programming language, Common Intermediate Language Java bytecode Domain-specific programming language)
+          </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(Virtual machine is used in Portable.NET Just-In-Time compiler, Virtual machine is used in Portable.NET Just-In-Time compiler), VarConceptRef(ILDJIT, ILDJIT), VarConceptRef(HornetsEye, HornetsEye))
+          </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1"> Boolean(Yes, true) </td>
+          <td rowspan="1" colspan="1">
+            And(VarConceptRef(C, C), VarConceptRef(ia32, ia32), VarConceptRef(arm, arm), VarConceptRef(amd64, amd64), VarConceptRef(alpha, alpha), VarConceptRef(low-level CPU architecture specific machine code, low-level CPU architecture specific machine code))
+          </td>
+          <td rowspan="1" colspan="1"> Empty() </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

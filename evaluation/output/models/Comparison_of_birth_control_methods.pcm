@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="Comparison table" id="Comparison table_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: brand/common name" verbatim="Brand/common name" rowspan="1" column="1" colspan="1" concept="//@concepts.0"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: typical-use failure rate (%)" verbatim="Typical-use failure rate (%)" rowspan="1" column="2" colspan="1" concept="//@concepts.1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: perfect-use failure rate (%)" verbatim="Perfect-use failure rate (%)" rowspan="1" column="3" colspan="1" concept="//@concepts.2"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: type" verbatim="Type" rowspan="1" column="4" colspan="1" concept="//@concepts.3"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: implementation" verbatim="Implementation" rowspan="1" column="5" colspan="1" concept="//@concepts.4"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: user action required" verbatim="User action required" rowspan="1" column="6" colspan="1" concept="//@concepts.5"/>
+    <cells xsi:type="pcmmm:Extra" name="34,0: birth control method" verbatim="Birth control method" row="34" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: birth control method" verbatim="Birth control method" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: implanon" verbatim="Implanon" row="1" rowspan="1" colspan="1" concept="//@concepts.6"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: the implant" verbatim="the  implant" row="1" rowspan="1" column="1" colspan="1" concepts="//@concepts.39" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="the  implant" verbatim="the  implant" concept="//@concepts.39"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: 0.05 (1 of 2000 women)" verbatim="0.05 &#xA;(1 of 2000 women)" row="1" rowspan="1" column="2" colspan="1" concepts="//@concepts.40" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 2000 women" verbatim="1 of 2000 women" concept="//@concepts.40"/>
+        <argument xsi:type="pcmmm:Double" name="0.05" confident="true" verbatim="0.05" value="0.05"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: 0.05" verbatim="0.05" row="1" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="0.05" confident="true" verbatim="0.05" value="0.05"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,4: progestogen" verbatim="Progestogen" row="1" rowspan="1" column="4" colspan="1" concepts="//@concepts.41" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Progestogen" verbatim="Progestogen" concept="//@concepts.41"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,5: subdermal implant" verbatim="Subdermal implant" row="1" rowspan="1" column="5" colspan="1" concepts="//@concepts.42" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Subdermal implant" verbatim="Subdermal implant" concept="//@concepts.42"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,6: 3 years (4 years off-label)" verbatim="3 years (4 years off-label)" row="1" rowspan="1" column="6" colspan="1" concepts="//@concepts.43 //@concepts.44" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="4 years off-label" verbatim="4 years off-label" concept="//@concepts.43"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="3 years" verbatim="3 years" concept="//@concepts.44"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="2,0: jadelle (lower-dose)" verbatim="Jadelle (lower-dose)" row="2" rowspan="1" colspan="1" concept="//@concepts.7"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: the implant" verbatim="the implant" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.45" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="the implant" verbatim="the implant" concept="//@concepts.45"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: 0.05" verbatim="0.05" row="2" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Double" name="0.05" confident="true" verbatim="0.05" value="0.05"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: 0.05" verbatim="0.05" row="2" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="0.05" confident="true" verbatim="0.05" value="0.05"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,4: progestogen" verbatim="Progestogen" row="2" rowspan="1" column="4" colspan="1" concepts="//@concepts.41" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Progestogen" verbatim="Progestogen" concept="//@concepts.41"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,5: subdermal implant" verbatim="Subdermal implant" row="2" rowspan="1" column="5" colspan="1" concepts="//@concepts.42" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Subdermal implant" verbatim="Subdermal implant" concept="//@concepts.42"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,6: 5 years" verbatim="5 years" row="2" rowspan="1" column="6" colspan="1" concepts="//@concepts.46" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="5 years" verbatim="5 years" concept="//@concepts.46"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="3,0: vasectomy" verbatim="Vasectomy" row="3" rowspan="1" colspan="1" concept="//@concepts.8"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: male sterilization" verbatim="male sterilization" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.47" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="male sterilization" verbatim="male sterilization" concept="//@concepts.47"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: 0.15 (1 of 666)" verbatim="0.15 &#xA;(1 of 666)" row="3" rowspan="1" column="2" colspan="1" concepts="//@concepts.48" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 666" verbatim="1 of 666" concept="//@concepts.48"/>
+        <argument xsi:type="pcmmm:Double" name="0.15" confident="true" verbatim="0.15" value="0.15"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: 0.1" verbatim="0.1" row="3" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="0.1" confident="true" verbatim="0.1" value="0.1"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,4: sterilization" verbatim="Sterilization" row="3" rowspan="1" column="4" colspan="1" concepts="//@concepts.49" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Sterilization" verbatim="Sterilization" concept="//@concepts.49"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,5: surgical procedure" verbatim="Surgical procedure" row="3" rowspan="1" column="5" colspan="1" concepts="//@concepts.50" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Surgical procedure" verbatim="Surgical procedure" concept="//@concepts.50"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,6: once" verbatim="Once" row="3" rowspan="1" column="6" colspan="1" concepts="//@concepts.51" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Once" verbatim="Once" concept="//@concepts.51"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="4,0: combined injectable" verbatim="Combined injectable" row="4" rowspan="1" colspan="1" concept="//@concepts.9"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: lunelle, cyclofem" verbatim="Lunelle, Cyclofem" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.52 //@concepts.53" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Lunelle" verbatim="Lunelle" concept="//@concepts.52"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Cyclofem" verbatim="Cyclofem" concept="//@concepts.53"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: 0.2 (1 of 500)" verbatim="0.2 &#xA;(1 of 500)" row="4" rowspan="1" column="2" colspan="1" concepts="//@concepts.54" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 500" verbatim="1 of 500" concept="//@concepts.54"/>
+        <argument xsi:type="pcmmm:Double" name="0.2" confident="true" verbatim="0.2" value="0.2"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: 0.2" verbatim="0.2" row="4" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="0.2" confident="true" verbatim="0.2" value="0.2"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,4: estrogen + progestogen" verbatim="Estrogen + progestogen" row="4" rowspan="1" column="4" colspan="1" concepts="//@concepts.55" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Estrogen + progestogen" verbatim="Estrogen + progestogen" concept="//@concepts.55"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,5: injection" verbatim="Injection" row="4" rowspan="1" column="5" colspan="1" concepts="//@concepts.56" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Injection" verbatim="Injection" concept="//@concepts.56"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,6: monthly" verbatim="Monthly" row="4" rowspan="1" column="6" colspan="1" concepts="//@concepts.57" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Monthly" verbatim="Monthly" concept="//@concepts.57"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="5,0: iud with progestogen" verbatim="IUD with progestogen" row="5" rowspan="1" colspan="1" concept="//@concepts.10"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: mirena" verbatim="Mirena" row="5" rowspan="1" column="1" colspan="1" concepts="//@concepts.58" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Mirena" verbatim="Mirena" concept="//@concepts.58"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: 0.2" verbatim="0.2" row="5" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Double" name="0.2" confident="true" verbatim="0.2" value="0.2"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,3: 0.2" verbatim="0.2" row="5" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="0.2" confident="true" verbatim="0.2" value="0.2"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,4: intrauterine &amp; progestogen" verbatim="Intrauterine &amp; progestogen" row="5" rowspan="1" column="4" colspan="1" concepts="//@concepts.59" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Intrauterine &amp; progestogen" verbatim="Intrauterine &amp; progestogen" concept="//@concepts.59"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,5: intrauterine" verbatim="Intrauterine" row="5" rowspan="1" column="5" colspan="1" concepts="//@concepts.60" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Intrauterine" verbatim="Intrauterine" concept="//@concepts.60"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,6: 5-7 years" verbatim="5-7 years" row="5" rowspan="1" column="6" colspan="1" concepts="//@concepts.61" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="5-7 years" verbatim="5-7 years" concept="//@concepts.61"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="6,0: essure" verbatim="Essure" row="6" rowspan="1" colspan="1" concept="//@concepts.11"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,1: female sterilization" verbatim="female sterilization" row="6" rowspan="1" column="1" colspan="1" concepts="//@concepts.62" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="female sterilization" verbatim="female sterilization" concept="//@concepts.62"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,2: 0.26 (1 of 384)" verbatim="0.26 &#xA;(1 of 384)" row="6" rowspan="1" column="2" colspan="1" concepts="//@concepts.63" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 384" verbatim="1 of 384" concept="//@concepts.63"/>
+        <argument xsi:type="pcmmm:Double" name="0.26" confident="true" verbatim="0.26" value="0.26"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,3: 0.26" verbatim="0.26" row="6" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="0.26" confident="true" verbatim="0.26" value="0.26"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,4: sterilization" verbatim="Sterilization" row="6" rowspan="1" column="4" colspan="1" concepts="//@concepts.49" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Sterilization" verbatim="Sterilization" concept="//@concepts.49"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,5: surgical procedure" verbatim="Surgical procedure" row="6" rowspan="1" column="5" colspan="1" concepts="//@concepts.50" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Surgical procedure" verbatim="Surgical procedure" concept="//@concepts.50"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,6: once" verbatim="Once" row="6" rowspan="1" column="6" colspan="1" concepts="//@concepts.51" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Once" verbatim="Once" concept="//@concepts.51"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="7,0: tubal ligation" verbatim="Tubal ligation" row="7" rowspan="1" colspan="1" concept="//@concepts.12"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,1: female sterilization" verbatim="female sterilization" row="7" rowspan="1" column="1" colspan="1" concepts="//@concepts.62" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="female sterilization" verbatim="female sterilization" concept="//@concepts.62"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,2: 0.5 (1 of 200)" verbatim="0.5 &#xA;(1 of 200)" row="7" rowspan="1" column="2" colspan="1" concepts="//@concepts.64" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 200" verbatim="1 of 200" concept="//@concepts.64"/>
+        <argument xsi:type="pcmmm:Double" name="0.5" confident="true" verbatim="0.5" value="0.5"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,3: 0.5" verbatim="0.5" row="7" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="0.5" confident="true" verbatim="0.5" value="0.5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,4: sterilization" verbatim="Sterilization" row="7" rowspan="1" column="4" colspan="1" concepts="//@concepts.49" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Sterilization" verbatim="Sterilization" concept="//@concepts.49"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,5: surgical procedure" verbatim="Surgical procedure" row="7" rowspan="1" column="5" colspan="1" concepts="//@concepts.50" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Surgical procedure" verbatim="Surgical procedure" concept="//@concepts.50"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,6: once" verbatim="Once" row="7" rowspan="1" column="6" colspan="1" concepts="//@concepts.51" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Once" verbatim="Once" concept="//@concepts.51"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="8,0: iud with copper" verbatim="IUD with copper" row="8" rowspan="1" colspan="1" concept="//@concepts.13"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,1: paragard, copper t, the coil" verbatim="Paragard, Copper T, the coil" row="8" rowspan="1" column="1" colspan="1" concepts="//@concepts.65 //@concepts.66 //@concepts.67" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Paragard" verbatim="Paragard" concept="//@concepts.65"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Copper T" verbatim="Copper T" concept="//@concepts.66"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="the coil" verbatim="the coil" concept="//@concepts.67"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,2: 0.8 (1 of 125)" verbatim="0.8 &#xA;(1 of 125)" row="8" rowspan="1" column="2" colspan="1" concepts="//@concepts.68" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 125" verbatim="1 of 125" concept="//@concepts.68"/>
+        <argument xsi:type="pcmmm:Double" name="0.8" confident="true" verbatim="0.8" value="0.8"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,3: 0.6" verbatim="0.6" row="8" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="0.6" confident="true" verbatim="0.6" value="0.6"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,4: intrauterine &amp; copper" verbatim="Intrauterine &amp; copper" row="8" rowspan="1" column="4" colspan="1" concepts="//@concepts.69" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Intrauterine &amp; copper" verbatim="Intrauterine &amp; copper" concept="//@concepts.69"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,5: intrauterine" verbatim="Intrauterine" row="8" rowspan="1" column="5" colspan="1" concepts="//@concepts.60" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Intrauterine" verbatim="Intrauterine" concept="//@concepts.60"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,6: 3 to 12+ years" verbatim="3 to 12+ years" row="8" rowspan="1" column="6" colspan="1" concepts="//@concepts.70" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="3 to 12+ years" verbatim="3 to 12+ years" concept="//@concepts.70"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="9,0: symptoms-based fertility awareness" verbatim="Symptoms-based fertility awareness" row="9" rowspan="1" colspan="1" concept="//@concepts.14"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,1: basal body temperature, cervical mucus" verbatim="basal body temperature, cervical mucus" row="9" rowspan="1" column="1" colspan="1" concepts="//@concepts.71 //@concepts.72" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="basal body temperature" verbatim="basal body temperature" concept="//@concepts.71"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="cervical mucus" verbatim="cervical mucus" concept="//@concepts.72"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,2: 1.8 (1 of 55)" verbatim="1.8  &#xA;(1 of 55)" row="9" rowspan="1" column="2" colspan="1" concepts="//@concepts.73" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 55" verbatim="1 of 55" concept="//@concepts.73"/>
+        <argument xsi:type="pcmmm:Double" name="1.8" confident="true" verbatim="1.8" value="1.8"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,3: 0.6" verbatim="0.6" row="9" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="0.6" confident="true" verbatim="0.6" value="0.6"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,4: behavioral" verbatim="Behavioral" row="9" rowspan="1" column="4" colspan="1" concepts="//@concepts.74" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Behavioral" verbatim="Behavioral" concept="//@concepts.74"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,5: observation and charting" verbatim="Observation and charting" row="9" rowspan="1" column="5" colspan="1" concepts="//@concepts.75 //@concepts.76" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Observation" verbatim="Observation" concept="//@concepts.75"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="charting" verbatim="charting" concept="//@concepts.76"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,6: throughout day or daily" verbatim="Throughout day or daily" row="9" rowspan="1" column="6" colspan="1" concepts="//@concepts.77 //@concepts.78" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Or">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Throughout day" verbatim="Throughout day" concept="//@concepts.77"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="daily" verbatim="daily" concept="//@concepts.78"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="10,0: lam for 6 months only; not applicable if menstruat" verbatim="LAM for 6 months only; not applicable if menstruation resumes" row="10" rowspan="1" colspan="1" concept="//@concepts.15"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,1: ecological breastfeeding" verbatim="ecological breastfeeding" row="10" rowspan="1" column="1" colspan="1" concepts="//@concepts.79" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="ecological breastfeeding" verbatim="ecological breastfeeding" concept="//@concepts.79"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,2: 2 (1 of 50)" verbatim="2 &#xA;(1 of 50)" row="10" rowspan="1" column="2" colspan="1" concepts="//@concepts.80" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 50" verbatim="1 of 50" concept="//@concepts.80"/>
+        <argument xsi:type="pcmmm:Integer" name="2" confident="true" verbatim="2" value="2"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,3: 0.5" verbatim="0.5" row="10" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="0.5" confident="true" verbatim="0.5" value="0.5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,4: behavioral" verbatim="Behavioral" row="10" rowspan="1" column="4" colspan="1" concepts="//@concepts.74" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Behavioral" verbatim="Behavioral" concept="//@concepts.74"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,5: breastfeeding" verbatim="Breastfeeding" row="10" rowspan="1" column="5" colspan="1" concepts="//@concepts.81" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Breastfeeding" verbatim="Breastfeeding" concept="//@concepts.81"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,6: every few hours" verbatim="Every few hours" row="10" rowspan="1" column="6" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Every few hours" verbatim="Every few hours" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="11,0: depo provera" verbatim="Depo Provera" row="11" rowspan="1" colspan="1" concept="//@concepts.16"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,1: the shot" verbatim="the shot" row="11" rowspan="1" column="1" colspan="1" concepts="//@concepts.83" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="the shot" verbatim="the shot" concept="//@concepts.83"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,2: 3 (1 of 33)" verbatim="3 &#xA;(1 of 33)" row="11" rowspan="1" column="2" colspan="1" concepts="//@concepts.84" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 33" verbatim="1 of 33" concept="//@concepts.84"/>
+        <argument xsi:type="pcmmm:Integer" name="3" confident="true" verbatim="3" value="3"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,3: 0.3" verbatim="0.3" row="11" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="0.3" confident="true" verbatim="0.3" value="0.3"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,4: progestogen" verbatim="Progestogen" row="11" rowspan="1" column="4" colspan="1" concepts="//@concepts.41" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Progestogen" verbatim="Progestogen" concept="//@concepts.41"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,5: injection" verbatim="Injection" row="11" rowspan="1" column="5" colspan="1" concepts="//@concepts.56" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Injection" verbatim="Injection" concept="//@concepts.56"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,6: 12 weeks" verbatim="12 weeks" row="11" rowspan="1" column="6" colspan="1" concepts="//@concepts.85" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="12 weeks" verbatim="12 weeks" concept="//@concepts.85"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="12,0: lea's shield and spermicide used by nulliparous" verbatim="Lea's Shield and spermicide used by nulliparous" row="12" rowspan="1" colspan="1" concept="//@concepts.17"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,1: " verbatim="" row="12" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,2: 5 (1 of 20)" verbatim="5 &#xA;(1 of 20)" row="12" rowspan="1" column="2" colspan="1" concepts="//@concepts.86" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 20" verbatim="1 of 20" concept="//@concepts.86"/>
+        <argument xsi:type="pcmmm:Integer" name="5" confident="true" verbatim="5" value="5"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,3: no data" verbatim="no data" row="12" rowspan="1" column="3" colspan="1" concepts="//@concepts.87" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="no data" verbatim="no data" concept="//@concepts.87"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,4: barrier + spermicide" verbatim="Barrier + spermicide" row="12" rowspan="1" column="4" colspan="1" concepts="//@concepts.88" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Barrier + spermicide" verbatim="Barrier + spermicide" concept="//@concepts.88"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,5: vaginal insertion" verbatim="Vaginal insertion" row="12" rowspan="1" column="5" colspan="1" concepts="//@concepts.89" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Vaginal insertion" verbatim="Vaginal insertion" concept="//@concepts.89"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,6: every act of intercourse" verbatim="Every act of intercourse" row="12" rowspan="1" column="6" colspan="1" concepts="//@concepts.90" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Every act of intercourse" verbatim="Every act of intercourse" concept="//@concepts.90"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="13,0: femcap and spermicide" verbatim="FemCap and spermicide" row="13" rowspan="1" colspan="1" concept="//@concepts.18"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,1: cervical cap" verbatim="cervical cap" row="13" rowspan="1" column="1" colspan="1" concepts="//@concepts.91" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="cervical cap" verbatim="cervical cap" concept="//@concepts.91"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,2: 7.6 (estimated) (1 of 13)" verbatim="7.6 (estimated) &#xA;(1 of 13)" row="13" rowspan="1" column="2" colspan="1" concepts="//@concepts.92" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="estimated) &#xA;(1 of 13" verbatim="estimated) &#xA;(1 of 13" concept="//@concepts.92"/>
+        <argument xsi:type="pcmmm:Double" name="7.6" confident="true" verbatim="7.6" value="7.6"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,3: no data" verbatim="no data" row="13" rowspan="1" column="3" colspan="1" concepts="//@concepts.87" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="no data" verbatim="no data" concept="//@concepts.87"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,4: barrier &amp; spermicide" verbatim="Barrier &amp; spermicide" row="13" rowspan="1" column="4" colspan="1" concepts="//@concepts.93" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Barrier &amp; spermicide" verbatim="Barrier &amp; spermicide" concept="//@concepts.93"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,5: vaginal insertion" verbatim="Vaginal insertion" row="13" rowspan="1" column="5" colspan="1" concepts="//@concepts.89" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Vaginal insertion" verbatim="Vaginal insertion" concept="//@concepts.89"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,6: every act of intercourse" verbatim="Every act of intercourse" row="13" rowspan="1" column="6" colspan="1" concepts="//@concepts.90" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Every act of intercourse" verbatim="Every act of intercourse" concept="//@concepts.90"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="14,0: combined oral contraceptive pill" verbatim="Combined oral contraceptive pill" row="14" rowspan="1" colspan="1" concept="//@concepts.19"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,1: the pill" verbatim="the Pill" row="14" rowspan="1" column="1" colspan="1" concepts="//@concepts.94" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="the Pill" verbatim="the Pill" concept="//@concepts.94"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,2: 9 (1 of 11)" verbatim="9 &#xA;(1 of 11)" row="14" rowspan="1" column="2" colspan="1" concepts="//@concepts.95" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 11" verbatim="1 of 11" concept="//@concepts.95"/>
+        <argument xsi:type="pcmmm:Integer" name="9" confident="true" verbatim="9" value="9"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,3: 0.3" verbatim="0.3" row="14" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="0.3" confident="true" verbatim="0.3" value="0.3"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,4: estrogen &amp; progestogen" verbatim="Estrogen &amp; progestogen" row="14" rowspan="1" column="4" colspan="1" concepts="//@concepts.96" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Estrogen &amp; progestogen" verbatim="Estrogen &amp; progestogen" concept="//@concepts.96"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,5: oral medication" verbatim="Oral medication" row="14" rowspan="1" column="5" colspan="1" concepts="//@concepts.97" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Oral medication" verbatim="Oral medication" concept="//@concepts.97"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,6: daily" verbatim="Daily" row="14" rowspan="1" column="6" colspan="1" concepts="//@concepts.98" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Daily" verbatim="Daily" concept="//@concepts.98"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="15,0: contraceptive patch" verbatim="Contraceptive patch" row="15" rowspan="1" colspan="1" concept="//@concepts.20"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,1: ortho evra, the patch" verbatim="Ortho Evra, the patch" row="15" rowspan="1" column="1" colspan="1" concepts="//@concepts.99 //@concepts.100" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Ortho Evra" verbatim="Ortho Evra" concept="//@concepts.99"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="the patch" verbatim="the patch" concept="//@concepts.100"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,2: 8 (1 of 12)" verbatim="8 &#xA;(1 of 12)" row="15" rowspan="1" column="2" colspan="1" concepts="//@concepts.101" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 12" verbatim="1 of 12" concept="//@concepts.101"/>
+        <argument xsi:type="pcmmm:Integer" name="8" confident="true" verbatim="8" value="8"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,3: 0.3" verbatim="0.3" row="15" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="0.3" confident="true" verbatim="0.3" value="0.3"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,4: estrogen &amp; progestogen" verbatim="Estrogen &amp; progestogen" row="15" rowspan="1" column="4" colspan="1" concepts="//@concepts.96" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Estrogen &amp; progestogen" verbatim="Estrogen &amp; progestogen" concept="//@concepts.96"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,5: transdermal patch" verbatim="Transdermal patch" row="15" rowspan="1" column="5" colspan="1" concepts="//@concepts.102" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Transdermal patch" verbatim="Transdermal patch" concept="//@concepts.102"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,6: weekly" verbatim="Weekly" row="15" rowspan="1" column="6" colspan="1" concepts="//@concepts.103" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Weekly" verbatim="Weekly" concept="//@concepts.103"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="16,0: nuvaring" verbatim="NuvaRing" row="16" rowspan="1" colspan="1" concept="//@concepts.21"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,1: the ring" verbatim="the ring" row="16" rowspan="1" column="1" colspan="1" concepts="//@concepts.104" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="the ring" verbatim="the ring" concept="//@concepts.104"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,2: 9 (1 of 11)" verbatim="9 &#xA;(1 of 11)" row="16" rowspan="1" column="2" colspan="1" concepts="//@concepts.95" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 11" verbatim="1 of 11" concept="//@concepts.95"/>
+        <argument xsi:type="pcmmm:Integer" name="9" confident="true" verbatim="9" value="9"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,3: 0.3" verbatim="0.3" row="16" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="0.3" confident="true" verbatim="0.3" value="0.3"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,4: estrogen &amp; progestogen" verbatim="Estrogen &amp; progestogen" row="16" rowspan="1" column="4" colspan="1" concepts="//@concepts.96" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Estrogen &amp; progestogen" verbatim="Estrogen &amp; progestogen" concept="//@concepts.96"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,5: vaginal insertion" verbatim="Vaginal insertion" row="16" rowspan="1" column="5" colspan="1" concepts="//@concepts.89" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Vaginal insertion" verbatim="Vaginal insertion" concept="//@concepts.89"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,6: in place 3 weeks / 1 week break" verbatim="In place 3 weeks / 1 week break" row="16" rowspan="1" column="6" colspan="1" concepts="//@concepts.105 //@concepts.106" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="In place 3 weeks" verbatim="In place 3 weeks" concept="//@concepts.105"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="1 week break" verbatim="1 week break" concept="//@concepts.106"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="17,0: progestogen only pill" verbatim="Progestogen only pill" row="17" rowspan="1" colspan="1" concept="//@concepts.22"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,1: pop, minipill" verbatim="POP, minipill" row="17" rowspan="1" column="1" colspan="1" concepts="//@concepts.107 //@concepts.108" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="POP" verbatim="POP" concept="//@concepts.107"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="minipill" verbatim="minipill" concept="//@concepts.108"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,2: 9" verbatim="9" row="17" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="9" confident="true" verbatim="9" value="9"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,3: 0.3" verbatim="0.3" row="17" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="0.3" confident="true" verbatim="0.3" value="0.3"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,4: progestogen" verbatim="Progestogen" row="17" rowspan="1" column="4" colspan="1" concepts="//@concepts.41" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Progestogen" verbatim="Progestogen" concept="//@concepts.41"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,5: oral medication" verbatim="Oral medication" row="17" rowspan="1" column="5" colspan="1" concepts="//@concepts.97" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Oral medication" verbatim="Oral medication" concept="//@concepts.97"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,6: daily" verbatim="Daily" row="17" rowspan="1" column="6" colspan="1" concepts="//@concepts.98" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Daily" verbatim="Daily" concept="//@concepts.98"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="18,0: ormeloxifene" verbatim="Ormeloxifene" row="18" rowspan="1" colspan="1" concept="//@concepts.23"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,1: saheli, centron" verbatim="Saheli, Centron" row="18" rowspan="1" column="1" colspan="1" concepts="//@concepts.109 //@concepts.110" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Saheli" verbatim="Saheli" concept="//@concepts.109"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Centron" verbatim="Centron" concept="//@concepts.110"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,2: 9" verbatim="9" row="18" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="9" confident="true" verbatim="9" value="9"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,3: 2" verbatim="2" row="18" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="2" confident="true" verbatim="2" value="2"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,4: serm" verbatim="SERM" row="18" rowspan="1" column="4" colspan="1" concepts="//@concepts.111" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="SERM" verbatim="SERM" concept="//@concepts.111"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,5: oral medication" verbatim="Oral medication" row="18" rowspan="1" column="5" colspan="1" concepts="//@concepts.97" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Oral medication" verbatim="Oral medication" concept="//@concepts.97"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,6: weekly" verbatim="Weekly" row="18" rowspan="1" column="6" colspan="1" concepts="//@concepts.103" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Weekly" verbatim="Weekly" concept="//@concepts.103"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="19,0: plan b one-step&#xae;" verbatim="Plan B One-Step&#xae;" row="19" rowspan="1" colspan="1" concept="//@concepts.24"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,1: levonorgestrel" verbatim="levonorgestrel" row="19" rowspan="1" column="1" colspan="1" concepts="//@concepts.112" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="levonorgestrel" verbatim="levonorgestrel" concept="//@concepts.112"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,2: 12.5 (1 of 8)" verbatim="12.5 &#xA;(1 of 8)" row="19" rowspan="1" column="2" colspan="1" concepts="//@concepts.113" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 8" verbatim="1 of 8" concept="//@concepts.113"/>
+        <argument xsi:type="pcmmm:Double" name="12.5" confident="true" verbatim="12.5" value="12.5"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,3: 12.5" verbatim="12.5" row="19" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="12.5" confident="true" verbatim="12.5" value="12.5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,4: emergency contraception pill" verbatim="emergency contraception pill" row="19" rowspan="1" column="4" colspan="1" concepts="//@concepts.114" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="emergency contraception pill" verbatim="emergency contraception pill" concept="//@concepts.114"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,5: mouth" verbatim="mouth" row="19" rowspan="1" column="5" colspan="1" concepts="//@concepts.115" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="mouth" verbatim="mouth" concept="//@concepts.115"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,6: every act of intercourse" verbatim="Every act of intercourse" row="19" rowspan="1" column="6" colspan="1" concepts="//@concepts.90" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Every act of intercourse" verbatim="Every act of intercourse" concept="//@concepts.90"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="20,0: male latex condom" verbatim="Male latex condom" row="20" rowspan="1" colspan="1" concept="//@concepts.25"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,1: condom" verbatim="Condom" row="20" rowspan="1" column="1" colspan="1" concepts="//@concepts.116" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Condom" verbatim="Condom" concept="//@concepts.116"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,2: 15 (1 of 6)" verbatim="15 &#xA;(1 of 6)" row="20" rowspan="1" column="2" colspan="1" concepts="//@concepts.117" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 6" verbatim="1 of 6" concept="//@concepts.117"/>
+        <argument xsi:type="pcmmm:Integer" name="15" confident="true" verbatim="15" value="15"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,3: 2" verbatim="2" row="20" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="2" confident="true" verbatim="2" value="2"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,4: barrier" verbatim="Barrier" row="20" rowspan="1" column="4" colspan="1" concepts="//@concepts.118" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Barrier" verbatim="Barrier" concept="//@concepts.118"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,5: placed on erect penis" verbatim="Placed on erect penis" row="20" rowspan="1" column="5" colspan="1" concepts="//@concepts.119" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Placed on erect penis" verbatim="Placed on erect penis" concept="//@concepts.119"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,6: every act of intercourse" verbatim="Every act of intercourse" row="20" rowspan="1" column="6" colspan="1" concepts="//@concepts.90" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Every act of intercourse" verbatim="Every act of intercourse" concept="//@concepts.90"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="21,0: testosterone injection" verbatim="Testosterone injection" row="21" rowspan="1" colspan="1" concept="//@concepts.26"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,1: testosterone undecanoate" verbatim="Testosterone Undecanoate" row="21" rowspan="1" column="1" colspan="1" concepts="//@concepts.120" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Testosterone Undecanoate" verbatim="Testosterone Undecanoate" concept="//@concepts.120"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,2: 6.1 (1 of 16)" verbatim="6.1 &#xA;(1 of 16)" row="21" rowspan="1" column="2" colspan="1" concepts="//@concepts.121" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 16" verbatim="1 of 16" concept="//@concepts.121"/>
+        <argument xsi:type="pcmmm:Double" name="6.1" confident="true" verbatim="6.1" value="6.1"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,3: 1.1" verbatim="1.1" row="21" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="1.1" confident="true" verbatim="1.1" value="1.1"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,4: testosterone" verbatim="Testosterone" row="21" rowspan="1" column="4" colspan="1" concepts="//@concepts.122" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Testosterone" verbatim="Testosterone" concept="//@concepts.122"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,5: intramuscular injection" verbatim="Intramuscular Injection" row="21" rowspan="1" column="5" colspan="1" concepts="//@concepts.123" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Intramuscular Injection" verbatim="Intramuscular Injection" concept="//@concepts.123"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,6: every 4 weeks" verbatim="Every 4 weeks" row="21" rowspan="1" column="6" colspan="1" concepts="//@concepts.124" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Every 4 weeks" verbatim="Every 4 weeks" concept="//@concepts.124"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="22,0: lea's shield and spermicide used by parous" verbatim="Lea's Shield and spermicide used by parous" row="22" rowspan="1" colspan="1" concept="//@concepts.27"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,1: " verbatim="" row="22" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,2: 15 (1 of 6)" verbatim="15 &#xA;(1 of 6)" row="22" rowspan="1" column="2" colspan="1" concepts="//@concepts.117" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 6" verbatim="1 of 6" concept="//@concepts.117"/>
+        <argument xsi:type="pcmmm:Integer" name="15" confident="true" verbatim="15" value="15"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,3: no data" verbatim="no data" row="22" rowspan="1" column="3" colspan="1" concepts="//@concepts.87" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="no data" verbatim="no data" concept="//@concepts.87"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,4: barrier + spermicide" verbatim="Barrier + spermicide" row="22" rowspan="1" column="4" colspan="1" concepts="//@concepts.88" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Barrier + spermicide" verbatim="Barrier + spermicide" concept="//@concepts.88"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,5: vaginal insertion" verbatim="Vaginal insertion" row="22" rowspan="1" column="5" colspan="1" concepts="//@concepts.89" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Vaginal insertion" verbatim="Vaginal insertion" concept="//@concepts.89"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,6: every act of intercourse" verbatim="Every act of intercourse" row="22" rowspan="1" column="6" colspan="1" concepts="//@concepts.90" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Every act of intercourse" verbatim="Every act of intercourse" concept="//@concepts.90"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="23,0: diaphragm and spermicide" verbatim="Diaphragm and spermicide" row="23" rowspan="1" colspan="1" concept="//@concepts.28"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,1: " verbatim="" row="23" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,2: 16 (1 of 6)" verbatim="16 &#xA;(1 of 6)" row="23" rowspan="1" column="2" colspan="1" concepts="//@concepts.117" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 6" verbatim="1 of 6" concept="//@concepts.117"/>
+        <argument xsi:type="pcmmm:Integer" name="16" confident="true" verbatim="16" value="16"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,3: 6" verbatim="6" row="23" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="6" confident="true" verbatim="6" value="6"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,4: barrier &amp; spermicide" verbatim="Barrier &amp; spermicide" row="23" rowspan="1" column="4" colspan="1" concepts="//@concepts.93" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Barrier &amp; spermicide" verbatim="Barrier &amp; spermicide" concept="//@concepts.93"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,5: vaginal insertion" verbatim="Vaginal insertion" row="23" rowspan="1" column="5" colspan="1" concepts="//@concepts.89" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Vaginal insertion" verbatim="Vaginal insertion" concept="//@concepts.89"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,6: every act of intercourse" verbatim="Every act of intercourse" row="23" rowspan="1" column="6" colspan="1" concepts="//@concepts.90" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Every act of intercourse" verbatim="Every act of intercourse" concept="//@concepts.90"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="24,0: prentif cervical cap and spermicide used by nullip" verbatim="Prentif cervical cap and spermicide used by nulliparous" row="24" rowspan="1" colspan="1" concept="//@concepts.29"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,1: " verbatim="" row="24" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,2: 16" verbatim="16" row="24" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="16" confident="true" verbatim="16" value="16"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,3: 9" verbatim="9" row="24" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="9" confident="true" verbatim="9" value="9"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,4: barrier + spermicide" verbatim="Barrier + spermicide" row="24" rowspan="1" column="4" colspan="1" concepts="//@concepts.88" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Barrier + spermicide" verbatim="Barrier + spermicide" concept="//@concepts.88"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,5: vaginal insertion" verbatim="Vaginal insertion" row="24" rowspan="1" column="5" colspan="1" concepts="//@concepts.89" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Vaginal insertion" verbatim="Vaginal insertion" concept="//@concepts.89"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,6: every act of intercourse" verbatim="Every act of intercourse" row="24" rowspan="1" column="6" colspan="1" concepts="//@concepts.90" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Every act of intercourse" verbatim="Every act of intercourse" concept="//@concepts.90"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="25,0: today contraceptive sponge used by nulliparous" verbatim="Today contraceptive sponge used by nulliparous" row="25" rowspan="1" colspan="1" concept="//@concepts.30"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,1: the sponge" verbatim="the sponge" row="25" rowspan="1" column="1" colspan="1" concepts="//@concepts.125" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="the sponge" verbatim="the sponge" concept="//@concepts.125"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,2: 16" verbatim="16" row="25" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="16" confident="true" verbatim="16" value="16"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,3: 9" verbatim="9" row="25" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="9" confident="true" verbatim="9" value="9"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,4: barrier &amp; spermicide" verbatim="Barrier &amp; spermicide" row="25" rowspan="1" column="4" colspan="1" concepts="//@concepts.93" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Barrier &amp; spermicide" verbatim="Barrier &amp; spermicide" concept="//@concepts.93"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,5: vaginal insertion" verbatim="Vaginal insertion" row="25" rowspan="1" column="5" colspan="1" concepts="//@concepts.89" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Vaginal insertion" verbatim="Vaginal insertion" concept="//@concepts.89"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,6: every act of intercourse" verbatim="Every act of intercourse" row="25" rowspan="1" column="6" colspan="1" concepts="//@concepts.90" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Every act of intercourse" verbatim="Every act of intercourse" concept="//@concepts.90"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="26,0: coitus interruptus" verbatim="Coitus interruptus" row="26" rowspan="1" colspan="1" concept="//@concepts.31"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,1: withdrawal method, pulling out" verbatim="withdrawal method, pulling out" row="26" rowspan="1" column="1" colspan="1" concepts="//@concepts.126 //@concepts.127" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="withdrawal method" verbatim="withdrawal method" concept="//@concepts.126"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="pulling out" verbatim="pulling out" concept="//@concepts.127"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,2: 18 (1 of 5)" verbatim="18 &#xA;(1 of 5)" row="26" rowspan="1" column="2" colspan="1" concepts="//@concepts.128" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 5" verbatim="1 of 5" concept="//@concepts.128"/>
+        <argument xsi:type="pcmmm:Integer" name="18" confident="true" verbatim="18" value="18"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,3: 4" verbatim="4" row="26" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="4" confident="true" verbatim="4" value="4"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,4: behavioral" verbatim="Behavioral" row="26" rowspan="1" column="4" colspan="1" concepts="//@concepts.74" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Behavioral" verbatim="Behavioral" concept="//@concepts.74"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,5: withdrawal" verbatim="Withdrawal" row="26" rowspan="1" column="5" colspan="1" concepts="//@concepts.129" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Withdrawal" verbatim="Withdrawal" concept="//@concepts.129"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,6: every act of intercourse" verbatim="Every act of intercourse" row="26" rowspan="1" column="6" colspan="1" concepts="//@concepts.90" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Every act of intercourse" verbatim="Every act of intercourse" concept="//@concepts.90"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="27,0: female condom" verbatim="Female condom" row="27" rowspan="1" colspan="1" concept="//@concepts.32"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="27,1: " verbatim="" row="27" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="27,2: 21 (1 of 4.7)" verbatim="21 &#xA;(1 of 4.7)" row="27" rowspan="1" column="2" colspan="1" concepts="//@concepts.130" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 4.7" verbatim="1 of 4.7" concept="//@concepts.130"/>
+        <argument xsi:type="pcmmm:Integer" name="21" confident="true" verbatim="21" value="21"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="27,3: 5" verbatim="5" row="27" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="5" confident="true" verbatim="5" value="5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="27,4: barrier" verbatim="Barrier" row="27" rowspan="1" column="4" colspan="1" concepts="//@concepts.118" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Barrier" verbatim="Barrier" concept="//@concepts.118"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="27,5: vaginal insertion" verbatim="Vaginal insertion" row="27" rowspan="1" column="5" colspan="1" concepts="//@concepts.89" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Vaginal insertion" verbatim="Vaginal insertion" concept="//@concepts.89"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="27,6: every act of intercourse" verbatim="Every act of intercourse" row="27" rowspan="1" column="6" colspan="1" concepts="//@concepts.90" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Every act of intercourse" verbatim="Every act of intercourse" concept="//@concepts.90"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="28,0: standard days method" verbatim="Standard Days Method" row="28" rowspan="1" colspan="1" concept="//@concepts.33"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="28,1: cyclebeads, icyclebeads" verbatim="CycleBeads, iCycleBeads" row="28" rowspan="1" column="1" colspan="1" concepts="//@concepts.131 //@concepts.132" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="CycleBeads" verbatim="CycleBeads" concept="//@concepts.131"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="iCycleBeads" verbatim="iCycleBeads" concept="//@concepts.132"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="28,2: 25 (1 of 4)" verbatim="25 &#xA;(1 of 4)" row="28" rowspan="1" column="2" colspan="1" concepts="//@concepts.133" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 4" verbatim="1 of 4" concept="//@concepts.133"/>
+        <argument xsi:type="pcmmm:Integer" name="25" confident="true" verbatim="25" value="25"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="28,3: 5" verbatim="5" row="28" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="5" confident="true" verbatim="5" value="5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="28,4: behavioral" verbatim="Behavioral" row="28" rowspan="1" column="4" colspan="1" concepts="//@concepts.74" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Behavioral" verbatim="Behavioral" concept="//@concepts.74"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="28,5: calendar-based" verbatim="Calendar-based" row="28" rowspan="1" column="5" colspan="1" concepts="//@concepts.134" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Calendar-based" verbatim="Calendar-based" concept="//@concepts.134"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="28,6: daily" verbatim="Daily" row="28" rowspan="1" column="6" colspan="1" concepts="//@concepts.98" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Daily" verbatim="Daily" concept="//@concepts.98"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="29,0: knaus-ogino method" verbatim="Knaus-Ogino method" row="29" rowspan="1" colspan="1" concept="//@concepts.34"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="29,1: the rhythm method" verbatim="the rhythm method" row="29" rowspan="1" column="1" colspan="1" concepts="//@concepts.135" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="the rhythm method" verbatim="the rhythm method" concept="//@concepts.135"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="29,2: 25" verbatim="25" row="29" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="25" confident="true" verbatim="25" value="25"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="29,3: 9" verbatim="9" row="29" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="9" confident="true" verbatim="9" value="9"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="29,4: behavioral" verbatim="Behavioral" row="29" rowspan="1" column="4" colspan="1" concepts="//@concepts.74" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Behavioral" verbatim="Behavioral" concept="//@concepts.74"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="29,5: calendar-based" verbatim="Calendar-based" row="29" rowspan="1" column="5" colspan="1" concepts="//@concepts.134" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Calendar-based" verbatim="Calendar-based" concept="//@concepts.134"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="29,6: daily" verbatim="Daily" row="29" rowspan="1" column="6" colspan="1" concepts="//@concepts.98" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Daily" verbatim="Daily" concept="//@concepts.98"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="30,0: spermicidal gel, foam, suppository, or film" verbatim="Spermicidal gel, foam, suppository, or film" row="30" rowspan="1" colspan="1" concept="//@concepts.35"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="30,1: " verbatim="" row="30" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="30,2: 29 (1 of 3)" verbatim="29 &#xA;(1 of 3)" row="30" rowspan="1" column="2" colspan="1" concepts="//@concepts.136" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 3" verbatim="1 of 3" concept="//@concepts.136"/>
+        <argument xsi:type="pcmmm:Integer" name="29" confident="true" verbatim="29" value="29"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="30,3: 18" verbatim="18" row="30" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="18" confident="true" verbatim="18" value="18"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="30,4: spermicide" verbatim="Spermicide" row="30" rowspan="1" column="4" colspan="1" concepts="//@concepts.137" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Spermicide" verbatim="Spermicide" concept="//@concepts.137"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="30,5: vaginal insertion" verbatim="Vaginal insertion" row="30" rowspan="1" column="5" colspan="1" concepts="//@concepts.89" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Vaginal insertion" verbatim="Vaginal insertion" concept="//@concepts.89"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="30,6: every act of intercourse" verbatim="Every act of intercourse" row="30" rowspan="1" column="6" colspan="1" concepts="//@concepts.90" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Every act of intercourse" verbatim="Every act of intercourse" concept="//@concepts.90"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="31,0: today contraceptive sponge used by parous" verbatim="Today contraceptive sponge used by parous" row="31" rowspan="1" colspan="1" concept="//@concepts.36"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="31,1: the sponge" verbatim="the sponge" row="31" rowspan="1" column="1" colspan="1" concepts="//@concepts.125" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="the sponge" verbatim="the sponge" concept="//@concepts.125"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="31,2: 32 (1 of 3)" verbatim="32 &#xA;(1 of 3)" row="31" rowspan="1" column="2" colspan="1" concepts="//@concepts.136" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="1 of 3" verbatim="1 of 3" concept="//@concepts.136"/>
+        <argument xsi:type="pcmmm:Integer" name="32" confident="true" verbatim="32" value="32"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="31,3: 20" verbatim="20" row="31" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="20" confident="true" verbatim="20" value="20"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="31,4: barrier &amp; spermicide" verbatim="Barrier &amp; spermicide" row="31" rowspan="1" column="4" colspan="1" concepts="//@concepts.93" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Barrier &amp; spermicide" verbatim="Barrier &amp; spermicide" concept="//@concepts.93"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="31,5: vaginal insertion" verbatim="Vaginal insertion" row="31" rowspan="1" column="5" colspan="1" concepts="//@concepts.89" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Vaginal insertion" verbatim="Vaginal insertion" concept="//@concepts.89"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="31,6: every act of intercourse" verbatim="Every act of intercourse" row="31" rowspan="1" column="6" colspan="1" concepts="//@concepts.90" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Every act of intercourse" verbatim="Every act of intercourse" concept="//@concepts.90"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="32,0: prentif cervical cap and spermicide used by parous" verbatim="Prentif cervical cap and spermicide used by parous" row="32" rowspan="1" colspan="1" concept="//@concepts.37"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="32,1: " verbatim="" row="32" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="32,2: 32" verbatim="32" row="32" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="32" confident="true" verbatim="32" value="32"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="32,3: 26" verbatim="26" row="32" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="26" confident="true" verbatim="26" value="26"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="32,4: barrier + spermicide" verbatim="Barrier + spermicide" row="32" rowspan="1" column="4" colspan="1" concepts="//@concepts.88" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Barrier + spermicide" verbatim="Barrier + spermicide" concept="//@concepts.88"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="32,5: vaginal insertion" verbatim="Vaginal insertion" row="32" rowspan="1" column="5" colspan="1" concepts="//@concepts.89" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Vaginal insertion" verbatim="Vaginal insertion" concept="//@concepts.89"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="32,6: every act of intercourse" verbatim="Every act of intercourse" row="32" rowspan="1" column="6" colspan="1" concepts="//@concepts.90" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Every act of intercourse" verbatim="Every act of intercourse" concept="//@concepts.90"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="33,0: none (unprotected intercourse)" verbatim="None (unprotected intercourse)" row="33" rowspan="1" colspan="1" concept="//@concepts.38"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="33,1: " verbatim="" row="33" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="33,2: 85 (6 of 7)" verbatim="85 &#xA;(6 of 7)" row="33" rowspan="1" column="2" colspan="1" concepts="//@concepts.138" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="6 of 7" verbatim="6 of 7" concept="//@concepts.138"/>
+        <argument xsi:type="pcmmm:Integer" name="85" confident="true" verbatim="85" value="85"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="33,3: 85" verbatim="85" row="33" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="85" confident="true" verbatim="85" value="85"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="33,4: n/a" verbatim="n/a" row="33" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Unknown" name="n/a" confident="true" verbatim="n/a"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="33,5: n/a" verbatim="n/a" row="33" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Unknown" name="n/a" confident="true" verbatim="n/a"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="33,6: n/a" verbatim="n/a" row="33" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Unknown" name="n/a" confident="true" verbatim="n/a"/>
+    </cells>
+    <cells xsi:type="pcmmm:Extra" name="34,1: brand/common name" verbatim="Brand/common name" row="34" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,2: typical-use failure rate (%)" verbatim="Typical-use failure rate (%)" row="34" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,3: perfect-use failure rate (%)" verbatim="Perfect-use failure rate (%)" row="34" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,4: type" verbatim="Type" row="34" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,5: delivery" verbatim="Delivery" row="34" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,6: user action required" verbatim="User action required" row="34" rowspan="1" column="6" colspan="1"/>
+  </matrices>
+  <concepts xsi:type="pcmmm:Feature" name="Brand/common name" myValuedCells="//@matrices.0/@cells.9 //@matrices.0/@cells.16 //@matrices.0/@cells.23 //@matrices.0/@cells.30 //@matrices.0/@cells.37 //@matrices.0/@cells.44 //@matrices.0/@cells.51 //@matrices.0/@cells.58 //@matrices.0/@cells.65 //@matrices.0/@cells.72 //@matrices.0/@cells.79 //@matrices.0/@cells.86 //@matrices.0/@cells.93 //@matrices.0/@cells.100 //@matrices.0/@cells.107 //@matrices.0/@cells.114 //@matrices.0/@cells.121 //@matrices.0/@cells.128 //@matrices.0/@cells.135 //@matrices.0/@cells.142 //@matrices.0/@cells.149 //@matrices.0/@cells.156 //@matrices.0/@cells.163 //@matrices.0/@cells.170 //@matrices.0/@cells.177 //@matrices.0/@cells.184 //@matrices.0/@cells.191 //@matrices.0/@cells.198 //@matrices.0/@cells.205 //@matrices.0/@cells.212 //@matrices.0/@cells.219 //@matrices.0/@cells.226 //@matrices.0/@cells.233" domain="//@domainCollection/@domains.0"/>
+  <concepts xsi:type="pcmmm:Feature" name="Typical-use failure rate (%)" myValuedCells="//@matrices.0/@cells.10 //@matrices.0/@cells.17 //@matrices.0/@cells.24 //@matrices.0/@cells.31 //@matrices.0/@cells.38 //@matrices.0/@cells.45 //@matrices.0/@cells.52 //@matrices.0/@cells.59 //@matrices.0/@cells.66 //@matrices.0/@cells.73 //@matrices.0/@cells.80 //@matrices.0/@cells.87 //@matrices.0/@cells.94 //@matrices.0/@cells.101 //@matrices.0/@cells.108 //@matrices.0/@cells.115 //@matrices.0/@cells.122 //@matrices.0/@cells.129 //@matrices.0/@cells.136 //@matrices.0/@cells.143 //@matrices.0/@cells.150 //@matrices.0/@cells.157 //@matrices.0/@cells.164 //@matrices.0/@cells.171 //@matrices.0/@cells.178 //@matrices.0/@cells.185 //@matrices.0/@cells.192 //@matrices.0/@cells.199 //@matrices.0/@cells.206 //@matrices.0/@cells.213 //@matrices.0/@cells.220 //@matrices.0/@cells.227 //@matrices.0/@cells.234" domain="//@domainCollection/@domains.1"/>
+  <concepts xsi:type="pcmmm:Feature" name="Perfect-use failure rate (%)" myValuedCells="//@matrices.0/@cells.11 //@matrices.0/@cells.18 //@matrices.0/@cells.25 //@matrices.0/@cells.32 //@matrices.0/@cells.39 //@matrices.0/@cells.46 //@matrices.0/@cells.53 //@matrices.0/@cells.60 //@matrices.0/@cells.67 //@matrices.0/@cells.74 //@matrices.0/@cells.81 //@matrices.0/@cells.88 //@matrices.0/@cells.95 //@matrices.0/@cells.102 //@matrices.0/@cells.109 //@matrices.0/@cells.116 //@matrices.0/@cells.123 //@matrices.0/@cells.130 //@matrices.0/@cells.137 //@matrices.0/@cells.144 //@matrices.0/@cells.151 //@matrices.0/@cells.158 //@matrices.0/@cells.165 //@matrices.0/@cells.172 //@matrices.0/@cells.179 //@matrices.0/@cells.186 //@matrices.0/@cells.193 //@matrices.0/@cells.200 //@matrices.0/@cells.207 //@matrices.0/@cells.214 //@matrices.0/@cells.221 //@matrices.0/@cells.228 //@matrices.0/@cells.235" domain="//@domainCollection/@domains.2"/>
+  <concepts xsi:type="pcmmm:Feature" name="Type" myValuedCells="//@matrices.0/@cells.12 //@matrices.0/@cells.19 //@matrices.0/@cells.26 //@matrices.0/@cells.33 //@matrices.0/@cells.40 //@matrices.0/@cells.47 //@matrices.0/@cells.54 //@matrices.0/@cells.61 //@matrices.0/@cells.68 //@matrices.0/@cells.75 //@matrices.0/@cells.82 //@matrices.0/@cells.89 //@matrices.0/@cells.96 //@matrices.0/@cells.103 //@matrices.0/@cells.110 //@matrices.0/@cells.117 //@matrices.0/@cells.124 //@matrices.0/@cells.131 //@matrices.0/@cells.138 //@matrices.0/@cells.145 //@matrices.0/@cells.152 //@matrices.0/@cells.159 //@matrices.0/@cells.166 //@matrices.0/@cells.173 //@matrices.0/@cells.180 //@matrices.0/@cells.187 //@matrices.0/@cells.194 //@matrices.0/@cells.201 //@matrices.0/@cells.208 //@matrices.0/@cells.215 //@matrices.0/@cells.222 //@matrices.0/@cells.229 //@matrices.0/@cells.236" domain="//@domainCollection/@domains.3"/>
+  <concepts xsi:type="pcmmm:Feature" name="Implementation" myValuedCells="//@matrices.0/@cells.13 //@matrices.0/@cells.20 //@matrices.0/@cells.27 //@matrices.0/@cells.34 //@matrices.0/@cells.41 //@matrices.0/@cells.48 //@matrices.0/@cells.55 //@matrices.0/@cells.62 //@matrices.0/@cells.69 //@matrices.0/@cells.76 //@matrices.0/@cells.83 //@matrices.0/@cells.90 //@matrices.0/@cells.97 //@matrices.0/@cells.104 //@matrices.0/@cells.111 //@matrices.0/@cells.118 //@matrices.0/@cells.125 //@matrices.0/@cells.132 //@matrices.0/@cells.139 //@matrices.0/@cells.146 //@matrices.0/@cells.153 //@matrices.0/@cells.160 //@matrices.0/@cells.167 //@matrices.0/@cells.174 //@matrices.0/@cells.181 //@matrices.0/@cells.188 //@matrices.0/@cells.195 //@matrices.0/@cells.202 //@matrices.0/@cells.209 //@matrices.0/@cells.216 //@matrices.0/@cells.223 //@matrices.0/@cells.230 //@matrices.0/@cells.237" domain="//@domainCollection/@domains.4"/>
+  <concepts xsi:type="pcmmm:Feature" name="User action required" myValuedCells="//@matrices.0/@cells.14 //@matrices.0/@cells.21 //@matrices.0/@cells.28 //@matrices.0/@cells.35 //@matrices.0/@cells.42 //@matrices.0/@cells.49 //@matrices.0/@cells.56 //@matrices.0/@cells.63 //@matrices.0/@cells.70 //@matrices.0/@cells.77 //@matrices.0/@cells.84 //@matrices.0/@cells.91 //@matrices.0/@cells.98 //@matrices.0/@cells.105 //@matrices.0/@cells.112 //@matrices.0/@cells.119 //@matrices.0/@cells.126 //@matrices.0/@cells.133 //@matrices.0/@cells.140 //@matrices.0/@cells.147 //@matrices.0/@cells.154 //@matrices.0/@cells.161 //@matrices.0/@cells.168 //@matrices.0/@cells.175 //@matrices.0/@cells.182 //@matrices.0/@cells.189 //@matrices.0/@cells.196 //@matrices.0/@cells.203 //@matrices.0/@cells.210 //@matrices.0/@cells.217 //@matrices.0/@cells.224 //@matrices.0/@cells.231 //@matrices.0/@cells.238" domain="//@domainCollection/@domains.5"/>
+  <concepts xsi:type="pcmmm:Product" name="Implanon" myValuedCells="//@matrices.0/@cells.9 //@matrices.0/@cells.10 //@matrices.0/@cells.11 //@matrices.0/@cells.12 //@matrices.0/@cells.13 //@matrices.0/@cells.14"/>
+  <concepts xsi:type="pcmmm:Product" name="Jadelle (lower-dose)" myValuedCells="//@matrices.0/@cells.16 //@matrices.0/@cells.17 //@matrices.0/@cells.18 //@matrices.0/@cells.19 //@matrices.0/@cells.20 //@matrices.0/@cells.21"/>
+  <concepts xsi:type="pcmmm:Product" name="Vasectomy" myValuedCells="//@matrices.0/@cells.23 //@matrices.0/@cells.24 //@matrices.0/@cells.25 //@matrices.0/@cells.26 //@matrices.0/@cells.27 //@matrices.0/@cells.28"/>
+  <concepts xsi:type="pcmmm:Product" name="Combined injectable" myValuedCells="//@matrices.0/@cells.30 //@matrices.0/@cells.31 //@matrices.0/@cells.32 //@matrices.0/@cells.33 //@matrices.0/@cells.34 //@matrices.0/@cells.35"/>
+  <concepts xsi:type="pcmmm:Product" name="IUD with progestogen" myValuedCells="//@matrices.0/@cells.37 //@matrices.0/@cells.38 //@matrices.0/@cells.39 //@matrices.0/@cells.40 //@matrices.0/@cells.41 //@matrices.0/@cells.42"/>
+  <concepts xsi:type="pcmmm:Product" name="Essure" myValuedCells="//@matrices.0/@cells.44 //@matrices.0/@cells.45 //@matrices.0/@cells.46 //@matrices.0/@cells.47 //@matrices.0/@cells.48 //@matrices.0/@cells.49"/>
+  <concepts xsi:type="pcmmm:Product" name="Tubal ligation" myValuedCells="//@matrices.0/@cells.51 //@matrices.0/@cells.52 //@matrices.0/@cells.53 //@matrices.0/@cells.54 //@matrices.0/@cells.55 //@matrices.0/@cells.56"/>
+  <concepts xsi:type="pcmmm:Product" name="IUD with copper" myValuedCells="//@matrices.0/@cells.58 //@matrices.0/@cells.59 //@matrices.0/@cells.60 //@matrices.0/@cells.61 //@matrices.0/@cells.62 //@matrices.0/@cells.63"/>
+  <concepts xsi:type="pcmmm:Product" name="Symptoms-based fertility awareness" myValuedCells="//@matrices.0/@cells.65 //@matrices.0/@cells.66 //@matrices.0/@cells.67 //@matrices.0/@cells.68 //@matrices.0/@cells.69 //@matrices.0/@cells.70"/>
+  <concepts xsi:type="pcmmm:Product" name="LAM for 6 months only; not applicable if menstruation resumes" myValuedCells="//@matrices.0/@cells.72 //@matrices.0/@cells.73 //@matrices.0/@cells.74 //@matrices.0/@cells.75 //@matrices.0/@cells.76 //@matrices.0/@cells.77"/>
+  <concepts xsi:type="pcmmm:Product" name="Depo Provera" myValuedCells="//@matrices.0/@cells.79 //@matrices.0/@cells.80 //@matrices.0/@cells.81 //@matrices.0/@cells.82 //@matrices.0/@cells.83 //@matrices.0/@cells.84"/>
+  <concepts xsi:type="pcmmm:Product" name="Lea's Shield and spermicide used by nulliparous" myValuedCells="//@matrices.0/@cells.86 //@matrices.0/@cells.87 //@matrices.0/@cells.88 //@matrices.0/@cells.89 //@matrices.0/@cells.90 //@matrices.0/@cells.91"/>
+  <concepts xsi:type="pcmmm:Product" name="FemCap and spermicide" myValuedCells="//@matrices.0/@cells.93 //@matrices.0/@cells.94 //@matrices.0/@cells.95 //@matrices.0/@cells.96 //@matrices.0/@cells.97 //@matrices.0/@cells.98"/>
+  <concepts xsi:type="pcmmm:Product" name="Combined oral contraceptive pill" myValuedCells="//@matrices.0/@cells.100 //@matrices.0/@cells.101 //@matrices.0/@cells.102 //@matrices.0/@cells.103 //@matrices.0/@cells.104 //@matrices.0/@cells.105"/>
+  <concepts xsi:type="pcmmm:Product" name="Contraceptive patch" myValuedCells="//@matrices.0/@cells.107 //@matrices.0/@cells.108 //@matrices.0/@cells.109 //@matrices.0/@cells.110 //@matrices.0/@cells.111 //@matrices.0/@cells.112"/>
+  <concepts xsi:type="pcmmm:Product" name="NuvaRing" myValuedCells="//@matrices.0/@cells.114 //@matrices.0/@cells.115 //@matrices.0/@cells.116 //@matrices.0/@cells.117 //@matrices.0/@cells.118 //@matrices.0/@cells.119"/>
+  <concepts xsi:type="pcmmm:Product" name="Progestogen only pill" myValuedCells="//@matrices.0/@cells.121 //@matrices.0/@cells.122 //@matrices.0/@cells.123 //@matrices.0/@cells.124 //@matrices.0/@cells.125 //@matrices.0/@cells.126"/>
+  <concepts xsi:type="pcmmm:Product" name="Ormeloxifene" myValuedCells="//@matrices.0/@cells.128 //@matrices.0/@cells.129 //@matrices.0/@cells.130 //@matrices.0/@cells.131 //@matrices.0/@cells.132 //@matrices.0/@cells.133"/>
+  <concepts xsi:type="pcmmm:Product" name="Plan B One-Step&#xae;" myValuedCells="//@matrices.0/@cells.135 //@matrices.0/@cells.136 //@matrices.0/@cells.137 //@matrices.0/@cells.138 //@matrices.0/@cells.139 //@matrices.0/@cells.140"/>
+  <concepts xsi:type="pcmmm:Product" name="Male latex condom" myValuedCells="//@matrices.0/@cells.142 //@matrices.0/@cells.143 //@matrices.0/@cells.144 //@matrices.0/@cells.145 //@matrices.0/@cells.146 //@matrices.0/@cells.147"/>
+  <concepts xsi:type="pcmmm:Product" name="Testosterone injection" myValuedCells="//@matrices.0/@cells.149 //@matrices.0/@cells.150 //@matrices.0/@cells.151 //@matrices.0/@cells.152 //@matrices.0/@cells.153 //@matrices.0/@cells.154"/>
+  <concepts xsi:type="pcmmm:Product" name="Lea's Shield and spermicide used by parous" myValuedCells="//@matrices.0/@cells.156 //@matrices.0/@cells.157 //@matrices.0/@cells.158 //@matrices.0/@cells.159 //@matrices.0/@cells.160 //@matrices.0/@cells.161"/>
+  <concepts xsi:type="pcmmm:Product" name="Diaphragm and spermicide" myValuedCells="//@matrices.0/@cells.163 //@matrices.0/@cells.164 //@matrices.0/@cells.165 //@matrices.0/@cells.166 //@matrices.0/@cells.167 //@matrices.0/@cells.168"/>
+  <concepts xsi:type="pcmmm:Product" name="Prentif cervical cap and spermicide used by nulliparous" myValuedCells="//@matrices.0/@cells.170 //@matrices.0/@cells.171 //@matrices.0/@cells.172 //@matrices.0/@cells.173 //@matrices.0/@cells.174 //@matrices.0/@cells.175"/>
+  <concepts xsi:type="pcmmm:Product" name="Today contraceptive sponge used by nulliparous" myValuedCells="//@matrices.0/@cells.177 //@matrices.0/@cells.178 //@matrices.0/@cells.179 //@matrices.0/@cells.180 //@matrices.0/@cells.181 //@matrices.0/@cells.182"/>
+  <concepts xsi:type="pcmmm:Product" name="Coitus interruptus" myValuedCells="//@matrices.0/@cells.184 //@matrices.0/@cells.185 //@matrices.0/@cells.186 //@matrices.0/@cells.187 //@matrices.0/@cells.188 //@matrices.0/@cells.189"/>
+  <concepts xsi:type="pcmmm:Product" name="Female condom" myValuedCells="//@matrices.0/@cells.191 //@matrices.0/@cells.192 //@matrices.0/@cells.193 //@matrices.0/@cells.194 //@matrices.0/@cells.195 //@matrices.0/@cells.196"/>
+  <concepts xsi:type="pcmmm:Product" name="Standard Days Method" myValuedCells="//@matrices.0/@cells.198 //@matrices.0/@cells.199 //@matrices.0/@cells.200 //@matrices.0/@cells.201 //@matrices.0/@cells.202 //@matrices.0/@cells.203"/>
+  <concepts xsi:type="pcmmm:Product" name="Knaus-Ogino method" myValuedCells="//@matrices.0/@cells.205 //@matrices.0/@cells.206 //@matrices.0/@cells.207 //@matrices.0/@cells.208 //@matrices.0/@cells.209 //@matrices.0/@cells.210"/>
+  <concepts xsi:type="pcmmm:Product" name="Spermicidal gel, foam, suppository, or film" myValuedCells="//@matrices.0/@cells.212 //@matrices.0/@cells.213 //@matrices.0/@cells.214 //@matrices.0/@cells.215 //@matrices.0/@cells.216 //@matrices.0/@cells.217"/>
+  <concepts xsi:type="pcmmm:Product" name="Today contraceptive sponge used by parous" myValuedCells="//@matrices.0/@cells.219 //@matrices.0/@cells.220 //@matrices.0/@cells.221 //@matrices.0/@cells.222 //@matrices.0/@cells.223 //@matrices.0/@cells.224"/>
+  <concepts xsi:type="pcmmm:Product" name="Prentif cervical cap and spermicide used by parous" myValuedCells="//@matrices.0/@cells.226 //@matrices.0/@cells.227 //@matrices.0/@cells.228 //@matrices.0/@cells.229 //@matrices.0/@cells.230 //@matrices.0/@cells.231"/>
+  <concepts xsi:type="pcmmm:Product" name="None (unprotected intercourse)" myValuedCells="//@matrices.0/@cells.233 //@matrices.0/@cells.234 //@matrices.0/@cells.235 //@matrices.0/@cells.236 //@matrices.0/@cells.237 //@matrices.0/@cells.238"/>
+  <concepts xsi:type="pcmmm:Feature" name="the  implant" constraints="//@matrices.0/@cells.9" domain="//@domainCollection/@domains.6"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 2000 women" constraints="//@matrices.0/@cells.10" domain="//@domainCollection/@domains.7"/>
+  <concepts xsi:type="pcmmm:Feature" name="Progestogen" constraints="//@matrices.0/@cells.12 //@matrices.0/@cells.19 //@matrices.0/@cells.82 //@matrices.0/@cells.124" domain="//@domainCollection/@domains.8"/>
+  <concepts xsi:type="pcmmm:Feature" name="Subdermal implant" constraints="//@matrices.0/@cells.13 //@matrices.0/@cells.20" domain="//@domainCollection/@domains.9"/>
+  <concepts xsi:type="pcmmm:Feature" name="4 years off-label" constraints="//@matrices.0/@cells.14" domain="//@domainCollection/@domains.10"/>
+  <concepts xsi:type="pcmmm:Feature" name="3 years" constraints="//@matrices.0/@cells.14" domain="//@domainCollection/@domains.11"/>
+  <concepts xsi:type="pcmmm:Feature" name="the implant" constraints="//@matrices.0/@cells.16" domain="//@domainCollection/@domains.12"/>
+  <concepts xsi:type="pcmmm:Feature" name="5 years" constraints="//@matrices.0/@cells.21" domain="//@domainCollection/@domains.13"/>
+  <concepts xsi:type="pcmmm:Feature" name="male sterilization" constraints="//@matrices.0/@cells.23" domain="//@domainCollection/@domains.14"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 666" constraints="//@matrices.0/@cells.24" domain="//@domainCollection/@domains.15"/>
+  <concepts xsi:type="pcmmm:Feature" name="Sterilization" constraints="//@matrices.0/@cells.26 //@matrices.0/@cells.47 //@matrices.0/@cells.54" domain="//@domainCollection/@domains.16"/>
+  <concepts xsi:type="pcmmm:Feature" name="Surgical procedure" constraints="//@matrices.0/@cells.27 //@matrices.0/@cells.48 //@matrices.0/@cells.55" domain="//@domainCollection/@domains.17"/>
+  <concepts xsi:type="pcmmm:Feature" name="Once" constraints="//@matrices.0/@cells.28 //@matrices.0/@cells.49 //@matrices.0/@cells.56" domain="//@domainCollection/@domains.18"/>
+  <concepts xsi:type="pcmmm:Feature" name="Lunelle" constraints="//@matrices.0/@cells.30" domain="//@domainCollection/@domains.19"/>
+  <concepts xsi:type="pcmmm:Feature" name="Cyclofem" constraints="//@matrices.0/@cells.30" domain="//@domainCollection/@domains.20"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 500" constraints="//@matrices.0/@cells.31" domain="//@domainCollection/@domains.21"/>
+  <concepts xsi:type="pcmmm:Feature" name="Estrogen + progestogen" constraints="//@matrices.0/@cells.33" domain="//@domainCollection/@domains.22"/>
+  <concepts xsi:type="pcmmm:Feature" name="Injection" constraints="//@matrices.0/@cells.34 //@matrices.0/@cells.83" domain="//@domainCollection/@domains.23"/>
+  <concepts xsi:type="pcmmm:Feature" name="Monthly" constraints="//@matrices.0/@cells.35" domain="//@domainCollection/@domains.24"/>
+  <concepts xsi:type="pcmmm:Feature" name="Mirena" constraints="//@matrices.0/@cells.37" domain="//@domainCollection/@domains.25"/>
+  <concepts xsi:type="pcmmm:Feature" name="Intrauterine &amp; progestogen" constraints="//@matrices.0/@cells.40" domain="//@domainCollection/@domains.26"/>
+  <concepts xsi:type="pcmmm:Feature" name="Intrauterine" constraints="//@matrices.0/@cells.41 //@matrices.0/@cells.62" domain="//@domainCollection/@domains.27"/>
+  <concepts xsi:type="pcmmm:Feature" name="5-7 years" constraints="//@matrices.0/@cells.42" domain="//@domainCollection/@domains.28"/>
+  <concepts xsi:type="pcmmm:Feature" name="female sterilization" constraints="//@matrices.0/@cells.44 //@matrices.0/@cells.51" domain="//@domainCollection/@domains.29"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 384" constraints="//@matrices.0/@cells.45" domain="//@domainCollection/@domains.30"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 200" constraints="//@matrices.0/@cells.52" domain="//@domainCollection/@domains.31"/>
+  <concepts xsi:type="pcmmm:Feature" name="Paragard" constraints="//@matrices.0/@cells.58" domain="//@domainCollection/@domains.32"/>
+  <concepts xsi:type="pcmmm:Feature" name="Copper T" constraints="//@matrices.0/@cells.58" domain="//@domainCollection/@domains.33"/>
+  <concepts xsi:type="pcmmm:Feature" name="the coil" constraints="//@matrices.0/@cells.58" domain="//@domainCollection/@domains.34"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 125" constraints="//@matrices.0/@cells.59" domain="//@domainCollection/@domains.35"/>
+  <concepts xsi:type="pcmmm:Feature" name="Intrauterine &amp; copper" constraints="//@matrices.0/@cells.61" domain="//@domainCollection/@domains.36"/>
+  <concepts xsi:type="pcmmm:Feature" name="3 to 12+ years" constraints="//@matrices.0/@cells.63" domain="//@domainCollection/@domains.37"/>
+  <concepts xsi:type="pcmmm:Feature" name="basal body temperature" constraints="//@matrices.0/@cells.65" domain="//@domainCollection/@domains.38"/>
+  <concepts xsi:type="pcmmm:Feature" name="cervical mucus" constraints="//@matrices.0/@cells.65" domain="//@domainCollection/@domains.39"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 55" constraints="//@matrices.0/@cells.66" domain="//@domainCollection/@domains.40"/>
+  <concepts xsi:type="pcmmm:Feature" name="Behavioral" constraints="//@matrices.0/@cells.68 //@matrices.0/@cells.75 //@matrices.0/@cells.187 //@matrices.0/@cells.201 //@matrices.0/@cells.208" domain="//@domainCollection/@domains.41"/>
+  <concepts xsi:type="pcmmm:Feature" name="Observation" constraints="//@matrices.0/@cells.69" domain="//@domainCollection/@domains.42"/>
+  <concepts xsi:type="pcmmm:Feature" name="charting" constraints="//@matrices.0/@cells.69" domain="//@domainCollection/@domains.43"/>
+  <concepts xsi:type="pcmmm:Feature" name="Throughout day" constraints="//@matrices.0/@cells.70" domain="//@domainCollection/@domains.44"/>
+  <concepts xsi:type="pcmmm:Feature" name="daily" constraints="//@matrices.0/@cells.70" domain="//@domainCollection/@domains.45"/>
+  <concepts xsi:type="pcmmm:Feature" name="ecological breastfeeding" constraints="//@matrices.0/@cells.72" domain="//@domainCollection/@domains.46"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 50" constraints="//@matrices.0/@cells.73" domain="//@domainCollection/@domains.47"/>
+  <concepts xsi:type="pcmmm:Feature" name="Breastfeeding" constraints="//@matrices.0/@cells.76" domain="//@domainCollection/@domains.48"/>
+  <concepts xsi:type="pcmmm:Feature" name="Every few hours" constraints="//@matrices.0/@cells.77" domain="//@domainCollection/@domains.49"/>
+  <concepts xsi:type="pcmmm:Feature" name="the shot" constraints="//@matrices.0/@cells.79" domain="//@domainCollection/@domains.50"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 33" constraints="//@matrices.0/@cells.80" domain="//@domainCollection/@domains.51"/>
+  <concepts xsi:type="pcmmm:Feature" name="12 weeks" constraints="//@matrices.0/@cells.84" domain="//@domainCollection/@domains.52"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 20" constraints="//@matrices.0/@cells.87" domain="//@domainCollection/@domains.53"/>
+  <concepts xsi:type="pcmmm:Feature" name="no data" constraints="//@matrices.0/@cells.88 //@matrices.0/@cells.95 //@matrices.0/@cells.158" domain="//@domainCollection/@domains.54"/>
+  <concepts xsi:type="pcmmm:Feature" name="Barrier + spermicide" constraints="//@matrices.0/@cells.89 //@matrices.0/@cells.159 //@matrices.0/@cells.173 //@matrices.0/@cells.229" domain="//@domainCollection/@domains.55"/>
+  <concepts xsi:type="pcmmm:Feature" name="Vaginal insertion" constraints="//@matrices.0/@cells.90 //@matrices.0/@cells.97 //@matrices.0/@cells.118 //@matrices.0/@cells.160 //@matrices.0/@cells.167 //@matrices.0/@cells.174 //@matrices.0/@cells.181 //@matrices.0/@cells.195 //@matrices.0/@cells.216 //@matrices.0/@cells.223 //@matrices.0/@cells.230" domain="//@domainCollection/@domains.56"/>
+  <concepts xsi:type="pcmmm:Feature" name="Every act of intercourse" constraints="//@matrices.0/@cells.91 //@matrices.0/@cells.98 //@matrices.0/@cells.140 //@matrices.0/@cells.147 //@matrices.0/@cells.161 //@matrices.0/@cells.168 //@matrices.0/@cells.175 //@matrices.0/@cells.182 //@matrices.0/@cells.189 //@matrices.0/@cells.196 //@matrices.0/@cells.217 //@matrices.0/@cells.224 //@matrices.0/@cells.231" domain="//@domainCollection/@domains.57"/>
+  <concepts xsi:type="pcmmm:Feature" name="cervical cap" constraints="//@matrices.0/@cells.93" domain="//@domainCollection/@domains.58"/>
+  <concepts xsi:type="pcmmm:Feature" name="estimated) &#xA;(1 of 13" constraints="//@matrices.0/@cells.94" domain="//@domainCollection/@domains.59"/>
+  <concepts xsi:type="pcmmm:Feature" name="Barrier &amp; spermicide" constraints="//@matrices.0/@cells.96 //@matrices.0/@cells.166 //@matrices.0/@cells.180 //@matrices.0/@cells.222" domain="//@domainCollection/@domains.60"/>
+  <concepts xsi:type="pcmmm:Feature" name="the Pill" constraints="//@matrices.0/@cells.100" domain="//@domainCollection/@domains.61"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 11" constraints="//@matrices.0/@cells.101 //@matrices.0/@cells.115" domain="//@domainCollection/@domains.62"/>
+  <concepts xsi:type="pcmmm:Feature" name="Estrogen &amp; progestogen" constraints="//@matrices.0/@cells.103 //@matrices.0/@cells.110 //@matrices.0/@cells.117" domain="//@domainCollection/@domains.63"/>
+  <concepts xsi:type="pcmmm:Feature" name="Oral medication" constraints="//@matrices.0/@cells.104 //@matrices.0/@cells.125 //@matrices.0/@cells.132" domain="//@domainCollection/@domains.64"/>
+  <concepts xsi:type="pcmmm:Feature" name="Daily" constraints="//@matrices.0/@cells.105 //@matrices.0/@cells.126 //@matrices.0/@cells.203 //@matrices.0/@cells.210" domain="//@domainCollection/@domains.65"/>
+  <concepts xsi:type="pcmmm:Feature" name="Ortho Evra" constraints="//@matrices.0/@cells.107" domain="//@domainCollection/@domains.66"/>
+  <concepts xsi:type="pcmmm:Feature" name="the patch" constraints="//@matrices.0/@cells.107" domain="//@domainCollection/@domains.67"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 12" constraints="//@matrices.0/@cells.108" domain="//@domainCollection/@domains.68"/>
+  <concepts xsi:type="pcmmm:Feature" name="Transdermal patch" constraints="//@matrices.0/@cells.111" domain="//@domainCollection/@domains.69"/>
+  <concepts xsi:type="pcmmm:Feature" name="Weekly" constraints="//@matrices.0/@cells.112 //@matrices.0/@cells.133" domain="//@domainCollection/@domains.70"/>
+  <concepts xsi:type="pcmmm:Feature" name="the ring" constraints="//@matrices.0/@cells.114" domain="//@domainCollection/@domains.71"/>
+  <concepts xsi:type="pcmmm:Feature" name="In place 3 weeks" constraints="//@matrices.0/@cells.119" domain="//@domainCollection/@domains.72"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 week break" constraints="//@matrices.0/@cells.119" domain="//@domainCollection/@domains.73"/>
+  <concepts xsi:type="pcmmm:Feature" name="POP" constraints="//@matrices.0/@cells.121" domain="//@domainCollection/@domains.74"/>
+  <concepts xsi:type="pcmmm:Feature" name="minipill" constraints="//@matrices.0/@cells.121" domain="//@domainCollection/@domains.75"/>
+  <concepts xsi:type="pcmmm:Feature" name="Saheli" constraints="//@matrices.0/@cells.128" domain="//@domainCollection/@domains.76"/>
+  <concepts xsi:type="pcmmm:Feature" name="Centron" constraints="//@matrices.0/@cells.128" domain="//@domainCollection/@domains.77"/>
+  <concepts xsi:type="pcmmm:Feature" name="SERM" constraints="//@matrices.0/@cells.131" domain="//@domainCollection/@domains.78"/>
+  <concepts xsi:type="pcmmm:Feature" name="levonorgestrel" constraints="//@matrices.0/@cells.135" domain="//@domainCollection/@domains.79"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 8" constraints="//@matrices.0/@cells.136" domain="//@domainCollection/@domains.80"/>
+  <concepts xsi:type="pcmmm:Feature" name="emergency contraception pill" constraints="//@matrices.0/@cells.138" domain="//@domainCollection/@domains.81"/>
+  <concepts xsi:type="pcmmm:Feature" name="mouth" constraints="//@matrices.0/@cells.139" domain="//@domainCollection/@domains.82"/>
+  <concepts xsi:type="pcmmm:Feature" name="Condom" constraints="//@matrices.0/@cells.142" domain="//@domainCollection/@domains.83"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 6" constraints="//@matrices.0/@cells.143 //@matrices.0/@cells.157 //@matrices.0/@cells.164" domain="//@domainCollection/@domains.84"/>
+  <concepts xsi:type="pcmmm:Feature" name="Barrier" constraints="//@matrices.0/@cells.145 //@matrices.0/@cells.194" domain="//@domainCollection/@domains.85"/>
+  <concepts xsi:type="pcmmm:Feature" name="Placed on erect penis" constraints="//@matrices.0/@cells.146" domain="//@domainCollection/@domains.86"/>
+  <concepts xsi:type="pcmmm:Feature" name="Testosterone Undecanoate" constraints="//@matrices.0/@cells.149" domain="//@domainCollection/@domains.87"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 16" constraints="//@matrices.0/@cells.150" domain="//@domainCollection/@domains.88"/>
+  <concepts xsi:type="pcmmm:Feature" name="Testosterone" constraints="//@matrices.0/@cells.152" domain="//@domainCollection/@domains.89"/>
+  <concepts xsi:type="pcmmm:Feature" name="Intramuscular Injection" constraints="//@matrices.0/@cells.153" domain="//@domainCollection/@domains.90"/>
+  <concepts xsi:type="pcmmm:Feature" name="Every 4 weeks" constraints="//@matrices.0/@cells.154" domain="//@domainCollection/@domains.91"/>
+  <concepts xsi:type="pcmmm:Feature" name="the sponge" constraints="//@matrices.0/@cells.177 //@matrices.0/@cells.219" domain="//@domainCollection/@domains.92"/>
+  <concepts xsi:type="pcmmm:Feature" name="withdrawal method" constraints="//@matrices.0/@cells.184" domain="//@domainCollection/@domains.93"/>
+  <concepts xsi:type="pcmmm:Feature" name="pulling out" constraints="//@matrices.0/@cells.184" domain="//@domainCollection/@domains.94"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 5" constraints="//@matrices.0/@cells.185" domain="//@domainCollection/@domains.95"/>
+  <concepts xsi:type="pcmmm:Feature" name="Withdrawal" constraints="//@matrices.0/@cells.188" domain="//@domainCollection/@domains.96"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 4.7" constraints="//@matrices.0/@cells.192" domain="//@domainCollection/@domains.97"/>
+  <concepts xsi:type="pcmmm:Feature" name="CycleBeads" constraints="//@matrices.0/@cells.198" domain="//@domainCollection/@domains.98"/>
+  <concepts xsi:type="pcmmm:Feature" name="iCycleBeads" constraints="//@matrices.0/@cells.198" domain="//@domainCollection/@domains.99"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 4" constraints="//@matrices.0/@cells.199" domain="//@domainCollection/@domains.100"/>
+  <concepts xsi:type="pcmmm:Feature" name="Calendar-based" constraints="//@matrices.0/@cells.202 //@matrices.0/@cells.209" domain="//@domainCollection/@domains.101"/>
+  <concepts xsi:type="pcmmm:Feature" name="the rhythm method" constraints="//@matrices.0/@cells.205" domain="//@domainCollection/@domains.102"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 of 3" constraints="//@matrices.0/@cells.213 //@matrices.0/@cells.220" domain="//@domainCollection/@domains.103"/>
+  <concepts xsi:type="pcmmm:Feature" name="Spermicide" constraints="//@matrices.0/@cells.215" domain="//@domainCollection/@domains.104"/>
+  <concepts xsi:type="pcmmm:Feature" name="6 of 7" constraints="//@matrices.0/@cells.234" domain="//@domainCollection/@domains.105"/>
+  <domainCollection>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.24/@interpretation/@condition //@matrices.0/@cells.31/@interpretation/@condition //@matrices.0/@cells.52/@interpretation/@condition //@matrices.0/@cells.87/@interpretation/@condition //@matrices.0/@cells.59/@interpretation/@condition //@matrices.0/@cells.108/@interpretation/@condition //@matrices.0/@cells.101/@interpretation/@condition //@matrices.0/@cells.115/@interpretation/@condition //@matrices.0/@cells.150/@interpretation/@condition //@matrices.0/@cells.66/@interpretation/@condition //@matrices.0/@cells.73/@interpretation/@condition //@matrices.0/@cells.185/@interpretation/@condition //@matrices.0/@cells.80/@interpretation/@condition //@matrices.0/@cells.213/@interpretation/@condition //@matrices.0/@cells.220/@interpretation/@condition //@matrices.0/@cells.136/@interpretation/@condition //@matrices.0/@cells.143/@interpretation/@condition //@matrices.0/@cells.157/@interpretation/@condition //@matrices.0/@cells.164/@interpretation/@condition //@matrices.0/@cells.199/@interpretation/@condition //@matrices.0/@cells.45/@interpretation/@condition //@matrices.0/@cells.192/@interpretation/@condition //@matrices.0/@cells.234/@interpretation/@condition"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.130/@interpretation //@matrices.0/@cells.144/@interpretation //@matrices.0/@cells.165/@interpretation //@matrices.0/@cells.172/@interpretation //@matrices.0/@cells.179/@interpretation //@matrices.0/@cells.186/@interpretation //@matrices.0/@cells.193/@interpretation //@matrices.0/@cells.200/@interpretation //@matrices.0/@cells.207/@interpretation //@matrices.0/@cells.214/@interpretation //@matrices.0/@cells.221/@interpretation //@matrices.0/@cells.228/@interpretation //@matrices.0/@cells.235/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.89/@interpretation //@matrices.0/@cells.159/@interpretation //@matrices.0/@cells.173/@interpretation //@matrices.0/@cells.229/@interpretation //@matrices.0/@cells.96/@interpretation //@matrices.0/@cells.166/@interpretation //@matrices.0/@cells.180/@interpretation //@matrices.0/@cells.222/@interpretation //@matrices.0/@cells.215/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.90/@interpretation //@matrices.0/@cells.97/@interpretation //@matrices.0/@cells.118/@interpretation //@matrices.0/@cells.160/@interpretation //@matrices.0/@cells.167/@interpretation //@matrices.0/@cells.174/@interpretation //@matrices.0/@cells.181/@interpretation //@matrices.0/@cells.195/@interpretation //@matrices.0/@cells.216/@interpretation //@matrices.0/@cells.223/@interpretation //@matrices.0/@cells.230/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.91/@interpretation //@matrices.0/@cells.98/@interpretation //@matrices.0/@cells.140/@interpretation //@matrices.0/@cells.147/@interpretation //@matrices.0/@cells.161/@interpretation //@matrices.0/@cells.168/@interpretation //@matrices.0/@cells.175/@interpretation //@matrices.0/@cells.182/@interpretation //@matrices.0/@cells.189/@interpretation //@matrices.0/@cells.196/@interpretation //@matrices.0/@cells.217/@interpretation //@matrices.0/@cells.224/@interpretation //@matrices.0/@cells.231/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+  </domainCollection>
+</pcmmm:PCM>

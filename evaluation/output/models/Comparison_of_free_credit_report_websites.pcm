@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="" id="_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: cost of credit report" verbatim="Cost of credit report" rowspan="1" column="1" colspan="1" concept="//@concepts.0"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: cost of credit score" verbatim="Cost of credit score" rowspan="1" column="2" colspan="1" concept="//@concepts.1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: credit card required?" verbatim="Credit card required?" rowspan="1" column="3" colspan="1" concept="//@concepts.2"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: social security number required?" verbatim="Social Security Number required?" rowspan="1" column="4" colspan="1" concept="//@concepts.3"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: report type" verbatim="Report type" rowspan="1" column="5" colspan="1" concept="//@concepts.4"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: score type" verbatim="Score type" rowspan="1" column="6" colspan="1" concept="//@concepts.5"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: name/website" verbatim="Name/Website" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: annualcreditreport.com" verbatim="AnnualCreditReport.com" row="1" rowspan="1" colspan="1" concept="//@concepts.6"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: free; one from each agency every 12 months" verbatim="Free; one from each agency every 12 months" row="1" rowspan="1" column="1" colspan="1" concepts="//@concepts.11 //@concepts.12" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Free" verbatim="Free" concept="//@concepts.11"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="one from each agency every 12 months" verbatim="one from each agency every 12 months" concept="//@concepts.12"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: fico score (equifax) = $7.95; experian score = $7." verbatim="FICO score (Equifax) = $7.95;&#xA; Experian score = $7.95;&#xA; TransUnion score = $7.95" row="1" rowspan="1" column="2" colspan="1" concepts="//@concepts.13 //@concepts.14 //@concepts.15" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="FICO score (Equifax) = $7.95" verbatim="FICO score (Equifax) = $7.95" concept="//@concepts.13"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Experian score = $7.95" verbatim="Experian score = $7.95" concept="//@concepts.14"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="TransUnion score = $7.95" verbatim="TransUnion score = $7.95" concept="//@concepts.15"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: no (for credit report)/ yes (for credit score)" verbatim="No (for credit report)/&#xA;Yes (for credit score)" row="1" rowspan="1" column="3" colspan="1" concepts="//@concepts.16 //@concepts.17" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="for credit report)" verbatim="for credit report)" concept="//@concepts.16"/>
+          <contraints xsi:type="pcmmm:Partial">
+            <condition xsi:type="pcmmm:VariabilityConceptRef" name="(for credit score" verbatim="(for credit score" concept="//@concepts.17"/>
+            <argument xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+          </contraints>
+        </condition>
+        <argument xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,4: yes" verbatim="Yes" row="1" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,5: equifax, experian &amp; transunion" verbatim="Equifax, Experian &amp; Transunion" row="1" rowspan="1" column="5" colspan="1" concepts="//@concepts.18 //@concepts.19" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Equifax" verbatim="Equifax" concept="//@concepts.18"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Experian &amp; Transunion" verbatim="Experian &amp; Transunion" concept="//@concepts.19"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,6: fico (proprietary from equifax, not fico), experia" verbatim="FICO (proprietary from Equifax, not FICO), Experian &amp; Transunion" row="1" rowspan="1" column="6" colspan="1" concepts="//@concepts.20 //@concepts.21 //@concepts.19" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="FICO (proprietary from Equifax" verbatim="FICO (proprietary from Equifax" concept="//@concepts.20"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="not FICO)" verbatim="not FICO)" concept="//@concepts.21"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Experian &amp; Transunion" verbatim="Experian &amp; Transunion" concept="//@concepts.19"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="2,0: credit.com" verbatim="Credit.com" row="2" rowspan="1" colspan="1" concept="//@concepts.7"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: free proprietary credit report summary" verbatim="Free proprietary credit report summary" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.22" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Free proprietary credit report summary" verbatim="Free proprietary credit report summary" concept="//@concepts.22"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: free; once monthly" verbatim="Free; once monthly" row="2" rowspan="1" column="2" colspan="1" concepts="//@concepts.11 //@concepts.23" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Free" verbatim="Free" concept="//@concepts.11"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="once monthly" verbatim="once monthly" concept="//@concepts.23"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: no" verbatim="No" row="2" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,4: yes" verbatim="Yes" row="2" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,5: experian (bare)" verbatim="Experian (bare)" row="2" rowspan="1" column="5" colspan="1" concepts="//@concepts.24 //@concepts.25" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="bare" verbatim="bare" concept="//@concepts.24"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="Experian" verbatim="Experian" concept="//@concepts.25"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,6: experian's national equivalency score" verbatim="Experian's National Equivalency Score" row="2" rowspan="1" column="6" colspan="1" concepts="//@concepts.26" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Experian's National Equivalency Score" verbatim="Experian's National Equivalency Score" concept="//@concepts.26"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="3,0: credit karma" verbatim="Credit Karma" row="3" rowspan="1" colspan="1" concept="//@concepts.8"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: free proprietary credit report summary" verbatim="Free proprietary credit report summary" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.22" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Free proprietary credit report summary" verbatim="Free proprietary credit report summary" concept="//@concepts.22"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: free; once weekly" verbatim="Free; once weekly" row="3" rowspan="1" column="2" colspan="1" concepts="//@concepts.11 //@concepts.27" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Free" verbatim="Free" concept="//@concepts.11"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="once weekly" verbatim="once weekly" concept="//@concepts.27"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: no" verbatim="No" row="3" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,4: yes" verbatim="Yes" row="3" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,5: transunion (bare)" verbatim="Transunion (bare)" row="3" rowspan="1" column="5" colspan="1" concepts="//@concepts.24 //@concepts.28" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="bare" verbatim="bare" concept="//@concepts.24"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="Transunion" verbatim="Transunion" concept="//@concepts.28"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,6: transunion's transrisk new account score. vantages" verbatim="Transunion's TransRisk New Account score. VantageScore." row="3" rowspan="1" column="6" colspan="1" concepts="//@concepts.29" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Transunion's TransRisk New Account score. VantageScore." verbatim="Transunion's TransRisk New Account score. VantageScore." concept="//@concepts.29"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="4,0: credit sesame" verbatim="Credit Sesame" row="4" rowspan="1" colspan="1" concept="//@concepts.9"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: free experian credit report summary" verbatim="Free Experian credit report summary" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.30" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Free Experian credit report summary" verbatim="Free Experian credit report summary" concept="//@concepts.30"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: free; once monthly" verbatim="Free; once monthly" row="4" rowspan="1" column="2" colspan="1" concepts="//@concepts.11 //@concepts.23" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Free" verbatim="Free" concept="//@concepts.11"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="once monthly" verbatim="once monthly" concept="//@concepts.23"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: no" verbatim="No" row="4" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,4: yes" verbatim="Yes" row="4" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,5: experian (bare)" verbatim="Experian (bare)" row="4" rowspan="1" column="5" colspan="1" concepts="//@concepts.24 //@concepts.25" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="bare" verbatim="bare" concept="//@concepts.24"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="Experian" verbatim="Experian" concept="//@concepts.25"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,6: experian's national equivalency score" verbatim="Experian's National Equivalency Score" row="4" rowspan="1" column="6" colspan="1" concepts="//@concepts.26" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Experian's National Equivalency Score" verbatim="Experian's National Equivalency Score" concept="//@concepts.26"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="5,0: quizzle" verbatim="Quizzle" row="5" rowspan="1" colspan="1" concept="//@concepts.10"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: free; once every 6 months" verbatim="Free; once every 6 months" row="5" rowspan="1" column="1" colspan="1" concepts="//@concepts.11 //@concepts.31" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Free" verbatim="Free" concept="//@concepts.11"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="once every 6 months" verbatim="once every 6 months" concept="//@concepts.31"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: free; once every 6 months" verbatim="Free; once every 6 months" row="5" rowspan="1" column="2" colspan="1" concepts="//@concepts.11 //@concepts.31" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Free" verbatim="Free" concept="//@concepts.11"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="once every 6 months" verbatim="once every 6 months" concept="//@concepts.31"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,3: no" verbatim="No" row="5" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,4: yes" verbatim="Yes" row="5" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,5: equifax" verbatim="Equifax" row="5" rowspan="1" column="5" colspan="1" concepts="//@concepts.18" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Equifax" verbatim="Equifax" concept="//@concepts.18"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,6: vantagescore" verbatim="VantageScore" row="5" rowspan="1" column="6" colspan="1" concepts="//@concepts.32" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="VantageScore" verbatim="VantageScore" concept="//@concepts.32"/>
+    </cells>
+  </matrices>
+  <concepts xsi:type="pcmmm:Feature" name="Cost of credit report" myValuedCells="//@matrices.0/@cells.8 //@matrices.0/@cells.15 //@matrices.0/@cells.22 //@matrices.0/@cells.29 //@matrices.0/@cells.36" domain="//@domainCollection/@domains.0"/>
+  <concepts xsi:type="pcmmm:Feature" name="Cost of credit score" myValuedCells="//@matrices.0/@cells.9 //@matrices.0/@cells.16 //@matrices.0/@cells.23 //@matrices.0/@cells.30 //@matrices.0/@cells.37" domain="//@domainCollection/@domains.1"/>
+  <concepts xsi:type="pcmmm:Feature" name="Credit card required?" myValuedCells="//@matrices.0/@cells.10 //@matrices.0/@cells.17 //@matrices.0/@cells.24 //@matrices.0/@cells.31 //@matrices.0/@cells.38" domain="//@domainCollection/@domains.2"/>
+  <concepts xsi:type="pcmmm:Feature" name="Social Security Number required?" myValuedCells="//@matrices.0/@cells.11 //@matrices.0/@cells.18 //@matrices.0/@cells.25 //@matrices.0/@cells.32 //@matrices.0/@cells.39" domain="//@domainCollection/@domains.3"/>
+  <concepts xsi:type="pcmmm:Feature" name="Report type" myValuedCells="//@matrices.0/@cells.12 //@matrices.0/@cells.19 //@matrices.0/@cells.26 //@matrices.0/@cells.33 //@matrices.0/@cells.40" domain="//@domainCollection/@domains.4"/>
+  <concepts xsi:type="pcmmm:Feature" name="Score type" myValuedCells="//@matrices.0/@cells.13 //@matrices.0/@cells.20 //@matrices.0/@cells.27 //@matrices.0/@cells.34 //@matrices.0/@cells.41" domain="//@domainCollection/@domains.5"/>
+  <concepts xsi:type="pcmmm:Product" name="AnnualCreditReport.com" myValuedCells="//@matrices.0/@cells.8 //@matrices.0/@cells.9 //@matrices.0/@cells.10 //@matrices.0/@cells.11 //@matrices.0/@cells.12 //@matrices.0/@cells.13"/>
+  <concepts xsi:type="pcmmm:Product" name="Credit.com" myValuedCells="//@matrices.0/@cells.15 //@matrices.0/@cells.16 //@matrices.0/@cells.17 //@matrices.0/@cells.18 //@matrices.0/@cells.19 //@matrices.0/@cells.20"/>
+  <concepts xsi:type="pcmmm:Product" name="Credit Karma" myValuedCells="//@matrices.0/@cells.22 //@matrices.0/@cells.23 //@matrices.0/@cells.24 //@matrices.0/@cells.25 //@matrices.0/@cells.26 //@matrices.0/@cells.27"/>
+  <concepts xsi:type="pcmmm:Product" name="Credit Sesame" myValuedCells="//@matrices.0/@cells.29 //@matrices.0/@cells.30 //@matrices.0/@cells.31 //@matrices.0/@cells.32 //@matrices.0/@cells.33 //@matrices.0/@cells.34"/>
+  <concepts xsi:type="pcmmm:Product" name="Quizzle" myValuedCells="//@matrices.0/@cells.36 //@matrices.0/@cells.37 //@matrices.0/@cells.38 //@matrices.0/@cells.39 //@matrices.0/@cells.40 //@matrices.0/@cells.41"/>
+  <concepts xsi:type="pcmmm:Feature" name="Free" constraints="//@matrices.0/@cells.8 //@matrices.0/@cells.16 //@matrices.0/@cells.23 //@matrices.0/@cells.30 //@matrices.0/@cells.36 //@matrices.0/@cells.37" domain="//@domainCollection/@domains.6"/>
+  <concepts xsi:type="pcmmm:Feature" name="one from each agency every 12 months" constraints="//@matrices.0/@cells.8" domain="//@domainCollection/@domains.7"/>
+  <concepts xsi:type="pcmmm:Feature" name="FICO score (Equifax) = $7.95" constraints="//@matrices.0/@cells.9" domain="//@domainCollection/@domains.8"/>
+  <concepts xsi:type="pcmmm:Feature" name="Experian score = $7.95" constraints="//@matrices.0/@cells.9" domain="//@domainCollection/@domains.9"/>
+  <concepts xsi:type="pcmmm:Feature" name="TransUnion score = $7.95" constraints="//@matrices.0/@cells.9" domain="//@domainCollection/@domains.10"/>
+  <concepts xsi:type="pcmmm:Feature" name="for credit report)" constraints="//@matrices.0/@cells.10" domain="//@domainCollection/@domains.11"/>
+  <concepts xsi:type="pcmmm:Feature" name="(for credit score" constraints="//@matrices.0/@cells.10" domain="//@domainCollection/@domains.12"/>
+  <concepts xsi:type="pcmmm:Feature" name="Equifax" constraints="//@matrices.0/@cells.12 //@matrices.0/@cells.40" domain="//@domainCollection/@domains.13"/>
+  <concepts xsi:type="pcmmm:Feature" name="Experian &amp; Transunion" constraints="//@matrices.0/@cells.12 //@matrices.0/@cells.13" domain="//@domainCollection/@domains.14"/>
+  <concepts xsi:type="pcmmm:Feature" name="FICO (proprietary from Equifax" constraints="//@matrices.0/@cells.13" domain="//@domainCollection/@domains.15"/>
+  <concepts xsi:type="pcmmm:Feature" name="not FICO)" constraints="//@matrices.0/@cells.13" domain="//@domainCollection/@domains.16"/>
+  <concepts xsi:type="pcmmm:Feature" name="Free proprietary credit report summary" constraints="//@matrices.0/@cells.15 //@matrices.0/@cells.22" domain="//@domainCollection/@domains.17"/>
+  <concepts xsi:type="pcmmm:Feature" name="once monthly" constraints="//@matrices.0/@cells.16 //@matrices.0/@cells.30" domain="//@domainCollection/@domains.18"/>
+  <concepts xsi:type="pcmmm:Feature" name="bare" constraints="//@matrices.0/@cells.19 //@matrices.0/@cells.26 //@matrices.0/@cells.33" domain="//@domainCollection/@domains.19"/>
+  <concepts xsi:type="pcmmm:Feature" name="Experian" constraints="//@matrices.0/@cells.19 //@matrices.0/@cells.33" domain="//@domainCollection/@domains.20"/>
+  <concepts xsi:type="pcmmm:Feature" name="Experian's National Equivalency Score" constraints="//@matrices.0/@cells.20 //@matrices.0/@cells.34" domain="//@domainCollection/@domains.21"/>
+  <concepts xsi:type="pcmmm:Feature" name="once weekly" constraints="//@matrices.0/@cells.23" domain="//@domainCollection/@domains.22"/>
+  <concepts xsi:type="pcmmm:Feature" name="Transunion" constraints="//@matrices.0/@cells.26" domain="//@domainCollection/@domains.23"/>
+  <concepts xsi:type="pcmmm:Feature" name="Transunion's TransRisk New Account score. VantageScore." constraints="//@matrices.0/@cells.27" domain="//@domainCollection/@domains.24"/>
+  <concepts xsi:type="pcmmm:Feature" name="Free Experian credit report summary" constraints="//@matrices.0/@cells.29" domain="//@domainCollection/@domains.25"/>
+  <concepts xsi:type="pcmmm:Feature" name="once every 6 months" constraints="//@matrices.0/@cells.36 //@matrices.0/@cells.37" domain="//@domainCollection/@domains.26"/>
+  <concepts xsi:type="pcmmm:Feature" name="VantageScore" constraints="//@matrices.0/@cells.41" domain="//@domainCollection/@domains.27"/>
+  <domainCollection>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.15/@interpretation //@matrices.0/@cells.22/@interpretation //@matrices.0/@cells.29/@interpretation //@matrices.0/@cells.8/@interpretation/@contraints.1 //@matrices.0/@cells.36/@interpretation/@contraints.1 //@matrices.0/@cells.8/@interpretation/@contraints.0 //@matrices.0/@cells.36/@interpretation/@contraints.0"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.16/@interpretation/@contraints.0 //@matrices.0/@cells.23/@interpretation/@contraints.0 //@matrices.0/@cells.30/@interpretation/@contraints.0 //@matrices.0/@cells.37/@interpretation/@contraints.0 //@matrices.0/@cells.16/@interpretation/@contraints.1 //@matrices.0/@cells.30/@interpretation/@contraints.1 //@matrices.0/@cells.23/@interpretation/@contraints.1"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.10/@interpretation/@argument //@matrices.0/@cells.10/@interpretation/@condition/@contraints.1/@argument //@matrices.0/@cells.17/@interpretation //@matrices.0/@cells.24/@interpretation //@matrices.0/@cells.31/@interpretation //@matrices.0/@cells.38/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.11/@interpretation //@matrices.0/@cells.18/@interpretation //@matrices.0/@cells.25/@interpretation //@matrices.0/@cells.32/@interpretation //@matrices.0/@cells.39/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.19/@interpretation/@condition //@matrices.0/@cells.26/@interpretation/@condition //@matrices.0/@cells.33/@interpretation/@condition //@matrices.0/@cells.19/@interpretation/@argument //@matrices.0/@cells.33/@interpretation/@argument //@matrices.0/@cells.12/@interpretation/@contraints.0 //@matrices.0/@cells.40/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.20/@interpretation //@matrices.0/@cells.34/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+  </domainCollection>
+</pcmmm:PCM>
