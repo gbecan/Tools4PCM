@@ -156,19 +156,19 @@ object CellContentInterpreter {
       new PartialPatternInterpreter(Nil,"(yes),?\\s*(.*)",Nil, false)
     ) ::: 
     // values separated by comas
-    (for (n <- 1 to 20) yield {
+    (for (n <- 1 to 50) yield {
     	  new MultiplePatternInterpreter(Nil,
     	      (for (i <- 1 to n+1) yield {"([^,]+?)"}).mkString("\\s*,\\s+"),
     	      List("and"), true)
     }).toList ::: 
     // values separated by semi colons
-    (for (n <- 1 to 20) yield {
+    (for (n <- 1 to 50) yield {
     	  new MultiplePatternInterpreter(Nil,
     	      (for (i <- 1 to n+1) yield {"([^;]+?)"}).mkString("\\s*;\\s+"),
     	      List("and"), true)
     }).toList ::: 
     // values separated by slashes 
-    (for (n <- 1 to 5) yield {
+    (for (n <- 1 to 10) yield {
     	  new MultiplePatternInterpreter(Nil,
     	      (for (i <- 1 to n+1) yield {"([^/]+?)"}).mkString("\\s*/\\s*"),
     	      List("and"), true)
