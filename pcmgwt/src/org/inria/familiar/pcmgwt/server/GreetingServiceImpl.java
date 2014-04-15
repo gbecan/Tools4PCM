@@ -42,9 +42,6 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
 		factory = Persistence
 				.createEntityManagerFactory("dev");
 		manager = factory.createEntityManager();
-		
-		
-		
 	}
 	
 	public List<Matrix> loadModel() {
