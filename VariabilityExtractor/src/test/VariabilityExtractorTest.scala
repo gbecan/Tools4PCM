@@ -1,32 +1,34 @@
 package test
 
+import java.io.File
+import java.io.FileWriter
+import java.util.Collections
+import scala.collection.JavaConversions.asScalaBuffer
+import scala.io.Source
+import scala.xml.PrettyPrinter
+import org.eclipse.emf.common.util.Diagnostic
+import org.eclipse.emf.common.util.URI
+import org.eclipse.emf.ecore.resource.Resource
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl
+import org.eclipse.emf.ecore.util.Diagnostician
+import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
 import org.scalatest.FlatSpec
 import org.scalatest.Matchers
-import scala.io.Source
-import java.io.File
-import org.eclipse.emf.ecore.resource.Resource
-import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
-import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl
-import pcmmm.PCM
-import org.eclipse.emf.common.util.URI
-import extractor.VariabilityExtractor
-import java.util.Collections
-import pcmmm.PcmmmPackage
-import extractor.PCMNormalizer
-import scala.collection.JavaConversions._
-import pcmmm.Extra
-import pcmmm.Header
-import interpreters.PatternInterpreter
-import interpreters.SimplePatternInterpreter
-import interpreters.BooleanPatternInterpreter
-import interpreters.MultiplePatternInterpreter
-import interpreters.UnknownPatternInterpreter
+import clustering.HierarchicalClusterer
 import export.PCM2HTML
-import java.io.FileWriter
-import scala.xml.PrettyPrinter
+import extractor.PCMNormalizer
+import extractor.VariabilityExtractor
+import pcmmm.Cell
+import pcmmm.Extra
+import pcmmm.Feature
+import pcmmm.Header
+import pcmmm.PCM
+import pcmmm.PcmmmPackage
 import pcmmm.ValuedCell
-import org.eclipse.emf.ecore.util.Diagnostician
-import org.eclipse.emf.common.util.Diagnostic
+import uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein
+import extractor.DomainExtractor
+import pcmmm.Enum
+import pcmmm.PcmmmFactory
 
 class VariabilityExtractorTest extends FlatSpec with Matchers {
 
@@ -74,6 +76,34 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	    
   }
   
+  def computeWarnings(pcm : PCM) : List[(ValuedCell, String)] = {
+	var warnings : List[(ValuedCell, String)] = Nil 
+      for (matrix <- pcm.getMatrices();
+    		  cell <- matrix.getCells() if cell.isInstanceOf[ValuedCell]) {
+    	  val valuedCell = cell.asInstanceOf[ValuedCell]
+    	  val headerFeature = valuedCell.getMyHeaderFeatures().head.asInstanceOf[Feature]
+    	  val domain = headerFeature.getDomain().asInstanceOf[Enum]
+    	  
+    	  val domainExtractor = new DomainExtractor
+    	  val values = domainExtractor.listValues(valuedCell.getInterpretation()).map(_.getName())
+    	  
+    	  for (value <- values if !domain.getValues().contains(value)) {
+    		warnings ::= (valuedCell, value)
+    	  }
+      }
+	warnings
+  }
+  
+  def setWarningAsInconsistentCell(warnings : List[(ValuedCell, String)]) {
+	for (warning <- warnings) {
+		val cell = warning._1
+		val interpretation = PcmmmFactory.eINSTANCE.createInconsistent()
+		interpretation.setName(cell.getVerbatim())
+		cell.setInterpretation(interpretation)
+	}
+  } 
+  
+ 
   "VariabilityExtractor" should "run on every input file" in {
 	  val variabilityExtractor = new VariabilityExtractor
     
@@ -90,7 +120,7 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	    
 	    // Load configuration
 	    val configFile = "input/configs/" + file.getName.substring(0, file.getName.size - 4) + ".config"  
-//	    variabilityExtractor.parseConfigurationFile(configFile)
+	    variabilityExtractor.setConfiguration(VariabilityExtractor.parseConfigurationFile(configFile))
 	    
 	    // Extract variability
 	    variabilityExtractor.extractVariability(pcm)
@@ -140,10 +170,27 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	  val pcm = loadPCMModel(file)
 	  
 	  val variabilityExtractor = new VariabilityExtractor
-      variabilityExtractor.parseConfigurationFile(configFile.getAbsolutePath())
+      variabilityExtractor.setConfiguration(VariabilityExtractor.parseConfigurationFile(configFile.getAbsolutePath()))
 	  variabilityExtractor.extractVariability(pcm)
+	  
+	  // Compute warnings
+	  val warnings = computeWarnings(pcm)
+	  setWarningAsInconsistentCell(warnings)
+	  
+	  // Save model
 	  savePCMModel(pcm, file.getName())
 	  
+	  // Validate model
+	  val diagnostic = Diagnostician.INSTANCE.validate(pcm)
+	  if (diagnostic.getSeverity() == Diagnostic.OK) {
+		println("OK")
+	  } else {
+	    println(diagnostic.getSeverity())
+	    println(diagnostic)
+		println("NOT VALID")
+	  }
+	  
+	  // Compute number of interpreted cells
 	  for (matrix <- pcm.getMatrices()) {
 		  val valuedCells = matrix.getCells().filter(cell => cell.isInstanceOf[ValuedCell])
 		  val interpretedCells = valuedCells.filter(cell => Option(cell.asInstanceOf[ValuedCell].getInterpretation()).isDefined)
@@ -151,8 +198,14 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 			  println((interpretedCells.size * 100) / valuedCells.size + "% of non extra cells"  + 
 			      " (" + interpretedCells.size + "/" + valuedCells.size + ")")
 		  }
-		  
 	  }
+      
+      // Display warnings
+	  warnings.foreach(warning => 
+	    println("WARNING : \"" + warning._2 + 
+    		      "\" in cell (" + 
+    		      warning._1.getRow() + "," + warning._1.getColumn() + 
+    		      ") is inconsistent"))
   }
   
   it should "run on the test set" in {
@@ -171,17 +224,21 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	
 	  for (file <- files) {
 		  // Load model
-		  println(file.getName())
+		  println(file.getName())	
 		  val pcm = loadPCMModel(file)
 		
 		  // Load configuration
 		  val configFile = "input/configs/" + file.getName.substring(0, file.getName.size - 4) + ".config"  
-		  variabilityExtractor.parseConfigurationFile(configFile)
+		  variabilityExtractor.setConfiguration(VariabilityExtractor.parseConfigurationFile(configFile))
 		
 		  // Extract variability
 		  variabilityExtractor.extractVariability(pcm)
 		
-		  // Validate and save model
+		  // Compute warnings
+//		  val warnings = computeWarnings(pcm)
+//		  setWarningAsInconsistentCell(warnings)
+		  
+		  // Validate model
 		  val diagnostic = Diagnostician.INSTANCE.validate(pcm)
 		  if (diagnostic.getSeverity() == Diagnostic.OK) {
 			  println("... model is OK")
@@ -214,6 +271,13 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 			  }
 	
 		  }
+		  
+      // Display warnings
+//	  warnings.foreach(warning => 
+//	    println("WARNING : \"" + warning._2 + 
+//    		      "\" in cell (" + 
+//    		      warning._1.getRow() + "," + warning._1.getColumn() + 
+//    		      ") is inconsistent"))
 	  }
 	
 	  println("Average per cell : " + ((sumInterpretedCells * 100) / sumValuedCells).toInt + "%" + " (" + sumInterpretedCells.toInt + "/" + sumValuedCells.toInt + ")")
@@ -250,5 +314,28 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	  }
   }
    
+   "CellCluster" should "cluster cells" in {
+	   val file = new File("output/models/Comparison_of_Nikon_DSLR_cameras.pcm")
+	   val pcm = loadPCMModel(file)
+     
+	   val feature = pcm.getConcepts().find(concept => concept match {
+	     case f : Feature => f.getName() == "ISO max"
+	     case _ => false
+	   }).get.asInstanceOf[Feature]
+	   
+	   val cells = feature.getMyValuedCells()
+
+	   val metric = new Levenshtein
+	   val dissimilarityMetric : (Cell, Cell) => Double = (v1, v2) => 
+	     1 - metric.getSimilarity(v1.getVerbatim(), v2.getVerbatim())
+	   val threshold = 0.4
+	   val cellClusterer = new HierarchicalClusterer(dissimilarityMetric, threshold)
+	   
+	   val clusters = cellClusterer.cluster(cells.toList)
+	   for (cluster <- clusters) {
+		   	val verbatims = cluster.toList.map(c => c.getVerbatim())
+			println(verbatims.mkString("{", ", ", "}") + " : " + cluster.size )
+	   }
+   }
    
 }

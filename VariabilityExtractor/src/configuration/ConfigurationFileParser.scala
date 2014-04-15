@@ -7,7 +7,7 @@ import scala.collection.mutable.ListBuffer
 import scala.collection.mutable.ListBuffer
 import scala.collection.mutable.ListBuffer
 import interpreters.BooleanPatternInterpreter
-import interpreters.SimplePatternInterpreter
+import interpreters.VariabilityConceptRefPatternInterpreter
 import interpreters.PartialPatternInterpreter
 import interpreters.MultiplePatternInterpreter
 import interpreters.UnknownPatternInterpreter
@@ -32,23 +32,36 @@ class ConfigurationFileParser {
   }
   
   
-  def parseLine(line : String) = {
+  def parseLine(line : String) : Boolean = {
 		var ok : Boolean = false
 		ok = ok || parseContext(line)
 		ok = ok || parseSimpleParameter(line)
 		ok = ok || parseComplexParameter(line)
     	ok = ok || parseRule(line)
+    	ok
   }
   
   def parseContext(s : String) : Boolean = {
+    	val matrixID = "\".*?\"(?:\\[\\d+\\])?"
 		val pattern = Pattern
-				.compile("for\\s+(\".*\"(\\s*,\\s*\".*\")*)\\s*:\\s*");
+				.compile("for\\s+(" + matrixID + "(?:\\s*,\\s*" + matrixID + ")*)\\s*:\\s*");
 		val matcher = pattern.matcher(s);
 		if (matcher.matches()) {
 		  matrixConfig = new MatrixConfiguration
-		  for (value <- matcher.group(1).split(",")) {
-		    val matrix = value.substring(value.indexOf("\"")+1,value.lastIndexOf("\""))
-		    pcmConfig.matrixConfigurations += (matrix -> matrixConfig)
+		  for (value <- matcher.group(1).split("(?<![^\"\\]])\\s*,\\s*")) {
+		    val firstQuote = value.indexOf("\"")
+		    val lastQuote = value.lastIndexOf("\"")
+		    val firstBracket = value.lastIndexOf("[")
+		    val lastBracket = value.lastIndexOf("]")
+		    
+		    val matrix = value.substring(firstQuote+1, lastQuote)
+		    val index = if (firstBracket != -1) {
+		    	Integer.parseInt(value.substring(firstBracket+1, lastBracket))
+		    } else {
+		    	-1
+		    }
+		    
+		    pcmConfig.matrixConfigurations += ((matrix, index) -> matrixConfig)
 		  }
 		  
 		  true
@@ -99,7 +112,7 @@ class ConfigurationFileParser {
 			
 			val patternInterpreter = ruleName match {
 		      case "Boolean" => Some(new BooleanPatternInterpreter(validHeaders, ruleExp, parameters, true))
-		      case "Simple" => Some(new SimplePatternInterpreter(validHeaders, ruleExp, parameters, true))
+		      case "Simple" => Some(new VariabilityConceptRefPatternInterpreter(validHeaders, ruleExp, parameters, true))
 		      case "Partial" => Some(new PartialPatternInterpreter(validHeaders, ruleExp, parameters, true))
 		      case "Multiple" => Some(new MultiplePatternInterpreter(validHeaders, ruleExp, parameters, true))
 		      case "Unknown" => Some(new UnknownPatternInterpreter(validHeaders, ruleExp, parameters, true))

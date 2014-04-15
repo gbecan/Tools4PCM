@@ -2,7 +2,6 @@
  */
 package pcmmm.impl;
 
-import com.google.gwt.user.client.rpc.GwtTransient;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -43,7 +42,6 @@ public class DomainCollectionImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected EList<Domain> domains;
 
 	/**

@@ -112,15 +112,6 @@ public interface PcmmmFactory extends EFactory {
 	Partial createPartial();
 
 	/**
-	 * Returns a new object of class '<em>Simple</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Simple</em>'.
-	 * @generated
-	 */
-	Simple createSimple();
-
-	/**
 	 * Returns a new object of class '<em>Multiple</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -193,24 +184,6 @@ public interface PcmmmFactory extends EFactory {
 	XOr createXOr();
 
 	/**
-	 * Returns a new object of class '<em>Domain</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Domain</em>'.
-	 * @generated
-	 */
-	Domain createDomain();
-
-	/**
-	 * Returns a new object of class '<em>Interval</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Interval</em>'.
-	 * @generated
-	 */
-	Interval createInterval();
-
-	/**
 	 * Returns a new object of class '<em>Domain Collection</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -220,22 +193,40 @@ public interface PcmmmFactory extends EFactory {
 	DomainCollection createDomainCollection();
 
 	/**
-	 * Returns a new object of class '<em>Ordered Domain</em>'.
+	 * Returns a new object of class '<em>Enum</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ordered Domain</em>'.
+	 * @return a new object of class '<em>Enum</em>'.
 	 * @generated
 	 */
-	OrderedDomain createOrderedDomain();
+	Enum createEnum();
 
 	/**
-	 * Returns a new object of class '<em>Yes NO</em>'.
+	 * Returns a new object of class '<em>Variability Concept Ref</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Yes NO</em>'.
+	 * @return a new object of class '<em>Variability Concept Ref</em>'.
 	 * @generated
 	 */
-	YesNO createYesNO();
+	VariabilityConceptRef createVariabilityConceptRef();
+
+	/**
+	 * Returns a new object of class '<em>Integer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Integer</em>'.
+	 * @generated
+	 */
+	Integer createInteger();
+
+	/**
+	 * Returns a new object of class '<em>Double</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Double</em>'.
+	 * @generated
+	 */
+	Double createDouble();
 
 	/**
 	 * Returns the package supported by this factory.

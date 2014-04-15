@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link pcmmm.Constraint#getName <em>Name</em>}</li>
  *   <li>{@link pcmmm.Constraint#isConfident <em>Confident</em>}</li>
+ *   <li>{@link pcmmm.Constraint#getVerbatim <em>Verbatim</em>}</li>
  * </ul>
  * </p>
  *
@@ -73,5 +74,31 @@ public interface Constraint extends EObject {
 	 * @generated
 	 */
 	void setConfident(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Verbatim</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Verbatim</em>' attribute.
+	 * @see #setVerbatim(String)
+	 * @see pcmmm.PcmmmPackage#getConstraint_Verbatim()
+	 * @model
+	 * @generated
+	 */
+	String getVerbatim();
+
+	/**
+	 * Sets the value of the '{@link pcmmm.Constraint#getVerbatim <em>Verbatim</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Verbatim</em>' attribute.
+	 * @see #getVerbatim()
+	 * @generated
+	 */
+	void setVerbatim(String value);
 
 } // Constraint

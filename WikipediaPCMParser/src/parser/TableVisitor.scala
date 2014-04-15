@@ -36,6 +36,7 @@ import org.sweble.wikitext.`lazy`.parser.DefinitionDefinition
 import pcm.Matrix
 import pcm.Cell
 import java.util.regex.Pattern
+import org.sweble.wikitext.`lazy`.parser.ItemizationItem
 
 class TableVisitor extends AstVisitor {
 
@@ -55,9 +56,18 @@ class TableVisitor extends AstVisitor {
 	
 	private var cellContent : StringBuilder = new StringBuilder
 		
-	private var inXMLElement : Boolean = false
-
 	private val trimPattern : Pattern = Pattern.compile("\\s*([\\s\\S]*?)\\s*")
+	
+	private val ignoredXMLStack : Stack[Boolean] = new Stack()
+	
+	private def ignoredXMLElement : Boolean = {
+		if (!ignoredXMLStack.isEmpty) { 
+			ignoredXMLStack.top 
+		} else {
+			false
+		}
+	}
+	
 	/**
 	 * Remove spaces before and after the string
 	 */
@@ -149,7 +159,7 @@ class TableVisitor extends AstVisitor {
 		rowspan = 1
 		colspan = 1
 
-		if (!inXMLElement) {
+		if (!ignoredXMLElement) {
 			// Skip cells defined by rowspan
 			while (currentMatrix.getCell(row, column).isDefined) {
 				column += 1
@@ -159,7 +169,7 @@ class TableVisitor extends AstVisitor {
 		cellContent = new StringBuilder()
 		iterate(e)
 		
-		if(!inXMLElement) {
+		if(!ignoredXMLElement) {
 		  if (cellContent.toString.startsWith("||")) {
 			  cellContent.delete(0, 2)
 			  currentMatrix.setCell(new Cell("", false, row, 1, column ,1), row, column)
@@ -187,27 +197,27 @@ class TableVisitor extends AstVisitor {
 	}
 
 	def visit(e : Text) = {
-	  if (!inXMLElement) {
+	  if (!ignoredXMLElement) {
 	    cellContent ++= e.getContent()
 	  }
 	  iterate(e) 
 	}
 
 	def visit(e : InternalLink) = {
-	  if (!inXMLElement) {
+	  if (!ignoredXMLElement) {
 		  if (e.getTitle().getContent().isEmpty()) {
 		    cellContent ++= e.getTarget()
-		  } else {
+		  } else if (!e.getTarget().endsWith(".png")){
 		    dispatch(e.getTitle())
 		  }
 	  }
 	}
 	
 	def visit(e : ExternalLink) = {
-	  if (!inXMLElement) {
+	  if (!ignoredXMLElement) {
 		  if (e.getTitle().isEmpty()) {
-		    val target = e.getTarget()
-		    cellContent ++= target.getProtocol() + ":" + target.getPath()
+//		    val target = e.getTarget()
+//		    cellContent ++= target.getProtocol() + ":" + target.getPath()
 		  } else {
 		    dispatch(e.getTitle())
 		  }
@@ -225,19 +235,60 @@ class TableVisitor extends AstVisitor {
 	}
 
 	def visit(e : XmlElementOpen) = {
-	  e.getName() match {
-	    case "br" => cellContent += '\n'
-	    case "small" => 
-	    case "abbr" =>
-	    case "center" =>
-//	    case "span" =>
-	    case "p" => cellContent += '\n'
-	    case _ => inXMLElement = true 
+	  val emptyElement = e.getName() match {
+	    case "br" => cellContent += '\n'; true
+	    case "p" => cellContent += '\n'; true
+	    case _ => false
 	  }
+	  
+	  if (!emptyElement) {
+		  val ignored = e.getName() match {
+		    case "small" if isSignificantXMLElement(e)=> false
+		    case "big" => false
+		    case "abbr" => false
+		    case "center" => false
+		    case "span" if isSignificantXMLElement(e) => false
+		    case "div" => false
+		    case _ => true
+		  }
+	  
+		  ignoredXMLStack.push(ignoredXMLElement || ignored)
+	  }
+	}
+	
+	/**
+	 * Determine if an XML element should be included in the output
+	 */
+	def isSignificantXMLElement(e : XmlElementOpen) : Boolean = {
+		val attributes = e.getXmlAttributes()
+		var significant = true;
+		
+		val it = attributes.iterator()
+		
+		while (it.hasNext() && significant) {
+			val attribute = it.next().asInstanceOf[XmlAttribute]
+			val name = attribute.getName()
+			
+			val nodeToTextVisitor = new NodeToTextVisitor
+			nodeToTextVisitor.go(attribute.getValue())
+			val value = nodeToTextVisitor.getText
+			
+			significant = name match {
+			  case "class" if value.contains("plainlinks") => false
+			  case "class" if value.contains("flagicon") => false
+			  case "style" if value.contains("display:none") => false
+			  case _ => true
+			}
+		}
+		
+		significant
 	}
 
 	def visit(e : XmlElementClose) = {
-		inXMLElement = false
+	  if (!ignoredXMLStack.isEmpty) {
+		  ignoredXMLStack.pop
+	  }
+
 	}
 
 	def visit(e : XmlElementEmpty) = {
@@ -248,7 +299,7 @@ class TableVisitor extends AstVisitor {
 	}
 
 	def visit(e : XmlEntityRef) = {
-	  if (!inXMLElement) {
+	  if (!ignoredXMLElement) {
 	    val value = e.getName() match {
 	      case "nbsp" => 160.toChar.toString
 	      case "times" => 215.toChar.toString
@@ -260,7 +311,9 @@ class TableVisitor extends AstVisitor {
 	}
 
 	def visit(e : XmlCharRef) = {
-	  cellContent += e.getCodePoint().toChar
+	  if (!ignoredXMLElement) {
+		  cellContent += e.getCodePoint().toChar
+	  }
 	} 
 	
 	def visit(e : XmlAttributeGarbage) = {
@@ -310,7 +363,16 @@ class TableVisitor extends AstVisitor {
 	}
 	
 	def visit(e : Itemization) {
-	  
+		val it = e.getContent().iterator()
+		while(it.hasNext()) {
+		  val item = it.next()
+		  dispatch(item)
+		  cellContent += '\n'
+		}
 	}
 
+	def visit(e : ItemizationItem) {
+		iterate(e)
+	}
+	
 }

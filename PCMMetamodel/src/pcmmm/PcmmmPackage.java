@@ -4,7 +4,6 @@ package pcmmm;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -132,13 +131,22 @@ public interface PcmmmPackage extends EPackage {
 	int ABSTRACT_PRODUCT__CONSTRAINTS = VARIABILITY_CONCEPT__CONSTRAINTS;
 
 	/**
+	 * The feature id for the '<em><b>My Valued Cells</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABSTRACT_PRODUCT__MY_VALUED_CELLS = VARIABILITY_CONCEPT_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Abstract Product</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ABSTRACT_PRODUCT_FEATURE_COUNT = VARIABILITY_CONCEPT_FEATURE_COUNT + 0;
+	int ABSTRACT_PRODUCT_FEATURE_COUNT = VARIABILITY_CONCEPT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Abstract Product</em>' class.
@@ -278,13 +286,22 @@ public interface PcmmmPackage extends EPackage {
 	int ABSTRACT_FEATURE__CONSTRAINTS = VARIABILITY_CONCEPT__CONSTRAINTS;
 
 	/**
+	 * The feature id for the '<em><b>My Valued Cells</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABSTRACT_FEATURE__MY_VALUED_CELLS = VARIABILITY_CONCEPT_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Abstract Feature</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ABSTRACT_FEATURE_FEATURE_COUNT = VARIABILITY_CONCEPT_FEATURE_COUNT + 0;
+	int ABSTRACT_FEATURE_FEATURE_COUNT = VARIABILITY_CONCEPT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Abstract Feature</em>' class.
@@ -406,13 +423,22 @@ public interface PcmmmPackage extends EPackage {
 	int MATRIX__CELLS = 1;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MATRIX__ID = 2;
+
+	/**
 	 * The number of structural features of the '<em>Matrix</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MATRIX_FEATURE_COUNT = 2;
+	int MATRIX_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Matrix</em>' class.
@@ -450,6 +476,15 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int PRODUCT_FAMILY__CONSTRAINTS = ABSTRACT_PRODUCT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>My Valued Cells</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FAMILY__MY_VALUED_CELLS = ABSTRACT_PRODUCT__MY_VALUED_CELLS;
 
 	/**
 	 * The feature id for the '<em><b>Products</b></em>' containment reference list.
@@ -507,6 +542,15 @@ public interface PcmmmPackage extends EPackage {
 	int PRODUCT__CONSTRAINTS = ABSTRACT_PRODUCT__CONSTRAINTS;
 
 	/**
+	 * The feature id for the '<em><b>My Valued Cells</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT__MY_VALUED_CELLS = ABSTRACT_PRODUCT__MY_VALUED_CELLS;
+
+	/**
 	 * The number of structural features of the '<em>Product</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -551,6 +595,15 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int FEATURE_FAMILY__CONSTRAINTS = ABSTRACT_FEATURE__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>My Valued Cells</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FEATURE_FAMILY__MY_VALUED_CELLS = ABSTRACT_FEATURE__MY_VALUED_CELLS;
 
 	/**
 	 * The feature id for the '<em><b>Features</b></em>' containment reference list.
@@ -608,13 +661,31 @@ public interface PcmmmPackage extends EPackage {
 	int FEATURE__CONSTRAINTS = ABSTRACT_FEATURE__CONSTRAINTS;
 
 	/**
+	 * The feature id for the '<em><b>My Valued Cells</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FEATURE__MY_VALUED_CELLS = ABSTRACT_FEATURE__MY_VALUED_CELLS;
+
+	/**
+	 * The feature id for the '<em><b>Domain</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FEATURE__DOMAIN = ABSTRACT_FEATURE_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Feature</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FEATURE_FEATURE_COUNT = ABSTRACT_FEATURE_FEATURE_COUNT + 0;
+	int FEATURE_FEATURE_COUNT = ABSTRACT_FEATURE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Feature</em>' class.
@@ -863,13 +934,22 @@ public interface PcmmmPackage extends EPackage {
 	int CONSTRAINT__CONFIDENT = 1;
 
 	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONSTRAINT__VERBATIM = 2;
+
+	/**
 	 * The number of structural features of the '<em>Constraint</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONSTRAINT_FEATURE_COUNT = 2;
+	int CONSTRAINT_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Constraint</em>' class.
@@ -879,6 +959,61 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int CONSTRAINT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link pcmmm.impl.SimpleImpl <em>Simple</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see pcmmm.impl.SimpleImpl
+	 * @see pcmmm.impl.PcmmmPackageImpl#getSimple()
+	 * @generated
+	 */
+	int SIMPLE = 15;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIMPLE__NAME = CONSTRAINT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Confident</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIMPLE__CONFIDENT = CONSTRAINT__CONFIDENT;
+
+	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIMPLE__VERBATIM = CONSTRAINT__VERBATIM;
+
+	/**
+	 * The number of structural features of the '<em>Simple</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIMPLE_FEATURE_COUNT = CONSTRAINT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Simple</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIMPLE_OPERATION_COUNT = CONSTRAINT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link pcmmm.impl.BooleanImpl <em>Boolean</em>}' class.
@@ -897,7 +1032,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BOOLEAN__NAME = CONSTRAINT__NAME;
+	int BOOLEAN__NAME = SIMPLE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Confident</b></em>' attribute.
@@ -906,7 +1041,16 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BOOLEAN__CONFIDENT = CONSTRAINT__CONFIDENT;
+	int BOOLEAN__CONFIDENT = SIMPLE__CONFIDENT;
+
+	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOLEAN__VERBATIM = SIMPLE__VERBATIM;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -915,7 +1059,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BOOLEAN__VALUE = CONSTRAINT_FEATURE_COUNT + 0;
+	int BOOLEAN__VALUE = SIMPLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Boolean</em>' class.
@@ -924,7 +1068,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BOOLEAN_FEATURE_COUNT = CONSTRAINT_FEATURE_COUNT + 1;
+	int BOOLEAN_FEATURE_COUNT = SIMPLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Boolean</em>' class.
@@ -933,7 +1077,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BOOLEAN_OPERATION_COUNT = CONSTRAINT_OPERATION_COUNT + 0;
+	int BOOLEAN_OPERATION_COUNT = SIMPLE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link pcmmm.impl.PartialImpl <em>Partial</em>}' class.
@@ -962,6 +1106,15 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int PARTIAL__CONFIDENT = CONSTRAINT__CONFIDENT;
+
+	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTIAL__VERBATIM = CONSTRAINT__VERBATIM;
 
 	/**
 	 * The feature id for the '<em><b>Condition</b></em>' containment reference.
@@ -1000,61 +1153,6 @@ public interface PcmmmPackage extends EPackage {
 	int PARTIAL_OPERATION_COUNT = CONSTRAINT_OPERATION_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link pcmmm.impl.SimpleImpl <em>Simple</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see pcmmm.impl.SimpleImpl
-	 * @see pcmmm.impl.PcmmmPackageImpl#getSimple()
-	 * @generated
-	 */
-	int SIMPLE = 15;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SIMPLE__NAME = CONSTRAINT__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Confident</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SIMPLE__CONFIDENT = CONSTRAINT__CONFIDENT;
-
-	/**
-	 * The feature id for the '<em><b>Concept</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SIMPLE__CONCEPT = CONSTRAINT_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Simple</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SIMPLE_FEATURE_COUNT = CONSTRAINT_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of operations of the '<em>Simple</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SIMPLE_OPERATION_COUNT = CONSTRAINT_OPERATION_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link pcmmm.impl.MultipleImpl <em>Multiple</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1081,6 +1179,15 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int MULTIPLE__CONFIDENT = CONSTRAINT__CONFIDENT;
+
+	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTIPLE__VERBATIM = CONSTRAINT__VERBATIM;
 
 	/**
 	 * The feature id for the '<em><b>Contraints</b></em>' containment reference list.
@@ -1138,6 +1245,15 @@ public interface PcmmmPackage extends EPackage {
 	int UNKNOWN__CONFIDENT = CONSTRAINT__CONFIDENT;
 
 	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNKNOWN__VERBATIM = CONSTRAINT__VERBATIM;
+
+	/**
 	 * The number of structural features of the '<em>Unknown</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1184,6 +1300,15 @@ public interface PcmmmPackage extends EPackage {
 	int EMPTY__CONFIDENT = CONSTRAINT__CONFIDENT;
 
 	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMPTY__VERBATIM = CONSTRAINT__VERBATIM;
+
+	/**
 	 * The number of structural features of the '<em>Empty</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1228,6 +1353,15 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int INCONSISTENT__CONFIDENT = CONSTRAINT__CONFIDENT;
+
+	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INCONSISTENT__VERBATIM = CONSTRAINT__VERBATIM;
 
 	/**
 	 * The number of structural features of the '<em>Inconsistent</em>' class.
@@ -1412,6 +1546,15 @@ public interface PcmmmPackage extends EPackage {
 	int AND__CONFIDENT = MULTIPLE__CONFIDENT;
 
 	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AND__VERBATIM = MULTIPLE__VERBATIM;
+
+	/**
 	 * The feature id for the '<em><b>Contraints</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1465,6 +1608,15 @@ public interface PcmmmPackage extends EPackage {
 	 * @ordered
 	 */
 	int OR__CONFIDENT = MULTIPLE__CONFIDENT;
+
+	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OR__VERBATIM = MULTIPLE__VERBATIM;
 
 	/**
 	 * The feature id for the '<em><b>Contraints</b></em>' containment reference list.
@@ -1522,6 +1674,15 @@ public interface PcmmmPackage extends EPackage {
 	int XOR__CONFIDENT = MULTIPLE__CONFIDENT;
 
 	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XOR__VERBATIM = MULTIPLE__VERBATIM;
+
+	/**
 	 * The feature id for the '<em><b>Contraints</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1559,40 +1720,13 @@ public interface PcmmmPackage extends EPackage {
 	int DOMAIN = 24;
 
 	/**
-	 * The feature id for the '<em><b>Intervals</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOMAIN__INTERVALS = 0;
-
-	/**
-	 * The feature id for the '<em><b>Domain Litteral</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOMAIN__DOMAIN_LITTERAL = 1;
-
-	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN__NAME = 2;
-
-	/**
-	 * The feature id for the '<em><b>Domain Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOMAIN__DOMAIN_TYPE = 3;
+	int DOMAIN__NAME = 0;
 
 	/**
 	 * The number of structural features of the '<em>Domain</em>' class.
@@ -1601,7 +1735,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_FEATURE_COUNT = 4;
+	int DOMAIN_FEATURE_COUNT = 1;
 
 	/**
 	 * The number of operations of the '<em>Domain</em>' class.
@@ -1613,52 +1747,6 @@ public interface PcmmmPackage extends EPackage {
 	int DOMAIN_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link pcmmm.impl.IntervalImpl <em>Interval</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see pcmmm.impl.IntervalImpl
-	 * @see pcmmm.impl.PcmmmPackageImpl#getInterval()
-	 * @generated
-	 */
-	int INTERVAL = 25;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERVAL__NAME = 0;
-
-	/**
-	 * The feature id for the '<em><b>Value</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERVAL__VALUE = 1;
-
-	/**
-	 * The number of structural features of the '<em>Interval</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERVAL_FEATURE_COUNT = 2;
-
-	/**
-	 * The number of operations of the '<em>Interval</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTERVAL_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link pcmmm.impl.DomainCollectionImpl <em>Domain Collection</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1666,7 +1754,7 @@ public interface PcmmmPackage extends EPackage {
 	 * @see pcmmm.impl.PcmmmPackageImpl#getDomainCollection()
 	 * @generated
 	 */
-	int DOMAIN_COLLECTION = 26;
+	int DOMAIN_COLLECTION = 25;
 
 	/**
 	 * The feature id for the '<em><b>Domains</b></em>' containment reference list.
@@ -1696,60 +1784,14 @@ public interface PcmmmPackage extends EPackage {
 	int DOMAIN_COLLECTION_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link pcmmm.impl.TypeImpl <em>Type</em>}' class.
+	 * The meta object id for the '{@link pcmmm.impl.EnumImpl <em>Enum</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see pcmmm.impl.TypeImpl
-	 * @see pcmmm.impl.PcmmmPackageImpl#getType()
+	 * @see pcmmm.impl.EnumImpl
+	 * @see pcmmm.impl.PcmmmPackageImpl#getEnum()
 	 * @generated
 	 */
-	int TYPE = 27;
-
-	/**
-	 * The number of structural features of the '<em>Type</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TYPE_FEATURE_COUNT = 0;
-
-	/**
-	 * The number of operations of the '<em>Type</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TYPE_OPERATION_COUNT = 0;
-
-	/**
-	 * The meta object id for the '{@link pcmmm.impl.OrderedDomainImpl <em>Ordered Domain</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see pcmmm.impl.OrderedDomainImpl
-	 * @see pcmmm.impl.PcmmmPackageImpl#getOrderedDomain()
-	 * @generated
-	 */
-	int ORDERED_DOMAIN = 28;
-
-	/**
-	 * The feature id for the '<em><b>Intervals</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_DOMAIN__INTERVALS = DOMAIN__INTERVALS;
-
-	/**
-	 * The feature id for the '<em><b>Domain Litteral</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_DOMAIN__DOMAIN_LITTERAL = DOMAIN__DOMAIN_LITTERAL;
+	int ENUM = 26;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1758,89 +1800,226 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ORDERED_DOMAIN__NAME = DOMAIN__NAME;
+	int ENUM__NAME = DOMAIN__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Domain Type</b></em>' containment reference.
+	 * The feature id for the '<em><b>Values</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDERED_DOMAIN__DOMAIN_TYPE = DOMAIN__DOMAIN_TYPE;
+	int ENUM__VALUES = DOMAIN_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Previous</b></em>' reference list.
+	 * The number of structural features of the '<em>Enum</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDERED_DOMAIN__PREVIOUS = DOMAIN_FEATURE_COUNT + 0;
+	int ENUM_FEATURE_COUNT = DOMAIN_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Next</b></em>' reference list.
+	 * The number of operations of the '<em>Enum</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDERED_DOMAIN__NEXT = DOMAIN_FEATURE_COUNT + 1;
+	int ENUM_OPERATION_COUNT = DOMAIN_OPERATION_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Ordered Domain</em>' class.
+	 * The meta object id for the '{@link pcmmm.impl.VariabilityConceptRefImpl <em>Variability Concept Ref</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see pcmmm.impl.VariabilityConceptRefImpl
+	 * @see pcmmm.impl.PcmmmPackageImpl#getVariabilityConceptRef()
+	 * @generated
+	 */
+	int VARIABILITY_CONCEPT_REF = 27;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDERED_DOMAIN_FEATURE_COUNT = DOMAIN_FEATURE_COUNT + 2;
+	int VARIABILITY_CONCEPT_REF__NAME = SIMPLE__NAME;
 
 	/**
-	 * The number of operations of the '<em>Ordered Domain</em>' class.
+	 * The feature id for the '<em><b>Confident</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDERED_DOMAIN_OPERATION_COUNT = DOMAIN_OPERATION_COUNT + 0;
+	int VARIABILITY_CONCEPT_REF__CONFIDENT = SIMPLE__CONFIDENT;
 
 	/**
-	 * The meta object id for the '{@link pcmmm.impl.YesNOImpl <em>Yes NO</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see pcmmm.impl.YesNOImpl
-	 * @see pcmmm.impl.PcmmmPackageImpl#getYesNO()
-	 * @generated
-	 */
-	int YES_NO = 29;
-
-	/**
-	 * The number of structural features of the '<em>Yes NO</em>' class.
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int YES_NO_FEATURE_COUNT = 0;
+	int VARIABILITY_CONCEPT_REF__VERBATIM = SIMPLE__VERBATIM;
 
 	/**
-	 * The operation id for the '<em>Eval</em>' operation.
+	 * The feature id for the '<em><b>Concept</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int YES_NO___EVAL = 0;
+	int VARIABILITY_CONCEPT_REF__CONCEPT = SIMPLE_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of operations of the '<em>Yes NO</em>' class.
+	 * The number of structural features of the '<em>Variability Concept Ref</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int YES_NO_OPERATION_COUNT = 1;
+	int VARIABILITY_CONCEPT_REF_FEATURE_COUNT = SIMPLE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Variability Concept Ref</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VARIABILITY_CONCEPT_REF_OPERATION_COUNT = SIMPLE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link pcmmm.impl.IntegerImpl <em>Integer</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see pcmmm.impl.IntegerImpl
+	 * @see pcmmm.impl.PcmmmPackageImpl#getInteger()
+	 * @generated
+	 */
+	int INTEGER = 28;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTEGER__NAME = SIMPLE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Confident</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTEGER__CONFIDENT = SIMPLE__CONFIDENT;
+
+	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTEGER__VERBATIM = SIMPLE__VERBATIM;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTEGER__VALUE = SIMPLE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Integer</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTEGER_FEATURE_COUNT = SIMPLE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Integer</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTEGER_OPERATION_COUNT = SIMPLE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link pcmmm.impl.DoubleImpl <em>Double</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see pcmmm.impl.DoubleImpl
+	 * @see pcmmm.impl.PcmmmPackageImpl#getDouble()
+	 * @generated
+	 */
+	int DOUBLE = 29;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOUBLE__NAME = SIMPLE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Confident</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOUBLE__CONFIDENT = SIMPLE__CONFIDENT;
+
+	/**
+	 * The feature id for the '<em><b>Verbatim</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOUBLE__VERBATIM = SIMPLE__VERBATIM;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOUBLE__VALUE = SIMPLE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Double</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOUBLE_FEATURE_COUNT = SIMPLE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Double</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOUBLE_OPERATION_COUNT = SIMPLE_OPERATION_COUNT + 0;
 
 
 	/**
@@ -1852,6 +2031,17 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAbstractProduct();
+
+	/**
+	 * Returns the meta object for the reference list '{@link pcmmm.AbstractProduct#getMyValuedCells <em>My Valued Cells</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>My Valued Cells</em>'.
+	 * @see pcmmm.AbstractProduct#getMyValuedCells()
+	 * @see #getAbstractProduct()
+	 * @generated
+	 */
+	EReference getAbstractProduct_MyValuedCells();
 
 	/**
 	 * Returns the meta object for class '{@link pcmmm.Cell <em>Cell</em>}'.
@@ -1962,6 +2152,17 @@ public interface PcmmmPackage extends EPackage {
 	EClass getAbstractFeature();
 
 	/**
+	 * Returns the meta object for the reference list '{@link pcmmm.AbstractFeature#getMyValuedCells <em>My Valued Cells</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>My Valued Cells</em>'.
+	 * @see pcmmm.AbstractFeature#getMyValuedCells()
+	 * @see #getAbstractFeature()
+	 * @generated
+	 */
+	EReference getAbstractFeature_MyValuedCells();
+
+	/**
 	 * Returns the meta object for class '{@link pcmmm.PCM <em>PCM</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2070,6 +2271,17 @@ public interface PcmmmPackage extends EPackage {
 	EReference getMatrix_Cells();
 
 	/**
+	 * Returns the meta object for the attribute '{@link pcmmm.Matrix#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see pcmmm.Matrix#getId()
+	 * @see #getMatrix()
+	 * @generated
+	 */
+	EAttribute getMatrix_Id();
+
+	/**
 	 * Returns the meta object for class '{@link pcmmm.ProductFamily <em>Product Family</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2130,6 +2342,17 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getFeature();
+
+	/**
+	 * Returns the meta object for the reference '{@link pcmmm.Feature#getDomain <em>Domain</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Domain</em>'.
+	 * @see pcmmm.Feature#getDomain()
+	 * @see #getFeature()
+	 * @generated
+	 */
+	EReference getFeature_Domain();
 
 	/**
 	 * Returns the meta object for class '{@link pcmmm.VariabilityConcept <em>Variability Concept</em>}'.
@@ -2227,6 +2450,17 @@ public interface PcmmmPackage extends EPackage {
 	EAttribute getConstraint_Confident();
 
 	/**
+	 * Returns the meta object for the attribute '{@link pcmmm.Constraint#getVerbatim <em>Verbatim</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Verbatim</em>'.
+	 * @see pcmmm.Constraint#getVerbatim()
+	 * @see #getConstraint()
+	 * @generated
+	 */
+	EAttribute getConstraint_Verbatim();
+
+	/**
 	 * Returns the meta object for class '{@link pcmmm.Boolean <em>Boolean</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2288,17 +2522,6 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSimple();
-
-	/**
-	 * Returns the meta object for the reference '{@link pcmmm.Simple#getConcept <em>Concept</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Concept</em>'.
-	 * @see pcmmm.Simple#getConcept()
-	 * @see #getSimple()
-	 * @generated
-	 */
-	EReference getSimple_Concept();
 
 	/**
 	 * Returns the meta object for class '{@link pcmmm.Multiple <em>Multiple</em>}'.
@@ -2446,28 +2669,6 @@ public interface PcmmmPackage extends EPackage {
 	EClass getDomain();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link pcmmm.Domain#getIntervals <em>Intervals</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Intervals</em>'.
-	 * @see pcmmm.Domain#getIntervals()
-	 * @see #getDomain()
-	 * @generated
-	 */
-	EReference getDomain_Intervals();
-
-	/**
-	 * Returns the meta object for the attribute list '{@link pcmmm.Domain#getDomainLitteral <em>Domain Litteral</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Domain Litteral</em>'.
-	 * @see pcmmm.Domain#getDomainLitteral()
-	 * @see #getDomain()
-	 * @generated
-	 */
-	EAttribute getDomain_DomainLitteral();
-
-	/**
 	 * Returns the meta object for the attribute '{@link pcmmm.Domain#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2477,49 +2678,6 @@ public interface PcmmmPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getDomain_Name();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link pcmmm.Domain#getDomainType <em>Domain Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Domain Type</em>'.
-	 * @see pcmmm.Domain#getDomainType()
-	 * @see #getDomain()
-	 * @generated
-	 */
-	EReference getDomain_DomainType();
-
-	/**
-	 * Returns the meta object for class '{@link pcmmm.Interval <em>Interval</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Interval</em>'.
-	 * @see pcmmm.Interval
-	 * @generated
-	 */
-	EClass getInterval();
-
-	/**
-	 * Returns the meta object for the attribute '{@link pcmmm.Interval#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see pcmmm.Interval#getName()
-	 * @see #getInterval()
-	 * @generated
-	 */
-	EAttribute getInterval_Name();
-
-	/**
-	 * Returns the meta object for the attribute '{@link pcmmm.Interval#getValue <em>Value</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Value</em>'.
-	 * @see pcmmm.Interval#getValue()
-	 * @see #getInterval()
-	 * @generated
-	 */
-	EAttribute getInterval_Value();
 
 	/**
 	 * Returns the meta object for class '{@link pcmmm.DomainCollection <em>Domain Collection</em>}'.
@@ -2543,66 +2701,88 @@ public interface PcmmmPackage extends EPackage {
 	EReference getDomainCollection_Domains();
 
 	/**
-	 * Returns the meta object for class '{@link pcmmm.Type <em>Type</em>}'.
+	 * Returns the meta object for class '{@link pcmmm.Enum <em>Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Type</em>'.
-	 * @see pcmmm.Type
+	 * @return the meta object for class '<em>Enum</em>'.
+	 * @see pcmmm.Enum
 	 * @generated
 	 */
-	EClass getType();
+	EClass getEnum();
 
 	/**
-	 * Returns the meta object for class '{@link pcmmm.OrderedDomain <em>Ordered Domain</em>}'.
+	 * Returns the meta object for the reference list '{@link pcmmm.Enum#getValues <em>Values</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Ordered Domain</em>'.
-	 * @see pcmmm.OrderedDomain
+	 * @return the meta object for the reference list '<em>Values</em>'.
+	 * @see pcmmm.Enum#getValues()
+	 * @see #getEnum()
 	 * @generated
 	 */
-	EClass getOrderedDomain();
+	EReference getEnum_Values();
 
 	/**
-	 * Returns the meta object for the reference list '{@link pcmmm.OrderedDomain#getPrevious <em>Previous</em>}'.
+	 * Returns the meta object for class '{@link pcmmm.VariabilityConceptRef <em>Variability Concept Ref</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Previous</em>'.
-	 * @see pcmmm.OrderedDomain#getPrevious()
-	 * @see #getOrderedDomain()
+	 * @return the meta object for class '<em>Variability Concept Ref</em>'.
+	 * @see pcmmm.VariabilityConceptRef
 	 * @generated
 	 */
-	EReference getOrderedDomain_Previous();
+	EClass getVariabilityConceptRef();
 
 	/**
-	 * Returns the meta object for the reference list '{@link pcmmm.OrderedDomain#getNext <em>Next</em>}'.
+	 * Returns the meta object for the reference '{@link pcmmm.VariabilityConceptRef#getConcept <em>Concept</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Next</em>'.
-	 * @see pcmmm.OrderedDomain#getNext()
-	 * @see #getOrderedDomain()
+	 * @return the meta object for the reference '<em>Concept</em>'.
+	 * @see pcmmm.VariabilityConceptRef#getConcept()
+	 * @see #getVariabilityConceptRef()
 	 * @generated
 	 */
-	EReference getOrderedDomain_Next();
+	EReference getVariabilityConceptRef_Concept();
 
 	/**
-	 * Returns the meta object for class '{@link pcmmm.YesNO <em>Yes NO</em>}'.
+	 * Returns the meta object for class '{@link pcmmm.Integer <em>Integer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Yes NO</em>'.
-	 * @see pcmmm.YesNO
+	 * @return the meta object for class '<em>Integer</em>'.
+	 * @see pcmmm.Integer
 	 * @generated
 	 */
-	EClass getYesNO();
+	EClass getInteger();
 
 	/**
-	 * Returns the meta object for the '{@link pcmmm.YesNO#eval() <em>Eval</em>}' operation.
+	 * Returns the meta object for the attribute '{@link pcmmm.Integer#getValue <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Eval</em>' operation.
-	 * @see pcmmm.YesNO#eval()
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see pcmmm.Integer#getValue()
+	 * @see #getInteger()
 	 * @generated
 	 */
-	EOperation getYesNO__Eval();
+	EAttribute getInteger_Value();
+
+	/**
+	 * Returns the meta object for class '{@link pcmmm.Double <em>Double</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Double</em>'.
+	 * @see pcmmm.Double
+	 * @generated
+	 */
+	EClass getDouble();
+
+	/**
+	 * Returns the meta object for the attribute '{@link pcmmm.Double#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see pcmmm.Double#getValue()
+	 * @see #getDouble()
+	 * @generated
+	 */
+	EAttribute getDouble_Value();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2636,6 +2816,14 @@ public interface PcmmmPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ABSTRACT_PRODUCT = eINSTANCE.getAbstractProduct();
+
+		/**
+		 * The meta object literal for the '<em><b>My Valued Cells</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ABSTRACT_PRODUCT__MY_VALUED_CELLS = eINSTANCE.getAbstractProduct_MyValuedCells();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.CellImpl <em>Cell</em>}' class.
@@ -2722,6 +2910,14 @@ public interface PcmmmPackage extends EPackage {
 		EClass ABSTRACT_FEATURE = eINSTANCE.getAbstractFeature();
 
 		/**
+		 * The meta object literal for the '<em><b>My Valued Cells</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ABSTRACT_FEATURE__MY_VALUED_CELLS = eINSTANCE.getAbstractFeature_MyValuedCells();
+
+		/**
 		 * The meta object literal for the '{@link pcmmm.impl.PCMImpl <em>PCM</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2806,6 +3002,14 @@ public interface PcmmmPackage extends EPackage {
 		EReference MATRIX__CELLS = eINSTANCE.getMatrix_Cells();
 
 		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MATRIX__ID = eINSTANCE.getMatrix_Id();
+
+		/**
 		 * The meta object literal for the '{@link pcmmm.impl.ProductFamilyImpl <em>Product Family</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2860,6 +3064,14 @@ public interface PcmmmPackage extends EPackage {
 		 * @generated
 		 */
 		EClass FEATURE = eINSTANCE.getFeature();
+
+		/**
+		 * The meta object literal for the '<em><b>Domain</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FEATURE__DOMAIN = eINSTANCE.getFeature_Domain();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.VariabilityConceptImpl <em>Variability Concept</em>}' class.
@@ -2942,6 +3154,14 @@ public interface PcmmmPackage extends EPackage {
 		EAttribute CONSTRAINT__CONFIDENT = eINSTANCE.getConstraint_Confident();
 
 		/**
+		 * The meta object literal for the '<em><b>Verbatim</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONSTRAINT__VERBATIM = eINSTANCE.getConstraint_Verbatim();
+
+		/**
 		 * The meta object literal for the '{@link pcmmm.impl.BooleanImpl <em>Boolean</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2994,14 +3214,6 @@ public interface PcmmmPackage extends EPackage {
 		 * @generated
 		 */
 		EClass SIMPLE = eINSTANCE.getSimple();
-
-		/**
-		 * The meta object literal for the '<em><b>Concept</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SIMPLE__CONCEPT = eINSTANCE.getSimple_Concept();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.MultipleImpl <em>Multiple</em>}' class.
@@ -3134,62 +3346,12 @@ public interface PcmmmPackage extends EPackage {
 		EClass DOMAIN = eINSTANCE.getDomain();
 
 		/**
-		 * The meta object literal for the '<em><b>Intervals</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DOMAIN__INTERVALS = eINSTANCE.getDomain_Intervals();
-
-		/**
-		 * The meta object literal for the '<em><b>Domain Litteral</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute DOMAIN__DOMAIN_LITTERAL = eINSTANCE.getDomain_DomainLitteral();
-
-		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute DOMAIN__NAME = eINSTANCE.getDomain_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Domain Type</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference DOMAIN__DOMAIN_TYPE = eINSTANCE.getDomain_DomainType();
-
-		/**
-		 * The meta object literal for the '{@link pcmmm.impl.IntervalImpl <em>Interval</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see pcmmm.impl.IntervalImpl
-		 * @see pcmmm.impl.PcmmmPackageImpl#getInterval()
-		 * @generated
-		 */
-		EClass INTERVAL = eINSTANCE.getInterval();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERVAL__NAME = eINSTANCE.getInterval_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute INTERVAL__VALUE = eINSTANCE.getInterval_Value();
 
 		/**
 		 * The meta object literal for the '{@link pcmmm.impl.DomainCollectionImpl <em>Domain Collection</em>}' class.
@@ -3210,58 +3372,76 @@ public interface PcmmmPackage extends EPackage {
 		EReference DOMAIN_COLLECTION__DOMAINS = eINSTANCE.getDomainCollection_Domains();
 
 		/**
-		 * The meta object literal for the '{@link pcmmm.impl.TypeImpl <em>Type</em>}' class.
+		 * The meta object literal for the '{@link pcmmm.impl.EnumImpl <em>Enum</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see pcmmm.impl.TypeImpl
-		 * @see pcmmm.impl.PcmmmPackageImpl#getType()
+		 * @see pcmmm.impl.EnumImpl
+		 * @see pcmmm.impl.PcmmmPackageImpl#getEnum()
 		 * @generated
 		 */
-		EClass TYPE = eINSTANCE.getType();
+		EClass ENUM = eINSTANCE.getEnum();
 
 		/**
-		 * The meta object literal for the '{@link pcmmm.impl.OrderedDomainImpl <em>Ordered Domain</em>}' class.
+		 * The meta object literal for the '<em><b>Values</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see pcmmm.impl.OrderedDomainImpl
-		 * @see pcmmm.impl.PcmmmPackageImpl#getOrderedDomain()
 		 * @generated
 		 */
-		EClass ORDERED_DOMAIN = eINSTANCE.getOrderedDomain();
+		EReference ENUM__VALUES = eINSTANCE.getEnum_Values();
 
 		/**
-		 * The meta object literal for the '<em><b>Previous</b></em>' reference list feature.
+		 * The meta object literal for the '{@link pcmmm.impl.VariabilityConceptRefImpl <em>Variability Concept Ref</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
+		 * @see pcmmm.impl.VariabilityConceptRefImpl
+		 * @see pcmmm.impl.PcmmmPackageImpl#getVariabilityConceptRef()
 		 * @generated
 		 */
-		EReference ORDERED_DOMAIN__PREVIOUS = eINSTANCE.getOrderedDomain_Previous();
+		EClass VARIABILITY_CONCEPT_REF = eINSTANCE.getVariabilityConceptRef();
 
 		/**
-		 * The meta object literal for the '<em><b>Next</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Concept</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDERED_DOMAIN__NEXT = eINSTANCE.getOrderedDomain_Next();
+		EReference VARIABILITY_CONCEPT_REF__CONCEPT = eINSTANCE.getVariabilityConceptRef_Concept();
 
 		/**
-		 * The meta object literal for the '{@link pcmmm.impl.YesNOImpl <em>Yes NO</em>}' class.
+		 * The meta object literal for the '{@link pcmmm.impl.IntegerImpl <em>Integer</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see pcmmm.impl.YesNOImpl
-		 * @see pcmmm.impl.PcmmmPackageImpl#getYesNO()
+		 * @see pcmmm.impl.IntegerImpl
+		 * @see pcmmm.impl.PcmmmPackageImpl#getInteger()
 		 * @generated
 		 */
-		EClass YES_NO = eINSTANCE.getYesNO();
+		EClass INTEGER = eINSTANCE.getInteger();
 
 		/**
-		 * The meta object literal for the '<em><b>Eval</b></em>' operation.
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation YES_NO___EVAL = eINSTANCE.getYesNO__Eval();
+		EAttribute INTEGER__VALUE = eINSTANCE.getInteger_Value();
+
+		/**
+		 * The meta object literal for the '{@link pcmmm.impl.DoubleImpl <em>Double</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see pcmmm.impl.DoubleImpl
+		 * @see pcmmm.impl.PcmmmPackageImpl#getDouble()
+		 * @generated
+		 */
+		EClass DOUBLE = eINSTANCE.getDouble();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOUBLE__VALUE = eINSTANCE.getDouble_Value();
 
 	}
 

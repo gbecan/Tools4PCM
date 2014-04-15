@@ -2,7 +2,8 @@
  */
 package pcmmm.impl;
 
-import com.google.gwt.user.client.rpc.GwtTransient;
+import java.lang.Integer;
+
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -58,7 +59,6 @@ public abstract class CellImpl extends MinimalEObjectImpl.Container implements C
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected String name = NAME_EDEFAULT;
 
 	/**
@@ -79,7 +79,6 @@ public abstract class CellImpl extends MinimalEObjectImpl.Container implements C
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected String verbatim = VERBATIM_EDEFAULT;
 
 	/**
@@ -90,7 +89,6 @@ public abstract class CellImpl extends MinimalEObjectImpl.Container implements C
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected EList<String> note;
 
 	/**
@@ -101,7 +99,6 @@ public abstract class CellImpl extends MinimalEObjectImpl.Container implements C
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected EList<String> link;
 
 	/**
@@ -122,7 +119,6 @@ public abstract class CellImpl extends MinimalEObjectImpl.Container implements C
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected int row = ROW_EDEFAULT;
 
 	/**
@@ -143,7 +139,6 @@ public abstract class CellImpl extends MinimalEObjectImpl.Container implements C
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected int rowspan = ROWSPAN_EDEFAULT;
 
 	/**
@@ -164,7 +159,6 @@ public abstract class CellImpl extends MinimalEObjectImpl.Container implements C
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected int column = COLUMN_EDEFAULT;
 
 	/**
@@ -185,7 +179,6 @@ public abstract class CellImpl extends MinimalEObjectImpl.Container implements C
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected int colspan = COLSPAN_EDEFAULT;
 
 	/**

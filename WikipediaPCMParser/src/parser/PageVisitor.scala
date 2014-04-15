@@ -102,7 +102,11 @@ class PageVisitor extends AstVisitor{
   }
   
   def visit(e : InternalLink) {
-    
+    if (inTitle) {
+    	val nodeToText = new NodeToTextVisitor
+    	nodeToText.go(e)
+    	section ++= nodeToText.getText
+    }
   }
   
   def visit(e : ExternalLink) {

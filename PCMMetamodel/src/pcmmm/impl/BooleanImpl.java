@@ -2,12 +2,14 @@
  */
 package pcmmm.impl;
 
-import com.google.gwt.user.client.rpc.GwtTransient;
 import java.lang.Boolean;
+
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import pcmmm.PcmmmPackage;
 
 /**
@@ -23,7 +25,7 @@ import pcmmm.PcmmmPackage;
  *
  * @generated
  */
-public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
+public class BooleanImpl extends SimpleImpl implements pcmmm.Boolean {
 	/**
 	 * The default value of the '{@link #isValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -33,6 +35,7 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	 * @ordered
 	 */
 	protected static final boolean VALUE_EDEFAULT = false;
+
 	/**
 	 * The cached value of the '{@link #isValue() <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -41,7 +44,6 @@ public class BooleanImpl extends ConstraintImpl implements pcmmm.Boolean {
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected boolean value = VALUE_EDEFAULT;
 
 	/**

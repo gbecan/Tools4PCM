@@ -22,6 +22,7 @@ class BooleanPatternInterpreter (
 			  constraint.setValue(false)
 		  }
 		  constraint.setName(s)
+		  constraint.setVerbatim(s)
 		  constraint.setConfident(confident)
 		  Some(constraint)
   }

@@ -22,7 +22,7 @@ class PartialPatternInterpreter (
 		 if (matcher.groupCount() >= 1) {
 		   // Interpret argument
 		   val argument = matcher.group(1)
-		   lastCall = Some(format(s), products, features) 
+		   lastCall = Some(s, products, features) 
 		   val argInterpretation = cellContentInterpreter.findInterpretation(argument, products, features)
 		   if (argInterpretation.isDefined) {
 			   constraint.setArgument(argInterpretation.get)
@@ -35,7 +35,7 @@ class PartialPatternInterpreter (
 		 if (matcher.groupCount() >= 2) {  
 		   // Interpret condition
 		   val condition = matcher.group(2)
-		   lastCall = Some(format(s), products, features) 
+		   lastCall = Some(s, products, features) 
 		   val condInterpretation = cellContentInterpreter.findInterpretation(condition, products, features)
 		   if (condInterpretation.isDefined) {
 		     constraint.setCondition(condInterpretation.get)

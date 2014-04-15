@@ -8,7 +8,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import pcmmm.And;
-import pcmmm.Domain;
 import pcmmm.DomainCollection;
 import pcmmm.Empty;
 import pcmmm.Extra;
@@ -16,22 +15,19 @@ import pcmmm.Feature;
 import pcmmm.FeatureFamily;
 import pcmmm.Header;
 import pcmmm.Inconsistent;
-import pcmmm.Interval;
 import pcmmm.Matrix;
 import pcmmm.Multiple;
 import pcmmm.Or;
-import pcmmm.OrderedDomain;
 import pcmmm.PCM;
 import pcmmm.Partial;
 import pcmmm.PcmmmFactory;
 import pcmmm.PcmmmPackage;
 import pcmmm.Product;
 import pcmmm.ProductFamily;
-import pcmmm.Simple;
 import pcmmm.Unknown;
 import pcmmm.ValuedCell;
+import pcmmm.VariabilityConceptRef;
 import pcmmm.XOr;
-import pcmmm.YesNO;
 
 /**
  * <!-- begin-user-doc -->
@@ -87,7 +83,6 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 			case PcmmmPackage.EXTRA: return createExtra();
 			case PcmmmPackage.BOOLEAN: return createBoolean();
 			case PcmmmPackage.PARTIAL: return createPartial();
-			case PcmmmPackage.SIMPLE: return createSimple();
 			case PcmmmPackage.MULTIPLE: return createMultiple();
 			case PcmmmPackage.UNKNOWN: return createUnknown();
 			case PcmmmPackage.EMPTY: return createEmpty();
@@ -96,11 +91,11 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 			case PcmmmPackage.AND: return createAnd();
 			case PcmmmPackage.OR: return createOr();
 			case PcmmmPackage.XOR: return createXOr();
-			case PcmmmPackage.DOMAIN: return createDomain();
-			case PcmmmPackage.INTERVAL: return createInterval();
 			case PcmmmPackage.DOMAIN_COLLECTION: return createDomainCollection();
-			case PcmmmPackage.ORDERED_DOMAIN: return createOrderedDomain();
-			case PcmmmPackage.YES_NO: return createYesNO();
+			case PcmmmPackage.ENUM: return createEnum();
+			case PcmmmPackage.VARIABILITY_CONCEPT_REF: return createVariabilityConceptRef();
+			case PcmmmPackage.INTEGER: return createInteger();
+			case PcmmmPackage.DOUBLE: return createDouble();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -211,16 +206,6 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Simple createSimple() {
-		SimpleImpl simple = new SimpleImpl();
-		return simple;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Multiple createMultiple() {
 		MultipleImpl multiple = new MultipleImpl();
 		return multiple;
@@ -301,26 +286,6 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Domain createDomain() {
-		DomainImpl domain = new DomainImpl();
-		return domain;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Interval createInterval() {
-		IntervalImpl interval = new IntervalImpl();
-		return interval;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public DomainCollection createDomainCollection() {
 		DomainCollectionImpl domainCollection = new DomainCollectionImpl();
 		return domainCollection;
@@ -331,9 +296,9 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OrderedDomain createOrderedDomain() {
-		OrderedDomainImpl orderedDomain = new OrderedDomainImpl();
-		return orderedDomain;
+	public pcmmm.Enum createEnum() {
+		EnumImpl enum_ = new EnumImpl();
+		return enum_;
 	}
 
 	/**
@@ -341,9 +306,29 @@ public class PcmmmFactoryImpl extends EFactoryImpl implements PcmmmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public YesNO createYesNO() {
-		YesNOImpl yesNO = new YesNOImpl();
-		return yesNO;
+	public VariabilityConceptRef createVariabilityConceptRef() {
+		VariabilityConceptRefImpl variabilityConceptRef = new VariabilityConceptRefImpl();
+		return variabilityConceptRef;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public pcmmm.Integer createInteger() {
+		IntegerImpl integer = new IntegerImpl();
+		return integer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public pcmmm.Double createDouble() {
+		DoubleImpl double_ = new DoubleImpl();
+		return double_;
 	}
 
 	/**

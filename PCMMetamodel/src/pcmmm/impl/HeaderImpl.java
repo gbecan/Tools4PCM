@@ -2,7 +2,6 @@
  */
 package pcmmm.impl;
 
-import com.google.gwt.user.client.rpc.GwtTransient;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
@@ -36,7 +35,6 @@ public class HeaderImpl extends CellImpl implements Header {
 	 * @generated
 	 * @ordered
 	 */
-	@GwtTransient
 	protected VariabilityConcept concept;
 
 	/**

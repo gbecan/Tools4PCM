@@ -13,6 +13,7 @@ import pcmmm.Simple
 import pcmmm.Multiple
 import pcmmm.Partial
 import configuration.PCMConfiguration
+import pcmmm.VariabilityConceptRef
 
 class VariabilityConceptExtractor {
 
@@ -28,7 +29,7 @@ class VariabilityConceptExtractor {
 	      cell <- matrix.getCells().filter(_ .isInstanceOf[Header])
 	  ) {
 
-		  val matrixConfig = config.matrixConfigurations.getOrElse(matrix.getName(), config.defaultConfiguration)
+		  val matrixConfig = config.getConfig(matrix)
 		  val concept : VariabilityConcept = 
 			  if (cell.getRow() < matrixConfig.headerRows) {
 			    if (!matrixConfig.inverted) {
@@ -67,8 +68,8 @@ class VariabilityConceptExtractor {
   
   private def extractVariabilityConcepts(pcm : PCM, interpretation : Constraint) : Set[VariabilityConcept] = {
 	  interpretation match {
-	    case c : Simple =>
-	      val concept = getConcept(pcm, c.getName())
+	    case c : VariabilityConceptRef =>
+	      val concept = getConcept(pcm, c.getVerbatim())
 	      c.setConcept(concept)
 	      Set(concept)
 	    case c : Multiple => 

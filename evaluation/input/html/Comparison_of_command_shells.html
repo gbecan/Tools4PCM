@@ -1,0 +1,1646 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <div>
+      <h1>General characteristics</h1>
+      <table border="1">
+        <tr>
+          <td> </td>
+          <td> Usual environment </td>
+          <td> Usually invoked </td>
+          <td> Introduced </td>
+          <td> Platform-independent </td>
+          <td> Default login shell in </td>
+          <td> Default script shell in </td>
+          <td> License </td>
+          <td> Unicode </td>
+          <td> Stream redirection </td>
+          <td> Native CIM/WBEM support </td>
+          <td> available as statically linked, independent single file executable </td>
+        </tr>
+        <tr>
+          <td> Bourne shell </td>
+          <td> 7th Ed. UNIX </td>
+          <td> sh </td>
+          <td> 1977 </td>
+          <td> Yes </td>
+          <td> 7th Ed. UNIX </td>
+          <td> 7th Ed. UNIX, </td>
+          <td> Proprietary, CDDL </td>
+          <td> Yes </td>
+          <td> Yes (arbitrary fd) </td>
+          <td> No </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> POSIX shell </td>
+          <td> POSIX </td>
+          <td> sh </td>
+          <td> 1992 </td>
+          <td> Yes </td>
+          <td> N/A </td>
+          <td> POSIX </td>
+          <td> N/A </td>
+          <td> Yes, if used by configured locale </td>
+          <td> Yes (arbitrary fds) </td>
+          <td> No </td>
+          <td> N/A </td>
+        </tr>
+        <tr>
+          <td> bash (v4.0) </td>
+          <td> POSIX </td>
+          <td> bash, sh </td>
+          <td> 1989 </td>
+          <td> Yes </td>
+          <td> GNU, Linux, Mac OS X 10.3+ </td>
+          <td> GNU, Linux, Haiku, Mac OS X </td>
+          <td> GPL </td>
+          <td> Yes </td>
+          <td> Yes (arbitrary fds) </td>
+          <td> No </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> csh </td>
+          <td> POSIX </td>
+          <td> csh </td>
+          <td> 1978 </td>
+          <td> Yes </td>
+          <td> SunOS </td>
+          <td> ? </td>
+          <td> BSD </td>
+          <td> No </td>
+          <td> Yes (stdin, stdout, stdout+stderr) </td>
+          <td> No </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> tcsh </td>
+          <td> POSIX </td>
+          <td> tcsh, csh </td>
+          <td> 1983 </td>
+          <td> Yes </td>
+          <td> FreeBSD, formerly Mac OS X </td>
+          <td> ? </td>
+          <td> BSD </td>
+          <td> Yes </td>
+          <td> Yes (stdin, stdout, stdout+stderr) </td>
+          <td> No </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> Hamilton C shell </td>
+          <td> Win32 </td>
+          <td> csh </td>
+          <td> 1988 </td>
+          <td> No </td>
+          <td> optional </td>
+          <td> optional </td>
+          <td> Proprietary </td>
+          <td> No </td>
+          <td> Yes (stdin, stdout, stdout+stderr) </td>
+          <td> No </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> Scsh </td>
+          <td> POSIX </td>
+          <td> scsh </td>
+          <td> 1994 </td>
+          <td> Yes </td>
+          <td> ? </td>
+          <td> ? </td>
+          <td> BSD-style </td>
+          <td> ? </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> ksh (ksh93t+) </td>
+          <td> POSIX </td>
+          <td> ksh </td>
+          <td> 1983 </td>
+          <td> Yes </td>
+          <td> AIX, HP-UX </td>
+          <td> OpenSolaris </td>
+          <td> Common Public License </td>
+          <td> Yes </td>
+          <td> Yes (arbitrary fds) </td>
+          <td> No </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> pdksh </td>
+          <td> POSIX </td>
+          <td> ksh, sh </td>
+          <td> 1989 ? </td>
+          <td> Yes </td>
+          <td> OpenBSD </td>
+          <td> OpenBSD </td>
+          <td> Public Domain </td>
+          <td> No </td>
+          <td> Yes (arbitrary fds) </td>
+          <td> No </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> zsh </td>
+          <td> POSIX </td>
+          <td> zsh </td>
+          <td> 1990 </td>
+          <td> Yes </td>
+          <td> Grml, Gobolinux </td>
+          <td> Grml </td>
+          <td> MIT-style </td>
+          <td> Yes </td>
+          <td> Yes (arbitrary fds) </td>
+          <td> No </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> ash </td>
+          <td> POSIX </td>
+          <td> sh </td>
+          <td> 1989 </td>
+          <td> Yes </td>
+          <td> Minix, BusyBox based systems </td>
+          <td> NetBSD, Minix, BusyBox based systems </td>
+          <td> BSD-style </td>
+          <td> Yes </td>
+          <td> Yes (arbitrary fds) </td>
+          <td> No </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> Windows CMD.EXE </td>
+          <td> Win32 </td>
+          <td> CMD </td>
+          <td> 1993 </td>
+          <td> No </td>
+          <td> Windows NT, 2000, XP, Server 2003, Vista </td>
+          <td> Windows NT, 2000, XP, Server 2003, Vista </td>
+          <td> MS-EULA </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> TCC (formerly 4NT) </td>
+          <td> Win32 </td>
+          <td> ? </td>
+          <td> 1993 </td>
+          <td> No (not bound to a specific NT versions) </td>
+          <td> optional </td>
+          <td> optional </td>
+          <td> Shareware </td>
+          <td> Yes </td>
+          <td> Yes (stdin, stdout, stderr, stdout+stderr) </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> Windows PowerShell </td>
+          <td> .NET </td>
+          <td> powershell </td>
+          <td> 2006 </td>
+          <td> No </td>
+          <td> Windows Server 2008, 7, Vista, XP </td>
+          <td> Windows Server 2008, 7 </td>
+          <td> MS-EULA </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> COMMAND.COM </td>
+          <td> DOS </td>
+          <td> COMMAND </td>
+          <td> 1980 </td>
+          <td> No (3rd party available) </td>
+          <td> DOS, Windows 95, 98, SE, ME </td>
+          <td> DOS, Windows 95, 98, SE, ME </td>
+          <td> MS-EULA, varies or BSD/GPL (free clones) </td>
+          <td> No </td>
+          <td> Yes (stdin, stdout) </td>
+          <td> No </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> 4DOS, NDOS </td>
+          <td> DOS, Windows 95, 98, SE, ME </td>
+          <td> 4DOS, NDOS </td>
+          <td> 1989 (1986) </td>
+          <td> No (not bound to a specific OS vendor or version) </td>
+          <td> optional </td>
+          <td> optional </td>
+          <td> MIT License, with restrictions </td>
+          <td> No </td>
+          <td> Yes (stdin, stdout, stderr, stdout+stderr) </td>
+          <td> No </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> OS/2 CMD.EXE </td>
+          <td> OS/2 </td>
+          <td> CMD </td>
+          <td> 1987 </td>
+          <td> No </td>
+          <td> OS/2 </td>
+          <td> OS/2 </td>
+          <td> IBM-EULA </td>
+          <td> No </td>
+          <td> Yes (stdin, stdout, stderr) </td>
+          <td> No </td>
+          <td> ? </td>
+        </tr>
+        <tr>
+          <td> 4OS2 </td>
+          <td> OS/2 </td>
+          <td> 4OS2 </td>
+          <td> 1992 </td>
+          <td> No (not bound to specific OS/2 versions) </td>
+          <td> optional </td>
+          <td> optional </td>
+          <td> Freeware </td>
+          <td> No </td>
+          <td> Yes (stdin, stdout, stderr, stdout+stderr) </td>
+          <td> No </td>
+          <td> ? </td>
+        </tr>
+        <tr>
+          <td> rc </td>
+          <td> Plan 9, POSIX </td>
+          <td> rc </td>
+          <td> 1989 </td>
+          <td> Yes </td>
+          <td> Plan 9, Version 10 Unix </td>
+          <td> Plan 9, Version 10 Unix </td>
+          <td> Lucent Public License </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> BeanShell </td>
+          <td> Java </td>
+          <td> ? </td>
+          <td> 2005 </td>
+          <td> Yes </td>
+          <td> ? </td>
+          <td> ? </td>
+          <td> LGPL </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> ? </td>
+          <td> Yes (bsh.jar) </td>
+        </tr>
+        <tr>
+          <td> VMS DCL </td>
+          <td> OpenVMS </td>
+          <td> ? </td>
+          <td> 1977 ? </td>
+          <td> Yes </td>
+          <td> VMS </td>
+          <td> VMS </td>
+          <td> ? </td>
+          <td> No </td>
+          <td> Yes (sys$input, sys$output assignment) </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> fish </td>
+          <td> POSIX </td>
+          <td> fish </td>
+          <td> 2005 </td>
+          <td> Yes </td>
+          <td> ? </td>
+          <td> ? </td>
+          <td> GPL </td>
+          <td> Yes </td>
+          <td> Yes (arbitrary fds) </td>
+          <td> No </td>
+          <td> ? </td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h1>Interactive features</h1>
+      <table border="1">
+        <tr>
+          <td> </td>
+          <td>
+            Command
+            <br/>
+            name
+            <br/>
+            completion
+          </td>
+          <td>
+            Path/file
+            <br/>
+            argument
+            <br/>
+            completion
+          </td>
+          <td>
+            Non-Path/file
+            <br/>
+            argument
+            <br/>
+            completion
+          </td>
+          <td>
+            Wildcard
+            <br/>
+            completion
+          </td>
+          <td>
+            Command
+            <br/>
+            history
+          </td>
+          <td>
+            Mandatory
+            <br/>
+            argument
+            <br/>
+            prompt
+          </td>
+          <td>
+            Automatic
+            <br/>
+            suggestions
+          </td>
+          <td>
+            Syntax
+            <br/>
+            highlighting
+          </td>
+          <td> Directory history, stack or similar features </td>
+          <td>
+            Implicit
+            <br/>
+            directory
+            <br/>
+            change
+          </td>
+          <td>
+            Spell
+            <br/>
+            checking
+          </td>
+          <td>
+            Integrated
+            <br/>
+            environment
+          </td>
+          <td> Snippets </td>
+          <td>
+            Value
+            <br/>
+            prompt
+          </td>
+          <td>
+            Menu/options
+            <br/>
+            prompt
+          </td>
+          <td>
+            Progress
+            <br/>
+            indicator
+          </td>
+          <td>
+            Interactive
+            <br/>
+            table
+          </td>
+          <td>
+            Context
+            <br/>
+            sensitive
+            <br/>
+            help
+          </td>
+          <td>
+            Command
+            <br/>
+            builder
+          </td>
+        </tr>
+        <tr>
+          <td> Bourne shell </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> POSIX shell </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes (CDPATH) </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> bash (v4.0) </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> when defined </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes (CDPATH, pushd, popd) </td>
+          <td> optional </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> csh </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes (cdpath, pushd, popd) </td>
+          <td> optional </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> tcsh </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> optional </td>
+          <td> experimental </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> Hamilton C shell </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes (cdpath, pushd, popd) </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> Scsh </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> ksh (ksh93t+) </td>
+          <td> Yes (extendable) </td>
+          <td> Yes (extendable) </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes (cdpath builtin, pushd, popd implemented as functions) </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> pdksh </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> zsh </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> when defined </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> optional </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> ash </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td>
+            Windows
+            <br/>
+            cmd.exe
+          </td>
+          <td> partial </td>
+          <td> partial </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes (F8) </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes (pushd, popd) </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> TCC (formerly 4NT) </td>
+          <td> partial </td>
+          <td> partial </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> popup </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Some </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> Windows PowerShell </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes (F8) </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes; multiple stacks; multiple location types </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> popup window </td>
+          <td> Yes </td>
+          <td> popup window </td>
+        </tr>
+        <tr>
+          <td> COMMAND.COM </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> 4DOS </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> popup </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td>
+            OS/2
+            <br/>
+            cmd.exe
+          </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> rc </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> ? </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> BeanShell </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> VMS DCL </td>
+          <td> Minimum uniqueness scheme </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> fish </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> when defined </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h1>Programming features</h1>
+      <table border="1">
+        <tr>
+          <td> </td>
+          <td> Functions </td>
+          <td> Exception handling </td>
+          <td> Search and replace on variable substitutions </td>
+          <td> Parallel assignment </td>
+          <td> Variadic function </td>
+          <td> Default argument </td>
+          <td> Named parameter </td>
+          <td> Lambda functions </td>
+          <td> eval function </td>
+          <td> Pseudorandom number generation </td>
+          <td> Bytecode </td>
+        </tr>
+        <tr>
+          <td> Bourne shell </td>
+          <td> Yes since SVr2 </td>
+          <td> Yes (via trap) </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Since SVr2 </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> POSIX shell </td>
+          <td> Yes </td>
+          <td> Yes (via trap) </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> bash (v4.0) </td>
+          <td> Yes </td>
+          <td> Yes (via trap) </td>
+          <td> Yes (via ${//} syntax) </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes ($RANDOM) </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> csh </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes (via $var:s/// syntax) </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> tcsh </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes (via $var:s/// syntax) </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> Hamilton C shell </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes (via $var:s/// syntax) </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> Scsh </td>
+          <td> Yes </td>
+          <td> ? </td>
+          <td> Yes (via string functions and regular expressions) </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes (random-integer, random-real) </td>
+          <td> Yes (compiler is Scheme48 virtual machine, &quot;scshvm&quot;) </td>
+        </tr>
+        <tr>
+          <td> ksh (ksh93t+) </td>
+          <td> Yes </td>
+          <td> Yes (via trap) </td>
+          <td> Yes (via ${//} syntax and builtin commands) </td>
+          <td> ? </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes (for user-defined &quot;types&quot;) </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes ($RANDOM) </td>
+          <td> Yes (compiler is called &quot;shcomp&quot;) </td>
+        </tr>
+        <tr>
+          <td> pdksh </td>
+          <td> Yes </td>
+          <td> Yes (via trap) </td>
+          <td> No </td>
+          <td> ? </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes ($RANDOM) </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> zsh </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes (via ${:s//} and ${//} syntax) </td>
+          <td> ? </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes ($RANDOM) </td>
+          <td> Yes (built-in command &quot;zcompile&quot;) </td>
+        </tr>
+        <tr>
+          <td> ash </td>
+          <td> Yes </td>
+          <td> Yes (via trap) </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> Windows cmd.exe </td>
+          <td> Yes (via &quot;call :label&quot;) </td>
+          <td> No </td>
+          <td> Yes (via set %varname:expression syntax) </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes (%random%) </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> TCC (formerly 4NT) </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes (via %@replace[ ] function) </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes (%@random[ ] function) </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> Windows PowerShell </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes (-replace operator) </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes, automatic </td>
+        </tr>
+        <tr>
+          <td> COMMAND.COM </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> 4DOS </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes (via %@replace[ ] function) </td>
+          <td> No </td>
+          <td> ? </td>
+          <td> No </td>
+          <td> ? </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes (%@random[ ] function) </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> OS/2 cmd.exe </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> rc </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> ? </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> ? </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> BeanShell </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> ? </td>
+          <td> ? </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> VMS DCL </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h1>String and filename matching</h1>
+      <table border="1">
+        <tr>
+          <td> </td>
+          <td> Pattern Matching (regular expression built-in) </td>
+          <td> Pattern Matching (globbing) </td>
+          <td> Globbing qualifiers (filename generation based on file attributes) </td>
+          <td>
+            Recursive globbing (generating files from any level of subdirectories)
+          </td>
+        </tr>
+        <tr>
+          <td> Bourne shell </td>
+          <td> No </td>
+          <td> Yes (*, ?, [...]) </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> POSIX shell </td>
+          <td> No </td>
+          <td> Yes (*, ?, [...]) </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> bash (v4.0) </td>
+          <td> Yes </td>
+          <td> Yes (*, ?, [...], {...}) </td>
+          <td> No </td>
+          <td> Yes (**/...) </td>
+        </tr>
+        <tr>
+          <td> csh </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> tcsh </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> Hamilton C shell </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes (via the indefinite directory &quot;...&quot; wildcard) </td>
+        </tr>
+        <tr>
+          <td> Scsh </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> ksh (ksh93t+) </td>
+          <td> Yes </td>
+          <td> Yes (*, ?, [...]) </td>
+          <td> No </td>
+          <td> Yes (with set -G, no following of symlinks) </td>
+        </tr>
+        <tr>
+          <td> pdksh </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> zsh </td>
+          <td> Yes </td>
+          <td> Yes (*, ?, [...], ext'd globbing) </td>
+          <td> Yes </td>
+          <td> Yes (**/... or ***/... to follow symlinks) </td>
+        </tr>
+        <tr>
+          <td> ash </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> Windows cmd.exe </td>
+          <td> Yes (via the findstr /r command) </td>
+          <td> Yes (*, ?) </td>
+          <td> ? </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> TCC (formerly 4NT) </td>
+          <td> Limited support </td>
+          <td> Yes (*, ?, [...]) </td>
+          <td> ? </td>
+          <td> Yes (via FOR /R) </td>
+        </tr>
+        <tr>
+          <td> Windows PowerShell </td>
+          <td> Yes (full regex support) </td>
+          <td> Yes (*, ?, [...]) </td>
+          <td> ? </td>
+          <td> ? </td>
+        </tr>
+        <tr>
+          <td> COMMAND.COM </td>
+          <td> No </td>
+          <td> Yes (*, ?) </td>
+          <td> ? </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> 4DOS </td>
+          <td> No </td>
+          <td> Yes (*, ?, [...]) </td>
+          <td> ? </td>
+          <td> Yes (via FOR /R) </td>
+        </tr>
+        <tr>
+          <td> OS/2 cmd.exe </td>
+          <td> No </td>
+          <td> Yes (*, ?) </td>
+          <td> ? </td>
+          <td> ? </td>
+        </tr>
+        <tr>
+          <td> rc </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> BeanShell </td>
+          <td> Yes </td>
+          <td> ? </td>
+          <td> ? </td>
+          <td> ? </td>
+        </tr>
+        <tr>
+          <td> VMS DCL </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes (via [SUBDIR...] ) </td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h1>Inter-process communication</h1>
+      <table border="1">
+        <tr>
+          <td> </td>
+          <td> Pipes </td>
+          <td> Command substitution </td>
+          <td> Process substitution </td>
+          <td> Subshells </td>
+          <td> TCP/UDP connections as streams </td>
+        </tr>
+        <tr>
+          <td> Bourne shell </td>
+          <td> bytes concurrent </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> POSIX shell </td>
+          <td> bytes concurrent </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> bash (v4.0) </td>
+          <td> bytes concurrent </td>
+          <td> Yes </td>
+          <td> /!\ Not defined /!\ </td>
+          <td> /!\ Not defined /!\ </td>
+          <td> /!\ Not defined /!\ </td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h1>Security features</h1>
+      <table border="1">
+        <tr>
+          <td> </td>
+          <td> Secure (password) prompt </td>
+          <td> Secure credentials prompt </td>
+          <td> Encrypted variables/ parameters </td>
+          <td> General execution restriction </td>
+          <td> Script origin execution restriction </td>
+          <td> Signed script restriction </td>
+          <td> Multilevel execution policies </td>
+          <td> Restricted shell subset </td>
+          <td> Safe data subset </td>
+        </tr>
+        <tr>
+          <td> Bourne shell </td>
+          <td> via stty </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> POSIX shell </td>
+          <td> via stty </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> bash (v4.0) </td>
+          <td> </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> csh </td>
+          <td> via stty </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> tcsh </td>
+          <td> via stty </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> Hamilton C shell </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> Scsh </td>
+          <td> via stty </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> ksh (ksh93t+) </td>
+          <td> via stty </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> pdksh </td>
+          <td> via stty </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> zsh </td>
+          <td> </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> ash </td>
+          <td> via stty </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> Windows cmd.exe </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> TCC (formerly 4NT) </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> Windows PowerShell </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+          <td> Yes </td>
+        </tr>
+        <tr>
+          <td> COMMAND.COM </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> 4DOS </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> OS/2 cmd.exe </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> rc </td>
+          <td> via stty </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> Yes </td>
+          <td> No </td>
+        </tr>
+        <tr>
+          <td> VMS DCL </td>
+          <td> ? </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+          <td> No </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -10,23 +10,38 @@ import pcmmm.Matrix
 import java.util.ListIterator
 import org.eclipse.emf.common.util.EList
 import configuration.PCMConfiguration
+import collection.mutable.Map
 
 class PCMNormalizer {
   
   /**
    * Normalize a PCM according to the given configuration
+   * - set an ID to each matrix
    * - remove ignored matrices
    * - add missing cells
    * - set headers
    * - convert cells of ignored rows or columns to Extra cell
    */
   def normalizePCM(pcm : PCM, config : PCMConfiguration) {
+	  val nextIndexes : Map[String,Int] = Map.empty
     
 	  val it = pcm.getMatrices().listIterator()
 	  while (it.hasNext()) {
 		  val matrix = it.next()
-		  val matrixConfig = config.matrixConfigurations.getOrElse(matrix.getName(), config.defaultConfiguration)
 		  
+  		  // Compute ID
+		  val name = matrix.getName()
+
+		  val index = nextIndexes.getOrElse(name, 0)
+		  nextIndexes += name -> (index + 1)
+		  
+		  val id = name + "_" + index
+		  matrix.setId(id)
+		  
+		  // Get config
+		  val matrixConfig = config.getConfig(matrix)
+		  
+		  // Normalize
 		  if (matrixConfig.ignored) {
 			  it.remove()
 		  } else {

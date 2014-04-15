@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="pcmmm" nsURI="pcmmm" nsPrefix="pcmmm">
-  <eClassifiers xsi:type="ecore:EClass" name="AbstractProduct" abstract="true" eSuperTypes="#//VariabilityConcept"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractProduct" abstract="true" eSuperTypes="#//VariabilityConcept">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="myValuedCells" upperBound="-1"
+        eType="#//ValuedCell" eOpposite="#//ValuedCell/myHeaderProducts"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Cell" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="verbatim" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -12,7 +15,10 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="column" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="colspan" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AbstractFeature" abstract="true" eSuperTypes="#//VariabilityConcept"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractFeature" abstract="true" eSuperTypes="#//VariabilityConcept">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="myValuedCells" upperBound="-1"
+        eType="#//ValuedCell" eOpposite="#//ValuedCell/myHeaderFeatures"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PCM">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" upperBound="-1"
@@ -29,6 +35,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cells" upperBound="-1"
         eType="#//Cell" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ProductFamily" eSuperTypes="#//AbstractProduct">
     <eStructuralFeatures xsi:type="ecore:EReference" name="products" upperBound="-1"
@@ -39,7 +46,10 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="features" lowerBound="1"
         upperBound="-1" eType="#//AbstractFeature" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Feature" eSuperTypes="#//AbstractFeature"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Feature" eSuperTypes="#//AbstractFeature">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="domain" lowerBound="1"
+        eType="#//Domain"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="VariabilityConcept" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="constraints" upperBound="-1"
@@ -53,8 +63,9 @@
   <eClassifiers xsi:type="ecore:EClass" name="Constraint" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="confident" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="verbatim" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Boolean" eSuperTypes="#//Constraint">
+  <eClassifiers xsi:type="ecore:EClass" name="Boolean" eSuperTypes="#//Simple">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Partial" eSuperTypes="#//Constraint">
@@ -63,10 +74,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="argument" lowerBound="1"
         eType="#//Constraint" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Simple" eSuperTypes="#//Constraint">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="concept" lowerBound="1"
-        eType="#//VariabilityConcept"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Simple" abstract="true" eSuperTypes="#//Constraint"/>
   <eClassifiers xsi:type="ecore:EClass" name="Multiple" eSuperTypes="#//Constraint">
     <eStructuralFeatures xsi:type="ecore:EReference" name="contraints" upperBound="-1"
         eType="#//Constraint" containment="true"/>
@@ -80,38 +88,31 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="concepts" upperBound="-1"
         eType="#//VariabilityConcept" eOpposite="#//VariabilityConcept/constraints"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="myHeaderProducts" lowerBound="1"
-        upperBound="-1" eType="#//AbstractProduct"/>
+        upperBound="-1" eType="#//AbstractProduct" eOpposite="#//AbstractProduct/myValuedCells"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="myHeaderFeatures" lowerBound="1"
-        upperBound="-1" eType="#//AbstractFeature"/>
+        upperBound="-1" eType="#//AbstractFeature" eOpposite="#//AbstractFeature/myValuedCells"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="And" eSuperTypes="#//Multiple"/>
   <eClassifiers xsi:type="ecore:EClass" name="Or" eSuperTypes="#//Multiple"/>
   <eClassifiers xsi:type="ecore:EClass" name="XOr" eSuperTypes="#//Multiple"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Domain">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="intervals" upperBound="-1"
-        eType="#//Interval" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="domainLitteral" upperBound="-1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="domainType" eType="#//Type"
-        containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Interval">
+  <eClassifiers xsi:type="ecore:EClass" name="Domain" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DomainCollection">
     <eStructuralFeatures xsi:type="ecore:EReference" name="domains" upperBound="-1"
         eType="#//Domain" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Type" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="OrderedDomain" eSuperTypes="#//Domain">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="previous" upperBound="-1"
-        eType="#//OrderedDomain" eOpposite="#//OrderedDomain/next"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="next" upperBound="-1" eType="#//OrderedDomain"
-        eOpposite="#//OrderedDomain/previous"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Enum" eSuperTypes="#//Domain">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="values" upperBound="-1"
+        eType="#//Simple"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="YesNO">
-    <eOperations name="eval" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  <eClassifiers xsi:type="ecore:EClass" name="VariabilityConceptRef" eSuperTypes="#//Simple">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="concept" eType="#//VariabilityConcept"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Integer" eSuperTypes="#//Simple">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Double" eSuperTypes="#//Simple">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
   </eClassifiers>
 </ecore:EPackage>

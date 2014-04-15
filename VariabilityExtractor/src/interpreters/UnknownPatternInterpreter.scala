@@ -17,6 +17,7 @@ class UnknownPatternInterpreter (
   override def createConstraint(s : String, matcher : Matcher, parameters : List[String], products : List[Product], features : List[Feature]) : Option[Constraint] = {
 		 val constraint =  PcmmmFactory.eINSTANCE.createUnknown()
 		 constraint.setName(s)
+		 constraint.setVerbatim(s)
 		 constraint.setConfident(confident)
 		 Some(constraint)
   }

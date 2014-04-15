@@ -4,8 +4,11 @@ package pcmmm.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
+
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
+
 import org.eclipse.emf.ecore.EObject;
+
 import pcmmm.AbstractFeature;
 import pcmmm.AbstractProduct;
 import pcmmm.And;
@@ -19,23 +22,20 @@ import pcmmm.Feature;
 import pcmmm.FeatureFamily;
 import pcmmm.Header;
 import pcmmm.Inconsistent;
-import pcmmm.Interval;
 import pcmmm.Matrix;
 import pcmmm.Multiple;
 import pcmmm.Or;
-import pcmmm.OrderedDomain;
 import pcmmm.PCM;
 import pcmmm.Partial;
 import pcmmm.PcmmmPackage;
 import pcmmm.Product;
 import pcmmm.ProductFamily;
 import pcmmm.Simple;
-import pcmmm.Type;
 import pcmmm.Unknown;
 import pcmmm.ValuedCell;
 import pcmmm.VariabilityConcept;
+import pcmmm.VariabilityConceptRef;
 import pcmmm.XOr;
-import pcmmm.YesNO;
 
 /**
  * <!-- begin-user-doc -->
@@ -194,24 +194,24 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 				return createDomainAdapter();
 			}
 			@Override
-			public Adapter caseInterval(Interval object) {
-				return createIntervalAdapter();
-			}
-			@Override
 			public Adapter caseDomainCollection(DomainCollection object) {
 				return createDomainCollectionAdapter();
 			}
 			@Override
-			public Adapter caseType(Type object) {
-				return createTypeAdapter();
+			public Adapter caseEnum(pcmmm.Enum object) {
+				return createEnumAdapter();
 			}
 			@Override
-			public Adapter caseOrderedDomain(OrderedDomain object) {
-				return createOrderedDomainAdapter();
+			public Adapter caseVariabilityConceptRef(VariabilityConceptRef object) {
+				return createVariabilityConceptRefAdapter();
 			}
 			@Override
-			public Adapter caseYesNO(YesNO object) {
-				return createYesNOAdapter();
+			public Adapter caseInteger(pcmmm.Integer object) {
+				return createIntegerAdapter();
+			}
+			@Override
+			public Adapter caseDouble(pcmmm.Double object) {
+				return createDoubleAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -584,20 +584,6 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link pcmmm.Interval <em>Interval</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see pcmmm.Interval
-	 * @generated
-	 */
-	public Adapter createIntervalAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link pcmmm.DomainCollection <em>Domain Collection</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -612,44 +598,58 @@ public class PcmmmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link pcmmm.Type <em>Type</em>}'.
+	 * Creates a new adapter for an object of class '{@link pcmmm.Enum <em>Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see pcmmm.Type
+	 * @see pcmmm.Enum
 	 * @generated
 	 */
-	public Adapter createTypeAdapter() {
+	public Adapter createEnumAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link pcmmm.OrderedDomain <em>Ordered Domain</em>}'.
+	 * Creates a new adapter for an object of class '{@link pcmmm.VariabilityConceptRef <em>Variability Concept Ref</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see pcmmm.OrderedDomain
+	 * @see pcmmm.VariabilityConceptRef
 	 * @generated
 	 */
-	public Adapter createOrderedDomainAdapter() {
+	public Adapter createVariabilityConceptRefAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link pcmmm.YesNO <em>Yes NO</em>}'.
+	 * Creates a new adapter for an object of class '{@link pcmmm.Integer <em>Integer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see pcmmm.YesNO
+	 * @see pcmmm.Integer
 	 * @generated
 	 */
-	public Adapter createYesNOAdapter() {
+	public Adapter createIntegerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link pcmmm.Double <em>Double</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see pcmmm.Double
+	 * @generated
+	 */
+	public Adapter createDoubleAdapter() {
 		return null;
 	}
 

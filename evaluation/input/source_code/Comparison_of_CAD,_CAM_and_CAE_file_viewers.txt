@@ -1,0 +1,261 @@
+[[Computer aided design]] (CAD), [[Computer-aided engineering]] (CAE) and [[Computer-aided manufacturing]] (CAM) software produces files in a large variety of formats many of which are extremely complex and poorly supported by other applications. This article gives an overview of the available software suitable for viewing these files so they can be shared with people who do not have the application which produced the file.
+
+== Comparison of CAD/CAM/CAE file viewers ==
+Software which has not been added to this table can be seen on the discussion page.
+
+
+
+{| class="wikitable sortable" style="text-align: center; font-size: 85%; width: auto; table-layout: fixed;"
+|-
+! Application
+! Latest stable release
+! Developer
+! 3D support?
+! Runs on [[Unix-like|POSIX style systems]]?
+! Runs on Windows?
+! Other platforms?
+! [[Open source]]?
+! User Interface Language(s)
+! Supported format(s)
+|-
+
+! [[3DView]]
+| 0.1.10
+| [[Dmitry Trofimov]]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes([[Linux]])
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes([[OS X]], [[Chrome OS]])
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No (Free)
+| [[English language|EN]]
+| [[STL (file format)|STL]], [[OBJ]], [[PLY]], [[Collada]], [[CTM]], [[VTK]]
+|-
+
+! [[EethalView]]
+| 1.0
+| [[Eethal Inc.]]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No (Free download)
+| [[English language|EN]]
+| Nastran OP2, [[STL (file format)|STL]]
+|-
+
+! [[DDS-CAD Viewer]]
+| 6.5
+| [[Data Design System|Data Design System ASA]]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No (Free download)
+| [[English language|EN]]
+| [[Industry Foundation Classes|IFC]], [[DXF]], [[DWG]], CFI, VEC
+|-
+
+! [[DXF Viewer]]
+| V 2.13.15 (04/2013)
+| [[DXF Viewer]]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes([[Java (software platform)|Java]])
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes([[Java (software platform)|Java]])
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes (Linux, MacOS, browser applet)
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| [[English language|EN]], [[German language|DE]] <sup class="Template-Fact" style="white-space:nowrap;">&#91;<i>[[Wikipedia:Citation needed|<span title="This claim needs references to reliable sources. (July 2008)">citation needed</span>]]</i>&#93;</sup>
+| [[DXF]]
+|-
+
+! DWGSee dwg viewer|[http://autodwg.com/dwg-viewer/ DWGSee]
+|  3.46
+| [http://autodwg.com/ AutoDWG]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| Android
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No(Free download)
+| [[English language|EN]]
+| [[DXF]], [[DWG]], [[DWF]]
+|-
+
+! [[Caddie (CAD system)|Caddie]]
+|  14
+| [[Advanced Computer Solutions]]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| '''''?'''''
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No(Free download)
+| [[English language|EN]]
+| [[DXF]], [[DWG]], DRW
+|-
+
+! [[CaniVIZ]]
+|  1.1.5
+| [[Andéor]]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| [[OS X]], [[Web browser]]
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| [[Chinese language|ZH]], [[German language|DE]], [[English language|EN]], [[French language|FR]], [[Italian language|IT]], [[Japanese language|JA]], [[Spanish language|ES]]
+| [[CATIA]], [[DXF]], [[DWG]], [[STL (file format)|STL]], [[Solidworks]], [[Inventor]], [[Parasolid]], [[ProE]], [[SolidEdge]], [[Wavefront OBJ]], [[3DS]], [[STEP-File|STEP]], [[IGES]]
+|-
+
+! [[Drawing Express]]
+|  2018
+|  Trial Systems Ltd
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes [[OS X]] (By use of [[Parallels Desktop for Mac|Parallels Desktop]], [[VMware Fusion]] or [[Boot Camp (software)|Bootcamp]])
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| [[English language|EN]]
+|  EXP, [[DWG]], [[DXF]]
+|-
+
+! [http://www.cadmatic.com/en/downloads/ebrowser.html  eBrowser]
+|  6.1.4
+| [[Cadmatic Oy]]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes (Linux, MacOS, browser applet)
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No(Free download)
+| [[English language|EN]]
+|   CADMATIC and NUPAS-CADMATIC eBrowser model .ebm
+|-
+
+! [[IRONCAD COMPOSE]]
+|  2012
+| IronCAD LLC
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No(Free download, import of some file formats require purchase of a separate translator)
+| [[English language|EN]]
+|  IRONCAD Scene, IRONCAD Drawing, INOVATE Scene, [[DWG]], [[DXF]], [[IGES]], [[ISO STEP|STEP]], [[VRML]], Wavefront OBJ, TrueSpace, [[STL (file format)|STL]], [[Parasolid]], [[SolidWorks]], [[Pro/E]], [[CATIA|Catia V4]], [[CATIA|Catia V5]], [[Siemens PLM Software|UGS]], [[Autodesk_Inventor|Inventor]]
+|-
+
+! [[MyCadbox]]
+| 1.2
+| [[CadFaster]]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes [[iOS]]
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No (Free download)
+| [[English language|EN]]
+| [[ISO_STEP|STEP]], [[IGES]]
+|-
+|-
+! [[progeCAD]] Viewer DWG (based on [[IntelliCAD]]) (incomplete entry)
+|  2009
+| [[progeCAD]]
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| [[English language|EN]]
+| [[.dwg|DWG]], [[.dxf|DXF]]
+|-
+
+! [[VariCAD]] Viewer
+| 2012 v1
+| [[VariCAD]]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes[[Linux]]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| [[English language|EN]], [[German language|DE]], [[Japanese language|JP]], [[Portuguese language|PT]], [[Chinese language|CN]]
+| [[.dwg|DWG]] (2D), [[DXF]] (2D), [[ISO STEP|STEP]] (3D)
+|-
+
+! [[Bentley View]]
+| 08.11 (v8i)
+| [[Bentley Systems]]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No (Free download)
+| [[English language|EN]]
+|  [[DGN]], [[DWG]], [[DXF]]
+|-
+
+! [[Teigha Viewer]]
+| 3.9.0 (06/2013)
+| [[Open Design Alliance]]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No (Free download)
+| [[English language|EN]]
+|  [[DGN]], [[DWG]], [[DXF]]
+|-
+
+! [[WorkXPlore 3D]]
+| 1.7 (2009)
+| [[Sescoi]]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No(Free download)
+| [[English language|EN]], [[French language|FR]], [[German language|DE]], [[Spanish language|ES]], [[Italian language|IT]], [[Japanese language|JP]], [[Chinese language|CN]]
+| [[.dwg|DWG]], [[DXF]], [[IGES]], [[ISO STEP|STEP]], [[STL (file format)|STL]], [[UNISURF]], 3D [[WorkNC]], XDW, [[Parasolid]], [[SolidWorks]], [[Pro/E]], [[CATIA|Catia V4]], [[CATIA|Catia V5]], [[Siemens PLM Software|UGS]], [[G-code|ISO toolpaths]], [[CADDS]], [[Solid Edge]]
+|-
+
+! [[Glovius for Desktop]]
+| 1.4 (2012 )
+| [[Geometric Limited]]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| [[English language|EN]]
+| JT, [[Pro/E]], [[Catia V5]], [[Solidworks]], [[ISO_STEP|STEP]], [[IGES]], [[Autodesk_Inventor|Inventor]], [[NX_(Unigraphics)|NX]]
+|-
+
+! [[LibreCAD]]
+| 1.0.2 (05/2012)
+| [[LibreCAD]]
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes ([[GPLv2]])
+| [[Chinese language|CN]], [[English language|EN]], [[Spanish language|ES]], [[French language|FR]], [[German language|DE]], [[Hungarian language|HU]], [[Italian language|IT]], [[Japanese language|JP]], [[Russian language|RU]], other
+|  [[DXF]]
+|-
+
+! AIGraph CAD Viewer|[http://aigraph.com/cadviewer/ AIGraph CAD Viewer]
+|  2.5.2
+| [http://aigraph.com/ AIGraph Software]
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+| style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+| style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No(Free download)
+| [[English language|EN]]
+| [[DXF]], [[DWG]], [[DWF]]
+|-
+|}
+
+== See also ==
+* [[List_of_file_formats#Computer-aided_design_.28CAD.29|List of CAD file formats]]
+* [[Comparison of CAD editors for AEC]]
+
+== References ==
+<div class="reflist " style=" list-style-type: decimal;">
+<references group=""></references></div>
+
+[[Category:Computer-aided engineering]]
+[[Category:Computer-aided manufacturing]]
+[[Category:Computer-aided design]]
