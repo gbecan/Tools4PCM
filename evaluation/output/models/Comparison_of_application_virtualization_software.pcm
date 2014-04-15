@@ -499,7 +499,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="6,1: forth" verbatim="Forth" row="6" rowspan="1" column="1" colspan="1" concepts="//@concepts.31" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.20">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Forth" verbatim="Forth" concept="//@concepts.31"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="6,2: features are simplified, usually include assembler" verbatim="Features are simplified, usually include assembler, compiler, text-level and binary-level interpreters, sometimes editor, debugger and OS. Compilation speeds are >20 SKLOC/S and behave much like JIT." row="6" rowspan="1" column="2" colspan="1" concepts="//@concepts.100 //@concepts.106 //@concepts.104 //@concepts.103 //@concepts.108 //@concepts.102 //@concepts.101 //@concepts.99 //@concepts.107 //@concepts.105" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.21">
+    <cells xsi:type="pcmmm:ValuedCell" name="6,2: features are simplified, usually include assembler" verbatim="Features are simplified, usually include assembler, compiler, text-level and binary-level interpreters, sometimes editor, debugger and OS. Compilation speeds are >20 SKLOC/S and behave much like JIT." row="6" rowspan="1" column="2" colspan="1" concepts="//@concepts.105 //@concepts.101 //@concepts.108 //@concepts.100 //@concepts.102 //@concepts.106 //@concepts.104 //@concepts.107 //@concepts.103 //@concepts.99" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.21">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Features are simplified" verbatim="Features are simplified" concept="//@concepts.99"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="usually include assembler" verbatim="usually include assembler" concept="//@concepts.100"/>
@@ -581,7 +581,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="8,6: " verbatim="" row="8" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.25">
       <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="9,1: java, jython, groovy, jruby, c, c++, clojure, scal" verbatim="Java, Jython, Groovy, JRuby, C, C++, Clojure, Scala and several others" row="9" rowspan="1" column="1" colspan="1" concepts="//@concepts.115 //@concepts.119 //@concepts.120 //@concepts.117 //@concepts.114 //@concepts.87 //@concepts.118 //@concepts.78 //@concepts.116" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.20">
+    <cells xsi:type="pcmmm:ValuedCell" name="9,1: java, jython, groovy, jruby, c, c++, clojure, scal" verbatim="Java, Jython, Groovy, JRuby, C, C++, Clojure, Scala and several others" row="9" rowspan="1" column="1" colspan="1" concepts="//@concepts.117 //@concepts.118 //@concepts.120 //@concepts.78 //@concepts.114 //@concepts.116 //@concepts.115 //@concepts.87 //@concepts.119" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.20">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Java" verbatim="Java" concept="//@concepts.114"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Jython" verbatim="Jython" concept="//@concepts.115"/>
@@ -612,7 +612,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="9,4: yes" verbatim="Yes" row="9" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.23">
       <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="9,5: jdk, openjdk &amp; icedtea with regular jit : java, c," verbatim="JDK, OpenJDK &amp; IcedTea with regular JIT : Java, C, ASM ; IcedTea with the &quot;Zero&quot; JIT : Java, C" row="9" rowspan="1" column="5" colspan="1" concepts="//@concepts.126 //@concepts.127 //@concepts.125 //@concepts.87 //@concepts.128" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.24">
+    <cells xsi:type="pcmmm:ValuedCell" name="9,5: jdk, openjdk &amp; icedtea with regular jit : java, c," verbatim="JDK, OpenJDK &amp; IcedTea with regular JIT : Java, C, ASM ; IcedTea with the &quot;Zero&quot; JIT : Java, C" row="9" rowspan="1" column="5" colspan="1" concepts="//@concepts.125 //@concepts.128 //@concepts.127 //@concepts.126 //@concepts.87" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.24">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="JDK" verbatim="JDK" concept="//@concepts.125"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="OpenJDK &amp; IcedTea with regular JIT : Java" verbatim="OpenJDK &amp; IcedTea with regular JIT : Java" concept="//@concepts.126"/>
@@ -633,7 +633,7 @@
         </contraints>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="10,1: c, c++, objective-c, ada, fortran, and rust" verbatim="C, C++, Objective-C, Ada, Fortran, and Rust" row="10" rowspan="1" column="1" colspan="1" concepts="//@concepts.134 //@concepts.132 //@concepts.87 //@concepts.135 //@concepts.78 //@concepts.133" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.20">
+    <cells xsi:type="pcmmm:ValuedCell" name="10,1: c, c++, objective-c, ada, fortran, and rust" verbatim="C, C++, Objective-C, Ada, Fortran, and Rust" row="10" rowspan="1" column="1" colspan="1" concepts="//@concepts.133 //@concepts.78 //@concepts.135 //@concepts.132 //@concepts.134 //@concepts.87" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.20">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C" verbatim="C" concept="//@concepts.87"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C++" verbatim="C++" concept="//@concepts.78"/>
@@ -700,7 +700,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="12,6: " verbatim="" row="12" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.25">
       <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="13,1: cli languages including: c#, vb.net, ironpython, i" verbatim="CLI languages including: C#, VB.NET, IronPython, IronRuby, and others" row="13" rowspan="1" column="1" colspan="1" concepts="//@concepts.142 //@concepts.143 //@concepts.145 //@concepts.96 //@concepts.144" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.20">
+    <cells xsi:type="pcmmm:ValuedCell" name="13,1: cli languages including: c#, vb.net, ironpython, i" verbatim="CLI languages including: C#, VB.NET, IronPython, IronRuby, and others" row="13" rowspan="1" column="1" colspan="1" concepts="//@concepts.143 //@concepts.144 //@concepts.145 //@concepts.96 //@concepts.142" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.20">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="CLI languages including: C#" verbatim="CLI languages including: C#" concept="//@concepts.96"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="VB.NET" verbatim="VB.NET" concept="//@concepts.142"/>
@@ -808,7 +808,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="17,6: " verbatim="" row="17" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.42" myHeaderFeatures="//@concepts.25">
       <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="18,1: perl (6 &amp; 5), nqp-rx, pir, pasm, pbc, basic, bc, c" verbatim="Perl (6 &amp; 5), NQP-rx, PIR, PASM, PBC, BASIC, bc, C, ECMAScript, Lisp, Lua, m4, Tcl, WMLScript, XML, and others" row="18" rowspan="1" column="1" colspan="1" concepts="//@concepts.170 //@concepts.165 //@concepts.161 //@concepts.159 //@concepts.145 //@concepts.162 //@concepts.36 //@concepts.163 //@concepts.166 //@concepts.167 //@concepts.164 //@concepts.168 //@concepts.87 //@concepts.157 //@concepts.169 //@concepts.158 //@concepts.160" myHeaderProducts="//@concepts.43" myHeaderFeatures="//@concepts.20">
+    <cells xsi:type="pcmmm:ValuedCell" name="18,1: perl (6 &amp; 5), nqp-rx, pir, pasm, pbc, basic, bc, c" verbatim="Perl (6 &amp; 5), NQP-rx, PIR, PASM, PBC, BASIC, bc, C, ECMAScript, Lisp, Lua, m4, Tcl, WMLScript, XML, and others" row="18" rowspan="1" column="1" colspan="1" concepts="//@concepts.166 //@concepts.169 //@concepts.163 //@concepts.36 //@concepts.158 //@concepts.159 //@concepts.161 //@concepts.170 //@concepts.164 //@concepts.160 //@concepts.145 //@concepts.87 //@concepts.162 //@concepts.157 //@concepts.167 //@concepts.168 //@concepts.165" myHeaderProducts="//@concepts.43" myHeaderFeatures="//@concepts.20">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:Partial">
           <condition xsi:type="pcmmm:VariabilityConceptRef" name="6 &amp; 5" verbatim="6 &amp; 5" concept="//@concepts.157"/>
@@ -1359,7 +1359,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="43,4: yes" verbatim="Yes" row="43" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.68" myHeaderFeatures="//@concepts.23">
       <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="43,5: c, ia32, arm, amd64, alpha, low-level cpu architec" verbatim="C, ia32, arm, amd64, alpha, low-level CPU architecture specific machine code" row="43" rowspan="1" column="5" colspan="1" concepts="//@concepts.235 //@concepts.232 //@concepts.233 //@concepts.231 //@concepts.87 //@concepts.234" myHeaderProducts="//@concepts.68" myHeaderFeatures="//@concepts.24">
+    <cells xsi:type="pcmmm:ValuedCell" name="43,5: c, ia32, arm, amd64, alpha, low-level cpu architec" verbatim="C, ia32, arm, amd64, alpha, low-level CPU architecture specific machine code" row="43" rowspan="1" column="5" colspan="1" concepts="//@concepts.233 //@concepts.232 //@concepts.235 //@concepts.231 //@concepts.87 //@concepts.234" myHeaderProducts="//@concepts.68" myHeaderFeatures="//@concepts.24">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C" verbatim="C" concept="//@concepts.87"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="ia32" verbatim="ia32" concept="//@concepts.231"/>

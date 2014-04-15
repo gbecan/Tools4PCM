@@ -20,7 +20,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="1,2: lgpl" verbatim="LGPL" row="1" rowspan="1" column="2" colspan="1" concepts="//@concepts.20" myHeaderProducts="//@concepts.3" myHeaderFeatures="//@concepts.1">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="LGPL" verbatim="LGPL" concept="//@concepts.20"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="1,3: librados (c, c++, python, ruby), s3, swift, fuse" verbatim="librados (C, C++, Python, Ruby), S3, Swift, FUSE" row="1" rowspan="1" column="3" colspan="1" concepts="//@concepts.21 //@concepts.25 //@concepts.24 //@concepts.22 //@concepts.23 //@concepts.27 //@concepts.26" myHeaderProducts="//@concepts.3" myHeaderFeatures="//@concepts.2">
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: librados (c, c++, python, ruby), s3, swift, fuse" verbatim="librados (C, C++, Python, Ruby), S3, Swift, FUSE" row="1" rowspan="1" column="3" colspan="1" concepts="//@concepts.22 //@concepts.21 //@concepts.23 //@concepts.27 //@concepts.24 //@concepts.25 //@concepts.26" myHeaderProducts="//@concepts.3" myHeaderFeatures="//@concepts.2">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="librados (C" verbatim="librados (C" concept="//@concepts.21"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C++" verbatim="C++" concept="//@concepts.22"/>
@@ -107,7 +107,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="other" verbatim="other" concept="//@concepts.42"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="7,3: http (browser or cli), sftp, ftp, fuse via sshfs, " verbatim="HTTP (browser or CLI), SFTP, FTP, FUSE via sshfs, pyfilesystem" row="7" rowspan="1" column="3" colspan="1" concepts="//@concepts.46 //@concepts.44 //@concepts.49 //@concepts.48 //@concepts.43 //@concepts.45 //@concepts.47" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.2">
+    <cells xsi:type="pcmmm:ValuedCell" name="7,3: http (browser or cli), sftp, ftp, fuse via sshfs, " verbatim="HTTP (browser or CLI), SFTP, FTP, FUSE via sshfs, pyfilesystem" row="7" rowspan="1" column="3" colspan="1" concepts="//@concepts.49 //@concepts.46 //@concepts.44 //@concepts.45 //@concepts.47 //@concepts.48 //@concepts.43" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.2">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:Partial">
           <condition xsi:type="pcmmm:Or">

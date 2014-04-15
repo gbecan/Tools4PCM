@@ -978,7 +978,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="1,4: user-defined templates" verbatim="User-defined Templates" row="1" rowspan="1" column="4" colspan="1" concepts="//@concepts.208" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.55">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="User-defined Templates" verbatim="User-defined Templates" concept="//@concepts.208"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="1,5: database, xsd, xml, c# or vb.net code" verbatim="Database, XSD, XML, C# or VB.Net Code" row="1" rowspan="1" column="5" colspan="1" concepts="//@concepts.211 //@concepts.110 //@concepts.209 //@concepts.205 //@concepts.210" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.56">
+    <cells xsi:type="pcmmm:ValuedCell" name="1,5: database, xsd, xml, c# or vb.net code" verbatim="Database, XSD, XML, C# or VB.Net Code" row="1" rowspan="1" column="5" colspan="1" concepts="//@concepts.110 //@concepts.210 //@concepts.209 //@concepts.205 //@concepts.211" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Database" verbatim="Database" concept="//@concepts.209"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="XSD" verbatim="XSD" concept="//@concepts.205"/>
@@ -1010,7 +1010,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="2,4: schema" verbatim="Schema" row="2" rowspan="1" column="4" colspan="1" concepts="//@concepts.214" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.55">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Schema" verbatim="Schema" concept="//@concepts.214"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="2,5: xsd, database, xml, properties file, csv, delimite" verbatim="XSD, Database, XML, Properties File, CSV, Delimited Text" row="2" rowspan="1" column="5" colspan="1" concepts="//@concepts.215 //@concepts.209 //@concepts.205 //@concepts.210 //@concepts.217 //@concepts.216" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.56">
+    <cells xsi:type="pcmmm:ValuedCell" name="2,5: xsd, database, xml, properties file, csv, delimite" verbatim="XSD, Database, XML, Properties File, CSV, Delimited Text" row="2" rowspan="1" column="5" colspan="1" concepts="//@concepts.216 //@concepts.215 //@concepts.210 //@concepts.209 //@concepts.217 //@concepts.205" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="XSD" verbatim="XSD" concept="//@concepts.205"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Database" verbatim="Database" concept="//@concepts.209"/>
@@ -1048,7 +1048,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="3,5: templates" verbatim="Templates" row="3" rowspan="1" column="5" colspan="1" concepts="//@concepts.223" myHeaderProducts="//@concepts.60" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Templates" verbatim="Templates" concept="//@concepts.223"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="3,6: c#, vb.net classes, sql, schema information as com" verbatim="C#, VB.Net classes, SQL, Schema Information as comma separated values (*.cs, *.vb, *.sql, *.csv)" row="3" rowspan="1" column="6" colspan="1" concepts="//@concepts.227 //@concepts.228 //@concepts.110 //@concepts.225 //@concepts.212 //@concepts.226 //@concepts.224" myHeaderProducts="//@concepts.60" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="3,6: c#, vb.net classes, sql, schema information as com" verbatim="C#, VB.Net classes, SQL, Schema Information as comma separated values (*.cs, *.vb, *.sql, *.csv)" row="3" rowspan="1" column="6" colspan="1" concepts="//@concepts.226 //@concepts.110 //@concepts.212 //@concepts.227 //@concepts.225 //@concepts.224 //@concepts.228" myHeaderProducts="//@concepts.60" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C#" verbatim="C#" concept="//@concepts.110"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="VB.Net classes" verbatim="VB.Net classes" concept="//@concepts.224"/>
@@ -1075,7 +1075,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="4,5: templates" verbatim="Templates" row="4" rowspan="1" column="5" colspan="1" concepts="//@concepts.223" myHeaderProducts="//@concepts.61" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Templates" verbatim="Templates" concept="//@concepts.223"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="4,6: java classes (persistence layer with proxy classes" verbatim="Java classes (Persistence layer with proxy classes for database tables and views, DML code and services for stored procedures and declared queries with support for Oracle)" row="4" rowspan="1" column="6" colspan="1" concepts="//@concepts.234 //@concepts.232 //@concepts.218 //@concepts.231 //@concepts.233 //@concepts.230" myHeaderProducts="//@concepts.61" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="4,6: java classes (persistence layer with proxy classes" verbatim="Java classes (Persistence layer with proxy classes for database tables and views, DML code and services for stored procedures and declared queries with support for Oracle)" row="4" rowspan="1" column="6" colspan="1" concepts="//@concepts.232 //@concepts.231 //@concepts.234 //@concepts.218 //@concepts.230 //@concepts.233" myHeaderProducts="//@concepts.61" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:Partial">
         <condition xsi:type="pcmmm:And">
           <contraints xsi:type="pcmmm:And">
@@ -1138,7 +1138,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Import from DB" verbatim="Import from DB" concept="//@concepts.239"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="6,6: user interface (asp.net, wpf, silverlight), servic" verbatim="User Interface (ASP.NET, WPF, Silverlight), Service Layer (WCF), Business Layer (EF), DAL, DB scripts, Config files, VS project files, Xomega Framework objects" row="6" rowspan="1" column="6" colspan="1" concepts="//@concepts.245 //@concepts.242 //@concepts.251 //@concepts.248 //@concepts.246 //@concepts.249 //@concepts.250 //@concepts.240 //@concepts.247 //@concepts.243 //@concepts.241 //@concepts.244" myHeaderProducts="//@concepts.63" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="6,6: user interface (asp.net, wpf, silverlight), servic" verbatim="User Interface (ASP.NET, WPF, Silverlight), Service Layer (WCF), Business Layer (EF), DAL, DB scripts, Config files, VS project files, Xomega Framework objects" row="6" rowspan="1" column="6" colspan="1" concepts="//@concepts.245 //@concepts.240 //@concepts.244 //@concepts.247 //@concepts.249 //@concepts.246 //@concepts.243 //@concepts.251 //@concepts.241 //@concepts.248 //@concepts.250 //@concepts.242" myHeaderProducts="//@concepts.63" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="User Interface (ASP.NET" verbatim="User Interface (ASP.NET" concept="//@concepts.240"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="WPF" verbatim="WPF" concept="//@concepts.241"/>
@@ -1178,7 +1178,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="7,5: templates" verbatim="Templates" row="7" rowspan="1" column="5" colspan="1" concepts="//@concepts.223" myHeaderProducts="//@concepts.64" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Templates" verbatim="Templates" concept="//@concepts.223"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="7,6: user interface layer, services layer, business log" verbatim="User Interface Layer, Services Layer, Business Logic Layer, Data Access Layer, Database, IoC, Test... (MVC, Windows 8, Windows Phone 8, Webforms, Azure...)" row="7" rowspan="1" column="6" colspan="1" concepts="//@concepts.261 //@concepts.257 //@concepts.258 //@concepts.253 //@concepts.260 //@concepts.209 //@concepts.262 //@concepts.255 //@concepts.256 //@concepts.259 //@concepts.254" myHeaderProducts="//@concepts.64" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="7,6: user interface layer, services layer, business log" verbatim="User Interface Layer, Services Layer, Business Logic Layer, Data Access Layer, Database, IoC, Test... (MVC, Windows 8, Windows Phone 8, Webforms, Azure...)" row="7" rowspan="1" column="6" colspan="1" concepts="//@concepts.253 //@concepts.257 //@concepts.260 //@concepts.254 //@concepts.255 //@concepts.261 //@concepts.209 //@concepts.256 //@concepts.258 //@concepts.262 //@concepts.259" myHeaderProducts="//@concepts.64" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="User Interface Layer" verbatim="User Interface Layer" concept="//@concepts.253"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Services Layer" verbatim="Services Layer" concept="//@concepts.254"/>
@@ -1239,7 +1239,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="9,5: templates" verbatim="Templates" row="9" rowspan="1" column="5" colspan="1" concepts="//@concepts.223" myHeaderProducts="//@concepts.66" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Templates" verbatim="Templates" concept="//@concepts.223"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="9,6: .net classes, persistence layers (microsoft sql se" verbatim=".NET classes, Persistence layers (Microsoft SQL Server, Oracle, PostgreSQL, MySQL), WCF Services, ASP .NET websites..." row="9" rowspan="1" column="6" colspan="1" concepts="//@concepts.275 //@concepts.274 //@concepts.271 //@concepts.276 //@concepts.272 //@concepts.270 //@concepts.273" myHeaderProducts="//@concepts.66" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="9,6: .net classes, persistence layers (microsoft sql se" verbatim=".NET classes, Persistence layers (Microsoft SQL Server, Oracle, PostgreSQL, MySQL), WCF Services, ASP .NET websites..." row="9" rowspan="1" column="6" colspan="1" concepts="//@concepts.274 //@concepts.272 //@concepts.276 //@concepts.275 //@concepts.271 //@concepts.273 //@concepts.270" myHeaderProducts="//@concepts.66" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name=".NET classes" verbatim=".NET classes" concept="//@concepts.270"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Persistence layers (Microsoft SQL Server" verbatim="Persistence layers (Microsoft SQL Server" concept="//@concepts.271"/>
@@ -1264,45 +1264,43 @@
     <cells xsi:type="pcmmm:ValuedCell" name="10,3: mixed" verbatim="Mixed" row="10" rowspan="1" column="3" colspan="1" concepts="//@concepts.207" myHeaderProducts="//@concepts.67" myHeaderFeatures="//@concepts.54">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Mixed" verbatim="Mixed" concept="//@concepts.207"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="10,4: database schema (adox, db2 zos, iseries, mysql, or" verbatim="Database schema (ADOX, DB2 zOS, ISeries, MySQL, Oracle, Postgre, SQL Anywhere, SQL Compact, SQL Server, SQLite, VistaDB), C# or VB.NET source code, Any meta data source.. E.G., Web Services, SharePoint, UML, XSD, XML, DBML, EDMX, JSON, HBM, HTML and more..." row="10" rowspan="1" column="4" colspan="1" concepts="//@concepts.290 //@concepts.298 //@concepts.284 //@concepts.280 //@concepts.292 //@concepts.281 //@concepts.291 //@concepts.110 //@concepts.283 //@concepts.205 //@concepts.210 //@concepts.287 //@concepts.286 //@concepts.252 //@concepts.272 //@concepts.293 //@concepts.288 //@concepts.289 //@concepts.297 //@concepts.282 //@concepts.295 //@concepts.285 //@concepts.296 //@concepts.279 //@concepts.294" myHeaderProducts="//@concepts.67" myHeaderFeatures="//@concepts.55">
-      <interpretation xsi:type="pcmmm:Or">
-        <contraints xsi:type="pcmmm:And">
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Database schema (ADOX" verbatim="Database schema (ADOX" concept="//@concepts.279"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="DB2 zOS" verbatim="DB2 zOS" concept="//@concepts.280"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="ISeries" verbatim="ISeries" concept="//@concepts.281"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.282"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.272"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Postgre" verbatim="Postgre" concept="//@concepts.283"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SQL Anywhere" verbatim="SQL Anywhere" concept="//@concepts.284"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SQL Compact" verbatim="SQL Compact" concept="//@concepts.285"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SQL Server" verbatim="SQL Server" concept="//@concepts.286"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SQLite" verbatim="SQLite" concept="//@concepts.287"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="VistaDB)" verbatim="VistaDB)" concept="//@concepts.288"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,4: database schema (adox, db2 zos, iseries, mysql, or" verbatim="Database schema (ADOX, DB2 zOS, ISeries, MySQL, Oracle, Postgre, SQL Anywhere, SQL Compact, SQL Server, SQLite, VistaDB), C# or VB.NET source code, Any meta data source.. E.G., Web Services, SharePoint, UML, XSD, XML, DBML, EDMX, JSON, HBM, HTML and more..." row="10" rowspan="1" column="4" colspan="1" concepts="//@concepts.279 //@concepts.285 //@concepts.295 //@concepts.272 //@concepts.298 //@concepts.110 //@concepts.280 //@concepts.289 //@concepts.210 //@concepts.293 //@concepts.283 //@concepts.284 //@concepts.292 //@concepts.281 //@concepts.290 //@concepts.287 //@concepts.252 //@concepts.297 //@concepts.286 //@concepts.282 //@concepts.294 //@concepts.205 //@concepts.291 //@concepts.288 //@concepts.296" myHeaderProducts="//@concepts.67" myHeaderFeatures="//@concepts.55">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Database schema (ADOX" verbatim="Database schema (ADOX" concept="//@concepts.279"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="DB2 zOS" verbatim="DB2 zOS" concept="//@concepts.280"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="ISeries" verbatim="ISeries" concept="//@concepts.281"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.282"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.272"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Postgre" verbatim="Postgre" concept="//@concepts.283"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SQL Anywhere" verbatim="SQL Anywhere" concept="//@concepts.284"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SQL Compact" verbatim="SQL Compact" concept="//@concepts.285"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SQL Server" verbatim="SQL Server" concept="//@concepts.286"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SQLite" verbatim="SQLite" concept="//@concepts.287"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="VistaDB)" verbatim="VistaDB)" concept="//@concepts.288"/>
+        <contraints xsi:type="pcmmm:Or">
           <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C#" verbatim="C#" concept="//@concepts.110"/>
-        </contraints>
-        <contraints xsi:type="pcmmm:And">
           <contraints xsi:type="pcmmm:VariabilityConceptRef" name="VB.NET source code" verbatim="VB.NET source code" concept="//@concepts.289"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Any meta data source.. E.G." verbatim="Any meta data source.. E.G." concept="//@concepts.290"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Web Services" verbatim="Web Services" concept="//@concepts.291"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SharePoint" verbatim="SharePoint" concept="//@concepts.292"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="UML" verbatim="UML" concept="//@concepts.293"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="XSD" verbatim="XSD" concept="//@concepts.205"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="XML" verbatim="XML" concept="//@concepts.210"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="DBML" verbatim="DBML" concept="//@concepts.294"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="EDMX" verbatim="EDMX" concept="//@concepts.252"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="JSON" verbatim="JSON" concept="//@concepts.295"/>
-          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="HBM" verbatim="HBM" concept="//@concepts.296"/>
-          <contraints xsi:type="pcmmm:And">
-            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="HTML" verbatim="HTML" concept="//@concepts.297"/>
-            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="more..." verbatim="more..." concept="//@concepts.298"/>
-          </contraints>
+        </contraints>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Any meta data source.. E.G." verbatim="Any meta data source.. E.G." concept="//@concepts.290"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Web Services" verbatim="Web Services" concept="//@concepts.291"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SharePoint" verbatim="SharePoint" concept="//@concepts.292"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="UML" verbatim="UML" concept="//@concepts.293"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="XSD" verbatim="XSD" concept="//@concepts.205"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="XML" verbatim="XML" concept="//@concepts.210"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="DBML" verbatim="DBML" concept="//@concepts.294"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="EDMX" verbatim="EDMX" concept="//@concepts.252"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="JSON" verbatim="JSON" concept="//@concepts.295"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="HBM" verbatim="HBM" concept="//@concepts.296"/>
+        <contraints xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="HTML" verbatim="HTML" concept="//@concepts.297"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="more..." verbatim="more..." concept="//@concepts.298"/>
         </contraints>
       </interpretation>
     </cells>
     <cells xsi:type="pcmmm:ValuedCell" name="10,5: templates" verbatim="Templates" row="10" rowspan="1" column="5" colspan="1" concepts="//@concepts.223" myHeaderProducts="//@concepts.67" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Templates" verbatim="Templates" concept="//@concepts.223"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="10,6: any textual output such as c#, vb.net, c/c++, xml," verbatim="Any textual output such as C#, VB.NET, C/C++, XML, SQL, JSON, JavaScript, HTML, or any other plain text format." row="10" rowspan="1" column="6" colspan="1" concepts="//@concepts.299 //@concepts.301 //@concepts.278 //@concepts.302 //@concepts.300 //@concepts.210 //@concepts.277 //@concepts.212 //@concepts.297 //@concepts.295" myHeaderProducts="//@concepts.67" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="10,6: any textual output such as c#, vb.net, c/c++, xml," verbatim="Any textual output such as C#, VB.NET, C/C++, XML, SQL, JSON, JavaScript, HTML, or any other plain text format." row="10" rowspan="1" column="6" colspan="1" concepts="//@concepts.301 //@concepts.277 //@concepts.295 //@concepts.278 //@concepts.212 //@concepts.210 //@concepts.299 //@concepts.302 //@concepts.300 //@concepts.297" myHeaderProducts="//@concepts.67" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Any textual output such as C#" verbatim="Any textual output such as C#" concept="//@concepts.299"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="VB.NET" verbatim="VB.NET" concept="//@concepts.277"/>
@@ -1429,7 +1427,7 @@
         </contraints>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="14,6: c#, wpf, silverlight, asp.net, wcf, webservices(co" verbatim="C#, WPF, Silverlight, ASP.NET, WCF, WebServices(complete application)" row="14" rowspan="1" column="6" colspan="1" concepts="//@concepts.327 //@concepts.110 //@concepts.326 //@concepts.328 //@concepts.329 //@concepts.243 //@concepts.241" myHeaderProducts="//@concepts.71" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="14,6: c#, wpf, silverlight, asp.net, wcf, webservices(co" verbatim="C#, WPF, Silverlight, ASP.NET, WCF, WebServices(complete application)" row="14" rowspan="1" column="6" colspan="1" concepts="//@concepts.326 //@concepts.329 //@concepts.110 //@concepts.327 //@concepts.243 //@concepts.328 //@concepts.241" myHeaderProducts="//@concepts.71" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C#" verbatim="C#" concept="//@concepts.110"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="WPF" verbatim="WPF" concept="//@concepts.241"/>
@@ -1455,7 +1453,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="15,4: user-defined models" verbatim="User-defined Models" row="15" rowspan="1" column="4" colspan="1" concepts="//@concepts.330" myHeaderProducts="//@concepts.72" myHeaderFeatures="//@concepts.55">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="User-defined Models" verbatim="User-defined Models" concept="//@concepts.330"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="15,5: xml, csv, java, ... (extensible)" verbatim="XML, CSV, Java, ... (extensible)" row="15" rowspan="1" column="5" colspan="1" concepts="//@concepts.331 //@concepts.104 //@concepts.210 //@concepts.216 //@concepts.332" myHeaderProducts="//@concepts.72" myHeaderFeatures="//@concepts.56">
+    <cells xsi:type="pcmmm:ValuedCell" name="15,5: xml, csv, java, ... (extensible)" verbatim="XML, CSV, Java, ... (extensible)" row="15" rowspan="1" column="5" colspan="1" concepts="//@concepts.216 //@concepts.210 //@concepts.104 //@concepts.332 //@concepts.331" myHeaderProducts="//@concepts.72" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="XML" verbatim="XML" concept="//@concepts.210"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="CSV" verbatim="CSV" concept="//@concepts.216"/>
@@ -1575,7 +1573,7 @@
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Any textual language" verbatim="Any textual language" concept="//@concepts.266"/>
     </cells>
     <cells xsi:type="pcmmm:Header" name="20,0: code4green" verbatim="Code4Green" row="20" rowspan="1" colspan="1" concept="//@concepts.77"/>
-    <cells xsi:type="pcmmm:ValuedCell" name="20,1: c#, vb.net, asp.net, sharepoint, sql, java, classi" verbatim="C#, VB.net, ASP.net, SharePoint, SQL, JAVA, classical ASP, HTML, XML" row="20" rowspan="1" column="1" colspan="1" concepts="//@concepts.292 //@concepts.349 //@concepts.110 //@concepts.210 //@concepts.350 //@concepts.212 //@concepts.297 //@concepts.352 //@concepts.351" myHeaderProducts="//@concepts.77" myHeaderFeatures="//@concepts.52">
+    <cells xsi:type="pcmmm:ValuedCell" name="20,1: c#, vb.net, asp.net, sharepoint, sql, java, classi" verbatim="C#, VB.net, ASP.net, SharePoint, SQL, JAVA, classical ASP, HTML, XML" row="20" rowspan="1" column="1" colspan="1" concepts="//@concepts.349 //@concepts.352 //@concepts.110 //@concepts.212 //@concepts.210 //@concepts.350 //@concepts.292 //@concepts.297 //@concepts.351" myHeaderProducts="//@concepts.77" myHeaderFeatures="//@concepts.52">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C#" verbatim="C#" concept="//@concepts.110"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="VB.net" verbatim="VB.net" concept="//@concepts.349"/>
@@ -1597,7 +1595,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="20,4: code4green - an online ultimate code generation to" verbatim="Code4Green - an online ultimate code generation tool with a green cause of plantation of trees on each 10,000 LOC" row="20" rowspan="1" column="4" colspan="1" concepts="//@concepts.353" myHeaderProducts="//@concepts.77" myHeaderFeatures="//@concepts.55">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Code4Green - an online ultimate code generation tool with a green cause of plantation of trees on each 10,000 LOC" verbatim="Code4Green - an online ultimate code generation tool with a green cause of plantation of trees on each 10,000 LOC" concept="//@concepts.353"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="20,5: code in c#, vb.net, asp.net, sharepoint, sql, java" verbatim="Code in C#, VB.net, ASP.net, SharePoint, SQL, JAVA, classical ASP, HTML, XML" row="20" rowspan="1" column="5" colspan="1" concepts="//@concepts.354 //@concepts.292 //@concepts.349 //@concepts.210 //@concepts.350 //@concepts.212 //@concepts.297 //@concepts.352 //@concepts.351" myHeaderProducts="//@concepts.77" myHeaderFeatures="//@concepts.56">
+    <cells xsi:type="pcmmm:ValuedCell" name="20,5: code in c#, vb.net, asp.net, sharepoint, sql, java" verbatim="Code in C#, VB.net, ASP.net, SharePoint, SQL, JAVA, classical ASP, HTML, XML" row="20" rowspan="1" column="5" colspan="1" concepts="//@concepts.349 //@concepts.352 //@concepts.212 //@concepts.210 //@concepts.350 //@concepts.292 //@concepts.297 //@concepts.351 //@concepts.354" myHeaderProducts="//@concepts.77" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Code in C#" verbatim="Code in C#" concept="//@concepts.354"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="VB.net" verbatim="VB.net" concept="//@concepts.349"/>
@@ -1623,7 +1621,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="21,3: tier" verbatim="Tier" row="21" rowspan="1" column="3" colspan="1" concepts="//@concepts.263" myHeaderProducts="//@concepts.78" myHeaderFeatures="//@concepts.54">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Tier" verbatim="Tier" concept="//@concepts.263"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="21,4: autogen definitions (lists of key-value pair or hi" verbatim="Autogen definitions (lists of key-value pair or hierarchical data arranged like C structs), Autogen templates (fixed output plus inline macros for conditional or repetitive emission of code blocks or evaluation of Bourne shell or Scheme expressions)" row="21" rowspan="1" column="4" colspan="1" concepts="//@concepts.362 //@concepts.356 //@concepts.358 //@concepts.359 //@concepts.361 //@concepts.357 //@concepts.360" myHeaderProducts="//@concepts.78" myHeaderFeatures="//@concepts.55">
+    <cells xsi:type="pcmmm:ValuedCell" name="21,4: autogen definitions (lists of key-value pair or hi" verbatim="Autogen definitions (lists of key-value pair or hierarchical data arranged like C structs), Autogen templates (fixed output plus inline macros for conditional or repetitive emission of code blocks or evaluation of Bourne shell or Scheme expressions)" row="21" rowspan="1" column="4" colspan="1" concepts="//@concepts.356 //@concepts.362 //@concepts.359 //@concepts.358 //@concepts.357 //@concepts.361 //@concepts.360" myHeaderProducts="//@concepts.78" myHeaderFeatures="//@concepts.55">
       <interpretation xsi:type="pcmmm:Partial">
         <condition xsi:type="pcmmm:And">
           <contraints xsi:type="pcmmm:Or">
@@ -1650,7 +1648,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="CGI data" verbatim="CGI data" concept="//@concepts.363"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="21,6: output determined by template (any language or eve" verbatim="Output determined by template (any language or even plain text); additional support for emitting header guard, certain licenses, option parsers, and finite state machine in C" row="21" rowspan="1" column="6" colspan="1" concepts="//@concepts.368 //@concepts.365 //@concepts.369 //@concepts.364 //@concepts.366 //@concepts.370 //@concepts.367" myHeaderProducts="//@concepts.78" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="21,6: output determined by template (any language or eve" verbatim="Output determined by template (any language or even plain text); additional support for emitting header guard, certain licenses, option parsers, and finite state machine in C" row="21" rowspan="1" column="6" colspan="1" concepts="//@concepts.368 //@concepts.367 //@concepts.369 //@concepts.366 //@concepts.370 //@concepts.365 //@concepts.364" myHeaderProducts="//@concepts.78" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:And">
           <contraints xsi:type="pcmmm:Partial">
@@ -1702,7 +1700,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="23,5: xml schema" verbatim="XML Schema" row="23" rowspan="1" column="5" colspan="1" concepts="//@concepts.324" myHeaderProducts="//@concepts.80" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="XML Schema" verbatim="XML Schema" concept="//@concepts.324"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="23,6: stored procedures, .net dal, c# asp.net pages, vis" verbatim="Stored Procedures, .NET DAL, C# ASP.NET Pages, Visual Studio 2010 Solution and Project Files" row="23" rowspan="1" column="6" colspan="1" concepts="//@concepts.378 //@concepts.376 //@concepts.377 //@concepts.374 //@concepts.375" myHeaderProducts="//@concepts.80" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="23,6: stored procedures, .net dal, c# asp.net pages, vis" verbatim="Stored Procedures, .NET DAL, C# ASP.NET Pages, Visual Studio 2010 Solution and Project Files" row="23" rowspan="1" column="6" colspan="1" concepts="//@concepts.377 //@concepts.375 //@concepts.378 //@concepts.374 //@concepts.376" myHeaderProducts="//@concepts.80" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Stored Procedures" verbatim="Stored Procedures" concept="//@concepts.374"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name=".NET DAL" verbatim=".NET DAL" concept="//@concepts.375"/>
@@ -1780,7 +1778,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="26,5: well-formed output language code fragments" verbatim="Well-formed output language code fragments" row="26" rowspan="1" column="5" colspan="1" concepts="//@concepts.391" myHeaderProducts="//@concepts.83" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Well-formed output language code fragments" verbatim="Well-formed output language code fragments" concept="//@concepts.391"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="26,6: any programming language (proven for c, c++, java," verbatim="Any programming language (proven for C, C++, Java, C#, PHP, COBOL)" row="26" rowspan="1" column="6" colspan="1" concepts="//@concepts.301 //@concepts.394 //@concepts.393 //@concepts.110 //@concepts.104 //@concepts.309 //@concepts.392" myHeaderProducts="//@concepts.83" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="26,6: any programming language (proven for c, c++, java," verbatim="Any programming language (proven for C, C++, Java, C#, PHP, COBOL)" row="26" rowspan="1" column="6" colspan="1" concepts="//@concepts.301 //@concepts.392 //@concepts.393 //@concepts.110 //@concepts.104 //@concepts.394 //@concepts.309" myHeaderProducts="//@concepts.83" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:Partial">
         <condition xsi:type="pcmmm:And">
           <contraints xsi:type="pcmmm:VariabilityConceptRef" name="proven for C" verbatim="proven for C" concept="//@concepts.392"/>
@@ -1837,7 +1835,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="28,5: css" verbatim="CSS" row="28" rowspan="1" column="5" colspan="1" concepts="//@concepts.342" myHeaderProducts="//@concepts.85" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="CSS" verbatim="CSS" concept="//@concepts.342"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="28,6: asp.net (full application, including c# code, vb c" verbatim="ASP.NET (Full application, including C# code, VB code, XML, Stored Procedures, etc.)" row="28" rowspan="1" column="6" colspan="1" concepts="//@concepts.397 //@concepts.327 //@concepts.210 //@concepts.398 //@concepts.374 //@concepts.321 //@concepts.399" myHeaderProducts="//@concepts.85" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="28,6: asp.net (full application, including c# code, vb c" verbatim="ASP.NET (Full application, including C# code, VB code, XML, Stored Procedures, etc.)" row="28" rowspan="1" column="6" colspan="1" concepts="//@concepts.398 //@concepts.397 //@concepts.321 //@concepts.210 //@concepts.327 //@concepts.374 //@concepts.399" myHeaderProducts="//@concepts.85" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:Partial">
         <condition xsi:type="pcmmm:And">
           <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Full application" verbatim="Full application" concept="//@concepts.397"/>
@@ -1999,7 +1997,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="34,5: c# partial classes" verbatim="C# partial classes" row="34" rowspan="1" column="5" colspan="1" concepts="//@concepts.420" myHeaderProducts="//@concepts.91" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="C# partial classes" verbatim="C# partial classes" concept="//@concepts.420"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="34,6: any textual output such as c#, vb, c/c++, xml, or " verbatim="Any textual output such as C#, VB, C/C++, XML, or any other plain text format" row="34" rowspan="1" column="6" colspan="1" concepts="//@concepts.299 //@concepts.301 //@concepts.421 //@concepts.300 //@concepts.419 //@concepts.210" myHeaderProducts="//@concepts.91" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="34,6: any textual output such as c#, vb, c/c++, xml, or " verbatim="Any textual output such as C#, VB, C/C++, XML, or any other plain text format" row="34" rowspan="1" column="6" colspan="1" concepts="//@concepts.301 //@concepts.210 //@concepts.299 //@concepts.300 //@concepts.421 //@concepts.419" myHeaderProducts="//@concepts.91" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Any textual output such as C#" verbatim="Any textual output such as C#" concept="//@concepts.299"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="VB" verbatim="VB" concept="//@concepts.419"/>
@@ -2032,7 +2030,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="35,5: php, aspx, html, css," verbatim="PHP, ASPX, HTML, CSS," row="35" rowspan="1" column="5" colspan="1" concepts="//@concepts.423" myHeaderProducts="//@concepts.92" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="PHP, ASPX, HTML, CSS," verbatim="PHP, ASPX, HTML, CSS," concept="//@concepts.423"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="35,6: php, asp, asp.net (full web application, including" verbatim="PHP, ASP, ASP.NET (Full Web application, including C#, VB.NET, PHP, ASP code, HTML, Javascript, CSS, etc.)" row="35" rowspan="1" column="6" colspan="1" concepts="//@concepts.426 //@concepts.425 //@concepts.309 //@concepts.277 //@concepts.297 //@concepts.427 //@concepts.342 //@concepts.338 //@concepts.424 //@concepts.422" myHeaderProducts="//@concepts.92" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="35,6: php, asp, asp.net (full web application, including" verbatim="PHP, ASP, ASP.NET (Full Web application, including C#, VB.NET, PHP, ASP code, HTML, Javascript, CSS, etc.)" row="35" rowspan="1" column="6" colspan="1" concepts="//@concepts.422 //@concepts.277 //@concepts.342 //@concepts.426 //@concepts.338 //@concepts.427 //@concepts.425 //@concepts.297 //@concepts.424 //@concepts.309" myHeaderProducts="//@concepts.92" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PHP" verbatim="PHP" concept="//@concepts.309"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="ASP" verbatim="ASP" concept="//@concepts.422"/>
@@ -2104,7 +2102,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="38,5: shell commands" verbatim="Shell commands" row="38" rowspan="1" column="5" colspan="1" concepts="//@concepts.433" myHeaderProducts="//@concepts.95" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Shell commands" verbatim="Shell commands" concept="//@concepts.433"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="38,6: java (full web application including java source, " verbatim="Java (Full Web Application including Java source, AspectJ source, XML, JSP, Spring application contexts, build tools, property files etc.)" row="38" rowspan="1" column="6" colspan="1" concepts="//@concepts.434 //@concepts.435 //@concepts.104 //@concepts.210 //@concepts.405 //@concepts.436 //@concepts.437 //@concepts.438" myHeaderProducts="//@concepts.95" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="38,6: java (full web application including java source, " verbatim="Java (Full Web Application including Java source, AspectJ source, XML, JSP, Spring application contexts, build tools, property files etc.)" row="38" rowspan="1" column="6" colspan="1" concepts="//@concepts.437 //@concepts.405 //@concepts.210 //@concepts.436 //@concepts.438 //@concepts.104 //@concepts.434 //@concepts.435" myHeaderProducts="//@concepts.95" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:Partial">
         <condition xsi:type="pcmmm:And">
           <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Full Web Application including Java source" verbatim="Full Web Application including Java source" concept="//@concepts.434"/>
@@ -2172,7 +2170,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="state machines etc." verbatim="state machines etc." concept="//@concepts.448"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="40,6: java, c++, php, ruby, eccore, umlet, yuml, textuml" verbatim="Java, C++, PHP, Ruby, ECcore, Umlet, Yuml, Textuml, JSON, Papyrus XMI" row="40" rowspan="1" column="6" colspan="1" concepts="//@concepts.450 //@concepts.453 //@concepts.301 //@concepts.452 //@concepts.454 //@concepts.104 //@concepts.309 //@concepts.451 //@concepts.295 //@concepts.449" myHeaderProducts="//@concepts.97" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="40,6: java, c++, php, ruby, eccore, umlet, yuml, textuml" verbatim="Java, C++, PHP, Ruby, ECcore, Umlet, Yuml, Textuml, JSON, Papyrus XMI" row="40" rowspan="1" column="6" colspan="1" concepts="//@concepts.301 //@concepts.452 //@concepts.295 //@concepts.450 //@concepts.451 //@concepts.453 //@concepts.104 //@concepts.309 //@concepts.449 //@concepts.454" myHeaderProducts="//@concepts.97" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Java" verbatim="Java" concept="//@concepts.104"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C++" verbatim="C++" concept="//@concepts.301"/>
@@ -2259,7 +2257,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Language_A-to-Language_B Transform Rules" verbatim="Language_A-to-Language_B Transform Rules" concept="//@concepts.460"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="44,5: chill, cms2, fortran, cobol, jovial, pascal, pl/1," verbatim="CHILL, CMS2, FORTRAN, COBOL, JOVIAL, PASCAL, PL/1, PLM86" row="44" rowspan="1" column="5" colspan="1" concepts="//@concepts.464 //@concepts.467 //@concepts.393 //@concepts.462 //@concepts.465 //@concepts.461 //@concepts.466 //@concepts.463" myHeaderProducts="//@concepts.101" myHeaderFeatures="//@concepts.56">
+    <cells xsi:type="pcmmm:ValuedCell" name="44,5: chill, cms2, fortran, cobol, jovial, pascal, pl/1," verbatim="CHILL, CMS2, FORTRAN, COBOL, JOVIAL, PASCAL, PL/1, PLM86" row="44" rowspan="1" column="5" colspan="1" concepts="//@concepts.465 //@concepts.393 //@concepts.467 //@concepts.464 //@concepts.462 //@concepts.461 //@concepts.463 //@concepts.466" myHeaderProducts="//@concepts.101" myHeaderFeatures="//@concepts.56">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="CHILL" verbatim="CHILL" concept="//@concepts.461"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="CMS2" verbatim="CMS2" concept="//@concepts.462"/>
@@ -2291,7 +2289,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="45,3: mixed" verbatim="Mixed" row="45" rowspan="1" column="3" colspan="1" concepts="//@concepts.207" myHeaderProducts="//@concepts.102" myHeaderFeatures="//@concepts.54">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Mixed" verbatim="Mixed" concept="//@concepts.207"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="45,4: database schema (oracle, mysql, postgressql), xml " verbatim="Database schema (Oracle, MySQL, PostgresSQL), XML (domain model UML exported XML)" row="45" rowspan="1" column="4" colspan="1" concepts="//@concepts.472 //@concepts.272 //@concepts.471 //@concepts.282 //@concepts.229" myHeaderProducts="//@concepts.102" myHeaderFeatures="//@concepts.55">
+    <cells xsi:type="pcmmm:ValuedCell" name="45,4: database schema (oracle, mysql, postgressql), xml " verbatim="Database schema (Oracle, MySQL, PostgresSQL), XML (domain model UML exported XML)" row="45" rowspan="1" column="4" colspan="1" concepts="//@concepts.472 //@concepts.272 //@concepts.229 //@concepts.471 //@concepts.282" myHeaderProducts="//@concepts.102" myHeaderFeatures="//@concepts.55">
       <interpretation xsi:type="pcmmm:Partial">
         <condition xsi:type="pcmmm:And">
           <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.272"/>
@@ -2311,7 +2309,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Import from DB" verbatim="Import from DB" concept="//@concepts.239"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="45,6: java source classes (ejb3 persistence layer, data " verbatim="Java source classes (EJB3 persistence layer, data classes with interfaces. Session Beans, Entity Managers and Entity Bean source classes. Message Beans. Web Services (SOAP, REST). JUnit Test classes.). DB SQLs" row="45" rowspan="1" column="6" colspan="1" concepts="//@concepts.478 //@concepts.476 //@concepts.477 //@concepts.474 //@concepts.475" myHeaderProducts="//@concepts.102" myHeaderFeatures="//@concepts.57">
+    <cells xsi:type="pcmmm:ValuedCell" name="45,6: java source classes (ejb3 persistence layer, data " verbatim="Java source classes (EJB3 persistence layer, data classes with interfaces. Session Beans, Entity Managers and Entity Bean source classes. Message Beans. Web Services (SOAP, REST). JUnit Test classes.). DB SQLs" row="45" rowspan="1" column="6" colspan="1" concepts="//@concepts.474 //@concepts.475 //@concepts.476 //@concepts.478 //@concepts.477" myHeaderProducts="//@concepts.102" myHeaderFeatures="//@concepts.57">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Java source classes (EJB3 persistence layer" verbatim="Java source classes (EJB3 persistence layer" concept="//@concepts.474"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="data classes with interfaces. Session Beans" verbatim="data classes with interfaces. Session Beans" concept="//@concepts.475"/>

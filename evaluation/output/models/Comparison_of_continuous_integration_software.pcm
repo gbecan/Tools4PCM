@@ -32,7 +32,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="&amp; 3" verbatim="&amp; 3" concept="//@concepts.110"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="1,5: shell script, batch script, cross-platform command" verbatim="Shell script, Batch script, Cross-platform command-line, Groovy script, Make, RTC Jazz, TFS Build" row="1" rowspan="1" column="5" colspan="1" concepts="//@concepts.114 //@concepts.116 //@concepts.111 //@concepts.115 //@concepts.112 //@concepts.113 //@concepts.117" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.4">
+    <cells xsi:type="pcmmm:ValuedCell" name="1,5: shell script, batch script, cross-platform command" verbatim="Shell script, Batch script, Cross-platform command-line, Groovy script, Make, RTC Jazz, TFS Build" row="1" rowspan="1" column="5" colspan="1" concepts="//@concepts.113 //@concepts.117 //@concepts.116 //@concepts.115 //@concepts.114 //@concepts.112 //@concepts.111" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.4">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Shell script" verbatim="Shell script" concept="//@concepts.111"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Batch script" verbatim="Batch script" concept="//@concepts.112"/>
@@ -79,7 +79,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="2,5: unknown" verbatim="Unknown" row="2" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.4">
       <interpretation xsi:type="pcmmm:Unknown" name="Unknown" confident="true" verbatim="Unknown"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="2,6: mail, jabber and google talk, msn, irc, report dep" verbatim="Mail, Jabber and Google Talk, MSN, IRC, report deployment with wagon" row="2" rowspan="1" column="6" colspan="1" concepts="//@concepts.128 //@concepts.130 //@concepts.132 //@concepts.131 //@concepts.129 //@concepts.133" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.5">
+    <cells xsi:type="pcmmm:ValuedCell" name="2,6: mail, jabber and google talk, msn, irc, report dep" verbatim="Mail, Jabber and Google Talk, MSN, IRC, report deployment with wagon" row="2" rowspan="1" column="6" colspan="1" concepts="//@concepts.128 //@concepts.129 //@concepts.132 //@concepts.131 //@concepts.130 //@concepts.133" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.5">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Mail" verbatim="Mail" concept="//@concepts.128"/>
         <contraints xsi:type="pcmmm:And">
@@ -260,7 +260,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Bash" verbatim="Bash" concept="//@concepts.155"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="7,6: xmpp, google talk, e-mail, rss, remote api" verbatim="XMPP, Google Talk, E-mail, RSS, Remote API" row="7" rowspan="1" column="6" colspan="1" concepts="//@concepts.130 //@concepts.118 //@concepts.119 //@concepts.156 //@concepts.120" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.5">
+    <cells xsi:type="pcmmm:ValuedCell" name="7,6: xmpp, google talk, e-mail, rss, remote api" verbatim="XMPP, Google Talk, E-mail, RSS, Remote API" row="7" rowspan="1" column="6" colspan="1" concepts="//@concepts.120 //@concepts.119 //@concepts.118 //@concepts.156 //@concepts.130" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.5">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="XMPP" verbatim="XMPP" concept="//@concepts.119"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Google Talk" verbatim="Google Talk" concept="//@concepts.130"/>
@@ -419,7 +419,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="12,4: unknown" verbatim="Unknown" row="12" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.3">
       <interpretation xsi:type="pcmmm:Unknown" name="Unknown" confident="true" verbatim="Unknown"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="12,5: ruby, python, node.js, php, java" verbatim="Ruby, Python, Node.js, PHP, Java" row="12" rowspan="1" column="5" colspan="1" concepts="//@concepts.172 //@concepts.134 //@concepts.173 //@concepts.174 //@concepts.175" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.4">
+    <cells xsi:type="pcmmm:ValuedCell" name="12,5: ruby, python, node.js, php, java" verbatim="Ruby, Python, Node.js, PHP, Java" row="12" rowspan="1" column="5" colspan="1" concepts="//@concepts.173 //@concepts.175 //@concepts.134 //@concepts.174 //@concepts.172" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.4">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Ruby" verbatim="Ruby" concept="//@concepts.172"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Python" verbatim="Python" concept="//@concepts.134"/>
@@ -487,7 +487,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="14,4: maven" verbatim="Maven" row="14" rowspan="1" column="4" colspan="1" concepts="//@concepts.181" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.3">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Maven" verbatim="Maven" concept="//@concepts.181"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="14,5: go (programming language), java (programming langu" verbatim="Go (programming language), Java (programming language), Node.js, PHP, Python (programming language), Ruby (programming language)" row="14" rowspan="1" column="5" colspan="1" concepts="//@concepts.184 //@concepts.183 //@concepts.134 //@concepts.28 //@concepts.173 //@concepts.174 //@concepts.175 //@concepts.182" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.4">
+    <cells xsi:type="pcmmm:ValuedCell" name="14,5: go (programming language), java (programming langu" verbatim="Go (programming language), Java (programming language), Node.js, PHP, Python (programming language), Ruby (programming language)" row="14" rowspan="1" column="5" colspan="1" concepts="//@concepts.173 //@concepts.182 //@concepts.183 //@concepts.175 //@concepts.28 //@concepts.134 //@concepts.174 //@concepts.184" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.4">
       <interpretation xsi:type="pcmmm:Partial">
         <condition xsi:type="pcmmm:And">
           <contraints xsi:type="pcmmm:VariabilityConceptRef" name="programming language)" verbatim="programming language)" concept="//@concepts.182"/>
@@ -506,7 +506,7 @@
         <argument xsi:type="pcmmm:VariabilityConceptRef" name="Go" verbatim="Go" concept="//@concepts.28"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="14,6: e-mail, flowdock, grove, hipchat, web" verbatim="E-mail, Flowdock, Grove, HipChat, Web" row="14" rowspan="1" column="6" colspan="1" concepts="//@concepts.171 //@concepts.118 //@concepts.177 //@concepts.186 //@concepts.185" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.5">
+    <cells xsi:type="pcmmm:ValuedCell" name="14,6: e-mail, flowdock, grove, hipchat, web" verbatim="E-mail, Flowdock, Grove, HipChat, Web" row="14" rowspan="1" column="6" colspan="1" concepts="//@concepts.118 //@concepts.186 //@concepts.171 //@concepts.185 //@concepts.177" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.5">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="E-mail" verbatim="E-mail" concept="//@concepts.118"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Flowdock" verbatim="Flowdock" concept="//@concepts.185"/>
@@ -640,7 +640,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Gradle" verbatim="Gradle" concept="//@concepts.196"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="18,5: c, c++, dart, go, nodejs, python, php, ruby, java," verbatim="C, C++, Dart, Go, NodeJS, Python, PHP, Ruby, Java, Groovy, Scala, Erlang" row="18" rowspan="1" column="5" colspan="1" concepts="//@concepts.197 //@concepts.201 //@concepts.203 //@concepts.199 //@concepts.200 //@concepts.172 //@concepts.134 //@concepts.202 //@concepts.198 //@concepts.28 //@concepts.174 //@concepts.175" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.4">
+    <cells xsi:type="pcmmm:ValuedCell" name="18,5: c, c++, dart, go, nodejs, python, php, ruby, java," verbatim="C, C++, Dart, Go, NodeJS, Python, PHP, Ruby, Java, Groovy, Scala, Erlang" row="18" rowspan="1" column="5" colspan="1" concepts="//@concepts.200 //@concepts.197 //@concepts.203 //@concepts.201 //@concepts.175 //@concepts.28 //@concepts.202 //@concepts.198 //@concepts.134 //@concepts.199 //@concepts.174 //@concepts.172" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.4">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C" verbatim="C" concept="//@concepts.197"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C++" verbatim="C++" concept="//@concepts.198"/>
@@ -826,7 +826,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Kundo" verbatim="Kundo" concept="//@concepts.213"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="23,5: cmake, gant, gradle, grails, phing, rake, ruby, sc" verbatim="Cmake, Gant, Gradle, Grails, Phing, Rake, Ruby, SCons, Python, Shell script" row="23" rowspan="1" column="5" colspan="1" concepts="//@concepts.216 //@concepts.190 //@concepts.192 //@concepts.172 //@concepts.134 //@concepts.215 //@concepts.217 //@concepts.214 //@concepts.111 //@concepts.196" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.4">
+    <cells xsi:type="pcmmm:ValuedCell" name="23,5: cmake, gant, gradle, grails, phing, rake, ruby, sc" verbatim="Cmake, Gant, Gradle, Grails, Phing, Rake, Ruby, SCons, Python, Shell script" row="23" rowspan="1" column="5" colspan="1" concepts="//@concepts.196 //@concepts.192 //@concepts.214 //@concepts.216 //@concepts.217 //@concepts.134 //@concepts.215 //@concepts.172 //@concepts.111 //@concepts.190" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.4">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Cmake" verbatim="Cmake" concept="//@concepts.214"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Gant" verbatim="Gant" concept="//@concepts.215"/>
@@ -840,7 +840,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Shell script" verbatim="Shell script" concept="//@concepts.111"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="23,6: android, e-mail, google calendar, irc, xmpp, rss, " verbatim="Android, E-mail, Google Calendar, IRC, XMPP, RSS, Twitter" row="23" rowspan="1" column="6" colspan="1" concepts="//@concepts.118 //@concepts.132 //@concepts.119 //@concepts.219 //@concepts.207 //@concepts.218 //@concepts.120" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.5">
+    <cells xsi:type="pcmmm:ValuedCell" name="23,6: android, e-mail, google calendar, irc, xmpp, rss, " verbatim="Android, E-mail, Google Calendar, IRC, XMPP, RSS, Twitter" row="23" rowspan="1" column="6" colspan="1" concepts="//@concepts.207 //@concepts.120 //@concepts.119 //@concepts.118 //@concepts.132 //@concepts.218 //@concepts.219" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.5">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Android" verbatim="Android" concept="//@concepts.218"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="E-mail" verbatim="E-mail" concept="//@concepts.118"/>
@@ -858,7 +858,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="NetBeans" verbatim="NetBeans" concept="//@concepts.220"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="23,8: bugzilla, google code, jira, redmine, mantis, trac" verbatim="Bugzilla, Google Code, JIRA, Redmine, Mantis, Trac" row="23" rowspan="1" column="8" colspan="1" concepts="//@concepts.221 //@concepts.223 //@concepts.222 //@concepts.224 //@concepts.160 //@concepts.208" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.7">
+    <cells xsi:type="pcmmm:ValuedCell" name="23,8: bugzilla, google code, jira, redmine, mantis, trac" verbatim="Bugzilla, Google Code, JIRA, Redmine, Mantis, Trac" row="23" rowspan="1" column="8" colspan="1" concepts="//@concepts.223 //@concepts.224 //@concepts.221 //@concepts.208 //@concepts.160 //@concepts.222" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.7">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Bugzilla" verbatim="Bugzilla" concept="//@concepts.208"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Google Code" verbatim="Google Code" concept="//@concepts.221"/>
@@ -1000,7 +1000,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Command Line" verbatim="Command Line" concept="//@concepts.209"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="27,6: e-mail, xmpp, rss, google talk, remote api" verbatim="E-mail, XMPP, RSS, Google Talk, Remote API" row="27" rowspan="1" column="6" colspan="1" concepts="//@concepts.130 //@concepts.118 //@concepts.119 //@concepts.156 //@concepts.120" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.5">
+    <cells xsi:type="pcmmm:ValuedCell" name="27,6: e-mail, xmpp, rss, google talk, remote api" verbatim="E-mail, XMPP, RSS, Google Talk, Remote API" row="27" rowspan="1" column="6" colspan="1" concepts="//@concepts.120 //@concepts.119 //@concepts.118 //@concepts.156 //@concepts.130" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.5">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="E-mail" verbatim="E-mail" concept="//@concepts.118"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="XMPP" verbatim="XMPP" concept="//@concepts.119"/>
@@ -1039,7 +1039,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Command Line" verbatim="Command Line" concept="//@concepts.209"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="28,6: e-mail, campfire, hipchat, flowdock, webhooks, rem" verbatim="E-mail, Campfire, HipChat, Flowdock, Webhooks, Remote API" row="28" rowspan="1" column="6" colspan="1" concepts="//@concepts.118 //@concepts.234 //@concepts.177 //@concepts.156 //@concepts.185 //@concepts.176" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.5">
+    <cells xsi:type="pcmmm:ValuedCell" name="28,6: e-mail, campfire, hipchat, flowdock, webhooks, rem" verbatim="E-mail, Campfire, HipChat, Flowdock, Webhooks, Remote API" row="28" rowspan="1" column="6" colspan="1" concepts="//@concepts.234 //@concepts.118 //@concepts.176 //@concepts.156 //@concepts.185 //@concepts.177" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.5">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="E-mail" verbatim="E-mail" concept="//@concepts.118"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Campfire" verbatim="Campfire" concept="//@concepts.176"/>
@@ -1106,7 +1106,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="30,4: no" verbatim="No" row="30" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.3">
       <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="30,5: c, c++, clojure, erlang, go, groovy, haskell, java" verbatim="C, C++, Clojure, Erlang, Go, Groovy, Haskell, Java, Node.js, Perl, PHP, Python, Ruby, Scala" row="30" rowspan="1" column="5" colspan="1" concepts="//@concepts.238 //@concepts.239 //@concepts.197 //@concepts.201 //@concepts.203 //@concepts.172 //@concepts.134 //@concepts.202 //@concepts.237 //@concepts.198 //@concepts.28 //@concepts.173 //@concepts.174 //@concepts.175" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.4">
+    <cells xsi:type="pcmmm:ValuedCell" name="30,5: c, c++, clojure, erlang, go, groovy, haskell, java" verbatim="C, C++, Clojure, Erlang, Go, Groovy, Haskell, Java, Node.js, Perl, PHP, Python, Ruby, Scala" row="30" rowspan="1" column="5" colspan="1" concepts="//@concepts.197 //@concepts.173 //@concepts.238 //@concepts.239 //@concepts.203 //@concepts.201 //@concepts.175 //@concepts.237 //@concepts.28 //@concepts.202 //@concepts.198 //@concepts.134 //@concepts.174 //@concepts.172" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.4">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C" verbatim="C" concept="//@concepts.197"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C++" verbatim="C++" concept="//@concepts.198"/>
@@ -1130,7 +1130,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="30,7: no" verbatim="No" row="30" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.6">
       <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="30,8: github, bitbucket, heroku, github enterprise, git" verbatim="GitHub, Bitbucket, Heroku, GitHub Enterprise, Git" row="30" rowspan="1" column="8" colspan="1" concepts="//@concepts.241 //@concepts.140 //@concepts.139 //@concepts.179 //@concepts.51" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.7">
+    <cells xsi:type="pcmmm:ValuedCell" name="30,8: github, bitbucket, heroku, github enterprise, git" verbatim="GitHub, Bitbucket, Heroku, GitHub Enterprise, Git" row="30" rowspan="1" column="8" colspan="1" concepts="//@concepts.241 //@concepts.140 //@concepts.51 //@concepts.179 //@concepts.139" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.7">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="GitHub" verbatim="GitHub" concept="//@concepts.139"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Bitbucket" verbatim="Bitbucket" concept="//@concepts.140"/>
@@ -1152,7 +1152,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="31,4: no" verbatim="No" row="31" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.3">
       <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="31,5: c, c++, clojure, erlang, go, groovy, haskell, java" verbatim="C, C++, Clojure, Erlang, Go, Groovy, Haskell, Java, Node.js, Perl, PHP, Python, Ruby, Scala" row="31" rowspan="1" column="5" colspan="1" concepts="//@concepts.238 //@concepts.239 //@concepts.197 //@concepts.201 //@concepts.203 //@concepts.172 //@concepts.134 //@concepts.202 //@concepts.237 //@concepts.198 //@concepts.28 //@concepts.173 //@concepts.174 //@concepts.175" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.4">
+    <cells xsi:type="pcmmm:ValuedCell" name="31,5: c, c++, clojure, erlang, go, groovy, haskell, java" verbatim="C, C++, Clojure, Erlang, Go, Groovy, Haskell, Java, Node.js, Perl, PHP, Python, Ruby, Scala" row="31" rowspan="1" column="5" colspan="1" concepts="//@concepts.197 //@concepts.173 //@concepts.238 //@concepts.239 //@concepts.203 //@concepts.201 //@concepts.175 //@concepts.237 //@concepts.28 //@concepts.202 //@concepts.198 //@concepts.134 //@concepts.174 //@concepts.172" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.4">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C" verbatim="C" concept="//@concepts.197"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C++" verbatim="C++" concept="//@concepts.198"/>
@@ -1202,7 +1202,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Duplicates finder for .NET" verbatim="Duplicates finder for .NET" concept="//@concepts.242"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="32,4: ant, maven 2/3, idea .ipr based, idea inspections," verbatim="Ant, Maven 2/3, IDEA .ipr based,  IDEA Inspections,  IDEA Duplicates finder, Gradle" row="32" rowspan="1" column="4" colspan="1" concepts="//@concepts.243 //@concepts.108 //@concepts.244 //@concepts.245 //@concepts.196 //@concepts.151" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.3">
+    <cells xsi:type="pcmmm:ValuedCell" name="32,4: ant, maven 2/3, idea .ipr based, idea inspections," verbatim="Ant, Maven 2/3, IDEA .ipr based,  IDEA Inspections,  IDEA Duplicates finder, Gradle" row="32" rowspan="1" column="4" colspan="1" concepts="//@concepts.196 //@concepts.244 //@concepts.108 //@concepts.151 //@concepts.245 //@concepts.243" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.3">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Ant" verbatim="Ant" concept="//@concepts.108"/>
         <contraints xsi:type="pcmmm:And">
@@ -1222,7 +1222,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Command Line" verbatim="Command Line" concept="//@concepts.209"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="32,6: e-mail, xmpp, rss, ide, systray" verbatim="E-mail, XMPP, RSS, IDE, SysTray" row="32" rowspan="1" column="6" colspan="1" concepts="//@concepts.118 //@concepts.248 //@concepts.119 //@concepts.247 //@concepts.120" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.5">
+    <cells xsi:type="pcmmm:ValuedCell" name="32,6: e-mail, xmpp, rss, ide, systray" verbatim="E-mail, XMPP, RSS, IDE, SysTray" row="32" rowspan="1" column="6" colspan="1" concepts="//@concepts.120 //@concepts.119 //@concepts.247 //@concepts.248 //@concepts.118" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.5">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="E-mail" verbatim="E-mail" concept="//@concepts.118"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="XMPP" verbatim="XMPP" concept="//@concepts.119"/>
@@ -1231,7 +1231,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SysTray" verbatim="SysTray" concept="//@concepts.248"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="32,7: eclipse, visual studio, intellij idea, rubymine, p" verbatim="Eclipse, Visual Studio, IntelliJ IDEA, RubyMine, PyCharm, PhpStorm, WebStorm" row="32" rowspan="1" column="7" colspan="1" concepts="//@concepts.122 //@concepts.251 //@concepts.107 //@concepts.252 //@concepts.249 //@concepts.250 //@concepts.157" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.6">
+    <cells xsi:type="pcmmm:ValuedCell" name="32,7: eclipse, visual studio, intellij idea, rubymine, p" verbatim="Eclipse, Visual Studio, IntelliJ IDEA, RubyMine, PyCharm, PhpStorm, WebStorm" row="32" rowspan="1" column="7" colspan="1" concepts="//@concepts.252 //@concepts.251 //@concepts.107 //@concepts.250 //@concepts.122 //@concepts.157 //@concepts.249" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.6">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Eclipse" verbatim="Eclipse" concept="//@concepts.122"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Visual Studio" verbatim="Visual Studio" concept="//@concepts.107"/>
@@ -1242,7 +1242,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="WebStorm" verbatim="WebStorm" concept="//@concepts.252"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="32,8: jetbrains youtrack, jira, bugzilla, fisheye, findb" verbatim="Jetbrains Youtrack, JIRA, Bugzilla, FishEye, FindBugs, PMD, dotCover, NCover" row="32" rowspan="1" column="8" colspan="1" concepts="//@concepts.257 //@concepts.254 //@concepts.256 //@concepts.158 //@concepts.253 //@concepts.255 //@concepts.160 //@concepts.208" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.7">
+    <cells xsi:type="pcmmm:ValuedCell" name="32,8: jetbrains youtrack, jira, bugzilla, fisheye, findb" verbatim="Jetbrains Youtrack, JIRA, Bugzilla, FishEye, FindBugs, PMD, dotCover, NCover" row="32" rowspan="1" column="8" colspan="1" concepts="//@concepts.256 //@concepts.253 //@concepts.255 //@concepts.208 //@concepts.254 //@concepts.158 //@concepts.160 //@concepts.257" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.7">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Jetbrains Youtrack" verbatim="Jetbrains Youtrack" concept="//@concepts.253"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="JIRA" verbatim="JIRA" concept="//@concepts.160"/>
