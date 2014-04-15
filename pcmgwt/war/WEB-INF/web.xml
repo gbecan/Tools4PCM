@@ -10,11 +10,14 @@
     <servlet-name>greetServlet</servlet-name>
     <servlet-class>org.inria.familiar.pcmgwt.server.GreetingServiceImpl</servlet-class>
   </servlet>
+
   
   <servlet-mapping>
     <servlet-name>greetServlet</servlet-name>
     <url-pattern>/pcmgwt/greet</url-pattern>
   </servlet-mapping>
+
+  
   
   <!-- Default page to serve -->
   <welcome-file-list>
