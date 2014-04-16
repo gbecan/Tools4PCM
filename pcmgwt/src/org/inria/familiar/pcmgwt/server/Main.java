@@ -17,7 +17,7 @@ public class Main {
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("pcm", new XMIResourceFactoryImpl());
 		ResourceSet rs =new ResourceSetImpl();
 		rs.getPackageRegistry().put(PcmmmPackage.eINSTANCE.getNsURI(), PcmmmPackage.eINSTANCE);
-		URI uri = URI.createFileURI("Comparison_of_Nikon_DSLR_cameras.pcm");
+		URI uri = URI.createFileURI("Comparison_of_3D_computer_graphics_software.pcm");
 		
 		
 		Resource r = rs.getResource(uri,true);

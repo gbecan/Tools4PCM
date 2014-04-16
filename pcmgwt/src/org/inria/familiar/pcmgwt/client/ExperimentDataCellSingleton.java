@@ -17,17 +17,23 @@ public class ExperimentDataCellSingleton {
 
 	}
 
-	private static ExperimentDataCellSingleton instance = new ExperimentDataCellSingleton();
+	private static Map<String,ExperimentDataCellSingleton> instances = new HashMap<String, ExperimentDataCellSingleton>();
 
-	public static ExperimentDataCellSingleton getInstance() {
-		return instance;
+	public static Map<String, ExperimentDataCellSingleton> getInstances() {
+		return instances;
+	}
+
+	public static ExperimentDataCellSingleton getInstance(String matrixId) {
+		if (!instances.containsKey(matrixId))
+			instances.put(matrixId, new ExperimentDataCellSingleton());
+		return instances.get(matrixId);
 	}
 
 	Map<Cell, ExperimentDataCell> datas = new HashMap<Cell, ExperimentDataCell>();
 
-	ExperimentData data = new ExperimentData();
+	static ExperimentData data = new ExperimentData();
 
-	public ExperimentData getData() {
+	public static  ExperimentData getData() {
 		return data;
 	}
 
@@ -49,9 +55,9 @@ public class ExperimentDataCellSingleton {
 	 * }
 	 */
 
-	List<Cell> selectedCell = new ArrayList<Cell>();
+	static List<Cell>  selectedCell = new ArrayList<Cell>();
 
-	public List<Cell> getSelectedCell() {
+	public static List<Cell> getSelectedCell() {
 		return selectedCell;
 	}
 

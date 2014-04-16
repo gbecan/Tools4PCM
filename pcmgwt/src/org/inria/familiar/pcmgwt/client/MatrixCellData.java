@@ -1,7 +1,6 @@
 package org.inria.familiar.pcmgwt.client;  
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.inria.familiar.pcmgwt.shared.Cell;
@@ -19,14 +18,14 @@ public class MatrixCellData {
 	static Map<Coordinate,MatrixCell> data;
 	
 	
-	public static ListGridRecord[] getData(List<Matrix> result) {
+	public static ListGridRecord[] getData(Matrix m) {
 		 row = new HashMap<Integer,String>();
 		 column = new HashMap<Integer,String>();
 		
 		data = new HashMap<Coordinate,MatrixCell>();
 		
 		
-		for (Matrix m : result){
+		//for (Matrix m : result){
 			for (Header h : m.getHeaders()){
 				if (h.getX()==0)
 					column.put(h.getY(), h.getValue());
@@ -34,9 +33,9 @@ public class MatrixCellData {
 					row.put(h.getX(), h.getValue());
 			}
 			for (Cell h : m.getCells()){
-				data.put(new Coordinate(h.getX(), h.getY()), new MatrixCell(row.get(h.getX()),column.get(h.getY()),  h.getValue(),h, h.getX(),h.getY() ));
+				data.put(new Coordinate(h.getX(), h.getY()), new MatrixCell(row.get(h.getX()),column.get(h.getY()),  h.getValue(),h, h.getX(),h.getY() ,m.getId()));
 			}
-		}
+		//}
 		
 		MatrixCell[] val = data.values().toArray(new MatrixCell[data.size()]);
 		

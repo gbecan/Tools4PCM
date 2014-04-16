@@ -39,14 +39,13 @@ public class ValidateHandler implements ClickHandler{
 	DynamicForm form;
 	DynamicForm form1;
 	TabSet theTabs;
-	Tab item1;
-	public ValidateHandler(DynamicForm form, DynamicForm form1, TabSet theTabs, Tab item1,
+	Tab item;
+	public ValidateHandler(DynamicForm form, DynamicForm form1, TabSet theTabs, 
 			GreetingServiceAsync greetingService) {
 		super();
 		this.form = form;
 		this.form1 = form1;
 		this.theTabs = theTabs;
-		this.item1 = item1;
 		this.greetingService = greetingService;
 	}
 
@@ -56,13 +55,12 @@ public class ValidateHandler implements ClickHandler{
 	public void onClick(ClickEvent event) {
 		boolean res = form1.validate();
 
-		ExperimentDataCellSingleton.getInstance().getData().setFirstName(form.getValueAsString("firstName"));
-		ExperimentDataCellSingleton.getInstance().getData().setLastName(form.getValueAsString("lastName"));
-		ExperimentDataCellSingleton.getInstance().getData().setMail(form1.getValueAsString("email"));
+		ExperimentDataCellSingleton.getData().setFirstName(form.getValueAsString("firstName"));
+		ExperimentDataCellSingleton.getData().setLastName(form.getValueAsString("lastName"));
+		ExperimentDataCellSingleton.getData().setMail(form1.getValueAsString("email"));
 		System.err.println(form.getValueAsString("firstName"));
 		
 		if (res) {
-			theTabs.selectTab(item1);
 			final VLayout vLayoutmask = new VLayout();
 			vLayoutmask.setAutoHeight();
 			vLayoutmask.setAutoWidth();
@@ -91,6 +89,16 @@ public class ValidateHandler implements ClickHandler{
 						public void onSuccess(
 								List<Matrix> result) {
 
+							for(Matrix res : result){
+								
+								Tab item1 = new Tab("Experiment" + res.getId());
+								theTabs.addTab(item1, theTabs.getTabs().length-1);
+								
+								theTabs.selectTab(item1);
+
+							
+							
+							
 							final CubeGrid cubeGrid = new CubeGrid()
 							{  
 								@Override
@@ -108,7 +116,8 @@ public class ValidateHandler implements ClickHandler{
 					                   style = "color:green"; // entire row changed to green if one column in this row contain a specific value
 					               }*/
 					               
-					               if( ExperimentDataCellSingleton.getInstance().getDatasKeys().contains(((MatrixCell)super.getCellRecord(rowNum,colNum)).getCell()))
+					               
+					               if(super.getCellRecord(rowNum,colNum) != null  && ExperimentDataCellSingleton.getInstance(((MatrixCell)super.getCellRecord(rowNum,colNum)).getMatrixId()).getDatasKeys().contains(((MatrixCell)super.getCellRecord(rowNum,colNum)).getCell()))
 					               		style = "color:green";
 					               return style;
 					           }
@@ -118,11 +127,11 @@ public class ValidateHandler implements ClickHandler{
 							// in order to enable charting, the
 							// Drawing module must be
 							// present
-							if (SC.hasDrawing()) {
-								cubeGrid.setEnableCharting(true);
-							}
+							//if (SC.hasDrawing()) {
+							//	cubeGrid.setEnableCharting(true);
+							//}
 							cubeGrid.setData(MatrixCellData
-									.getData(result));
+									.getData(res));
 
 							cubeGrid.setWidth100();
 							cubeGrid.setHeight100();
@@ -152,25 +161,16 @@ public class ValidateHandler implements ClickHandler{
 							cubeGrid.setColumnFacets("product");
 
 							
+							
+							/*
 							cubeGrid.addCellSelectionChangedHandler(new CellSelectionChangedHandler() {
 
 								@Override
 								public void onCellSelectionChanged(
 										CellSelectionChangedEvent event) {
-									ExperimentDataCellSingleton.getInstance().getSelectedCell().clear();						
-
-									for (int i =0;i< event
-											.getCellList().length;i++)
-									{
-										ExperimentDataCellSingleton.getInstance().getSelectedCell().add(		
-											
-											((MatrixCell)cubeGrid.getCellRecord(event
-												.getCellList()[i][0], event
-												.getCellList()[i][1])).getCell());
-									}
-									
+																		
 								}
-							});
+							});*/
 
 							/*
 							 * Window.alert(""+cubeGrid.
@@ -188,14 +188,25 @@ public class ValidateHandler implements ClickHandler{
 								@Override
 								public void onCellContextClick(
 										CellContextClickEvent event) {
-									// TODO Auto-generated
-									// method stub
 
+
+									ExperimentDataCellSingleton.getInstance(((MatrixCell)cubeGrid.getSelectedCells()[0]).getMatrixId()).getSelectedCell().clear();						
+
+									
+									for (int i =0;i< cubeGrid.getSelectedCells().length;i++)
+									{
+
+										ExperimentDataCellSingleton.getInstance(((MatrixCell)cubeGrid.getSelectedCells()[i]).getMatrixId()).getSelectedCell().add(		
+											
+											((MatrixCell)cubeGrid.getSelectedCells()[i]).getCell());
+									}
+
+									
+									
 									Menu m = new Menu();
 									final MenuItem hangupItem = new MenuItem(
 											"Validate", GWT.getHostPageBaseURL()+"/images/icons/16/approved.png");
 									
-									System.err.println(GWT.getHostPageBaseURL());
 									
 									
 //									hangupItem.setIcon(new Img("icons/16/approved.png").);
@@ -211,7 +222,7 @@ public class ValidateHandler implements ClickHandler{
 											.addClickHandler(new com.smartgwt.client.widgets.menu.events.ClickHandler() {
 												public void onClick(
 														MenuItemClickEvent event) {
-													ExperimentDataCellSingleton.getInstance().validate();
+													ExperimentDataCellSingleton.getInstance(((MatrixCell)cubeGrid.getSelectedCells()[0]).getMatrixId()).validate();
 /*													SC.confirm(
 															"Are you sure ? ",
 															new BooleanCallback() {
@@ -244,10 +255,12 @@ public class ValidateHandler implements ClickHandler{
 							// cubeGrid.getContextMenu().addItem(hangupItem);
 							// cubeGrid.draw();
 							item1.setPane(cubeGrid);
+							}
 							vLayoutmask.destroy();
 							vLayoutmask.hide();
 							c.hide();
 							c.destroy();
+							
 
 						}
 
@@ -257,7 +270,7 @@ public class ValidateHandler implements ClickHandler{
 
 						}
 					});
-
+					
 		}
 	}
 }

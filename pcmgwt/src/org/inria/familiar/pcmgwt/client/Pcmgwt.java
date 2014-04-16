@@ -62,8 +62,7 @@ public class Pcmgwt implements EntryPoint {
 
 		Tab item = new Tab();
 		item.setTitle("Contact");
-		final Tab item1 = new Tab();
-		item1.setTitle("Experiment");
+	
 
 		VLayout layout1 = new VLayout();
 
@@ -119,7 +118,7 @@ public class Pcmgwt implements EntryPoint {
 		IButton validateButton = new IButton();
 		validateButton.setTitle("Start");
 		validateButton
-				.addClickHandler(new ValidateHandler(form,form1, theTabs, item1, greetingService));
+				.addClickHandler(new ValidateHandler(form,form1, theTabs, greetingService));
 		VLayout vLayout = new VLayout();
 		vLayout.setMembersMargin(10);
 		vLayout.addMember(form);
@@ -129,7 +128,7 @@ public class Pcmgwt implements EntryPoint {
 		// vLayout.draw();
 		item.setPane(vLayout);
 
-		theTabs.setTabs(item, item1, item2);
+		theTabs.setTabs(item, item2);
 
 		IButton submit = new IButton();
 		submit.setTitle("Submit");
@@ -137,9 +136,17 @@ public class Pcmgwt implements EntryPoint {
 
 			@Override
 			public void onClick(ClickEvent event) {
-				com.google.gwt.user.client.ui.Anchor h = HTML5Download.get().generateTextDownloadLink(ExperimentDataCellSingleton.getInstance().toCsv(), "DownloadData.txt", "DownloadExperimentalData");
 				
-				greetingService.createExperimentdata(ExperimentDataCellSingleton.getInstance().getData(), ExperimentDataCellSingleton.getInstance().getDatas(), new AsyncCallback<Boolean>() {
+				StringBuffer fileContent =new StringBuffer();
+				for (String s : ExperimentDataCellSingleton.getInstances().keySet()){
+					fileContent.append(ExperimentDataCellSingleton.getInstance(s).toCsv());
+					fileContent.append("\n\n");
+				}				
+				
+				com.google.gwt.user.client.ui.Anchor h = HTML5Download.get().generateTextDownloadLink(fileContent.toString(), "DownloadData.txt", "Download");
+				
+				for (String s : ExperimentDataCellSingleton.getInstances().keySet()){
+				greetingService.createExperimentdata(ExperimentDataCellSingleton.getInstance(s).getData(), ExperimentDataCellSingleton.getInstance(s).getDatas(), new AsyncCallback<Boolean>() {
 
 					@Override
 					public void onFailure(Throwable caught) {
@@ -153,6 +160,7 @@ public class Pcmgwt implements EntryPoint {
 						System.err.println("data saved");
 					}
 				});
+				}
 				
 				final Window winModal = new Window();  
 		        winModal.setWidth(250);  

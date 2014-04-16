@@ -15,12 +15,13 @@ public class Cell extends AbstractCell implements Serializable{
 	public void setConstraint(Constraint constraint) {
 		this.constraint = constraint;
 	}
-	public Cell(int x, int y, String value,Constraint constraint) {
+	public Cell(int x, int y, String value,Constraint constraint,String matrixId) {
 		super();
 		this.x = x;
 		this.y = y;
 		this.value = value;
 		this.constraint = constraint;
+		this.matrixId = matrixId;
 	}
 	public Cell() {
 		

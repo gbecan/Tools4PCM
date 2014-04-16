@@ -2,14 +2,15 @@ package org.inria.familiar.pcmgwt.client;
   
 import org.inria.familiar.pcmgwt.shared.Cell;
 
+import com.smartgwt.client.widgets.cube.CellRecord;
 import com.smartgwt.client.widgets.grid.ListGridRecord;
   
 /** 
  * ProductRevenue record class. 
  */  
-public class MatrixCell extends ListGridRecord {  
+public class MatrixCell extends CellRecord {  
   
-    public MatrixCell(String product, String feature, String value,Cell obj, int row, int column) {  
+    public MatrixCell(String product, String feature, String value,Cell obj, int row, int column,String matrixId) {  
     	setRow(row);
     	setColumn(column);
     	
@@ -17,6 +18,7 @@ public class MatrixCell extends ListGridRecord {
     	setProduct(product);
     	setValue(value);  
     	setCell(obj);
+    	setMatrixId(matrixId);
     }  
     
     public void setCell(Cell obj) {
@@ -35,6 +37,15 @@ public class MatrixCell extends ListGridRecord {
 	      setAttribute("product", product);  
 	}
 
+
+	public String getMatrixId() {
+        return getAttributeAsString("matrixId");  
+	}
+
+	public void setMatrixId(String matrixId) {
+	      setAttribute("matrixId", matrixId);  
+	}
+	
 	public String getFeature() {
         return getAttributeAsString("feature");  
 	}

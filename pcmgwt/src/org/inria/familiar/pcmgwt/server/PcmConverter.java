@@ -42,13 +42,11 @@ public class PcmConverter extends PcmmmSwitch{
 	
 	@Override
 	public Object caseMatrix(Matrix object) {
-		m = new org.inria.familiar.pcmgwt.shared.Matrix(object.getName());
+		m = new org.inria.familiar.pcmgwt.shared.Matrix(object.getName(),object.getId());
 		for (Cell c : 	object.getCells()){
 			doSwitch(c);
 		}
-		
 		return m;
-		
 	}
 	
 
@@ -66,7 +64,7 @@ public class PcmConverter extends PcmmmSwitch{
 	public Object caseValuedCell(ValuedCell object) {
 		
 		Constraint cons = (Constraint) doSwitch(object.getInterpretation());
-		org.inria.familiar.pcmgwt.shared.Cell c = new org.inria.familiar.pcmgwt.shared.Cell(object.getColumn(),object.getRow(),object.getVerbatim(),cons );
+		org.inria.familiar.pcmgwt.shared.Cell c = new org.inria.familiar.pcmgwt.shared.Cell(object.getColumn(),object.getRow(),object.getVerbatim(),cons ,m.getId());
 		m.getCells().add(c);
 		return super.caseValuedCell(object);
 	}

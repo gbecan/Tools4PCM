@@ -52,16 +52,19 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
 		rs.getPackageRegistry().put(PcmmmPackage.eINSTANCE.getNsURI(),
 				PcmmmPackage.eINSTANCE);
 		
-		URI uri = URI.createFileURI("Comparison_of_Nikon_DSLR_cameras.pcm");
+		URI uri = URI.createFileURI("Comparison_of_3D_computer_graphics_software.pcm");
 
+//		URI uri = URI.createFileURI("Comparison_of_3D_computer_graphics_software.pcm");
 		
 		
 		Resource r = rs.getResource(uri, true);
-		System.err.println(r.getContents().get(0));
+		System.err.println("loaded model " +  r.getContents().get(0));
 
 		PcmConverter convert = new PcmConverter();
 		convert.doSwitch(r.getContents().get(0));
-
+		
+		
+		System.err.println(convert.matrices.size());
 		return convert.matrices;
 
 	}
@@ -76,6 +79,8 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
 		data.getCells().clear();
 		data.getCells().addAll(datas);
 		manager.persist(data);
+		
+		
 		
 		tx.commit();
 		

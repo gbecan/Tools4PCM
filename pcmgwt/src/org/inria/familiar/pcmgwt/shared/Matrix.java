@@ -28,14 +28,22 @@ public class Matrix implements Serializable{
 	}
 	String name;
 	
+	String id;
 
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public Matrix(){
 		
 	}
 	
-	public Matrix(String name) {
+	public Matrix(String name,String id) {
 		super();
 		this.name = name;
+		this.id= id;
 	}
 	public List<Header> getHeaders() {
 		return headers;

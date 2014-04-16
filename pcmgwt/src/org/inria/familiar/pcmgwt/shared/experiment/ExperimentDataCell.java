@@ -23,6 +23,8 @@ public class ExperimentDataCell implements Serializable {
 
 	int row, column;
 	
+	String matriceId;
+	
 	boolean validate;
 	
 	boolean noInterpretation=false;
@@ -112,12 +114,23 @@ public class ExperimentDataCell implements Serializable {
 
 
 
+
+	public String getMatriceId() {
+		return matriceId;
+	}
+
+	public void setMatriceId(String matriceId) {
+		this.matriceId = matriceId;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + column;
 		result = prime * result + (int) (id ^ (id >>> 32));
+		result = prime * result
+				+ ((matriceId == null) ? 0 : matriceId.hashCode());
 		result = prime * result + ((newType == null) ? 0 : newType.hashCode());
 		result = prime * result + (noInterpretation ? 1231 : 1237);
 		result = prime * result + ((remarks == null) ? 0 : remarks.hashCode());
@@ -139,6 +152,11 @@ public class ExperimentDataCell implements Serializable {
 			return false;
 		if (id != other.id)
 			return false;
+		if (matriceId == null) {
+			if (other.matriceId != null)
+				return false;
+		} else if (!matriceId.equals(other.matriceId))
+			return false;
 		if (newType != other.newType)
 			return false;
 		if (noInterpretation != other.noInterpretation)
@@ -158,8 +176,9 @@ public class ExperimentDataCell implements Serializable {
 	@Override
 	public String toString() {
 		return "ExperimentDataCell [id=" + id + ", row=" + row + ", column="
-				+ column + ", validate=" + validate + ", remarks=" + remarks
-				+ "]";
+				+ column + ", matriceId=" + matriceId + ", validate="
+				+ validate + ", noInterpretation=" + noInterpretation
+				+ ", newType=" + newType + ", remarks=" + remarks + "]";
 	}
 
 }

@@ -73,11 +73,11 @@ public class CellContextMenuWidget implements com.smartgwt.client.widgets.menu.e
 			@Override
 			public void onClick(ClickEvent event) {
 				if ("Select an existing constraint".equals(radioGroupItem.getValue())){
-					ExperimentDataCellSingleton.getInstance().setType(Type.valueOf(cbItem.getValueAsString()));
+					ExperimentDataCellSingleton.getInstance(ExperimentDataCellSingleton.getSelectedCell().get(0).getMatrixId()).setType(Type.valueOf(cbItem.getValueAsString()));
 				}else if("Add your own constraint".equals(radioGroupItem.getValue())){
-					ExperimentDataCellSingleton.getInstance().setRemark(form.getValueAsString("OwnIntepretation"));
+					ExperimentDataCellSingleton.getInstance(ExperimentDataCellSingleton.getSelectedCell().get(0).getMatrixId()).setRemark(form.getValueAsString("OwnIntepretation"));
 				}else{
-					ExperimentDataCellSingleton.getInstance().noInterpretation();
+					ExperimentDataCellSingleton.getInstance(ExperimentDataCellSingleton.getSelectedCell().get(0).getMatrixId()).noInterpretation();
 				}
 				
 				winModal.destroy(); 
