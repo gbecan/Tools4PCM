@@ -261,6 +261,8 @@ public class ValidateHandler implements ClickHandler{
 							c.hide();
 							c.destroy();
 							
+							theTabs.selectTab(1);
+							
 
 						}
 
