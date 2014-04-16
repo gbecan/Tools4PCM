@@ -53,9 +53,37 @@ class PCMNormalizer {
   }
   
   /**
-   * Add missing cells to create a rectangular matrix
+   * Add missing cells to create a rectangular matrix and duplicate cell with row/colspan
    */
   def normalizeMatrix(matrix : Matrix) {
+    // Duplicate cells with rowspan or colspan
+    val newCells = for (cell <- matrix.getCells()) yield {
+      
+      val duplicatedCells = for (rowShift <- 0 until cell.getRowspan(); 
+      columnShift <- 0 until cell.getColspan() 
+      if (rowShift != 0 || columnShift != 0) ) yield {
+    	  val row = cell.getRow() + rowShift
+    	  val column = cell.getColumn() + columnShift
+        
+    	  val duplicatedCell = PcmmmFactory.eINSTANCE.createExtra() // FIXME : should copy with same type
+	      duplicatedCell.setName(cell.getName() + " d(" + row + "," + column + ")")
+	      duplicatedCell.setVerbatim(cell.getVerbatim())
+	      duplicatedCell.setRow(row)
+	      duplicatedCell.setColumn(column)
+	      duplicatedCell.setRowspan(1)
+	      duplicatedCell.setColspan(1)
+	      duplicatedCell.setColspan(1)
+	      duplicatedCell
+      }
+      
+      
+      cell.setRowspan(1)
+      cell.setColspan(1)
+      duplicatedCells.toList
+    }
+    
+    matrix.getCells().addAll(newCells.reduceLeft(_ ::: _))
+    
     // Get all existing cell positions
     val cellPositions = matrix.getCells().flatMap( c =>
       		for (row <- c.getRow until c.getRow + c.getRowspan;

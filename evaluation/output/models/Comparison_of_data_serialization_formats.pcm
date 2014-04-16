@@ -69,7 +69,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="X.680 series of ITU-T Recommendations" verbatim="X.680 series of ITU-T Recommendations" concept="//@concepts.81"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="2,5: yes (ber, der, per, oer, or custom via ecn)" verbatim="Yes&#xA;(BER, DER, PER, OER, or custom via ECN)" row="2" rowspan="1" column="5" colspan="1" concepts="//@concepts.83 //@concepts.85 //@concepts.82 //@concepts.86 //@concepts.84" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.4">
+    <cells xsi:type="pcmmm:ValuedCell" name="2,5: yes (ber, der, per, oer, or custom via ecn)" verbatim="Yes&#xA;(BER, DER, PER, OER, or custom via ECN)" row="2" rowspan="1" column="5" colspan="1" concepts="//@concepts.86 //@concepts.84 //@concepts.82 //@concepts.83 //@concepts.85" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.4">
       <interpretation xsi:type="pcmmm:Partial">
         <condition xsi:type="pcmmm:And">
           <contraints xsi:type="pcmmm:VariabilityConceptRef" name="BER" verbatim="BER" concept="//@concepts.82"/>
@@ -406,7 +406,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="10,6: yes" verbatim="Yes" row="10" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.5">
       <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="10,7: yes (json pointer (rfc 6901); alternately: jsonpat" verbatim="Yes&#xA;(JSON Pointer (RFC 6901);&#xA;alternately:&#xA;JSONPath, JPath, JSPON, json:select())" row="10" rowspan="1" column="7" colspan="1" concepts="//@concepts.127 //@concepts.130 //@concepts.125 //@concepts.128 //@concepts.129 //@concepts.126" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.6">
+    <cells xsi:type="pcmmm:ValuedCell" name="10,7: yes (json pointer (rfc 6901); alternately: jsonpat" verbatim="Yes&#xA;(JSON Pointer (RFC 6901);&#xA;alternately:&#xA;JSONPath, JPath, JSPON, json:select())" row="10" rowspan="1" column="7" colspan="1" concepts="//@concepts.129 //@concepts.126 //@concepts.125 //@concepts.127 //@concepts.128 //@concepts.130" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.6">
       <interpretation xsi:type="pcmmm:Partial">
         <condition xsi:type="pcmmm:Partial">
           <condition xsi:type="pcmmm:And">
@@ -423,7 +423,7 @@
         <argument xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="10,8: partial (json schema proposal, kwalify, rx, itemsc" verbatim="Partial&#xA;(JSON Schema Proposal, Kwalify, Rx, Itemscript Schema)" row="10" rowspan="1" column="8" colspan="1" concepts="//@concepts.89 //@concepts.132 //@concepts.134 //@concepts.131 //@concepts.133" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.7">
+    <cells xsi:type="pcmmm:ValuedCell" name="10,8: partial (json schema proposal, kwalify, rx, itemsc" verbatim="Partial&#xA;(JSON Schema Proposal, Kwalify, Rx, Itemscript Schema)" row="10" rowspan="1" column="8" colspan="1" concepts="//@concepts.89 //@concepts.132 //@concepts.131 //@concepts.134 //@concepts.133" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.7">
       <interpretation xsi:type="pcmmm:Partial">
         <condition xsi:type="pcmmm:And">
           <contraints xsi:type="pcmmm:VariabilityConceptRef" name="JSON Schema Proposal" verbatim="JSON Schema Proposal" concept="//@concepts.131"/>
@@ -1231,7 +1231,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="and Oren Ben-Kiki" verbatim="and Oren Ben-Kiki" concept="//@concepts.211"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="32,2: c, java, perl, python, ruby, email, html, mime, ur" verbatim="C, Java, Perl, Python, Ruby, Email, HTML, MIME, URI, XML, SAX, SOAP, JSON" row="32" rowspan="1" column="2" colspan="1" concepts="//@concepts.205 //@concepts.212 //@concepts.215 //@concepts.217 //@concepts.214 //@concepts.213 //@concepts.19 //@concepts.171 //@concepts.39 //@concepts.216 //@concepts.150 //@concepts.207 //@concepts.218" myHeaderProducts="//@concepts.41" myHeaderFeatures="//@concepts.1">
+    <cells xsi:type="pcmmm:ValuedCell" name="32,2: c, java, perl, python, ruby, email, html, mime, ur" verbatim="C, Java, Perl, Python, Ruby, Email, HTML, MIME, URI, XML, SAX, SOAP, JSON" row="32" rowspan="1" column="2" colspan="1" concepts="//@concepts.150 //@concepts.217 //@concepts.215 //@concepts.171 //@concepts.207 //@concepts.214 //@concepts.205 //@concepts.216 //@concepts.39 //@concepts.212 //@concepts.218 //@concepts.213 //@concepts.19" myHeaderProducts="//@concepts.41" myHeaderFeatures="//@concepts.1">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C" verbatim="C" concept="//@concepts.150"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Java" verbatim="Java" concept="//@concepts.212"/>
@@ -1664,7 +1664,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="OER: as 1 byte" verbatim="OER: as 1 byte" concept="//@concepts.231"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="1,3: integer; ber: variable-length big-endian binary re" verbatim="INTEGER; BER: variable-length big-endian binary representation (up to 2^(2^1024) bits); PER Unaligned: a fixed number of bits if the integer type has a finite range; a variable number of bits otherwise; PER Aligned: a fixed number of bits if the integer type has a finite range and the size of the range is less than 65536; a variable number of octets otherwise; OER: one, two, or four octets (either signed or unsigned) if the integer type has a finite range that fits in that number of octets; a variable number of octets otherwise" row="1" rowspan="1" column="3" colspan="1" concepts="//@concepts.234 //@concepts.235 //@concepts.233 //@concepts.240 //@concepts.237 //@concepts.239 //@concepts.243 //@concepts.238 //@concepts.232 //@concepts.242 //@concepts.241 //@concepts.236" myHeaderProducts="//@concepts.71" myHeaderFeatures="//@concepts.66">
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: integer; ber: variable-length big-endian binary re" verbatim="INTEGER; BER: variable-length big-endian binary representation (up to 2^(2^1024) bits); PER Unaligned: a fixed number of bits if the integer type has a finite range; a variable number of bits otherwise; PER Aligned: a fixed number of bits if the integer type has a finite range and the size of the range is less than 65536; a variable number of octets otherwise; OER: one, two, or four octets (either signed or unsigned) if the integer type has a finite range that fits in that number of octets; a variable number of octets otherwise" row="1" rowspan="1" column="3" colspan="1" concepts="//@concepts.233 //@concepts.240 //@concepts.232 //@concepts.241 //@concepts.243 //@concepts.239 //@concepts.235 //@concepts.237 //@concepts.234 //@concepts.242 //@concepts.236 //@concepts.238" myHeaderProducts="//@concepts.71" myHeaderFeatures="//@concepts.66">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:And">
           <contraints xsi:type="pcmmm:VariabilityConceptRef" name="INTEGER" verbatim="INTEGER" concept="//@concepts.232"/>
@@ -1691,7 +1691,7 @@
         </contraints>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="1,4: real; base-10 real values are represented as chara" verbatim="REAL; base-10 real values are represented as character strings in ISO 6093 format; binary real values are represented in a binary format that includes the mantissa, the base (2, 8, or 16), and the exponent; the special values NaN, -INF, +INF, and negative zero are also supported" row="1" rowspan="1" column="4" colspan="1" concepts="//@concepts.250 //@concepts.251 //@concepts.247 //@concepts.244 //@concepts.246 //@concepts.245 //@concepts.249 //@concepts.252 //@concepts.253 //@concepts.248" myHeaderProducts="//@concepts.71" myHeaderFeatures="//@concepts.67">
+    <cells xsi:type="pcmmm:ValuedCell" name="1,4: real; base-10 real values are represented as chara" verbatim="REAL; base-10 real values are represented as character strings in ISO 6093 format; binary real values are represented in a binary format that includes the mantissa, the base (2, 8, or 16), and the exponent; the special values NaN, -INF, +INF, and negative zero are also supported" row="1" rowspan="1" column="4" colspan="1" concepts="//@concepts.244 //@concepts.247 //@concepts.251 //@concepts.253 //@concepts.249 //@concepts.252 //@concepts.246 //@concepts.245 //@concepts.248 //@concepts.250" myHeaderProducts="//@concepts.71" myHeaderFeatures="//@concepts.67">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:And">
           <contraints xsi:type="pcmmm:VariabilityConceptRef" name="REAL" verbatim="REAL" concept="//@concepts.244"/>
@@ -1710,7 +1710,7 @@
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="and negative zero are also supported" verbatim="and negative zero are also supported" concept="//@concepts.253"/>
       </interpretation>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="1,5: multiple valid types (visiblestring, printablestri" verbatim="Multiple valid types (VisibleString, PrintableString, GeneralString, UniversalString, UTF8String)" row="1" rowspan="1" column="5" colspan="1" concepts="//@concepts.257 //@concepts.256 //@concepts.258 //@concepts.254 //@concepts.259 //@concepts.255" myHeaderProducts="//@concepts.71" myHeaderFeatures="//@concepts.68">
+    <cells xsi:type="pcmmm:ValuedCell" name="1,5: multiple valid types (visiblestring, printablestri" verbatim="Multiple valid types (VisibleString, PrintableString, GeneralString, UniversalString, UTF8String)" row="1" rowspan="1" column="5" colspan="1" concepts="//@concepts.254 //@concepts.259 //@concepts.258 //@concepts.255 //@concepts.256 //@concepts.257" myHeaderProducts="//@concepts.71" myHeaderFeatures="//@concepts.68">
       <interpretation xsi:type="pcmmm:Partial">
         <condition xsi:type="pcmmm:And">
           <contraints xsi:type="pcmmm:VariabilityConceptRef" name="VisibleString" verbatim="VisibleString" concept="//@concepts.254"/>

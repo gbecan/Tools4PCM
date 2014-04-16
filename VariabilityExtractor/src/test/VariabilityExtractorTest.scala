@@ -29,6 +29,7 @@ import uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein
 import extractor.DomainExtractor
 import pcmmm.Enum
 import pcmmm.PcmmmFactory
+import org.eclipse.emf.ecore.util.EcoreUtil
 
 class VariabilityExtractorTest extends FlatSpec with Matchers {
 
@@ -85,10 +86,10 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
     	  val domain = headerFeature.getDomain().asInstanceOf[Enum]
     	  
     	  val domainExtractor = new DomainExtractor
-    	  val values = domainExtractor.listValues(valuedCell.getInterpretation()).map(_.getName())
+    	  val values = domainExtractor.listValues(valuedCell.getInterpretation())
     	  
     	  for (value <- values if !domain.getValues().contains(value)) {
-    		warnings ::= (valuedCell, value)
+    		warnings ::= (valuedCell, value.getVerbatim())
     	  }
       }
 	warnings
@@ -97,9 +98,15 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
   def setWarningAsInconsistentCell(warnings : List[(ValuedCell, String)]) {
 	for (warning <- warnings) {
 		val cell = warning._1
+		// Remove old interpretation
+		val oldInterpretation = cell.getInterpretation()
+		EcoreUtil.delete(oldInterpretation,true)
+		
+		// Create new interpretation
 		val interpretation = PcmmmFactory.eINSTANCE.createInconsistent()
-		interpretation.setName(cell.getVerbatim())
+		interpretation.setName("Warning: " +  cell.getVerbatim())
 		cell.setInterpretation(interpretation)
+		
 	}
   } 
   
@@ -175,12 +182,14 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	  
 	  // Compute warnings
 	  val warnings = computeWarnings(pcm)
+	  warnings.foreach(warning => 
+	    println("WARNING : \"" + warning._2 + 
+    		      "\" in cell (" + 
+    		      warning._1.getRow() + "," + warning._1.getColumn() + 
+    		      ") is inconsistent"))
 	  setWarningAsInconsistentCell(warnings)
-	  
-	  // Save model
-	  savePCMModel(pcm, file.getName())
-	  
-	  // Validate model
+	 
+	   // Validate model
 	  val diagnostic = Diagnostician.INSTANCE.validate(pcm)
 	  if (diagnostic.getSeverity() == Diagnostic.OK) {
 		println("OK")
@@ -189,6 +198,11 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 	    println(diagnostic)
 		println("NOT VALID")
 	  }
+	  
+	  // Save model
+	  savePCMModel(pcm, file.getName())
+	  
+	 
 	  
 	  // Compute number of interpreted cells
 	  for (matrix <- pcm.getMatrices()) {
@@ -199,13 +213,7 @@ class VariabilityExtractorTest extends FlatSpec with Matchers {
 			      " (" + interpretedCells.size + "/" + valuedCells.size + ")")
 		  }
 	  }
-      
-      // Display warnings
-	  warnings.foreach(warning => 
-	    println("WARNING : \"" + warning._2 + 
-    		      "\" in cell (" + 
-    		      warning._1.getRow() + "," + warning._1.getColumn() + 
-    		      ") is inconsistent"))
+
   }
   
   it should "run on the test set" in {

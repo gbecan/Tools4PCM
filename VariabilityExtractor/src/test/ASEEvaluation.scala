@@ -5,6 +5,7 @@ import extractor.VariabilityExtractor
 import java.io.File
 import org.eclipse.emf.ecore.util.Diagnostician
 import org.eclipse.emf.common.util.Diagnostic
+import scala.collection.JavaConversions._
 
 object ASEEvaluation {
 
@@ -29,7 +30,7 @@ object ASEEvaluation {
 	  
     	val variabilityExtractor = new VariabilityExtractor
 	
-	  	
+    	var nbCells = 0
     	for (file <- files) {
 		  // Load model
 		  println(file.getName())
@@ -58,7 +59,14 @@ object ASEEvaluation {
 		  
 		  val htmlPath = OUTPUT_DIR_HTML + name + HTML_EXT
 		  VariabilityExtractor.exportPCM2HTML(pcm, htmlPath)
-	  }
+		  
+		  // Stats
+		  for (matrix <- pcm.getMatrices()) {
+			  nbCells += matrix.getCells().size()
+		  }
+    	}
+    	
+    	println("Total number of cells: " + nbCells)
 	  
     }
 }

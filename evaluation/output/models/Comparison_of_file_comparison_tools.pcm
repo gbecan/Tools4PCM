@@ -147,7 +147,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="4,1: at&amp;t" verbatim="AT&amp;T" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.168" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.0">
       <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="AT&amp;T" verbatim="AT&amp;T" concept="//@concepts.168"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="4,2: bsd 3-clause, bsd 4-clause, cddl, gpl, proprietary" verbatim="BSD 3-clause, BSD 4-clause, CDDL, GPL, Proprietary" row="4" rowspan="1" column="2" colspan="1" concepts="//@concepts.171 //@concepts.165 //@concepts.154 //@concepts.170 //@concepts.169" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.1">
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: bsd 3-clause, bsd 4-clause, cddl, gpl, proprietary" verbatim="BSD 3-clause, BSD 4-clause, CDDL, GPL, Proprietary" row="4" rowspan="1" column="2" colspan="1" concepts="//@concepts.154 //@concepts.165 //@concepts.169 //@concepts.170 //@concepts.171" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.1">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="BSD 3-clause" verbatim="BSD 3-clause" concept="//@concepts.169"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="BSD 4-clause" verbatim="BSD 4-clause" concept="//@concepts.170"/>
@@ -1510,7 +1510,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="1,5: yes" verbatim="Yes" row="1" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.70" myHeaderFeatures="//@concepts.68">
       <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="1,6: xml, html, csv, text, unix patch" verbatim="XML, HTML, CSV, Text, Unix Patch" row="1" rowspan="1" column="6" colspan="1" concepts="//@concepts.260 //@concepts.257 //@concepts.258 //@concepts.259 //@concepts.256" myHeaderProducts="//@concepts.70" myHeaderFeatures="//@concepts.69">
+    <cells xsi:type="pcmmm:ValuedCell" name="1,6: xml, html, csv, text, unix patch" verbatim="XML, HTML, CSV, Text, Unix Patch" row="1" rowspan="1" column="6" colspan="1" concepts="//@concepts.258 //@concepts.260 //@concepts.257 //@concepts.259 //@concepts.256" myHeaderProducts="//@concepts.70" myHeaderFeatures="//@concepts.69">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="XML" verbatim="XML" concept="//@concepts.256"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="HTML" verbatim="HTML" concept="//@concepts.257"/>
@@ -2025,7 +2025,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="2,2: " verbatim="" row="2" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.103" myHeaderFeatures="//@concepts.95">
       <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="2,3: svn, cvs, git, microsoft tfs, perforce, vss using " verbatim="SVN, CVS, Git, Microsoft TFS, Perforce, VSS using command line" row="2" rowspan="1" column="3" colspan="1" concepts="//@concepts.275 //@concepts.278 //@concepts.276 //@concepts.274 //@concepts.207 //@concepts.277" myHeaderProducts="//@concepts.103" myHeaderFeatures="//@concepts.96">
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: svn, cvs, git, microsoft tfs, perforce, vss using " verbatim="SVN, CVS, Git, Microsoft TFS, Perforce, VSS using command line" row="2" rowspan="1" column="3" colspan="1" concepts="//@concepts.277 //@concepts.276 //@concepts.275 //@concepts.278 //@concepts.274 //@concepts.207" myHeaderProducts="//@concepts.103" myHeaderFeatures="//@concepts.96">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SVN" verbatim="SVN" concept="//@concepts.274"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="CVS" verbatim="CVS" concept="//@concepts.275"/>
@@ -2128,7 +2128,7 @@
     <cells xsi:type="pcmmm:ValuedCell" name="6,2: yes" verbatim="Yes" row="6" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.107" myHeaderFeatures="//@concepts.95">
       <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
     </cells>
-    <cells xsi:type="pcmmm:ValuedCell" name="6,3: rcs, cvs, svn, mercurial, git (anything supported " verbatim="RCS, CVS, SVN, Mercurial, git (anything supported by Emacs' VC-mode)" row="6" rowspan="1" column="3" colspan="1" concepts="//@concepts.281 //@concepts.280 //@concepts.275 //@concepts.282 //@concepts.279 //@concepts.274" myHeaderProducts="//@concepts.107" myHeaderFeatures="//@concepts.96">
+    <cells xsi:type="pcmmm:ValuedCell" name="6,3: rcs, cvs, svn, mercurial, git (anything supported " verbatim="RCS, CVS, SVN, Mercurial, git (anything supported by Emacs' VC-mode)" row="6" rowspan="1" column="3" colspan="1" concepts="//@concepts.275 //@concepts.281 //@concepts.280 //@concepts.274 //@concepts.279 //@concepts.282" myHeaderProducts="//@concepts.107" myHeaderFeatures="//@concepts.96">
       <interpretation xsi:type="pcmmm:And">
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="RCS" verbatim="RCS" concept="//@concepts.279"/>
         <contraints xsi:type="pcmmm:VariabilityConceptRef" name="CVS" verbatim="CVS" concept="//@concepts.275"/>
