@@ -89,7 +89,9 @@ class ParserTest extends FlatSpec with Matchers {
      m.put("pcm", new XMIResourceFactoryImpl());
      val resSet = new ResourceSetImpl();
      val resource = resSet.createResource(URI.createURI(path));
-     resource.getContents().add(pcm.toPCMModel);
+     val pcmModel = pcm.toPCMModel
+     pcmModel.setName(title.replaceAll(" ", "_"))
+     resource.getContents().add(pcmModel);
      resource.save(Collections.EMPTY_MAP);
   }
 
