@@ -1,8 +1,5 @@
 package org.inria.familiar.pcmgwt.server;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.inria.familiar.pcmgwt.shared.Constraint;
 
 import pcmmm.And;
@@ -27,13 +24,15 @@ import pcmmm.XOr;
 import pcmmm.util.PcmmmSwitch;
 
 public class PcmConverter extends PcmmmSwitch{
-	List<org.inria.familiar.pcmgwt.shared.Matrix> matrices = new ArrayList<org.inria.familiar.pcmgwt.shared.Matrix>();
+	//List<org.inria.familiar.pcmgwt.shared.Matrix> matrices = new ArrayList<org.inria.familiar.pcmgwt.shared.Matrix>();
+	org.inria.familiar.pcmgwt.shared.PCM pcm = new org.inria.familiar.pcmgwt.shared.PCM();
 	org.inria.familiar.pcmgwt.shared.Matrix m;
 	
 	@Override
 	public Object casePCM(PCM object) {
+		pcm.setName(object.getName());
 		for (Matrix c : 	object.getMatrices()){
-			matrices.add((org.inria.familiar.pcmgwt.shared.Matrix) doSwitch(c));
+			pcm.getMatrix().add((org.inria.familiar.pcmgwt.shared.Matrix) doSwitch(c));
 		}
 		
 		return super.casePCM(object);

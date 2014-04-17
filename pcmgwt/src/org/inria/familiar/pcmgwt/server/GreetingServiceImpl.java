@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.inria.familiar.pcmgwt.client.GreetingService;
 import org.inria.familiar.pcmgwt.shared.Matrix;
+import org.inria.familiar.pcmgwt.shared.PCM;
 import org.inria.familiar.pcmgwt.shared.experiment.ExperimentData;
 import org.inria.familiar.pcmgwt.shared.experiment.ExperimentDataCell;
 
@@ -44,7 +45,7 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
 		manager = factory.createEntityManager();
 	}
 	
-	public List<Matrix> loadModel() {
+	public PCM loadModel() {
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(
 				"pcm", new XMIResourceFactoryImpl());
 
@@ -64,8 +65,7 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
 		convert.doSwitch(r.getContents().get(0));
 		
 		
-		System.err.println(convert.matrices.size());
-		return convert.matrices;
+		return convert.pcm;
 
 	}
 

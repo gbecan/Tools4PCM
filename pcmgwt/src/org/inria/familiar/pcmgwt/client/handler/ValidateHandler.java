@@ -7,6 +7,7 @@ import org.inria.familiar.pcmgwt.client.GreetingServiceAsync;
 import org.inria.familiar.pcmgwt.client.MatrixCell;
 import org.inria.familiar.pcmgwt.client.MatrixCellData;
 import org.inria.familiar.pcmgwt.shared.Matrix;
+import org.inria.familiar.pcmgwt.shared.PCM;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.Window;
@@ -83,13 +84,14 @@ public class ValidateHandler implements ClickHandler{
 			c.draw();
 			vLayoutmask.draw();
 			greetingService
-					.loadModel(new AsyncCallback<List<Matrix>>() {
+					.loadModel(new AsyncCallback<PCM>() {
 
 						@Override
 						public void onSuccess(
-								List<Matrix> result) {
+								PCM result) {
+							ExperimentDataCellSingleton.getData().setPcmName(result.getName());
 
-							for(Matrix res : result){
+							for(Matrix res : result.getMatrix()){
 								
 								Tab item1 = new Tab("Experiment" + res.getId());
 								theTabs.addTab(item1, theTabs.getTabs().length-1);
