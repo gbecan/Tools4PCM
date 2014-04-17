@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm" name="Demo">
+  <matrices id="null_0">
+    <cells xsi:type="pcmmm:Extra" name="Product/Feature" verbatim="Product/Feature" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="Type" verbatim="Type" rowspan="1" column="1" colspan="1" concept="//@concepts.0"/>
+    <cells xsi:type="pcmmm:Header" name="Number of doors" verbatim="Number of doors" rowspan="1" column="2" colspan="1" concept="//@concepts.1"/>
+    <cells xsi:type="pcmmm:Header" name="Available colors" verbatim="Available colors" rowspan="1" column="3" colspan="1" concept="//@concepts.2"/>
+    <cells xsi:type="pcmmm:Header" name="Automatic headlight" verbatim="Automatic headlight" rowspan="1" column="4" colspan="1" concept="//@concepts.3"/>
+    <cells xsi:type="pcmmm:Header" name="0 to 100 km/h" verbatim="0 to 100 km/h" rowspan="1" column="5" colspan="1" concept="//@concepts.4"/>
+    <cells xsi:type="pcmmm:Header" name="Car 1" verbatim="Car 1" row="1" rowspan="1" colspan="1" concept="//@concepts.5"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="4x4" verbatim="4x4" row="1" rowspan="1" column="1" colspan="1" concepts="//@concepts.11" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="4x4" verbatim="4x4" concept="//@concepts.11"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5" verbatim="5" row="1" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="5" confident="true" verbatim="5" value="5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="black, white, red" verbatim="black, white, red" row="1" rowspan="1" column="3" colspan="1" concepts="//@concepts.12 //@concepts.13 //@concepts.14" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="black" verbatim="black" concept="//@concepts.12"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="white" verbatim="white" concept="//@concepts.13"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="red" verbatim="red" concept="//@concepts.14"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="yes" verbatim="yes" row="1" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="yes" confident="true" verbatim="yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9.5" verbatim="9.5" row="1" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Double" name="9.5" confident="true" verbatim="9.5" value="9.5"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="Car 2" verbatim="Car 2" row="2" rowspan="1" colspan="1" concept="//@concepts.6"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="sedan" verbatim="sedan" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.15" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="sedan" verbatim="sedan" concept="//@concepts.15"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5" verbatim="5" row="2" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="5" confident="true" verbatim="5" value="5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="black, white, red, b" verbatim="black, white, red, blue" row="2" rowspan="1" column="3" colspan="1" concepts="//@concepts.12 //@concepts.13 //@concepts.14 //@concepts.16" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="black" verbatim="black" concept="//@concepts.12"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="white" verbatim="white" concept="//@concepts.13"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="red" verbatim="red" concept="//@concepts.14"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="blue" verbatim="blue" concept="//@concepts.16"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="no" verbatim="no" row="2" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="no" confident="true" verbatim="no"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6.3" verbatim="6.3" row="2" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Double" name="6.3" confident="true" verbatim="6.3" value="6.3"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="Car 3" verbatim="Car 3" row="3" rowspan="1" colspan="1" concept="//@concepts.7"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="sedan" verbatim="sedan" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.15" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="sedan" verbatim="sedan" concept="//@concepts.15"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5" verbatim="5" row="3" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="5" confident="true" verbatim="5" value="5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="grey" verbatim="grey" row="3" rowspan="1" column="3" colspan="1" concepts="//@concepts.17" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="grey" verbatim="grey" concept="//@concepts.17"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="yes" verbatim="yes" row="3" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="yes" confident="true" verbatim="yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5.6" verbatim="5.6" row="3" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Double" name="5.6" confident="true" verbatim="5.6" value="5.6"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="Car 4" verbatim="Car 4" row="4" rowspan="1" colspan="1" concept="//@concepts.8"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="city car" verbatim="city car" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.18" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="city car" verbatim="city car" concept="//@concepts.18"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3" verbatim="3" row="4" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="3" confident="true" verbatim="3" value="3"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="black, white, green" verbatim="black, white, green" row="4" rowspan="1" column="3" colspan="1" concepts="//@concepts.12 //@concepts.13 //@concepts.19" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="black" verbatim="black" concept="//@concepts.12"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="white" verbatim="white" concept="//@concepts.13"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="green" verbatim="green" concept="//@concepts.19"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="no" verbatim="no" row="4" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="no" confident="true" verbatim="no"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8.3" verbatim="8.3" row="4" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Double" name="8.3" confident="true" verbatim="8.3" value="8.3"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="Car 5" verbatim="Car 5" row="5" rowspan="1" colspan="1" concept="//@concepts.9"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="sport" verbatim="sport" row="5" rowspan="1" column="1" colspan="1" concepts="//@concepts.20" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="sport" verbatim="sport" concept="//@concepts.20"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3" verbatim="3" row="5" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="3" confident="true" verbatim="3" value="3"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="black, white" verbatim="black, white" row="5" rowspan="1" column="3" colspan="1" concepts="//@concepts.12 //@concepts.13" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="black" verbatim="black" concept="//@concepts.12"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="white" verbatim="white" concept="//@concepts.13"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="no" verbatim="no" row="5" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Boolean" name="no" confident="true" verbatim="no"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3.9" verbatim="3.9" row="5" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Double" name="3.9" confident="true" verbatim="3.9" value="3.9"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="Car 6" verbatim="Car 6" row="6" rowspan="1" colspan="1" concept="//@concepts.10"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="sedan" verbatim="sedan" row="6" rowspan="1" column="1" colspan="1" concepts="//@concepts.15" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="sedan" verbatim="sedan" concept="//@concepts.15"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="" verbatim="" row="6" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2 doors" verbatim="2 doors" row="6" rowspan="1" column="3" colspan="1" concepts="//@concepts.21" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="2 doors" verbatim="2 doors" concept="//@concepts.21"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="yes (premium version" verbatim="yes (premium version)" row="6" rowspan="1" column="4" colspan="1" concepts="//@concepts.22" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="premium version" verbatim="premium version" concept="//@concepts.22"/>
+        <argument xsi:type="pcmmm:Boolean" name="yes" confident="true" verbatim="yes" value="true"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="N/A" verbatim="N/A" row="6" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+  </matrices>
+  <concepts xsi:type="pcmmm:Feature" name="Type" myValuedCells="//@matrices.0/@cells.7 //@matrices.0/@cells.13 //@matrices.0/@cells.19 //@matrices.0/@cells.25 //@matrices.0/@cells.31 //@matrices.0/@cells.37" domain="//@domainCollection/@domains.0"/>
+  <concepts xsi:type="pcmmm:Feature" name="Number of doors" myValuedCells="//@matrices.0/@cells.8 //@matrices.0/@cells.14 //@matrices.0/@cells.20 //@matrices.0/@cells.26 //@matrices.0/@cells.32 //@matrices.0/@cells.38" domain="//@domainCollection/@domains.1"/>
+  <concepts xsi:type="pcmmm:Feature" name="Available colors" myValuedCells="//@matrices.0/@cells.9 //@matrices.0/@cells.15 //@matrices.0/@cells.21 //@matrices.0/@cells.27 //@matrices.0/@cells.33 //@matrices.0/@cells.39" domain="//@domainCollection/@domains.2"/>
+  <concepts xsi:type="pcmmm:Feature" name="Automatic headlight" myValuedCells="//@matrices.0/@cells.10 //@matrices.0/@cells.16 //@matrices.0/@cells.22 //@matrices.0/@cells.28 //@matrices.0/@cells.34 //@matrices.0/@cells.40" domain="//@domainCollection/@domains.3"/>
+  <concepts xsi:type="pcmmm:Feature" name="0 to 100 km/h" myValuedCells="//@matrices.0/@cells.11 //@matrices.0/@cells.17 //@matrices.0/@cells.23 //@matrices.0/@cells.29 //@matrices.0/@cells.35 //@matrices.0/@cells.41" domain="//@domainCollection/@domains.4"/>
+  <concepts xsi:type="pcmmm:Product" name="Car 1" myValuedCells="//@matrices.0/@cells.7 //@matrices.0/@cells.8 //@matrices.0/@cells.9 //@matrices.0/@cells.10 //@matrices.0/@cells.11"/>
+  <concepts xsi:type="pcmmm:Product" name="Car 2" myValuedCells="//@matrices.0/@cells.13 //@matrices.0/@cells.14 //@matrices.0/@cells.15 //@matrices.0/@cells.16 //@matrices.0/@cells.17"/>
+  <concepts xsi:type="pcmmm:Product" name="Car 3" myValuedCells="//@matrices.0/@cells.19 //@matrices.0/@cells.20 //@matrices.0/@cells.21 //@matrices.0/@cells.22 //@matrices.0/@cells.23"/>
+  <concepts xsi:type="pcmmm:Product" name="Car 4" myValuedCells="//@matrices.0/@cells.25 //@matrices.0/@cells.26 //@matrices.0/@cells.27 //@matrices.0/@cells.28 //@matrices.0/@cells.29"/>
+  <concepts xsi:type="pcmmm:Product" name="Car 5" myValuedCells="//@matrices.0/@cells.31 //@matrices.0/@cells.32 //@matrices.0/@cells.33 //@matrices.0/@cells.34 //@matrices.0/@cells.35"/>
+  <concepts xsi:type="pcmmm:Product" name="Car 6" myValuedCells="//@matrices.0/@cells.37 //@matrices.0/@cells.38 //@matrices.0/@cells.39 //@matrices.0/@cells.40 //@matrices.0/@cells.41"/>
+  <concepts xsi:type="pcmmm:Feature" name="4x4" constraints="//@matrices.0/@cells.7" domain="//@domainCollection/@domains.5"/>
+  <concepts xsi:type="pcmmm:Feature" name="black" constraints="//@matrices.0/@cells.9 //@matrices.0/@cells.15 //@matrices.0/@cells.27 //@matrices.0/@cells.33" domain="//@domainCollection/@domains.6"/>
+  <concepts xsi:type="pcmmm:Feature" name="white" constraints="//@matrices.0/@cells.9 //@matrices.0/@cells.15 //@matrices.0/@cells.27 //@matrices.0/@cells.33" domain="//@domainCollection/@domains.7"/>
+  <concepts xsi:type="pcmmm:Feature" name="red" constraints="//@matrices.0/@cells.9 //@matrices.0/@cells.15" domain="//@domainCollection/@domains.8"/>
+  <concepts xsi:type="pcmmm:Feature" name="sedan" constraints="//@matrices.0/@cells.13 //@matrices.0/@cells.19 //@matrices.0/@cells.37" domain="//@domainCollection/@domains.9"/>
+  <concepts xsi:type="pcmmm:Feature" name="blue" constraints="//@matrices.0/@cells.15" domain="//@domainCollection/@domains.10"/>
+  <concepts xsi:type="pcmmm:Feature" name="grey" constraints="//@matrices.0/@cells.21" domain="//@domainCollection/@domains.11"/>
+  <concepts xsi:type="pcmmm:Feature" name="city car" constraints="//@matrices.0/@cells.25" domain="//@domainCollection/@domains.12"/>
+  <concepts xsi:type="pcmmm:Feature" name="green" constraints="//@matrices.0/@cells.27" domain="//@domainCollection/@domains.13"/>
+  <concepts xsi:type="pcmmm:Feature" name="sport" constraints="//@matrices.0/@cells.31" domain="//@domainCollection/@domains.14"/>
+  <concepts xsi:type="pcmmm:Feature" name="2 doors" constraints="//@matrices.0/@cells.39" domain="//@domainCollection/@domains.15"/>
+  <concepts xsi:type="pcmmm:Feature" name="premium version" constraints="//@matrices.0/@cells.40" domain="//@domainCollection/@domains.16"/>
+  <domainCollection>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.13/@interpretation //@matrices.0/@cells.19/@interpretation //@matrices.0/@cells.37/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.8/@interpretation //@matrices.0/@cells.14/@interpretation //@matrices.0/@cells.20/@interpretation //@matrices.0/@cells.26/@interpretation //@matrices.0/@cells.32/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.9/@interpretation/@contraints.1 //@matrices.0/@cells.15/@interpretation/@contraints.1 //@matrices.0/@cells.27/@interpretation/@contraints.1 //@matrices.0/@cells.33/@interpretation/@contraints.1 //@matrices.0/@cells.9/@interpretation/@contraints.0 //@matrices.0/@cells.15/@interpretation/@contraints.0 //@matrices.0/@cells.27/@interpretation/@contraints.0 //@matrices.0/@cells.33/@interpretation/@contraints.0"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.10/@interpretation //@matrices.0/@cells.16/@interpretation //@matrices.0/@cells.22/@interpretation //@matrices.0/@cells.28/@interpretation //@matrices.0/@cells.34/@interpretation //@matrices.0/@cells.40/@interpretation/@argument"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+  </domainCollection>
+</pcmmm:PCM>
