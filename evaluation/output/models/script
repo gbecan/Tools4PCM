@@ -1,0 +1,3 @@
+#! /bin/bash
+for f in `ls -1`; do echo "models_0.add(\"$f\");" >> /tmp/toto; done
+
