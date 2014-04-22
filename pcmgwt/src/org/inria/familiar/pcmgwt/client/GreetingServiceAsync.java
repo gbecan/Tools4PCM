@@ -15,10 +15,11 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
  */
 public interface GreetingServiceAsync {
 
-	void loadModel(AsyncCallback<PCM> callback);
 
 	void createExperimentdata(ExperimentData data,
 			Collection<ExperimentDataCell> datas,
 			AsyncCallback<Boolean> callback);
+
+	void loadModel(boolean demo, AsyncCallback<PCM> callback);
 
 }

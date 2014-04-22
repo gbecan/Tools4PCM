@@ -21,11 +21,11 @@ public class ExperimentDataCell implements Serializable {
 	@GeneratedValue
 	long id;
 
-	int row, column;
+	int mrow, mcolumn;
 	
 	String matriceId;
 	
-	boolean validate;
+	boolean mvalidate;
 	
 	boolean noInterpretation=false;
 	
@@ -56,18 +56,18 @@ public class ExperimentDataCell implements Serializable {
 	public ExperimentDataCell(int row, int column, boolean validate,
 			String remarks) {
 		super();
-		this.row = row;
-		this.column = column;
-		this.validate = validate;
+		this.mrow = row;
+		this.mcolumn = column;
+		this.mvalidate = validate;
 		this.remarks = remarks;
 	}
 
 	public ExperimentDataCell(int row, int column, boolean validate, Type type,
 			String remarks) {
 		super();
-		this.row = row;
-		this.column = column;
-		this.validate = validate;
+		this.mrow = row;
+		this.mcolumn = column;
+		this.mvalidate = validate;
 		this.remarks = remarks;
 		this.newType = type;
 	}
@@ -81,27 +81,27 @@ public class ExperimentDataCell implements Serializable {
 	}
 
 	public int getRow() {
-		return row;
+		return mrow;
 	}
 
 	public void setRow(int row) {
-		this.row = row;
+		this.mrow = row;
 	}
 
 	public int getColumn() {
-		return column;
+		return mcolumn;
 	}
 
 	public void setColumn(int column) {
-		this.column = column;
+		this.mcolumn = column;
 	}
 
 	public boolean isValidate() {
-		return validate;
+		return mvalidate;
 	}
 
 	public void setValidate(boolean validate) {
-		this.validate = validate;
+		this.mvalidate = validate;
 	}
 
 	public String getRemarks() {
@@ -127,15 +127,15 @@ public class ExperimentDataCell implements Serializable {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + column;
+		result = prime * result + mcolumn;
 		result = prime * result + (int) (id ^ (id >>> 32));
 		result = prime * result
 				+ ((matriceId == null) ? 0 : matriceId.hashCode());
 		result = prime * result + ((newType == null) ? 0 : newType.hashCode());
 		result = prime * result + (noInterpretation ? 1231 : 1237);
 		result = prime * result + ((remarks == null) ? 0 : remarks.hashCode());
-		result = prime * result + row;
-		result = prime * result + (validate ? 1231 : 1237);
+		result = prime * result + mrow;
+		result = prime * result + (mvalidate ? 1231 : 1237);
 		return result;
 	}
 
@@ -148,7 +148,7 @@ public class ExperimentDataCell implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		ExperimentDataCell other = (ExperimentDataCell) obj;
-		if (column != other.column)
+		if (mcolumn != other.mcolumn)
 			return false;
 		if (id != other.id)
 			return false;
@@ -166,19 +166,30 @@ public class ExperimentDataCell implements Serializable {
 				return false;
 		} else if (!remarks.equals(other.remarks))
 			return false;
-		if (row != other.row)
+		if (mrow != other.mrow)
 			return false;
-		if (validate != other.validate)
+		if (mvalidate != other.mvalidate)
 			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "ExperimentDataCell [id=" + id + ", row=" + row + ", column="
-				+ column + ", matriceId=" + matriceId + ", validate="
-				+ validate + ", noInterpretation=" + noInterpretation
+		return "ExperimentDataCell [id=" + id + ", row=" + mrow + ", column="
+				+ mcolumn + ", matriceId=" + matriceId + ", validate="
+				+ mvalidate + ", noInterpretation=" + noInterpretation
 				+ ", newType=" + newType + ", remarks=" + remarks + "]";
+	}
+
+	boolean noIdea = false;
+
+
+	public boolean isNoIdea() {
+		return noIdea;
+	}
+
+	public void setNoIdea(boolean noIdea) {
+		this.noIdea = noIdea;
 	}
 
 }

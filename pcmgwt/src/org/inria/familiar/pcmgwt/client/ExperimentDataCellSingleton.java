@@ -75,6 +75,7 @@ public class ExperimentDataCellSingleton {
 			cell.setRow(c.getX());
 			cell.setColumn(c.getY());
 			cell.setValidate(true);
+			cell.setMatriceId(c.getMatrixId());
 			// System.err.println("validate " +c.getValue() + " " +c.getX()
 			// +","+c.getY() );
 
@@ -92,6 +93,7 @@ public class ExperimentDataCellSingleton {
 			} else {
 				cell = datas.get(c);
 			}
+			cell.setMatriceId(c.getMatrixId());
 
 			cell.setRow(c.getX());
 			cell.setColumn(c.getY());
@@ -114,6 +116,8 @@ public class ExperimentDataCellSingleton {
 			cell.setColumn(c.getY());
 			cell.setValidate(false);
 			cell.setRemarks(remark);
+			cell.setMatriceId(c.getMatrixId());
+
 		}
 	}
 
@@ -131,6 +135,8 @@ public class ExperimentDataCellSingleton {
 			cell.setColumn(c.getY());
 			cell.setValidate(false);
 			cell.setNoInterpretation(true);
+			cell.setMatriceId(c.getMatrixId());
+
 		}
 	}
 
@@ -140,8 +146,29 @@ public class ExperimentDataCellSingleton {
 				+ data.getGlobalRemarks() + "\t" + data.getPcmName() + "\t"
 				+ data.getMail() + "\t" + data.getDate() + "\n");
 		for (ExperimentDataCell c : datas.values()){
-			buf.append(c.getRow() + "\t" + c.getColumn() + "\t" + c.isValidate() + "\t"+ c.isNoInterpretation() +"\t" +c.getNewType() + "\t" +c.getRemarks() + "\n");					}
+			buf.append(c.getMatriceId() + "\t" + c.getRow() + "\t" + c.getColumn() + "\t" + c.isValidate() + "\t"+ c.isNoInterpretation() +"\t"+c.isNoIdea()+"\t" +c.getNewType() + "\t" +c.getRemarks() + "\n");					}
 		return buf.toString();
+		
+	}
+
+	public void noIdea() {
+		for (Cell c : selectedCell) {
+			ExperimentDataCell cell = null;
+
+			if (!datas.containsKey(c)) {
+				cell = new ExperimentDataCell();
+				datas.put(c, cell);
+			} else {
+				cell = datas.get(c);
+			}
+			cell.setRow(c.getX());
+			cell.setColumn(c.getY());
+			cell.setValidate(false);
+			cell.setNoInterpretation(false);
+			cell.setNoIdea(true);
+			cell.setMatriceId(c.getMatrixId());
+
+		}
 		
 	}
 

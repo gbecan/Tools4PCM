@@ -9,6 +9,7 @@ import pcmmm.Double;
 import pcmmm.Empty;
 import pcmmm.Extra;
 import pcmmm.Header;
+import pcmmm.Inconsistent;
 import pcmmm.Integer;
 import pcmmm.Matrix;
 import pcmmm.Multiple;
@@ -25,8 +26,10 @@ import pcmmm.util.PcmmmSwitch;
 
 public class PcmConverter extends PcmmmSwitch{
 	//List<org.inria.familiar.pcmgwt.shared.Matrix> matrices = new ArrayList<org.inria.familiar.pcmgwt.shared.Matrix>();
+
 	org.inria.familiar.pcmgwt.shared.PCM pcm = new org.inria.familiar.pcmgwt.shared.PCM();
 	org.inria.familiar.pcmgwt.shared.Matrix m;
+	
 	
 	@Override
 	public Object casePCM(PCM object) {
@@ -169,5 +172,15 @@ public class PcmConverter extends PcmmmSwitch{
 	@Override
 	public Object caseVariabilityConceptRef(VariabilityConceptRef object) {
 		return new Constraint(org.inria.familiar.pcmgwt.shared.Type.VariabilityConceptRef,object.getVerbatim());
+		
+		
 	}
+
+
+	@Override
+	public Object caseInconsistent(Inconsistent object) {
+		return new Constraint(org.inria.familiar.pcmgwt.shared.Type.Inconsistent,object.getVerbatim());
+	}
+	
+	
 }

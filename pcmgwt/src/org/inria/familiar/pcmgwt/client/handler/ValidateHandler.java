@@ -16,6 +16,7 @@ import com.smartgwt.client.types.ClickMaskMode;
 import com.smartgwt.client.types.HoverMode;
 import com.smartgwt.client.util.SC;
 import com.smartgwt.client.widgets.Canvas;
+import com.smartgwt.client.widgets.IButton;
 import com.smartgwt.client.widgets.Img;
 import com.smartgwt.client.widgets.cube.CubeGrid;
 import com.smartgwt.client.widgets.events.ClickEvent;
@@ -41,13 +42,20 @@ public class ValidateHandler implements ClickHandler{
 	DynamicForm form1;
 	TabSet theTabs;
 	Tab item;
+	IButton validateButton;
+	IButton demoButton;
+	boolean demo;
+	
 	public ValidateHandler(DynamicForm form, DynamicForm form1, TabSet theTabs, 
-			GreetingServiceAsync greetingService) {
+			GreetingServiceAsync greetingService,IButton validateButton, IButton demoButton, boolean demo) {
 		super();
 		this.form = form;
 		this.form1 = form1;
 		this.theTabs = theTabs;
 		this.greetingService = greetingService;
+		this.validateButton = validateButton;
+		this.demoButton = demoButton;
+		this.demo = demo;
 	}
 
 	GreetingServiceAsync greetingService;
@@ -62,6 +70,8 @@ public class ValidateHandler implements ClickHandler{
 		System.err.println(form.getValueAsString("firstName"));
 		
 		if (res) {
+			validateButton.setDisabled(true);
+			demoButton.setDisabled(true);
 			final VLayout vLayoutmask = new VLayout();
 			vLayoutmask.setAutoHeight();
 			vLayoutmask.setAutoWidth();
@@ -84,7 +94,7 @@ public class ValidateHandler implements ClickHandler{
 			c.draw();
 			vLayoutmask.draw();
 			greetingService
-					.loadModel(new AsyncCallback<PCM>() {
+					.loadModel(demo,new AsyncCallback<PCM>() {
 
 						@Override
 						public void onSuccess(
@@ -255,7 +265,7 @@ public class ValidateHandler implements ClickHandler{
 							});
 							// cubeGrid.getCellRecord(0, 0).
 							// cubeGrid.getContextMenu().addItem(hangupItem);
-							// cubeGrid.draw();
+							;
 							item1.setPane(cubeGrid);
 							}
 							vLayoutmask.destroy();
@@ -263,6 +273,8 @@ public class ValidateHandler implements ClickHandler{
 							c.hide();
 							c.destroy();
 							
+							
+							theTabs.selectTab(theTabs.getNumTabs()-1);
 							theTabs.selectTab(1);
 							
 

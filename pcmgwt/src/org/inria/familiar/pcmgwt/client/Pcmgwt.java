@@ -1,23 +1,26 @@
 package org.inria.familiar.pcmgwt.client;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import org.inria.familiar.pcmgwt.client.download.HTML5Download;
 import org.inria.familiar.pcmgwt.client.handler.ValidateHandler;
 import org.inria.familiar.pcmgwt.shared.Matrix;
+import org.inria.familiar.pcmgwt.shared.experiment.ExperimentDataCell;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.google.gwt.user.client.ui.HorizontalPanel;
-import com.google.gwt.user.client.ui.RootPanel;
 import com.smartgwt.client.data.DataSource;
 import com.smartgwt.client.data.fields.DataSourceTextField;
 import com.smartgwt.client.types.Overflow;
-import com.smartgwt.client.widgets.HTMLFlow;
+import com.smartgwt.client.util.BooleanCallback;
+import com.smartgwt.client.util.SC;
 import com.smartgwt.client.widgets.IButton;
-import com.smartgwt.client.widgets.Label;
 import com.smartgwt.client.widgets.RichTextEditor;
 import com.smartgwt.client.widgets.Window;
 import com.smartgwt.client.widgets.events.ClickEvent;
+import com.smartgwt.client.widgets.events.ClickHandler;
 import com.smartgwt.client.widgets.events.CloseClickEvent;
 import com.smartgwt.client.widgets.events.CloseClickHandler;
 import com.smartgwt.client.widgets.form.DynamicForm;
@@ -117,14 +120,39 @@ public class Pcmgwt implements EntryPoint {
 
 		IButton validateButton = new IButton();
 		validateButton.setTitle("Start");
+		IButton deoButton = new IButton();
+		deoButton.setTitle("Demo");
+		IButton restartButton = new IButton();
+		restartButton.setTitle("Restart");
+
+		restartButton.addClickHandler(new ClickHandler() {
+			
+			@Override
+			public void onClick(ClickEvent event) {
+				com.google.gwt.user.client.Window.Location.reload();
+			}
+		});
+		
 		validateButton
-				.addClickHandler(new ValidateHandler(form,form1, theTabs, greetingService));
+				.addClickHandler(new ValidateHandler(form,form1, theTabs, greetingService,validateButton, deoButton,false));
+		deoButton
+		.addClickHandler(new ValidateHandler(form,form1, theTabs, greetingService,deoButton,validateButton,true));
+
+		
 		VLayout vLayout = new VLayout();
 		vLayout.setMembersMargin(10);
 		vLayout.addMember(form);
 		vLayout.addMember(form1);
-		vLayout.addMember(validateButton);
-
+		HLayout hLayout1  = new HLayout();
+		
+		hLayout1.setPadding(20);
+		hLayout1.setMargin(20);
+		hLayout1.setMembersMargin(30);
+		hLayout1.addMember(validateButton);
+		hLayout1.addMember(deoButton);
+		hLayout1.addMember(restartButton);
+		vLayout.addMember(hLayout1);
+		
 		// vLayout.draw();
 		item.setPane(vLayout);
 
@@ -137,46 +165,63 @@ public class Pcmgwt implements EntryPoint {
 			@Override
 			public void onClick(ClickEvent event) {
 				
-				StringBuffer fileContent =new StringBuffer();
-				for (String s : ExperimentDataCellSingleton.getInstances().keySet()){
-					fileContent.append(ExperimentDataCellSingleton.getInstance(s).toCsv());
-					fileContent.append("\n\n");
-				}				
-				
-				com.google.gwt.user.client.ui.Anchor h = HTML5Download.get().generateTextDownloadLink(fileContent.toString(), "DownloadData.txt", "Download");
-				
-				for (String s : ExperimentDataCellSingleton.getInstances().keySet()){
-				greetingService.createExperimentdata(ExperimentDataCellSingleton.getInstance(s).getData(), ExperimentDataCellSingleton.getInstance(s).getDatas(), new AsyncCallback<Boolean>() {
-
+				SC.ask("Do you validate all the matrix (different tabs)",new BooleanCallback() {
+					
 					@Override
-					public void onFailure(Throwable caught) {
-						
-						caught.printStackTrace();
-						System.err.println("data not saved");
-					}
+					public void execute(Boolean value) {
+						if (value){
+							ExperimentDataCellSingleton.getData().setGlobalRemarks(richTextEditor.getValue());
 
-					@Override
-					public void onSuccess(Boolean result) {
-						System.err.println("data saved");
+							
+							StringBuffer fileContent =new StringBuffer();
+							for (String s : ExperimentDataCellSingleton.getInstances().keySet()){
+								fileContent.append(ExperimentDataCellSingleton.getInstance(s).toCsv());
+								fileContent.append("\n\n");
+							}				
+							
+							com.google.gwt.user.client.ui.Anchor h = HTML5Download.get().generateTextDownloadLink(fileContent.toString(), "DownloadData.txt", "Download");
+							
+							Collection<ExperimentDataCell> datas  =new ArrayList<ExperimentDataCell>();
+							for (String s : ExperimentDataCellSingleton.getInstances().keySet()){
+								datas.addAll(ExperimentDataCellSingleton.getInstance(s).getDatas());
+							}	
+							ExperimentDataCellSingleton.getData().getCells().clear();
+							greetingService.createExperimentdata(ExperimentDataCellSingleton.getData(), datas, new AsyncCallback<Boolean>() {
+
+								@Override
+								public void onFailure(Throwable caught) {
+									
+									caught.printStackTrace();
+									System.err.println("data not saved");
+								}
+
+								@Override
+								public void onSuccess(Boolean result) {
+									System.err.println("data saved");
+								}
+							});
+							
+							
+							final Window winModal = new Window();  
+					        winModal.setWidth(250);  
+					        winModal.setHeight(22);
+					        winModal.setTitle("");  
+					        winModal.setShowMinimizeButton(false);  
+					        winModal.setIsModal(true);  
+					        winModal.setShowModalMask(true);  
+					        winModal.centerInPage();  
+					        winModal.addCloseClickHandler(new CloseClickHandler() {  
+					            public void onCloseClick(CloseClickEvent event) {  
+					                winModal.destroy();  
+					            }  
+					        });  
+					        winModal.addChild(h);
+							winModal.show();
+							
+						}
 					}
-				});
-				}
+				} );
 				
-				final Window winModal = new Window();  
-		        winModal.setWidth(250);  
-		        winModal.setHeight(22);
-		        winModal.setTitle("");  
-		        winModal.setShowMinimizeButton(false);  
-		        winModal.setIsModal(true);  
-		        winModal.setShowModalMask(true);  
-		        winModal.centerInPage();  
-		        winModal.addCloseClickHandler(new CloseClickHandler() {  
-		            public void onCloseClick(CloseClickEvent event) {  
-		                winModal.destroy();  
-		            }  
-		        });  
-		        winModal.addChild(h);
-				winModal.show();
 
 				
 				

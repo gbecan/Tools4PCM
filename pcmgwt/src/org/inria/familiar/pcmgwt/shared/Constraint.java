@@ -54,6 +54,7 @@ public class Constraint implements Serializable{
 //			else
 //				buf.append("\t" + c.toString() + "\n");
 		}
+			buf.append(" : <br>");
 		
 		return buf.toString();
 	}
