@@ -1,16 +1,21 @@
 package test
 
+import org.scalatest.FlatSpec
+import org.scalatest.Matchers
+import java.io.File
 import scala.io.Source
 import extractor.VariabilityExtractor
-import java.io.File
 import org.eclipse.emf.ecore.util.Diagnostician
 import org.eclipse.emf.common.util.Diagnostic
-import scala.collection.JavaConversions._
 import com.github.tototoshi.csv.CSVWriter
 import java.io.FileWriter
+import scala.collection.JavaConversions._
+import pcmmm.Header
+import pcmmm.Extra
 import pcmmm.ValuedCell
-import pcmmm.Double
+import pcmmm.Boolean
 import pcmmm.Integer
+import pcmmm.Double
 import pcmmm.VariabilityConceptRef
 import pcmmm.Partial
 import pcmmm.Unknown
@@ -19,13 +24,10 @@ import pcmmm.Inconsistent
 import pcmmm.And
 import pcmmm.Or
 import pcmmm.XOr
-import pcmmm.Boolean
-import pcmmm.Header
-import pcmmm.Extra
 
-object ASEEvaluation {
+class ASEEvaluation extends FlatSpec with Matchers {
 
-	val MODEL_EXT = ".pcm"
+  	val MODEL_EXT = ".pcm"
 	val HTML_EXT = ".html"
 	val CONFIG_EXT = ".config"
 	  
@@ -38,40 +40,15 @@ object ASEEvaluation {
 
 	val STATS_FILE = "../evaluation/stats.csv"
 	  
-    def main(args: Array[String]) {
-       	// Get list of PCMs to test from a file
-    	val testSetFile = Source.fromFile(TEST_SET_FILE)
+  
+  "The evaluation" should "extract variability from every input PCM" in {
+		val testSetFile = Source.fromFile(TEST_SET_FILE)
     	
     	val files = for (line <- testSetFile.getLines) yield {
     				new File(INPUT_DIR + line + MODEL_EXT)
     	}
-	  
-    	val variabilityExtractor = new VariabilityExtractor
-	
-    	
-    	// Initialize CSV writer for stats
-    	val csvWriter = new CSVWriter(new FileWriter(STATS_FILE))
-    	val headers = Seq("Name", 
-    	    "Matrices", 
-    	    "Rows",
-    	    "Columns",
-    	    "Cells",
-    	    "Header",
-    	    "Extra",
-    	    "Valued",
-    	    "Boolean",
-    	    "Integer",
-    	    "Double",
-    	    "VariabilityConceptRef",
-    	    "Partial",
-    	    "Unknown",
-    	    "Empty",
-    	    "Inconsistent",
-    	    "And",
-    	    "Or",
-    	    "XOr")
-    	    
-		csvWriter.writeRow(headers)
+		
+	   	val variabilityExtractor = new VariabilityExtractor
 		  
     	for (file <- files) {
 		  // Load model
@@ -102,7 +79,49 @@ object ASEEvaluation {
 		  val htmlPath = OUTPUT_DIR_HTML + name + HTML_EXT
 		  VariabilityExtractor.exportPCM2HTML(pcm, htmlPath)
 		  
-		  // Stats
+    	}
+	 
+  }
+  
+  it should "compute stats about the PCMs" in {
+	  // Initialize CSV writer for stats
+    	val csvWriter = new CSVWriter(new FileWriter(STATS_FILE))
+    	val headers = Seq("Name", 
+    	    "Matrices", 
+    	    "Rows",
+    	    "Columns",
+    	    "Cells",
+    	    "Header",
+    	    "Extra",
+    	    "Valued",
+    	    "Boolean",
+    	    "Integer",
+    	    "Double",
+    	    "VariabilityConceptRef",
+    	    "Partial",
+    	    "Unknown",
+    	    "Empty",
+    	    "Inconsistent",
+    	    "And",
+    	    "Or",
+    	    "XOr")
+    	    
+		csvWriter.writeRow(headers)
+		
+		val testSetFile = Source.fromFile(TEST_SET_FILE)
+    	
+    	val files = for (line <- testSetFile.getLines) yield {
+    				new File(OUTPUT_DIR_MODELS + line + MODEL_EXT)
+    	}
+    	
+		for (file <- files) {
+		  // Load model
+		  println(file.getName())
+		  val pcm = VariabilityExtractor.loadPCMModel(file.getAbsolutePath())
+		  	  
+		  // Compute stats
+		  val name = file.getName().substring(0, file.getName().size - 4)
+		  
 		  val nbMatrices = pcm.getMatrices().size()
 		  
 		  val cells = (for (matrix <- pcm.getMatrices()) yield {
@@ -123,6 +142,7 @@ object ASEEvaluation {
 		  		None
 		  	}
 		  ).flatten
+		  
 		  val booleans = interpretations.count(_.isInstanceOf[Boolean])
 		  val integers = interpretations.count(_.isInstanceOf[Integer])
 		  val doubles = interpretations.count(_.isInstanceOf[Double])
@@ -135,13 +155,18 @@ object ASEEvaluation {
 		  val ors = interpretations.count(_.isInstanceOf[Or])
 		  val xors = interpretations.count(_.isInstanceOf[XOr])
 		  
+		  // Write stats to CSV file
 		  val stats = Seq(name, nbMatrices, rows, columns, cells.size, headers, extras, valueds,
 		      booleans, integers, doubles, vcRefs, partials, unknowns, emptys, inconsistents, ands, ors, xors)
 		  
 		  csvWriter.writeRow(stats)
-    	}
+		  
+		}
     	
     	csvWriter.close
+	}
+	
+	it should "analyze the results of the user-study from the database" in {
 	  
-    }
+	}  
 }
