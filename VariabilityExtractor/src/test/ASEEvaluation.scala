@@ -49,6 +49,7 @@ class ASEEvaluation extends FlatSpec with Matchers {
 
 	val STATS_FILE = "../evaluation/stats.csv"
 	val EVAL_RESULTS_FILE = "../evaluation/eval_results.csv"
+	val EVAL_NEW_CONCEPTS_FILE = "../evaluation/eval_new_concepts.csv"
 	  
   
   "The evaluation" should "extract variability from every input PCM" in {
@@ -247,6 +248,8 @@ class ASEEvaluation extends FlatSpec with Matchers {
     	    
 		csvWriter.writeRow(headers)
 		
+		val newConceptsComments : ListBuffer[(String, String, String, String)] = ListBuffer()
+		
     	for (file <- files) {
 		  // Load model
 		  println(file.getName())
@@ -259,15 +262,6 @@ class ASEEvaluation extends FlatSpec with Matchers {
 			  // Count by type
 			  val results = resultsForThisPCM.get
 			  val extractedResults = extractResults(pcm, results)
-			  
-			  
-//			  val toto = results.map(r => (r.matriceId, r.mcolumn, r.mrow)).distinct
-//			  println(toto.size + " vs " + valuedCells)
-//			  val tata = (for (matrix <- pcm.getMatrices(); cell <- matrix.getCells() if cell.isInstanceOf[ValuedCell]) yield {
-//				  (matrix.getId(), cell.getRow(), cell.getColumn())
-//			  }).toList
-//			  println(tata.intersect(toto).size)
-			  
 			  
 			  var notEvaluated = 0
 			  var incoherent = 0
@@ -289,7 +283,9 @@ class ASEEvaluation extends FlatSpec with Matchers {
 				    case CorrectedInMM(_) => 
 				      corrected += 1
 				      correctedInterpretations += extractedResult.constraint
-				    case NewConcept(_) => newConcepts += 1
+				    case NewConcept(concept, firstName, lastName, email) => 
+				      newConcepts += 1
+				      newConceptsComments += ((concept, firstName, lastName, email)) 
 				    case _ => 
 				  }
 			  }
@@ -317,6 +313,12 @@ class ASEEvaluation extends FlatSpec with Matchers {
     	}
 		
 		csvWriter.close
+		
+		val distinctNewConceptsComments = newConceptsComments.sortBy(_._4).groupBy(_._1)
+		val conceptsWriter = new CSVWriter(new FileWriter(EVAL_NEW_CONCEPTS_FILE))
+		distinctNewConceptsComments.foreach(c => conceptsWriter.writeRow(Seq(c._1, c._2.size)))
+		conceptsWriter.close
+			
 		
 	}  
 	
@@ -365,7 +367,7 @@ class ASEEvaluation extends FlatSpec with Matchers {
 		} else if (Option(result.newType).isDefined) {
 			CorrectedInMM(result.newType)
 		} else if (Option(result.remarks).isDefined) {
-			NewConcept(result.remarks)
+			NewConcept(result.remarks, result.firstName, result.lastName, result.mail)
 		} else { // Should not happen
 			NotEvaluated()
 		}
