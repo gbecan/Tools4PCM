@@ -46,6 +46,7 @@ class ASEEvaluation extends FlatSpec with Matchers {
 	val OUTPUT_DIR_HTML = "../evaluation/output/html/"
   
 	val TEST_SET_FILE = "../evaluation/1-pcm.txt"
+	val EVALUATED_PCMS = "../evaluation/2-evaluated-pcms.txt"
 
 	val STATS_FILE = "../evaluation/stats.csv"
 	val EVAL_RESULTS_FILE = "../evaluation/eval_results.csv"
@@ -99,7 +100,11 @@ class ASEEvaluation extends FlatSpec with Matchers {
     	val csvWriter = new CSVWriter(new FileWriter(STATS_FILE))
     	val headers = Seq("Name", 
     	    "Matrices", 
+    	    "Rows (av)",
+    	    "Rows (min)",
     	    "Rows (max)",
+    	    "Columns (av)",
+    	    "Columns (min)",
     	    "Columns (max)",
     	    "Cells",
     	    "Header",
@@ -119,7 +124,7 @@ class ASEEvaluation extends FlatSpec with Matchers {
     	    
 		csvWriter.writeRow(headers)
 		
-		val testSetFile = Source.fromFile(TEST_SET_FILE)
+		val testSetFile = Source.fromFile(EVALUATED_PCMS)
     	
     	val files = for (line <- testSetFile.getLines) yield {
     				new File(OUTPUT_DIR_MODELS + line + MODEL_EXT)
@@ -138,9 +143,18 @@ class ASEEvaluation extends FlatSpec with Matchers {
 		  val cells = (for (matrix <- pcm.getMatrices()) yield {
 			  matrix.getCells()
 		  }).flatten.toList
-		  
-		  val rows = cells.map(_.getRow()).max + 1 
-		  val columns = cells.map(_.getColumn()).max + 1
+		  val matrixWithLeastRows = pcm.getMatrices().sortBy(m =>
+		    m.getCells().map(_.getRow).max).head
+		  val matrixWithLeastColumns = pcm.getMatrices().sortBy(m =>
+		    m.getCells().map(_.getColumn).max).head 
+		  val rows = cells.map(_.getRow()) 
+		  val columns = cells.map(_.getColumn())
+		  val avRows = rows.sum.toDouble / rows.size.toDouble
+		  val minRows = matrixWithLeastRows.getCells().map(_.getRow).max + 1
+		  val maxRows = rows.max + 1
+		  val avColumns = columns.sum.toDouble / columns.size.toDouble
+		  val minColumns = matrixWithLeastColumns.getCells().map(_.getColumn).max + 1
+		  val maxColumns = columns.max + 1
 		  
 		  val headers = cells.count(_.isInstanceOf[Header])
 		  val extras = cells.count(_.isInstanceOf[Extra])
@@ -167,7 +181,7 @@ class ASEEvaluation extends FlatSpec with Matchers {
 		  val xors = interpretations.count(_.isInstanceOf[XOr])
 		  
 		  // Write stats to CSV file
-		  val stats = Seq(name, nbMatrices, rows, columns, cells.size, headers, extras, valueds,
+		  val stats = Seq(name, nbMatrices, avRows, minRows, maxRows, avColumns, minColumns, maxColumns, cells.size, headers, extras, valueds,
 		      booleans, integers, doubles, vcRefs, partials, unknowns, emptys, inconsistents, ands, ors, xors)
 		  
 		  csvWriter.writeRow(stats)
@@ -252,10 +266,11 @@ class ASEEvaluation extends FlatSpec with Matchers {
 		
     	for (file <- files) {
 		  // Load model
-		  println(file.getName())
 		  val pcm = VariabilityExtractor.loadPCMModel(file.getAbsolutePath())
+
 		  val resultsForThisPCM = resultsByPCM.get(file.getName())
 		  if (resultsForThisPCM.isDefined) {
+			  println(file.getName())
 			  val name = file.getName().substring(0, file.getName().size - 4)
 			  val valuedCells = pcm.getMatrices().flatMap(_.getCells().filter(_.isInstanceOf[ValuedCell])).size
 			  
@@ -285,6 +300,7 @@ class ASEEvaluation extends FlatSpec with Matchers {
 				      correctedInterpretations += extractedResult.constraint
 				    case NewConcept(concept, firstName, lastName, email) => 
 				      newConcepts += 1
+				      correctedInterpretations += extractedResult.constraint
 				      newConceptsComments += ((concept, firstName, lastName, email)) 
 				    case _ => 
 				  }
