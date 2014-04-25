@@ -180,10 +180,10 @@ class ASEEvaluation extends FlatSpec with Matchers {
     // Define classes for gathering results
 		case class ExperimentData(id : Int, date : String, firstName : String, 
 				globalRemarks : String, lastName : String, mail : String, pcmName : String)
-		case class ExperimentDataCell(id : Int, matriceId: String, mcolumn : Int, mrow : Int, 
+		case class ExperimentDataCell(id : Int, matriceId: String, mrow : Int, mcolumn : Int, 
 				mvalidate : scala.Boolean, newType : String, noIdea : scala.Boolean, noInterpretation : scala.Boolean, remarks : String, experimentId : Int)
 		case class ExperimentDataCellJoin(id : Int, date : String, firstName : String, 
-				globalRemarks : String, lastName : String, mail : String, pcmName : String, id2 : Int, matriceId: String, mcolumn : Int, mrow : Int, 
+				globalRemarks : String, lastName : String, mail : String, pcmName : String, id2 : Int, matriceId: String, mrow : Int, mcolumn : Int, 
 				mvalidate : scala.Boolean, newType : String, noIdea : scala.Boolean, noInterpretation : scala.Boolean, remarks : String, experimentId : Int)
 	
 	
@@ -249,7 +249,7 @@ class ASEEvaluation extends FlatSpec with Matchers {
 		
     	for (file <- files) {
 		  // Load model
-//		  println(file.getName())
+		  println(file.getName())
 		  val pcm = VariabilityExtractor.loadPCMModel(file.getAbsolutePath())
 		  val resultsForThisPCM = resultsByPCM.get(file.getName())
 		  if (resultsForThisPCM.isDefined) {
@@ -260,9 +260,13 @@ class ASEEvaluation extends FlatSpec with Matchers {
 			  val results = resultsForThisPCM.get
 			  val extractedResults = extractResults(pcm, results)
 			  
-//			  val toto = results.map(r => (r.matriceId, r.mrow, r.mcolumn)).distinct
-//			  println(toto.size + " vs " + pcm.getMatrices().flatMap(_.getCells()).filter(_.isInstanceOf[ValuedCell]).size())
 			  
+//			  val toto = results.map(r => (r.matriceId, r.mcolumn, r.mrow)).distinct
+//			  println(toto.size + " vs " + valuedCells)
+//			  val tata = (for (matrix <- pcm.getMatrices(); cell <- matrix.getCells() if cell.isInstanceOf[ValuedCell]) yield {
+//				  (matrix.getId(), cell.getRow(), cell.getColumn())
+//			  }).toList
+//			  println(tata.intersect(toto).size)
 			  
 			  
 			  var notEvaluated = 0
@@ -323,13 +327,15 @@ class ASEEvaluation extends FlatSpec with Matchers {
 //		  println(matrix.getId())
 //		  println(results.map(r => r.matriceId).distinct)
 			val resultsForThisCell = results.filter(r => 
-			  r.matriceId == matrix.getId()
+			  (r.matriceId == matrix.getId()
 			  && r.mrow == cell.getRow()
-			  && r.mcolumn == cell.getColumn()
+			  && r.mcolumn == cell.getColumn())
 			  )
+			  
 			val evaluations = resultsForThisCell.map(r => convertToEvaluation(r))
 
 			val evaluation = if (evaluations.isEmpty) {
+//				println(matrix.getId() + " : " + cell.getRow() + ", " + cell.getColumn())
 				NotEvaluated()
 			} else if (evaluations.size == 1) {
 				evaluations.head
