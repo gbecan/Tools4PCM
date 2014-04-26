@@ -33,6 +33,7 @@ import pcmmm.Cell
 import scala.collection.mutable.ListBuffer
 import pcmmm.Constraint
 import test.Incoherent
+import pcmmm.Multiple
 
 class ASEEvaluation extends FlatSpec with Matchers {
 
@@ -248,6 +249,8 @@ class ASEEvaluation extends FlatSpec with Matchers {
     	    "No interpretation",
     	    "Corrected in MM",
     	    "New concept",
+    	    
+    	    "Before",
     	    "Boolean",
     	    "Integer",
     	    "Double",
@@ -258,7 +261,36 @@ class ASEEvaluation extends FlatSpec with Matchers {
     	    "Inconsistent",
     	    "And",
     	    "Or",
-    	    "XOr")
+    	    "XOr",
+    	    "Multiple",
+    	    
+    	    "Errors",
+    	    "Boolean",
+    	    "Integer",
+    	    "Double",
+    	    "VariabilityConceptRef",
+    	    "Partial",
+    	    "Unknown",
+    	    "Empty",
+    	    "Inconsistent",
+    	    "And",
+    	    "Or",
+    	    "XOr",
+    	    "Multiple",
+    	    
+    	    "After",
+    	    "Boolean",
+    	    "Integer",
+    	    "Double",
+    	    "VariabilityConceptRef",
+    	    "Partial",
+    	    "Unknown",
+    	    "Empty",
+    	    "Inconsistent",
+    	    "And",
+    	    "Or",
+    	    "XOr",
+    	    "Multiple")
     	    
 		csvWriter.writeRow(headers)
 		
@@ -274,9 +306,16 @@ class ASEEvaluation extends FlatSpec with Matchers {
 			  val name = file.getName().substring(0, file.getName().size - 4)
 			  val valuedCells = pcm.getMatrices().flatMap(_.getCells().filter(_.isInstanceOf[ValuedCell])).size
 			  
-			  // Count by type
+			  // Count errors
 			  val results = resultsForThisPCM.get
 			  val extractedResults = extractResults(pcm, results)
+			  
+			  
+			  val evaluatedCells = extractedResults.filter(c =>
+			      !c.evaluation.isInstanceOf[NotEvaluated]
+			      && !c.evaluation.isInstanceOf[Incoherent]
+			      && !c.evaluation.isInstanceOf[DontKnow])
+			  val correctedCells : ListBuffer[InterpretationEvaluation] = ListBuffer()
 			  
 			  var notEvaluated = 0
 			  var incoherent = 0
@@ -286,7 +325,6 @@ class ASEEvaluation extends FlatSpec with Matchers {
 			  var corrected = 0
 			  var newConcepts = 0
 
-			  val correctedInterpretations : ListBuffer[Constraint] = ListBuffer()
 			  
 			  for (extractedResult <- extractedResults) {
 				  extractedResult.evaluation match {
@@ -294,35 +332,98 @@ class ASEEvaluation extends FlatSpec with Matchers {
 				    case Incoherent(_) => incoherent += 1
 				    case Valid() => valids += 1
 				    case DontKnow() => noIdeas += 1
-				    case NoInterpretation() => noInterpretations += 1
+				    case NoInterpretation() => 
+				      noInterpretations += 1
+				      correctedCells += extractedResult
 				    case CorrectedInMM(_) => 
 				      corrected += 1
-				      correctedInterpretations += extractedResult.constraint
+				      correctedCells += extractedResult
 				    case NewConcept(concept, firstName, lastName, email) => 
 				      newConcepts += 1
-				      correctedInterpretations += extractedResult.constraint
+				      correctedCells += extractedResult
 				      newConceptsComments += ((concept, firstName, lastName, email)) 
 				    case _ => 
 				  }
 			  }
 			  
+			  // Type of cells computed by our automated techniques
+			  var booleansB = evaluatedCells.filter(_.constraint.isInstanceOf[Boolean]).size
+			  var integersB = evaluatedCells.filter(_.constraint.isInstanceOf[Integer]).size
+			  var doublesB = evaluatedCells.filter(_.constraint.isInstanceOf[Double]).size
+			  var vcRefsB = evaluatedCells.filter(_.constraint.isInstanceOf[VariabilityConceptRef]).size
+			  var partialsB = evaluatedCells.filter(_.constraint.isInstanceOf[Partial]).size
+			  var unknownsB = evaluatedCells.filter(_.constraint.isInstanceOf[Unknown]).size
+			  var emptysB = evaluatedCells.filter(_.constraint.isInstanceOf[Empty]).size
+			  var inconsistentsB = evaluatedCells.filter(_.constraint.isInstanceOf[Inconsistent]).size
+			  var andsB = evaluatedCells.filter(_.constraint.isInstanceOf[And]).size
+			  var orsB = evaluatedCells.filter(_.constraint.isInstanceOf[Or]).size
+			  var xorsB = evaluatedCells.filter(_.constraint.isInstanceOf[XOr]).size
+			  var multiplesB = evaluatedCells.filter(c =>
+			    (c.constraint.isInstanceOf[Multiple])
+			    && (!c.constraint.isInstanceOf[XOr])
+			    && (!c.constraint.isInstanceOf[Or])
+			    && (!c.constraint.isInstanceOf[And])).size
+			    
+			  // Type of cells that were corrected
+			  var booleansE = correctedCells.filter(_.constraint.isInstanceOf[Boolean]).size
+			  var integersE = correctedCells.filter(_.constraint.isInstanceOf[Integer]).size
+			  var doublesE = correctedCells.filter(_.constraint.isInstanceOf[Double]).size
+			  var vcRefsE = correctedCells.filter(_.constraint.isInstanceOf[VariabilityConceptRef]).size
+			  var partialsE = correctedCells.filter(_.constraint.isInstanceOf[Partial]).size
+			  var unknownsE = correctedCells.filter(_.constraint.isInstanceOf[Unknown]).size
+			  var emptysE = correctedCells.filter(_.constraint.isInstanceOf[Empty]).size
+			  var inconsistentsE = correctedCells.filter(_.constraint.isInstanceOf[Inconsistent]).size
+			  var andsE = correctedCells.filter(_.constraint.isInstanceOf[And]).size
+			  var orsE = correctedCells.filter(_.constraint.isInstanceOf[Or]).size
+			  var xorsE = correctedCells.filter(_.constraint.isInstanceOf[XOr]).size
+			  var multiplesE = correctedCells.filter(c =>
+			    (c.constraint.isInstanceOf[Multiple])
+			    && (!c.constraint.isInstanceOf[XOr])
+			    && (!c.constraint.isInstanceOf[Or])
+			    && (!c.constraint.isInstanceOf[And])).size
+			  		
+			  // Type of cells after correction		  
+			  var booleansA = booleansB - booleansE
+			  var integersA = integersB - integersE
+			  var doublesA = doublesB - doublesE
+			  var vcRefsA = vcRefsB - vcRefsE
+			  var partialsA = partialsB - partialsE
+			  var unknownsA = unknownsB - unknownsE
+			  var emptysA = emptysB - emptysE
+			  var inconsistentsA = inconsistentsB - inconsistentsE
+			  var andsA = andsB - andsE
+			  var orsA = orsB - orsE
+			  var xorsA = xorsB - xorsE
+			  var multiplesA = multiplesB - multiplesE
+			  
+			  for (correctedCell <- correctedCells) {
+				  correctedCell.evaluation match {
+				    case CorrectedInMM(concept) =>
+				      concept match {
+				        case "Boolean" => booleansA += 1
+				        case "Integer" => integersA += 1
+				        case "Double" => doublesA += 1
+				        case "VariabilityConceptRef" => vcRefsA += 1
+				        case "Partial" => partialsA += 1
+				        case "Unknown" => unknownsA += 1
+				        case "Empty" => emptysA += 1
+				        case "Inconsistent" => inconsistentsA += 1
+				        case "And" => andsA += 1
+				        case "Or" => orsA += 1
+				        case "Xor" => xorsA += 1
+				        case "Multiple" => multiplesA += 1
+				        case _ => println("Error! Concept unknown : " + concept)
+				      }
+				    case _ =>
+				  }
+			  }
 			  
 			  
-			  var booleans = correctedInterpretations.filter(_.isInstanceOf[Boolean]).size
-			  var integers = correctedInterpretations.filter(_.isInstanceOf[Integer]).size
-			  var doubles = correctedInterpretations.filter(_.isInstanceOf[Double]).size
-			  var vcRefs = correctedInterpretations.filter(_.isInstanceOf[VariabilityConceptRef]).size
-			  var partials = correctedInterpretations.filter(_.isInstanceOf[Partial]).size
-			  var unknowns = correctedInterpretations.filter(_.isInstanceOf[Unknown]).size
-			  var emptys = correctedInterpretations.filter(_.isInstanceOf[Empty]).size
-			  var inconsistents = correctedInterpretations.filter(_.isInstanceOf[Inconsistent]).size
-			  var ands = correctedInterpretations.filter(_.isInstanceOf[And]).size
-			  var ors = correctedInterpretations.filter(_.isInstanceOf[Or]).size
-			  var xors = correctedInterpretations.filter(_.isInstanceOf[XOr]).size
-			  			  
 			  
 			  csvWriter.writeRow(Seq(name, valuedCells, notEvaluated, incoherent, valids, noIdeas, noInterpretations, corrected, newConcepts,
-			      booleans, integers, doubles, vcRefs, partials, unknowns, emptys, inconsistents, ands, ors, xors))
+			      "", booleansB, integersB, doublesB, vcRefsB, partialsB, unknownsB, emptysB, inconsistentsB, andsB, orsB, xorsB, multiplesB,
+			      "", booleansE, integersE, doublesE, vcRefsE, partialsE, unknownsE, emptysE, inconsistentsE, andsE, orsE, xorsE, multiplesE,
+			      "", booleansA, integersA, doublesA, vcRefsA, partialsA, unknownsA, emptysA, inconsistentsA, andsA, orsA, xorsA, multiplesA))
 			  
 		  }
 		  
