@@ -1,7 +1,10 @@
 Automating the formalization of Product Comparison Matrices
 ==================
 
-## Authors
+This project aim at formalization Product Comparison Matrices with model-based automated techniques.
+Details about the evaluation are available in the [evaluation folder](evaluation).
+
+### Authors
 - Guillaume Bécan
 - Nicolas Sannier
 - Mathieu Acher
@@ -9,7 +12,7 @@ Automating the formalization of Product Comparison Matrices
 - Arnaud Blouin
 - Benoit Baudry
 
-## Structure of the project
+### Structure of the project
 - __PCMMetamodel__: metamodel of PCMs
 - __VariabilityExtractor__: automated techniques for formalizing PCMs
 - __CsvPCMParser__: CSV parser of PCM
