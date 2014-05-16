@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm" name="Comparison_of_assemblers">
+  <matrices name="6502 assemblers">
+    <cells xsi:type="pcmmm:Header" name="0,0: assembler" verbatim="Assembler" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: license" verbatim="License" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: instruction set" verbatim="Instruction set" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: host platform" verbatim="Host platform" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: 64tass" verbatim="64tass" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: gpl" verbatim="GPL" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: mos technology 6502, wdc 65c02, wdc 65816/65802" verbatim="MOS Technology 6502, WDC 65C02, WDC 65816/65802" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: various" verbatim="various" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: acme" verbatim="ACME" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: gpl" verbatim="GPL" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: mos technology 6502, wdc 65c02, wdc 65816/65802" verbatim="MOS Technology 6502, WDC 65C02, WDC 65816/65802" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: various" verbatim="various" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: asm6" verbatim="ASM6" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: public domain" verbatim="Public domain" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: mos technology 6502" verbatim="MOS Technology 6502" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: various" verbatim="various" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: atasm" verbatim="ATASM" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: gpl" verbatim="GPL" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: mos technology 6502" verbatim="MOS Technology 6502" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: various" verbatim="various" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: atari assembler editor" verbatim="Atari Assembler Editor" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: proprietary" verbatim="Proprietary" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: mos technology 6502" verbatim="MOS Technology 6502" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: atari 8-bit family" verbatim="Atari 8-bit family" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: c64list" verbatim="C64List" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: proprietary" verbatim="Proprietary" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: mos technology 6502" verbatim="MOS Technology 6502" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: commodore 64" verbatim="Commodore 64" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: ca65" verbatim="CA65" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: gpl" verbatim="GPL" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: mos technology 6502, wdc 65c02, wdc 65816/65802" verbatim="MOS Technology 6502, WDC 65C02, WDC 65816/65802" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: various" verbatim="various" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: dasm" verbatim="dasm" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: gpl" verbatim="GPL" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: mos technology 6502, others" verbatim="MOS Technology 6502, others" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: various" verbatim="various" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: dreamass" verbatim="dreamass" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: gpl" verbatim="GPL" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: mos technology 6502, wdc 65816/65802" verbatim="MOS Technology 6502, WDC 65816/65802" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: various" verbatim="various" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: french silk" verbatim="French Silk" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: proprietary" verbatim="Proprietary" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: mos technology 6502" verbatim="MOS Technology 6502" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: commodore 64" verbatim="Commodore 64" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: kick assembler" verbatim="Kick Assembler" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: proprietary" verbatim="Proprietary" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: mos technology 6502" verbatim="MOS Technology 6502" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: various" verbatim="various" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: lisa" verbatim="Lisa" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: proprietary" verbatim="Proprietary" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: mos technology 6502" verbatim="MOS Technology 6502" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: apple ii series" verbatim="Apple II series" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: mac/65" verbatim="MAC/65" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: proprietary" verbatim="Proprietary" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: mos technology 6502" verbatim="MOS Technology 6502" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: atari 8-bit family" verbatim="Atari 8-bit family" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: merlin" verbatim="Merlin" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: proprietary" verbatim="Proprietary" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: mos technology 6502, wdc 65c02, wdc 65816/65802" verbatim="MOS Technology 6502, WDC 65C02, WDC 65816/65802" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: apple ii series, commodore 64, commodore 128" verbatim="Apple II series, Commodore 64, Commodore 128" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: wla dx" verbatim="WLA DX" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: gpl" verbatim="GPL" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: mos technology 6502, others" verbatim="MOS Technology 6502, others" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: various" verbatim="various" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: xa65" verbatim="XA65" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: gpl" verbatim="GPL" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: mos technology 6502, others" verbatim="MOS Technology 6502, others" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: various" verbatim="various" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: xasm" verbatim="XASM" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: public domain" verbatim="Public domain" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: mos technology 6502" verbatim="MOS Technology 6502" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: various" verbatim="various" row="17" rowspan="1" column="3" colspan="1"/>
+  </matrices>
+  <matrices name="680x0 assemblers">
+    <cells xsi:type="pcmmm:Header" name="0,0: assembler" verbatim="Assembler" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: license" verbatim="License" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: instruction set" verbatim="Instruction set" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: host platform" verbatim="Host platform" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: a68k" verbatim="A68K" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: free" verbatim="Free" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: motorola 680x0" verbatim="Motorola 680x0" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: commodore amiga" verbatim="Commodore Amiga" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: asm-one macro assembler" verbatim="ASM-One Macro Assembler" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: free" verbatim="Free" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: motorola 680x0" verbatim="Motorola 680x0" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: commodore amiga" verbatim="Commodore Amiga" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: digital research assembler" verbatim="Digital Research Assembler" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: proprietary" verbatim="Proprietary" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: motorola 680x0" verbatim="Motorola 680x0" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: atari st" verbatim="Atari ST" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: fantasm" verbatim="Fantasm" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: proprietary" verbatim="Proprietary" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: motorola 680x0" verbatim="Motorola 680x0" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: apple macintosh" verbatim="Apple Macintosh" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: gfa-assembler" verbatim="GFA-Assembler" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: proprietary" verbatim="Proprietary" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: motorola 680x0" verbatim="Motorola 680x0" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: atari st" verbatim="Atari ST" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: gst macro assembler" verbatim="GST Macro Assembler" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: proprietary" verbatim="Proprietary" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: motorola 680x0" verbatim="Motorola 680x0" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: atari st" verbatim="Atari ST" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: hisoft devpac assembler" verbatim="HiSoft DevPac Assembler" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: proprietary" verbatim="Proprietary" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: motorola 680x0" verbatim="Motorola 680x0" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: commodore amiga, atari st" verbatim="Commodore Amiga, Atari ST" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: mac assembler" verbatim="Mac Assembler" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: proprietary" verbatim="Proprietary" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: motorola 680x0" verbatim="Motorola 680x0" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: apple macintosh" verbatim="Apple Macintosh" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: maxonasm" verbatim="MaxonASM" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: proprietary" verbatim="Proprietary" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: motorola 680x0" verbatim="Motorola 680x0" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: commodore amiga" verbatim="Commodore Amiga" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: metacomco macro assembler" verbatim="Metacomco Macro Assembler" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: proprietary" verbatim="Proprietary" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: motorola 680x0" verbatim="Motorola 680x0" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: commodore amiga, atari st" verbatim="Commodore Amiga, Atari ST" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: mpw assembler" verbatim="MPW Assembler" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: proprietary" verbatim="Proprietary" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: motorola 680x0" verbatim="Motorola 680x0" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: apple macintosh" verbatim="Apple Macintosh" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: oma" verbatim="OMA" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: proprietary" verbatim="Proprietary" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: motorola 680x0" verbatim="Motorola 680x0" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: commodore amiga" verbatim="Commodore Amiga" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: phxass" verbatim="PhxAss" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: free" verbatim="Free" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: motorola 680x0" verbatim="Motorola 680x0" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: commodore amiga" verbatim="Commodore Amiga" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: seka assembler" verbatim="Seka Assembler" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: proprietary" verbatim="Proprietary" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: motorola 680x0" verbatim="Motorola 680x0" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: commodore amiga, atari st" verbatim="Commodore Amiga, Atari ST" row="14" rowspan="1" column="3" colspan="1"/>
+  </matrices>
+  <matrices name="ARM assemblers">
+    <cells xsi:type="pcmmm:Header" name="0,0: assembler" verbatim="Assembler" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: license" verbatim="License" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: instruction set" verbatim="Instruction set" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: host platform" verbatim="Host platform" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: archimedes assembler" verbatim="Archimedes Assembler" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: proprietary" verbatim="Proprietary" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: arm" verbatim="ARM" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: acorn archimedes" verbatim="Acorn Archimedes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: arm, inc. armasm" verbatim="ARM, inc. armasm" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: proprietary" verbatim="Proprietary" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: arm" verbatim="ARM" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: linux, windows" verbatim="Linux, Windows" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: fasmarm" verbatim="FASMARM" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: free" verbatim="Free" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: arm" verbatim="ARM" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: various" verbatim="various" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: iar arm assembler" verbatim="IAR ARM Assembler" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: proprietary" verbatim="Proprietary" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: arm" verbatim="ARM" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: windows" verbatim="Windows" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: microsoft armasm" verbatim="Microsoft armasm" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: proprietary" verbatim="Proprietary" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: arm" verbatim="ARM" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: visual studio 2005" verbatim="Visual Studio 2005" row="5" rowspan="1" column="3" colspan="1"/>
+  </matrices>
+  <matrices name="IBM mainframe assemblers">
+    <cells xsi:type="pcmmm:Header" name="0,0: assembler" verbatim="Assembler" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: license" verbatim="License" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: instruction set" verbatim="Instruction set" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: host platform" verbatim="Host platform" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: bal" verbatim="BAL" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: free" verbatim="Free" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: ibm system/360" verbatim="IBM System/360" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: ibm bps/360" verbatim="IBM BPS/360" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: dignus systems/asm" verbatim="Dignus Systems/ASM" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: proprietary" verbatim="Proprietary" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: z/architecture" verbatim="z/Architecture" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: numerous" verbatim="numerous" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: hlasm" verbatim="HLASM" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: proprietary" verbatim="Proprietary" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: z/architecture" verbatim="z/Architecture" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: z/architecture" verbatim="z/Architecture" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: ibm assembler xf" verbatim="IBM Assembler XF" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: proprietary" verbatim="Proprietary" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: ibm system/370" verbatim="IBM System/370" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: ibm system/370" verbatim="IBM System/370" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: pl360" verbatim="PL360" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: free" verbatim="Free" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: ibm system/360" verbatim="IBM System/360" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: ibm system/360" verbatim="IBM System/360" row="5" rowspan="1" column="3" colspan="1"/>
+  </matrices>
+  <matrices name="Power Architecture assemblers">
+    <cells xsi:type="pcmmm:Header" name="0,0: assembler" verbatim="Assembler" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: license" verbatim="License" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: instruction set" verbatim="Instruction set" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: host platform" verbatim="Host platform" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: ibm aix assembler" verbatim="IBM AIX assembler" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: proprietary" verbatim="Proprietary" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: power" verbatim="POWER" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: ibm aix" verbatim="IBM AIX" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: mpw power assembler" verbatim="MPW Power Assembler" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: proprietary" verbatim="Proprietary" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: powerpc" verbatim="PowerPC" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: apple power macintosh" verbatim="Apple Power Macintosh" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: power fantasm" verbatim="Power Fantasm" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: proprietary" verbatim="Proprietary" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: powerpc" verbatim="PowerPC" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: apple power macintosh" verbatim="Apple Power Macintosh" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: stormpowerasm" verbatim="StormPowerASM" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: proprietary" verbatim="Proprietary" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: powerpc" verbatim="PowerPC" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: powerpc amiga" verbatim="PowerPC Amiga" row="4" rowspan="1" column="3" colspan="1"/>
+  </matrices>
+  <matrices name="x86 assemblers">
+    <cells xsi:type="pcmmm:Header" name="0,0: assembler" verbatim="Assembler" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: os" verbatim="OS" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: open source" verbatim="Open source" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: license" verbatim="License" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: x86-64" verbatim="x86-64" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: active development" verbatim="Active Development" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: a86/a386" verbatim="A86/A386" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: windows, dos" verbatim="Windows, DOS" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: no" verbatim="No" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: proprietary" verbatim="Proprietary" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: no" verbatim="No" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: no" verbatim="No" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: ack" verbatim="ACK" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: linux, minix, unix-like" verbatim="Linux, Minix, Unix-like" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: yes" verbatim="Yes" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: bsd since 2003" verbatim="BSD since 2003" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: no" verbatim="No" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: 1985-?" verbatim="1985-?" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: arrowsoft assembler" verbatim="Arrowsoft Assembler" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: dos" verbatim="DOS" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: no" verbatim="No" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: public domain" verbatim="Public Domain" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: no" verbatim="No" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: no" verbatim="No" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: ibm alp" verbatim="IBM ALP" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: os/2" verbatim="OS/2" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: no" verbatim="No" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: proprietary" verbatim="Proprietary" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: no" verbatim="No" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: no" verbatim="No" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: at&amp;t" verbatim="AT&amp;T" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: unix system v" verbatim="Unix System V" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: no" verbatim="No" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: proprietary" verbatim="Proprietary" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: no" verbatim="No" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: 1985-?" verbatim="1985-?" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: bruce d. evans' as86" verbatim="Bruce D. Evans' as86" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: minix 1.x, 16-bit part in linux" verbatim="Minix 1.x, 16-bit part in Linux" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: yes" verbatim="Yes" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: gpl" verbatim="GPL" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: no" verbatim="No" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: 1988-2001" verbatim="1988-2001" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: digital research asm86" verbatim="Digital Research ASM86" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: cp/m-86, dos, intel's isis and irmx" verbatim="CP/M-86, DOS, Intel's ISIS and iRMX" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: no" verbatim="No" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: proprietary" verbatim="Proprietary" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: no" verbatim="No" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: 1978-1992" verbatim="1978-1992" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: develsoftware assembler" verbatim="DevelSoftware Assembler" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: windows, linux, unix-like" verbatim="Windows, Linux, Unix-like" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: no" verbatim="No" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: free" verbatim="Free" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: listed, n/a" verbatim="Listed, N/A" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: no" verbatim="No" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: fasm" verbatim="FASM" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: windows, dos, linux, unix-like" verbatim="Windows, DOS, Linux, Unix-like" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: yes" verbatim="Yes" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: bsd with added copyleft" verbatim="BSD with added Copyleft" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: yes" verbatim="Yes" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: yes" verbatim="Yes" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: gas" verbatim="GAS" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: unix-like, windows, dos, os/2" verbatim="Unix-like, Windows, DOS, OS/2" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: yes" verbatim="Yes" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: gpl" verbatim="GPL" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: yes" verbatim="Yes" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: since 1987" verbatim="Since 1987" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: goasm" verbatim="GoAsm" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: windows" verbatim="Windows" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: no" verbatim="No" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: free" verbatim="Free" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: yes" verbatim="Yes" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: yes" verbatim="Yes" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: hla" verbatim="HLA" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: windows, linux, freebsd, mac os x" verbatim="Windows, Linux, FreeBSD, Mac OS X" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: yes" verbatim="Yes" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: public domain" verbatim="Public domain" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: no" verbatim="No" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: yes" verbatim="Yes" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: jwasm" verbatim="JWASM" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: windows, dos, linux, freebsd, os/2" verbatim="Windows, DOS, Linux, FreeBSD, OS/2" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: yes" verbatim="Yes" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: sybase open watcom public license" verbatim="Sybase Open Watcom Public License" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: yes" verbatim="Yes" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: yes" verbatim="Yes" row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: lzasm" verbatim="LZASM" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: windows, dos" verbatim="Windows, DOS" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: no" verbatim="No" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: free" verbatim="Free" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: no" verbatim="No" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: no" verbatim="No" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: masm" verbatim="MASM" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: windows, dos, os/2" verbatim="Windows, DOS, OS/2" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: no" verbatim="No" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: microsoft eula" verbatim="Microsoft EULA" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: yes" verbatim="Yes" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: since 1981" verbatim="Since 1981" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: mical a86" verbatim="Mical a86" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: unix, dos, pc/ix" verbatim="Unix, DOS, PC/IX" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: yes" verbatim="Yes" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: ?" verbatim="?" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: no" verbatim="No" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: 1982-1984" verbatim="1982-1984" row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: nasm" verbatim="NASM" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: windows, linux, mac os x, dos, os/2" verbatim="Windows, Linux, Mac OS X, DOS, OS/2" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: yes" verbatim="Yes" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: bsd" verbatim="BSD" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: yes" verbatim="Yes" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,5: yes" verbatim="Yes" row="17" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="18,0: tim paterson's asm" verbatim="Tim Paterson's ASM" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: 86-dos, dos debug" verbatim="86-DOS, DOS DEBUG" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: no" verbatim="No" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: proprietary" verbatim="Proprietary" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: no" verbatim="No" row="18" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,5: 1979-1983" verbatim="1979-1983" row="18" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="19,0: poasm" verbatim="POASM" row="19" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: windows, windows mobile" verbatim="Windows, Windows Mobile" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: no" verbatim="No" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: free" verbatim="Free" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: yes" verbatim="Yes" row="19" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,5: yes" verbatim="Yes" row="19" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="20,0: rosasm" verbatim="RosAsm" row="20" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,1: windows" verbatim="Windows" row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,2: yes" verbatim="Yes" row="20" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,3: gpl" verbatim="GPL" row="20" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,4: no" verbatim="No" row="20" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,5: no" verbatim="No" row="20" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="21,0: slr's optasm" verbatim="SLR's OPTASM" row="21" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,1: dos" verbatim="DOS" row="21" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,2: no" verbatim="No" row="21" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,3: proprietary" verbatim="Proprietary" row="21" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,4: no" verbatim="No" row="21" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,5: no" verbatim="No" row="21" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="22,0: tasm" verbatim="TASM" row="22" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,1: windows, dos" verbatim="Windows, DOS" row="22" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,2: no" verbatim="No" row="22" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,3: proprietary" verbatim="Proprietary" row="22" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,4: no" verbatim="No" row="22" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,5: ?" verbatim="?" row="22" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="23,0: wasm" verbatim="WASM" row="23" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,1: windows, dos, os/2" verbatim="Windows, DOS, OS/2" row="23" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,2: yes" verbatim="Yes" row="23" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,3: sybase open watcom public license" verbatim="Sybase Open Watcom Public License" row="23" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,4: no" verbatim="No" row="23" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,5: ?" verbatim="?" row="23" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="24,0: tccasm" verbatim="TCCASM" row="24" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,1: unix-like, windows" verbatim="Unix-like, Windows" row="24" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,2: yes" verbatim="Yes" row="24" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,3: lgpl" verbatim="LGPL" row="24" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,4: yes" verbatim="Yes" row="24" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,5: yes" verbatim="Yes" row="24" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="25,0: xenix" verbatim="Xenix" row="25" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,1: xenix 2.3 and 3.0 (before 1985)" verbatim="Xenix 2.3 and 3.0 (before 1985)" row="25" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,2: no" verbatim="No" row="25" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,3: proprietary" verbatim="Proprietary" row="25" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,4: no" verbatim="No" row="25" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,5: 1982-1984" verbatim="1982-1984" row="25" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="26,0: yasm" verbatim="Yasm" row="26" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,1: windows, dos, linux, unix-like" verbatim="Windows, DOS, Linux, Unix-like" row="26" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,2: yes" verbatim="Yes" row="26" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,3: bsd" verbatim="BSD" row="26" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,4: yes" verbatim="Yes" row="26" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,5: yes" verbatim="Yes" row="26" rowspan="1" column="5" colspan="1"/>
+  </matrices>
+  <matrices name="Other architectures">
+    <cells xsi:type="pcmmm:Header" name="0,0: assembler" verbatim="Assembler" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: license" verbatim="License" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: instruction set" verbatim="Instruction set" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: host platform" verbatim="Host platform" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: alm (assembly language for multics)" verbatim="ALM (Assembly Language for Multics)" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: mit license" verbatim="MIT License" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: ge-645 honeywell 6180" verbatim="GE-645&#xA;Honeywell 6180" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: ge-645 honeywell 6180" verbatim="GE-645&#xA;Honeywell 6180" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: babbage" verbatim="Babbage" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: proprietary" verbatim="Proprietary" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: gec 4000 series" verbatim="GEC 4000 series" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: gec 4000 series" verbatim="GEC 4000 series" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: compass" verbatim="COMPASS" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: proprietary" verbatim="Proprietary" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: cdc mainframe" verbatim="CDC mainframe" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: cdc mainframe" verbatim="CDC mainframe" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: macro-10" verbatim="MACRO-10" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: free" verbatim="Free" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: pdp-10" verbatim="PDP-10" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: pdp-10" verbatim="PDP-10" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: macro-11" verbatim="MACRO-11" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: unknown" verbatim="Unknown" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: pdp-11" verbatim="PDP-11" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: pdp-11" verbatim="PDP-11" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: macro-32" verbatim="MACRO-32" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: unknown" verbatim="Unknown" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: vax" verbatim="VAX" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: vax" verbatim="VAX" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: pasmo" verbatim="PASMO" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: gpl" verbatim="GPL" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: zilog z80" verbatim="Zilog Z80" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: numerous" verbatim="numerous" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: mrs" verbatim="MRS" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: gpl" verbatim="GPL" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: zilog z80, 8080" verbatim="Zilog Z80, 8080" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: zx spectrum, pmd-85" verbatim="ZX Spectrum, PMD-85" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: asem-51" verbatim="ASEM-51" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: free" verbatim="Free" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: 8051" verbatim="8051" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: embedded systems" verbatim="Embedded Systems" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: gpasm" verbatim="GPASM" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: gpl" verbatim="GPL" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: pic microcontroller" verbatim="PIC microcontroller" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: many" verbatim="many" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: id3e" verbatim="ID3E" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: free for academic use" verbatim="Free for academic use" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: sc123" verbatim="SC123" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: sc123 emulator" verbatim="SC123 emulator" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: mips" verbatim="MIPS" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: free" verbatim="Free" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: mips architecture" verbatim="MIPS architecture" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: mips architecture" verbatim="MIPS architecture" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: soap (symbolic optimal assembly program)" verbatim="SOAP&#xA;(Symbolic Optimal Assembly Program)" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: proprietary" verbatim="Proprietary" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: ibm 650" verbatim="IBM 650" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: ibm 650" verbatim="IBM 650" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: mpw iigs assembler" verbatim="MPW IIgs Assembler" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: proprietary" verbatim="Proprietary" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: wd 65c816" verbatim="WD 65C816" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: apple iigs" verbatim="Apple IIgs" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: metasymbol" verbatim="MetaSymbol" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: free" verbatim="Free" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: sds/xds sigma systems" verbatim="SDS/XDS Sigma systems" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: sds/xds sigma systems" verbatim="SDS/XDS Sigma systems" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: autocoder" verbatim="Autocoder" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: free" verbatim="Free" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: ibm 705, 14xx, 1410, 7010, 7070, 7072, 7074, 7080" verbatim="IBM 705, 14xx, 1410, 7010, 7070, 7072, 7074, 7080" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: various" verbatim="various" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: fap (fortran assembly program)" verbatim="FAP&#xA;(Fortran Assembly Program)" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: free" verbatim="Free" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: ibm 709, 704x, 709x" verbatim="IBM 709, 704x, 709x" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: various" verbatim="various" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="18,0: map (macro assembly program)" verbatim="MAP&#xA;(Macro Assembly Program)" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: free" verbatim="Free" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: ibm 709, 704x, 709x" verbatim="IBM 709, 704x, 709x" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: various" verbatim="various" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="19,0: symbolic programming system (sps)" verbatim="Symbolic Programming System (SPS)" row="19" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: free" verbatim="Free" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: ibm 14xx, 1620, 1710" verbatim="IBM 14xx, 1620, 1710" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: ibm 1401, 1440, 1460, 1620, 1710" verbatim="IBM 1401, 1440, 1460, 1620, 1710" row="19" rowspan="1" column="3" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

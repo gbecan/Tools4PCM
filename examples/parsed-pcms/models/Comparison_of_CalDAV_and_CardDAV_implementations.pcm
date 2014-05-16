@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm" name="Comparison_of_CalDAV_and_CardDAV_implementations">
+  <matrices name="Client implementations">
+    <cells xsi:type="pcmmm:Header" name="0,0: client name" verbatim="Client name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: platform" verbatim="Platform" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: license" verbatim="License" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: caldav events" verbatim="CalDAV Events" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: caldav tasks" verbatim="CalDAV Tasks" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: carddav" verbatim="CardDAV" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: busycal" verbatim="BusyCal" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: mac os x" verbatim="Mac OS X" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: proprietary" verbatim="Proprietary" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: no" verbatim="No" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: n/a" verbatim="N/A" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: agendav" verbatim="AgenDAV" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: cross-platform javascript web application" verbatim="Cross-platform JavaScript Web application" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: gpl" verbatim="GPL" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: n/a" verbatim="N/A" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: n/a" verbatim="N/A" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: calendarsync" verbatim="CalendarSync" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: android app" verbatim="Android App" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: ?" verbatim="?" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: yes" verbatim="Yes" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: n/a" verbatim="N/A" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: n/a" verbatim="N/A" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: caldav tasksync free" verbatim="CalDAV Tasksync free" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: android app" verbatim="Android App" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: ?" verbatim="?" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: n/a" verbatim="N/A" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: yes" verbatim="Yes" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: n/a" verbatim="N/A" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: acal" verbatim="aCal" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: android app" verbatim="Android App" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: gpl" verbatim="GPL" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: yes" verbatim="Yes" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: yes" verbatim="Yes" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: n/a" verbatim="N/A" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: androidcaldavsyncadapater" verbatim="AndroidCaldavSyncAdapater" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: android app" verbatim="Android App" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: gpl" verbatim="GPL" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: yes" verbatim="Yes" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: n/a" verbatim="N/A" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: n/a" verbatim="N/A" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: contactsync" verbatim="ContactSync" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: android app" verbatim="Android App" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: ?" verbatim="?" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: n/a" verbatim="N/A" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: n/a" verbatim="N/A" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: yes" verbatim="Yes" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: caldav-sync" verbatim="CalDAV-Sync" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: android app" verbatim="Android App" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: proprietary" verbatim="Proprietary" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: yes" verbatim="Yes" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: yes" verbatim="Yes" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: n/a" verbatim="N/A" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: carddav-sync" verbatim="CardDAV-Sync" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: android app" verbatim="Android App" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: ?" verbatim="?" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: n/a" verbatim="N/A" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: n/a" verbatim="N/A" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: yes" verbatim="Yes" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: caldavzap" verbatim="CalDavZAP" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: cross-platform javascript web application" verbatim="Cross-platform JavaScript Web application" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: agpl" verbatim="AGPL" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: yes" verbatim="Yes" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: yes" verbatim="Yes" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: n/a" verbatim="N/A" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: carddavmate" verbatim="CardDavMATE" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: cross-platform javascript web application" verbatim="Cross-platform JavaScript Web application" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: agpl" verbatim="AGPL" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: n/a" verbatim="N/A" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: n/a" verbatim="N/A" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: yes" verbatim="Yes" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: chandler desktop" verbatim="Chandler Desktop" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: cross-platform python" verbatim="Cross-platform Python" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: apache" verbatim="Apache" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: yes" verbatim="Yes" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: yes" verbatim="Yes" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: no" verbatim="No" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: daylite" verbatim="Daylite" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: mac os x" verbatim="Mac OS X" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: proprietary" verbatim="Proprietary" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: yes" verbatim="Yes" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: no" verbatim="No" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: no" verbatim="No" row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: davdroid" verbatim="DAVdroid" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: android app" verbatim="Android App" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: gpl" verbatim="GPL" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: yes" verbatim="Yes" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: ?" verbatim="?" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: yes" verbatim="Yes" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: em client" verbatim="eM Client" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: microsoft windows" verbatim="Microsoft Windows" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: proprietary" verbatim="Proprietary" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: yes" verbatim="Yes" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: yes" verbatim="Yes" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: yes" verbatim="Yes" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: fantastical" verbatim="Fantastical" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: mac os x" verbatim="Mac OS X" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: proprietary" verbatim="Proprietary" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: yes" verbatim="Yes" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: ?" verbatim="?" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: no" verbatim="No" row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: jqcaldav" verbatim="jqCalDAV" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: cross-platform javascript web application" verbatim="Cross-platform JavaScript Web application" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: mit" verbatim="MIT" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: yes" verbatim="Yes" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: yes" verbatim="Yes" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,5: n/a" verbatim="N/A" row="17" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="18,0: kcarddav" verbatim="KCardDAV" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: cross-platform kontact add-on" verbatim="Cross-platform Kontact add-on" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: gpl" verbatim="GPL" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: n/a" verbatim="N/A" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: n/a" verbatim="N/A" row="18" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,5: yes" verbatim="Yes" row="18" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="19,0: lightning" verbatim="Lightning" row="19" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: cross-platform thunderbird add-on" verbatim="Cross-platform Thunderbird Add-on" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: mpl/gpl/lgpl" verbatim="MPL/GPL/LGPL" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: yes" verbatim="Yes" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: yes" verbatim="Yes" row="19" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,5: n/a" verbatim="N/A" row="19" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="20,0: mulberry" verbatim="Mulberry" row="20" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,1: cross-platform" verbatim="Cross-platform" row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,2: apache" verbatim="Apache" row="20" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,3: yes" verbatim="Yes" row="20" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,4: yes" verbatim="Yes" row="20" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,5: yes" verbatim="Yes" row="20" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="21,0: pycarddav" verbatim="pyCardDAV" row="21" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,1: cross-platform python" verbatim="Cross-platform Python" row="21" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,2: mit" verbatim="MIT" row="21" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,3: n/a" verbatim="N/A" row="21" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,4: n/a" verbatim="N/A" row="21" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,5: yes" verbatim="Yes" row="21" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="22,0: inverse sogo connector/integrator" verbatim="Inverse SOGo Connector/Integrator" row="22" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,1: cross-platform thunderbird add-on" verbatim="Cross-platform Thunderbird Add-on" row="22" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,2: mpl/gpl/lgpl" verbatim="MPL/GPL/LGPL" row="22" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,3: yes" verbatim="Yes" row="22" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,4: yes" verbatim="Yes" row="22" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,5: yes" verbatim="Yes" row="22" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="23,0: evolution" verbatim="Evolution" row="23" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,1: cross-platform" verbatim="Cross-platform" row="23" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,2: gpl" verbatim="GPL" row="23" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,3: yes" verbatim="Yes" row="23" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,4: yes" verbatim="Yes" row="23" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,5: cards via webdav" verbatim="Cards via WebDAV" row="23" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="24,0: calendars/reminders/contacts/mail" verbatim="Calendars/Reminders/Contacts/Mail" row="24" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,1: ios and mac os x" verbatim="iOS and Mac OS X" row="24" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,2: proprietary" verbatim="Proprietary" row="24" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,3: yes" verbatim="Yes" row="24" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,4: yes" verbatim="Yes" row="24" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,5: yes" verbatim="Yes" row="24" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="25,0: surgate outlook sync client" verbatim="SurGATE Outlook Sync Client" row="25" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,1: microsoft windows" verbatim="Microsoft Windows" row="25" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,2: proprietary" verbatim="Proprietary" row="25" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,3: yes" verbatim="Yes" row="25" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,4: yes" verbatim="Yes" row="25" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,5: yes" verbatim="Yes" row="25" rowspan="1" column="5" colspan="1"/>
+  </matrices>
+  <matrices name="Server implementations">
+    <cells xsi:type="pcmmm:Header" name="0,0: server name" verbatim="Server name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: lic." verbatim="Lic." rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: rfc 2616 http 1.1 spec." verbatim="RFC 2616 HTTP 1.1 spec." rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: rfc 2617 http access auth." verbatim="RFC 2617 HTTP access auth." rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: rfc 2518 web dav spec." verbatim="RFC 2518 Web DAV spec." rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: rfc 3253 web dav ext." verbatim="RFC 3253 Web DAV ext." rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: rfc 3744 web dav acl" verbatim="RFC 3744 Web DAV ACL" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: rfc 4324 ical cap spec." verbatim="RFC 4324 iCal CAP spec." rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: rfc 4709 web dav mount" verbatim="RFC 4709 Web DAV mount" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: rfc 4791 cal dav spec." verbatim="RFC 4791 Cal DAV spec." rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,10: rfc 4918 web dav ext." verbatim="RFC 4918 Web DAV ext." rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,11: rfc 5397 web dav principal" verbatim="RFC 5397 Web DAV principal" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,12: rfc 5545 rev. ical spec." verbatim="RFC 5545 rev. iCal spec." rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,13: rfc 5546 ical itip spec." verbatim="RFC 5546 iCal iTIP spec." rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,14: rfc 5689 webdav ext. mkcol" verbatim="RFC 5689 WebDAV ext. MKCOL" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,15: rfc 6352 card dav vcard" verbatim="RFC 6352 Card DAV vCard" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: apple calendar and contacts server" verbatim="Apple Calendar and Contacts Server" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: apache" verbatim="Apache" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: yes" verbatim="Yes" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: yes" verbatim="Yes" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: yes" verbatim="Yes" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: ?" verbatim="?" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: yes" verbatim="Yes" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,8: yes" verbatim="Yes" row="1" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,9: yes" verbatim="Yes" row="1" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,10: yes" verbatim="Yes" row="1" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,11: yes" verbatim="Yes" row="1" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,12: yes" verbatim="Yes" row="1" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,13: yes" verbatim="Yes" row="1" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,14: yes" verbatim="Yes" row="1" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,15: yes" verbatim="Yes" row="1" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: ba&#xef;kal" verbatim="Ba&#xef;kal" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: gpl" verbatim="GPL" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: yes" verbatim="Yes" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: yes" verbatim="Yes" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: ?" verbatim="?" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: some" verbatim="Some" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: yes" verbatim="Yes" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: yes" verbatim="Yes" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,9: yes" verbatim="Yes" row="2" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,10: yes" verbatim="Yes" row="2" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,11: yes" verbatim="Yes" row="2" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,12: yes" verbatim="Yes" row="2" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,13: ?" verbatim="?" row="2" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,14: yes" verbatim="Yes" row="2" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,15: yes" verbatim="Yes" row="2" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: bedework" verbatim="Bedework" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: apache" verbatim="Apache" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: ?" verbatim="?" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: ?" verbatim="?" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: ?" verbatim="?" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: ?" verbatim="?" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: ?" verbatim="?" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: ?" verbatim="?" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: ?" verbatim="?" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,9: yes" verbatim="Yes" row="3" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,10: ?" verbatim="?" row="3" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,11: ?" verbatim="?" row="3" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,12: yes" verbatim="Yes" row="3" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,13: yes" verbatim="Yes" row="3" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,14: ?" verbatim="?" row="3" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,15: yes" verbatim="Yes" row="3" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: calypso" verbatim="Calypso" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: gpl" verbatim="GPL" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: yes" verbatim="Yes" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: yes" verbatim="Yes" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: yes" verbatim="Yes" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: no" verbatim="No" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: ?" verbatim="?" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: no" verbatim="No" row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,8: no" verbatim="No" row="4" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,9: yes" verbatim="Yes" row="4" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,10: yes" verbatim="Yes" row="4" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,11: no" verbatim="No" row="4" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,12: yes" verbatim="Yes" row="4" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,13: yes" verbatim="Yes" row="4" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,14: ?" verbatim="?" row="4" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,15: ?" verbatim="?" row="4" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: davical" verbatim="DAViCal" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: gpl" verbatim="GPL" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: yes" verbatim="Yes" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: ?" verbatim="?" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: ?" verbatim="?" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: yes" verbatim="Yes" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: yes" verbatim="Yes" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: yes" verbatim="Yes" row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,8: yes" verbatim="Yes" row="5" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,9: yes" verbatim="Yes" row="5" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,10: yes" verbatim="Yes" row="5" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,11: yes" verbatim="Yes" row="5" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,12: yes" verbatim="Yes" row="5" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,13: yes" verbatim="Yes" row="5" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,14: yes" verbatim="Yes" row="5" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,15: yes" verbatim="Yes" row="5" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: davmail" verbatim="DavMail" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: gpl" verbatim="GPL" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: ?" verbatim="?" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: ?" verbatim="?" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: ?" verbatim="?" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: ?" verbatim="?" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: ?" verbatim="?" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: ?" verbatim="?" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,8: ?" verbatim="?" row="6" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,9: ?" verbatim="?" row="6" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,10: ?" verbatim="?" row="6" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,11: ?" verbatim="?" row="6" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,12: ?" verbatim="?" row="6" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,13: ?" verbatim="?" row="6" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,14: ?" verbatim="?" row="6" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,15: ?" verbatim="?" row="6" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: daylite server" verbatim="Daylite Server" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: proprietary" verbatim="Proprietary" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: yes" verbatim="Yes" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: yes" verbatim="Yes" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: yes" verbatim="Yes" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: yes" verbatim="Yes" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: yes" verbatim="Yes" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: no" verbatim="No" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,8: no" verbatim="No" row="7" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,9: yes" verbatim="Yes" row="7" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,10: yes" verbatim="Yes" row="7" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,11: yes" verbatim="Yes" row="7" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,12: no" verbatim="No" row="7" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,13: no" verbatim="No" row="7" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,14: yes" verbatim="Yes" row="7" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,15: yes" verbatim="Yes" row="7" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: group-office" verbatim="Group-Office" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: agpl/commercial" verbatim="AGPL/Commercial" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: yes" verbatim="Yes" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: yes" verbatim="Yes" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: yes" verbatim="Yes" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: ?" verbatim="?" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: some" verbatim="Some" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: ?" verbatim="?" row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,8: yes" verbatim="Yes" row="8" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,9: yes" verbatim="Yes" row="8" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,10: yes" verbatim="Yes" row="8" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,11: yes" verbatim="Yes" row="8" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,12: yes" verbatim="Yes" row="8" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,13: ?" verbatim="?" row="8" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,14: yes" verbatim="Yes" row="8" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,15: yes" verbatim="Yes" row="8" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: it hit webdav server engine for .net" verbatim="IT Hit WebDAV Server Engine for .Net" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: commercial" verbatim="Commercial" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: yes" verbatim="Yes" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: yes" verbatim="Yes" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: yes" verbatim="Yes" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: yes" verbatim="Yes" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: yes" verbatim="Yes" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: ?" verbatim="?" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,8: ?" verbatim="?" row="9" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,9: yes" verbatim="Yes" row="9" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,10: yes" verbatim="Yes" row="9" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,11: yes" verbatim="Yes" row="9" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,12: ?" verbatim="?" row="9" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,13: yes" verbatim="Yes" row="9" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,14: yes" verbatim="Yes" row="9" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,15: yes" verbatim="Yes" row="9" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: owncloud" verbatim="ownCloud" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: agplv3" verbatim="AGPLv3" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: ?" verbatim="?" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: ?" verbatim="?" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: ?" verbatim="?" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: ?" verbatim="?" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: ?" verbatim="?" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: ?" verbatim="?" row="10" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,8: ?" verbatim="?" row="10" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,9: yes" verbatim="Yes" row="10" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,10: ?" verbatim="?" row="10" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,11: ?" verbatim="?" row="10" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,12: ?" verbatim="?" row="10" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,13: ?" verbatim="?" row="10" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,14: ?" verbatim="?" row="10" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,15: yes" verbatim="Yes" row="10" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: radicale" verbatim="Radicale" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: gpl" verbatim="GPL" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: yes" verbatim="Yes" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: yes" verbatim="Yes" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: yes" verbatim="Yes" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: no" verbatim="No" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: yes" verbatim="Yes" row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,7: no" verbatim="No" row="11" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,8: no" verbatim="No" row="11" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,9: yes" verbatim="Yes" row="11" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,10: yes" verbatim="Yes" row="11" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,11: yes" verbatim="Yes" row="11" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,12: yes" verbatim="Yes" row="11" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,13: yes" verbatim="Yes" row="11" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,14: yes" verbatim="Yes" row="11" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,15: yes" verbatim="Yes" row="11" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: sabredav" verbatim="SabreDAV" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: bsd" verbatim="BSD" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: yes" verbatim="Yes" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: yes" verbatim="Yes" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: yes" verbatim="Yes" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: ?" verbatim="?" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,6: some" verbatim="Some" row="12" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,7: ?" verbatim="?" row="12" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,8: yes" verbatim="Yes" row="12" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,9: yes" verbatim="Yes" row="12" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,10: yes" verbatim="Yes" row="12" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,11: yes" verbatim="Yes" row="12" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,12: yes" verbatim="Yes" row="12" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,13: ?" verbatim="?" row="12" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,14: yes" verbatim="Yes" row="12" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,15: yes" verbatim="Yes" row="12" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: tryton" verbatim="Tryton" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: gpl" verbatim="GPL" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: yes" verbatim="Yes" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: yes" verbatim="Yes" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: yes" verbatim="Yes" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: ?" verbatim="?" row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: ?" verbatim="?" row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,7: ?" verbatim="?" row="13" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,8: ?" verbatim="?" row="13" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,9: yes" verbatim="Yes" row="13" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,10: ?" verbatim="?" row="13" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,11: yes" verbatim="Yes" row="13" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,12: yes" verbatim="Yes" row="13" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,13: ?" verbatim="?" row="13" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,14: ?" verbatim="?" row="13" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,15: yes" verbatim="Yes" row="13" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: zimbra" verbatim="Zimbra" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: zpl" verbatim="ZPL" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: yes" verbatim="Yes" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: yes" verbatim="Yes" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: yes" verbatim="Yes" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: ?" verbatim="?" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: ?" verbatim="?" row="14" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,7: ?" verbatim="?" row="14" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,8: ?" verbatim="?" row="14" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,9: yes" verbatim="Yes" row="14" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,10: ?" verbatim="?" row="14" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,11: yes" verbatim="Yes" row="14" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,12: ?" verbatim="?" row="14" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,13: ?" verbatim="?" row="14" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,14: ?" verbatim="?" row="14" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,15: yes" verbatim="Yes" row="14" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: fennel" verbatim="Fennel" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: gplv3" verbatim="GPLv3" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: ?" verbatim="?" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: ?" verbatim="?" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: ?" verbatim="?" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: ?" verbatim="?" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,6: ?" verbatim="?" row="15" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,7: ?" verbatim="?" row="15" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,8: ?" verbatim="?" row="15" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,9: ?" verbatim="?" row="15" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,10: ?" verbatim="?" row="15" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,11: ?" verbatim="?" row="15" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,12: ?" verbatim="?" row="15" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,13: ?" verbatim="?" row="15" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,14: ?" verbatim="?" row="15" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,15: ?" verbatim="?" row="15" rowspan="1" column="15" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm" name="Comparison_of_Java_and_C++">
+  <matrices name="Design aims">
+    <cells xsi:type="pcmmm:Header" name="0,0: c++" verbatim="C++" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: java" verbatim="Java" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: strongly influenced by c syntax, with object-orien" verbatim="Strongly influenced by C syntax, with Object-Oriented features added." row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: strongly influenced by c++/c syntax." verbatim="Strongly influenced by C++/C syntax." row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: compatible with c source code, except for a few co" verbatim="Compatible with C source code, except for a few corner case." row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: provides the java native interface and recently ja" verbatim="Provides the Java Native Interface and recently Java Native Access as a way to directly call C/C++ code." row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: write once, compile anywhere (woca)." verbatim="Write once, compile anywhere (WOCA)." row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: write once, run anywhere / everywhere (wora / wore" verbatim="Write once, run anywhere / everywhere (WORA / WORE)." row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: allows procedural programming, functional programm" verbatim="Allows procedural programming, functional programming, object-oriented programming, generic programming, and template metaprogramming. Favors a mix of paradigms." row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: allows procedural programming, functional programm" verbatim="Allows procedural programming, functional programming (since Java 8) and generic programming (since Java 5), but strongly encourages the object-oriented programming paradigm. Includes support for the creation of scripting languages." row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: runs as native executable machine code for the tar" verbatim="Runs as native executable machine code for the target instruction set(s)." row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: runs in a virtual machine." verbatim="Runs in a virtual machine." row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: provides object types and type names. allows refle" verbatim="Provides object types and type names. Allows reflection through RTTI." row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: is reflective, allowing metaprogramming and dynami" verbatim="Is reflective, allowing metaprogramming and dynamic code generation at runtime." row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: has multiple binary compatibility standards (commo" verbatim="Has multiple binary compatibility standards (commonly Microsoft (for MSVC compiler) and Itanium/GNU (for virtually all other compilers))." row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: has a single, os- and compiler-independent binary " verbatim="Has a single, OS- and compiler-independent binary compatibility standard." row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,0: optional automated bounds checking (e.g., the meth" verbatim="Optional automated bounds checking (e.g., the  method in  and  containers)." row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: all operations are required to be bound-checked by" verbatim="All operations are required to be Bound-checked by all compliant distributions of Java. HotSpot can remove bounds checking." row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,0: supports native unsigned arithmetic." verbatim="Supports native unsigned arithmetic." row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: no native support for unsigned arithmetic." verbatim="No native support for unsigned arithmetic." row="9" rowspan="1" column="1" colspan="1"/>
+  </matrices>
+  <matrices name="Syntax">
+    <cells xsi:type="pcmmm:Header" name="0,0: c++" verbatim="C++" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: java" verbatim="Java" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: " verbatim="" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: " verbatim="" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: " verbatim="" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: " verbatim="" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: " verbatim="" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: " verbatim="" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: " verbatim="" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: " verbatim="" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: " verbatim="" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: " verbatim="" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: " verbatim="" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: " verbatim="" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: " verbatim="" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: " verbatim="" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,0: " verbatim="" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: " verbatim="" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,0: " verbatim="" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: " verbatim="" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,0: " verbatim="" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: " verbatim="" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,0: " verbatim="" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: " verbatim="" row="11" rowspan="1" column="1" colspan="1"/>
+  </matrices>
+  <matrices name="Syntax">
+    <cells xsi:type="pcmmm:Header" name="0,0: c++" verbatim="C++" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: java" verbatim="Java" rowspan="1" column="1" colspan="1"/>
+  </matrices>
+  <matrices name="Runtime">
+    <cells xsi:type="pcmmm:Header" name="0,0: c++" verbatim="C++" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: java" verbatim="Java" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: c++ is compiled directly to machine code which is " verbatim="C++ is compiled directly to machine code which is then executed directly by the central processing unit." row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: java is compiled to byte-code which the java virtu" verbatim="Java is compiled to byte-code which the Java virtual machine (JVM) then interprets at runtime. Actual Java implementations do Just-in-time compilation to native machine code. Alternatively, the GNU Compiler for Java can compile directly to machine code." row="1" rowspan="1" column="1" colspan="1"/>
+  </matrices>
+  <matrices name="Performance">
+    <cells xsi:type="pcmmm:Header" name="0,0: java/c++ statement" verbatim="Java/C++ statement" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: c++ generated code (x86)" verbatim="C++ generated code (x86)" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: java generated byte code" verbatim="Java generated byte code" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: vector[i]++;" verbatim="vector[i]++;" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: mov edx,[ebp+4h] mov eax,[ebp+1ch] inc dword ptr [" verbatim="mov edx,[ebp+4h]&#xA;mov eax,[ebp+1Ch]&#xA;inc dword ptr [edx+eax*4]" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: aload_1 iload_2 dup2 iaload iconst_1 iadd iastore" verbatim="aload_1&#xA;iload_2&#xA;dup2&#xA;iaload&#xA;iconst_1&#xA;iadd&#xA;iastore" row="1" rowspan="1" column="2" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

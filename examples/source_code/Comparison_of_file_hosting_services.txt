@@ -1,0 +1,393 @@
+<table class="metadata plainlinks ambox ambox-style ambox-lead_too_short" role="presentation"><tr><td class="mbox-image"><div style="width:52px;">[[File:Edit-clear.svg|40x40px|link=|alt=]]</div></td><td class="mbox-text"><span class="mbox-text-span">This article's '''[[Wikipedia:Manual of Style/Lead section|lead section]] may not adequately [[Wikipedia:summary style|summarize]] key points of its contents'''.<span class="hide-when-compact"> Please consider expanding the lead to [[Wikipedia:Manual of Style/Lead section#Provide an accessible overview|provide an accessible overview]] of all important aspects of the article.</span>  <small>''(January 2014)''</small><span class="hide-when-compact"></span></span></td></tr></table>
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" role="presentation"><tr><td class="mbox-image"><div style="width:52px;">[[File:Question book-new.svg|50x40px|alt=]]</div></td><td class="mbox-text"><span class="mbox-text-span">This article '''needs additional citations for [[Wikipedia:Verifiability|verification]]'''.<span class="hide-when-compact"> Please help [//en.wikipedia.org/w/index.php?title=Special:ExpandTemplates&action=edit improve this article] by [[Help:Introduction to referencing/1|adding citations to reliable sources]]. Unsourced material may be challenged and removed.</span>  <small>''(June 2013)''</small><span class="hide-when-compact"></span></span></td></tr></table>
+<table class="metadata plainlinks ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation"><tr><td class="mbox-image"><div style="width:52px;">[[File:Ambox content.png|40x40px|link=|alt=]]</div></td><td class="mbox-text"><span class="mbox-text-span"><table class="collapsible  " style="width:95%; background:transparent;">
+<tr><th style="text-align:left; padding:0.2em 2px 0.2em 0;"> This article has multiple issues. <span style="font-weight: normal;">Please help '''[//en.wikipedia.org/w/index.php?title=Special:ExpandTemplates&action=edit improve it]''' or discuss these issues on the '''[[|talk page]]'''.</span></th></tr>
+<tr><td>
+</td></tr></table><span class="hide-when-compact"></span><span class="hide-when-compact"></span></span></td></tr></table>
+
+This article compares [[file hosting service]]s where [[file sharing|files can be shared]].
+
+__TOC__
+
+== File hosting services with file-sharing possibility ==
+{| align="center" width="100%" style="width:100%; vertical-align:top; border:1px solid #ABD5F5; background-color:#F1F5FC; margin-top:2px;"
+| <div style="text-align:center"></div>
+
+<div class="legend"><span class="legend-color" style="display:inline-block; width:1.5em; height:1.5em; margin:1px 0; border:1px solid black; background-color:
+#98FB98; color:black; font-size:100%; text-align:center;">&nbsp;</span>&nbsp;No restriction
+</div><div class="legend"><span class="legend-color" style="display:inline-block; width:1.5em; height:1.5em; margin:1px 0; border:1px solid black; background-color:
+#FED; color:black; font-size:100%; text-align:center;">&nbsp;</span>&nbsp;Limit on some types of accounts
+</div><div class="legend"><span class="legend-color" style="display:inline-block; width:1.5em; height:1.5em; margin:1px 0; border:1px solid black; background-color:
+#FFD; color:black; font-size:100%; text-align:center;">&nbsp;</span>&nbsp;Limit across all accounts
+</div><div class="legend"><span class="legend-color" style="display:inline-block; width:1.5em; height:1.5em; margin:1px 0; border:1px solid black; background-color:
+#ff9090; color:black; font-size:100%; text-align:center;">&nbsp;</span>&nbsp;Total restriction across all accounts
+</div>
+
+|}
+
+{| class="wikitable sortable" style="font-size: smaller; text-align: center; width: auto;"
+|-
+!Web host
+!Storage size
+!Max. file size
+!Direct access
+!Traffic/bandwidth limit
+!File expiration
+![[Upload#Remote upload|Remote uploading]]?
+!Developer API?
+!FTP upload possible?
+!File versioning
+!Follows symlinks
+!Misc. notes
+|-
+![[Amazon Cloud Drive]]
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|<span style="display:none" class="sortkey">7000500000000000000</span>5 [[Gigabyte|GB]] (free) <br />up to 1000GB (paid)
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7000200000000000000</span>2 [[Gigabyte|GB]]
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|Amazon S3 limits
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  ?
+|  ?
+|  ?
+|  style="background: #ececec; color: grey; vertical-align: middle; text-align: center; " class="table-na" | <small>N/A</small>
+|-
+! [[Amazon S3]]
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|<span style="display:none" class="sortkey">7000500000000000000</span>5 [[Gigabyte|GB]] (12-month trial, free storage with credit-card details supplied, unfree bandwidth)<br /> Unlimited (paid)
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7000500000000000000</span>5&nbsp;[[Terabyte|TB]] per file, unlimited files per bucket
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|Amazon S3 limits
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|None, pay for storage each month
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|[[Representational State Transfer|REST]], [[SOAP]]
+|  ?
+|  ?
+|  ?
+|  style="background: #ececec; color: grey; vertical-align: middle; text-align: center; " class="table-na" | <small>N/A</small>
+|-
+! [[ASUS WebStorage]]
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|<span style="display:none" class="sortkey">7000500000000000000</span>5&nbsp;[[Gigabyte|GB]] (free) <br /> Unlimited (paid)
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|500 [[Megabyte|MB]] (free) <br /> 1-2 [[Gigabyte|GB]] (paid)
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"| Daily limit: 0.5 GB (free), 10/20 GB (paid)
+|  style=" vertical-align: middle; text-align: center; " class="unknown table-unknown"|?
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  ?
+|  ?
+|  ?
+|  style="background: #ececec; color: grey; vertical-align: middle; text-align: center; " class="table-na" | <small>N/A</small>
+|-
+! [[Box (service)|Box]]
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|10 [[Gigabyte|GB]] (free Personal)<br /> 50 GB (free with Sony Xperia device)<br />25-50 GB (paid Personal)<br />1000 GB (Business)<br />Unlimited (Enterprise)
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|250&nbsp;[[Megabyte|MB]] (free Personal)<br />1&nbsp;[[Gigabyte|GB]] (paid Personal)<br />2 GB (Business)<br />5 GB (Enterprise)
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|10&nbsp;GB/month (free) <br /> 2 TB/month (paid)
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|None
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"| Business and Enterprise customers only
+|  ?
+|  ?
+|  Does not sync Mac files such as iWork: Keynote etc.
+|-
+! [[CloudMe]]
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7000300000000000000</span>3 [[Gigabyte|GB]] plus 500 [[Megabyte|MB]] for each referral person up to 16 GB (free)<br /> 500 [[Gigabyte|GB]] (paid)
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|<span style="display:none" class="sortkey">7002150000000000000</span>150&nbsp;[[Megabyte|MB]] (free)<br />Unlimited (premium)
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"| [[REST]], [[SOAP]], [[WebDAV]]
+|  ?
+|  ?
+|  ?
+|  Primarily a media focused file synchronization and backup service with websharing.
+|-
+! [[Dropbox (storage provider)|Dropbox]]
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|<span style="display:none" class="sortkey">7000200000000000000</span>2 [[Gigabyte|GB]](free)<br /> 18 GB (free, 500 [[Megabyte|MB]] for each referral person up to 18 GB)<br /> 25 GB (free with HTC Sense 4 & 5 device)<br /> 50 GB (free with Samsung device)<br /> 100-500 [[Gigabyte|GB]]&nbsp;(Pro accounts)<br /> 1 [[Terabyte|TB]]-Unlimited (Business accounts)
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|<span style="display:none" class="sortkey">7002300000000000000</span>300&nbsp;[[Megabyte|MB]].<br />Unlimited&nbsp;using<br />client&nbsp;application
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|20&nbsp;GB/day (free)<br />200&nbsp;GB/day (paid)  
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|90 days of inactivity for free users
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"| 30 days (free)<br />Unlimited (paid)
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  Primarily a file synchronization and backup service but websharing possible.
+|-
+! [[Fileserve]]
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|<span style="display:none" class="sortkey">7002500000000000000</span>500&nbsp;[[Gigabyte|GB]] (free)<br />Unlimited (paid)
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7000100000000000000</span>1&nbsp;[[Gigabyte|GB]] (free) <br /><span style="display:none" class="sortkey">7000200000000000000</span>2&nbsp;[[Gigabyte|GB]] (paid)
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"| 60 days after last download (free)<br /> Never (paid)
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  ?
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes (except for non-accounts)
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  ?
+|  style="background: #ececec; color: grey; vertical-align: middle; text-align: center; " class="table-na" | <small>N/A</small>
+|-
+! [[Firedrive]]
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7001500000000000000</span>50&nbsp;[[Gigabyte|GB]] (free)<br />up to <span style="display:none" class="sortkey">7000100000000000000</span>1&nbsp;[[Terabyte|TB]] (Pro accounts)<br /> Unlimited (Executive accounts)
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7000100000000000000</span>1&nbsp;[[Gigabyte|GB]] (free) <br /><span style="display:none" class="sortkey">7001500000000000000</span>50&nbsp;[[Gigabyte|GB]] (Pro)
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes for all users
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  ?
+|  Allows users to upload to each other's accounts without having to sign up using filedrop
+|-
+! [[Google Drive]]
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7001150000000000000</span>15&nbsp;[[Gigabyte|GB]] (free)<br /> 10 GB (free for Quickoffice mobile)<br />25-50 GB (free with HTC Advantage)<br />50 GB (free with Motorola device)<br />100 GB (free with Chromebook)<br />2 TB (free with Chromebook Pixel)<br /> up to <span style="display:none" class="sortkey">7001160000000000000</span>16&nbsp;[[Terabyte|TB]] (paid)
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7000100000000000000</span>1&nbsp;[[Terrabyte|TB]]
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None<sup class="Template-Fact" style="white-space:nowrap;">&#91;<i>[[Wikipedia:Citation needed|<span title="This claim needs references to reliable sources. (December 2013)">citation needed</span>]]</i>&#93;</sup>
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|[[OAuth|OAuth2]]
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background: #ececec; color: grey; vertical-align: middle; text-align: center; " class="table-na" | <small>N/A</small>
+|-
+! [[Handy Backup]]
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|Up to 250GB. (Free tier is just a limited-time trial)
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|5 GB
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|For paying users there is usually no file expiration.
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  ?
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|Optimized for automatic backup-to-cloud scenarios, i.e. auto backing up documents, databases, settings, system snapshots, and other things to cloud. New backup scenarios can be generated and shared by users.
+|-
+! [[Hightail]]
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|<span style="display:none" class="sortkey">7000200000000000000</span>2&nbsp;[[Gigabyte|GB]] (free)<br />Unlimited (paid)
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|<span style="display:none" class="sortkey">7001500000000000000</span>50&nbsp;[[Megabyte|MB]] (free)<br /><span style="display:none" class="sortkey">7000200000000000000</span>2&nbsp;[[Gigabyte|GB]] (Pro)<br />Unlimited (Business)
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|7 days (free)<br/>
+14 days ($9.99/month or $99.99/year)<br/>
+None (Business)
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  ?
+|  Allows synchronization of files across devices. Business version comes with administrative and security features.
+|-
+! [[IBM Connections]]
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"| <span style="display:none" class="sortkey">7000500000000000000</span>5 [[Gigabyte|GB]]<br />additional space avail (paid)
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7000200000000000000</span>2&nbsp;[[Gigabyte|GB]]
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|None 
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|[[CMIS]], [[REST]], [[Atom (standard)]] and [[OAuth|OAuth2]]
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  ?
+|  Subscription costs US$6/year
+|-
+! [[iCloud]]
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"| <span style="display:none" class="sortkey">7000500000000000000</span>5 [[Gigabyte|GB]] (free)<br /><span style="display:none" class="sortkey">7001250000000000000</span>25 [[Gigabyte|GB]] (for previous MobileMe accounts)<br /><span style="display:none" class="sortkey">7001100000000000000</span>10, <span style="display:none" class="sortkey">7001200000000000000</span>20, <span style="display:none" class="sortkey">7001500000000000000</span>50 [[Gigabyte|GB]] (paid)
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7000100000000000000</span>1&nbsp;[[Gigabyte|GB]]
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">6996000000000000000</span><span style="white-space:nowrap"><sup>200</sup>&frasl;<sub>400</sub></span>&nbsp;GB per month
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|None (paid users)
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|[[WebDAV]]
+|  ?
+|  ?
+|  ?
+|  Subscription to [[MobileMe]] costs US$99/year
+|-
+! [[MagicVortex]]
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7000200000000000000</span>2&nbsp;[[Gigabyte|GB]]
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7000200000000000000</span>2&nbsp;[[Gigabyte|GB]]<br />(subscription)
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background: #ff9090; color: black; vertical-align: middle; text-align: center; " class="no table-no"|7 or 14&nbsp;days based on subscription
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style=" vertical-align: middle; text-align: center; " class="unknown table-unknown"|?
+|  ?
+|  ?
+|  ?
+|  Peer-to-peer file transfer service; free Windows desktop client with resumption of interrupted transfers, transfer pausing & live data streaming
+|-
+! [[MediaFire]]
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7001100000000000000</span>10&nbsp;[[Gigabyte|GB]] up to <span style="display:none" class="sortkey">7001500000000000000</span>50&nbsp; via referrals (free)<br />up to <span style="display:none" class="sortkey">7000100000000000000</span>1&nbsp;[[Terabyte|TB]] (Pro accounts)<br /> up to <span style="display:none" class="sortkey">7002100000000000000</span>100&nbsp;[[Terabyte|TB]] (Business accounts)
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7002200000000000000</span>200&nbsp;[[Gigabyte|MB]] (free)<br /><span style="display:none" class="sortkey">7001200000000000000</span>20&nbsp;[[Gigabyte|GB]] (paid)
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|No (free);<br /> Yes (premium)
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|1 year but "no data warehousing"
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|Only for pro users
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  ?
+|  Resuming of interrupted downloads possible.
+|-
+! [[Mega (website)|Mega]]
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7001500000000000000</span>50&nbsp;[[Gigabyte|GB]] (free)<br />Up to <span style="display:none" class="sortkey">7000400000000000000</span>4&nbsp;[[Terabyte|TB]] (paid)
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|Only restricted by browser memory capability
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|Free (50&nbsp;GB storage): 10 GB traffic/30 minutes<br />Pro I (500&nbsp;GB storage): 12&nbsp;TB traffic/month<br />Pro II (2&nbsp;TB storage): 48&nbsp;TB traffic/month<br />Pro III (4&nbsp;TB storage): 96&nbsp;TB traffic/month
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"| None
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"| Yes
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"| Yes
+|  ?
+|  Resuming of interrupted downloads possible. Encrypted files.
+|-
+! [[OneDrive]]
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7000700000000000000</span>7&nbsp;[[Gigabyte|GB]] (free)<br />3 GB (free for sync photos with mobile app)<br />5 GB (free, 500 MB for each referral person up to 5 GB)<br />20 GB (free for Office 365 users)<br />200 GB (free with Surface 2 and Surface 2 Pro)<br />Up to <span style="display:none" class="sortkey">7002125000000000000</span>125&nbsp;[[Gigabyte|GB]] (paid)
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7000200000000000000</span>2&nbsp;[[Gigabyte|GB]]
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|270&nbsp;days of account inactivity
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  ?
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  ?
+|  Allows remote access of files on running Windows PCs with SkyDrive installed ("Fetch files") without having to upload the contents of the shares to SkyDrive
+|-
+! [[RapidShare]]
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7001100000000000000</span>10&nbsp;[[Gigabyte|GB]] Standard (free)<br /><span style="display:none" class="sortkey">7002300000000000000</span>300&nbsp;[[Gigabyte|GB]] Standard Plus (€8.21/month)<br /><span style="display:none" class="sortkey">7002700000000000000</span>700&nbsp;[[Gigabyte|GB]] Premium (€16.43/month)
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7002100000000000000</span>100&nbsp;[[Gigabyte|GB]]
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background: #ff9090; color: black; vertical-align: middle; text-align: center; " class="no table-no"|12.5 kB/s speed limitation for non-paying users. *01/10/2012* Speed limitation was removed for undetermined break (setting by 1100 kbit/s).
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"| None for any Rapid users.
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"| Up to 300 jobs, 5 at a time
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  ?
+|  ?
+|  ?
+|  Resuming of interrupted downloads only for RapidPro users
+|-
+! [[SpiderOak]]
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|<span style="display:none" class="sortkey">7000200000000000000</span>2 [[Gigabyte|GB]] (free), Unlimited (paid)
+|  ?
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"| None
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"| None
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  ?
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  File synchronization and backup service.
+|-
+! [[SugarSync]]
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|Free only for 60 days, after: <span style="display:none" class="sortkey">7001600000000000000</span>60&nbsp;[[Gigabyte|GB]] (personal tier)<br />Unlimited&nbsp;[[Gigabyte|GB]] (professional tier)
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|10&nbsp;GB/file/day (free) <br /> 250&nbsp;GB/file/day (paid) <br /> If you hit the limit your links will be disabled for 24 hours. The bandwidth limits only apply to public links. 
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|No expiration for paid accounts;<br /> 90&nbsp;days of inactivity for free users
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|[[Representational State Transfer|REST]]
+|  ?
+|  ?
+|  ?
+|  style="background: #ececec; color: grey; vertical-align: middle; text-align: center; " class="table-na" | <small>N/A</small>
+|-
+! [[TitanFile]]
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|Unlimited
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|Free:<span style="display:none" class="sortkey">7002100000000000000</span>100&nbsp;[[Megabyte|MB]] <br />Pro:<span style="display:none" class="sortkey">7000100000000000000</span>1&nbsp;[[Gigabyte|GB]] <br /> Enterprise:<span style="display:none" class="sortkey">7000400000000000000</span>4&nbsp;[[Gigabyte|GB]]
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|Yes
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None, unless set by user
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|Yes
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|Yes <br />(For enterprise clients only) 
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|Yes
+|  ?
+|  HIPAA-compliant, group messaging, audit logs, granular security control, embedable on website. 
+|-
+|- class="sortbottom"
+! [[Ubuntu One ]]
+Shutting down 1 June 2014 
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|<span style="display:none" class="sortkey">7000500000000000000</span>5&nbsp;[[Gigabyte|GB]]<br />up to 20 via referrals (free)<br />Unlimited (paid)
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|5 [[Terabyte|TB]]
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|Reserve the right to delete after 90 days of inactivity for free users but will notify via email in advance.
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|Only files selected by 3rd party
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|[[Representational State Transfer|REST]]
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No. Only through locally installed FTP server
+|  ?
+|  ?
+|  Application and service to be discontinued, effective 1 June 2014.
+|-
+! [[Wuala]]
+|  style="background: #FED; color: black; vertical-align: middle; text-align: center; " class="depends table-depends"|<span style="display:none" class="sortkey">7000500000000000000</span>5&nbsp;[[Gigabyte|GB]] (free)<br /> Unlimited (paid)
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|<span style="display:none" class="sortkey">7001400000000000000</span>40&nbsp;[[Gigabyte|GB]]
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  style="background: #98FB98; color: black; vertical-align: middle; text-align: center; " class="yes2 table-yes2"|None
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"|90 days of inactivity for free users
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background: #FFD; color: black; vertical-align: middle; text-align: center; " class="partial table-partial"| [[Representational State Transfer|REST]], read-only, no POST verb actions ([http://content.wuala.com/contents/Wuala%20API/Documentation/Wuala%20Public%20REST%20API.pdf?lang=en Wuala REST API])
+|  style="background:#F99;vertical-align:middle;text-align:center;" class="table-no"|No
+|  style="background:#9F9;vertical-align:middle;text-align:center;" class="table-yes"|Yes
+|  ?
+|  Uses [[Social Networking]], and has file sharing features similar to [[BitTorrent (protocol)|Bittorrent]]. Uses client-side encryption.
+|- class="sortbottom"
+
+!Web host
+!Storage size
+!Max. file size
+!Direct access
+!Traffic/bandwidth limit
+!File expiration
+![[Upload#Remote upload|Remote uploading]]?
+!Developer API?
+!FTP upload possible?
+!File versioning
+!Misc. notes
+|}
+
+== Former services ==
+{|
+|-
+| valign="top" |
+*[[Drop.io]]
+*[[Hotfile]]
+*[[Humyo]]
+*[[IFile.it]]
+*[[Megaupload]]
+*[[Megavideo]]
+*[[Steek (brand)|SteekR]]
+*[[Xdrive (website)|Xdrive]]
+*[[Yahoo! Briefcase]]
+|}
+
+== See also ==
+*[[Remote backup service]]
+*[[Comparison of online backup services]]
+*[[Comparison of online music lockers]]
+*[[Comparison of file synchronization software]]
+
+== References ==
+<div class="reflist columns references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<references group=""></references></div>[[Category:Articles using fixed number of columns in reflist]]
+
+==External links==
+*[http://www.dmoz.org/Computers/Internet/On_the_Web/Web_Applications/Storage File hosting services] at [[DMOZ]]
+
+[[Category:File hosting| ]]
+[[Category:Cloud storage| ]]
+[[Category:Online services comparisons]]
+[[Category:File hosting for Linux| ]]
+[[Category:File hosting for OS X| ]]
+[[Category:File hosting for Windows| ]]

@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm" name="Comparison_of_DNS_blacklists">
+  <matrices name="">
+    <cells xsi:type="pcmmm:Header" name="0,0: blacklist operator" verbatim="Blacklist operator" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: dns blacklist" verbatim="DNS blacklist" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: informational url" verbatim="Informational URL" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: zone" verbatim="Zone" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: listing goal" verbatim="Listing goal" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: nomination" verbatim="Nomination" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: listing lifetime" verbatim="Listing lifetime" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: notes" verbatim="Notes" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: collateral listings" verbatim="Collateral Listings" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: notifies upon listing" verbatim="Notifies upon listing" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: arm research labs, llc gbudb" verbatim="ARM Research Labs, LLC GBUdb" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,1: truncate" verbatim="Truncate" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: " verbatim="" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: truncate.gbudb.net" verbatim="truncate.gbudb.net" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: extremely conservative list of single ip4 addresse" verbatim="Extremely conservative list of single IP4 addresses that produce exclusively spam/malware as indicated by the GBUdb IP Reputation system. Most systems should be able to safely reject connections based on this list." row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: automatic: ips are added when the gbudb &quot;cloud&quot; st" verbatim="Automatic: IPs are added when the GBUdb &quot;cloud&quot; statistics reach a probability figure that indicates 95% of messages produce a spam/malware pattern match and a confidence figure that indicates sufficient data to trust the probability data." row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: automatic: continuous while reputation statistics " verbatim="Automatic: Continuous while reputation statistics remain bad. Warning: Produces false positives, and has no remedy/removal process. IPs are dropped quickly if the statistics improve (within an hour). IPs are dropped within 36 hours (typ) if no more messages are seen (dead zombie)." row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: source data is derived from a global network of me" verbatim="Source data is derived from a global network of Message Sniffer filtering nodes in real-time. Truncate data is updated from statistics every 10 minutes." row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,8: no" verbatim="no" row="1" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,9: no" verbatim="no" row="1" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: invaluement dnsbl" verbatim="invaluement DNSBL" row="2" rowspan="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,1: ivmsip" verbatim="ivmSIP" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: " verbatim="" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: n/a (paid access via rsync)" verbatim="N/A&#xA;(paid access via rsync)" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: single ip addresses which only send ube. specializ" verbatim="Single IP addresses which only send UBE. Specializing in snowshoe spam and other 'under the radar' spams which evade many other DNSBLs. Has FP-level comparable to Zen." row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: automatic (upon receipt of a spam to a real person" verbatim="Automatic (upon receipt of a spam to a real person's mailbox), with extensive whitelists and filtering to prevent false positives" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: typically an automatic expiration 11 days after th" verbatim="Typically an automatic expiration 11 days after the last abuse was seen, but with some exceptions" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: spam samples are always kept on file for each list" verbatim="Spam samples are always kept on file for each listing. Removal requests are manually reviewed and processed without fees." row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: no" verbatim="no" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,9: no" verbatim="no" row="2" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,1: ivmsip/24" verbatim="ivmSIP/24" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: " verbatim="" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: n/a (paid access via rsync)" verbatim="N/A&#xA;(paid access via rsync)" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: lists /24 blocks of ip addresses which usually onl" verbatim="lists /24 blocks of IP addresses which usually only send UBE and containing at least several addresses which are confirmed emitters of junk mail. Collateral listings are kept to a minimum because subsections are often carved from /24 listings when spammers and legit senders share the same /24 block." row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: automatic once at least several ip addresses from " verbatim="Automatic once at least several IP addresses from a given block are individually listed on ivmSIP, with extensive whitelists and filtering to prevent false positives" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: expiration time increases to many weeks as the fra" verbatim="expiration time increases to many weeks as the fraction of IP addresses in the /24 block in question sending junk mail increases" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: removal requests are quickly and manually reviewed" verbatim="Removal requests are quickly and manually reviewed and processed without fees." row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: yes" verbatim="yes" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,9: no" verbatim="no" row="3" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,1: ivmuri" verbatim="ivmURI" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: " verbatim="" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: n/a (paid access via rsync)" verbatim="N/A&#xA;(paid access via rsync)" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: comparable to uribl.com and surbl.org, this is a l" verbatim="comparable to uribl.com and surbl.org, this is a list of IP addresses and domains which are used by spammers in the clickable links found in the body of spam messages" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: automatic (upon receipt of a spam to a real person" verbatim="Automatic (upon receipt of a spam to a real person's mailbox), with extensive whitelists and filtering to prevent false positives" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: typically an automatic expiration several weeks af" verbatim="Typically an automatic expiration several weeks after the last abuse was seen." row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: spam samples are always kept on file for each list" verbatim="Spam samples are always kept on file for each listing. Removal requests are quickly and manually reviewed and processed without fees." row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,8: no" verbatim="no" row="4" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,9: no" verbatim="no" row="4" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: proxybl" verbatim="proxyBL" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,1: dnsbl" verbatim="dnsbl" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: " verbatim="" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: dnsbl.proxybl.org" verbatim="dnsbl.proxybl.org" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: lists all types of open (publicly accessible) prox" verbatim="Lists all types of open (publicly accessible) proxies" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: automated listing through crawling of websites" verbatim="Automated listing through crawling of websites" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: as long as proxy is verified open (automated)" verbatim="As long as proxy is verified open (automated)" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: time between verifications increases exponentially" verbatim="Time between verifications increases exponentially in relation to the number of times the host was verified an open proxy" row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,8: yes" verbatim="yes" row="5" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,9: no" verbatim="no" row="5" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: uceprotect-network" verbatim="UCEPROTECT-Network" row="6" rowspan="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,1: uceprotect level 1" verbatim="UCEPROTECT Level 1" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: " verbatim="" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: dnsbl-1.uceprotect.net (also free available via rs" verbatim="dnsbl-1.uceprotect.net&#xA;(also free available via rsync )" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: single ip addresses that send mail to spamtrap" verbatim="Single IP addresses that send mail to spamtrap" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: automatic by a cluster of more than 60 trapservers" verbatim="Automatic by a cluster of more than 60 trapservers" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: automatic expiration 7 days after the last abuse w" verbatim="Automatic expiration 7 days after the last abuse was seen, optionally express delisting for a small fee." row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: uceprotect's primary and the only independent list" verbatim="UCEPROTECT's primary and the only independent list" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,8: no" verbatim="no" row="6" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,9: no" verbatim="no" row="6" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,1: uceprotect level 2" verbatim="UCEPROTECT Level 2" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: " verbatim="" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: dnsbl-2.uceprotect.net (also free available via rs" verbatim="dnsbl-2.uceprotect.net&#xA;(also free available via rsync )" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: allocations with exceeded uceprotect level 1 listi" verbatim="Allocations with exceeded UCEPROTECT Level 1 listings" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: automatic calculated from uceprotect-level 1" verbatim="Automatic calculated from UCEPROTECT-Level 1" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: automatic removal as soon as level 1 listings decr" verbatim="Automatic removal as soon as Level 1 listings decrease below Level 2 listing border, optionally express delisting (for a fee)" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: fully depending on level 1" verbatim="Fully depending on Level 1" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,8: yes" verbatim="yes" row="7" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,9: no" verbatim="no" row="7" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,1: uceprotect level 3" verbatim="UCEPROTECT Level 3" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: " verbatim="" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: dnsbl-3.uceprotect.net (also free available via rs" verbatim="dnsbl-3.uceprotect.net&#xA;(also free available via rsync )" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: asn's with excessive uceprotect level 1 listings" verbatim="ASN's with excessive UCEPROTECT Level 1 listings" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: automatic calculated from uceprotect-level 1" verbatim="Automatic calculated from UCEPROTECT-Level 1" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: automatic removal as soon as level 1 listings decr" verbatim="Automatic removal as soon as Level 1 listings decrease below Level 3 listing border, optionally express delisting (fee)" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: fully depending on level 1" verbatim="Fully depending on Level 1" row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,8: yes" verbatim="yes" row="8" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,9: no" verbatim="no" row="8" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: spam and open relay blocking system (sorbs)" verbatim="Spam and Open Relay Blocking System (SORBS)" row="9" rowspan="18" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,1: dnsbl" verbatim="dnsbl" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: " verbatim="" row="9" rowspan="18" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: dnsbl.sorbs.net" verbatim="dnsbl.sorbs.net" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: unsolicited bulk/commercial email senders" verbatim="Unsolicited bulk/commercial email senders" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: n/a (see individual zones)" verbatim="N/A (See individual zones)" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: n/a (see individual zones)" verbatim="N/A (See individual zones)" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: aggregate zone (all aggregates and what they inclu" verbatim="Aggregate zone (all aggregates and what they include are listed on SORBS)" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,8: yes" verbatim="yes" row="9" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,9: no" verbatim="no" row="9" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,1: safe.dnsbl" verbatim="safe.dnsbl" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: safe.dnsbl.sorbs.net" verbatim="safe.dnsbl.sorbs.net" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: unsolicited bulk/commercial email senders" verbatim="Unsolicited bulk/commercial email senders" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: n/a (see individual zones)" verbatim="N/A (See individual zones)" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: n/a (see individual zones)" verbatim="N/A (See individual zones)" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: &quot;safe&quot; aggregate zone (all zones in dnsbl.sorbs.ne" verbatim="&quot;Safe&quot; Aggregate zone (all zones in dnsbl.sorbs.net except &quot;recent&quot; and &quot;escalations&quot;)" row="10" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,8: yes" verbatim="yes" row="10" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,9: no" verbatim="no" row="10" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,1: http.dnsbl" verbatim="http.dnsbl" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: http.dnsbl.sorbs.net" verbatim="http.dnsbl.sorbs.net" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: open http proxy servers" verbatim="Open HTTP proxy servers" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: feeder servers" verbatim="Feeder servers" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: until delisting requested." verbatim="Until delisting requested." row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,7: " verbatim="" row="11" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,8: yes" verbatim="yes" row="11" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,9: no" verbatim="no" row="11" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="12,1: socks.dnsbl" verbatim="socks.dnsbl" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: socks.dnsbl.sorbs.net" verbatim="socks.dnsbl.sorbs.net" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: open socks proxy servers" verbatim="Open SOCKS proxy servers" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: feeder servers" verbatim="Feeder servers" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,6: until delisting requested." verbatim="Until delisting requested." row="12" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,7: " verbatim="" row="12" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,8: yes" verbatim="yes" row="12" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,9: no" verbatim="no" row="12" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="13,1: misc.dnsbl" verbatim="misc.dnsbl" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: misc.dnsbl.sorbs.net" verbatim="misc.dnsbl.sorbs.net" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: additional proxy servers" verbatim="Additional proxy servers" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: feeder servers" verbatim="Feeder servers" row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: until delisting requested." verbatim="Until delisting requested." row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,7: those not already listed in the http or socks data" verbatim="Those not already listed in the HTTP or SOCKS databases" row="13" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,8: yes" verbatim="yes" row="13" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,9: no" verbatim="no" row="13" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="14,1: smtp.dnsbl" verbatim="smtp.dnsbl" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: smtp.dnsbl.sorbs.net" verbatim="smtp.dnsbl.sorbs.net" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: open smtp relay servers" verbatim="Open SMTP relay servers" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: feeder servers" verbatim="Feeder servers" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: until delisting requested." verbatim="Until delisting requested." row="14" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,7: " verbatim="" row="14" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,8: yes" verbatim="yes" row="14" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,9: no" verbatim="no" row="14" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="15,1: web.dnsbl" verbatim="web.dnsbl" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: web.dnsbl.sorbs.net" verbatim="web.dnsbl.sorbs.net" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: ip addresses with vulnerabilities that are exploit" verbatim="IP addresses with vulnerabilities that are exploitable by spammers (e.g. FormMail scripts)" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: feeder servers" verbatim="Feeder servers" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,6: until delisting requested or automated expiry" verbatim="Until delisting requested or Automated Expiry" row="15" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,7: " verbatim="" row="15" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,8: yes" verbatim="yes" row="15" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,9: no" verbatim="no" row="15" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="16,1: new.spam.dnsbl" verbatim="new.spam.dnsbl" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: new.spam.dnsbl.sorbs.net" verbatim="new.spam.dnsbl.sorbs.net" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: hosts that have sent spam to the admins of sorbs i" verbatim="Hosts that have sent spam to the admins of SORBS in the last 48 hours" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: sorbs admin and spamtrap" verbatim="SORBS Admin and Spamtrap" row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,6: renewed every 20 minutes based inclusion in on 'sp" verbatim="Renewed every 20 minutes based inclusion in on 'spam.dnsbl.sorbs.net'" row="16" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,7: " verbatim="" row="16" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,8: yes" verbatim="yes" row="16" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,9: no" verbatim="no" row="16" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="17,1: recent.spam.dnsbl" verbatim="recent.spam.dnsbl" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: recent.spam.dnsbl.sorbs.net" verbatim="recent.spam.dnsbl.sorbs.net" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: hosts that have sent spam to the admins of sorbs i" verbatim="Hosts that have sent spam to the admins of SORBS in the last 28 days" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,5: sorbs admin and spamtrap" verbatim="SORBS Admin and Spamtrap" row="17" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,6: renewed every 20 minutes based inclusion in on 'sp" verbatim="Renewed every 20 minutes based inclusion in on 'spam.dnsbl.sorbs.net'" row="17" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,7: " verbatim="" row="17" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,8: yes" verbatim="yes" row="17" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,9: no" verbatim="no" row="17" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="18,1: old.spam.dnsbl" verbatim="old.spam.dnsbl" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: old.spam.dnsbl.sorbs.net" verbatim="old.spam.dnsbl.sorbs.net" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: hosts that have sent spam to the admins of sorbs i" verbatim="Hosts that have sent spam to the admins of SORBS in the last year" row="18" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,5: sorbs admin and spamtrap" verbatim="SORBS Admin and Spamtrap" row="18" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,6: renewed every 20 minutes based inclusion in on 'sp" verbatim="Renewed every 20 minutes based inclusion in on 'spam.dnsbl.sorbs.net'" row="18" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,7: " verbatim="" row="18" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,8: yes" verbatim="yes" row="18" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,9: no" verbatim="no" row="18" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="19,1: spam.dnsbl" verbatim="spam.dnsbl" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: spam.dnsbl.sorbs.net" verbatim="spam.dnsbl.sorbs.net" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: hosts that have allegedly sent spam to the admins " verbatim="Hosts that have allegedly sent spam to the admins of SORBS at any time" row="19" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,5: sorbs admin and spamtrap." verbatim="SORBS Admin and Spamtrap." row="19" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,6: until 1 year after the last spam is received and a" verbatim="Until 1 year after the last spam is received and a request has been made or until the &quot;fine&quot; is paid for express delisting" row="19" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,7: " verbatim="" row="19" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,8: yes" verbatim="yes" row="19" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,9: no" verbatim="no" row="19" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="20,1: escalations.dnsbl" verbatim="escalations.dnsbl" row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,3: escalations.dnsbl.sorbs.net" verbatim="escalations.dnsbl.sorbs.net" row="20" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,4: netblocks of service providers believed to support" verbatim="Netblocks of service providers believed to support spammers" row="20" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,5: sorbs admin fed." verbatim="SORBS Admin fed." row="20" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,6: until delisting requested and matter resolved." verbatim="Until delisting requested and matter resolved." row="20" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,7: service providers are added on receipt of a 'third" verbatim="Service providers are added on receipt of a 'third strike' spam" row="20" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,8: yes" verbatim="yes" row="20" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,9: no" verbatim="no" row="20" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="21,1: block.dnsbl" verbatim="block.dnsbl" row="21" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,3: block.dnsbl.sorbs.net" verbatim="block.dnsbl.sorbs.net" row="21" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,4: hosts demanding that they never be tested" verbatim="Hosts demanding that they never be tested" row="21" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,5: request by host" verbatim="Request by host" row="21" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,6: n/a" verbatim="N/A" row="21" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,7: " verbatim="" row="21" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,8: yes" verbatim="yes" row="21" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,9: no" verbatim="no" row="21" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="22,1: zombie.dnsbl" verbatim="zombie.dnsbl" row="22" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,3: zombie.dnsbl.sorbs.net" verbatim="zombie.dnsbl.sorbs.net" row="22" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,4: hijacked networks" verbatim="Hijacked networks" row="22" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,5: sorbs admin (manual submission)" verbatim="SORBS Admin (manual submission)" row="22" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,6: until delisting requested." verbatim="Until delisting requested." row="22" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,7: " verbatim="" row="22" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,8: yes" verbatim="yes" row="22" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,9: no" verbatim="no" row="22" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="23,1: dul.dnsbl" verbatim="dul.dnsbl" row="23" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,3: dul.dnsbl.sorbs.net" verbatim="dul.dnsbl.sorbs.net" row="23" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,4: dynamic ip address ranges" verbatim="Dynamic IP address ranges" row="23" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,5: sorbs admin (manual submission)" verbatim="SORBS Admin (manual submission)" row="23" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,6: until delisting requested." verbatim="Until delisting requested." row="23" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,7: not a list of dial-up ip addresses" verbatim="Not a list of dial-up IP addresses" row="23" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,8: yes" verbatim="yes" row="23" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,9: no" verbatim="no" row="23" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="24,1: rhsbl" verbatim="rhsbl" row="24" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,3: rhsbl.sorbs.net" verbatim="rhsbl.sorbs.net" row="24" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,4: aggregate rhs zones" verbatim="Aggregate RHS zones" row="24" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,5: n/a" verbatim="N/A" row="24" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,6: n/a" verbatim="N/A" row="24" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,7: " verbatim="" row="24" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,8: yes" verbatim="yes" row="24" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,9: no" verbatim="no" row="24" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="25,1: badconf.rhsbl" verbatim="badconf.rhsbl" row="25" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,3: badconf.rhsbl.sorbs.net" verbatim="badconf.rhsbl.sorbs.net" row="25" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,4: domains with invalid a or mx records in dns" verbatim="Domains with invalid A or MX records in DNS" row="25" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,5: open submission via automated testing page." verbatim="Open submission via automated testing page." row="25" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,6: until delisting requested." verbatim="Until delisting requested." row="25" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,7: " verbatim="" row="25" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,8: yes" verbatim="yes" row="25" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,9: no" verbatim="no" row="25" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="26,1: nomail.rhsbl" verbatim="nomail.rhsbl" row="26" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,3: nomail.rhsbl.sorbs.net" verbatim="nomail.rhsbl.sorbs.net" row="26" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,4: domains which the owners have confirmed will not b" verbatim="Domains which the owners have confirmed will not be used for sending email" row="26" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,5: owner submission" verbatim="Owner submission" row="26" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,6: until delisting requested." verbatim="Until delisting requested." row="26" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,7: " verbatim="" row="26" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,8: yes" verbatim="yes" row="26" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,9: no" verbatim="no" row="26" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="27,0: spamhaus" verbatim="Spamhaus" row="27" rowspan="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="27,1: sbl advisory" verbatim="SBL Advisory" row="27" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,2: " verbatim="" row="27" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,3: sbl.spamhaus.org" verbatim="sbl.spamhaus.org" row="27" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,4: verified sources of spam, including spammers and t" verbatim="Verified sources of spam, including spammers and their support services" row="27" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,5: manual" verbatim="Manual" row="27" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,6: from 30 minutes to a year or more, depending on is" verbatim="From 30 minutes to a year or more, depending on issue and resolution" row="27" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,7: " verbatim="" row="27" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,8: yes" verbatim="yes" row="27" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,9: no" verbatim="no" row="27" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="28,1: xbl advisory" verbatim="XBL Advisory" row="28" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,2: " verbatim="" row="28" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,3: xbl.spamhaus.org" verbatim="xbl.spamhaus.org" row="28" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,4: illegal third-party exploits (e.g. open proxies an" verbatim="Illegal third-party exploits (e.g. open proxies and Trojan Horses)" row="28" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,5: third-party (see notes) with automated additions" verbatim="Third-party (see Notes) with automated additions" row="28" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,6: varies, under a month." verbatim="Varies, under a month." row="28" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,7: includes the composite blocking list and parts of " verbatim="Includes the Composite Blocking List and parts of the Not Just Another Bogus List" row="28" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,8: yes" verbatim="yes" row="28" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,9: no" verbatim="no" row="28" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,1: pbl advisory" verbatim="PBL Advisory" row="29" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,2: " verbatim="" row="29" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,3: pbl.spamhaus.org" verbatim="pbl.spamhaus.org" row="29" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,4: static, dial-up &amp; dhcp ip address space that is no" verbatim="Static, dial-up &amp; DHCP IP address space that is not meant to be initiating SMTP connections" row="29" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,5: manual" verbatim="Manual" row="29" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,6: unknown" verbatim="Unknown" row="29" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,7: should not be confused with the maps dul and wireh" verbatim="Should not be confused with the MAPS DUL and Wirehub Dynablocker lists" row="29" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,8: yes" verbatim="yes" row="29" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,9: no" verbatim="no" row="29" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="30,1: sbl+xbl" verbatim="SBL+XBL" row="30" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,2: " verbatim="" row="30" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,3: sbl-xbl.spamhaus.org" verbatim="sbl-xbl.spamhaus.org" row="30" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,4: a single lookup for querying the sbl and xbl datab" verbatim="A single lookup for querying the SBL and XBL databases" row="30" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,5: " verbatim="" row="30" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,6: " verbatim="" row="30" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,7: " verbatim="" row="30" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,8: yes" verbatim="yes" row="30" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,9: no" verbatim="no" row="30" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="31,1: zen" verbatim="Zen" row="31" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,2: " verbatim="" row="31" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,3: zen.spamhaus.org" verbatim="zen.spamhaus.org" row="31" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,4: a single lookup for querying the sbl, xbl and pbl " verbatim="A single lookup for querying the SBL, XBL and PBL databases." row="31" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,5: " verbatim="" row="31" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,6: " verbatim="" row="31" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,7: the one to use to get all." verbatim="The one to use to get all." row="31" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,8: yes" verbatim="yes" row="31" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,9: no" verbatim="no" row="31" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="32,0: orbitrbl aggressive rbl" verbatim="ORBITrbl Aggressive RBL" row="32" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="32,1: rbl" verbatim="RBL" row="32" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,2: " verbatim="" row="32" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,3: rbl.orbitrbl.com" verbatim="rbl.orbitrbl.com" row="32" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,4: unsolicited bulk/commercial email senders (/24 ip " verbatim="Unsolicited bulk/Commercial email senders (/24 IP address block)" row="32" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,5: feeder servers" verbatim="Feeder servers" row="32" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,6: until delisting requested? (only when found to be " verbatim="Until delisting requested? (Only When Found to be Non Spam Source)" row="32" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,7: aggregate zone" verbatim="Aggregate zone" row="32" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,8: yes" verbatim="yes" row="32" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,9: no" verbatim="no" row="32" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="33,0: composite blocking list" verbatim="Composite Blocking List" row="33" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="33,1: cbl" verbatim="CBL" row="33" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,2: " verbatim="" row="33" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,3: cbl.abuseat.org (also free available rsync access," verbatim="cbl.abuseat.org&#xA; (also free available rsync access, on request see FAQ )" row="33" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,4: only ip addresses exhibiting characteristics speci" verbatim="Only IP addresses exhibiting characteristics specific to open proxies, spamware, botnets and the like." row="33" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,5: automatic: large spamtraps and production mail ser" verbatim="Automatic: large spamtraps and production mail servers" row="33" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,6: temporary, until spam stops" verbatim="Temporary, until spam stops" row="33" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,7: use spamhaus xbl or spamhaus zen instead; they inc" verbatim="Use Spamhaus XBL or Spamhaus Zen instead; they include CBL." row="33" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,8: yes" verbatim="yes" row="33" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,9: no" verbatim="no" row="33" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="34,0: passive spam block list" verbatim="Passive Spam Block List" row="34" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="34,1: psbl" verbatim="PSBL" row="34" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,2: " verbatim="" row="34" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,3: psbl.surriel.com (also free available via rsync )" verbatim="psbl.surriel.com&#xA;(also free available via rsync )" row="34" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,4: ip addresses used to send spam to trap" verbatim="IP addresses used to send spam to trap" row="34" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,5: spamtraps" verbatim="spamtraps" row="34" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,6: temporary, until spam stops" verbatim="Temporary, until spam stops" row="34" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,7: " verbatim="" row="34" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,8: yes" verbatim="yes" row="34" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,9: no" verbatim="no" row="34" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="35,0: intercept - dns blacklist (dnsbl)" verbatim="Intercept - DNS Blacklist (DNSBL)" row="35" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="35,1: intercept" verbatim="Intercept" row="35" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,2: broken as 10/14/2013" verbatim="Broken as 10/14/2013" row="35" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,3: intercept.datapacket.net" verbatim="intercept.datapacket.net" row="35" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,4: ip addresses used to send spam to trap" verbatim="IP addresses used to send spam to trap" row="35" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,5: spamtraps" verbatim="spamtraps" row="35" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,6: temporary, until spam stops" verbatim="Temporary, until spam stops" row="35" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,7: " verbatim="" row="35" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,8: yes" verbatim="yes" row="35" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,9: no" verbatim="no" row="35" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="36,0: weighted private block list" verbatim="Weighted Private Block List" row="36" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="36,1: wpbl" verbatim="WPBL" row="36" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,2: " verbatim="" row="36" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,3: db.wpbl.info" verbatim="db.wpbl.info" row="36" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,4: ip addresses used to send ube to members" verbatim="IP addresses used to send UBE to members" row="36" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,5: spamtraps" verbatim="spamtraps" row="36" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,6: temporary, until spam stops" verbatim="Temporary, until spam stops" row="36" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,7: " verbatim="" row="36" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,8: yes" verbatim="yes" row="36" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,9: no" verbatim="no" row="36" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="37,0: spamcop blocking list" verbatim="SpamCop Blocking List" row="37" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="37,1: scbl" verbatim="SCBL" row="37" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,2: " verbatim="" row="37" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,3: bl.spamcop.net" verbatim="bl.spamcop.net" row="37" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,4: ip addresses which have been used to transmit repo" verbatim="IP addresses which have been used to transmit reported email to SpamCop users" row="37" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,5: users submit" verbatim="users submit" row="37" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,6: temporary, until spam stops" verbatim="Temporary, until spam stops" row="37" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,7: " verbatim="" row="37" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,8: yes" verbatim="yes" row="37" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,9: no" verbatim="no" row="37" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="38,0: spamrats" verbatim="SpamRats" row="38" rowspan="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="38,1: ratsnoptr" verbatim="RATSNOPTR" row="38" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,2: " verbatim="" row="38" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,3: noptr.spamrats.com" verbatim="noptr.spamrats.com" row="38" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,4: ip addresses detected as abusive at isp's using ma" verbatim="IP addresses detected as abusive at ISP's using MagicMail Servers, with no reverse DNS service" row="38" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,5: automatically submitted" verbatim="Automatically Submitted" row="38" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,6: listed until removed, and reverse dns configured" verbatim="Listed until removed, and reverse DNS configured" row="38" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,7: " verbatim="" row="38" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,8: yes" verbatim="yes" row="38" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,9: no" verbatim="no" row="38" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="39,1: ratsdyna" verbatim="RATSDYNA" row="39" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,2: " verbatim="" row="39" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,3: dyna.spamrats.com" verbatim="dyna.spamrats.com" row="39" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,4: ip addresses detected as abusive at isp's using ma" verbatim="IP addresses detected as abusive at ISP's using MagicMail Servers, with non-conforming reverse DNS service (See Best Practises) indicative of compromised systems" row="39" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,5: automatically submitted" verbatim="Automatically Submitted" row="39" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,6: listed until removed, and reverse dns set to confo" verbatim="Listed until removed, and reverse DNS set to conform to Best Practises" row="39" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,7: " verbatim="" row="39" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,8: yes" verbatim="yes" row="39" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,9: no" verbatim="no" row="39" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="40,1: ratsspam" verbatim="RATSSPAM" row="40" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,2: " verbatim="" row="40" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,3: spam.spamrats.com" verbatim="spam.spamrats.com" row="40" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,4: ip addresses detected as abusive at isp's using ma" verbatim="IP addresses detected as abusive at ISP's using MagicMail Servers, and manually confirmed as spam sources" row="40" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,5: manually submitted" verbatim="Manually Submitted" row="40" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,6: listed until removed" verbatim="Listed until removed" row="40" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,7: " verbatim="" row="40" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,8: yes" verbatim="yes" row="40" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,9: no" verbatim="no" row="40" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="41,0: spamcannibal" verbatim="SpamCannibal" row="41" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="41,1: spamcannibal.org" verbatim="spamcannibal.org" row="41" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,2: " verbatim="" row="41" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,3: bl.spamcannibal.org" verbatim="bl.spamcannibal.org" row="41" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,4: ip addresses and related generic netblocks that ha" verbatim="IP addresses and related generic netblocks that have sent spam." row="41" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,5: spamtraps" verbatim="spamtraps" row="41" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,6: until removal requested and matter resolved by cha" verbatim="until removal requested and matter resolved by changing server DNS ptr record to a non-generic name." row="41" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,7: even if a particular ip has not sent spam, it may " verbatim="Even if a particular IP has not sent spam, it may be included in a generic netblock which will provide many false positives. listed=127.0.0.2" row="41" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,8: yes" verbatim="yes" row="41" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,9: no" verbatim="no" row="41" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="42,0: distributed realtime blocking list" verbatim="Distributed Realtime Blocking List" row="42" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="42,1: drand drbl node" verbatim="drand DRBL node" row="42" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,2: " verbatim="" row="42" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,3: spamtrap.drbl.drand.net" verbatim="spamtrap.drbl.drand.net" row="42" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,4: ip addresses used to send spam to traps or members" verbatim="IP addresses used to send spam to traps or members" row="42" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,5: automated [de]listing." verbatim="Automated [de]listing." row="42" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,6: varies from spam type, rate and other sophisticate" verbatim="Varies from spam type, rate and other sophisticated factors. 30 s to 1 week." row="42" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,7: high ip network aggregate threshold >= 254." verbatim="High IP network aggregate threshold >= 254." row="42" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,8: yes" verbatim="yes" row="42" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,9: no" verbatim="no" row="42" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="43,0: junk email filter" verbatim="Junk Email Filter" row="43" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="43,1: hostkarma" verbatim="Hostkarma" row="43" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,2: " verbatim="" row="43" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,3: hostkarma.junkemailfilter.com blacklist.hostkarma." verbatim="hostkarma.junkemailfilter.com&#xA;blacklist.hostkarma.com" row="43" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,4: detects viruses by behavior using fake high mx and" verbatim="Detects viruses by behavior using fake high MX and tracking non-use of QUIT" row="43" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,5: automated [de]listing" verbatim="Automated [de]listing" row="43" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,6: black list data lives for 4 days. white list data " verbatim="Black list Data lives for 4 days. White list data lives for 10 days." row="43" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,7: 127.0.0.1=white 127.0.0.2=black 127.0.0.3=yellow" verbatim="127.0.0.1=white 127.0.0.2=black 127.0.0.3=yellow" row="43" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,8: yes" verbatim="yes" row="43" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,9: no" verbatim="no" row="43" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="44,0: the abusive hosts blocking list (ahbl)" verbatim="The Abusive Hosts Blocking List (AHBL)" row="44" rowspan="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="44,1: dnsbl" verbatim="dnsbl" row="44" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,2: " verbatim="" row="44" rowspan="4" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,3: dnsbl.ahbl.org" verbatim="dnsbl.ahbl.org" row="44" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,4: aggregate zone, contains uce/bulk email senders, o" verbatim="Aggregate zone, contains UCE/bulk email senders, open proxies, open relays, trojaned/infected machines, comment/trackback spammers" row="44" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,5: feeder systems, manual" verbatim="Feeder systems, manual" row="44" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,6: until delisting requested" verbatim="Until delisting requested" row="44" rowspan="3" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,7: aggregate zone (all aggregates and what they inclu" verbatim="Aggregate zone (all aggregates and what they include are listed on AHBL)" row="44" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,8: yes" verbatim="yes" row="44" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,9: no" verbatim="no" row="44" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="45,1: rhsbl" verbatim="rhsbl" row="45" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,3: rhsbl.ahbl.org" verbatim="rhsbl.ahbl.org" row="45" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,4: domains sending spam, domains owned by spammers, c" verbatim="Domains sending spam, domains owned by spammers, comment spam domains, spammed URLs" row="45" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,5: manual" verbatim="Manual" row="45" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,7: " verbatim="" row="45" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,8: yes" verbatim="yes" row="45" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,9: no" verbatim="no" row="45" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="46,1: ircbl" verbatim="ircbl" row="46" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,3: ircbl.ahbl.org" verbatim="ircbl.ahbl.org" row="46" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,4: subset of dnsbl, contains only open proxies, compr" verbatim="Subset of dnsbl, contains only open proxies, compromised machines, comment spammers" row="46" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,5: until delisting requested" verbatim="Until delisting requested" row="46" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,7: designed for use on irc servers" verbatim="Designed for use on IRC servers" row="46" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,8: yes" verbatim="yes" row="46" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,9: no" verbatim="no" row="46" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="47,1: tor" verbatim="tor" row="47" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,3: tor.ahbl.org" verbatim="tor.ahbl.org" row="47" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,4: current tor relay and exit nodes" verbatim="Current tor relay and exit nodes" row="47" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,5: automated" verbatim="Automated" row="47" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,6: n/a" verbatim="N/A" row="47" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,7: " verbatim="" row="47" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,8: yes" verbatim="yes" row="47" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,9: no" verbatim="no" row="47" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="48,0: dronebl" verbatim="Dronebl" row="48" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="48,1: dnsbl" verbatim="dnsbl" row="48" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,2: " verbatim="" row="48" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,3: dnsbl.dronebl.org" verbatim="dnsbl.dronebl.org" row="48" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,4: all-in-one abusive hosts blacklist" verbatim="All-in-one abusive hosts blacklist" row="48" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,5: automated listing via distributed monitoring point" verbatim="Automated listing via distributed monitoring points" row="48" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,6: permanent until delisted via website." verbatim="Permanent until delisted via website." row="48" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,7: " verbatim="" row="48" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,8: yes" verbatim="yes" row="48" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,9: no" verbatim="no" row="48" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="49,0: quorum.to" verbatim="Quorum.to" row="49" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="49,1: ip-dnsbl" verbatim="ip-dnsbl" row="49" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,2: " verbatim="" row="49" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,3: list.quorum.to. ( or per-subscriber: [id].list.quo" verbatim="list.quorum.to. ( or per-subscriber: [id].list.quorum.to. )" row="49" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,4: stop spam from hosts that send no legitimate mail " verbatim="Stop spam from hosts that send no legitimate mail (list most non-mail-sending hosts)." row="49" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,5: listings based on &quot;instant&quot; automated checks, reci" verbatim="Listings based on &quot;instant&quot; automated checks, recipient nomination and traps." row="49" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,6: listings can be challenged. subscribers vote to de" verbatim="Listings can be challenged.  Subscribers vote to decide sender status." row="49" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,7: public list follows standard dnsbl protocol. subsc" verbatim="Public list follows standard dnsbl protocol.  Subscription based service is more capable, but does not follow standard." row="49" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,8: yes" verbatim="yes" row="49" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,9: no" verbatim="no" row="49" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="50,0: spamanalysis.org" verbatim="Spamanalysis.org" row="50" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="50,1: geobl" verbatim="GeoBL" row="50" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,2: " verbatim="" row="50" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,3: user-defined: [*].geobl.spamanalysis.org" verbatim="User-defined: [*].geobl.spamanalysis.org" row="50" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,4: lists hosts known as being in certain geographic l" verbatim="Lists hosts known as being in certain geographic locations." row="50" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,5: users set their own list of blocked countries." verbatim="Users set their own list of blocked countries." row="50" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,6: hosts reported as being incorrectly located may be" verbatim="Hosts reported as being incorrectly located may be delisted." row="50" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,7: allows basic monitoring, listed if a=127.0.0.2 or " verbatim="Allows basic monitoring, listed if A=127.0.0.2 or TXT=blocked" row="50" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,8: yes" verbatim="yes" row="50" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,9: no" verbatim="no" row="50" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="51,0: heise zeitschriften verlag gmbh &amp; co. kg, hosted b" verbatim="Heise Zeitschriften Verlag GmbH &amp; Co. KG, hosted by manitu GmbH" row="51" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="51,1: nix spam (nixspam)" verbatim="NiX Spam (nixspam)" row="51" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,2: " verbatim="" row="51" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,3: ix.dnsbl.manitu.net" verbatim="ix.dnsbl.manitu.net" row="51" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,4: lists single ips (no ip ranges) that send spam to " verbatim="Lists single IPs (no IP ranges) that send spam to spamtraps." row="51" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,5: automated listing due to spamtrap hits. exceptions" verbatim="Automated listing due to spamtrap hits. Exceptions apply to bounces, NDRs and whitelisted IPs." row="51" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,6: 12 hours after last listing or until self delistin" verbatim="12 hours after last listing or until self delisting" row="51" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,7: txt records provide information of listing inciden" verbatim="TXT records provide information of listing incident - NiX Spam also provides hashes for fuzzy checksum plugin (iXhash) for SpamAssassin." row="51" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,8: no" verbatim="no" row="51" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,9: yes (for isps/esps on request)" verbatim="yes (for ISPs/ESPs on request)" row="51" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="52,0: inps.de" verbatim="inps.de" row="52" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="52,1: inps.de-dnsbl" verbatim="inps.de-DNSBL" row="52" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,2: " verbatim="" row="52" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,3: dnsbl.inps.de" verbatim="dnsbl.inps.de" row="52" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,4: single ip addresses" verbatim="Single IP addresses" row="52" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,5: ip addresses can be reported as known spam sources" verbatim="IP addresses can be reported as known spam sources by users, additionally automated listing if spam arrives at the mailservers of inps.de" row="52" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,6: ip addresses are listed until they are removed man" verbatim="IP addresses are listed until they are removed manually via the website." row="52" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,7: a- and txt records are available for each entry; r" verbatim="A- and TXT records are available for each entry; Removal is free after 30 days for automatic additions and after 7 days for manual additions; otherwise removal fee is at least EUR 10,00." row="52" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,8: maybe" verbatim="maybe" row="52" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,9: no" verbatim="no" row="52" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="54,0: blocklist.de" verbatim="blocklist.de" row="54" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="54,1: dnsbl" verbatim="dnsbl" row="54" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,2: " verbatim="" row="54" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,3: bl.blocklist.de" verbatim="bl.blocklist.de" row="54" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,4: ip-addresses who attacks other server/honeypots ov" verbatim="IP-Addresses who Attacks other Server/Honeypots over ssh, imap, smtp, ftp, web, rfi, sqli, ddos...." row="54" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,5: automatic: over honeypots and with over 515 users " verbatim="Automatic: over Honeypots and with over 515 Users and 630 Servers from blocklist.de via Fail2Ban or own scripts" row="54" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,6: automatic: 48 hours after the last attack. but ear" verbatim="Automatic: 48 Hours after the last Attack. But earlier remove is available over the Delist-Link" row="54" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,7: services is free! source data is from honeypot-sys" verbatim="Services is free! Source data is from Honeypot-Systems and over 515 User with 630 Servern there reports Attacks with Fail2Ban" row="54" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,8: no" verbatim="no" row="54" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,9: yes" verbatim="yes" row="54" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="55,0: srn:surgate reputation network" verbatim="SRN:SurGATE Reputation Network" row="55" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="55,1: srn" verbatim="SRN" row="55" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,2: " verbatim="" row="55" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,3: srnblack.surgate.net" verbatim="srnblack.surgate.net" row="55" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,4: spam sources, relay abusers" verbatim="Spam sources, relay abusers" row="55" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,5: feeder servers" verbatim="Feeder servers" row="55" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,6: automatic expiry (varies by type); webpage allows " verbatim="Automatic expiry (varies by type); webpage allows delisting" row="55" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,7: removal requests are quickly and manually reviewed" verbatim="Removal requests are quickly and manually reviewed and processed without fees." row="55" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,8: yes" verbatim="yes" row="55" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,9: no" verbatim="no" row="55" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="56,0: s5h.net internet services" verbatim="s5h.net Internet Services" row="56" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="56,1: s5h.net" verbatim="s5h.net" row="56" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,2: " verbatim="" row="56" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,3: all.s5h.net" verbatim="all.s5h.net" row="56" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,4: spam sources from email, forums, referrer spam and" verbatim="Spam sources from email, forums, referrer spam and dictionary attacks" row="56" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,5: traps" verbatim="Traps" row="56" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,6: twelve months unless isps request removal earlier" verbatim="Twelve months unless ISPs request removal earlier" row="56" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,7: by request. isps can provide request exclusion" verbatim="By request. ISPs can provide request exclusion" row="56" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,8: yes" verbatim="Yes" row="56" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,9: no" verbatim="No" row="56" rowspan="1" column="9" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

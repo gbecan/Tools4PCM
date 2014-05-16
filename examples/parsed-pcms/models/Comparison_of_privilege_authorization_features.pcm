@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm" name="Comparison_of_privilege_authorization_features">
+  <matrices name="Introduction to implementations">
+    <cells xsi:type="pcmmm:Extra" name="0,0: user account control prompt dialog box" verbatim="User Account Control prompt dialog box" rowspan="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="0,1: user account control (uac): included with windows " verbatim="User Account Control (UAC):&#xA;Included with Windows Vista and later Microsoft Windows operating systems, UAC prompts the user for authorization when an application tries to perform an administrator task." rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: runas: a command-line tool introduced with windows" verbatim="Runas:&#xA;A command-line tool introduced with Windows 2000 that allows running a program, control panel applet, or a MMC snap-in as a different user. Runas makes use of the &quot;Secondary Login&quot; Windows service, also introduced with Windows 2000. This service provides the capability to allow applications running as a separate user to interact with the logged-in user's desktop. This is necessary to support drag-and-drop, clipboard sharing, and other interactive login features." row="1" rowspan="1" column="1" colspan="1"/>
+  </matrices>
+  <matrices name="Introduction to implementations">
+    <cells xsi:type="pcmmm:Extra" name="0,0: " verbatim="" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="0,1: mac os x includes the authenticate dialog, which p" verbatim="Mac OS X includes the Authenticate dialog, which prompts the user to input their password in order to perform administrator tasks. This is essentially a graphical front-end of  command." rowspan="1" column="1" colspan="1"/>
+  </matrices>
+  <matrices name="Introduction to implementations">
+    <cells xsi:type="pcmmm:Extra" name="0,0: " verbatim="" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="0,1: policykit/pkexec: a privilege authorization featur" verbatim="PolicyKit/pkexec:&#xA;A privilege authorization feature, designed to be independent of the desktop environment in use and already adopted by GNOME In contrast to earlier systems, applications using PolicyKit never run with privileges above those of the current user. Instead, they indirectly make requests of the PolicyKit daemon, which is the only program that runs as root." rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: sudo, running in terminal window in ubuntu" verbatim="Sudo, running in Terminal window in Ubuntu" row="1" rowspan="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: su: a command line tool for unix. su (substitute u" verbatim="su:&#xA;A command line tool for Unix. su (substitute user) allows users to switch the terminal to a different account by entering the username and password of that account. If no user name is given, the operating system's superuser account (known as &quot;root&quot;) is used, thus providing a fast method to obtain a login shell with full privileges to the system. Issuing an exit command returns the user to their own account." row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: sudo: created around 1980, sudo is a highly config" verbatim="sudo:&#xA;Created around 1980, sudo is a highly configurable Unix command line tool similar to su, but it allows certain users to run programs with root privileges without spawning a root shell or requiring root's password." row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: " verbatim="" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: gksu and gksudo: gtk+ graphical frontend to su and" verbatim="GKSu and GKsudo:&#xA;GTK+ Graphical frontend to su and sudo. GKsu comes up automatically when a supported application needs to perform an action requiring root privileges.  A replacement, &quot;gksu PolicyKit&quot;, which uses PolicyKit rather than su/sudo, is being developed as part of GNOME." row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: " verbatim="" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: kdesu: a qt graphical front-end to the su command " verbatim="kdesu:&#xA;A Qt graphical front-end to the su command for KDE." row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: " verbatim="" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: kdesudo: a qt graphical front-end to sudo that has" verbatim="kdesudo:&#xA;A Qt graphical front-end to sudo that has replaced kdesu in Kubuntu, starting with Kubuntu 7.10." row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: border|120px|ktsuss" verbatim="border|120px|Ktsuss" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: ktsuss: ktsuss stands for &quot;keep the su simple, stu" verbatim="ktsuss:&#xA;ktsuss stands for &quot;keep the su simple, stupid&quot;, and is a graphical version of su. The idea of the project is to remain simple and bug free." row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: " verbatim="" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: beesu: a graphical front-end to the su command tha" verbatim="beesu:&#xA;A graphical front-end to the su command that has replaced gksu in Red Hat based operating systems. It has been developed mainly for RHEL and Fedora." row="7" rowspan="1" column="1" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm" name="Comparison_of_Subversion_clients">
+  <matrices name="Subversion clients comparison table">
+    <cells xsi:type="pcmmm:Header" name="0,0: name" verbatim="Name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: programming language, toolkit" verbatim="Programming language, toolkit" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: operating system" verbatim="Operating system" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: license" verbatim="License" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: integration" verbatim="Integration" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: languages" verbatim="Languages" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: network protocols" verbatim="Network protocols" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: current version" verbatim="Current version" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: last release date" verbatim="Last release date" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: server functionality" verbatim="Server functionality" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,10: visualization" verbatim="Visualization" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: agent svn" verbatim="Agent SVN" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: c, c++" verbatim="C, C++" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: microsoft windows" verbatim="Microsoft Windows" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: proprietary, trial with commercial upgrade" verbatim="proprietary, trial with commercial upgrade" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: any ms-scci compatible ide, e.g., microsoft visual" verbatim="Any MS-SCCI compatible IDE, e.g., Microsoft Visual Studio, Microsoft SQL Server Management, PowerBuilder, Zeus etc." row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: english" verbatim="English" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: 2.34" verbatim="2.34" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,8: october&#xa0;27, 2013; 5 months ago" verbatim="October&#xa0;27, 2013;&#xA;5 months ago" row="1" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,9: ?" verbatim="?" row="1" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,10: ?" verbatim="?" row="1" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: ankhsvn" verbatim="AnkhSVN" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: c#, sharpsvn" verbatim="C#, SharpSvn" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: microsoft windows" verbatim="Microsoft Windows" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: apache license" verbatim="Apache License" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: microsoft visual studio (all editions except expre" verbatim="Microsoft Visual Studio (all editions except Express)" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: english" verbatim="English" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: 2.5.12233" verbatim="2.5.12233" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: october&#xa0;31, 2013; 5 months ago" verbatim="October&#xa0;31, 2013;&#xA;5 months ago" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,9: no" verbatim="No" row="2" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,10: diff, blame, history, properties" verbatim="Diff, blame, history, properties" row="2" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: bzr-svn" verbatim="bzr-svn" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: python, c" verbatim="Python, C" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: linux, unix, mac os x, microsoft windows, solaris," verbatim="Linux, Unix, Mac OS X, Microsoft Windows, Solaris, many more" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: gpl v3" verbatim="GPL v3" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: bazaar" verbatim="Bazaar" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: english" verbatim="English" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: 1.2.2" verbatim="1.2.2" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: april&#xa0;6, 2012; 2 years ago" verbatim="April&#xa0;6, 2012;&#xA;2 years ago" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,9: ?" verbatim="?" row="3" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,10: ?" verbatim="?" row="3" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: blsvn" verbatim="blsvn" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: c++" verbatim="C++" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: microsoft windows" verbatim="Microsoft Windows" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: mit" verbatim="MIT" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: command-line wrapper" verbatim="command-line wrapper" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: english" verbatim="English" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: 0.1" verbatim="0.1" row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,8: april&#xa0;12, 2010; 3 years ago" verbatim="April&#xa0;12, 2010;&#xA;3 years ago" row="4" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,9: no" verbatim="No" row="4" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,10: ?" verbatim="?" row="4" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: cascade" verbatim="Cascade" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: " verbatim="" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: linux, mac os x, microsoft windows" verbatim="Linux, Mac OS X, Microsoft Windows" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: proprietary, free for personal use even in profess" verbatim="proprietary, free for personal use even in professional environments" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: windows shell (explorer), file system driver" verbatim="Windows Shell (Explorer), file system driver" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: english" verbatim="English" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: http, https, svn" verbatim="http, https, svn" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: 1.2.0.1069" verbatim="1.2.0.1069" row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,8: 2008; 6&#xa0;years ago" verbatim="2008;&#xA;6&#xa0;years ago" row="5" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,9: ?" verbatim="?" row="5" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,10: ?" verbatim="?" row="5" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: codesys svn" verbatim="CoDeSys SVN" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: c#, sharpsvn" verbatim="C#, SharpSvn" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: microsoft windows" verbatim="Microsoft Windows" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: proprietary, trials can be negotiated" verbatim="proprietary, trials can be negotiated" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: svn plugin for codesys v3" verbatim="SVN plugin for CoDeSys V3" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: english, german" verbatim="English, German" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: v3.5.3.30 (based on svn 1.7.5)" verbatim="V3.5.3.30 (based on SVN 1.7.5)" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,8: june&#xa0;7, 2013; 9 months ago" verbatim="June&#xa0;7, 2013;&#xA;9 months ago" row="6" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,9: no" verbatim="No" row="6" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,10: diff, merge, log" verbatim="Diff, merge, log" row="6" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: cornerstone" verbatim="Cornerstone" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: objective-c, cocoa" verbatim="Objective-C, Cocoa" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: mac os x" verbatim="Mac OS X" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: proprietary" verbatim="proprietary" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: gui, standalone" verbatim="GUI, standalone" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: english" verbatim="English" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: file, http, https, svn and svn+ssh" verbatim="file, http, https, svn and svn+ssh" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: 2.7.9" verbatim="2.7.9" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,8: february&#xa0;13, 2013; 13 months ago (tooltip on the d" verbatim="February&#xa0;13, 2013;&#xA;13 months ago (Tooltip on the download button at )" row="7" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,9: no" verbatim="No" row="7" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,10: diff, blame, log, timeline, externals" verbatim="Diff, blame, log, timeline, externals" row="7" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: diffplug" verbatim="DiffPlug" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: java, swt" verbatim="Java, SWT" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: microsoft windows" verbatim="Microsoft Windows" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: proprietary" verbatim="proprietary" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: gui, standalone, simulink" verbatim="GUI, standalone, Simulink" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: english" verbatim="English" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: file, http, https, svn" verbatim="file, http, https, svn" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: 1.3.0" verbatim="1.3.0" row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,8: march&#xa0;25, 2014; 16 days ago" verbatim="March&#xa0;25, 2014;&#xA;16 days ago" row="8" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,9: no" verbatim="No" row="8" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,10: diff, log" verbatim="Diff, log" row="8" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: easysvn" verbatim="EasySVN" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: c++" verbatim="C++" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: microsoft windows x86 and x86-64" verbatim="Microsoft Windows x86 and x86-64" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: gpl" verbatim="GPL" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: windows shell, linux command line, mac os x finder" verbatim="Windows shell, Linux command line, Mac OS X Finder integration. It needs TortoiseSVN installed." row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: english" verbatim="English" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: http, https, svn" verbatim="http, https, svn" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: 0.4.0.456 beta(1)" verbatim="0.4.0.456 beta(1)" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,8: november&#xa0;29, 2011; 2 years ago" verbatim="November&#xa0;29, 2011;&#xA;2 years ago" row="9" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,9: no" verbatim="No" row="9" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,10: ?" verbatim="?" row="9" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: esvn" verbatim="eSvn" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: c++, qt" verbatim="C++, Qt" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: unix-like operating systems (gnu/linux distributio" verbatim="Unix-like operating systems (GNU/Linux distributions, FreeBSD, Sun Solaris and others), Mac OS X and Windows" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: gpl" verbatim="GPL" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: gui, standalone (like wincvs, cervisia)" verbatim="GUI, standalone (like WinCVS, Cervisia)" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: english" verbatim="English" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: http, svn" verbatim="http, svn" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: 0.6.12" verbatim="0.6.12" row="10" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,8: for *nix oss: july&#xa0;16, 2007; 6 years ago. for wind" verbatim="For *nix OSs: July&#xa0;16, 2007;&#xA;6 years ago. For Windows: July&#xa0;12, 2007;&#xA;6 years ago" row="10" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,9: no" verbatim="No" row="10" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,10: ?" verbatim="?" row="10" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: if.svnadmin" verbatim="iF.SVNAdmin" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: php" verbatim="PHP" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: linux, unix, microsoft windows" verbatim="Linux, Unix, Microsoft Windows" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: gplv2" verbatim="GPLv2" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: web-based. it requires apache http (web) server in" verbatim="web-based. It requires Apache HTTP (web) Server installed." row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: english, german, chinese" verbatim="English, German, Chinese" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: " verbatim="" row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,7: 1.5.2" verbatim="1.5.2" row="11" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,8: february&#xa0;27, 2011; 3 years ago" verbatim="February&#xa0;27, 2011;&#xA;3 years ago" row="11" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,9: ?" verbatim="?" row="11" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,10: ?" verbatim="?" row="11" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: iversion" verbatim="iVersion" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: objective-c, c" verbatim="Objective-C, C" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: ios 3.0" verbatim="iOS 3.0" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: proprietary" verbatim="proprietary" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: gui, standalone" verbatim="GUI, standalone" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: english" verbatim="English" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,6: svn, http, https" verbatim="svn, http, https" row="12" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,7: 1.2" verbatim="1.2" row="12" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,8: ?" verbatim="?" row="12" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,9: ?" verbatim="?" row="12" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,10: ?" verbatim="?" row="12" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: kdesvn" verbatim="kdesvn" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: c++, qt" verbatim="C++, Qt" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: linux, unix, mac os x" verbatim="Linux, Unix, Mac OS X" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: gpl" verbatim="GPL" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: konqueror, dolphin, standalone" verbatim="Konqueror, Dolphin, standalone" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: english" verbatim="English" row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: file, http, https, (k)svn, (k)svn+file, (k)svn+htt" verbatim="file, http, https, (k)svn, (k)svn+file, (k)svn+http, (k)svn+https, (k)svn+ssh" row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,7: 1.6.0" verbatim="1.6.0" row="13" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,8: august&#xa0;5, 2012; 19 months ago" verbatim="August&#xa0;5, 2012;&#xA;19 months ago" row="13" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,9: yes" verbatim="Yes" row="13" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,10: ?" verbatim="?" row="13" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: magnetsvn" verbatim="MagnetSVN" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: " verbatim="" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: microsoft windows windows xp / vista / 7 / 8" verbatim="Microsoft Windows Windows XP / Vista / 7 / 8" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: proprietary" verbatim="proprietary" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: microsoft office (2007 and 2010, 2013 word and exc" verbatim="Microsoft Office (2007 and 2010, 2013 Word and Excel)" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: english" verbatim="English" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: file, http, https, svn and svn+ssh" verbatim="file, http, https, svn and svn+ssh" row="14" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,7: 2.3 (based on svn 1.8)" verbatim="2.3 (based on SVN 1.8)" row="14" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,8: december&#xa0;11, 2013; 3 months ago" verbatim="December&#xa0;11, 2013;&#xA;3 months ago" row="14" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,9: ?" verbatim="?" row="14" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,10: ?" verbatim="?" row="14" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: naughtysvn" verbatim="naughtysvn" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: c, gtk+" verbatim="C, GTK+" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: linux, etc." verbatim="Linux, etc." row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: gpl" verbatim="GPL" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: nautilus" verbatim="Nautilus" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: english" verbatim="English" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,6: " verbatim="" row="15" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,7: 0.0.1 (beta?)" verbatim="0.0.1 (beta?)" row="15" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,8: ?" verbatim="?" row="15" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,9: ?" verbatim="?" row="15" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,10: ?" verbatim="?" row="15" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: pbscc" verbatim="PBSCC" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: c++" verbatim="C++" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: microsoft windows" verbatim="Microsoft Windows" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: apache license 2.0" verbatim="Apache License 2.0" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: svn plugin for powerbuilder" verbatim="SVN Plugin for PowerBuilder" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: english" verbatim="English" row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,6: svn" verbatim="svn" row="16" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,7: 2.01.80" verbatim="2.01.80" row="16" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,8: october&#xa0;12, 2011; 2 years ago" verbatim="October&#xa0;12, 2011;&#xA;2 years ago" row="16" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,9: ?" verbatim="?" row="16" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,10: ?" verbatim="?" row="16" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: pixelnovel timeline" verbatim="PixelNovel Timeline" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: c++" verbatim="C++" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: mac os x, microsoft windows" verbatim="Mac OS X, Microsoft Windows" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: free if used with pixelnovel web storage, 30-day t" verbatim="Free if used with PixelNovel web storage, 30-day trial with commercial upgrade otherwise" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: adobe photoshop" verbatim="Adobe Photoshop" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,5: english" verbatim="English" row="17" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,6: svn" verbatim="svn" row="17" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,7: 1.0" verbatim="1.0" row="17" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,8: july&#xa0;7, 2009; 4 years ago" verbatim="July&#xa0;7, 2009;&#xA;4 years ago" row="17" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,9: ?" verbatim="?" row="17" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,10: ?" verbatim="?" row="17" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="18,0: pysvn extension" verbatim="pysvn Extension" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: " verbatim="" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: " verbatim="" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: apache license" verbatim="Apache License" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: " verbatim="" row="18" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,5: english" verbatim="English" row="18" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,6: " verbatim="" row="18" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,7: 1.7.8.1546" verbatim="1.7.8.1546" row="18" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,8: august&#xa0;18, 2013; 7 months ago" verbatim="August&#xa0;18, 2013;&#xA;7 months ago" row="18" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,9: ?" verbatim="?" row="18" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,10: ?" verbatim="?" row="18" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="19,0: pysvn workbench" verbatim="pysvn WorkBench" row="19" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: python, wxwidgets" verbatim="Python, wxWidgets" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: linux, unix, mac os x, microsoft windows" verbatim="Linux, Unix, Mac OS X, Microsoft Windows" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: apache license" verbatim="Apache License" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: " verbatim="" row="19" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,5: english" verbatim="English" row="19" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,6: " verbatim="" row="19" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,7: 1.6.7" verbatim="1.6.7" row="19" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,8: january&#xa0;1, 2013; 14 months ago" verbatim="January&#xa0;1, 2013;&#xA;14 months ago" row="19" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,9: ?" verbatim="?" row="19" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,10: ?" verbatim="?" row="19" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="20,0: pushok svn scc" verbatim="PushOk SVN SCC" row="20" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,1: " verbatim="" row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,2: microsoft windows" verbatim="Microsoft Windows" row="20" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,3: proprietary" verbatim="proprietary" row="20" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,4: any msscci-compatible program (microsoft visual st" verbatim="Any MSSCCI-compatible program (Microsoft Visual Studio and other programs)" row="20" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,5: english" verbatim="English" row="20" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,6: " verbatim="" row="20" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,7: 1.6.6.2" verbatim="1.6.6.2" row="20" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,8: march&#xa0;15, 2010; 4 years ago" verbatim="March&#xa0;15, 2010;&#xA;4 years ago" row="20" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,9: ?" verbatim="?" row="20" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,10: ?" verbatim="?" row="20" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="21,0: qct (qt commit tool)" verbatim="Qct (Qt commit tool)" row="21" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,1: python, qt" verbatim="Python, Qt" row="21" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,2: linux, unix, mac os x, microsoft windows" verbatim="Linux, Unix, Mac OS X, Microsoft Windows" row="21" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,3: gpl" verbatim="GPL" row="21" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,4: " verbatim="" row="21" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,5: english" verbatim="English" row="21" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,6: " verbatim="" row="21" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,7: 1.7" verbatim="1.7" row="21" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,8: february&#xa0;16, 2009; 5 years ago" verbatim="February&#xa0;16, 2009;&#xA;5 years ago" row="21" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,9: ?" verbatim="?" row="21" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,10: ?" verbatim="?" row="21" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="22,0: qsvn" verbatim="QSvn" row="22" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,1: c++, qt" verbatim="C++, Qt" row="22" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,2: linux, unix, mac os x, microsoft windows" verbatim="Linux, Unix, Mac OS X, Microsoft Windows" row="22" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,3: gpl" verbatim="GPL" row="22" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,4: gui, standalone (like wincvs)" verbatim="GUI, standalone (like WinCVS)" row="22" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,5: english" verbatim="English" row="22" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,6: " verbatim="" row="22" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,7: 0.8.3" verbatim="0.8.3" row="22" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,8: july&#xa0;26, 2009; 4 years ago" verbatim="July&#xa0;26, 2009;&#xA;4 years ago" row="22" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,9: no" verbatim="No" row="22" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,10: ?" verbatim="?" row="22" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="23,0: rabbitvcs" verbatim="RabbitVCS" row="23" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,1: python, gtk+" verbatim="Python, GTK+" row="23" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,2: linux" verbatim="Linux" row="23" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,3: gpl" verbatim="GPL" row="23" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,4: nautilus, thunar, gedit, cli" verbatim="Nautilus, Thunar, Gedit, CLI" row="23" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,5: ca, cs, de, en, es, fa, fr, he, hr, it, ja, nb, nl" verbatim="ca, cs, de, en, es, fa, fr, he, hr, it, ja, nb, nl, pl, pt, ro, ru, sk, sl, sv, zh_CN" row="23" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="23" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,7: 0.15.2" verbatim="0.15.2" row="23" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,8: october&#xa0;22, 2012; 17 months ago" verbatim="October&#xa0;22, 2012;&#xA;17 months ago" row="23" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,9: ?" verbatim="?" row="23" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,10: ?" verbatim="?" row="23" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="24,0: rapidsvn" verbatim="RapidSVN" row="24" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,1: c++, wxwidgets" verbatim="C++, wxWidgets" row="24" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,2: linux, unix, mac os x, microsoft windows, solaris," verbatim="Linux, Unix, Mac OS X, Microsoft Windows, Solaris, many more" row="24" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,3: gpl" verbatim="GPL" row="24" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,4: gui, standalone" verbatim="GUI, standalone" row="24" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,5: unicode, many" verbatim="Unicode, many" row="24" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,6: " verbatim="" row="24" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,7: 0.12.1" verbatim="0.12.1" row="24" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,8: june&#xa0;28, 2012; 21 months ago" verbatim="June&#xa0;28, 2012;&#xA;21 months ago" row="24" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,9: no" verbatim="No" row="24" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,10: external" verbatim="External" row="24" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="25,0: scplugin" verbatim="SCPlugin" row="25" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,1: " verbatim="" row="25" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,2: mac os x" verbatim="Mac OS X" row="25" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,3: x/mit" verbatim="X/MIT" row="25" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,4: finder integration" verbatim="Finder integration" row="25" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,5: english" verbatim="English" row="25" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,6: " verbatim="" row="25" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,7: 0.8.2" verbatim="0.8.2" row="25" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,8: february&#xa0;17, 2010; 4 years ago" verbatim="February&#xa0;17, 2010;&#xA;4 years ago" row="25" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,9: ?" verbatim="?" row="25" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,10: ?" verbatim="?" row="25" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="26,0: sdsvn" verbatim="sdSVN" row="26" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,1: java" verbatim="Java" row="26" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,2: linux, unix, mac os x, microsoft windows" verbatim="Linux, Unix, Mac OS X, Microsoft Windows" row="26" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,3: gpl" verbatim="GPL" row="26" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,4: gui, standalone, java web start" verbatim="GUI, standalone, Java Web Start" row="26" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,5: english" verbatim="English" row="26" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,6: http, https" verbatim="http, https" row="26" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,7: 1.0-snapshot-r63 (minimal and full)" verbatim="1.0-SNAPSHOT-r63 (minimal and full)" row="26" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,8: may&#xa0;29, 2011; 2 years ago" verbatim="May&#xa0;29, 2011;&#xA;2 years ago" row="26" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,9: ?" verbatim="?" row="26" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,10: ?" verbatim="?" row="26" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="27,0: svnup" verbatim="svnup" row="27" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,1: c" verbatim="C" row="27" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,2: freebsd" verbatim="FreeBSD" row="27" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,3: bsd" verbatim="BSD" row="27" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,4: standalone" verbatim="standalone" row="27" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,5: unicode, many" verbatim="Unicode, many" row="27" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,6: http, https, svn" verbatim="http, https, svn" row="27" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,7: 0.97" verbatim="0.97" row="27" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,8: ?" verbatim="?" row="27" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,9: no" verbatim="No" row="27" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,10: " verbatim="" row="27" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="28,0: smartgit" verbatim="SmartGit" row="28" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,1: java" verbatim="Java" row="28" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,2: linux, unix, mac os x, microsoft windows (any with" verbatim="Linux, Unix, Mac OS X, Microsoft Windows (Any with a 1.5 or higher JRE)" row="28" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,3: free for non-commercial usage" verbatim="Free for non-commercial usage" row="28" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,4: gui, standalone" verbatim="GUI, standalone" row="28" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,5: english" verbatim="English" row="28" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,6: http, https, svn, svn+ssh" verbatim="http, https, svn, svn+ssh" row="28" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,7: 2.1.6" verbatim="2.1.6" row="28" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,8: december&#xa0;3, 2011; 2 years ago" verbatim="December&#xa0;3, 2011;&#xA;2 years ago" row="28" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,9: no" verbatim="No" row="28" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,10: diff, merge, log graph with merge arrows" verbatim="Diff, merge, log graph with merge arrows" row="28" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,0: smartsvn" verbatim="SmartSVN" row="29" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,1: java" verbatim="Java" row="29" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,2: linux, unix, mac os x, microsoft windows (any with" verbatim="Linux, Unix, Mac OS X, Microsoft Windows (Any with a 1.5 or higher JRE)" row="29" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,3: trial with commercial upgrade or free 'foundation'" verbatim="Trial with commercial upgrade or free 'Foundation' edition" row="29" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,4: gui, standalone, finder and windows shell (explore" verbatim="GUI, standalone, Finder and Windows Shell (Explorer) integration" row="29" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,5: english" verbatim="English" row="29" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,6: http, https, svn, svn+ssh" verbatim="http, https, svn, svn+ssh" row="29" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,7: 7.5" verbatim="7.5" row="29" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,8: november&#xa0;15, 2012; 16 months ago" verbatim="November&#xa0;15, 2012;&#xA;16 months ago" row="29" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,9: yes" verbatim="Yes" row="29" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,10: diff, merge, revision graph with merge arrows" verbatim="Diff, merge, revision graph with merge arrows" row="29" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="30,0: subclipse" verbatim="Subclipse" row="30" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,1: java" verbatim="Java" row="30" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,2: linux, mac os x, microsoft windows" verbatim="Linux, Mac OS X, Microsoft Windows" row="30" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,3: epl" verbatim="EPL" row="30" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,4: eclipse" verbatim="Eclipse" row="30" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,5: " verbatim="" row="30" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="30" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,7: 1.10.3" verbatim="1.10.3" row="30" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,8: october&#xa0;16, 2013; 5 months ago" verbatim="October&#xa0;16, 2013;&#xA;5 months ago" row="30" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,9: ?" verbatim="?" row="30" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,10: diff, merge" verbatim="Diff, merge" row="30" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="31,0: subcommander" verbatim="Subcommander" row="31" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,1: c++, qt" verbatim="C++, Qt" row="31" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,2: linux, unix, mac os x, microsoft windows" verbatim="Linux, Unix, Mac OS X, Microsoft Windows" row="31" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,3: gpl" verbatim="GPL" row="31" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,4: gui, standalone" verbatim="GUI, standalone" row="31" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,5: en, de, zh_cn" verbatim="en, de, zh_CN" row="31" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,6: http, https, svn, file" verbatim="http, https, svn, file" row="31" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,7: 2.0.0 beta 5" verbatim="2.0.0 beta 5" row="31" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,8: september&#xa0;13, 2009; 4 years ago" verbatim="September&#xa0;13, 2009;&#xA;4 years ago" row="31" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,9: yes" verbatim="Yes" row="31" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,10: ?" verbatim="?" row="31" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="32,0: subdiversvn" verbatim="SubdiverSVN" row="32" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,1: gtkmm" verbatim="gtkmm" row="32" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,2: linux" verbatim="Linux" row="32" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,3: gpl" verbatim="GPL" row="32" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,4: nautilus, thunar" verbatim="Nautilus, Thunar" row="32" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,5: english" verbatim="English" row="32" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="32" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,7: 0.1-2" verbatim="0.1-2" row="32" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,8: april&#xa0;27, 2009; 4 years ago" verbatim="April&#xa0;27, 2009;&#xA;4 years ago" row="32" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,9: ?" verbatim="?" row="32" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,10: ?" verbatim="?" row="32" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="33,0: subversive" verbatim="Subversive" row="33" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,1: java" verbatim="Java" row="33" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,2: linux, mac os x, microsoft windows" verbatim="Linux, Mac OS X, Microsoft Windows" row="33" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,3: epl" verbatim="EPL" row="33" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,4: eclipse" verbatim="Eclipse" row="33" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,5: english" verbatim="English" row="33" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="33" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,7: 0.7.9.i20110819-1900 (indigo)" verbatim="0.7.9.I20110819-1900 (Indigo)" row="33" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,8: august&#xa0;19, 2011; 2 years ago" verbatim="August&#xa0;19, 2011;&#xA;2 years ago" row="33" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,9: ?" verbatim="?" row="33" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,10: ?" verbatim="?" row="33" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="34,0: sventon" verbatim="sventon" row="34" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,1: java" verbatim="Java" row="34" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,2: any with a 1.5 or higher jre" verbatim="Any with a 1.5 or higher JRE" row="34" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,3: gplv3" verbatim="GPLv3" row="34" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,4: web-based" verbatim="web-based" row="34" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,5: en, sv" verbatim="en, sv" row="34" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="34" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,7: 2.5.1" verbatim="2.5.1" row="34" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,8: september&#xa0;19, 2011; 2 years ago" verbatim="September&#xa0;19, 2011;&#xA;2 years ago" row="34" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,9: ?" verbatim="?" row="34" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,10: ?" verbatim="?" row="34" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="35,0: svn for dreamweaver" verbatim="SVN for Dreamweaver" row="35" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,1: c++, javascript" verbatim="C++, JavaScript" row="35" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,2: microsoft windows, mac os x" verbatim="Microsoft Windows, Mac OS X" row="35" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,3: proprietary, trial with commercial upgrade" verbatim="proprietary, trial with commercial upgrade" row="35" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,4: adobe dreamweaver extensions" verbatim="Adobe Dreamweaver Extensions" row="35" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,5: english" verbatim="English" row="35" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="35" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,7: 3.0.1" verbatim="3.0.1" row="35" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,8: february&#xa0;15, 2009; 5 years ago" verbatim="February&#xa0;15, 2009;&#xA;5 years ago" row="35" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,9: ?" verbatim="?" row="35" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,10: ?" verbatim="?" row="35" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="36,0: svn notifier" verbatim="SVN Notifier" row="36" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,1: c#" verbatim="C#" row="36" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,2: microsoft windows" verbatim="Microsoft Windows" row="36" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,3: gpl" verbatim="GPL" row="36" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,4: gui, standalone. it needs tortoisesvn installed." verbatim="GUI, standalone. It needs TortoiseSVN installed." row="36" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,5: english" verbatim="English" row="36" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="36" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,7: 1.9.2" verbatim="1.9.2" row="36" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,8: december&#xa0;30, 2011; 2 years ago" verbatim="December&#xa0;30, 2011;&#xA;2 years ago" row="36" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,9: ?" verbatim="?" row="36" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,10: ?" verbatim="?" row="36" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="37,0: svnbreeze" verbatim="SVNBreeze" row="37" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,1: c#" verbatim="C#" row="37" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,2: microsoft windows" verbatim="Microsoft Windows" row="37" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,3: paid license needed (free trial available)" verbatim="Paid license needed (free trial available)" row="37" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,4: gui, standalone" verbatim="GUI, standalone" row="37" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,5: en" verbatim="en" row="37" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,6: http, https, svn, file" verbatim="http, https, svn, file" row="37" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,7: 1.0.13.1023" verbatim="1.0.13.1023" row="37" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,8: october&#xa0;23, 2013; 5 months ago" verbatim="October&#xa0;23, 2013;&#xA;5 months ago" row="37" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,9: ?" verbatim="?" row="37" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,10: diff, merge files, log, branch, merge branches, fi" verbatim="Diff, Merge Files, Log, Branch, Merge Branches, File Properties" row="37" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="38,0: svncom" verbatim="SVNCOM" row="38" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,1: activex control, com object" verbatim="ActiveX control, COM object" row="38" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,2: microsoft windows" verbatim="Microsoft Windows" row="38" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,3: gpl" verbatim="GPL" row="38" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,4: iis, windows scripting host" verbatim="IIS, Windows Scripting Host" row="38" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,5: english" verbatim="English" row="38" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,6: http, https, svn, svn+ssh, file, com" verbatim="http, https, svn, svn+ssh, file, com" row="38" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,7: 1.7.2" verbatim="1.7.2" row="38" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,8: december&#xa0;21, 2012; 15 months ago" verbatim="December&#xa0;21, 2012;&#xA;15 months ago" row="38" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,9: ?" verbatim="?" row="38" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,10: ?" verbatim="?" row="38" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="39,0: svnx" verbatim="svnX" row="39" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,1: " verbatim="" row="39" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,2: mac os x" verbatim="Mac OS X" row="39" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,3: lgpl" verbatim="LGPL" row="39" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,4: gui" verbatim="GUI" row="39" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,5: english" verbatim="English" row="39" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="39" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,7: 1.3.4" verbatim="1.3.4" row="39" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,8: april&#xa0;9, 2012; 2 years ago" verbatim="April&#xa0;9, 2012;&#xA;2 years ago" row="39" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,9: ?" verbatim="?" row="39" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,10: ?" verbatim="?" row="39" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="40,0: syncro svn client" verbatim="Syncro SVN Client" row="40" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,1: java" verbatim="Java" row="40" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,2: linux, unix, mac os x, microsoft windows (any with" verbatim="Linux, Unix, Mac OS X, Microsoft Windows (Any with a 1.5 or higher JRE)" row="40" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,3: paid &quot;named-user&quot; license needed (free trial avail" verbatim="Paid &quot;Named-User&quot; license needed (free trial available)" row="40" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,4: gui, standalone" verbatim="GUI, standalone" row="40" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,5: en, de, fr, jp, it, nl" verbatim="en, de, fr, jp, it, nl" row="40" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="40" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,7: 9.0" verbatim="9.0" row="40" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,8: june&#xa0;25, 2013; 9 months ago" verbatim="June&#xa0;25, 2013;&#xA;9 months ago" row="40" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,9: ?" verbatim="?" row="40" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,10: revision graph, diff" verbatim="Revision graph, diff" row="40" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="41,0: tamtam svn scc" verbatim="TamTam SVN SCC" row="41" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,1: " verbatim="" row="41" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,2: microsoft windows" verbatim="Microsoft Windows" row="41" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,3: proprietary, free (nagware) and commercial" verbatim="proprietary, free (nagware) and commercial" row="41" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,4: microsoft visual studio .net" verbatim="Microsoft Visual Studio .NET" row="41" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,5: english" verbatim="English" row="41" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,6: " verbatim="" row="41" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,7: 1.2.25" verbatim="1.2.25" row="41" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,8: february&#xa0;1, 2009; 5 years ago" verbatim="February&#xa0;1, 2009;&#xA;5 years ago" row="41" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,9: ?" verbatim="?" row="41" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,10: ?" verbatim="?" row="41" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="42,0: tkcvs" verbatim="TkCVS" row="42" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,1: tcl, tk" verbatim="Tcl, Tk" row="42" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,2: linux, unix, mac os x, microsoft windows" verbatim="Linux, Unix, Mac OS X, Microsoft Windows" row="42" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,3: gpl" verbatim="GPL" row="42" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,4: " verbatim="" row="42" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,5: english" verbatim="English" row="42" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,6: " verbatim="" row="42" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,7: 8.2.3" verbatim="8.2.3" row="42" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,8: november&#xa0;27, 2011; 2 years ago" verbatim="November&#xa0;27, 2011;&#xA;2 years ago" row="42" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,9: ?" verbatim="?" row="42" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,10: ?" verbatim="?" row="42" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="43,0: tortoisesvn" verbatim="TortoiseSVN" row="43" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,1: c++, mfc" verbatim="C++, MFC" row="43" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,2: microsoft windows (32/64-bit)" verbatim="Microsoft Windows (32/64-bit)" row="43" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,3: gpl" verbatim="GPL" row="43" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,4: windows shell (explorer)" verbatim="Windows Shell (Explorer)" row="43" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,5: 41 languages (including en)" verbatim="41 languages (including en)" row="43" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,6: http, https, svn, svn+ssh, file, svn+xxx" verbatim="http, https, svn, svn+ssh, file, svn+XXX" row="43" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,7: 1.8.3" verbatim="1.8.3" row="43" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,8: october&#xa0;29, 2013; 5 months ago" verbatim="October&#xa0;29, 2013;&#xA;5 months ago" row="43" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,9: yes" verbatim="Yes" row="43" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,10: diff, merge, revision tree" verbatim="Diff, merge, Revision Tree" row="43" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="44,0: trac" verbatim="Trac" row="44" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,1: python" verbatim="Python" row="44" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,2: linux, unix, mac os x, microsoft windows" verbatim="Linux, Unix, Mac OS X, Microsoft Windows" row="44" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,3: modified bsd" verbatim="Modified BSD" row="44" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,4: web-based" verbatim="web-based" row="44" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,5: [31 languages]" verbatim="[31 languages]" row="44" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,6: file" verbatim="file" row="44" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,7: 1.0" verbatim="1.0" row="44" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,8: september&#xa0;1, 2012; 18 months ago" verbatim="September&#xa0;1, 2012;&#xA;18 months ago" row="44" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,9: yes" verbatim="Yes" row="44" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,10: log" verbatim="Log" row="44" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="45,0: unified scc" verbatim="Unified SCC" row="45" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,1: " verbatim="" row="45" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,2: microsoft windows (32/64-bit)" verbatim="Microsoft Windows (32/64-bit)" row="45" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,3: proprietary; freeware version is available for mem" verbatim="proprietary; Freeware version is available for members of the active open source project" row="45" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,4: any msscci-compatible program (microsoft visual st" verbatim="Any MSSCCI-compatible program (Microsoft Visual Studio and other programs)" row="45" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,5: english" verbatim="English" row="45" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,6: " verbatim="" row="45" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,7: 1.0.6" verbatim="1.0.6" row="45" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,8: ?" verbatim="?" row="45" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,9: ?" verbatim="?" row="45" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,10: ?" verbatim="?" row="45" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="46,0: vercue (formerly svn-monitor )" verbatim="Vercue  (formerly SVN-Monitor )" row="46" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,1: c#" verbatim="C#" row="46" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,2: microsoft windows" verbatim="Microsoft Windows" row="46" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,3: proprietary, freeware (after a trial of 30 days, y" verbatim="proprietary, freeware (After a trial of 30 days, you will be able to use the Free Edition or buy one of the other licenses.)" row="46" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,4: gui, standalone. it needs tortoisesvn installed." verbatim="GUI, standalone. It needs TortoiseSVN installed." row="46" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,5: english" verbatim="English" row="46" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="46" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,7: 2.6.3.392" verbatim="2.6.3.392" row="46" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,8: june&#xa0;21, 2013; 9 months ago" verbatim="June&#xa0;21, 2013;&#xA;9 months ago" row="46" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,9: ?" verbatim="?" row="46" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,10: ?" verbatim="?" row="46" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="47,0: versions" verbatim="Versions" row="47" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,1: objective-c, cocoa" verbatim="Objective-C, Cocoa" row="47" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,2: mac os x" verbatim="Mac OS X" row="47" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,3: proprietary" verbatim="proprietary" row="47" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,4: gui, standalone" verbatim="GUI, standalone" row="47" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,5: english" verbatim="English" row="47" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="47" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,7: 1.2.3 build 1050" verbatim="1.2.3 build 1050" row="47" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,8: october&#xa0;23, 2013; 5 months ago" verbatim="October&#xa0;23, 2013;&#xA;5 months ago" row="47" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,9: ?" verbatim="?" row="47" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,10: ?" verbatim="?" row="47" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="48,0: viewvc" verbatim="ViewVC" row="48" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,1: python" verbatim="Python" row="48" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,2: http, https" verbatim="http, https" row="48" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,3: &quot;two-clause berkeley-style&quot;" verbatim="&quot;two-clause Berkeley-style&quot;" row="48" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,4: web-based" verbatim="web-based" row="48" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,5: english" verbatim="English" row="48" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="48" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,7: 1.1.21" verbatim="1.1.21" row="48" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,8: september&#xa0;13, 2013; 6 months ago" verbatim="September&#xa0;13, 2013;&#xA;6 months ago" row="48" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,9: ?" verbatim="?" row="48" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,10: diff, annotation, blame, revision graph" verbatim="Diff, annotation, blame, revision graph" row="48" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="49,0: visualsvn" verbatim="VisualSVN" row="49" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,1: " verbatim="" row="49" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,2: microsoft windows (32/64-bit)" verbatim="Microsoft Windows (32/64-bit)" row="49" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,3: proprietary" verbatim="proprietary" row="49" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,4: microsoft visual studio (all editions except expre" verbatim="Microsoft Visual Studio (all editions except Express)" row="49" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,5: english" verbatim="English" row="49" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="49" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,7: 4.0.1" verbatim="4.0.1" row="49" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,8: october&#xa0;30, 2013; 5 months ago" verbatim="October&#xa0;30, 2013;&#xA;5 months ago" row="49" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,9: yes" verbatim="Yes" row="49" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,10: ?" verbatim="?" row="49" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="50,0: websvn" verbatim="WebSVN" row="50" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,1: php" verbatim="PHP" row="50" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,2: linux, unix, mac os x, microsoft windows" verbatim="Linux, Unix, Mac OS X, Microsoft Windows" row="50" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,3: gpl" verbatim="GPL" row="50" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,4: web-based" verbatim="web-based" row="50" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,5: > 25 languages" verbatim="> 25 languages" row="50" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,6: " verbatim="" row="50" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,7: 2.3.3" verbatim="2.3.3" row="50" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,8: june&#xa0;27, 2011; 2 years ago" verbatim="June&#xa0;27, 2011;&#xA;2 years ago" row="50" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,9: ?" verbatim="?" row="50" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,10: ?" verbatim="?" row="50" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="51,0: win32svn: developers site sourceforge page" verbatim="Win32svn: Developers Site sourceforge page" row="51" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,1: visual c++ 6.0" verbatim="Visual C++ 6.0" row="51" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,2: microsoft windows" verbatim="Microsoft Windows" row="51" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,3: apache license v2.0" verbatim="Apache License V2.0" row="51" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,4: windows command line" verbatim="Windows Command Line" row="51" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,5: all from the official svn release (en, de, es, fr," verbatim="All from the official SVN release&#xA;(en, de, es, fr, it,ja, ko, nb, pl, pt_BR, sv, zh_CN, zh_TW)" row="51" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,6: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="51" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,7: 1.8.8" verbatim="1.8.8" row="51" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,8: march&#xa0;9, 2014; 32 days ago" verbatim="March&#xa0;9, 2014;&#xA;32 days ago" row="51" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,9: yes svnserve or with apache httpd 2.2.x or 2.4.x (" verbatim="Yes &#xA;svnserve or with Apache httpd 2.2.x or 2.4.x &#xA;(python, perl, ruby and java bindings included but not tested)" row="51" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,10: none (command line only)" verbatim="None (Command line only)" row="51" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="52,0: xcode" verbatim="Xcode" row="52" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,1: objective-c, cocoa" verbatim="Objective-C, Cocoa" row="52" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,2: mac os x" verbatim="Mac OS X" row="52" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,3: proprietary, free on mac app store" verbatim="Proprietary, free on Mac App Store" row="52" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,4: xcode ide" verbatim="Xcode IDE" row="52" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,5: english" verbatim="English" row="52" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,6: " verbatim="" row="52" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,7: 5.0.1 (4h127)" verbatim="5.0.1 (4H127)" row="52" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,8: october&#xa0;22, 2013; 5 months ago" verbatim="October&#xa0;22, 2013;&#xA;5 months ago" row="52" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,9: ?" verbatim="?" row="52" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,10: ?" verbatim="?" row="52" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="53,0: zigversion (out of business)" verbatim="ZigVersion      (Out of business)" row="53" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,1: objective-c, cocoa" verbatim="Objective-C, Cocoa" row="53" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,2: mac os x" verbatim="Mac OS X" row="53" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,3: freeware with commercial upgrade" verbatim="Freeware with commercial upgrade" row="53" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,4: gui, standalone" verbatim="GUI, standalone" row="53" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,5: english" verbatim="English" row="53" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,6: http, https, svn, file" verbatim="http, https, svn, file" row="53" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,7: 1.2.3" verbatim="1.2.3" row="53" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,8: february&#xa0;13, 2008; 6 years ago" verbatim="February&#xa0;13, 2008;&#xA;6 years ago" row="53" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,9: ?" verbatim="?" row="53" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,10: ?" verbatim="?" row="53" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="54,0: gtalkabout" verbatim="GTalkabout" row="54" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,1: visual c++ 6.0" verbatim="Visual C++ 6.0" row="54" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,2: microsoft windows" verbatim="Microsoft Windows" row="54" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,3: freeware" verbatim="Freeware" row="54" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,4: gui, xmpp" verbatim="GUI, XMPP" row="54" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,5: english" verbatim="English" row="54" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,6: http, https, svn, file" verbatim="http, https, svn, file" row="54" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,7: 1.0.4" verbatim="1.0.4" row="54" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,8: october&#xa0;15, 2013; 5 months ago" verbatim="October&#xa0;15, 2013;&#xA;5 months ago" row="54" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,9: no" verbatim="No" row="54" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,10: diff, merge, repository navigatebar" verbatim="Diff, merge, Repository Navigatebar" row="54" rowspan="1" column="10" colspan="1"/>
+  </matrices>
+  <matrices name="Standalone Subversion clients comparison table">
+    <cells xsi:type="pcmmm:Header" name="0,0: client name" verbatim="Client name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: free" verbatim="Free" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: network protocols" verbatim="Network protocols" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: diff" verbatim="Diff" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: merge" verbatim="Merge" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: browse remote repository" verbatim="Browse remote repository" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: cornerstone" verbatim="Cornerstone" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: no" verbatim="No" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: file, http, https, svn and svn+ssh" verbatim="file, http, https, svn and svn+ssh" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: yes" verbatim="Yes" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: yes" verbatim="Yes" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: diffplug" verbatim="DiffPlug" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: yes" verbatim="Yes" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: file, http, https, svn" verbatim="file, http, https, svn" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: yes" verbatim="Yes" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: yes" verbatim="Yes" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: esvn" verbatim="eSvn" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: yes" verbatim="Yes" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: http, svn" verbatim="http, svn" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: ?" verbatim="?" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: ?" verbatim="?" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: ?" verbatim="?" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: iversion" verbatim="iVersion" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: no" verbatim="No" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: svn, http, https" verbatim="svn, http, https" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: ?" verbatim="?" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: ?" verbatim="?" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: ?" verbatim="?" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: kdesvn" verbatim="kdesvn" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: yes" verbatim="Yes" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: file, http, https, (k)svn, (k)svn+file, (k)svn+htt" verbatim="file, http, https, (k)svn, (k)svn+file, (k)svn+http, (k)svn+https, (k)svn+ssh" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: yes" verbatim="Yes" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: yes" verbatim="Yes" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: yes" verbatim="Yes" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: qsvn" verbatim="QSvn" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: yes" verbatim="Yes" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: " verbatim="" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: style=&quot;background:#9f9;vertical-align:middle;text-" verbatim="style=&quot;background:#9F9;vertical-align:middle;text-align:center;&quot; class=&quot;table-yes&quot;|Yes||?||?" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: rapidsvn" verbatim="RapidSVN" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: yes" verbatim="Yes" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: " verbatim="" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: internal||internal||style=&quot;background:#9f9;vertica" verbatim="internal||internal||style=&quot;background:#9F9;vertical-align:middle;text-align:center;&quot; class=&quot;table-yes&quot;|Yes" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,0: sdsvn" verbatim="sdSVN" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: yes" verbatim="Yes" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: http, https" verbatim="http, https" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: ?" verbatim="?" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: ?" verbatim="?" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: ?" verbatim="?" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,0: smartgit" verbatim="SmartGit" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: yes" verbatim="Yes" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: http, https, svn, svn+ssh" verbatim="http, https, svn, svn+ssh" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: yes" verbatim="Yes" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: yes" verbatim="Yes" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: no" verbatim="No" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,0: smartsvn professional" verbatim="SmartSVN Professional" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: no" verbatim="No" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: http, https, svn, svn+ssh" verbatim="http, https, svn, svn+ssh" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: yes" verbatim="Yes" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: yes" verbatim="Yes" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: yes" verbatim="Yes" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,0: smartsvn foundation" verbatim="SmartSVN Foundation" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: no" verbatim="No" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: http, https, svn, svn+ssh" verbatim="http, https, svn, svn+ssh" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: yes" verbatim="Yes" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: yes" verbatim="Yes" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: yes" verbatim="Yes" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,0: subcommander" verbatim="Subcommander" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: yes" verbatim="Yes" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: http, https, svn, file" verbatim="http, https, svn, file" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: ?" verbatim="?" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: ?" verbatim="?" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: ?" verbatim="?" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,0: svn-monitor" verbatim="SVN-Monitor" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: yes" verbatim="Yes" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: ?" verbatim="?" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: ?" verbatim="?" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: ?" verbatim="?" row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,0: svnbreeze" verbatim="SVNBreeze" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: no" verbatim="No" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: http, https, svn, svn, file" verbatim="http, https, svn, svn, file" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: yes" verbatim="Yes" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: yes" verbatim="Yes" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: yes" verbatim="Yes" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,0: syncro svn" verbatim="Syncro SVN" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: no" verbatim="No" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: yes" verbatim="Yes" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: yes" verbatim="Yes" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: yes" verbatim="Yes" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,0: svnup" verbatim="svnup" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: yes" verbatim="Yes" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: http, https, svn" verbatim="http, https, svn" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: no" verbatim="No" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: no" verbatim="No" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: no" verbatim="No" row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,0: versions" verbatim="Versions" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: no" verbatim="No" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: http, https, svn, svn+ssh, file" verbatim="http, https, svn, svn+ssh, file" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: yes" verbatim="Yes" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: ?" verbatim="?" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,5: yes" verbatim="Yes" row="17" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,0: zigversion" verbatim="ZigVersion" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: yes" verbatim="Yes" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: http, https, svn, file" verbatim="http, https, svn, file" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: ?" verbatim="?" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: ?" verbatim="?" row="18" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,5: ?" verbatim="?" row="18" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,0: gtalkabout" verbatim="GTalkabout" row="19" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: yes" verbatim="Yes" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: http, https, svn, file" verbatim="http, https, svn, file" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: yes" verbatim="Yes" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: yes" verbatim="Yes" row="19" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,5: yes" verbatim="Yes" row="19" rowspan="1" column="5" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>
