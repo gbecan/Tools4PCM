@@ -61,7 +61,7 @@ class VariabilityExtractor {
 	  variabilityConceptExtractor.extractConceptsFromInterpretedCells(pcm)
 	  
 	  // Extract feature's domains
-	  domainExtractor.extractDomains(pcm)
+	  domainExtractor.extractDomains(pcm, config)
   }
   
 }

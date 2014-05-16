@@ -6,6 +6,7 @@ class PCMConfiguration {
 
 	var defaultConfiguration : MatrixConfiguration = new MatrixConfiguration
 	var matrixConfigurations : Map[(String, Int), MatrixConfiguration] = Map()
+	var filterDomainValues : Boolean = true
   
 	def getConfig(matrix : Matrix) : MatrixConfiguration = {
 	  val id = matrix.getId()

@@ -143,6 +143,7 @@ class ConfigurationFileParser {
 			  case "header-columns" => matrixConfig.headerColumns = convertToInt(value)
 			  case "ignored" => matrixConfig.ignored = convertToBoolean(value)
 			  case "inverted" => matrixConfig.inverted = convertToBoolean(value)
+			  case "filter-domain-values" => pcmConfig.filterDomainValues = convertToBoolean(value)
 			  case _ => 
 			}
 			true;

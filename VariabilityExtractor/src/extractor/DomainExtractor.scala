@@ -19,6 +19,7 @@ import uk.ac.shef.wit.simmetrics.similaritymetrics.SmithWaterman
 import pcmmm.Integer
 import pcmmm.VariabilityConceptRef
 import pcmmm.Simple
+import configuration.PCMConfiguration
 
 class DomainExtractor {
 
@@ -27,14 +28,14 @@ class DomainExtractor {
 	     1 - metric.getSimilarity(v1.getVerbatim().toLowerCase(), v2.getVerbatim().toLowerCase())
   val cellClusterer = new HierarchicalClusterer(dissimilarityMetric, 0.5)
   
-  def extractDomains(pcm : PCM) {
+  def extractDomains(pcm : PCM, config : PCMConfiguration) {
 	  val domainCollection = PcmmmFactory.eINSTANCE.createDomainCollection()
 	  pcm.setDomainCollection(domainCollection)
 	  
 	  val domains = for (concept <- pcm.getConcepts()) yield {
 		  concept match {
 		    case feature : Feature if !feature.getMyValuedCells().isEmpty() => 
-		     	Some(extractDomain(feature))
+		     	Some(extractDomain(feature, config.filterDomainValues))
 		    case feature : Feature => Some(setDefaultDomain(feature))
 		    case _ => None
 		  }
@@ -42,31 +43,37 @@ class DomainExtractor {
 	  domainCollection.getDomains().addAll(domains.flatten.toList)
   }
   
-  def extractDomain(feature : Feature) : Domain = {
+  def extractDomain(feature : Feature, filtered : Boolean) : Domain = {
 	  val values = feature.getMyValuedCells().flatMap(cell => listValues(cell.getInterpretation())).toList
 	  
-	  // Separate values according to types
-	  val numberDomain = values.filter(v => v.isInstanceOf[Integer] || v.isInstanceOf[Double])
-	  val booleanDomain = values.filter(_.isInstanceOf[pcmmm.Boolean])
-	  val variabilityConceptDomain = values.filter(_.isInstanceOf[VariabilityConceptRef])
-	      
-	  // Get most represented type
-	  val mainType = List(numberDomain, booleanDomain, variabilityConceptDomain).maxBy(_.size)
-	  
-	  
-	  // Cluster values if the type is String
-	  val domainValues = if (!mainType.isEmpty && mainType.head.isInstanceOf[VariabilityConceptRef]) {
+	  val domainValues = if (filtered) {
+		  // Separate values according to types
+		  val numberDomain = values.filter(v => v.isInstanceOf[Integer] || v.isInstanceOf[Double])
+		  val booleanDomain = values.filter(_.isInstanceOf[pcmmm.Boolean])
+		  val variabilityConceptDomain = values.filter(_.isInstanceOf[VariabilityConceptRef])
+		      
+		  // Get most represented type
+		  val mainType = List(numberDomain, booleanDomain, variabilityConceptDomain).maxBy(_.size)
 		  
-		  val clusters = cellClusterer.cluster(values)
-		  val significantClusters = selectSignificantClusters(clusters, values.size)
 		  
-		  if (significantClusters.isEmpty) {
-		    Nil
+		  // Cluster values if the type is String
+		  val filteredValues = if (!mainType.isEmpty && mainType.head.isInstanceOf[VariabilityConceptRef]) {
+			  
+			  val clusters = cellClusterer.cluster(values)
+			  val significantClusters = selectSignificantClusters(clusters, values.size)
+			  
+			  if (significantClusters.isEmpty) {
+			    Nil
+			  } else {
+			    significantClusters.reduceLeft(_ union _)
+			  }
 		  } else {
-		    significantClusters.reduceLeft(_ union _)
+			  mainType
 		  }
+		  
+		  filteredValues
 	  } else {
-		  mainType
+	    values
 	  }
 	  
 	  // Create domain
