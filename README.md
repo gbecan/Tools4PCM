@@ -12,6 +12,13 @@ Details about the evaluation are available in the [evaluation folder](evaluation
 - Arnaud Blouin
 - Benoit Baudry
 
+
+### Requirements
+
+ * Scala 2.10
+ * Eclipse 4.3 Kepler
+ * GWT SDK 
+
 ### Structure of the project
 - __PCMMetamodel__: metamodel of PCMs
 - __VariabilityExtractor__: automated techniques for formalizing PCMs
