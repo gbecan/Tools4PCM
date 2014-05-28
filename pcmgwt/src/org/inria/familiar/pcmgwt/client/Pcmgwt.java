@@ -2,15 +2,19 @@ package org.inria.familiar.pcmgwt.client;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.logging.Logger;
 
 import org.inria.familiar.pcmgwt.client.download.HTML5Download;
 import org.inria.familiar.pcmgwt.client.handler.ValidateHandler;
 import org.inria.familiar.pcmgwt.shared.Matrix;
+import org.inria.familiar.pcmgwt.shared.PCM;
+import org.inria.familiar.pcmgwt.shared.PCMGuiBuilder;
 import org.inria.familiar.pcmgwt.shared.experiment.ExperimentDataCell;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gwt.user.client.ui.ListBox;
 import com.smartgwt.client.data.DataSource;
 import com.smartgwt.client.data.fields.DataSourceTextField;
 import com.smartgwt.client.types.Overflow;
@@ -37,6 +41,9 @@ import com.smartgwt.client.widgets.tab.TabSet;
  * Entry point classes define <code>onModuleLoad()</code>.
  */
 public class Pcmgwt implements EntryPoint {
+	
+	private static Logger _LOGGER = Logger.getLogger("Pcmgwt");
+	
 	/**
 	 * Create a remote service proxy to talk to the server-side Greeting
 	 * service.
@@ -92,7 +99,7 @@ public class Pcmgwt implements EntryPoint {
 		form.setWidth(400);
 
 		TextItem firstName = new TextItem("firstName", "First name");
-		firstName.setMask(">?<??????????????");
+		firstName.setMask(">?<??????????");
 		firstName.setHint("<nobr>>?<??????????????<nobr>");
 
 		TextItem lastName = new TextItem("lastName", "Last name");
@@ -117,6 +124,67 @@ public class Pcmgwt implements EntryPoint {
 		form1.setDataSource(dataSource);
 
 		form.setFields(firstName, lastName);
+		
+		// returns the list of PCM files (their ids) available in the PCM repository
+		final PCMRepositoryAsync pcmRepo = 
+				(PCMRepositoryAsync) GWT
+				.create(PCMRepository.class);
+				// new PCMDirectoryRepo("../evaluation/input/models/") ; // TODO workaround
+		
+		final ListBox lb = new ListBox();	 
+	    lb.setVisibleItemCount(3);	
+
+		
+		pcmRepo.getIDs(new AsyncCallback<Collection<String>>() {
+			
+			@Override
+			public void onSuccess(Collection<String> pcmIDs) {
+	
+				for (String pcmID : pcmIDs) {
+					lb.addItem(pcmID);			
+				}
+				
+				lb.addClickHandler(new com.google.gwt.event.dom.client.ClickHandler() {
+					
+					@Override
+					public void onClick(com.google.gwt.event.dom.client.ClickEvent event) {
+						int i = lb.getSelectedIndex();
+						String val = lb.getValue(i);
+						_LOGGER.info("PCM id:" + val);	
+						pcmRepo.getPCM(val, new AsyncCallback<PCM>() {
+							
+								@Override
+								public void onFailure(Throwable caught) {
+									// TODO Auto-generated method stub
+									
+								}
+
+								@Override
+								public void onSuccess(PCM pcm) {
+									new PCMGuiBuilder(pcm).mkTabs(theTabs);
+														
+								}
+						});
+					}
+				});
+				
+			}
+			
+			@Override
+			public void onFailure(Throwable caught) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
+		
+		
+		
+	
+		
+
+
+
 
 		IButton validateButton = new IButton();
 		validateButton.setTitle("Start");
@@ -135,8 +203,8 @@ public class Pcmgwt implements EntryPoint {
 		
 		validateButton
 				.addClickHandler(new ValidateHandler(form,form1, theTabs, greetingService,validateButton, deoButton,false));
-		deoButton
-		.addClickHandler(new ValidateHandler(form,form1, theTabs, greetingService,deoButton,validateButton,true));
+		
+		deoButton.addClickHandler(new ValidateHandler(form,form1, theTabs, greetingService, deoButton,validateButton,true));
 
 		
 		VLayout vLayout = new VLayout();
@@ -145,12 +213,14 @@ public class Pcmgwt implements EntryPoint {
 		vLayout.addMember(form1);
 		HLayout hLayout1  = new HLayout();
 		
-		hLayout1.setPadding(20);
-		hLayout1.setMargin(20);
-		hLayout1.setMembersMargin(30);
+		hLayout1.setPadding(30);
+		hLayout1.setMargin(30);
+		hLayout1.setMembersMargin(40);
 		hLayout1.addMember(validateButton);
 		hLayout1.addMember(deoButton);
 		hLayout1.addMember(restartButton);
+		hLayout1.addMember(lb);
+		
 		vLayout.addMember(hLayout1);
 		
 		// vLayout.draw();

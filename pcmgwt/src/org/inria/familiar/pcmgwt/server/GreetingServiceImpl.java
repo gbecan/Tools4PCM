@@ -289,4 +289,6 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
 
 	}
 
+
+
 }

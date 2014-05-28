@@ -20,6 +20,8 @@ public interface GreetingServiceAsync {
 			Collection<ExperimentDataCell> datas,
 			AsyncCallback<Boolean> callback);
 
+	@Deprecated
 	void loadModel(boolean demo, AsyncCallback<PCM> callback);
+	
 
 }
