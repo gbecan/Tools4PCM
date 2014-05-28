@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm" name="Comparison_of_portable_media_players">
+  <matrices name="Technical specifications" id="Technical specifications_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: navigation" verbatim="Navigation" rowspan="1" column="1" colspan="1" concept="//@concepts.0"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: speaker" verbatim="Speaker" rowspan="1" column="2" colspan="1" concept="//@concepts.1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: screen size (in)" verbatim="Screen size (in)" rowspan="1" column="3" colspan="1" concept="//@concepts.2"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: screen type" verbatim="Screen type" rowspan="1" column="4" colspan="1" concept="//@concepts.3"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: resolution (px)" verbatim="Resolution (px)" rowspan="1" column="5" colspan="1" concept="//@concepts.4"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: color depth (bpp)" verbatim="Color depth (bpp)" rowspan="1" column="6" colspan="1" concept="//@concepts.5"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: video out" verbatim="Video out" rowspan="1" column="7" colspan="1" concept="//@concepts.6"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: video battery life (hr)" verbatim="Video battery life (hr)" rowspan="1" column="8" colspan="1" concept="//@concepts.7"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: archos 105" verbatim="Archos 105" row="1" rowspan="1" colspan="1" concept="//@concepts.8"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: archos 405" verbatim="Archos 405" row="2" rowspan="1" colspan="1" concept="//@concepts.9"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: cowon q5w" verbatim="Cowon Q5W" row="3" rowspan="1" colspan="1" concept="//@concepts.10"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: gigabeat t-series" verbatim="Gigabeat T-Series" row="4" rowspan="1" colspan="1" concept="//@concepts.11"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: gp2x f-200" verbatim="GP2X F-200" row="5" rowspan="1" colspan="1" concept="//@concepts.12"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: ipod classic" verbatim="iPod classic" row="6" rowspan="1" colspan="1" concept="//@concepts.13"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: ipod nano 6g" verbatim="iPod nano 6G" row="7" rowspan="1" colspan="1" concept="//@concepts.14"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: ipod touch" verbatim="iPod touch" row="8" rowspan="1" colspan="1" concept="//@concepts.15"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: name" verbatim="Name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: d-pad, 7 buttons" verbatim="D-pad, 7 buttons" row="1" rowspan="1" column="1" colspan="1" concepts="//@concepts.16 //@concepts.17" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="D-pad" verbatim="D-pad" concept="//@concepts.16"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="7 buttons" verbatim="7 buttons" concept="//@concepts.17"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: no" verbatim="No" row="1" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: 1.8" verbatim="1.8" row="1" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="1.8" confident="true" verbatim="1.8" value="1.8"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,4: oled" verbatim="OLED" row="1" rowspan="1" column="4" colspan="1" concepts="//@concepts.18" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="OLED" verbatim="OLED" concept="//@concepts.18"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,5: 160 &#xd7; 128" verbatim="160 &#xd7; 128" row="1" rowspan="1" column="5" colspan="1" concepts="//@concepts.19" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="160 &#xd7; 128" verbatim="160 &#xd7; 128" concept="//@concepts.19"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,6: 18" verbatim="18" row="1" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="18" confident="true" verbatim="18" value="18"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,7: component, composite" verbatim="Component, Composite" row="1" rowspan="1" column="7" colspan="1" concepts="//@concepts.20 //@concepts.21" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Component" verbatim="Component" concept="//@concepts.20"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Composite" verbatim="Composite" concept="//@concepts.21"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,8: unknown" verbatim="Unknown" row="1" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Unknown" name="Unknown" confident="true" verbatim="Unknown"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: d-pad, 6 two-way buttons" verbatim="D-pad, 6 two-way buttons" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.16 //@concepts.22" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="D-pad" verbatim="D-pad" concept="//@concepts.16"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="6 two-way buttons" verbatim="6 two-way buttons" concept="//@concepts.22"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: no" verbatim="No" row="2" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: 3.5" verbatim="3.5" row="2" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="3.5" confident="true" verbatim="3.5" value="3.5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,4: tft lcd" verbatim="TFT LCD" row="2" rowspan="1" column="4" colspan="1" concepts="//@concepts.23" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="TFT LCD" verbatim="TFT LCD" concept="//@concepts.23"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,5: 320 &#xd7; 240" verbatim="320 &#xd7; 240" row="2" rowspan="1" column="5" colspan="1" concepts="//@concepts.24" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="320 &#xd7; 240" verbatim="320 &#xd7; 240" concept="//@concepts.24"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,6: predecessor: 24" verbatim="Predecessor: 24" row="2" rowspan="1" column="6" colspan="1" concepts="//@concepts.25" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Predecessor: 24" verbatim="Predecessor: 24" concept="//@concepts.25"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,7: component, composite" verbatim="Component, Composite" row="2" rowspan="1" column="7" colspan="1" concepts="//@concepts.20 //@concepts.21" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Component" verbatim="Component" concept="//@concepts.20"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Composite" verbatim="Composite" concept="//@concepts.21"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,8: 5" verbatim="5" row="2" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="5" confident="true" verbatim="5" value="5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: touchscreen" verbatim="Touchscreen" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.26" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Touchscreen" verbatim="Touchscreen" concept="//@concepts.26"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: yes" verbatim="Yes" row="3" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: 5" verbatim="5" row="3" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="5" confident="true" verbatim="5" value="5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,4: tft lcd" verbatim="TFT LCD" row="3" rowspan="1" column="4" colspan="1" concepts="//@concepts.23" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="TFT LCD" verbatim="TFT LCD" concept="//@concepts.23"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,5: 800 &#xd7; 480" verbatim="800 &#xd7; 480" row="3" rowspan="1" column="5" colspan="1" concepts="//@concepts.27" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="800 &#xd7; 480" verbatim="800 &#xd7; 480" concept="//@concepts.27"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,6: 24" verbatim="24" row="3" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="24" confident="true" verbatim="24" value="24"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,7: component, s-video, composite" verbatim="Component, S-video, composite" row="3" rowspan="1" column="7" colspan="1" concepts="//@concepts.20 //@concepts.28 //@concepts.29" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Component" verbatim="Component" concept="//@concepts.20"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="S-video" verbatim="S-video" concept="//@concepts.28"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="composite" verbatim="composite" concept="//@concepts.29"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,8: 7" verbatim="7" row="3" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="7" confident="true" verbatim="7" value="7"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: d-pad, 4 buttons" verbatim="D-pad, 4 buttons" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.16 //@concepts.30" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="D-pad" verbatim="D-pad" concept="//@concepts.16"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="4 buttons" verbatim="4 buttons" concept="//@concepts.30"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: no" verbatim="No" row="4" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: 2.4" verbatim="2.4" row="4" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="2.4" confident="true" verbatim="2.4" value="2.4"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,4: tft lcd" verbatim="TFT LCD" row="4" rowspan="1" column="4" colspan="1" concepts="//@concepts.23" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="TFT LCD" verbatim="TFT LCD" concept="//@concepts.23"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,5: 320 &#xd7; 240" verbatim="320 &#xd7; 240" row="4" rowspan="1" column="5" colspan="1" concepts="//@concepts.24" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="320 &#xd7; 240" verbatim="320 &#xd7; 240" concept="//@concepts.24"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,6: 18" verbatim="18" row="4" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="18" confident="true" verbatim="18" value="18"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,7: no" verbatim="No" row="4" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,8: 5" verbatim="5" row="4" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="5" confident="true" verbatim="5" value="5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: 8-way d-pad/touchscreen, 9 buttons" verbatim="8-way d-pad/touchscreen, 9 buttons" row="5" rowspan="1" column="1" colspan="1" concepts="//@concepts.31 //@concepts.32 //@concepts.33" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="8-way d-pad" verbatim="8-way d-pad" concept="//@concepts.31"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="touchscreen" verbatim="touchscreen" concept="//@concepts.32"/>
+        </contraints>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="9 buttons" verbatim="9 buttons" concept="//@concepts.33"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: yes" verbatim="Yes" row="5" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,3: 3.5" verbatim="3.5" row="5" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="3.5" confident="true" verbatim="3.5" value="3.5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,4: tft lcd" verbatim="TFT LCD" row="5" rowspan="1" column="4" colspan="1" concepts="//@concepts.23" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="TFT LCD" verbatim="TFT LCD" concept="//@concepts.23"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,5: 320 &#xd7; 240" verbatim="320 &#xd7; 240" row="5" rowspan="1" column="5" colspan="1" concepts="//@concepts.24" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="320 &#xd7; 240" verbatim="320 &#xd7; 240" concept="//@concepts.24"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,6: 16" verbatim="16" row="5" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="16" confident="true" verbatim="16" value="16"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,7: component" verbatim="Component" row="5" rowspan="1" column="7" colspan="1" concepts="//@concepts.20" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Component" verbatim="Component" concept="//@concepts.20"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,8: 3.5" verbatim="3.5" row="5" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Double" name="3.5" confident="true" verbatim="3.5" value="3.5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,1: click wheel, 1 center, 4 embedded buttons" verbatim="Click wheel, 1 center, 4 embedded buttons" row="6" rowspan="1" column="1" colspan="1" concepts="//@concepts.34 //@concepts.35 //@concepts.36" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Click wheel" verbatim="Click wheel" concept="//@concepts.34"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="1 center" verbatim="1 center" concept="//@concepts.35"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="4 embedded buttons" verbatim="4 embedded buttons" concept="//@concepts.36"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,2: clicker only" verbatim="Clicker only" row="6" rowspan="1" column="2" colspan="1" concepts="//@concepts.37" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Clicker only" verbatim="Clicker only" concept="//@concepts.37"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,3: 2.5" verbatim="2.5" row="6" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="2.5" confident="true" verbatim="2.5" value="2.5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,4: tft lcd" verbatim="TFT LCD" row="6" rowspan="1" column="4" colspan="1" concepts="//@concepts.23" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="TFT LCD" verbatim="TFT LCD" concept="//@concepts.23"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,5: 320 &#xd7; 240" verbatim="320 &#xd7; 240" row="6" rowspan="1" column="5" colspan="1" concepts="//@concepts.24" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="320 &#xd7; 240" verbatim="320 &#xd7; 240" concept="//@concepts.24"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,6: 16" verbatim="16" row="6" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Integer" name="16" confident="true" verbatim="16" value="16"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,7: component, composite" verbatim="Component, composite" row="6" rowspan="1" column="7" colspan="1" concepts="//@concepts.20 //@concepts.29" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Component" verbatim="Component" concept="//@concepts.20"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="composite" verbatim="composite" concept="//@concepts.29"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,8: 6" verbatim="6" row="6" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="6" confident="true" verbatim="6" value="6"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,1: multi-touch screen" verbatim="Multi-touch screen" row="7" rowspan="1" column="1" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Multi-touch screen" verbatim="Multi-touch screen" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,2: no" verbatim="No" row="7" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,3: 1.54" verbatim="1.54" row="7" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="1.54" confident="true" verbatim="1.54" value="1.54"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,4: tft lcd" verbatim="TFT LCD" row="7" rowspan="1" column="4" colspan="1" concepts="//@concepts.23" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="TFT LCD" verbatim="TFT LCD" concept="//@concepts.23"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,5: 240 &#xd7; 240" verbatim="240 &#xd7; 240" row="7" rowspan="1" column="5" colspan="1" concepts="//@concepts.39" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="240 &#xd7; 240" verbatim="240 &#xd7; 240" concept="//@concepts.39"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,6: " verbatim="" row="7" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,7: component, composite" verbatim="Component, composite" row="7" rowspan="1" column="7" colspan="1" concepts="//@concepts.20 //@concepts.29" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Component" verbatim="Component" concept="//@concepts.20"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="composite" verbatim="composite" concept="//@concepts.29"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,8: no video support" verbatim="No video support" row="7" rowspan="1" column="8" colspan="1" concepts="//@concepts.40" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="No video support" verbatim="No video support" concept="//@concepts.40"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,1: multi-touch screen, 3 buttons" verbatim="Multi-touch screen, 3 buttons" row="8" rowspan="1" column="1" colspan="1" concepts="//@concepts.38 //@concepts.41" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Multi-touch screen" verbatim="Multi-touch screen" concept="//@concepts.38"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="3 buttons" verbatim="3 buttons" concept="//@concepts.41"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,2: yes (ex. 1st gen.)" verbatim="Yes (ex. 1st gen.)" row="8" rowspan="1" column="2" colspan="1" concepts="//@concepts.42" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="ex. 1st gen." verbatim="ex. 1st gen." concept="//@concepts.42"/>
+        <argument xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,3: 3.5" verbatim="3.5" row="8" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Double" name="3.5" confident="true" verbatim="3.5" value="3.5"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,4: tft lcd" verbatim="TFT LCD" row="8" rowspan="1" column="4" colspan="1" concepts="//@concepts.23" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="TFT LCD" verbatim="TFT LCD" concept="//@concepts.23"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,5: 480 &#xd7; 320 (4th gen. 960 &#xd7; 640)" verbatim="480 &#xd7; 320 (4th gen. 960 &#xd7; 640)" row="8" rowspan="1" column="5" colspan="1" concepts="//@concepts.43 //@concepts.44" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="4th gen. 960 &#xd7; 640" verbatim="4th gen. 960 &#xd7; 640" concept="//@concepts.43"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="480 &#xd7; 320" verbatim="480 &#xd7; 320" concept="//@concepts.44"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,6: 24 (4th gen.) 18 (1st. - 3rd gen.)" verbatim="24 (4th gen.) 18 (1st. - 3rd gen.)" row="8" rowspan="1" column="6" colspan="1" concepts="//@concepts.45" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="4th gen.) 18 (1st. - 3rd gen." verbatim="4th gen.) 18 (1st. - 3rd gen." concept="//@concepts.45"/>
+        <argument xsi:type="pcmmm:Integer" name="24" confident="true" verbatim="24" value="24"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,7: component, composite" verbatim="Component, composite" row="8" rowspan="1" column="7" colspan="1" concepts="//@concepts.20 //@concepts.29" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Component" verbatim="Component" concept="//@concepts.20"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="composite" verbatim="composite" concept="//@concepts.29"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,8: 6" verbatim="6" row="8" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Integer" name="6" confident="true" verbatim="6" value="6"/>
+    </cells>
+  </matrices>
+  <concepts xsi:type="pcmmm:Feature" name="Navigation" myValuedCells="//@matrices.0/@cells.17 //@matrices.0/@cells.25 //@matrices.0/@cells.33 //@matrices.0/@cells.41 //@matrices.0/@cells.49 //@matrices.0/@cells.57 //@matrices.0/@cells.65 //@matrices.0/@cells.73" domain="//@domainCollection/@domains.0"/>
+  <concepts xsi:type="pcmmm:Feature" name="Speaker" myValuedCells="//@matrices.0/@cells.18 //@matrices.0/@cells.26 //@matrices.0/@cells.34 //@matrices.0/@cells.42 //@matrices.0/@cells.50 //@matrices.0/@cells.58 //@matrices.0/@cells.66 //@matrices.0/@cells.74" domain="//@domainCollection/@domains.1"/>
+  <concepts xsi:type="pcmmm:Feature" name="Screen size (in)" myValuedCells="//@matrices.0/@cells.19 //@matrices.0/@cells.27 //@matrices.0/@cells.35 //@matrices.0/@cells.43 //@matrices.0/@cells.51 //@matrices.0/@cells.59 //@matrices.0/@cells.67 //@matrices.0/@cells.75" domain="//@domainCollection/@domains.2"/>
+  <concepts xsi:type="pcmmm:Feature" name="Screen type" myValuedCells="//@matrices.0/@cells.20 //@matrices.0/@cells.28 //@matrices.0/@cells.36 //@matrices.0/@cells.44 //@matrices.0/@cells.52 //@matrices.0/@cells.60 //@matrices.0/@cells.68 //@matrices.0/@cells.76" domain="//@domainCollection/@domains.3"/>
+  <concepts xsi:type="pcmmm:Feature" name="Resolution (px)" myValuedCells="//@matrices.0/@cells.21 //@matrices.0/@cells.29 //@matrices.0/@cells.37 //@matrices.0/@cells.45 //@matrices.0/@cells.53 //@matrices.0/@cells.61 //@matrices.0/@cells.69 //@matrices.0/@cells.77" domain="//@domainCollection/@domains.4"/>
+  <concepts xsi:type="pcmmm:Feature" name="Color depth (bpp)" myValuedCells="//@matrices.0/@cells.22 //@matrices.0/@cells.30 //@matrices.0/@cells.38 //@matrices.0/@cells.46 //@matrices.0/@cells.54 //@matrices.0/@cells.62 //@matrices.0/@cells.70 //@matrices.0/@cells.78" domain="//@domainCollection/@domains.5"/>
+  <concepts xsi:type="pcmmm:Feature" name="Video out" myValuedCells="//@matrices.0/@cells.23 //@matrices.0/@cells.31 //@matrices.0/@cells.39 //@matrices.0/@cells.47 //@matrices.0/@cells.55 //@matrices.0/@cells.63 //@matrices.0/@cells.71 //@matrices.0/@cells.79" domain="//@domainCollection/@domains.6"/>
+  <concepts xsi:type="pcmmm:Feature" name="Video battery life (hr)" myValuedCells="//@matrices.0/@cells.24 //@matrices.0/@cells.32 //@matrices.0/@cells.40 //@matrices.0/@cells.48 //@matrices.0/@cells.56 //@matrices.0/@cells.64 //@matrices.0/@cells.72 //@matrices.0/@cells.80" domain="//@domainCollection/@domains.7"/>
+  <concepts xsi:type="pcmmm:Product" name="Archos 105" myValuedCells="//@matrices.0/@cells.17 //@matrices.0/@cells.18 //@matrices.0/@cells.19 //@matrices.0/@cells.20 //@matrices.0/@cells.21 //@matrices.0/@cells.22 //@matrices.0/@cells.23 //@matrices.0/@cells.24"/>
+  <concepts xsi:type="pcmmm:Product" name="Archos 405" myValuedCells="//@matrices.0/@cells.25 //@matrices.0/@cells.26 //@matrices.0/@cells.27 //@matrices.0/@cells.28 //@matrices.0/@cells.29 //@matrices.0/@cells.30 //@matrices.0/@cells.31 //@matrices.0/@cells.32"/>
+  <concepts xsi:type="pcmmm:Product" name="Cowon Q5W" myValuedCells="//@matrices.0/@cells.33 //@matrices.0/@cells.34 //@matrices.0/@cells.35 //@matrices.0/@cells.36 //@matrices.0/@cells.37 //@matrices.0/@cells.38 //@matrices.0/@cells.39 //@matrices.0/@cells.40"/>
+  <concepts xsi:type="pcmmm:Product" name="Gigabeat T-Series" myValuedCells="//@matrices.0/@cells.41 //@matrices.0/@cells.42 //@matrices.0/@cells.43 //@matrices.0/@cells.44 //@matrices.0/@cells.45 //@matrices.0/@cells.46 //@matrices.0/@cells.47 //@matrices.0/@cells.48"/>
+  <concepts xsi:type="pcmmm:Product" name="GP2X F-200" myValuedCells="//@matrices.0/@cells.49 //@matrices.0/@cells.50 //@matrices.0/@cells.51 //@matrices.0/@cells.52 //@matrices.0/@cells.53 //@matrices.0/@cells.54 //@matrices.0/@cells.55 //@matrices.0/@cells.56"/>
+  <concepts xsi:type="pcmmm:Product" name="iPod classic" myValuedCells="//@matrices.0/@cells.57 //@matrices.0/@cells.58 //@matrices.0/@cells.59 //@matrices.0/@cells.60 //@matrices.0/@cells.61 //@matrices.0/@cells.62 //@matrices.0/@cells.63 //@matrices.0/@cells.64"/>
+  <concepts xsi:type="pcmmm:Product" name="iPod nano 6G" myValuedCells="//@matrices.0/@cells.65 //@matrices.0/@cells.66 //@matrices.0/@cells.67 //@matrices.0/@cells.68 //@matrices.0/@cells.69 //@matrices.0/@cells.70 //@matrices.0/@cells.71 //@matrices.0/@cells.72"/>
+  <concepts xsi:type="pcmmm:Product" name="iPod touch" myValuedCells="//@matrices.0/@cells.73 //@matrices.0/@cells.74 //@matrices.0/@cells.75 //@matrices.0/@cells.76 //@matrices.0/@cells.77 //@matrices.0/@cells.78 //@matrices.0/@cells.79 //@matrices.0/@cells.80"/>
+  <concepts xsi:type="pcmmm:Feature" name="D-pad" constraints="//@matrices.0/@cells.17 //@matrices.0/@cells.25 //@matrices.0/@cells.41" domain="//@domainCollection/@domains.8"/>
+  <concepts xsi:type="pcmmm:Feature" name="7 buttons" constraints="//@matrices.0/@cells.17" domain="//@domainCollection/@domains.9"/>
+  <concepts xsi:type="pcmmm:Feature" name="OLED" constraints="//@matrices.0/@cells.20" domain="//@domainCollection/@domains.10"/>
+  <concepts xsi:type="pcmmm:Feature" name="160 &#xd7; 128" constraints="//@matrices.0/@cells.21" domain="//@domainCollection/@domains.11"/>
+  <concepts xsi:type="pcmmm:Feature" name="Component" constraints="//@matrices.0/@cells.23 //@matrices.0/@cells.31 //@matrices.0/@cells.39 //@matrices.0/@cells.55 //@matrices.0/@cells.63 //@matrices.0/@cells.71 //@matrices.0/@cells.79" domain="//@domainCollection/@domains.12"/>
+  <concepts xsi:type="pcmmm:Feature" name="Composite" constraints="//@matrices.0/@cells.23 //@matrices.0/@cells.31" domain="//@domainCollection/@domains.13"/>
+  <concepts xsi:type="pcmmm:Feature" name="6 two-way buttons" constraints="//@matrices.0/@cells.25" domain="//@domainCollection/@domains.14"/>
+  <concepts xsi:type="pcmmm:Feature" name="TFT LCD" constraints="//@matrices.0/@cells.28 //@matrices.0/@cells.36 //@matrices.0/@cells.44 //@matrices.0/@cells.52 //@matrices.0/@cells.60 //@matrices.0/@cells.68 //@matrices.0/@cells.76" domain="//@domainCollection/@domains.15"/>
+  <concepts xsi:type="pcmmm:Feature" name="320 &#xd7; 240" constraints="//@matrices.0/@cells.29 //@matrices.0/@cells.45 //@matrices.0/@cells.53 //@matrices.0/@cells.61" domain="//@domainCollection/@domains.16"/>
+  <concepts xsi:type="pcmmm:Feature" name="Predecessor: 24" constraints="//@matrices.0/@cells.30" domain="//@domainCollection/@domains.17"/>
+  <concepts xsi:type="pcmmm:Feature" name="Touchscreen" constraints="//@matrices.0/@cells.33" domain="//@domainCollection/@domains.18"/>
+  <concepts xsi:type="pcmmm:Feature" name="800 &#xd7; 480" constraints="//@matrices.0/@cells.37" domain="//@domainCollection/@domains.19"/>
+  <concepts xsi:type="pcmmm:Feature" name="S-video" constraints="//@matrices.0/@cells.39" domain="//@domainCollection/@domains.20"/>
+  <concepts xsi:type="pcmmm:Feature" name="composite" constraints="//@matrices.0/@cells.39 //@matrices.0/@cells.63 //@matrices.0/@cells.71 //@matrices.0/@cells.79" domain="//@domainCollection/@domains.21"/>
+  <concepts xsi:type="pcmmm:Feature" name="4 buttons" constraints="//@matrices.0/@cells.41" domain="//@domainCollection/@domains.22"/>
+  <concepts xsi:type="pcmmm:Feature" name="8-way d-pad" constraints="//@matrices.0/@cells.49" domain="//@domainCollection/@domains.23"/>
+  <concepts xsi:type="pcmmm:Feature" name="touchscreen" constraints="//@matrices.0/@cells.49" domain="//@domainCollection/@domains.24"/>
+  <concepts xsi:type="pcmmm:Feature" name="9 buttons" constraints="//@matrices.0/@cells.49" domain="//@domainCollection/@domains.25"/>
+  <concepts xsi:type="pcmmm:Feature" name="Click wheel" constraints="//@matrices.0/@cells.57" domain="//@domainCollection/@domains.26"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 center" constraints="//@matrices.0/@cells.57" domain="//@domainCollection/@domains.27"/>
+  <concepts xsi:type="pcmmm:Feature" name="4 embedded buttons" constraints="//@matrices.0/@cells.57" domain="//@domainCollection/@domains.28"/>
+  <concepts xsi:type="pcmmm:Feature" name="Clicker only" constraints="//@matrices.0/@cells.58" domain="//@domainCollection/@domains.29"/>
+  <concepts xsi:type="pcmmm:Feature" name="Multi-touch screen" constraints="//@matrices.0/@cells.65 //@matrices.0/@cells.73" domain="//@domainCollection/@domains.30"/>
+  <concepts xsi:type="pcmmm:Feature" name="240 &#xd7; 240" constraints="//@matrices.0/@cells.69" domain="//@domainCollection/@domains.31"/>
+  <concepts xsi:type="pcmmm:Feature" name="No video support" constraints="//@matrices.0/@cells.72" domain="//@domainCollection/@domains.32"/>
+  <concepts xsi:type="pcmmm:Feature" name="3 buttons" constraints="//@matrices.0/@cells.73" domain="//@domainCollection/@domains.33"/>
+  <concepts xsi:type="pcmmm:Feature" name="ex. 1st gen." constraints="//@matrices.0/@cells.74" domain="//@domainCollection/@domains.34"/>
+  <concepts xsi:type="pcmmm:Feature" name="4th gen. 960 &#xd7; 640" constraints="//@matrices.0/@cells.77" domain="//@domainCollection/@domains.35"/>
+  <concepts xsi:type="pcmmm:Feature" name="480 &#xd7; 320" constraints="//@matrices.0/@cells.77" domain="//@domainCollection/@domains.36"/>
+  <concepts xsi:type="pcmmm:Feature" name="4th gen.) 18 (1st. - 3rd gen." constraints="//@matrices.0/@cells.78" domain="//@domainCollection/@domains.37"/>
+  <domainCollection>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.33/@interpretation //@matrices.0/@cells.49/@interpretation/@contraints.0/@contraints.1 //@matrices.0/@cells.65/@interpretation //@matrices.0/@cells.73/@interpretation/@contraints.0 //@matrices.0/@cells.17/@interpretation/@contraints.1 //@matrices.0/@cells.41/@interpretation/@contraints.1 //@matrices.0/@cells.49/@interpretation/@contraints.1 //@matrices.0/@cells.73/@interpretation/@contraints.1"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.18/@interpretation //@matrices.0/@cells.26/@interpretation //@matrices.0/@cells.34/@interpretation //@matrices.0/@cells.42/@interpretation //@matrices.0/@cells.50/@interpretation //@matrices.0/@cells.66/@interpretation //@matrices.0/@cells.74/@interpretation/@argument"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.35/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.28/@interpretation //@matrices.0/@cells.36/@interpretation //@matrices.0/@cells.44/@interpretation //@matrices.0/@cells.52/@interpretation //@matrices.0/@cells.60/@interpretation //@matrices.0/@cells.68/@interpretation //@matrices.0/@cells.76/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.21/@interpretation //@matrices.0/@cells.77/@interpretation/@argument //@matrices.0/@cells.29/@interpretation //@matrices.0/@cells.45/@interpretation //@matrices.0/@cells.53/@interpretation //@matrices.0/@cells.61/@interpretation //@matrices.0/@cells.69/@interpretation //@matrices.0/@cells.37/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.22/@interpretation //@matrices.0/@cells.38/@interpretation //@matrices.0/@cells.46/@interpretation //@matrices.0/@cells.54/@interpretation //@matrices.0/@cells.62/@interpretation //@matrices.0/@cells.78/@interpretation/@argument"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.23/@interpretation/@contraints.0 //@matrices.0/@cells.31/@interpretation/@contraints.0 //@matrices.0/@cells.39/@interpretation/@contraints.0 //@matrices.0/@cells.55/@interpretation //@matrices.0/@cells.63/@interpretation/@contraints.0 //@matrices.0/@cells.71/@interpretation/@contraints.0 //@matrices.0/@cells.79/@interpretation/@contraints.0 //@matrices.0/@cells.23/@interpretation/@contraints.1 //@matrices.0/@cells.31/@interpretation/@contraints.1 //@matrices.0/@cells.39/@interpretation/@contraints.2 //@matrices.0/@cells.63/@interpretation/@contraints.1 //@matrices.0/@cells.71/@interpretation/@contraints.1 //@matrices.0/@cells.79/@interpretation/@contraints.1"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.32/@interpretation //@matrices.0/@cells.40/@interpretation //@matrices.0/@cells.48/@interpretation //@matrices.0/@cells.64/@interpretation //@matrices.0/@cells.80/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+  </domainCollection>
+</pcmmm:PCM>

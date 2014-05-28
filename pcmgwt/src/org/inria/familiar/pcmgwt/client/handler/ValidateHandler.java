@@ -27,6 +27,8 @@ import com.smartgwt.client.widgets.grid.events.CellContextClickEvent;
 import com.smartgwt.client.widgets.grid.events.CellContextClickHandler;
 import com.smartgwt.client.widgets.grid.events.CellSelectionChangedEvent;
 import com.smartgwt.client.widgets.grid.events.CellSelectionChangedHandler;
+import com.smartgwt.client.widgets.grid.events.RowContextClickEvent;
+import com.smartgwt.client.widgets.grid.events.RowContextClickHandler;
 import com.smartgwt.client.widgets.layout.VLayout;
 import com.smartgwt.client.widgets.menu.Menu;
 import com.smartgwt.client.widgets.menu.MenuItem;
@@ -131,6 +133,15 @@ public class ValidateHandler implements ClickHandler{
 					               
 					               if(super.getCellRecord(rowNum,colNum) != null  && ExperimentDataCellSingleton.getInstance(((MatrixCell)super.getCellRecord(rowNum,colNum)).getMatrixId()).getDatasKeys().contains(((MatrixCell)super.getCellRecord(rowNum,colNum)).getCell()))
 					               		style = "color:green";
+					               if(super.getCellRecord(rowNum,colNum) != null  && ((MatrixCell)super.getCellRecord(rowNum,colNum)).getCell().getValue().equals("24 (4th gen.) 18 (1st. - 3rd gen.)"))
+					               		style = "background-color:orange";
+					               if(super.getCellRecord(rowNum,colNum) != null  && ((MatrixCell)super.getCellRecord(rowNum,colNum)).getCell().getValue().equals("480 × 320 (4th gen. 960 × 640)"))
+					               		style = "background-color:orange";
+					               if(super.getCellRecord(rowNum,colNum) != null  && ((MatrixCell)super.getCellRecord(rowNum,colNum)).getCell().getValue().equals("Predecessor: 24"))
+					               		style = "background-color:orange";
+					               if(super.getCellRecord(rowNum,colNum) != null  && ((MatrixCell)super.getCellRecord(rowNum,colNum)).getCell().getValue().equals("Yes (ex. 1st gen.)"))
+					               		style = "background-color:orange";					               
+
 					               return style;
 					           }
 							}
@@ -194,6 +205,29 @@ public class ValidateHandler implements ClickHandler{
 							 * System.err.println(c.getValue());
 							 * }
 							 */
+							
+/*							cubeGrid.addRowContextClickHandler(new RowContextClickHandler() {
+								
+								@Override
+								public void onRowContextClick(RowContextClickEvent event) {
+									
+									Menu m = new Menu();
+									
+									final MenuItem correctItem = new MenuItem(
+											"Filter",
+											GWT.getHostPageBaseURL()+"/images/icons/24/text_align_left_Down.png");
+									m.addItem(correctItem);
+									m.setTop(event.getY());
+									m.setLeft(event.getX());
+									m.show();
+									cubeGrid.setContextMenu(m);
+									event.cancel();
+								
+
+									
+								}
+							});*/
+							
 
 							cubeGrid.addCellContextClickHandler(new CellContextClickHandler() {
 
@@ -217,7 +251,7 @@ public class ValidateHandler implements ClickHandler{
 									
 									Menu m = new Menu();
 									final MenuItem hangupItem = new MenuItem(
-											"Validate", GWT.getHostPageBaseURL()+"/images/icons/16/approved.png");
+											"Validate", GWT.getHostPageBaseURL()+"images/icons/16/approved.png");
 									
 									
 									
@@ -226,8 +260,12 @@ public class ValidateHandler implements ClickHandler{
 
 									final MenuItem correctItem = new MenuItem(
 											"Correct",
-											GWT.getHostPageBaseURL()+"/images/icons/24/text_align_left_Down.png");
+											GWT.getHostPageBaseURL()+"images/icons/24/text_align_left_Down.png");
 
+									final MenuItem filterIem = new MenuItem(
+											"Filter",
+											GWT.getHostPageBaseURL()+"images/other/magnifier.png");
+									
 									//									import com.smartgwt.client.widgets.events.ClickHandler;
 
 									hangupItem
@@ -254,8 +292,10 @@ public class ValidateHandler implements ClickHandler{
 											});
 									
 									correctItem.addClickHandler(new CellContextMenuWidget()  );
+									filterIem.addClickHandler(new FilterContextMenuWidget()  );
 									m.addItem(hangupItem);
 									m.addItem(correctItem);
+									m.addItem(filterIem);
 									m.setTop(event.getY());
 									m.setLeft(event.getX());
 									m.show();
