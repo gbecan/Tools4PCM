@@ -1,5 +1,7 @@
 package org.inria.familiar.pcmgwt.client.handler;
 
+import java.util.Collection;
+
 import org.inria.familiar.pcmgwt.client.ExperimentDataCellSingleton;
 import org.inria.familiar.pcmgwt.client.GreetingServiceAsync;
 import org.inria.familiar.pcmgwt.shared.PCM;
@@ -85,7 +87,13 @@ public class ValidateHandler implements ClickHandler{
 						public void onSuccess(
 								PCM pcm) {
 													
-							new PCMGuiBuilder(pcm).mkTabs(theTabs);
+							Collection<Tab> tabs = new PCMGuiBuilder(pcm).mkTabs();
+							for (Tab tab : tabs) {
+								theTabs.addTab(tab, theTabs.getTabs().length-1);
+							}
+							
+							theTabs.selectTab(theTabs.getNumTabs()-1);
+							theTabs.selectTab(1);
 
 						}
 

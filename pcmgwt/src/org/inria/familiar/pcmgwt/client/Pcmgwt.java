@@ -13,6 +13,7 @@ import org.inria.familiar.pcmgwt.shared.experiment.ExperimentDataCell;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.dom.client.ChangeEvent;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.ListBox;
 import com.smartgwt.client.data.DataSource;
@@ -120,7 +121,7 @@ public class Pcmgwt implements EntryPoint {
 		dataSource.setFields(dsTextField);
 
 		final DynamicForm form1 = new DynamicForm();
-		form1.setWidth(400);
+		form1.setWidth(600);
 		form1.setDataSource(dataSource);
 
 		form.setFields(firstName, lastName);
@@ -129,10 +130,10 @@ public class Pcmgwt implements EntryPoint {
 		final PCMRepositoryAsync pcmRepo = 
 				(PCMRepositoryAsync) GWT
 				.create(PCMRepository.class);
-				// new PCMDirectoryRepo("../evaluation/input/models/") ; // TODO workaround
+				// new PCMDirectoryRepo("../evaluation/output/models/") ; // TODO workaround
 		
 		final ListBox lb = new ListBox();	 
-	    lb.setVisibleItemCount(3);	
+	    lb.setVisibleItemCount(1);	
 
 		
 		pcmRepo.getIDs(new AsyncCallback<Collection<String>>() {
@@ -143,14 +144,18 @@ public class Pcmgwt implements EntryPoint {
 				for (String pcmID : pcmIDs) {
 					lb.addItem(pcmID);			
 				}
-				
-				lb.addClickHandler(new com.google.gwt.event.dom.client.ClickHandler() {
+		
+				lb.addChangeHandler(new com.google.gwt.event.dom.client.ChangeHandler() {
 					
+					
+
 					@Override
-					public void onClick(com.google.gwt.event.dom.client.ClickEvent event) {
+					public void onChange(ChangeEvent event) {
 						int i = lb.getSelectedIndex();
 						String val = lb.getValue(i);
-						_LOGGER.info("PCM id:" + val);	
+						_LOGGER.info("PCM id:" + val);
+						
+						
 						pcmRepo.getPCM(val, new AsyncCallback<PCM>() {
 							
 								@Override
@@ -161,10 +166,27 @@ public class Pcmgwt implements EntryPoint {
 
 								@Override
 								public void onSuccess(PCM pcm) {
-									new PCMGuiBuilder(pcm).mkTabs(theTabs);
+									
+									/*
+									 * RESET previous ones
+									 * except 0 (contact) and the final (comments here)
+									 */
+									for (int j = 1; j < theTabs.getTabs().length-1; j++) {
+										theTabs.removeTab(j);
+									}
+									
+									
+									Collection<Tab> tabs = new PCMGuiBuilder(pcm).mkTabs();
+									for (Tab tab : tabs) {
+										theTabs.addTab(tab, theTabs.getTabs().length-1);
+									}
+									
+									theTabs.selectTab(theTabs.getNumTabs()-1);
+									theTabs.selectTab(1);
 														
 								}
 						});
+						
 					}
 				});
 				
@@ -202,9 +224,9 @@ public class Pcmgwt implements EntryPoint {
 		});
 		
 		validateButton
-				.addClickHandler(new ValidateHandler(form,form1, theTabs, greetingService,validateButton, deoButton,false));
+				.addClickHandler(new ValidateHandler(form,form1, theTabs, greetingService, validateButton, deoButton, false));
 		
-		deoButton.addClickHandler(new ValidateHandler(form,form1, theTabs, greetingService, deoButton,validateButton,true));
+		deoButton.addClickHandler(new ValidateHandler(form,form1, theTabs, greetingService, deoButton, validateButton, true));
 
 		
 		VLayout vLayout = new VLayout();

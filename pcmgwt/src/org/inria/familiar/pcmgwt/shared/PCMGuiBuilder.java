@@ -1,5 +1,8 @@
 package org.inria.familiar.pcmgwt.shared;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import org.inria.familiar.pcmgwt.client.ExperimentDataCellSingleton;
 import org.inria.familiar.pcmgwt.client.MatrixCell;
 import org.inria.familiar.pcmgwt.client.MatrixCellData;
@@ -34,7 +37,9 @@ public class PCMGuiBuilder {
 	}
 
 
-	public void mkTabs(TabSet theTabs) {
+	public Collection<Tab> mkTabs() {
+		
+		Collection<Tab> tabs = new ArrayList<Tab>();
 		
 		final VLayout vLayoutmask = new VLayout();
 		vLayoutmask.setAutoHeight();
@@ -64,11 +69,10 @@ public class PCMGuiBuilder {
 		for(Matrix res : _pcm.getMatrix()){
 
 			Tab item1 = new Tab("Experiment" + res.getId());
-			theTabs.addTab(item1, theTabs.getTabs().length-1);
-
-			theTabs.selectTab(item1);
-
-
+			tabs.add(item1);
+		
+			
+		
 
 
 		final CubeGrid cubeGrid = new CubeGrid()
@@ -270,12 +274,8 @@ public class PCMGuiBuilder {
 		vLayoutmask.hide();
 		c.hide();
 		c.destroy();
-
-
-		theTabs.selectTab(theTabs.getNumTabs()-1);
-		theTabs.selectTab(1);
-
-		
+	
+		return tabs ; 
 		
 		
 	}
