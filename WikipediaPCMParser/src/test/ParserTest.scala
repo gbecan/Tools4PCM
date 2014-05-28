@@ -26,6 +26,7 @@ import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl
 import java.io.StringWriter
 import java.io.PrintWriter
 import parser.WikipediaPCMParser
+import java.io.File
 
 class ParserTest extends FlatSpec with Matchers {
   
@@ -233,6 +234,16 @@ class ParserTest extends FlatSpec with Matchers {
          println(result)
        }
    } 
+   
+   it should "generate a model from MediaWiki code" in {
+	   
+     val sourceCode = Source.fromFile(new File("../evaluation/code_pcm_media_players.txt")).getLines.mkString("\n")
+     
+     val parser = new WikipediaPCMParser
+     val pcm = parser.preprocessAndParse(sourceCode)
+     writeToPCMModel("Comparison_of_portable_media_players", pcm)
+	   
+   }
    
    "Scalaj-http" should "download the code of a wikipedia page" in {
 	   val xmlPage = Http("http://en.wikipedia.org/w/index.php?title=Comparison_of_AMD_processors&action=edit")

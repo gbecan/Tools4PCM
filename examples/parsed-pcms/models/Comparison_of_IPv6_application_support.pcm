@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm" name="Comparison_of_IPv6_application_support">
+  <matrices name="Applications">
+    <cells xsi:type="pcmmm:Header" name="0,0: application" verbatim="Application" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: category" verbatim="Category" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: ipv6 supported?" verbatim="IPv6 supported?" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: zone id supported?" verbatim="Zone ID supported?" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: earliest version # with ipv6 support" verbatim="Earliest version # with IPv6 support" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: notes" verbatim="Notes" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: reference links" verbatim="Reference links" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: absolutetelnet" verbatim="AbsoluteTelnet" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: ssh client, telnet client, sftp client" verbatim="SSH client, Telnet client, SFTP Client" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: yes" verbatim="Yes" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: no" verbatim="No" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: 5.01" verbatim="5.01" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: supports ssh, telnet, and sftp" verbatim="Supports SSH, Telnet, and SFTP" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: " verbatim="" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: active directory" verbatim="Active Directory" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: ldap server" verbatim="LDAP server" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: yes" verbatim="Yes" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: " verbatim="" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: 2008" verbatim="2008" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: " verbatim="" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: " verbatim="" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: apache httpd" verbatim="Apache httpd" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: web server" verbatim="Web server" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: yes" verbatim="Yes" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: n/a" verbatim="N/A" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: 2.0.14" verbatim="2.0.14" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: &quot;virtual hosts on ipv6 addresses are broken in ver" verbatim="&quot;Virtual hosts on IPv6 addresses are broken in versions until 2.0.28&quot;" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: " verbatim="" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: apple mail" verbatim="Apple Mail" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: e-mail client" verbatim="e-mail client" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: yes" verbatim="Yes" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: " verbatim="" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: " verbatim="" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: " verbatim="" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: " verbatim="" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: bind" verbatim="BIND" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: dns server" verbatim="DNS server" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: yes" verbatim="Yes" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: n/a" verbatim="N/A" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: " verbatim="" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: " verbatim="" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: " verbatim="" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: bsd telnet" verbatim="BSD Telnet" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: console application" verbatim="Console application" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: yes" verbatim="Yes" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: yes" verbatim="Yes" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: 1.2?" verbatim="1.2?" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: telnet and telnetd from openbsd." verbatim="Telnet and telnetd from OpenBSD." row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: " verbatim="" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: cerberus ftp server" verbatim="Cerberus FTP Server" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: ftp server" verbatim="FTP Server" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: yes" verbatim="Yes" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: n/a" verbatim="N/A" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: 3.0" verbatim="3.0" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: supports rfc 2428 ftp extensions for ipv6" verbatim="Supports RFC 2428 FTP Extensions for IPv6" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: " verbatim="" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,0: cups" verbatim="CUPS" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: digital printing" verbatim="Digital printing" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: yes" verbatim="Yes" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: " verbatim="" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: 1.2" verbatim="1.2" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: " verbatim="" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: " verbatim="" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,0: curl" verbatim="cURL" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: file transfer software" verbatim="File transfer software" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: yes" verbatim="Yes" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: " verbatim="" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: " verbatim="" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: " verbatim="" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,0: ejabberd" verbatim="ejabberd" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: xmpp server" verbatim="XMPP server" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: yes" verbatim="Yes" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: n/a" verbatim="N/A" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: 0.7 or older" verbatim="0.7 or older" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: jabber server" verbatim="Jabber server" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: " verbatim="" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,0: ffproxy" verbatim="ffproxy" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: proxy server" verbatim="Proxy server" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: yes" verbatim="Yes" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: " verbatim="" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: 1.5" verbatim="1.5" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: non-caching proxy." verbatim="Non-caching proxy." row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: " verbatim="" row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,0: filezilla" verbatim="FileZilla" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: ftp, ftps and sftp client" verbatim="FTP, FTPS and SFTP client" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: yes" verbatim="Yes" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: " verbatim="" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: 3.1.0-beta1" verbatim="3.1.0-beta1" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: " verbatim="" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,6: " verbatim="" row="12" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,0: ftp.exe" verbatim="ftp.exe" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: console application" verbatim="Console application" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: yes" verbatim="Yes" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: yes" verbatim="Yes" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: 5.1 (xp)" verbatim="5.1 (XP)" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: standard windows ftp client." verbatim="Standard Windows FTP client." row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: " verbatim="" row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,0: google chrome" verbatim="Google Chrome" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: web browser" verbatim="Web browser" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: yes" verbatim="Yes" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: " verbatim="" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: initial" verbatim="Initial" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: " verbatim="" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: " verbatim="" row="14" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,0: hiawatha" verbatim="Hiawatha" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: web server" verbatim="Web server" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: yes" verbatim="Yes" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: n/a" verbatim="N/A" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: 6.0" verbatim="6.0" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: " verbatim="" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,6: " verbatim="" row="15" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,0: iis" verbatim="IIS" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: web server" verbatim="Web server" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: yes" verbatim="Yes" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: n/a" verbatim="N/A" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: 6.0" verbatim="6.0" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: versions before 7.0 do not support bandwidth throt" verbatim="Versions before 7.0 do not support bandwidth throttling, client IP address restrictions, FTP, or NNTP." row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,6: " verbatim="" row="16" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,0: internet explorer" verbatim="Internet Explorer" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: web browser" verbatim="Web browser" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: yes" verbatim="Yes" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: no" verbatim="No" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: 4.01" verbatim="4.01" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,5: versions before 7.0 may not be able to handle nume" verbatim="Versions before 7.0 may not be able to handle numerical addresses. Macintosh versions do not support IPv6." row="17" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,6: " verbatim="" row="17" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,0: irssi" verbatim="Irssi" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: irc client" verbatim="IRC client" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: yes" verbatim="Yes" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: " verbatim="" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: 0.7.15" verbatim="0.7.15" row="18" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,5: " verbatim="" row="18" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,6: " verbatim="" row="18" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,0: jabberd2" verbatim="jabberd2" row="19" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: xmpp server" verbatim="XMPP server" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: yes" verbatim="Yes" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: n/a" verbatim="N/A" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: 2.0" verbatim="2.0" row="19" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,5: jabber server" verbatim="Jabber server" row="19" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,6: " verbatim="" row="19" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,0: java" verbatim="Java" row="20" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,1: programming language" verbatim="Programming language" row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,2: yes" verbatim="Yes" row="20" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,3: yes" verbatim="Yes" row="20" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,4: 1.4.2" verbatim="1.4.2" row="20" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,5: support on windows xp/2003 was added in java 1.5.0" verbatim="Support on Windows XP/2003 was added in Java 1.5.0" row="20" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,6: " verbatim="" row="20" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,0: konqueror" verbatim="Konqueror" row="21" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,1: web browser" verbatim="Web browser" row="21" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,2: yes" verbatim="Yes" row="21" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,3: yes" verbatim="Yes" row="21" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,4: 2.2" verbatim="2.2" row="21" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,5: " verbatim="" row="21" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,6: " verbatim="" row="21" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,0: lighttpd" verbatim="lighttpd" row="22" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,1: web server" verbatim="Web server" row="22" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,2: yes" verbatim="Yes" row="22" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,3: n/a" verbatim="N/A" row="22" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,4: " verbatim="" row="22" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,5: " verbatim="" row="22" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,6: " verbatim="" row="22" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,0: linux cifs vfs" verbatim="Linux CIFS VFS" row="23" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,1: smb/cifs client" verbatim="SMB/CIFS client" row="23" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,2: yes" verbatim="Yes" row="23" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,3: " verbatim="" row="23" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,4: 1.49" verbatim="1.49" row="23" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,5: cifs vfs version 1.48 is part of kernel 2.6.21" verbatim="cifs vfs version 1.48 is part of kernel 2.6.21" row="23" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,6: " verbatim="" row="23" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,0: linux netkit ftp" verbatim="Linux NetKit ftp" row="24" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,1: console application" verbatim="Console application" row="24" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,2: yes" verbatim="Yes" row="24" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,3: yes" verbatim="Yes" row="24" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,4: 0.17?" verbatim="0.17?" row="24" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,5: standard linux ftp client." verbatim="Standard Linux FTP client." row="24" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,6: " verbatim="" row="24" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,0: linux netkit telnet" verbatim="Linux NetKit Telnet" row="25" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,1: console application" verbatim="Console application" row="25" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,2: yes" verbatim="Yes" row="25" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,3: yes" verbatim="Yes" row="25" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,4: 0.17?" verbatim="0.17?" row="25" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,5: standard linux telnet client and server." verbatim="Standard Linux telnet client and server." row="25" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,6: " verbatim="" row="25" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,0: maradns" verbatim="MaraDNS" row="26" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,1: dns server" verbatim="DNS server" row="26" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,2: partial" verbatim="Partial" row="26" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,3: n/a" verbatim="N/A" row="26" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,4: " verbatim="" row="26" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,5: " verbatim="" row="26" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,6: " verbatim="" row="26" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,0: microsoft dns" verbatim="Microsoft DNS" row="27" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,1: dns server" verbatim="DNS server" row="27" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,2: yes" verbatim="Yes" row="27" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,3: n/a" verbatim="N/A" row="27" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,4: 5.0 (2000)" verbatim="5.0 (2000)" row="27" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,5: windows 2000 dns can handle aaaa records, but the " verbatim="Windows 2000 DNS can handle AAAA records, but the operating system does not ship with IPv6." row="27" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,6: " verbatim="" row="27" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,0: microsoft outlook" verbatim="Microsoft Outlook" row="28" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,1: e-mail client" verbatim="e-mail client" row="28" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,2: yes" verbatim="Yes" row="28" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,3: " verbatim="" row="28" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,4: 2007" verbatim="2007" row="28" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,5: " verbatim="" row="28" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,6: " verbatim="" row="28" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,0: microsoft sql server" verbatim="Microsoft SQL Server" row="29" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,1: database" verbatim="Database" row="29" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,2: yes" verbatim="Yes" row="29" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,3: " verbatim="" row="29" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,4: 2005 (9.0)" verbatim="2005 (9.0)" row="29" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,5: " verbatim="" row="29" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,6: ," verbatim="," row="29" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,0: mirc" verbatim="mIRC" row="30" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,1: irc client" verbatim="IRC client" row="30" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,2: yes" verbatim="Yes" row="30" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,3: " verbatim="" row="30" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,4: 7.1" verbatim="7.1" row="30" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,5: " verbatim="" row="30" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,6: " verbatim="" row="30" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,0: mozilla / seamonkey" verbatim="Mozilla / SeaMonkey" row="31" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,1: web browser" verbatim="Web browser" row="31" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,2: yes" verbatim="Yes" row="31" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,3: " verbatim="" row="31" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,4: " verbatim="" row="31" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,5: ipv6 is not preferred by default on mac os x." verbatim="IPv6 is not preferred by default on Mac OS X." row="31" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,6: " verbatim="" row="31" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,0: mozilla firefox" verbatim="Mozilla Firefox" row="32" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,1: web browser" verbatim="Web browser" row="32" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,2: yes" verbatim="Yes" row="32" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,3: yes" verbatim="Yes" row="32" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,4: 1.5" verbatim="1.5" row="32" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,5: ipv6 is not preferred by default on mac os x in fi" verbatim="IPv6 is not preferred by default on Mac OS X in Firefox 1.5 or 2.0, only in 3.0. Firefox is not able to connect to a SOCKS-Proxy with IPv6 and does not support PAC-Scripts what return IPv6." row="32" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,6: " verbatim="" row="32" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,0: mozilla thunderbird" verbatim="Mozilla Thunderbird" row="33" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,1: e-mail client" verbatim="e-mail client" row="33" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,2: yes" verbatim="Yes" row="33" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,3: " verbatim="" row="33" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,4: " verbatim="" row="33" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,5: version 2.0 &amp; later appears to work with mac os x " verbatim="Version 2.0 &amp; later appears to work with Mac OS X Version 10.4.9." row="33" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,6: " verbatim="" row="33" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,0: mplayer" verbatim="MPlayer" row="34" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,1: multimedia player" verbatim="Multimedia player" row="34" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,2: yes" verbatim="Yes" row="34" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,3: n/a" verbatim="N/A" row="34" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,4: " verbatim="" row="34" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,5: for example in http streaming." verbatim="For example in HTTP streaming." row="34" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,6: " verbatim="" row="34" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,0: mysql" verbatim="MySQL" row="35" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,1: database" verbatim="Database" row="35" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,2: yes" verbatim="Yes" row="35" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,3: " verbatim="" row="35" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,4: 5.5.3" verbatim="5.5.3" row="35" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,5: disabled by default before 5.6.6." verbatim="Disabled by default before 5.6.6." row="35" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,6: " verbatim="" row="35" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,0: nginx" verbatim="nginx" row="36" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,1: web server" verbatim="Web server" row="36" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,2: yes" verbatim="Yes" row="36" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,3: " verbatim="" row="36" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,4: 0.7.36" verbatim="0.7.36" row="36" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,5: full support implemented in 0.8.22" verbatim="Full support implemented in 0.8.22" row="36" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,6: " verbatim="" row="36" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,0: nmap" verbatim="Nmap" row="37" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,1: console application" verbatim="Console application" row="37" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,2: yes" verbatim="Yes" row="37" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,3: yes" verbatim="Yes" row="37" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,4: 3.10alpha1" verbatim="3.10ALPHA1" row="37" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,5: zone id support since version 4.65" verbatim="Zone ID support since version 4.65" row="37" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,6: " verbatim="" row="37" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,0: nortel networks vpn client" verbatim="Nortel Networks VPN client" row="38" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,1: vpn client" verbatim="VPN client" row="38" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,2: ?" verbatim="?" row="38" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,3: " verbatim="" row="38" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,4: " verbatim="" row="38" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,5: " verbatim="" row="38" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,6: " verbatim="" row="38" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,0: novell edirectory" verbatim="Novell eDirectory" row="39" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,1: ldap server" verbatim="LDAP server" row="39" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,2: no" verbatim="No" row="39" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,3: no" verbatim="No" row="39" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,4: " verbatim="" row="39" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,5: " verbatim="" row="39" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,6: " verbatim="" row="39" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,0: openarena" verbatim="OpenArena" row="40" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,1: game/fps" verbatim="Game/FPS" row="40" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,2: yes" verbatim="Yes" row="40" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,3: " verbatim="" row="40" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,4: 0.8.1 or older" verbatim="0.8.1 or older" row="40" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,5: " verbatim="" row="40" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,6: " verbatim="" row="40" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,0: openldap" verbatim="OpenLDAP" row="41" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,1: ldap server" verbatim="LDAP server" row="41" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,2: yes" verbatim="Yes" row="41" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,3: " verbatim="" row="41" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,4: 2.0.0" verbatim="2.0.0" row="41" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,5: " verbatim="" row="41" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,6: " verbatim="" row="41" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,0: openssh" verbatim="OpenSSH" row="42" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,1: ssh client/server" verbatim="SSH client/server" row="42" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,2: yes" verbatim="Yes" row="42" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,3: yes" verbatim="Yes" row="42" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,4: " verbatim="" row="42" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,5: " verbatim="" row="42" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,6: " verbatim="" row="42" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,0: openttd" verbatim="OpenTTD" row="43" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,1: game/simulation" verbatim="Game/simulation" row="43" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,2: yes" verbatim="Yes" row="43" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,3: " verbatim="" row="43" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,4: 1.0.0" verbatim="1.0.0" row="43" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,5: " verbatim="" row="43" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,6: " verbatim="" row="43" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,0: openvpn" verbatim="OpenVPN" row="44" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,1: vpn client" verbatim="VPN client" row="44" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,2: yes" verbatim="Yes" row="44" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,3: " verbatim="" row="44" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,4: 2.3" verbatim="2.3" row="44" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,5: partial support starting with version 2.0." verbatim="Partial support starting with version 2.0." row="44" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,6: " verbatim="" row="44" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,0: opera" verbatim="Opera" row="45" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,1: web browser" verbatim="Web browser" row="45" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,2: yes" verbatim="Yes" row="45" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,3: no" verbatim="No" row="45" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,4: 7.20b" verbatim="7.20b" row="45" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,5: ipv6 support on macintosh was added in opera 9.0" verbatim="IPv6 support on Macintosh was added in Opera 9.0" row="45" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="45,6: " verbatim="" row="45" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,0: oracle" verbatim="Oracle" row="46" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,1: database" verbatim="Database" row="46" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,2: yes" verbatim="Yes" row="46" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,3: " verbatim="" row="46" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,4: 11gr1" verbatim="11gR1" row="46" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,5: " verbatim="" row="46" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="46,6: " verbatim="" row="46" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,0: outlook express" verbatim="Outlook Express" row="47" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,1: e-mail client" verbatim="e-mail client" row="47" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,2: no" verbatim="No" row="47" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,3: n/a" verbatim="N/A" row="47" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,4: " verbatim="" row="47" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,5: windows mail on the windows vista platform has ipv" verbatim="Windows Mail on the Windows Vista platform has IPv6 support." row="47" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="47,6: " verbatim="" row="47" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,0: pidgin" verbatim="Pidgin" row="48" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,1: instant messenger" verbatim="Instant messenger" row="48" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,2: yes" verbatim="Yes" row="48" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,3: " verbatim="" row="48" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,4: 2.0 (gaim had support in older builds)" verbatim="2.0 (GAIM had support in older builds)" row="48" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,5: ipv6 is enabled on linux builds, but not on win32 " verbatim="IPv6 is enabled on Linux builds, but not on Win32 builds." row="48" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="48,6: " verbatim="" row="48" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,0: pokerth" verbatim="PokerTH" row="49" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,1: game/card/holdem" verbatim="Game/Card/Holdem" row="49" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,2: yes" verbatim="Yes" row="49" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,3: " verbatim="" row="49" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,4: 0.6.2" verbatim="0.6.2" row="49" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,5: " verbatim="" row="49" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="49,6: " verbatim="" row="49" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,0: polipo" verbatim="Polipo" row="50" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,1: proxy server" verbatim="Proxy server" row="50" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,2: yes" verbatim="Yes" row="50" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,3: no" verbatim="No" row="50" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,4: 0.8" verbatim="0.8" row="50" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,5: can be used for proxying between ipv4 and ipv6" verbatim="Can be used for proxying between IPv4 and IPv6" row="50" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="50,6: " verbatim="" row="50" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,0: postgresql" verbatim="PostgreSQL" row="51" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,1: database" verbatim="Database" row="51" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,2: yes" verbatim="Yes" row="51" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,3: " verbatim="" row="51" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,4: 7.4 (8.1 on windows)" verbatim="7.4 (8.1 on Windows)" row="51" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,5: ipv6 broken in aix version" verbatim="IPv6 broken in AIX version" row="51" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="51,6: " verbatim="" row="51" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,0: privoxy" verbatim="Privoxy" row="52" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,1: proxy server" verbatim="Proxy server" row="52" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,2: yes" verbatim="Yes" row="52" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,3: " verbatim="" row="52" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,4: 3.0.13 beta" verbatim="3.0.13 beta" row="52" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,5: " verbatim="" row="52" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="52,6: " verbatim="" row="52" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,0: putty" verbatim="PuTTY" row="53" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,1: ssh client" verbatim="SSH client" row="53" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,2: yes" verbatim="Yes" row="53" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,3: yes" verbatim="Yes" row="53" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,4: 0.58" verbatim="0.58" row="53" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,5: fully functional (also zone id's) from 0.59" verbatim="Fully functional (also Zone ID's) from 0.59" row="53" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="53,6: " verbatim="" row="53" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,0: quagga" verbatim="Quagga" row="54" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,1: routing software" verbatim="Routing software" row="54" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,2: yes" verbatim="Yes" row="54" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,3: n/a" verbatim="N/A" row="54" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,4: " verbatim="" row="54" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,5: ospfv3 area support is incomplete." verbatim="OSPFv3 area support is incomplete." row="54" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="54,6: " verbatim="" row="54" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,0: rsync" verbatim="rsync" row="55" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,1: differential file synchronizer" verbatim="differential file synchronizer" row="55" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,2: yes" verbatim="Yes" row="55" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,3: " verbatim="" row="55" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,4: 2.5.0" verbatim="2.5.0" row="55" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,5: native ipv6 support since 2.5.0, but hosts allow/d" verbatim="native IPv6 support since 2.5.0, but hosts allow/deny in rsync.conf didn't work until 2.5.6." row="55" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="55,6: " verbatim="" row="55" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,0: rtorrent" verbatim="rTorrent" row="56" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,1: bittorrent client" verbatim="BitTorrent client" row="56" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,2: no" verbatim="No" row="56" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,3: " verbatim="" row="56" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,4: " verbatim="" row="56" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,5: " verbatim="" row="56" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="56,6: " verbatim="" row="56" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,0: rushub" verbatim="RusHub" row="57" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,1: direct connect server" verbatim="Direct Connect server" row="57" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,2: yes" verbatim="Yes" row="57" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,3: " verbatim="" row="57" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,4: 2.3.3" verbatim="2.3.3" row="57" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,5: " verbatim="" row="57" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="57,6: " verbatim="" row="57" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,0: safari" verbatim="Safari" row="58" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,1: web browser" verbatim="Web browser" row="58" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,2: yes" verbatim="Yes" row="58" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,3: no" verbatim="No" row="58" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,4: " verbatim="" row="58" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,5: " verbatim="" row="58" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="58,6: " verbatim="" row="58" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,0: samba" verbatim="Samba" row="59" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,1: smb/cifs client/server" verbatim="SMB/CIFS client/server" row="59" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,2: yes" verbatim="Yes" row="59" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,3: " verbatim="" row="59" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,4: 3.2.0" verbatim="3.2.0" row="59" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,5: " verbatim="" row="59" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="59,6: " verbatim="" row="59" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,0: simple dns plus" verbatim="Simple DNS Plus" row="60" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,1: dns server" verbatim="DNS server" row="60" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,2: yes" verbatim="Yes" row="60" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,3: n/a" verbatim="N/A" row="60" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,4: 5.0 (jan 2008)" verbatim="5.0 (Jan 2008)" row="60" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,5: " verbatim="" row="60" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="60,6: " verbatim="" row="60" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,0: skype" verbatim="Skype" row="61" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,1: voip" verbatim="VoIP" row="61" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,2: no" verbatim="No" row="61" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,3: " verbatim="" row="61" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,4: " verbatim="" row="61" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,5: " verbatim="" row="61" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="61,6: " verbatim="" row="61" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,0: smartftp" verbatim="SmartFTP" row="62" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,1: ftp and sftp client" verbatim="FTP and SFTP client" row="62" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,2: yes" verbatim="Yes" row="62" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,3: " verbatim="" row="62" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,4: " verbatim="" row="62" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,5: " verbatim="" row="62" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="62,6: " verbatim="" row="62" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,0: srelay" verbatim="srelay" row="63" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,1: socks server" verbatim="SOCKS server" row="63" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,2: yes" verbatim="Yes" row="63" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,3: n/a" verbatim="N/A" row="63" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,4: " verbatim="" row="63" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,5: " verbatim="" row="63" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="63,6: " verbatim="" row="63" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,0: squid cache" verbatim="Squid cache" row="64" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,1: proxy server" verbatim="Proxy server" row="64" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,2: yes" verbatim="Yes" row="64" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,3: " verbatim="" row="64" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,4: 3.1" verbatim="3.1" row="64" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="64,5: " verbatim="" row="64" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,0: teeworlds" verbatim="Teeworlds" row="65" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,1: game/side-scroller" verbatim="Game/Side-scroller" row="65" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,2: yes" verbatim="Yes" row="65" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,3: " verbatim="" row="65" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,4: 0.6.0" verbatim="0.6.0" row="65" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,5: " verbatim="" row="65" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="65,6: " verbatim="" row="65" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,0: telnet.exe" verbatim="telnet.exe" row="66" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,1: console application" verbatim="Console application" row="66" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,2: yes" verbatim="Yes" row="66" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,3: yes" verbatim="Yes" row="66" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,4: 5.1 (xp)" verbatim="5.1 (XP)" row="66" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,5: standard windows telnet client." verbatim="Standard Windows telnet client." row="66" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="66,6: " verbatim="" row="66" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,0: tightvnc" verbatim="TightVNC" row="67" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,1: vnc" verbatim="VNC" row="67" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,2: optional" verbatim="Optional" row="67" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,3: " verbatim="" row="67" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,4: protocol version 3.5" verbatim="Protocol version 3.5" row="67" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,5: experimental ipv6 builds were made available in 20" verbatim="Experimental IPv6 builds were made available in 2004." row="67" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="67,6: " verbatim="" row="67" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="68,0: tinc" verbatim="tinc" row="68" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="68,1: vpn client" verbatim="VPN client" row="68" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="68,2: yes" verbatim="Yes" row="68" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="68,3: " verbatim="" row="68" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="68,4: 1.0" verbatim="1.0" row="68" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="68,5: defaults to ipv6; can be set to ipv4-only." verbatim="Defaults to IPv6; can be set to IPv4-only." row="68" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="68,6: " verbatim="" row="68" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,0: tinydns" verbatim="tinydns" row="69" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,1: dns server" verbatim="DNS server" row="69" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,2: yes" verbatim="Yes" row="69" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,3: n/a" verbatim="N/A" row="69" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,4: 1.05?" verbatim="1.05?" row="69" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,5: " verbatim="" row="69" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="69,6: " verbatim="" row="69" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="70,0: trillian" verbatim="Trillian" row="70" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="70,1: instant messenger" verbatim="Instant Messenger" row="70" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="70,2: no" verbatim="No" row="70" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="70,3: no" verbatim="No" row="70" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="70,4: " verbatim="" row="70" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="70,5: " verbatim="" row="70" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="70,6: " verbatim="" row="70" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="71,0: udp speed test 3" verbatim="UDP Speed Test 3" row="71" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="71,1: network speed test tool" verbatim="Network Speed Test Tool" row="71" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="71,2: yes" verbatim="Yes" row="71" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="71,3: yes" verbatim="Yes" row="71" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="71,4: 3.05" verbatim="3.05" row="71" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="71,5: unicast, broadcast, multicast, anycast." verbatim="Unicast, Broadcast, Multicast, Anycast." row="71" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="71,6: " verbatim="" row="71" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="72,0: vlc" verbatim="VLC" row="72" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="72,1: multimedia player" verbatim="Multimedia player" row="72" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="72,2: yes" verbatim="Yes" row="72" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="72,3: " verbatim="" row="72" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="72,4: " verbatim="" row="72" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="72,5: " verbatim="" row="72" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="72,6: " verbatim="" row="72" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,0: uploadftp" verbatim="UploadFTP" row="73" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,1: ftp, ftps and sftp client" verbatim="FTP, FTPS and SFTP Client" row="73" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,2: yes" verbatim="Yes" row="73" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,3: " verbatim="" row="73" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,4: 2.0" verbatim="2.0" row="73" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,5: " verbatim="" row="73" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="73,6: " verbatim="" row="73" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="74,0: vmware vsphere client" verbatim="VMware vSphere Client" row="74" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="74,1: systems management client" verbatim="Systems management client" row="74" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="74,2: yes" verbatim="Yes" row="74" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="74,3: " verbatim="" row="74" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="74,4: 4.0.0" verbatim="4.0.0" row="74" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="74,5: performance reports do not support ipv6, but every" verbatim="Performance reports do not support IPv6, but everything else appears to.  This was tested using IPv6>IPv4 PT, where the server is on the IPv4 side." row="74" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="74,6: " verbatim="" row="74" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="75,0: warzone 2100" verbatim="Warzone 2100" row="75" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="75,1: game/rts" verbatim="Game/RTS" row="75" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="75,2: yes" verbatim="Yes" row="75" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="75,3: " verbatim="" row="75" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="75,4: 3.1.1 or older" verbatim="3.1.1 or older" row="75" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="75,5: " verbatim="" row="75" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="75,6: " verbatim="" row="75" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="76,0: webmin" verbatim="Webmin" row="76" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="76,1: web-based remote administration tool" verbatim="Web-based remote administration tool" row="76" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="76,2: yes" verbatim="Yes" row="76" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="76,3: " verbatim="" row="76" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="76,4: 1.530" verbatim="1.530" row="76" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="76,5: " verbatim="" row="76" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="76,6: " verbatim="" row="76" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,0: weechat" verbatim="WeeChat" row="77" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,1: irc client" verbatim="IRC client" row="77" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,2: yes" verbatim="Yes" row="77" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,3: " verbatim="" row="77" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,4: 0.1.3" verbatim="0.1.3" row="77" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,5: " verbatim="" row="77" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="77,6: " verbatim="" row="77" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,0: wget" verbatim="Wget" row="78" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,1: file transfer software" verbatim="File transfer software" row="78" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,2: yes" verbatim="Yes" row="78" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,3: " verbatim="" row="78" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,4: 1.9?" verbatim="1.9?" row="78" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,5: may default to ipv4 transfers: &quot;-6&quot; option used to" verbatim="May default to IPv4 transfers: &quot;-6&quot; option used to override." row="78" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="78,6: " verbatim="" row="78" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,0: winamp" verbatim="Winamp" row="79" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,1: multimedia player" verbatim="Multimedia player" row="79" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,2: yes" verbatim="Yes" row="79" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,3: " verbatim="" row="79" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,4: 5.34" verbatim="5.34" row="79" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,5: " verbatim="" row="79" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="79,6: " verbatim="" row="79" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,0: windows live mail" verbatim="Windows Live Mail" row="80" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,1: e-mail client" verbatim="e-mail client" row="80" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,2: yes" verbatim="Yes" row="80" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,3: " verbatim="" row="80" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,4: initial" verbatim="Initial" row="80" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,5: " verbatim="" row="80" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="80,6: " verbatim="" row="80" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,0: windows mail" verbatim="Windows Mail" row="81" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,1: e-mail client" verbatim="e-mail client" row="81" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,2: yes" verbatim="Yes" row="81" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,3: " verbatim="" row="81" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,4: initial" verbatim="Initial" row="81" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,5: " verbatim="" row="81" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="81,6: " verbatim="" row="81" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="82,0: windows media player" verbatim="Windows Media Player" row="82" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="82,1: multimedia player" verbatim="Multimedia player" row="82" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="82,2: yes" verbatim="Yes" row="82" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="82,3: " verbatim="" row="82" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="82,4: 9.0?" verbatim="9.0?" row="82" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="82,5: " verbatim="" row="82" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="82,6: " verbatim="" row="82" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,0: windows file and print sharing" verbatim="Windows File and print sharing" row="83" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,1: smb/cifs client/server" verbatim="SMB/CIFS client/server" row="83" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,2: yes" verbatim="Yes" row="83" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,3: " verbatim="" row="83" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,4: 5.2 (server 2003)" verbatim="5.2 (Server 2003)" row="83" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,5: windows xp 32-bit does not support ipv6 at the smb" verbatim="Windows XP 32-bit does not support IPv6 at the SMB/CIFS layer. The protocol is available for other applications (&quot;ipv6 install&quot; pre-SP1; protocol install afterwards)." row="83" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="83,6: " verbatim="" row="83" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,0: world of warcraft" verbatim="World of Warcraft" row="84" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,1: game/mmorpg" verbatim="Game/MMORPG" row="84" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,2: yes" verbatim="Yes" row="84" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,3: " verbatim="" row="84" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,4: patch 4.1.0" verbatim="patch 4.1.0" row="84" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,5: " verbatim="" row="84" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="84,6: " verbatim="" row="84" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,0: wwwoffle" verbatim="WWWOFFLE" row="85" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,1: proxy server" verbatim="Proxy server" row="85" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,2: yes" verbatim="Yes" row="85" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,3: no" verbatim="No" row="85" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,4: 2.6d" verbatim="2.6d" row="85" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,5: " verbatim="" row="85" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="85,6: " verbatim="" row="85" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,0: xchat" verbatim="XChat" row="86" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,1: irc client" verbatim="IRC client" row="86" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,2: yes" verbatim="Yes" row="86" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,3: " verbatim="" row="86" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,4: 1.7.0" verbatim="1.7.0" row="86" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,5: " verbatim="" row="86" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="86,6: " verbatim="" row="86" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="87,0: xinetd" verbatim="xinetd" row="87" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="87,1: networking daemon" verbatim="Networking daemon" row="87" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="87,2: yes" verbatim="Yes" row="87" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="87,3: " verbatim="" row="87" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="87,4: 1.89" verbatim="1.89" row="87" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="87,5: version 2.3.3 or newer recommended to avoid securi" verbatim="Version 2.3.3 or newer recommended to avoid security issues." row="87" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="87,6: " verbatim="" row="87" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,0: &#xb5;torrent" verbatim="&#xb5;Torrent" row="88" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,1: bittorrent client" verbatim="BitTorrent client" row="88" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,2: yes" verbatim="Yes" row="88" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,3: " verbatim="" row="88" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,4: 1.8" verbatim="1.8" row="88" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,5: " verbatim="" row="88" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="88,6: " verbatim="" row="88" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="89,0: transmission" verbatim="Transmission" row="89" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="89,1: bittorrent client" verbatim="BitTorrent client" row="89" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="89,2: yes" verbatim="Yes" row="89" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="89,3: " verbatim="" row="89" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="89,4: 1.5" verbatim="1.5" row="89" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="89,5: no official windows version." verbatim="No official Windows version." row="89" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="89,6: " verbatim="" row="89" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,0: cisco anyconnect" verbatim="Cisco AnyConnect" row="90" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,1: vpn client" verbatim="VPN Client" row="90" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,2: yes" verbatim="Yes" row="90" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,3: yes" verbatim="Yes" row="90" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,4: 2.0" verbatim="2.0" row="90" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,5: no split tunneling allowed in ipv6. asa 8.4 softwa" verbatim="No split tunneling allowed in IPv6.  ASA 8.4 software required for full IPv6 mode." row="90" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="90,6: " verbatim="" row="90" rowspan="1" column="6" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm" name="Comparison_of_EDA_software">
+  <matrices name="Free and Open Source Software (FOSS)">
+    <cells xsi:type="pcmmm:Header" name="0,0: name" verbatim="Name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: architecture" verbatim="Architecture" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: license" verbatim="License" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: autorouter" verbatim="Autorouter" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: comment" verbatim="Comment" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: chipvault" verbatim="ChipVault" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: " verbatim="" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: gpl" verbatim="GPL" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: " verbatim="" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: terminal based vi wrapper for hdl" verbatim="Terminal based vi wrapper for HDL" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: electric" verbatim="Electric" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: *bsd, java" verbatim="*BSD, Java" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: gpl" verbatim="GPL" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: vlsi circuit design tool with connectivity at all " verbatim="VLSI circuit design tool with connectivity at all levels. Can also be used for schematic entry and PCB design." row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: freepcb" verbatim="FreePCB" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: w32" verbatim="w32" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: gpl" verbatim="GPL" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: yes" verbatim="Yes" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: a printed circuit board design program for microso" verbatim="A printed circuit board design program for Microsoft Windows. FreePCB allows for up to 16 copper layers, both metric and English units, and export of designs in Gerber format. Boards can be partially or fully autorouted with the FreeRouting autorouter by using the FpcROUTE Specctra DSN file translator." row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: fritzing" verbatim="Fritzing" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: w32, mac, linux" verbatim="w32, Mac, Linux" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: gplv3" verbatim="GPLv3" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: yes" verbatim="Yes" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: integrated tool for breadboard, schematic, and pcb" verbatim="Integrated tool for breadboard, schematic, and PCB design. Targeted at non-engineers (designers, artists, researchers, hobbyists) and users of microcontroller platforms such as Arduino." row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: geda" verbatim="gEDA" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: *bsd, mac, linux" verbatim="*BSD, Mac, Linux" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: gpl" verbatim="GPL" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: yes" verbatim="Yes" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: suite of applications for schematic capture, pcb l" verbatim="Suite of applications for schematic capture, PCB layout editing (with autorouting capability), Gerber viewing, analog circuit simulation, Verilog design, and GTK-based waveform viewing. Microsoft Windows-compatible binaries are no longer available but Dan McMahill maintains a build script for that OS." row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: icarus verilog" verbatim="Icarus Verilog" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: *bsd, linux, mac" verbatim="*BSD, Linux, Mac" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: gpl" verbatim="GPL" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: " verbatim="" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: verilog simulator" verbatim="Verilog simulator" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: kicad" verbatim="KiCad" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: *bsd, linux, w32, mac" verbatim="*BSD, Linux, w32, Mac" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: gplv2" verbatim="GPLv2" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: yes" verbatim="Yes" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: unlike other free software alternatives, kicad pro" verbatim="Unlike other free software alternatives, KiCad provides for all design stages through the same interface: Schematic capture, PCB layout, Gerber generation/visualization, and library editing are all standard features. It also has a &quot;3D view&quot; feature for PCBs.It is available for all three major operating systems, and features a large selection of component libraries. Migration tools (for transferring files from other EDA packages) are also provided. The file format is plain text, and is well documented, which is a useful feature for content management systems." row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,0: ktechlab" verbatim="KTechLab" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: linux" verbatim="Linux" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: gpl" verbatim="GPL" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: n/a" verbatim="n/a" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: ktechlab is a schematic capture and simulator. it " verbatim="KTechLab is a schematic capture and simulator. It is specifically geared toward mixed signal simulation of analog components and small digital processors." row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,0: magic" verbatim="Magic" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: linux" verbatim="Linux" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: bsd license" verbatim="BSD license" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: no" verbatim="no" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: a popular very-large-scale integration layout tool" verbatim="a popular very-large-scale integration layout tool" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,0: oregano" verbatim="Oregano" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: " verbatim="" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: gpl" verbatim="GPL" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: no" verbatim="no" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: schematic capture + spice simulation" verbatim="schematic capture + spice simulation" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,0: quite universal circuit simulator" verbatim="Quite Universal Circuit Simulator" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: linux, solaris, mac, netbsd, freebsd, w32" verbatim="Linux, Solaris, Mac, NetBSD, FreeBSD, w32" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: gpl" verbatim="GPL" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: " verbatim="" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: schematic capture + verilog + vhdl + simulation" verbatim="Schematic capture + Verilog + VHDL + simulation" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,0: verilator" verbatim="Verilator" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: posix" verbatim="Posix" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: gpl" verbatim="GPL" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: " verbatim="" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: verilator is the fastest free verilog hdl simulato" verbatim="Verilator is the fastest free Verilog HDL simulator. It compiles synthesizable Verilog into cycle accurate C++ or SystemC code following 2-state synthesis (zero delay) semantics. Benchmarks reported on its website suggest it is several times faster than commercial event driven simulators such as ModelSim, NC-Verilog and VCS, while not quite as fast as commercial cycle accurate modeling tools such as Carbon ModelStudio and ARC VTOC." row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,0: xcircuit" verbatim="XCircuit" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: unix" verbatim="Unix" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: gpl" verbatim="GPL" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: " verbatim="" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: used to produce netlists and publish high-quality " verbatim="Used to produce netlists and publish high-quality drawings." row="13" rowspan="1" column="4" colspan="1"/>
+  </matrices>
+  <matrices name="Comparison of EDA packages">
+    <cells xsi:type="pcmmm:Header" name="0,0: application and developer" verbatim="Application and developer" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: latest version/release + date" verbatim="Latest version/release + date" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: schematic?" verbatim="Schematic?" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: simulation?" verbatim="Simulation?" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: pcb editing?" verbatim="PCB editing?" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: runs on posix style systems?" verbatim="Runs on POSIX style systems?" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: runs on windows?" verbatim="Runs on Windows?" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: other platforms?" verbatim="Other platforms?" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: open source?" verbatim="Open &#xA; source?" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: user interface language(s)" verbatim="User Interface Language(s)" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,10: stable?" verbatim="Stable?" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,11: imports" verbatim="Imports" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,12: exports" verbatim="Exports" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,13: scripting support" verbatim="Scripting support" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: advanced design system by agilent eesof eda" verbatim="Advanced Design System by Agilent EEsof EDA" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: 2011.05 2011-05" verbatim="2011.05&#xA;2011-05" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: yes" verbatim="Yes" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: yes" verbatim="Yes" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: no" verbatim="No" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: yes" verbatim="Yes" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: linux, solaris" verbatim="Linux, Solaris" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,8: no" verbatim="No" row="1" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,9: en" verbatim="en" row="1" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,10: yes" verbatim="Yes" row="1" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,11: hspice, spice, spectre netlists; gerber/drill, odb" verbatim="HSPICE, SPICE, Spectre netlists; Gerber/drill, ODB++, artwork; more" row="1" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,12: hspice, spice, spectre netlists; gerber/drill, odb" verbatim="HSPICE, SPICE, Spectre netlists; Gerber/drill, ODB++, artwork; more" row="1" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: active-hdl by aldec" verbatim="Active-HDL by Aldec" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: 2011-10 9.1" verbatim="2011-10&#xA;9.1" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: yes" verbatim="Yes" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: no" verbatim="No" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: no" verbatim="No" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: yes" verbatim="Yes" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: no" verbatim="No" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: no" verbatim="No" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,9: en" verbatim="en" row="2" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,10: yes" verbatim="Yes" row="2" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,11: edif, viewlogic, more" verbatim="EDIF, Viewlogic, more" row="2" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,12: pdf, html, verilog, vhdl, edif, zuken, more" verbatim="PDF, HTML, Verilog, VHDL, EDIF, Zuken, more" row="2" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: altium designer (former protel) and pcad by altium" verbatim="Altium Designer (former Protel) and PCAD by Altium" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: 2013-02-13 release 2013" verbatim="2013-02-13&#xA;Release 2013" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: yes" verbatim="Yes" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: yes" verbatim="Yes" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: yes" verbatim="Yes" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: no" verbatim="No" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: yes" verbatim="Yes" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: no" verbatim="No" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: no" verbatim="No" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,9: en" verbatim="en" row="3" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,10: yes" verbatim="Yes" row="3" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,11: orcad, allegro, pads, p-cad, gerber, step, more" verbatim="OrCAD, Allegro, PADs, P-CAD, Gerber, STEP, more" row="3" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,12: pdf, gerber/drill, odb++, dxf, step, orcad, more" verbatim="PDF, Gerber/drill, ODB++, DXF, STEP, OrCAD, more" row="3" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: autotrax dex by dex 2020" verbatim="AutoTRAX DEX by DEX 2020" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: 2012-10-05 1.11.37" verbatim="2012-10-05&#xA;1.11.37" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: yes" verbatim="Yes" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: yes" verbatim="Yes" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: yes" verbatim="Yes" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: no" verbatim="No" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: yes" verbatim="Yes" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: no" verbatim="No" row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,8: no" verbatim="No" row="4" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,9: various" verbatim="Various" row="4" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,10: yes" verbatim="Yes" row="4" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,11: eagle, p-cad, pads, orcad, gerber, dxf" verbatim="EAGLE, P-CAD, PADS, OrCAD, Gerber, DXF" row="4" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,12: gerber/drill, dxf, p-cad, pads, orcad" verbatim="Gerber/drill, DXF, P-CAD, PADS, OrCAD" row="4" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: cadstar, board designer, and visula by zuken" verbatim="CADSTAR, Board Designer, and Visula by Zuken" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: 2011-11-08 13" verbatim="2011-11-08&#xA;13" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: yes" verbatim="Yes" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: yes, spice" verbatim="Yes, Spice" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: yes" verbatim="Yes" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: no" verbatim="No" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: yes" verbatim="Yes" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: no" verbatim="No" row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,8: no" verbatim="No" row="5" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,9: en" verbatim="en" row="5" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,10: yes" verbatim="Yes" row="5" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,11: pads, orcad, p-cad, protel, dxf, idf" verbatim="PADS, OrCAD, P-CAD, Protel, DXF, IDF" row="5" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,12: pdf, gerber/drill, odb++, dxf, idf more" verbatim="PDF, Gerber/drill, ODB++, DXF, IDF more" row="5" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: circuitlogix by logic design inc." verbatim="CircuitLogix by Logic Design Inc." row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: 2013-01 release 9.1" verbatim="2013-01&#xA;Release 9.1" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: yes" verbatim="Yes" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: yes" verbatim="Yes" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: yes" verbatim="Yes" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: no" verbatim="No" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: yes" verbatim="Yes" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: no" verbatim="No" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,8: no" verbatim="No" row="6" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,9: en" verbatim="en" row="6" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,10: yes" verbatim="Yes" row="6" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,11: spice, gerber, dxf" verbatim="SPICE, Gerber, DXF" row="6" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,12: spice, pdf, gerber, dxf," verbatim="SPICE, PDF, Gerber, DXF," row="6" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: cr-5000 by zuken" verbatim="CR-5000 by Zuken" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: 2011-05-17 13" verbatim="2011-05-17&#xA;13" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: yes" verbatim="Yes" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: yes, si &amp; pi" verbatim="Yes, SI &amp; PI" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: yes" verbatim="Yes" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: yes" verbatim="Yes" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: yes" verbatim="Yes" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: unix, linux" verbatim="UNIX, Linux" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,8: no" verbatim="No" row="7" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,9: en, jp" verbatim="en, jp" row="7" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,10: yes" verbatim="Yes" row="7" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,11: edif, dxf, iges, idf, bsdl, step, acis, gerber/dri" verbatim="EDIF, DXF, IGES, IDF, BSDL, STEP, ACIS, Gerber/drill, more" row="7" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,12: pdf, gerber/drill, odb++ (must request), dxf, step" verbatim="PDF, Gerber/drill, ODB++ (must request), DXF, STEP, IPC D-356, IPC-2581, EPS, ACIS" row="7" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: diptrace by novarm" verbatim="DipTrace by Novarm" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: 2012-10-19 2.3" verbatim="2012-10-19&#xA;2.3" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: yes" verbatim="Yes" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: no" verbatim="No" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: yes" verbatim="Yes" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: yes" verbatim="Yes" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: yes" verbatim="Yes" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: mac, wine" verbatim="Mac, Wine" row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,8: no" verbatim="No" row="8" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,9: 18 languages" verbatim="18 languages" row="8" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,10: yes" verbatim="Yes" row="8" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,11: eagle, p-cad, pads, orcad, gerber, dxf" verbatim="EAGLE, P-CAD, PADS, OrCAD, Gerber, DXF" row="8" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,12: gerber/drill, dxf, p-cad, pads, orcad" verbatim="Gerber/drill, DXF, P-CAD, PADS, OrCAD" row="8" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: designspark pcb from rs components" verbatim="DesignSpark PCB from RS Components" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: 2013-11-06 5.1" verbatim="2013-11-06&#xA;5.1" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: yes" verbatim="Yes" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: yes, spice" verbatim="Yes, Spice" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: yes" verbatim="Yes" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: no" verbatim="No" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: yes" verbatim="Yes" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: no" verbatim="No" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,8: no" verbatim="No" row="9" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,9: various" verbatim="Various" row="9" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,10: yes" verbatim="Yes" row="9" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,11: eagle, dxf, edif" verbatim="EAGLE, DXF, EDIF" row="9" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,12: gerber/drill, idf, pdf, more" verbatim="Gerber/drill, IDF, PDF, more" row="9" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: eagle by cadsoft computer" verbatim="EAGLE by CadSoft Computer" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: 2013-08-07 6.5.0" verbatim="2013-08-07&#xA;6.5.0" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: yes" verbatim="Yes" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: ltspice" verbatim="LTspice" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: yes" verbatim="Yes" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: yes" verbatim="Yes" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: yes" verbatim="Yes" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: linux, mac" verbatim="Linux, Mac" row="10" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,8: no" verbatim="No" row="10" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,9: de, en, zh, hu" verbatim="de, en, zh, hu" row="10" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,10: yes" verbatim="Yes" row="10" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,11: eagle (xml), accel (p-cad, altium, protel), ultibo" verbatim="EAGLE (XML), ACCEL (P-CAD, Altium, Protel), ULTIBOARD, Netlists, BMP, Custom" row="10" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,12: eagle (xml), protel, netlists, images, pdf, gerber" verbatim="EAGLE (XML), Protel, Netlists, Images, PDF, Gerber, Excellon, Sieb&amp;Meyer, HPGL, PostScript/EPS, PDF, Images, HyperLynx, Custom" row="10" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: easy-pc, by number one systems" verbatim="Easy-PC, by Number One Systems" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: 2013-07-20 version 17" verbatim="2013-07-20&#xA; Version 17" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: yes" verbatim="Yes" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: yes" verbatim="Yes" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: yes" verbatim="Yes" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: no" verbatim="No" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: yes" verbatim="Yes" row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,7: no" verbatim="No" row="11" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,8: no" verbatim="No" row="11" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,9: en" verbatim="en" row="11" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,10: yes" verbatim="Yes" row="11" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,11: board maker, eagle, ultiboard" verbatim="Board Maker, Eagle, Ultiboard" row="11" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,12: pdf, gerber/drill, odb++, dxf, idf more" verbatim="PDF, Gerber/drill, ODB++, DXF, IDF more" row="11" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: edwinxp from visionics" verbatim="EDWinXP from Visionics" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: 2010-02 1.90" verbatim="2010-02&#xA;1.90" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: yes" verbatim="Yes" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: yes" verbatim="Yes" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: yes" verbatim="Yes" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: no" verbatim="No" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,6: yes" verbatim="Yes" row="12" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,7: no" verbatim="No" row="12" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,8: no" verbatim="No" row="12" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,9: en, jp" verbatim="en, jp" row="12" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,10: yes" verbatim="Yes" row="12" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,11: odb++" verbatim="ODB++" row="12" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,12: odb++" verbatim="ODB++" row="12" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: fritzing" verbatim="Fritzing" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: 2013-07-27 0.8.3b" verbatim="2013-07-27&#xA;0.8.3b" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: yes, + breadboard" verbatim="Yes, + breadboard" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: no" verbatim="No" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: yes" verbatim="Yes" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: yes" verbatim="Yes" row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: yes" verbatim="Yes" row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,7: linux, mac" verbatim="Linux, Mac" row="13" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,8: yes" verbatim="Yes" row="13" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,9: en, de, nl, es, it, fr, pt, ru, zh, jp, ..." verbatim="en, de, nl, es, it, fr, pt, ru, zh, jp, ..." row="13" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,10: yes" verbatim="Yes" row="13" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,11: geda symbols, kicad symbols, svg" verbatim="gEDA symbols, KiCad symbols, SVG" row="13" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,12: gerber, diy etching, bom, svg, pdf, eps" verbatim="Gerber, DIY etching, BOM, SVG, PDF, EPS" row="13" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: geda" verbatim="gEDA" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: 2013-09-25 1.8.2" verbatim="2013-09-25&#xA;1.8.2" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: yes" verbatim="Yes" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: yes" verbatim="Yes" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: yes" verbatim="Yes" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: yes" verbatim="Yes" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: yes" verbatim="Yes" row="14" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,7: linux, mac" verbatim="Linux, Mac" row="14" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,8: yes" verbatim="Yes" row="14" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,9: en" verbatim="en" row="14" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,10: yes" verbatim="Yes" row="14" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,11: unknown" verbatim="Unknown" row="14" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,12: gerber/drill" verbatim="Gerber/drill" row="14" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: kicad" verbatim="KiCad" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: 2013-07-07-bzr4022" verbatim="2013-07-07-BZR4022" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: yes" verbatim="Yes" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: no" verbatim="No" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: yes" verbatim="Yes" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: yes" verbatim="Yes" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,6: yes" verbatim="Yes" row="15" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,7: linux, mac" verbatim="Linux, Mac" row="15" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,8: yes" verbatim="Yes" row="15" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,9: de, en, es, fr, pt, ru" verbatim="de, en, es, fr, pt, ru" row="15" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,10: yes" verbatim="Yes" row="15" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,11: tinycad net lists, orcad edif" verbatim="TinyCAD net lists, OrCAD EDIF" row="15" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,12: pdf, gerber/drill, netlist, vrml2, idfv3" verbatim="PDF, Gerber/drill, netlist, VRML2, IDFv3" row="15" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: various smartspice, expert, guardian, hipex, and m" verbatim="Various SmartSpice, Expert, Guardian, Hipex, and more products by Silvaco" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: n/a" verbatim="N/A" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: yes" verbatim="Yes" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: yes" verbatim="Yes" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: no" verbatim="No" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: yes" verbatim="Yes" row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,6: yes" verbatim="Yes" row="16" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,7: linux" verbatim="Linux" row="16" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,8: no" verbatim="No" row="16" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,9: en, cn, kr, jp" verbatim="en, cn, kr, jp" row="16" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,10: yes" verbatim="Yes" row="16" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,11: various: hspice, spectre, verilog-a, spice, edif, " verbatim="Various: HSPICE, Spectre, Verilog-A, SPICE, EDIF, GDSII" row="16" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,12: various: spice, spef, gdsii" verbatim="Various: SPICE, SPEF, GDSII" row="16" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: various (board station, pads, expedition, dxdesign" verbatim="Various (Board Station, PADS, Expedition, DxDesigner, HyperLynx, ECAD Collaborator...), by Mentor Graphics" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: n/a" verbatim="N/A" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: yes" verbatim="Yes" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: yes" verbatim="Yes" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: yes" verbatim="Yes" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,5: yes" verbatim="Yes" row="17" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,6: yes" verbatim="Yes" row="17" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,7: no" verbatim="No" row="17" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,8: no" verbatim="No" row="17" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,9: en" verbatim="en" row="17" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,10: yes" verbatim="Yes" row="17" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,11: odb++" verbatim="ODB++" row="17" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,12: ggerber/drill, bom, idf, odb++" verbatim="GGerber/drill, BoM, IDF, ODB++" row="17" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="18,0: micro-cap by spectrum software" verbatim="Micro-Cap by Spectrum Software" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: 2010-06-26 10" verbatim="2010-06-26&#xA;10" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: yes" verbatim="Yes" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: yes" verbatim="Yes" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: no" verbatim="No" row="18" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,5: no" verbatim="No" row="18" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,6: yes" verbatim="Yes" row="18" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,7: no" verbatim="No" row="18" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,8: no" verbatim="No" row="18" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,9: en" verbatim="en" row="18" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,10: yes" verbatim="Yes" row="18" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,11: unknown" verbatim="Unknown" row="18" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,12: spice text file, netlist, bom" verbatim="SPICE text file, netlist, BOM" row="18" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="19,0: proteus by labcenter electronics" verbatim="Proteus by Labcenter Electronics" row="19" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: 8.1" verbatim="8.1" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: yes" verbatim="Yes" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: yes" verbatim="Yes" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: yes" verbatim="Yes" row="19" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,5: no" verbatim="No" row="19" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,6: yes" verbatim="Yes" row="19" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,7: no" verbatim="No" row="19" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,8: no" verbatim="No" row="19" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,9: en" verbatim="en" row="19" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,10: yes" verbatim="Yes" row="19" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,11: unknown" verbatim="Unknown" row="19" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,12: netlist, odb++, bom, gerber/drill, idf, bmp, html," verbatim="netlist, ODB++, BoM, Gerber/drill, IDF, BMP, HTML, CSV, DXF, 3D DXF, STL, PDF, EMF, EPS, HPGL and more" row="19" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="20,0: pcb investigator by easylogix schindler &amp; schill g" verbatim="PCB Investigator by easyLogix Schindler &amp; Schill GmbH" row="20" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,1: 2012-06 3.4.4" verbatim="2012-06&#xA;3.4.4" row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,2: no" verbatim="No" row="20" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,3: no" verbatim="No" row="20" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,4: yes" verbatim="Yes" row="20" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,5: no" verbatim="No" row="20" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,6: yes" verbatim="Yes" row="20" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,7: no" verbatim="No" row="20" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,8: no" verbatim="No" row="20" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,9: en" verbatim="en" row="20" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,10: yes" verbatim="Yes" row="20" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,11: odb++, gerber/drill, sieb&amp;meyer, gencad 1.4, dxf, " verbatim="ODB++, Gerber/drill, Sieb&amp;Meyer, GenCAD 1.4, DXF, IPC2581" row="20" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,12: odb++, dxf, catia-script, x-file, bom, gencad 1.4," verbatim="ODB++, DXF, Catia-Script, X-File, BOM, GenCAD 1.4, Gerber, other" row="20" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="21,0: pulsonix" verbatim="Pulsonix" row="21" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,1: 2013-08-20 release 8.0" verbatim="2013-08-20&#xA;Release 8.0" row="21" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,2: yes" verbatim="Yes" row="21" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,3: yes" verbatim="Yes" row="21" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,4: yes" verbatim="Yes" row="21" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,5: no" verbatim="No" row="21" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,6: yes" verbatim="Yes" row="21" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,7: no" verbatim="No" row="21" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,8: no" verbatim="No" row="21" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,9: en" verbatim="en" row="21" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,10: yes" verbatim="Yes" row="21" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,11: allegro, altium, cadstar, eagle, orcad, pads, p-ca" verbatim="Allegro, Altium, CadStar, Eagle, OrCAD, PADs, P-CAD, Protel, Gerber, STEP, DXF, IDF, more" row="21" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,12: gerber/drill, odb++, pdf, dxf, step, idf, bom, mor" verbatim="Gerber/drill, ODB++, PDF, DXF, STEP, IDF, BOM, more" row="21" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="22,0: slash by dolphin integration" verbatim="SLASH by Dolphin Integration" row="22" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,1: 2011, february" verbatim="2011, February" row="22" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,2: yes" verbatim="Yes" row="22" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,3: yes" verbatim="Yes" row="22" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,4: no" verbatim="No" row="22" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,5: yes" verbatim="Yes" row="22" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,6: yes" verbatim="Yes" row="22" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,7: no" verbatim="No" row="22" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,8: no" verbatim="No" row="22" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,9: en" verbatim="en" row="22" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,10: yes" verbatim="Yes" row="22" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,11: edif, ascii, several netlist formats" verbatim="EDIF, ASCII, Several netlist formats" row="22" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,12: edif, several netlist formats, csdf, spi3, more" verbatim="EDIF, Several netlist formats, CSDF, SPI3, more" row="22" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="23,0: target 3001!" verbatim="TARGET 3001!" row="23" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,1: v16.5.0.101 2014-02" verbatim="V16.5.0.101&#xA;2014-02" row="23" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,2: yes" verbatim="Yes" row="23" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,3: yes" verbatim="Yes" row="23" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,4: yes" verbatim="Yes" row="23" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,5: no" verbatim="No" row="23" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,6: yes" verbatim="Yes" row="23" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,7: no" verbatim="No" row="23" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,8: no" verbatim="No" row="23" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,9: en, de, fr" verbatim="en, de, fr" row="23" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,10: yes" verbatim="Yes" row="23" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,11: eagle, dxf, gerber, xgerber, excellon, bmp, cxf" verbatim="EAGLE, DXF, Gerber, XGerber, Excellon, BMP, CXF" row="23" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,12: xgerber, excellon, hpgl, g-code (milling), cxf, st" verbatim="XGerber, Excellon, HPGL, G-Code (Milling), CXF, STEP 3D, BOMs, Pick&amp;Place, Testpoints, Netlists, OBJ, POV-RAY" row="23" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="24,0: ni ultiboard and multisim by national instruments" verbatim="NI Ultiboard and Multisim by National Instruments" row="24" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,1: 13" verbatim="13" row="24" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,2: yes" verbatim="Yes" row="24" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,3: yes" verbatim="Yes" row="24" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,4: yes" verbatim="Yes" row="24" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,5: no" verbatim="No" row="24" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,6: yes" verbatim="Yes" row="24" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,7: no" verbatim="No" row="24" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,8: no" verbatim="No" row="24" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,9: en" verbatim="en" row="24" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,10: yes" verbatim="Yes" row="24" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,11: ms*, mp*, ewb, spice, orcad, ulticap, protel, gerb" verbatim="MS*, MP*, EWB, Spice, OrCAD, UltiCap, Protel, Gerber, DXF, Ultiboard 4&amp;5, Calay" row="24" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,12: bom, gerber/drill, iges (3d), dxf (2d &amp; 3d), svg" verbatim="BOM, Gerber/drill, IGES (3D), DXF (2D &amp; 3D), SVG" row="24" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="25,0: various allegro and orcad products by cadence desi" verbatim="Various Allegro and OrCAD products by Cadence Design Systems" row="25" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,1: n/a" verbatim="N/A" row="25" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,2: yes" verbatim="Yes" row="25" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,3: yes" verbatim="Yes" row="25" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,4: yes" verbatim="Yes" row="25" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,5: yes" verbatim="Yes" row="25" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,6: yes" verbatim="Yes" row="25" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,7: aix, solaris, linux" verbatim="AIX, Solaris, Linux" row="25" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,8: no" verbatim="No" row="25" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,9: several" verbatim="Several" row="25" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,10: yes" verbatim="Yes" row="25" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,11: gerber, dxf, idf, iff, pads, pcad" verbatim="Gerber, DXF, IDF, IFF, PADS, PCAD" row="25" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,12: dxf, idf, ipc356, orcad netlist, odb++" verbatim="DXF, IDF, IPC356, OrCAD netlist, ODB++" row="25" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="26,0: viewlogic by synopsys" verbatim="Viewlogic by Synopsys" row="26" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,1: unknown" verbatim="Unknown" row="26" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,2: no" verbatim="No" row="26" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,3: no" verbatim="No" row="26" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,4: yes" verbatim="Yes" row="26" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,5: yes" verbatim="Yes" row="26" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,6: yes" verbatim="Yes" row="26" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,7: unknown" verbatim="Unknown" row="26" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,8: no" verbatim="No" row="26" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,9: en" verbatim="en" row="26" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,10: unknown" verbatim="Unknown" row="26" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,11: unknown" verbatim="Unknown" row="26" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,12: unknown" verbatim="Unknown" row="26" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="27,0: 123d circuits by circuits.io" verbatim="123D Circuits by Circuits.io" row="27" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,1: n/a" verbatim="N/A" row="27" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,2: yes" verbatim="Yes" row="27" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,3: yes" verbatim="Yes" row="27" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,4: yes" verbatim="Yes" row="27" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,5: yes" verbatim="Yes" row="27" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,6: yes" verbatim="Yes" row="27" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,7: web application" verbatim="Web application" row="27" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,8: no" verbatim="No" row="27" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,9: en" verbatim="en" row="27" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,10: unknown" verbatim="Unknown" row="27" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,11: eagle" verbatim="Eagle" row="27" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,12: gerber" verbatim="Gerber" row="27" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="28,0: circuitlab by circuitlab inc." verbatim="CircuitLab by CircuitLab Inc." row="28" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,1: n/a" verbatim="N/A" row="28" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,2: yes" verbatim="Yes" row="28" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,3: yes" verbatim="Yes" row="28" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,4: no" verbatim="No" row="28" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,5: yes" verbatim="Yes" row="28" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,6: yes" verbatim="Yes" row="28" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,7: web application" verbatim="Web application" row="28" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,8: no" verbatim="No" row="28" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,9: en" verbatim="en" row="28" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,10: unknown" verbatim="Unknown" row="28" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,11: unknown" verbatim="Unknown" row="28" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,12: unknown" verbatim="Unknown" row="28" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,0: scheme-it by digi-key" verbatim="Scheme-it by Digi-Key" row="29" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,1: n/a" verbatim="N/A" row="29" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,2: yes" verbatim="Yes" row="29" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,3: no" verbatim="No" row="29" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,4: no" verbatim="No" row="29" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,5: yes" verbatim="Yes" row="29" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,6: yes" verbatim="Yes" row="29" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,7: web application" verbatim="Web application" row="29" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,8: no" verbatim="No" row="29" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,9: en" verbatim="en" row="29" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,10: unknown" verbatim="Unknown" row="29" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,11: unknown" verbatim="Unknown" row="29" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,12: unknown" verbatim="Unknown" row="29" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="30,0: docircuits by docircuits inc." verbatim="DoCircuits by DoCircuits Inc." row="30" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,1: n/a" verbatim="N/A" row="30" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,2: yes" verbatim="Yes" row="30" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,3: yes" verbatim="Yes" row="30" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,4: no" verbatim="No" row="30" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,5: yes" verbatim="Yes" row="30" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,6: yes" verbatim="Yes" row="30" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,7: web application" verbatim="Web application" row="30" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,8: no" verbatim="No" row="30" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,9: en" verbatim="en" row="30" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,10: unknown" verbatim="Unknown" row="30" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,11: unknown" verbatim="Unknown" row="30" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,12: unknown" verbatim="Unknown" row="30" rowspan="1" column="12" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

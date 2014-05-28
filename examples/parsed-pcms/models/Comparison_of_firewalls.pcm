@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm" name="Comparison_of_firewalls">
+  <matrices name="Firewall software">
+    <cells xsi:type="pcmmm:Header" name="0,0: firewall" verbatim="Firewall" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: license" verbatim="License" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: cost / usage limits" verbatim="Cost / Usage Limits" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: os" verbatim="OS" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: cisco ios" verbatim="Cisco IOS" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: proprietary" verbatim="Proprietary" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: included on all cisco switches and routers" verbatim="Included on all Cisco&#xA;switches and routers" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: proprietary, runs only on cisco hardware" verbatim="Proprietary, runs only &#xA;on Cisco hardware" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: comodo internet security" verbatim="Comodo Internet &#xA;Security" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: proprietary" verbatim="Proprietary" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: freemium" verbatim="Freemium" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: windows 7 / vista / xp sp2/ windows 8" verbatim="Windows 7 / Vista / XP SP2/ Windows 8" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: intego virusbarrier" verbatim="Intego VirusBarrier" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: proprietary" verbatim="Proprietary" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: ?" verbatim="?" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: mac os x 10.5 or later; on an xserve" verbatim="Mac OS X 10.5 or later; on an Xserve" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: ipfilter" verbatim="IPFilter" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: gplv2" verbatim="GPLv2" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: free" verbatim="Free" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: package for multiple unix-like operating systems" verbatim="Package for multiple UNIX-like operating systems" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: ipcop" verbatim="IPCop" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: various" verbatim="various" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: free" verbatim="Free" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: linux-based appliance" verbatim="Linux-based appliance" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: ipfire" verbatim="IPFire" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: gpl" verbatim="GPL" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: free" verbatim="Free" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: linux-based appliance" verbatim="Linux-based appliance" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: ipfirewall" verbatim="ipfirewall" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: bsd" verbatim="BSD" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: free" verbatim="Free" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: *bsd package" verbatim="*BSD package" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: kaspersky internet security" verbatim="Kaspersky &#xA;Internet Security" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: proprietary" verbatim="Proprietary" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: $59,95 year / 30 day trial" verbatim="$59,95 Year / 30 day trial" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: windows unknown versions x32/x64" verbatim="Windows unknown versions x32/x64" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: lavasoft personal firewall" verbatim="Lavasoft &#xA;Personal Firewall" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: proprietary" verbatim="Proprietary" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: &#x20ac;36 year" verbatim="&#x20ac;36 Year" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: windows unknown versions x32/x64" verbatim="Windows unknown versions x32/x64" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: microsoft forefront threat management gateway" verbatim="Microsoft &#xA;Forefront Threat &#xA;Management &#xA;Gateway" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: proprietary" verbatim="Proprietary" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: discontinued" verbatim="discontinued" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: windows unknown versions x64" verbatim="Windows unknown versions x64" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: monowall" verbatim="Monowall" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: bsd" verbatim="BSD" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: free" verbatim="Free" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: freebsd-based appliance" verbatim="FreeBSD-based appliance" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: netfilter/iptables" verbatim="Netfilter/iptables" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: gpl" verbatim="GPL" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: free" verbatim="Free" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: linux kernel module" verbatim="Linux kernel module" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: norton 360" verbatim="Norton 360" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: proprietary" verbatim="Proprietary" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: $59.99 year" verbatim="$59.99 Year" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: windows unknown versions x32/x64" verbatim="Windows unknown versions x32/x64" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: npf" verbatim="NPF" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: bsd" verbatim="BSD" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: free" verbatim="Free" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: netbsd kernel module" verbatim="NetBSD kernel module" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: online armor personal firewall" verbatim="Online Armor &#xA;Personal Firewall" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: proprietary" verbatim="Proprietary" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: &#x20ac; 39.95 year" verbatim="&#x20ac; 39.95 Year" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: windows unknown versions x32/x64" verbatim="Windows unknown versions x32/x64" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: outpost firewall pro" verbatim="Outpost &#xA;Firewall Pro" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: proprietary" verbatim="Proprietary" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: free / paid" verbatim="Free / Paid" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: windows unknown versions x32/x64" verbatim="Windows unknown versions x32/x64" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: pc tools firewall plus" verbatim="PC Tools &#xA;Firewall Plus" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: proprietary" verbatim="Proprietary" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: free ?" verbatim="Free ?" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: windows unknown versions x32/x64" verbatim="Windows unknown versions x32/x64" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="18,0: pf" verbatim="PF" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: bsd" verbatim="BSD" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: free" verbatim="Free" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: *bsd kernel module" verbatim="*BSD kernel module" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="19,0: pfsense" verbatim="pfsense" row="19" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: bsd" verbatim="BSD" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: free" verbatim="Free" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: freebsd/nanobsd-based appliance" verbatim="FreeBSD/NanoBSD-based appliance" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="20,0: smoothwall" verbatim="Smoothwall" row="20" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,1: gpl" verbatim="GPL" row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,2: free" verbatim="Free" row="20" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,3: linux-based appliance" verbatim="Linux-based appliance" row="20" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="21,0: sophos utm" verbatim="Sophos UTM" row="21" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,1: ?" verbatim="?" row="21" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,2: free / paid" verbatim="Free / Paid" row="21" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,3: linux-based appliance" verbatim="Linux-based appliance" row="21" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="22,0: sunbelt personal firewall" verbatim="Sunbelt &#xA;Personal Firewall" row="22" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,1: proprietary" verbatim="Proprietary" row="22" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,2: discontinued" verbatim="discontinued" row="22" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,3: windows unknown versions x32" verbatim="Windows unknown versions x32" row="22" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="23,0: sygate personal firewall" verbatim="Sygate &#xA;Personal Firewall" row="23" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,1: proprietary" verbatim="Proprietary" row="23" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,2: discontinued" verbatim="discontinued" row="23" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,3: windows unknown versions x32" verbatim="Windows unknown versions x32" row="23" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="24,0: untangle" verbatim="Untangle" row="24" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,1: gpl" verbatim="GPL" row="24" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,2: free/paid" verbatim="Free/Paid" row="24" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,3: linux-based appliance" verbatim="Linux-based appliance" row="24" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="25,0: vyatta" verbatim="Vyatta" row="25" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,1: gpl" verbatim="GPL" row="25" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,2: ?" verbatim="?" row="25" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,3: linux-based appliance" verbatim="Linux-based appliance" row="25" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="26,0: windows firewall" verbatim="Windows Firewall" row="26" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,1: proprietary" verbatim="Proprietary" row="26" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,2: included with windows xp sp2 and later" verbatim="Included with Windows &#xA;XP SP2 and later" row="26" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,3: all windows versions x32/x64" verbatim="ALL Windows Versions x32/x64" row="26" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="27,0: wingate" verbatim="WinGate" row="27" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,1: proprietary" verbatim="Proprietary" row="27" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,2: paid" verbatim="Paid" row="27" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,3: windows unknown versions x32/x64" verbatim="Windows unknown versions x32/x64" row="27" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="28,0: zeroshell" verbatim="Zeroshell" row="28" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,1: gpl version 2" verbatim="GPL version 2" row="28" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,2: free" verbatim="Free" row="28" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,3: linux based appliance" verbatim="Linux based appliance" row="28" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,0: zonealarm" verbatim="ZoneAlarm" row="29" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,1: proprietary" verbatim="Proprietary" row="29" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,2: freemium" verbatim="Freemium" row="29" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,3: windows unknown versions x32/x64 (except xp-64)" verbatim="Windows unknown versions x32/x64 (except XP-64)" row="29" rowspan="1" column="3" colspan="1"/>
+  </matrices>
+  <matrices name="Firewall rule-set basic filtering features comparison">
+    <cells xsi:type="pcmmm:Header" name="0,0: can target:" verbatim="Can Target:" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: changing default policy to accept/reject (by issui" verbatim="Changing default policy to accept/reject (by issuing a single rule)" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: ip destination address(es)" verbatim="IP destination address(es)" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: ip source address(es)" verbatim="IP source address(es)" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: tcp/udp destination port(s)" verbatim="TCP/UDP destination port(s)" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: tcp/udp source port(s)" verbatim="TCP/UDP source port(s)" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: ethernet mac destination address" verbatim="Ethernet MAC destination address" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: ethernet mac source address" verbatim="Ethernet MAC source address" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: inbound firewall (ingress)" verbatim="Inbound firewall (ingress)" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: outbound firewall (egress)" verbatim="Outbound firewall (egress)" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: ipfire" verbatim="IPFire" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: yes" verbatim="Yes" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: yes" verbatim="Yes" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: yes" verbatim="Yes" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: yes" verbatim="Yes" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: yes" verbatim="Yes" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: yes" verbatim="Yes" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,8: yes" verbatim="Yes" row="1" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,9: yes" verbatim="Yes" row="1" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: trend micro internet security" verbatim="Trend Micro Internet Security" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: yes" verbatim="Yes" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: yes" verbatim="Yes" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: yes" verbatim="Yes" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: yes" verbatim="Yes" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: no" verbatim="No" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: no" verbatim="No" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: yes" verbatim="Yes" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,9: yes" verbatim="Yes" row="2" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: untangle" verbatim="Untangle" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: yes" verbatim="Yes" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: yes" verbatim="Yes" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: yes" verbatim="Yes" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: yes" verbatim="Yes" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: yes" verbatim="Yes" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: no" verbatim="No" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: no" verbatim="No" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: yes" verbatim="Yes" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,9: yes" verbatim="Yes" row="3" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: vyatta" verbatim="Vyatta" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: yes" verbatim="Yes" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: yes" verbatim="Yes" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: yes" verbatim="Yes" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: yes" verbatim="Yes" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: yes" verbatim="Yes" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: yes" verbatim="Yes" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: yes" verbatim="Yes" row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,8: yes" verbatim="Yes" row="4" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,9: yes" verbatim="Yes" row="4" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: windows xp firewall" verbatim="Windows XP Firewall" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: no" verbatim="No" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: no" verbatim="No" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: yes" verbatim="Yes" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: partial" verbatim="Partial" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: no" verbatim="No" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: no" verbatim="No" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: no" verbatim="No" row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,8: yes" verbatim="Yes" row="5" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,9: no" verbatim="No" row="5" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: windows vista firewall" verbatim="Windows Vista Firewall" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: yes" verbatim="Yes" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: yes" verbatim="Yes" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: yes" verbatim="Yes" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: yes" verbatim="Yes" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: yes" verbatim="Yes" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: no" verbatim="No" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: no" verbatim="No" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,8: yes" verbatim="Yes" row="6" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,9: yes" verbatim="Yes" row="6" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: windows 7 / windows&#xa0;2008&#xa0;r2 firewall" verbatim="Windows 7 /&#xA;Windows&#xa0;2008&#xa0;R2&#xA;Firewall" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: yes" verbatim="Yes" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: yes" verbatim="Yes" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: yes" verbatim="Yes" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: yes" verbatim="Yes" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: yes" verbatim="Yes" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: yes" verbatim="Yes" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: yes" verbatim="Yes" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,8: yes" verbatim="Yes" row="7" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,9: yes" verbatim="Yes" row="7" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: wingate" verbatim="WinGate" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: yes" verbatim="Yes" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: yes" verbatim="Yes" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: yes" verbatim="Yes" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: yes" verbatim="Yes" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: yes" verbatim="Yes" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: yes" verbatim="Yes" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: yes" verbatim="Yes" row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,8: yes" verbatim="Yes" row="8" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,9: yes" verbatim="Yes" row="8" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: zeroshell" verbatim="Zeroshell" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: yes" verbatim="Yes" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: yes" verbatim="Yes" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: yes" verbatim="Yes" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: yes" verbatim="Yes" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: yes" verbatim="Yes" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: no" verbatim="No" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: yes" verbatim="Yes" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,8: yes" verbatim="Yes" row="9" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,9: yes" verbatim="Yes" row="9" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: zorp" verbatim="Zorp" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: yes" verbatim="Yes" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: yes" verbatim="Yes" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: yes" verbatim="Yes" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: yes" verbatim="Yes" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: yes" verbatim="Yes" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: yes" verbatim="Yes" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: yes" verbatim="Yes" row="10" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,8: yes" verbatim="Yes" row="10" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,9: yes" verbatim="Yes" row="10" rowspan="1" column="9" colspan="1"/>
+  </matrices>
+  <matrices name="Firewall rule-set advanced features comparison">
+    <cells xsi:type="pcmmm:Header" name="0,0: can:" verbatim="Can:" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: work at osi layer 4 (stateful firewall)" verbatim="work at OSI Layer 4 (stateful firewall)" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: work at osi layer 7 (application inspection)" verbatim="work at OSI Layer 7 (application inspection)" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: change ttl? (transparent to traceroute)" verbatim="Change TTL? (Transparent to traceroute)" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: configure reject-with answer" verbatim="Configure REJECT-with answer" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: dmz (de-militarized zone) - allows for single/seve" verbatim="DMZ (de-militarized zone) - allows for single/several hosts not to be firewalled." rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: filter according to time of day" verbatim="Filter according to time of day" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: redirect tcp/udp ports (port forwarding)" verbatim="Redirect TCP/UDP ports (port forwarding)" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: redirect ip addresses (forwarding)" verbatim="Redirect IP addresses (forwarding)" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: filter according to user authorization" verbatim="Filter according to User Authorization" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,10: traffic rate-limit / qos" verbatim="Traffic rate-limit / QoS" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,11: tarpit" verbatim="Tarpit" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,12: log" verbatim="Log" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: ipfire" verbatim="IPFire" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: yes" verbatim="Yes" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: yes" verbatim="Yes" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: no" verbatim="No" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: yes" verbatim="Yes" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: yes" verbatim="Yes" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: yes" verbatim="Yes" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,8: yes" verbatim="Yes" row="1" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,9: yes" verbatim="Yes" row="1" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,10: yes" verbatim="Yes" row="1" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,11: no" verbatim="No" row="1" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,12: yes" verbatim="Yes" row="1" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: sidewinder" verbatim="Sidewinder" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: yes" verbatim="Yes" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: yes" verbatim="Yes" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: yes" verbatim="Yes" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: yes" verbatim="Yes" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: yes" verbatim="Yes" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: yes" verbatim="Yes" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: yes" verbatim="Yes" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,9: yes" verbatim="Yes" row="2" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,10: yes" verbatim="Yes" row="2" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,11: yes" verbatim="Yes" row="2" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,12: yes" verbatim="Yes" row="2" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: untangle" verbatim="Untangle" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: yes" verbatim="Yes" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: yes (some modules)" verbatim="Yes (Some modules)" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: no" verbatim="No" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: no" verbatim="No" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: yes" verbatim="Yes" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: yes (with policy manager)" verbatim="Yes (With Policy manager)" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: yes" verbatim="Yes" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: yes" verbatim="Yes" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,9: yes" verbatim="Yes" row="3" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,10: yes" verbatim="Yes" row="3" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,11: yes" verbatim="Yes" row="3" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,12: yes" verbatim="Yes" row="3" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: wingate" verbatim="WinGate" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: yes" verbatim="Yes" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: yes" verbatim="Yes" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: yes" verbatim="Yes" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: no" verbatim="No" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: yes" verbatim="Yes" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: yes" verbatim="Yes" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: yes" verbatim="Yes" row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,8: no" verbatim="No" row="4" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,9: yes" verbatim="Yes" row="4" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,10: yes" verbatim="Yes" row="4" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,11: no" verbatim="No" row="4" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,12: yes" verbatim="Yes" row="4" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: zeroshell" verbatim="Zeroshell" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: yes" verbatim="Yes" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: yes" verbatim="Yes" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: no" verbatim="No" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: yes" verbatim="Yes" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: yes" verbatim="Yes" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: yes" verbatim="Yes" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: yes" verbatim="Yes" row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,8: yes" verbatim="Yes" row="5" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,9: yes" verbatim="Yes" row="5" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,10: yes" verbatim="Yes" row="5" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,11: no" verbatim="No" row="5" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,12: yes" verbatim="Yes" row="5" rowspan="1" column="12" colspan="1"/>
+  </matrices>
+  <matrices name="Firewall rule-set advanced features comparison">
+    <cells xsi:type="pcmmm:Header" name="0,0: features:" verbatim="Features:" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: configuration: gui, text or both modes?" verbatim="Configuration: GUI, text or both modes?" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: remote access: web (http), telnet, ssh, rdp, seria" verbatim="Remote Access: Web (HTTP), Telnet, SSH, RDP, Serial COM RS232, ..." rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: change rules without requiring restart?" verbatim="Change rules without requiring restart?" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: ability to centrally manage all firewalls together" verbatim="Ability to centrally manage all firewalls together" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: ipfire" verbatim="IPFire" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: both" verbatim="both" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: web (https), ssh, rs232" verbatim="Web (HTTPS), SSH, RS232" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: no" verbatim="No" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: untangle" verbatim="Untangle" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: both" verbatim="both" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: ssh (not enabeld by default), web gui," verbatim="SSH (Not enabeld by default), Web GUI," row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: yes" verbatim="Yes" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: wingate" verbatim="WinGate" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: gui" verbatim="GUI" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: proprietary user interface" verbatim="Proprietary user interface" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: yes" verbatim="Yes" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: n/a" verbatim="N/A" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: clearos" verbatim="ClearOS" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: both" verbatim="both" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: rs232, ssh, webconfig," verbatim="RS232, SSH, WebConfig," row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: yes" verbatim="Yes" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: yes with clearsdn" verbatim="Yes with ClearSDN" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: zeroshell" verbatim="Zeroshell" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: gui" verbatim="GUI" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: ssh, web (https), rs232" verbatim="SSH, Web (HTTPS), RS232" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: yes" verbatim="Yes" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: no" verbatim="No" row="5" rowspan="1" column="4" colspan="1"/>
+  </matrices>
+  <matrices name="Firewall's other features comparison">
+    <cells xsi:type="pcmmm:Header" name="0,0: features:" verbatim="Features:" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: modularity: supports third-party modules to extend" verbatim="Modularity: supports third-party modules to extend functionality?" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: ips : intrusion prevention system" verbatim="IPS : Intrusion prevention system" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: open-source license?" verbatim="Open-Source License?" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: supports ipv6 ?" verbatim="supports IPv6 ?" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: class: home / professional" verbatim="Class: Home / Professional" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: operating systems on which it runs?" verbatim="Operating Systems on which it runs?" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: ipfire" verbatim="IPFire" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: yes" verbatim="Yes" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: yes, with snort" verbatim="Yes, with Snort" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: yes (since ipfire 3)" verbatim="Yes (since IPFire 3)" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: both" verbatim="Both" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: linux-based appliance distribution." verbatim="Linux-based appliance distribution." row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: untangle" verbatim="Untangle" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: yes" verbatim="Yes" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: yes" verbatim="Yes" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: no" verbatim="No" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: both" verbatim="Both" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: linux (built on debian)" verbatim="Linux (built on Debian)" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: vyatta" verbatim="Vyatta" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: yes" verbatim="Yes" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: yes" verbatim="Yes" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: yes" verbatim="Yes" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: yes" verbatim="Yes" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: professional" verbatim="Professional" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: vyatta os (built on debian)" verbatim="Vyatta OS (built on Debian)" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: wingate" verbatim="WinGate" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: yes" verbatim="Yes" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: ?" verbatim="?" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: no" verbatim="No" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: no" verbatim="No" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: professional" verbatim="Professional" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: windows 2000, windows xp, windows 2003, windows vi" verbatim="Windows 2000, Windows XP, Windows 2003, Windows Vista, Windows 2008. 32bit and 64bit." row="4" rowspan="1" column="6" colspan="1"/>
+  </matrices>
+  <matrices name="Non-Firewall extra features comparison">
+    <cells xsi:type="pcmmm:Header" name="0,0: can:" verbatim="Can:" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: nat (static, dynamic w/o ports, pat)" verbatim="NAT (static, dynamic w/o ports, PAT)" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: ids (intrusion detection system)" verbatim="IDS (Intrusion Detection System)" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: vpn (virtual private network)" verbatim="VPN (Virtual Private Network)" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: av (anti-virus)" verbatim="AV  (Anti-Virus)" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: sniffer" verbatim="Sniffer" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: profile selection" verbatim="Profile selection" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: ipfire" verbatim="IPFire" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: yes" verbatim="Yes" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: yes (with integrated snort)" verbatim="Yes (with integrated Snort)" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes (ipsec and openvpn)" verbatim="Yes (IPsec and OpenVPN)" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: yes (with clamav)" verbatim="Yes (with clamav)" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: yes (with tcpdump)" verbatim="Yes (with tcpdump)" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: ?" verbatim="?" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: untangle" verbatim="Untangle" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: yes" verbatim="Yes" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: yes" verbatim="Yes" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes (ipsec and openvpn)" verbatim="Yes (IPsec and OpenVPN)" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: yes (clamav,commtouch (optional) )" verbatim="Yes (clamav,commtouch (optional) )" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: yes (tcpdump)" verbatim="Yes (tcpdump)" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: ?" verbatim="?" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: vyatta" verbatim="Vyatta" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: yes (supports three nat types)" verbatim="Yes (supports three NAT types)" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: yes (integrated snort)" verbatim="Yes (integrated Snort)" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: yes (ipsec and openvpn)" verbatim="Yes (IPsec and OpenVPN)" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: yes (with clamav,sophos antivirus (optional) )" verbatim="Yes (with clamav,Sophos Antivirus (optional) )" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: yes (with wireshark or tcpdump)" verbatim="Yes (with wireshark or tcpdump)" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: ?" verbatim="?" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: wingate" verbatim="WinGate" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: yes" verbatim="Yes" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: yes (with netpatrol)" verbatim="Yes (with NetPatrol)" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: yes (proprietary)" verbatim="Yes (proprietary)" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: yes (kaspersky labs)" verbatim="Yes (Kaspersky Labs)" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: yes (filtered capturing to pcap format)" verbatim="Yes (filtered capturing to pcap format)" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: no" verbatim="No" row="4" rowspan="1" column="6" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

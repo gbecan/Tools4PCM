@@ -145,7 +145,7 @@ object CellContentInterpreter {
       // int
       new IntegerPatternInterpreter(Nil,"\\d+",Nil, true),
       // double
-      new DoublePatternInterpreter(Nil,"\\d+(\\.\\d+)*",Nil, true),
+      new DoublePatternInterpreter(Nil,"\\d+(\\.\\d+)?",Nil, true),
       // dimensions
       new MultiplePatternInterpreter(Nil, "(\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?) (?:×|x) (\\d+(?:\\.\\d+)?)", List("and"), true),
       // date XX/XX/XXXX

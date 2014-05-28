@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm" name="Comparison_of_numerical_analysis_software">
+  <matrices name="General">
+    <cells xsi:type="pcmmm:Header" name="0,0: " verbatim="" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: creator" verbatim="Creator" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: development started" verbatim="Development started" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: first public release" verbatim="First public release" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: latest stable version" verbatim="Latest stable version" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: cost (usd)" verbatim="Cost (USD)" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: license" verbatim="License" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: notes" verbatim="Notes" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: admb" verbatim="ADMB" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: d. fournier, admb project" verbatim="D. Fournier, ADMB Project" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: " verbatim="" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: " verbatim="" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: 11 / 2012" verbatim="11 / 2012" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: free" verbatim="Free" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: bsd 3-clause (aka new) license" verbatim="BSD 3-clause (aka new) License" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: automatic differentiation makes it well suited to " verbatim="Automatic differentiation makes it well suited to complex minimization problems" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: ch" verbatim="Ch" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: softintegration" verbatim="SoftIntegration" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: " verbatim="" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: 2001" verbatim="2001" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: 7.0 / 2012" verbatim="7.0 / 2012" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: $399 (commercial) / $199 (academic) / free (studen" verbatim="$399 (commercial) / $199 (academic) / Free (student)" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: proprietary" verbatim="Proprietary" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: c/c++ based numerical computing and graphical plot" verbatim="C/C++ based numerical computing and graphical plotting" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: data analyser madartsoft" verbatim="Data Analyser MadArtSoft" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: madartsoft ltd." verbatim="MadArtSoft Ltd." row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: 2011" verbatim="2011" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: 2011" verbatim="2011" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: 1.2 / 2011" verbatim="1.2 / 2011" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: not free" verbatim="Not free" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: proprietary" verbatim="Proprietary" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: numeric computation for business featuring. import" verbatim="Numeric computation for business featuring. import data from any data source. Cube OLAP, generate reports, predictions, forecasts." row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: dadisp" verbatim="DADiSP" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: dsp development" verbatim="DSP Development" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: 1984" verbatim="1984" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: 1986" verbatim="1986" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: 6.5 / 2010" verbatim="6.5 / 2010" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: $1995 (commercial) / $129 (academic) / free (stude" verbatim="$1995 (commercial) / $129 (academic) / Free (student)" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: proprietary" verbatim="Proprietary" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: numeric computations for science and engineering f" verbatim="Numeric computations for science and engineering featuring a spreadsheet like interface." row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: dyalog apl" verbatim="Dyalog APL" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: dyalog ltd." verbatim="Dyalog Ltd." row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: 1981" verbatim="1981" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: 1983" verbatim="1983" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: 13.2 / january 2013" verbatim="13.2 / January 2013" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: &#xa3;850/year or 2% royalty (non-commercial &#xa3;50, edu /" verbatim="&#xa3;850/year or 2% royalty (non-commercial &#xa3;50, edu / unreg Free)" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: proprietary" verbatim="Proprietary" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: a modern dialect of apl, enhanced with features fo" verbatim="A modern dialect of APL, enhanced with features for functional and object-oriented programming." row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: euler math toolbox" verbatim="Euler Math Toolbox" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: r. grothmann" verbatim="R. Grothmann" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: 1987" verbatim="1987" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: 1988" verbatim="1988" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: 9.4 / 2010" verbatim="9.4 / 2010" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: free" verbatim="Free" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: gpl" verbatim="GPL" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: also a computer algebra system through interface w" verbatim="Also a computer algebra system through interface with Maxima" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: fityk" verbatim="Fityk" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: m. wojdyr" verbatim="M. Wojdyr" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: " verbatim="" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: 2002" verbatim="2002" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: 1.0.1 / 2011" verbatim="1.0.1 / 2011" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: $115 (1.x binaries) / free (source code and 0.x bi" verbatim="$115 (1.x binaries) / Free (source code and 0.x binaries)" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: gpl" verbatim="GPL" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: interactive graphics, scriptable, specialized in c" verbatim="interactive graphics, scriptable, specialized in curve fitting and peak fitting, 2D only" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: freemat" verbatim="FreeMat" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: samit basu" verbatim="Samit Basu" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: " verbatim="" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: " verbatim="" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: 4.1 / november 28, 2011" verbatim="4.1 / November 28, 2011" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: free" verbatim="Free" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: gpl" verbatim="GPL" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: codeless interface to external c, c++, and fortran" verbatim="Codeless interface to external C, C++, and Fortran code.  Mostly compatible with MATLAB." row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: gauss" verbatim="GAUSS" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: aptech systems" verbatim="Aptech Systems" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: " verbatim="" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: 1984" verbatim="1984" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: 12 / october 2011" verbatim="12 / October 2011" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: not free" verbatim="Not free" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: proprietary" verbatim="Proprietary" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: " verbatim="" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: igor pro" verbatim="IGOR Pro" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: wavemetrics" verbatim="WaveMetrics" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: 1986" verbatim="1986" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: 1988" verbatim="1988" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: 6.03a / 2008" verbatim="6.03A / 2008" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: $550 (commercial) / $395 (academic) / $85 (student" verbatim="$550 (commercial) / $395 (academic) / $85 (student)" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: proprietary" verbatim="Proprietary" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: interactive graphics, programmable, 2d/3d, used fo" verbatim="interactive graphics, programmable, 2D/3D, used for science and engineering, large data sets." row="10" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: j" verbatim="J" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: jsoftware" verbatim="Jsoftware" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: 1989" verbatim="1989" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: 1990" verbatim="1990" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: 7.0.1 / 2/1/2011" verbatim="7.0.1 / 2/1/2011" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: free" verbatim="Free" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: gpl" verbatim="GPL" row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,7: online access to: j application library (jal)" verbatim="online access to: J Application Library (JAL)" row="11" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: jbeam" verbatim="jBEAM" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: ams" verbatim="AMS" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: 1998" verbatim="1998" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: 1999" verbatim="1999" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: 6.4 / 2010" verbatim="6.4 / 2010" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: $500 (basic) / $3950 (professional) / $10 (student" verbatim="$500 (basic) / $3950 (professional) / $10 (student)" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,6: proprietary" verbatim="Proprietary" row="12" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,7: mathematics, interactive graphics 2d/3d, scriptabl" verbatim="mathematics, interactive graphics 2D/3D, scriptable, used for science and engineering, very large data sets, desktop or client/server, open Java framework" row="12" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: scavis" verbatim="SCaViS" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: s.chekanov (jwork.org)" verbatim="S.Chekanov (jwork.org)" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: 2005" verbatim="2005" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: 2005" verbatim="2005" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: 1.0 / 2013" verbatim="1.0 / 2013" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: free" verbatim="Free" row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: free for non-commercial use" verbatim="Free for non-commercial use" row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,7: mathematics, symbolic calculations, algebra, data " verbatim="mathematics, symbolic calculations, algebra, data analysis, data mining, interactive 2D/3D graphics, Java scriptable, used for science and engineering, Cross-platform  (written in Java)" row="13" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: julia" verbatim="Julia" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: jeff bezanson, stefan karpinski, viral b. shah, an" verbatim="Jeff Bezanson, Stefan Karpinski, Viral B. Shah, and other contributors" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: 2009" verbatim="2009" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: 2011" verbatim="2011" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: daily builds (2012)" verbatim="Daily builds (2012)" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: free" verbatim="Free" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: mit license" verbatim="MIT License" row="14" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,7: open source language and environment for scientifi" verbatim="Open source language and environment for scientific computing. Direct calls of C functions from code (no wrappers or special APIs needed). Designed for cloud parallel computing in mind with LLVM JIT as a backend. Lightweight &quot;green&quot; threading (coroutines). Efficient support for Unicode. Powerful shell-like capabilities for managing other processes. Lisp-like macros and other metaprogramming facilities." row="14" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: labview" verbatim="LabVIEW" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: national instruments" verbatim="National Instruments" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: " verbatim="" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: 1985" verbatim="1985" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: 2010 / august 2010" verbatim="2010 / August 2010" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: $1249 (commercial) / $79.95 (student)" verbatim="$1249 (commercial) / $79.95 (student)" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,6: proprietary" verbatim="Proprietary" row="15" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,7: graphical and textual (.m file script) programming" verbatim="Graphical and textual (.m file script) programming approaches" row="15" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: maple" verbatim="Maple" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: maplesoft" verbatim="Maplesoft" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: 1980" verbatim="1980" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: 1982" verbatim="1982" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: 18 / march 5, 2014" verbatim="18 / March 5, 2014" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: $2275 (commercial) / $99 (student)" verbatim="$2275 (commercial) / $99 (student)" row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,6: proprietary" verbatim="Proprietary" row="16" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,7: mainly a computer algebra system" verbatim="Mainly a computer algebra system" row="16" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: mathcad" verbatim="Mathcad" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: parametric technology corporation" verbatim="Parametric Technology Corporation" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: 1985" verbatim="1985" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: 1986" verbatim="1986" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: 15.0; prime 3.0 / october 1, 2013" verbatim="15.0; Prime 3.0 / October 1, 2013" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,5: $1195 (commercial) / $99 (student)" verbatim="$1195 (commercial) / $99 (student)" row="17" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,6: proprietary" verbatim="Proprietary" row="17" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,7: mainly a computer algebra system" verbatim="Mainly a computer algebra system" row="17" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="18,0: mathematica" verbatim="Mathematica" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: wolfram research" verbatim="Wolfram Research" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: 1986" verbatim="1986" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: 1988" verbatim="1988" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: 9.0.1 (january&#xa0;30,&#xa0;2013)" verbatim="9.0.1 (January&#xa0;30,&#xa0;2013)" row="18" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,5: free (raspberry pi), $2495 (commercial) / $145 (st" verbatim="Free (Raspberry Pi), $2495 (commercial) / $145 (student) / $295 (personal)" row="18" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,6: proprietary" verbatim="Proprietary" row="18" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,7: also computer algebra system" verbatim="also computer algebra system" row="18" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="19,0: matlab" verbatim="MATLAB" row="19" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: mathworks" verbatim="MathWorks" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: the late 1970s" verbatim="the late 1970s" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: " verbatim="" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: 2013a" verbatim="2013a" row="19" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,5: $2150 (commercial) / $99 (student)" verbatim="$2150 (commercial) / $99 (student)" row="19" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,6: proprietary" verbatim="Proprietary" row="19" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,7: numerical computation and simulation with extended" verbatim="Numerical computation and simulation with extended 2D/3D visualization." row="19" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="20,0: maxima" verbatim="Maxima" row="20" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,1: mit project mac and bill schelter et al." verbatim="MIT Project MAC and Bill Schelter et al." row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,2: 1967" verbatim="1967" row="20" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,3: 1982" verbatim="1982" row="20" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,4: 5.28.0 / 27 august 2012" verbatim="5.28.0 / 27 August 2012" row="20" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,5: free" verbatim="Free" row="20" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,6: gpl" verbatim="GPL" row="20" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,7: mainly a computer algebra system" verbatim="Mainly a computer algebra system" row="20" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="21,0: mpmath" verbatim="mpmath" row="21" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,1: fredrik johansson and others" verbatim="Fredrik Johansson and others" row="21" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,2: 2005" verbatim="2005" row="21" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,3: 2007" verbatim="2007" row="21" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,4: 0.17 / 1 february 2011" verbatim="0.17 / 1 February 2011" row="21" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,5: free" verbatim="Free" row="21" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,6: new bsd" verbatim="New BSD" row="21" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,7: a python library for floating-point arithmetic, sp" verbatim="A Python library for floating-point arithmetic, special function evaluation, and other numerical algorithms" row="21" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="22,0: gnu data language" verbatim="GNU Data Language" row="22" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,1: marc schellens" verbatim="Marc Schellens" row="22" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,2: " verbatim="" row="22" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,3: 2004" verbatim="2004" row="22" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,4: 0.9.1 / 2011" verbatim="0.9.1 / 2011" row="22" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,5: free" verbatim="Free" row="22" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,6: gpl" verbatim="GPL" row="22" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,7: aimed as a drop-in replacement for idl/pv-wave" verbatim="Aimed as a drop-in replacement for IDL/PV-WAVE" row="22" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="23,0: gnu octave" verbatim="GNU Octave" row="23" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,1: john w. eaton" verbatim="John W. Eaton" row="23" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,2: 1988" verbatim="1988" row="23" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,3: 1993" verbatim="1993" row="23" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,4: 3.8.1 (march&#xa0;7, 2014; 34 days ago)" verbatim="3.8.1 (March&#xa0;7, 2014; 34 days ago)" row="23" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,5: free" verbatim="Free" row="23" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,6: gpl" verbatim="GPL" row="23" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,7: general numerical computing package with lots of e" verbatim="General numerical computing package with lots of extension modules. Syntax mostly compatible with MATLAB" row="23" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="24,0: origin" verbatim="Origin" row="24" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,1: originlab" verbatim="OriginLab" row="24" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,2: " verbatim="" row="24" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,3: 1991" verbatim="1991" row="24" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,4: 9.1 sr0 / oct. 2013" verbatim="9.1 SR0 / Oct. 2013" row="24" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,5: $1095 (std.)/$1800 (pro) $550 (std., academic) $85" verbatim="$1095 (std.)/$1800 (Pro)&#xA;$550 (std., academic)&#xA;$850 (Pro, academic)&#xA; $69/yr. (Pro, student)" row="24" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,6: proprietary" verbatim="Proprietary" row="24" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,7: integrated data analysis graphing software for sci" verbatim="Integrated data analysis graphing software for science and engineering.  Flexible multi-layer graphing framework. 2D, 3D and statistical graph types. Built-in digitizing tool. Analysis with auto recalculation and report generation. Built-in scripting and programming languages." row="24" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="25,0: perl data language" verbatim="Perl Data Language" row="25" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,1: karl glazebrook" verbatim="Karl Glazebrook" row="25" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,2: late 1990s" verbatim="late 1990s" row="25" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,3: c. 1997" verbatim="c. 1997" row="25" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,4: 2.4.10 / 2012" verbatim="2.4.10 / 2012" row="25" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,5: free" verbatim="Free" row="25" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,6: artistic license" verbatim="Artistic License" row="25" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,7: used for astrophysics, solar physics, oceanography" verbatim="Used for astrophysics, solar physics, oceanography, biophysics, and simulation. 2D plotting via PGPLOT, PLPlot bindings; 3D via GL." row="25" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="26,0: r" verbatim="R" row="26" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,1: r foundation" verbatim="R Foundation" row="26" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,2: 1997" verbatim="1997" row="26" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,3: 1997" verbatim="1997" row="26" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,4: 2.15.3 / march 01, 2013" verbatim="2.15.3 / March 01, 2013" row="26" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,5: free" verbatim="Free" row="26" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,6: gpl" verbatim="GPL" row="26" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,7: primarily for statistics, but there are many inter" verbatim="Primarily for statistics, but there are many interfaces to open-source numerical software" row="26" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="27,0: sage" verbatim="Sage" row="27" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,1: william stein" verbatim="William Stein" row="27" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,2: " verbatim="" row="27" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,3: 2005" verbatim="2005" row="27" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,4: 6.1.1 (4&#xa0;february 2014; 2 months ago)" verbatim="6.1.1 (4&#xa0;February 2014; 2 months ago)" row="27" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,5: free" verbatim="Free" row="27" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,6: gpl" verbatim="GPL" row="27" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,7: programmable, includes computer algebra, 2d+3d plo" verbatim="Programmable, includes computer algebra, 2D+3D plotting. Interfaces to many open-source software. Web based interface HTTP or HTTPS" row="27" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="28,0: s-lang" verbatim="S-Lang" row="28" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,1: john e. davis" verbatim="John E. Davis" row="28" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,2: " verbatim="" row="28" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,3: 1992" verbatim="1992" row="28" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,4: 2.2.0 / 2009" verbatim="2.2.0 / 2009" row="28" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,5: free" verbatim="Free" row="28" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,6: gpl, artistic license (1.x only)" verbatim="GPL, Artistic License (1.x only)" row="28" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,7: available as a standalone (slsh) and embedded inte" verbatim="Available as a standalone (slsh) and embedded interpreter (jed, slrn, ...)" row="28" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,0: scilab" verbatim="Scilab" row="29" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,1: scilab enterprises was:inria" verbatim="Scilab Enterprises Was:Inria" row="29" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,2: 1990" verbatim="1990" row="29" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,3: 1994" verbatim="1994" row="29" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,4: 5.4.1 / april 2, 2013" verbatim="5.4.1 / April 2, 2013" row="29" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,5: free" verbatim="Free" row="29" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,6: cecill license" verbatim="CeCILL license" row="29" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,7: open source, community supported. programmable, di" verbatim="Open source, community supported. Programmable, direct support of 2D+3D plotting. Interfaces to many other software packages. Interfacing to external modules written in C, Java, Python or other languages. Language syntax similar to MATLAB. Used for numerical computing in engineering and physics." row="29" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="30,0: simplexnumerica" verbatim="SimplexNumerica" row="30" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,1: dipl.-phys.-ing. ralf wirtz" verbatim="Dipl.-Phys.-Ing. Ralf Wirtz" row="30" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,2: " verbatim="" row="30" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,3: 1986" verbatim="1986" row="30" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,4: 9.0 / 2011" verbatim="9.0 / 2011" row="30" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,5: free" verbatim="Free" row="30" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,6: proprietary" verbatim="Proprietary" row="30" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,7: interactive graphics, 2d/3d render engine, used fo" verbatim="interactive graphics, 2D/3D render engine, used for science and engineering, Excel im-/export." row="30" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="31,0: sysquake" verbatim="Sysquake" row="31" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,1: calerga" verbatim="Calerga" row="31" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,2: " verbatim="" row="31" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,3: 1998" verbatim="1998" row="31" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,4: 5.0 / 2013" verbatim="5.0 / 2013" row="31" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,5: free / $2500 (pro, commercial) / $1000 (pro, acade" verbatim="free / $2500 (Pro, commercial) / $1000 (Pro, academic)" row="31" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,6: proprietary" verbatim="Proprietary" row="31" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,7: interactive graphics" verbatim="interactive graphics" row="31" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="32,0: tk solver" verbatim="TK Solver" row="32" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,1: universal technical systems, inc." verbatim="Universal Technical Systems, Inc." row="32" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,2: late 1970s" verbatim="late 1970s" row="32" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,3: 1982" verbatim="1982" row="32" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,4: 5.0.141 / 2011" verbatim="5.0.141 / 2011" row="32" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,5: $399 commercial / $49 (student)" verbatim="$399 commercial / $49 (student)" row="32" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,6: proprietary" verbatim="Proprietary" row="32" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,7: numerical computation and rule-based application d" verbatim="Numerical computation and rule-based application development" row="32" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="33,0: vcmaster" verbatim="Vcmaster" row="33" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,1: veith christoph gmbh" verbatim="Veith Christoph GmbH" row="33" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,2: 1996" verbatim="1996" row="33" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,3: ?" verbatim="?" row="33" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,4: 2012 (2012.05)" verbatim="2012 (2012.05)" row="33" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,5: &#x20ac;800, free student version" verbatim="&#x20ac;800, free student version" row="33" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,6: proprietary" verbatim="Proprietary" row="33" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,7: documentation and calculation program" verbatim="documentation and calculation program" row="33" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="34,0: vissim" verbatim="VisSim" row="34" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,1: visual solutions" verbatim="Visual Solutions" row="34" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,2: " verbatim="" row="34" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,3: 1989" verbatim="1989" row="34" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,4: 7.0a / 2008" verbatim="7.0a / 2008" row="34" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,5: $495-$2800 (commercial) free view only version $50" verbatim="$495-$2800 (commercial)&#xA;free view only version&#xA;$50-$250/free v3.0 (academic)" row="34" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,6: proprietary" verbatim="Proprietary" row="34" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,7: visual language for simulation and model based des" verbatim="Visual Language for simulation and Model Based Design. Used in business, science and engineering. Performs complex scalar or matrix based ODE solving with parametric optimization. Has 2D and 3D plotting, 3D animation, and state transition built in." row="34" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="35,0: yorick" verbatim="Yorick" row="35" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,1: n/a" verbatim="n/a" row="35" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,2: n/a" verbatim="n/a" row="35" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,3: n/a" verbatim="n/a" row="35" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,4: 2.1.06 / 17 april 2010" verbatim="2.1.06 / 17 April 2010" row="35" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,5: free" verbatim="Free" row="35" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,6: gpl" verbatim="GPL" row="35" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,7: open source. programmable, callable 2d+3d plotting" verbatim="Open source. Programmable, callable 2D+3D plotting. Language syntax similar to C. Interfacing to other software packages via C calls." row="35" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="36,0: sas" verbatim="SAS" row="36" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,1: " verbatim="" row="36" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,2: " verbatim="" row="36" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,3: " verbatim="" row="36" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,4: " verbatim="" row="36" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,5: " verbatim="" row="36" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,6: proprietary" verbatim="Proprietary" row="36" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,7: " verbatim="" row="36" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="37,0: spss" verbatim="SPSS" row="37" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,1: " verbatim="" row="37" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,2: " verbatim="" row="37" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,3: " verbatim="" row="37" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,4: " verbatim="" row="37" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,5: " verbatim="" row="37" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,6: proprietary" verbatim="Proprietary" row="37" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,7: " verbatim="" row="37" rowspan="1" column="7" colspan="1"/>
+  </matrices>
+  <matrices name="Operating system support">
+    <cells xsi:type="pcmmm:Header" name="0,0: " verbatim="" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: windows" verbatim="Windows" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: os x" verbatim="OS X" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: linux" verbatim="Linux" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: bsd" verbatim="BSD" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: unix" verbatim="Unix" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: dos" verbatim="DOS" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: android" verbatim="Android" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: admb" verbatim="ADMB" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: yes" verbatim="Yes" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: yes" verbatim="Yes" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: no" verbatim="No" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: no" verbatim="No" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: no" verbatim="No" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: no" verbatim="No" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: ch" verbatim="Ch" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: yes" verbatim="Yes" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: yes" verbatim="Yes" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: yes" verbatim="Yes" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: yes" verbatim="Yes" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: no" verbatim="No" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: no" verbatim="No" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: dyalog apl" verbatim="Dyalog APL" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: yes" verbatim="Yes" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: no" verbatim="No" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: yes" verbatim="Yes" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: no" verbatim="No" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: yes" verbatim="Yes" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: no" verbatim="No" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: no" verbatim="No" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: dadisp" verbatim="DADiSP" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: yes" verbatim="Yes" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: no" verbatim="No" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: no" verbatim="No" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: no" verbatim="No" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: yes" verbatim="Yes" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: no" verbatim="No" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: no" verbatim="No" row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: euler math toolbox" verbatim="Euler Math Toolbox" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: yes" verbatim="Yes" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: no" verbatim="No" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: yes" verbatim="Yes" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: no" verbatim="No" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: no" verbatim="No" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: no" verbatim="No" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: no" verbatim="No" row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: freemat" verbatim="FreeMat" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: yes" verbatim="Yes" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: yes" verbatim="Yes" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: yes" verbatim="Yes" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: yes" verbatim="Yes" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: yes" verbatim="Yes" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: no" verbatim="No" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: no" verbatim="No" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: gauss" verbatim="GAUSS" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: yes" verbatim="Yes" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: yes" verbatim="Yes" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: yes" verbatim="Yes" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: no" verbatim="No" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: yes" verbatim="Yes" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: no" verbatim="No" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: no" verbatim="No" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: igor pro" verbatim="IGOR Pro" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: yes" verbatim="Yes" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: yes" verbatim="Yes" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: no" verbatim="No" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: no" verbatim="No" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: no" verbatim="No" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: no" verbatim="No" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: no" verbatim="No" row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: scavis" verbatim="SCaViS" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: yes" verbatim="Yes" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: yes" verbatim="Yes" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: yes" verbatim="Yes" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: yes" verbatim="Yes" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: yes" verbatim="Yes" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: no" verbatim="No" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: yes" verbatim="Yes" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: labview" verbatim="LabVIEW" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: yes" verbatim="Yes" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: yes" verbatim="Yes" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: yes" verbatim="Yes" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: no" verbatim="No" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: yes" verbatim="Yes" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: no" verbatim="No" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: no" verbatim="No" row="10" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: maple" verbatim="Maple" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: yes" verbatim="Yes" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: yes" verbatim="Yes" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: yes" verbatim="Yes" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: no" verbatim="No" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: yes" verbatim="Yes" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: no" verbatim="No" row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,7: no" verbatim="No" row="11" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: mathematica" verbatim="Mathematica" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: yes" verbatim="Yes" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: yes" verbatim="Yes" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: yes" verbatim="Yes" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: yes" verbatim="Yes" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: yes" verbatim="Yes" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,6: no" verbatim="No" row="12" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,7: no" verbatim="No" row="12" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: matlab" verbatim="MATLAB" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: yes" verbatim="Yes" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: yes" verbatim="Yes" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: yes" verbatim="Yes" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: yes" verbatim="Yes" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: yes" verbatim="Yes" row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: no" verbatim="No" row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,7: yes" verbatim="Yes" row="13" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: gnu data language" verbatim="GNU Data Language" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: no" verbatim="No" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: yes" verbatim="Yes" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: yes" verbatim="Yes" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: yes" verbatim="Yes" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: yes" verbatim="Yes" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: no" verbatim="No" row="14" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,7: no" verbatim="No" row="14" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: gnu octave" verbatim="GNU Octave" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: yes" verbatim="Yes" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: yes" verbatim="Yes" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: yes" verbatim="Yes" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: yes" verbatim="Yes" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: yes" verbatim="Yes" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,6: yes" verbatim="Yes" row="15" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,7: yes" verbatim="Yes" row="15" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: origin" verbatim="Origin" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: yes" verbatim="Yes" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: no" verbatim="No" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: no" verbatim="No" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: no" verbatim="No" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: no" verbatim="No" row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,6: no" verbatim="No" row="16" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,7: no" verbatim="No" row="16" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: perl data language" verbatim="Perl Data Language" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: yes" verbatim="Yes" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: yes" verbatim="Yes" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: yes" verbatim="Yes" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: yes" verbatim="Yes" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,5: yes" verbatim="Yes" row="17" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,6: yes" verbatim="Yes" row="17" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,7: no" verbatim="No" row="17" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="18,0: r" verbatim="R" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: yes" verbatim="Yes" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: yes" verbatim="Yes" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: yes" verbatim="Yes" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: yes" verbatim="Yes" row="18" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,5: yes" verbatim="Yes" row="18" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,6: no" verbatim="No" row="18" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,7: no" verbatim="No" row="18" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="19,0: sage" verbatim="Sage" row="19" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: no" verbatim="No" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: yes" verbatim="Yes" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: yes" verbatim="Yes" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: no" verbatim="No" row="19" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,5: yes" verbatim="Yes" row="19" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,6: no" verbatim="No" row="19" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,7: no" verbatim="No" row="19" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="20,0: s-lang" verbatim="S-Lang" row="20" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,1: yes" verbatim="Yes" row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,2: yes" verbatim="Yes" row="20" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,3: yes" verbatim="Yes" row="20" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,4: yes" verbatim="Yes" row="20" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,5: yes" verbatim="Yes" row="20" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,6: yes" verbatim="Yes" row="20" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,7: no" verbatim="No" row="20" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="21,0: scilab" verbatim="Scilab" row="21" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,1: yes" verbatim="Yes" row="21" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,2: yes" verbatim="Yes" row="21" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,3: yes" verbatim="Yes" row="21" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,4: yes" verbatim="Yes" row="21" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,5: yes" verbatim="Yes" row="21" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,6: yes" verbatim="Yes" row="21" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,7: no" verbatim="No" row="21" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="22,0: simplexnumerica" verbatim="SimplexNumerica" row="22" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,1: yes" verbatim="Yes" row="22" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,2: no" verbatim="No" row="22" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,3: no" verbatim="No" row="22" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,4: no" verbatim="No" row="22" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,5: no" verbatim="No" row="22" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,6: no" verbatim="No" row="22" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,7: no" verbatim="No" row="22" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="23,0: sysquake" verbatim="Sysquake" row="23" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,1: yes" verbatim="Yes" row="23" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,2: yes" verbatim="Yes" row="23" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,3: yes" verbatim="Yes" row="23" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,4: no" verbatim="No" row="23" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,5: no" verbatim="No" row="23" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,6: no" verbatim="No" row="23" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,7: no" verbatim="No" row="23" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="24,0: tk solver" verbatim="TK Solver" row="24" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,1: yes" verbatim="Yes" row="24" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,2: no" verbatim="No" row="24" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,3: no" verbatim="No" row="24" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,4: no" verbatim="No" row="24" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,5: no" verbatim="No" row="24" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,6: no" verbatim="No" row="24" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,7: no" verbatim="No" row="24" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="25,0: the unscrambler" verbatim="The Unscrambler" row="25" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,1: yes" verbatim="Yes" row="25" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,2: no" verbatim="No" row="25" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,3: no" verbatim="No" row="25" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,4: no" verbatim="No" row="25" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,5: no" verbatim="No" row="25" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,6: no" verbatim="No" row="25" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,7: no" verbatim="No" row="25" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="26,0: vissim" verbatim="VisSim" row="26" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,1: yes" verbatim="Yes" row="26" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,2: yes" verbatim="Yes" row="26" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,3: yes" verbatim="Yes" row="26" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,4: no" verbatim="No" row="26" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,5: yes" verbatim="Yes" row="26" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,6: no" verbatim="No" row="26" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,7: no" verbatim="No" row="26" rowspan="1" column="7" colspan="1"/>
+  </matrices>
+  <matrices name="Language features">
+    <cells xsi:type="pcmmm:Extra" name="0,0: basic system capabilities" verbatim="basic system capabilities" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: official or officially supported extensions and li" verbatim="official or officially supported extensions and libraries" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: third-party software component or not supported" verbatim="third-party software component or not supported" row="2" rowspan="1" colspan="1"/>
+  </matrices>
+  <matrices name="Language features">
+    <cells xsi:type="pcmmm:Extra" name="0,0: " verbatim="" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: standalone executable creation support" verbatim="Standalone executable creation support" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: symbolic computation support" verbatim="Symbolic computation support" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: oop support" verbatim="OOP support" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: gui creation support" verbatim="GUI creation support" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: multi-dimensional arrays as primitive data type" verbatim="Multi-dimensional arrays as primitive data type" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: centralized extension library website" verbatim="Centralized extension library website" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: can call code in other languages" verbatim="Can call code in other languages" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: can be called from other languages" verbatim="Can be called from other languages" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="0,9: .net, java, excel" verbatim=".NET, Java, Excel" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: dyalog apl" verbatim="Dyalog APL" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: yes" verbatim="Yes" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: yes" verbatim="Yes" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: win32, .net, wpf, html/js" verbatim="Win32, .NET, WPF, HTML/JS" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: yes" verbatim="Yes" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: yes" verbatim="Yes" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: com, .net, webservices, shared libraries, dll, nag" verbatim="COM, .NET, WebServices, Shared Libraries, DLL, NAG, R, JavaScript" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,8: com, .net, webservices" verbatim="COM, .NET, WebServices" row="1" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,9: matlab" verbatim="MATLAB" row="1" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,10: with extension" verbatim="with extension" row="1" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,11: with extension library" verbatim="with extension library" row="1" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,12: yes" verbatim="Yes" row="1" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,13: yes" verbatim="Yes" row="1" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,14: yes" verbatim="Yes" row="1" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,15: yes" verbatim="Yes" row="1" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,16: mpmath" verbatim="mpmath" row="1" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,17: no" verbatim="No" row="1" rowspan="1" column="17" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,18: works with sage and sympy" verbatim="works with Sage and SymPy" row="1" rowspan="1" column="18" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,19: yes" verbatim="Yes" row="1" rowspan="1" column="19" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,20: no" verbatim="No" row="1" rowspan="1" column="20" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,21: yes" verbatim="Yes" row="1" rowspan="1" column="21" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,22: no" verbatim="No" row="1" rowspan="1" column="22" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,23: yes (any language that can be called from python)" verbatim="Yes (any language that can be called from Python)" row="1" rowspan="1" column="23" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,24: yes (any language that can call python)" verbatim="Yes (any language that can call Python)" row="1" rowspan="1" column="24" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,25: sage" verbatim="Sage" row="1" rowspan="1" column="25" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,26: no" verbatim="No" row="1" rowspan="1" column="26" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,27: yes" verbatim="Yes" row="1" rowspan="1" column="27" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,28: yes" verbatim="Yes" row="1" rowspan="1" column="28" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,29: no" verbatim="No" row="1" rowspan="1" column="29" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,30: yes" verbatim="Yes" row="1" rowspan="1" column="30" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,31: yes" verbatim="Yes" row="1" rowspan="1" column="31" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,32: many languages" verbatim="Many languages" row="1" rowspan="1" column="32" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,33: yes (any language that can call python)" verbatim="Yes (any language that can call Python)" row="1" rowspan="1" column="33" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: j" verbatim="J" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: no" verbatim="No" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: yes" verbatim="Yes" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: yes" verbatim="Yes" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: yes" verbatim="Yes" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: yes" verbatim="Yes" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: javascript" verbatim="Javascript" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: javascript" verbatim="Javascript" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,9: gnu data language" verbatim="GNU Data Language" row="2" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,10: no" verbatim="No" row="2" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,11: no" verbatim="No" row="2" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,12: yes" verbatim="Yes" row="2" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,13: gui widgets since v.0.9 but still incomplete" verbatim="GUI Widgets since v.0.9 but still incomplete" row="2" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,14: yes" verbatim="Yes" row="2" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,15: no" verbatim="No" row="2" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,16: c, python" verbatim="C, Python" row="2" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,17: python" verbatim="Python" row="2" rowspan="1" column="17" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,18: scavis" verbatim="SCaVis" row="2" rowspan="1" column="18" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,19: yes" verbatim="Yes" row="2" rowspan="1" column="19" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,20: yes" verbatim="Yes" row="2" rowspan="1" column="20" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,21: yes" verbatim="Yes" row="2" rowspan="1" column="21" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,22: yes" verbatim="Yes" row="2" rowspan="1" column="22" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,23: yes" verbatim="Yes" row="2" rowspan="1" column="23" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,24: yes" verbatim="Yes" row="2" rowspan="1" column="24" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,25: java" verbatim="Java" row="2" rowspan="1" column="25" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,26: yes (any language that can call java)" verbatim="Yes (any language that can call Java)" row="2" rowspan="1" column="26" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: maple" verbatim="Maple" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: no" verbatim="No" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: yes" verbatim="Yes" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: yes" verbatim="Yes" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: yes" verbatim="Yes" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: yes" verbatim="Yes" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: yes" verbatim="Yes" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: c, c#, fortran" verbatim="C, C#, Fortran" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: matlab, excel, visualbasic, java, and c" verbatim="MATLAB, Excel, VisualBasic, Java, and C" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,9: gnu octave" verbatim="GNU Octave" row="3" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,10: yes with mkoctfile" verbatim="Yes with mkoctfile" row="3" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,11: only with ginac extension" verbatim="only with GiNaC extension" row="3" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,12: yes" verbatim="Yes" row="3" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,13: gui octave code can be used" verbatim="GUI Octave code can be used" row="3" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,14: yes" verbatim="Yes" row="3" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,15: yes" verbatim="Yes" row="3" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,16: c++, fortran, perl, tcl" verbatim="C++, FORTRAN, Perl, Tcl" row="3" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,17: java, perl, c++" verbatim="Java, Perl, C++" row="3" rowspan="1" column="17" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,18: tk solver" verbatim="TK Solver" row="3" rowspan="1" column="18" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,19: with extension" verbatim="with extension" row="3" rowspan="1" column="19" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,20: no" verbatim="No" row="3" rowspan="1" column="20" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,21: yes" verbatim="Yes" row="3" rowspan="1" column="21" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,22: with extension" verbatim="with extension" row="3" rowspan="1" column="22" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,23: yes" verbatim="Yes" row="3" rowspan="1" column="23" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,24: yes" verbatim="Yes" row="3" rowspan="1" column="24" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,25: .net excel" verbatim=".NET Excel" row="3" rowspan="1" column="25" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: mathematica" verbatim="Mathematica" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: yes" verbatim="Yes" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: yes" verbatim="Yes" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: yes" verbatim="Yes" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: yes" verbatim="Yes" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: yes" verbatim="Yes" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: yes" verbatim="Yes" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: java, .net, c++, fortran, cuda, opencl, r" verbatim="Java, .NET, C++, FORTRAN, CUDA, OpenCL, R" row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,8: pdl" verbatim="PDL" row="4" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,9: yes" verbatim="Yes" row="4" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,10: no" verbatim="No" row="4" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,11: yes" verbatim="Yes" row="4" rowspan="1" column="11" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,12: yes" verbatim="Yes" row="4" rowspan="1" column="12" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,13: yes" verbatim="Yes" row="4" rowspan="1" column="13" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,14: yes" verbatim="Yes" row="4" rowspan="1" column="14" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,15: c via perlxs; c, python, f77, etc. via inline" verbatim="C via perlXS; C, Python, F77, etc. via Inline" row="4" rowspan="1" column="15" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,16: perl, c" verbatim="Perl, C" row="4" rowspan="1" column="16" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: r" verbatim="R" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: no" verbatim="No" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: no" verbatim="No" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: yes" verbatim="Yes" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: no" verbatim="No" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: yes" verbatim="Yes" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: yes" verbatim="Yes" row="5" rowspan="1" column="6" colspan="1"/>
+  </matrices>
+  <matrices name="Language features">
+    <cells xsi:type="pcmmm:Extra" name="0,0: java, .net, c++" verbatim="Java, .NET, C++" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: excel, labview" verbatim="Excel, LabVIEW" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: haskell, applescript, racket, visual basic, python" verbatim="Haskell, AppleScript, Racket, Visual Basic, PythonClojure MATLAB" row="2" rowspan="1" colspan="1"/>
+  </matrices>
+  <matrices name="Language features">
+    <cells xsi:type="pcmmm:Extra" name="0,0: through mex files: c, c++, fortran. also compiled " verbatim="Through MEX files: C, C++, FORTRAN. Also compiled Java and ActiveX components." rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: mathematica" verbatim="Mathematica" row="1" rowspan="1" colspan="1"/>
+  </matrices>
+  <matrices name="Language features">
+    <cells xsi:type="pcmmm:Extra" name="0,0: c, c++, fortran" verbatim="C, C++, FORTRAN" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: matlab" verbatim="MATLAB" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: python" verbatim="Python" row="2" rowspan="1" colspan="1"/>
+  </matrices>
+  <matrices name="Language features">
+    <cells xsi:type="pcmmm:Extra" name="0,0: excel" verbatim="Excel" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: python" verbatim="Python" row="1" rowspan="1" colspan="1"/>
+  </matrices>
+  <matrices name="General">
+    <cells xsi:type="pcmmm:Header" name="0,0: " verbatim="" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: creator" verbatim="Creator" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: language" verbatim="Language" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: first public release" verbatim="First public release" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: latest stable version" verbatim="Latest stable version" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: cost (usd)" verbatim="Cost (USD)" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: license" verbatim="License" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: notes" verbatim="Notes" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: alglib" verbatim="ALGLIB" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: sergey bochkanov" verbatim="Sergey Bochkanov" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: c++, c#, freepascal, vba" verbatim="C++, C#, FreePascal, VBA" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: 2006" verbatim="2006" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: 2.6.0 / 06.2010" verbatim="2.6.0 / 06.2010" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: free" verbatim="Free" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: gpl" verbatim="GPL" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: general purpose numerical analysis library. uses a" verbatim="General purpose numerical analysis library. Uses automatic code generation to support several programming languages." row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: gnu scientific library" verbatim="GNU Scientific Library" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: gnu project" verbatim="GNU Project" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: c" verbatim="C" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: 1996" verbatim="1996" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: 1.14 / 03.2010" verbatim="1.14 / 03.2010" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: free" verbatim="Free" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: gpl" verbatim="GPL" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: general purpose numerical analysis library. target" verbatim="General purpose numerical analysis library. Targets GNU/Linux, can be built on almost any *nix OS with Ansi C compiler." row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: ilnumerics.net" verbatim="ILNumerics.Net" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: h. kutschbach" verbatim="H. Kutschbach" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: c#" verbatim="C#" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: 2007" verbatim="2007" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: 1.3.14 / 08.2008" verbatim="1.3.14 / 08.2008" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: free" verbatim="Free" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: lgpl" verbatim="LGPL" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: aims .net/mono, 2d/3d plottings (beta)" verbatim="aims .Net/mono, 2D/3D plottings (beta)" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: imsl numerical libraries" verbatim="IMSL Numerical Libraries" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: rogue wave software" verbatim="Rogue Wave Software" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: c, java, c#, fortran, python" verbatim="C, Java, C#, Fortran, Python" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: 1970" verbatim="1970" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: many components" verbatim="many components" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: not free" verbatim="Not free" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: proprietary" verbatim="Proprietary" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: general purpose numerical analysis library." verbatim="General purpose numerical analysis library." row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: math.net numerics" verbatim="Math.NET Numerics" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: c. r&#xfc;egg, m. cuda, et al." verbatim="C. R&#xfc;egg, M. Cuda, et al." row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: c#, f#, c" verbatim="C#, F#, C" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: 2009" verbatim="2009" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: 2.6.0 / 07.2013" verbatim="2.6.0 / 07.2013" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: free" verbatim="Free" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: mit/x11" verbatim="MIT/X11" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: general purpose numerical analysis and statistics " verbatim="General purpose numerical analysis and statistics library for the .NET Framework and Mono, with optional support for native providers." row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: nag numerical library" verbatim="NAG Numerical Library" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: the numerical algorithms group" verbatim="The Numerical Algorithms Group" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: c, fortran" verbatim="C, Fortran" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: 1971" verbatim="1971" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: many components" verbatim="many components" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: not free" verbatim="Not free" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: proprietary" verbatim="Proprietary" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: general purpose numerical analysis library." verbatim="General purpose numerical analysis library." row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: nmath" verbatim="NMath" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: centerspace software" verbatim="CenterSpace Software" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: c#" verbatim="C#" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: 2003" verbatim="2003" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: 5.0 / february 2011" verbatim="5.0 / February 2011" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: $995" verbatim="$995" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: proprietary" verbatim="Proprietary" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: math and statistical libraries for the .net framew" verbatim="Math and statistical libraries for the .NET Framework" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: ocamlmath" verbatim="ocamlmath" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: irem des pays de la loire" verbatim="IREM des Pays de la Loire" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: ocaml" verbatim="OCaml" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: 2011" verbatim="2011" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: 0.4 / 2013" verbatim="0.4 / 2013" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: free" verbatim="Free" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: lgpl" verbatim="LGPL" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: general purpose calculations either for compilatio" verbatim="General purpose calculations either for compilation or interactive use" row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: scavis" verbatim="SCaViS" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: jwork.org (s.chekanov)" verbatim="jwork.org (S.Chekanov)" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: java, android" verbatim="Java, Android" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: 2005" verbatim="2005" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: 2011" verbatim="2011" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: free" verbatim="Free" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: free for non-commercial use" verbatim="Free for non-commercial use" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: general numerical calculations, statistics and int" verbatim="General numerical calculations, statistics and interactive 2D/3D graphics for data and function presentation" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: scipy" verbatim="SciPy" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: enthought" verbatim="Enthought" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: python" verbatim="Python" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: 1995" verbatim="1995" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: 0.12.0 / 2013-04-07" verbatim="0.12.0 / 2013-04-07" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: free" verbatim="Free" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: bsd" verbatim="BSD" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: adds numerical programming capabilities to the pyt" verbatim="Adds numerical programming capabilities to the Python programming language. Related to Numpy, and therefore connected to the previous Numeric and Numarray packages for Python" row="10" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: armadillo" verbatim="Armadillo" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: nicta" verbatim="NICTA" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: c++" verbatim="C++" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: 2009" verbatim="2009" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: 3.900 / 2013" verbatim="3.900 / 2013" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: free" verbatim="Free" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: mpl" verbatim="MPL" row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,7: c++ template library for linear algebra; includes " verbatim="C++ template library for linear algebra; includes various decompositions and factorisations; syntax (API) is similar to MATLAB." row="11" rowspan="1" column="7" colspan="1"/>
+  </matrices>
+  <matrices name="Operating system support">
+    <cells xsi:type="pcmmm:Header" name="0,0: " verbatim="" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: windows" verbatim="Windows" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: os x" verbatim="OS X" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: linux" verbatim="Linux" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: bsd" verbatim="BSD" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: unix" verbatim="Unix" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: dos" verbatim="DOS" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: android" verbatim="Android" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: alglib" verbatim="ALGLIB" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: yes" verbatim="Yes" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: no" verbatim="No" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: no" verbatim="No" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: no" verbatim="No" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: no" verbatim="No" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: no" verbatim="No" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: gnu scientific library" verbatim="GNU Scientific Library" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: yes" verbatim="Yes" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: yes" verbatim="Yes" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: yes" verbatim="Yes" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: yes" verbatim="Yes" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: no" verbatim="No" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: no" verbatim="No" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: ilnumerics.net" verbatim="ILNumerics.Net" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: yes" verbatim="Yes" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: yes" verbatim="Yes" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: yes" verbatim="Yes" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: yes" verbatim="Yes" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: yes" verbatim="Yes" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: no" verbatim="No" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: no" verbatim="No" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: imsl numerical libraries" verbatim="IMSL Numerical Libraries" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: yes" verbatim="Yes" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: yes" verbatim="Yes" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: yes" verbatim="Yes" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: no" verbatim="No" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: yes" verbatim="Yes" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: no" verbatim="No" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: no" verbatim="No" row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: math.net numerics" verbatim="Math.NET Numerics" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: yes" verbatim="Yes" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: yes" verbatim="Yes" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: yes" verbatim="Yes" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: yes" verbatim="Yes" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: yes" verbatim="Yes" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: no" verbatim="No" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: no" verbatim="No" row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: nag numerical library" verbatim="NAG Numerical Library" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: yes" verbatim="Yes" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: yes" verbatim="Yes" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: yes" verbatim="Yes" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: no" verbatim="No" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: yes" verbatim="Yes" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: yes" verbatim="Yes" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: no" verbatim="No" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: nmath" verbatim="NMath" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: yes" verbatim="Yes" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: no" verbatim="No" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: no" verbatim="No" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: no" verbatim="No" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: no" verbatim="No" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: no" verbatim="No" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: no" verbatim="No" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: ocamlmath" verbatim="ocamlmath" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: ?" verbatim="?" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: ?" verbatim="?" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: yes" verbatim="Yes" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: yes" verbatim="Yes" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: ?" verbatim="?" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: ?" verbatim="?" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: ?" verbatim="?" row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: scavis" verbatim="SCaViS" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: yes" verbatim="Yes" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: yes" verbatim="Yes" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: yes" verbatim="Yes" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: yes" verbatim="Yes" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: yes" verbatim="Yes" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: no" verbatim="No" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: yes" verbatim="Yes" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: scipy (python packages)" verbatim="SciPy (Python packages)" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: yes" verbatim="Yes" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: yes" verbatim="Yes" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: yes" verbatim="Yes" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: yes" verbatim="Yes" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: yes" verbatim="Yes" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: yes" verbatim="Yes" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: no" verbatim="No" row="10" rowspan="1" column="7" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

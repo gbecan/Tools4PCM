@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm" name="Comparison_of_VoIP_software">
+  <matrices name="General softphone clients">
+    <cells xsi:type="pcmmm:Header" name="0,0: program" verbatim="Program" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: operating systems" verbatim="Operating systems" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: license" verbatim="License" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: costs" verbatim="Costs" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: protocols" verbatim="Protocols" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: codecs" verbatim="Codecs" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: encryption" verbatim="Encryption" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: max conference peers" verbatim="Max conference peers" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: other capabilities" verbatim="Other capabilities" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: latest release" verbatim="Latest release" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: aol instant messenger" verbatim="AOL Instant Messenger" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: mac os, windows" verbatim="Mac OS, Windows" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: proprietary" verbatim="Proprietary" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: free" verbatim="Free" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: sip (windows ver. only), rtp" verbatim="SIP (Windows ver. only), RTP" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: unknown" verbatim="Unknown" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: unknown" verbatim="Unknown" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: unknown" verbatim="Unknown" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,8: video, file transfer, pc to phone, phone to pc" verbatim="Video, file transfer, PC to phone, phone to PC" row="1" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,9: 8.0.7.1 (february&#xa0;4, 2014; 2 months ago)" verbatim="8.0.7.1 (February&#xa0;4, 2014; 2 months ago)" row="1" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: avaya application server 5300 soft client" verbatim="Avaya Application Server 5300 Soft Client" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: windows" verbatim="Windows" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: proprietary" verbatim="Proprietary" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: ?" verbatim="?" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: sip, rtp," verbatim="SIP, RTP," row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: unknown" verbatim="Unknown" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: tls, srtp" verbatim="TLS, SRTP" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: unknown" verbatim="Unknown" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: " verbatim="" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,9: 2.0 (2010)" verbatim="2.0 (2010)" row="2" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: blink" verbatim="Blink" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: linux, mac os, windows" verbatim="Linux, Mac OS, Windows" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: gpl" verbatim="GPL" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: free" verbatim="Free" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: ice, sip, msrp, rfb (vnc)" verbatim="ICE, SIP, MSRP, RFB (VNC)" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: opus, speex, g.722, gsm, ilbc, pcmu, pcma" verbatim="Opus, speex, G.722, GSM, iLBC, PCMU, PCMA" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: tls, srtp" verbatim="TLS, SRTP" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: unlimited" verbatim="Unlimited" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: im, file transfer, desktop sharing(only mac os), m" verbatim="IM, File Transfer, Desktop Sharing(only Mac OS), Multi-party conference, Wideband" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,9: 1.8.1 (april 20, 2012)" verbatim="1.8.1 (April 20, 2012)" row="3" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: bria by counterpath corporation" verbatim="Bria by CounterPath Corporation" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: windows, mac os, linux (voice calling only)" verbatim="Windows, Mac OS, Linux (Voice calling only)" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: proprietary" verbatim="Proprietary" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: no" verbatim="No" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: sip / simple, xmpp, stun, ice" verbatim="SIP / SIMPLE, XMPP, STUN, ICE" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: g.722 wideband, g.711, g.711, ilbc, g.729a, g.729," verbatim="G.722 wideband, G.711, G.711, iLBC, G.729a, G.729, H.263, H.264/MPEG-4 AVC, iLBC, Speex, SILK, GSM, VP8, H.264, Opus" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: tls, srtp" verbatim="TLS, SRTP" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: 6 party audio; 3 party video" verbatim="6 party audio; 3 party video" row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,8: voice and hd (1280 x 720p) video calling; multiple" verbatim="Voice and HD (1280 x 720p) Video calling; Multiple Account Integration; Address Book Support (Mac and Windows); Company Chat Rooms; USB Support; Troubleshooting Assistant; Workgroups; Call Recording and Conferencing" row="4" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,9: 3.4.3 (october 2012)" verbatim="3.4.3 (October 2012)" row="4" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: cisco ip communicator" verbatim="Cisco IP Communicator" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: windows, android" verbatim="Windows, Android" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: proprietary" verbatim="Proprietary" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: ?" verbatim="?" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: sccp (skinny), sip, tftp" verbatim="SCCP (Skinny), SIP, TFTP" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: g.722 wideband, g.711, g.711, ilbc, g.729a, g.729" verbatim="G.722 wideband, G.711, G.711, iLBC, G.729a, G.729" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: srtp" verbatim="SRTP" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: unknown" verbatim="Unknown" row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,8: call recording, silent monitoring, multiple lines " verbatim="Call Recording, Silent Monitoring, Multiple lines and directory numbers, Configurable speed dial, Calling name and number display, Call Waiting, Call Forward, Call Transfer, Three-Way Calling (conference), Call Park, Call Pickup, Redial, Hold, Barge, Callback, Extension Mobility, Message waiting indicator, iDivert, Meet Me conferencing, Group Pickup, Do Not Disturb" row="5" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,9: 7.0.6 (jan 2011)" verbatim="7.0.6 (Jan 2011)" row="5" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: ekiga" verbatim="Ekiga" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: linux, windows, opensolaris" verbatim="Linux, Windows, OpenSolaris" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: gpl" verbatim="GPL" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: free" verbatim="Free" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: sip, h.323, stun, zeroconf, xmpp, rtp" verbatim="SIP, H.323, STUN, Zeroconf, XMPP, RTP" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: h.263, h.264/mpeg-4 avc, theora, ilbc, speex, silk" verbatim="H.263, H.264/MPEG-4 AVC, Theora, iLBC, Speex, SILK, GSM, ..." row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: no" verbatim="No" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: unknown" verbatim="Unknown" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,8: video, im, ldap, call forwarding, call transfer, a" verbatim="Video, IM, LDAP, Call Forwarding, Call Transfer, Auto-answering, PC to phone, phone to PC, Multiple accounts, USP support, Message waiting indicator, SIMPLE-based presence etc." row="6" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,9: 4.0.1 (february&#xa0;21, 2013; 13 months ago)" verbatim="4.0.1 (February&#xa0;21, 2013; 13 months ago)" row="6" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: empathy" verbatim="Empathy" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: linux" verbatim="Linux" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: gpl" verbatim="GPL" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: free" verbatim="Free" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: sip, xmpp (jingle), ice (stun/turn), zeroconf" verbatim="SIP, XMPP (Jingle), ICE (STUN/TURN), Zeroconf" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: unknown" verbatim="Unknown" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: no" verbatim="No" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: unknown" verbatim="Unknown" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,8: im, multi-user a/v, collaborative applications" verbatim="IM, multi-user A/V,  collaborative applications" row="7" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,9: 3.12 (march&#xa0;26, 2014; 15 days ago)" verbatim="3.12 (March&#xa0;26, 2014; 15 days ago)" row="7" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: eyeball chat" verbatim="Eyeball Chat" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: windows" verbatim="Windows" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: proprietary" verbatim="Proprietary" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: free" verbatim="Free" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: sip, stun, ice, xmpp" verbatim="SIP, STUN, ICE, XMPP" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: unknown" verbatim="Unknown" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: yes" verbatim="Yes" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: 5" verbatim="5" row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,8: im, conferencing, voice, video and simple based pr" verbatim="IM, Conferencing, Voice, Video and SIMPLE based presence" row="8" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,9: windows 3.2 (2009)" verbatim="Windows 3.2 (2009)" row="8" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: eyebeam by counterpath corporation" verbatim="eyeBeam by CounterPath Corporation" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: windows" verbatim="Windows" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: proprietary" verbatim="Proprietary" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: ?" verbatim="?" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: sip / simple" verbatim="SIP / SIMPLE" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: unknown" verbatim="Unknown" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: tls, srtp" verbatim="TLS, SRTP" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: 6 party audio; 3 party video" verbatim="6 party audio; 3 party video" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,8: voice and video calling; im; import microsoft outl" verbatim="Voice and Video calling; IM; Import Microsoft Outlook Contacts; USB Support; Call Recording and Conferencing" row="9" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,9: 1.5.20.1 (march 2010)" verbatim="1.5.20.1 (March 2010)" row="9" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: gizmo5" verbatim="Gizmo5" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: linux, mac os x, windows, windows mobile phone, bl" verbatim="Linux, Mac OS X, Windows, Windows Mobile Phone, BlackBerry, Nokia, PDA Java" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: proprietary" verbatim="Proprietary" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: free" verbatim="Free" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: sip, xmpp" verbatim="SIP, XMPP" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: unknown" verbatim="Unknown" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: srtp" verbatim="SRTP" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: unknown" verbatim="Unknown" row="10" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,8: record calls, forward calls, msn im, windows live " verbatim="Record Calls, Forward Calls, MSN IM, Windows Live Talk, Google Talk, Talk with Yahoo, Messenger, XMPP" row="10" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,9: windows: 4.0.5.395 (23 sep 2009), mac os: 4.0.0.26" verbatim="Windows: 4.0.5.395 (23 Sep 2009), Mac OS: 4.0.0.269 (23 Sep 2009)" row="10" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: google+ hangouts" verbatim="Google+ Hangouts" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: linux, windows, mac os x, android, ios" verbatim="Linux, Windows, Mac OS X, Android, iOS" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: proprietary (using libjingle)" verbatim="Proprietary (using libjingle)" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: free" verbatim="Free" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: xmpp" verbatim="XMPP" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: unknown" verbatim="Unknown" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: srtp" verbatim="SRTP" row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,7: 10" verbatim="10" row="11" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,8: video, chat, screen sharing, with additional tools" verbatim="Video, chat, screen sharing, with additional tools available as &quot;Hangout Apps&quot;." row="11" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,9: google chrome web store extension 2013.626.1614.1 " verbatim="Google Chrome Web Store extension &#xA; 2013.626.1614.1 (July&#xa0;9, 2013; 8 months ago)" row="11" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: ibm sametime" verbatim="IBM Sametime" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: linux, mac os x, windows, mobile" verbatim="Linux, Mac OS X, Windows, mobile" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: proprietary" verbatim="Proprietary" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: ?" verbatim="?" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: sip, simple, t.120" verbatim="SIP, SIMPLE, T.120" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: h.323" verbatim="H.323" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,6: tls" verbatim="TLS" row="12" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,7: unknown" verbatim="Unknown" row="12" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,8: im, file transfer, voice, presence, server stored " verbatim="IM, File transfer, Voice, Presence, Server stored contact list, HTTP tunneling, plugins, embedable in Lotus Notes" row="12" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,9: 8.5.2 (08. may 2011)" verbatim="8.5.2 (08. May 2011)" row="12" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: icall" verbatim="iCall" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: linux, mac os x, windows, ios, android" verbatim="Linux, Mac OS X, Windows, iOS, Android" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: proprietary" verbatim="Proprietary" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: free" verbatim="Free" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: sip aim icq xmpp" verbatim="SIP AIM ICQ XMPP" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: speex, celt, webm" verbatim="Speex, CELT, WebM" row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: tls zrtp" verbatim="TLS ZRTP" row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,7: unlimited" verbatim="Unlimited" row="13" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,8: video, file transfer, pc to phone, phone to pc, im" verbatim="Video, file transfer, PC to phone, phone to PC, IM (MSN, AIM, ICQ, Yahoo!, XMPP, Google Talk), Voicemail" row="13" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,9: 7.1.522" verbatim="7.1.522" row="13" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: messages" verbatim="Messages" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: mac os x" verbatim="Mac OS X" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: proprietary" verbatim="Proprietary" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: ?" verbatim="?" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: sip aim icq xmpp" verbatim="SIP AIM ICQ XMPP" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: h263, h264" verbatim="H263, H264" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: unknown" verbatim="Unknown" row="14" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,7: unknown" verbatim="Unknown" row="14" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,8: integrated, pbx independent" verbatim="Integrated, PBX independent" row="14" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,9: 7.0 july&#xa0;25, 2012; 20 months ago" verbatim="7.0 July&#xa0;25, 2012; 20 months ago" row="14" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: jitsi" verbatim="Jitsi" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: linux, mac os, windows (all java supported)" verbatim="Linux, Mac OS, Windows (all java supported)" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: lgpl" verbatim="LGPL" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: free" verbatim="Free" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: sip/simple, xmpp/jingle stun ice, turn" verbatim="SIP/SIMPLE, XMPP/Jingle STUN ICE, TURN" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: silk, g.722, speex, opus, g.711 (pcmu/pcma), ilbc," verbatim="SILK, G.722, Speex, Opus, G.711 (PCMU/PCMA), iLBC, GSM, G.729, H.264, H.263" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,6: zrtp, srtp, tls" verbatim="ZRTP, SRTP, TLS" row="15" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,7: unknown" verbatim="Unknown" row="15" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,8: text messaging, audio/video telephony, ipv6 (often" verbatim="Text messaging, audio/video telephony, IPv6 (often broken, P2P not supported), call recording, 64-bit" row="15" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,9: 2.4 (build.4997) (january&#xa0;7, 2014; 3 months ago)" verbatim="2.4 (build.4997) (January&#xa0;7, 2014; 3 months ago)" row="15" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: kphone" verbatim="KPhone" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: linux (kde)" verbatim="Linux (KDE)" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: gpl" verbatim="GPL" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: free" verbatim="Free" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: sip, stun, naptr/srv" verbatim="SIP, STUN, NAPTR/SRV" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: unknown" verbatim="Unknown" row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,6: srtp" verbatim="SRTP" row="16" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,7: unknown" verbatim="Unknown" row="16" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,8: video, voice, im, external sessions, ipv6 support " verbatim="Video, voice, IM, external Sessions, IPv6 support for UDP" row="16" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,9: 1.2 (november 2008)" verbatim="1.2 (November 2008)" row="16" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: linphone" verbatim="Linphone" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: linux, windows, mac os, android, iphone, blackberr" verbatim="Linux, Windows, Mac OS, Android, iPhone, BlackBerry" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: gpl" verbatim="GPL" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: free" verbatim="Free" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: sip" verbatim="SIP" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,5: speex, g711, gsm, g.722; vp8 (webm), h263, mpeg4, " verbatim="Speex, G711, GSM, G.722; VP8 (WebM), H263, MPEG4, Theora and H264 (plugin)" row="17" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,6: tls, srtp, zrtp" verbatim="TLS, SRTP, ZRTP" row="17" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,7: unknown" verbatim="Unknown" row="17" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,8: video, im, stun, ipv6 (disables ipv4 support when " verbatim="Video, IM, STUN, IPv6 (disables IPv4 support when enabled, P2P supported only by version 3.5.1-2)" row="17" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,9: 3.6.0 (jun 12, 2013)" verbatim="3.6.0 (Jun 12, 2013)" row="17" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="18,0: microsip" verbatim="MicroSIP" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: windows" verbatim="Windows" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: gpl" verbatim="GPL" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: free" verbatim="Free" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: sip, stun, ice, simple" verbatim="SIP, STUN, ICE, SIMPLE" row="18" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,5: speex, ilbc, gsm, g.711, g.722, g.729, silk, linea" verbatim="Speex, iLBC, GSM, G.711, G.722, G.729, SILK, Linear PCM" row="18" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,6: tls, srtp" verbatim="TLS, SRTP" row="18" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,7: unknown" verbatim="Unknown" row="18" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,8: video, voice, im and presence" verbatim="Video, voice, IM and Presence" row="18" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,9: 3.3.36 (dec 17, 2013)" verbatim="3.3.36 (Dec 17, 2013)" row="18" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="19,0: mirial softphone (mirial s.u.r.l.)" verbatim="Mirial Softphone (Mirial s.u.r.l.)" row="19" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: windows 2000/xp/2003/vista/7 (including 64bit vers" verbatim="Windows 2000/XP/2003/Vista/7 (including 64bit versions), Mac OS X (x86)" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: proprietary" verbatim="Proprietary" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: ?" verbatim="?" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: sip, rtsp" verbatim="SIP, RTSP" row="19" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,5: h.323" verbatim="H.323" row="19" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,6: dtls-srtp" verbatim="DTLS-SRTP" row="19" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,7: unknown" verbatim="Unknown" row="19" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,8: h.264 full-hd 1080p video rx/tx, two independent l" verbatim="H.264 Full-HD 1080p video rx/tx, Two independent lines supporting Call Control and 3-Party videoconference in Continuous Presence, G.722.1/C wideband audio, Call recording/export, DV/HDMI/Component capture, Presentation (H.239, RFC-4796), Encryption, Far End Camera Control, GPU accel (D3D and OpenGL)" row="19" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,9: 7.0.24 (may 26, 2010)" verbatim="7.0.24 (May 26, 2010)" row="19" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="20,0: mumble" verbatim="Mumble" row="20" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,1: linux, mac os x, ios, windows, android" verbatim="Linux, Mac OS X, iOS, Windows, Android" row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,2: bsd" verbatim="BSD" row="20" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,3: free" verbatim="Free" row="20" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,4: unknown" verbatim="Unknown" row="20" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,5: celt, speex, opus" verbatim="CELT, Speex, Opus" row="20" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,6: tls and ocb-aes128" verbatim="TLS and OCB-AES128" row="20" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,7: no max (limited only by server bandwidth and memor" verbatim="No max (limited only by server bandwidth and memory)" row="20" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,8: chat with (limited) embedded html, automatic gain " verbatim="Chat with (limited) embedded HTML, Automatic Gain Control, Access Control Lists for user management, Customizable In-Game Overlay, Directional Audio, Plugin Support, Nested Channels, Echo cancellation, Logitech G15 support, Push-To-Talk" row="20" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,9: 1.2.4 (june 2013)" verbatim="1.2.4 (June 2013)" row="20" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="21,0: nymgo" verbatim="Nymgo" row="21" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,1: windows, android, ios" verbatim="Windows, Android, iOS" row="21" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,2: proprietary" verbatim="Proprietary" row="21" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,3: free" verbatim="Free" row="21" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,4: sip, rtp and rtcp" verbatim="SIP, RTP and RTCP" row="21" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,5: unknown" verbatim="Unknown" row="21" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,6: yes" verbatim="Yes" row="21" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,7: no" verbatim="No" row="21" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,8: address book integration, call recording/export, m" verbatim="Address Book integration, Call recording/export, Mute, On Hold, Caller ID definition" row="21" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,9: 4.2.9 (march 2013)" verbatim="4.2.9 (March 2013)" row="21" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="22,0: oovoo" verbatim="oovoo" row="22" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,1: mac os x, ios, windows, android" verbatim="Mac OS X, iOS, Windows, Android" row="22" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,2: proprietary" verbatim="Proprietary" row="22" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,3: free" verbatim="Free" row="22" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,4: sip, rtp and rtcp" verbatim="SIP, RTP and RTCP" row="22" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,5: unknown" verbatim="Unknown" row="22" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,6: yes" verbatim="Yes" row="22" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,7: no" verbatim="No" row="22" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,8: address book integration, call recording/export, m" verbatim="Address Book integration, Call recording/export, Mute, On Hold, Caller ID definition" row="22" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,9: 4.2.9 (march 2013)" verbatim="4.2.9 (March 2013)" row="22" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="23,0: nextiva" verbatim="Nextiva" row="23" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,1: mac os x, ios, windows, android," verbatim="Mac OS X, iOS, Windows, Android," row="23" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,2: proprietary" verbatim="Proprietary" row="23" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,3: free" verbatim="Free" row="23" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,4: sip" verbatim="SIP" row="23" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,5: g.711," verbatim="G.711," row="23" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,6: unknown" verbatim="Unknown" row="23" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,7: 4" verbatim="4" row="23" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,8: instant messaging, chat rooms, voice calling, ente" verbatim="Instant Messaging, Chat Rooms, Voice Calling, Enterprise Directory, Presence, Video Collaboration, Call Controls, Call Pulling, Call Pulling" row="23" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,9: 10.0.4.-3257 (jan 2014)" verbatim="10.0.4.-3257 (Jan 2014)" row="23" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="24,0: phoner" verbatim="Phoner" row="24" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,1: windows" verbatim="Windows" row="24" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,2: proprietary" verbatim="Proprietary" row="24" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,3: free" verbatim="Free" row="24" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,4: sip, tapi, capi" verbatim="SIP, TAPI, CAPI" row="24" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,5: unknown" verbatim="Unknown" row="24" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,6: tls, srtp, zrtp" verbatim="TLS, SRTP, ZRTP" row="24" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,7: 8" verbatim="8" row="24" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,8: conferencing, call redirection, call recording" verbatim="Conferencing, call redirection, call recording" row="24" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,9: 2.87 (5&#xa0;march 2014; 36 days ago)" verbatim="2.87 (5&#xa0;March 2014; 36 days ago)" row="24" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="25,0: phonerlite" verbatim="PhonerLite" row="25" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,1: windows" verbatim="Windows" row="25" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,2: proprietary" verbatim="Proprietary" row="25" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,3: free" verbatim="Free" row="25" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,4: sip" verbatim="SIP" row="25" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,5: unknown" verbatim="Unknown" row="25" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,6: tls, srtp, zrtp" verbatim="TLS, SRTP, ZRTP" row="25" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,7: 8" verbatim="8" row="25" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,8: conferencing, call redirection, call recording" verbatim="Conferencing, call redirection, call recording" row="25" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="25,9: 2.14 (5&#xa0;march 2014; 36 days ago)" verbatim="2.14 (5&#xa0;March 2014; 36 days ago)" row="25" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="26,0: qutecom" verbatim="QuteCom" row="26" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,1: linux, mac os x, windows xp/2000" verbatim="Linux, Mac OS X, Windows XP/2000" row="26" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,2: gpl" verbatim="GPL" row="26" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,3: free" verbatim="Free" row="26" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,4: sip" verbatim="SIP" row="26" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,5: unknown" verbatim="Unknown" row="26" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,6: srtp, but key exchange via everbee key exchange wh" verbatim="SRTP, but key exchange via Everbee key Exchange which is not a Standard" row="26" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,7: unknown" verbatim="Unknown" row="26" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,8: video, im (msn, aim, icq, yahoo!, xmpp, google tal" verbatim="Video, IM (MSN, AIM, ICQ, Yahoo!, XMPP, Google Talk), voicemail, wengo to phone, conferencing." row="26" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="26,9: 2.2.1 (june&#xa0;22, 2011; 2 years ago)" verbatim="2.2.1 (June&#xa0;22, 2011; 2 years ago)" row="26" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="27,0: revation communicator" verbatim="Revation Communicator" row="27" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,1: windows 2000/xp/vista/7" verbatim="Windows 2000/XP/Vista/7" row="27" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,2: proprietary" verbatim="Proprietary" row="27" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,3: ?" verbatim="?" row="27" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,4: proprietary" verbatim="Proprietary" row="27" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,5: g.722, g.711, vp8, opus" verbatim="G.722, G.711, VP8, Opus" row="27" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,6: tls and srtp" verbatim="TLS and SRTP" row="27" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,7: no max (limited by server mixing services)" verbatim="No max (limited by server mixing services)" row="27" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,8: secure multi-party chat/instant messaging, presenc" verbatim="Secure Multi-Party Chat/Instant Messaging, Presence, VoIP, Video, File Transfer, Desktop Sharing" row="27" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="27,9: 6.3 (july 2013)" verbatim="6.3 (July 2013)" row="27" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="28,0: sflphone" verbatim="SFLphone" row="28" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,1: linux" verbatim="Linux" row="28" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,2: gpl3" verbatim="GPL3" row="28" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,3: free" verbatim="Free" row="28" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,4: sip, rtp, iax2, stun per account, srv" verbatim="SIP, RTP, IAX2, STUN per account, SRV" row="28" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,5: audio: opus, speex, g.722, g.711, gsm, vp8, g.729," verbatim="Audio: Opus, Speex, G.722, G.711, GSM, VP8, G.729, iLBC. Video: H.264, H.263, VP8, MPEG-4" row="28" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,6: voice encryption (srtp), signaling encryption (tls" verbatim="Voice encryption (SRTP), Signaling encryption (TLS), Multiple realms authentication mechanism" row="28" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,7: unknown" verbatim="Unknown" row="28" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,8: gnome/kde client, address book, multiple accounts," verbatim="Gnome/KDE client, address book, multiple accounts, unlimited number of calls, call transfer, call hold/unhold, call recording, Multi-way conferencing" row="28" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="28,9: 1.3.0 (january 2014)" verbatim="1.3.0 (January 2014)" row="28" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="29,0: sightspeed" verbatim="SightSpeed" row="29" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,1: mac os x, windows" verbatim="Mac OS X, Windows" row="29" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,2: proprietary" verbatim="Proprietary" row="29" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,3: free" verbatim="Free" row="29" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,4: sip, rtp, proprietary p2p protocol" verbatim="SIP, RTP, Proprietary P2P protocol" row="29" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,5: unknown" verbatim="Unknown" row="29" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,6: unknown" verbatim="Unknown" row="29" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,7: unknown" verbatim="Unknown" row="29" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,8: video, voicemail, phone in, phone out, multiparty " verbatim="Video, voicemail, phone in, phone out, multiparty calling, conference recording, text messaging, NAT traversal, video mail" row="29" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="29,9: 6.0 (2007)" verbatim="6.0 (2007)" row="29" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="30,0: skype" verbatim="Skype" row="30" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,1: linux, mac os x, windows 2000/xp/vista/7/mobile (n" verbatim="Linux, Mac OS X, Windows 2000/XP/Vista/7/Mobile (no longer supported), BREW, Windows Phone , Android, iPhone, PSP" row="30" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,2: proprietary" verbatim="Proprietary" row="30" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,3: free" verbatim="Free" row="30" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,4: proprietary p2p protocol" verbatim="Proprietary P2P protocol" row="30" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,5: silk" verbatim="SILK" row="30" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,6: yes, but see this article for more details in this" verbatim="Yes, but see this article for more details in this regard.(no longer secure)" row="30" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,7: 25 starting with version 3.6.0.216. 10 with 2.x" verbatim="25 starting with version 3.6.0.216. 10 with 2.x" row="30" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,8: conferencing, video, file transfer, voicemail, sky" verbatim="Conferencing, video, file transfer, voicemail, Skype to phone, phone to Skype, additional P2P extensions (games, whiteboard, etc...); depending on platform." row="30" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="30,9: " verbatim="" row="30" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="31,0: spikko" verbatim="Spikko" row="31" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,1: windows 2000/xp/vista/7/mobile, iphone," verbatim="Windows 2000/XP/Vista/7/Mobile, iPhone," row="31" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,2: proprietary" verbatim="Proprietary" row="31" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,3: free" verbatim="Free" row="31" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,4: sip" verbatim="SIP" row="31" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,5: unknown" verbatim="Unknown" row="31" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,6: yes" verbatim="Yes" row="31" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,7: 8" verbatim="8" row="31" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,8: conferencing, voicemail, pc to phone, phone to pc," verbatim="Conferencing,  voicemail, PC to phone, phone to PC, Free international phone numbers, address book integration;" row="31" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="31,9: dec 2010" verbatim="Dec 2010" row="31" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="32,0: teamviewer" verbatim="TeamViewer" row="32" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,1: linux, windows, mac os x, ios, android" verbatim="Linux, Windows, Mac OS X, iOS, Android" row="32" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,2: proprietary" verbatim="Proprietary" row="32" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,3: free (personal use only)" verbatim="Free (personal use only)" row="32" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,4: unknown" verbatim="Unknown" row="32" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,5: unknown" verbatim="Unknown" row="32" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,6: aes256" verbatim="AES256" row="32" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,7: unknown" verbatim="Unknown" row="32" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,8: unknown" verbatim="Unknown" row="32" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="32,9: &#xa0;&#xa0;list of releaseswindows (desktop app) 9.0.24482 " verbatim="&#xa0;&#xa0;List of releasesWindows (desktop app)&#xA;9.0.24482 (December&#xa0;5, 2013; 4 months ago) &#xA;Windows (Metro-style app)&#xA;9.0.23230.0 (November&#xa0;4, 2013; 5 months ago) &#xA;Linux&#xA;9.0.24147 (November&#xa0;27, 2013; 4 months ago) &#xA;OS X&#xA;9.0.24337 (December&#xa0;2, 2013; 4 months ago) &#xA;Android&#xA;9.0.1555 (November&#xa0;5, 2013; 5 months ago) &#xA;iOS&#xA;9.0.10520 (November&#xa0;4, 2013; 5 months ago) &#xA;Windows Phone&#xA;9.0.1.0 (November&#xa0;4, 2013; 5 months ago)" row="32" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="33,0: teamspeak" verbatim="TeamSpeak" row="33" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,1: linux, windows, mac os x, freebsd, android, ios" verbatim="Linux, Windows, Mac OS X, FreeBSD, Android, iOS" row="33" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,2: proprietary" verbatim="Proprietary" row="33" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,3: free" verbatim="Free" row="33" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,4: unknown" verbatim="Unknown" row="33" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,5: celt, speex, opus" verbatim="CELT, Speex, Opus" row="33" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,6: yes" verbatim="Yes" row="33" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,7: 32 unlicensed / 512 with non-profit license / 2000" verbatim="32 unlicensed / 512 with Non-Profit License / 2000" row="33" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,8: simultaneous server conferencing with tabs, 3d sou" verbatim="Simultaneous Server Conferencing with Tabs, 3D Sound Effects, Scalable Permissions System, Firewall Friendly File Transfers, In-Game Overlay for DirectX &amp; OpenGL Games, Global Public Server List, Plugin System" row="33" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="33,9: 3.0.11" verbatim="3.0.11" row="33" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="34,0: telephone" verbatim="Telephone" row="34" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,1: mac os x 10.5" verbatim="Mac OS X 10.5" row="34" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,2: bsd" verbatim="BSD" row="34" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,3: free" verbatim="Free" row="34" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,4: sip, stun, ice" verbatim="SIP, STUN, ICE" row="34" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,5: unknown" verbatim="Unknown" row="34" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,6: no" verbatim="No" row="34" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,7: unknown" verbatim="Unknown" row="34" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,8: address book integration" verbatim="Address Book integration" row="34" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="34,9: 1.0.4 (march&#xa0;6, 2012; 2 years ago)" verbatim="1.0.4 (March&#xa0;6, 2012; 2 years ago)" row="34" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="35,0: toktumi unlimited / line2 pro" verbatim="Toktumi Unlimited / Line2 Pro" row="35" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,1: windows xp/vista/7, mac os x, ios, android" verbatim="Windows XP/Vista/7, Mac OS X, iOS, Android" row="35" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,2: proprietary" verbatim="Proprietary" row="35" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,3: free" verbatim="Free" row="35" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,4: proprietary with sip core" verbatim="Proprietary with SIP core" row="35" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,5: unknown" verbatim="Unknown" row="35" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,6: unknown" verbatim="Unknown" row="35" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,7: 20" verbatim="20" row="35" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,8: conferencing, voicemail, caller id, call-waiting, " verbatim="Conferencing, voicemail, caller ID, call-waiting, address book integration; auto-attendant, call-forwarding" row="35" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="35,9: windows: august 2010 / os x: october 2010" verbatim="Windows: August 2010 / OS X: October 2010" row="35" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="36,0: tru app" verbatim="Tru App" row="36" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,1: windows 2000/xp/vista/7, mac os x, linux ios, andr" verbatim="Windows 2000/XP/Vista/7, Mac OS X, Linux&#xA;iOS, Android, Symbian, BlackBerry OS," row="36" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,2: proprietary" verbatim="Proprietary" row="36" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,3: free" verbatim="Free" row="36" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,4: sip, xmpp" verbatim="SIP, XMPP" row="36" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,5: unknown" verbatim="Unknown" row="36" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,6: unknown" verbatim="Unknown" row="36" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,7: unknown" verbatim="Unknown" row="36" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,8: chat, file transfer, voicemail, inbound numbers, i" verbatim="Chat, file transfer, voicemail, inbound numbers, integration with GTalk, Microsoft Live, Skype" row="36" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="36,9: " verbatim="" row="36" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="37,0: twinkle" verbatim="Twinkle" row="37" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,1: linux" verbatim="Linux" row="37" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,2: gpl" verbatim="GPL" row="37" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,3: free" verbatim="Free" row="37" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,4: sip" verbatim="SIP" row="37" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,5: unknown" verbatim="Unknown" row="37" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,6: srtp, zrtp" verbatim="SRTP, ZRTP" row="37" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,7: unknown" verbatim="Unknown" row="37" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,8: conferencing, chat, file transfer, firefox integra" verbatim="Conferencing, chat, file transfer, Firefox integration, call redirection, voicemail, support of VoIP-to-Phone services" row="37" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="37,9: 1.4.2 (february&#xa0;25, 2009; 5 years ago)" verbatim="1.4.2 (February&#xa0;25, 2009; 5 years ago)" row="37" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="38,0: vbuzzer" verbatim="Vbuzzer" row="38" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,1: windows 2000/xp/vista" verbatim="Windows 2000/XP/Vista" row="38" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,2: proprietary" verbatim="Proprietary" row="38" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,3: free" verbatim="Free" row="38" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,4: sip" verbatim="SIP" row="38" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,5: unknown" verbatim="Unknown" row="38" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,6: tls" verbatim="TLS" row="38" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,7: unknown" verbatim="Unknown" row="38" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,8: im (msn), voicemail, personalized voice greeting." verbatim="IM (MSN), voicemail, personalized voice greeting." row="38" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="38,9: 2.8.002" verbatim="2.8.002" row="38" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="39,0: ventrilo" verbatim="Ventrilo" row="39" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,1: mac os x, windows" verbatim="Mac OS X, Windows" row="39" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,2: proprietary" verbatim="Proprietary" row="39" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,3: free" verbatim="Free" row="39" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,4: unknown" verbatim="Unknown" row="39" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,5: unknown" verbatim="Unknown" row="39" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,6: no" verbatim="No" row="39" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,7: 8" verbatim="8" row="39" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,8: conferencing, chat, text-to-speech" verbatim="Conferencing, chat, text-to-speech" row="39" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="39,9: 3.0.8" verbatim="3.0.8" row="39" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="40,0: voice operator panel" verbatim="Voice Operator Panel" row="40" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,1: windows 2000/xp/vista" verbatim="Windows 2000/XP/Vista" row="40" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,2: proprietary" verbatim="Proprietary" row="40" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,3: ?" verbatim="?" row="40" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,4: sip, rtp" verbatim="SIP, RTP" row="40" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,5: unknown" verbatim="Unknown" row="40" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,6: unknown" verbatim="Unknown" row="40" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,7: unknown" verbatim="Unknown" row="40" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,8: call forwarding, call transfer, call recording, pr" verbatim="Call forwarding, Call transfer, Call recording, Presence, Outlook integration, Windows Messenger/MSN/Live integration, CRM, Built-in web browser &amp; e-mailer, LDAP, APS." row="40" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="40,9: 1.3.2" verbatim="1.3.2" row="40" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="41,0: x-lite" verbatim="X-Lite" row="41" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,1: mac os, windows, (linux)" verbatim="Mac OS, Windows, (Linux)" row="41" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,2: proprietary" verbatim="Proprietary" row="41" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,3: free" verbatim="Free" row="41" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,4: sip, stun, ice" verbatim="SIP, STUN, ICE" row="41" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,5: unknown" verbatim="Unknown" row="41" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,6: no" verbatim="No" row="41" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,7: unknown" verbatim="Unknown" row="41" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,8: im, single login account, for windows and mac also" verbatim="IM, single login account, for Windows and Mac also Conferencing, Video and SIMPLE based presence" row="41" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="41,9: windows and mac os: 5 (2012). linux: discontinued." verbatim="Windows and Mac OS: 5 (2012). Linux: Discontinued. Cannot transfer calls" row="41" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="42,0: yahoo! messenger" verbatim="Yahoo! Messenger" row="42" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,1: mac os (8, 9, x), windows, (linux/freebsd version " verbatim="Mac OS (8, 9, X), Windows, (Linux/FreeBSD version not VoIP capable)" row="42" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,2: proprietary" verbatim="Proprietary" row="42" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,3: free" verbatim="Free" row="42" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,4: sip (using tls) and rtp (media)" verbatim="SIP (using TLS) and RTP (media)" row="42" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,5: unknown" verbatim="Unknown" row="42" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,6: unknown" verbatim="Unknown" row="42" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,7: unknown" verbatim="Unknown" row="42" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,8: video, file transfer, pc to phone, phone to pc" verbatim="Video, file transfer, PC to phone, phone to PC" row="42" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="42,9: windows: 11.5.0.228 / may&#xa0;31, 2012; 21 months ago " verbatim="Windows: 11.5.0.228 / May&#xa0;31, 2012; 21 months ago&#xA; Mac: 3.0.1 / July&#xa0;20, 2011; 2 years ago&#xA; Linux: 1.0.6 / September&#xa0;2003; 10&#xa0;years ago&#xA; SunOS 5.7: 0.99.17-1 / September&#xa0;2003; 10&#xa0;years ago&#xA; Solaris 8: 1.0.4 / September&#xa0;2003; 10&#xa0;years ago&#xA; FreeBSD 4/5: 1.0.4 / September&#xa0;2003; 10&#xa0;years ago iOS: 2.2.6/ July&#xa0;12, 2012; 20 months ago" row="42" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="43,0: yate client" verbatim="Yate Client" row="43" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,1: linux, mac os, windows" verbatim="Linux, Mac OS, Windows" row="43" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,2: gpl" verbatim="GPL" row="43" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,3: free" verbatim="Free" row="43" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,4: sip, iax, xmpp, h.323" verbatim="SIP, IAX, XMPP, H.323" row="43" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,5: g.711, g.711, gsm 06.10, ilbc, speex, g.723, g.726" verbatim="G.711, G.711, GSM 06.10, iLBC, Speex, G.723, G.726, G.728, G.729" row="43" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,6: unknown" verbatim="Unknown" row="43" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,7: unknown" verbatim="Unknown" row="43" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,8: " verbatim="" row="43" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="43,9: 4.3 2013-01" verbatim="4.3 2013-01" row="43" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="44,0: zfone" verbatim="Zfone" row="44" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,1: linux, mac os x, windows" verbatim="Linux, Mac OS X, Windows" row="44" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,2: viewable source" verbatim="Viewable source" row="44" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,3: (includes time bomb provision)" verbatim="(includes time bomb provision)" row="44" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,4: sip, rtp" verbatim="SIP, RTP" row="44" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,5: unknown" verbatim="Unknown" row="44" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,6: srtp, zrtp" verbatim="SRTP, ZRTP" row="44" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,7: unknown" verbatim="Unknown" row="44" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,8: " verbatim="" row="44" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="44,9: beta 2008-09-04 (linux 0.9.224), (mac os 0.9.246)," verbatim="Beta 2008-09-04 (Linux 0.9.224), (Mac OS 0.9.246), (Windows 0.9.206)" row="44" rowspan="1" column="9" colspan="1"/>
+  </matrices>
+  <matrices name="Mobile phones">
+    <cells xsi:type="pcmmm:Header" name="0,0: program" verbatim="Program" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: operating systems" verbatim="Operating systems" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: license" verbatim="License" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: open source" verbatim="Open Source" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: protocols" verbatim="Protocols" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: codecs" verbatim="Codecs" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: encryption" verbatim="Encryption" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: other capabilities" verbatim="Other capabilities" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: latest release" verbatim="Latest release" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: acrobits groundwire" verbatim="Acrobits Groundwire" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: android v2.2+, ios v4.3+" verbatim="Android v2.2+, iOS v4.3+" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: proprietary" verbatim="Proprietary" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: no" verbatim="No" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: sip simple" verbatim="SIP SIMPLE" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: g.711, g.722, ilbc, gsm, g.729" verbatim="G.711, G.722, iLBC, GSM, G.729" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: tls, srtp, zrtp" verbatim="TLS, SRTP, ZRTP" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: groundwire voip over wi-fi or 3g, supports audio c" verbatim="Groundwire voip over Wi-Fi or 3G, supports audio codecs. Multi line, call conferencing, transfer and attended transfer, voicemail.iOS only - Push Notifications, video, number rewriting, address book matching, sms for betamax providers and pennytel" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,8: groundwire (ios) 2.4.5, groundwire (android) 3.21" verbatim="Groundwire (iOS) 2.4.5, Groundwire (Android) 3.21" row="1" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: acrobits softphone" verbatim="Acrobits Softphone" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: android v2.2+, ios v4.3+" verbatim="Android v2.2+, iOS v4.3+" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: proprietary" verbatim="Proprietary" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: no" verbatim="No" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: sip" verbatim="SIP" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: g.711, g.722, ilbc, gsm, g.729" verbatim="G.711, G.722, iLBC, GSM, G.729" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: tls, srtp, zrtp" verbatim="TLS, SRTP, ZRTP" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: voip over wi-fi or 3g ios only - push notification" verbatim="VOIP over Wi-Fi or 3G iOS only - Push Notifications, video, number rewriting, address book matching, sms for betamax providers and pennytel" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,8: acrobits softphone (ios) 5.2, acrobits softphone (" verbatim="Acrobits Softphone (iOS) 5.2, Acrobits Softphone (Android) 3.20" row="2" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: bria by counterpath corporation" verbatim="Bria by CounterPath Corporation" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: ios 4.3+, android v2.2+" verbatim="iOS 4.3+, Android v2.2+" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: proprietary" verbatim="Proprietary" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: no" verbatim="No" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: sip simple" verbatim="SIP SIMPLE" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: g.711, g.722, ilbc, gsm, silk, g.729, h.264" verbatim="G.711, G.722, iLBC, GSM, SILK, G.729, H.264" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: tls, srtp" verbatim="TLS, SRTP" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: voip over wi-fi or 3g/4g; audio codecs ; multiple " verbatim="VoIP over Wi-Fi or 3G/4G; Audio codecs ; Multiple languages; Option to purchase Video Calls add-on with H.264 codec and Messaging and Presence add-on which uses XMPP and SIP protocols." row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,8: 2.1.3 (ios), 2.0.3 (android)" verbatim="2.1.3 (iOS), 2.0.3 (Android)" row="3" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: csipsimple" verbatim="CSipSimple" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: android v1.6+" verbatim="Android v1.6+" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: gpl" verbatim="GPL" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: yes" verbatim="Yes" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: sip" verbatim="SIP" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: g.711, speex, gsm, ilbc, g.722, amr, isac, silk, g" verbatim="G.711, Speex, GSM, iLBC, G.722, AMR, iSAC, SILK, G.726, G.722.1, Opus, Codec2, G.726" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: srtp, zrtp, tls" verbatim="SRTP, ZRTP, TLS" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: voip over wi-fi or mobile data; conference; androi" verbatim="VoIP over Wi-Fi or mobile data; Conference; Android integration with filtering/rewriting rules" row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,8: 1.02.00 (11 november 2013)" verbatim="1.02.00 (11 November 2013)" row="4" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: gizmo5 mobile" verbatim="Gizmo5 Mobile" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: windows mobile (non-native, only through sjphone)," verbatim="Windows Mobile (non-native, only through SJPhone), Motorola, Nokia, BlackBerry, Java PDA's, Sony Ericsson, Samsung" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: freeware" verbatim="Freeware" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: no" verbatim="No" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: sip, aim, ichat, xmpp, msn, yahoo" verbatim="SIP, AIM, iChat, XMPP, MSN, Yahoo" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: unknown" verbatim="Unknown" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: yes" verbatim="Yes" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: online phone over edge, umts, 3g, call land and ce" verbatim="Online Phone over EDGE, UMTS, 3G,  Call Land and Cell phone, Voicemail, AOL, iChat, XMPP, Yahoo! Messenger, Windows Live. On April 3, 2011 Google shut down Gizmo5 and recommended users to use Google Talk as an alternative." row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,8: 1.15 (as of may '08)" verbatim="1.15 (as of May '08)" row="5" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: justex by juphoon" verbatim="JusTex by Juphoon" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: ios v5.1+" verbatim="iOS v5.1+" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: proprietary" verbatim="Proprietary" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: no" verbatim="No" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: sip" verbatim="SIP" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: puma, pcmu, g.722, ilbc, isac, opus, h.264, vp8, h" verbatim="PUMA, PCMU, G.722, iLBC, iSAC, Opus, H.264, VP8, H.263" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: tls, tcp, udp, srtp" verbatim="TLS, TCP, UDP, SRTP" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: justex softphone over wi-fi or 3g, hd voice and vi" verbatim="JusTex Softphone over Wi-Fi or 3G, HD voice and video call, Multiparty call, conference." row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,8: justex (ios) 1.0.5 updated on 26th nov. 2013" verbatim="JusTex (iOS) 1.0.5 updated on 26th Nov. 2013" row="6" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: icall mobile" verbatim="iCall Mobile" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: ios v4.3+" verbatim="iOS v4.3+" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: freeware / proprietary" verbatim="Freeware / Proprietary" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: no" verbatim="No" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: sip aim icq xmpp" verbatim="SIP AIM ICQ XMPP" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: speex, celt, webm" verbatim="Speex, CELT, WebM" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: tls, zrtp" verbatim="TLS, ZRTP" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: voip over wi-fi or 3g, sms, voicemail, aol, facebo" verbatim="VoIP over Wi-Fi or 3G, SMS, Voicemail, AOL, Facebook, XMPP, Yahoo! Messenger, Windows Live" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,8: 2.0.1 (as of apr '12)" verbatim="2.0.1 (as of Apr '12)" row="7" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,0: jajah mobile web" verbatim="Jajah Mobile Web" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: symbian os, windows mobile (version unknown)" verbatim="Symbian OS, Windows Mobile (version unknown)" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: web based service, call back,no download" verbatim="web based service, Call back,no download" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: no" verbatim="No" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: " verbatim="" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: unknown" verbatim="Unknown" row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: unknown" verbatim="Unknown" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,0: line2" verbatim="Line2" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: ios, android" verbatim="iOS, Android" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: freeware / proprietary" verbatim="Freeware / Proprietary" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: no" verbatim="No" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: proprietary with sip core" verbatim="Proprietary with SIP core" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: unknown" verbatim="Unknown" row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: unknown" verbatim="Unknown" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: tri-mode calling (cellular, 3g/4g data, wi-fi), sm" verbatim="Tri-mode calling (cellular, 3G/4G data, Wi-Fi), SMS over IP, visual voicemail, 20-person conference calls, auto-attendant, call-forwarding" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,8: 1.0.4 android, 3.2.1 ios" verbatim="1.0.4 Android, 3.2.1 iOS" row="9" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,0: sipdroid" verbatim="Sipdroid" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: android" verbatim="Android" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: gpl" verbatim="GPL" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: yes" verbatim="Yes" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: sip" verbatim="SIP" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: unknown" verbatim="Unknown" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: unknown" verbatim="Unknown" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: uses wi-fi, 3g or edge" verbatim="Uses Wi-Fi, 3G or EDGE" row="10" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,8: 2.7" verbatim="2.7" row="10" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,0: tango by tangome inc.," verbatim="Tango by TangoME Inc.," row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: ios, android, microsoft windows, os x, windows pho" verbatim="iOS, Android, Microsoft Windows, OS X, Windows Phone" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: freeware / proprietary" verbatim="Freeware / Proprietary" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: unknown" verbatim="Unknown" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: unknown" verbatim="Unknown" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: unknown" verbatim="Unknown" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: unknown" verbatim="Unknown" row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,7: wi-fi voip out &amp; in, sms over ip, call-through &amp; c" verbatim="Wi-Fi VoIP out &amp; in, SMS over IP, call-through &amp; call-back,  &#x9;Voice over IP, Instant messaging, Videoconferencing" row="11" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,8: unknown" verbatim="Unknown" row="11" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,0: truphone" verbatim="Truphone" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: nokia-symbian, ios, android, blackberry" verbatim="Nokia-Symbian, iOS, Android, BlackBerry" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: freeware / proprietary" verbatim="Freeware / Proprietary" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: no" verbatim="No" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: sip" verbatim="SIP" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: unknown" verbatim="Unknown" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,6: unknown" verbatim="Unknown" row="12" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,7: wi-fi voip out &amp; in, sms over ip, call-through &amp; c" verbatim="Wi-Fi VoIP out &amp; in, SMS over IP, call-through &amp; call-back, connection management, provisioning" row="12" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,8: symbian 4.0, ios 1.11.1" verbatim="Symbian 4.0, iOS 1.11.1" row="12" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,0: vopium" verbatim="Vopium" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: symbian, java me, android, blackberry rim, ios, wi" verbatim="Symbian, Java ME, Android, BlackBerry RIM, iOS, Windows Mobile 2003 SE and higher" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: freeware / proprietary" verbatim="Freeware / Proprietary" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: no" verbatim="No" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: sip, msn, skype, yahoo, aol, icq, google talk, fac" verbatim="SIP, MSN, Skype, Yahoo, AOL, ICQ, Google Talk, Facebook &amp; Twitter" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: gsm" verbatim="GSM" row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: unknown" verbatim="Unknown" row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,7: wi-fi voip, gsm call-trough, sms over ip, least co" verbatim="Wi-Fi VoIP, GSM call-trough, SMS over IP, least cost routing, Synchronisation/back-up of mobile contacts and calendar" row="13" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,8: 2.0" verbatim="2.0" row="13" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,0: windows mobile 6" verbatim="Windows Mobile 6" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: windows mobile 6 professional/standard" verbatim="Windows Mobile 6 Professional/Standard" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: proprietary" verbatim="Proprietary" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: no" verbatim="No" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: sip to publicly and non-publicly routable servers" verbatim="SIP to publicly and non-publicly routable servers" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: unknown" verbatim="Unknown" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: unknown" verbatim="Unknown" row="14" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,7: wi-fi mobile voip" verbatim="Wi-Fi Mobile VoIP" row="14" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,8: 6.1" verbatim="6.1" row="14" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,0: x-pro for pocket pc" verbatim="X-PRO for Pocket PC" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: windows mobile 2003 (earlier versions support wind" verbatim="Windows Mobile 2003 (earlier versions support Windows PocketPC 2002)" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: proprietary, discontinued in april 2007" verbatim="Proprietary, discontinued in April 2007" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: no" verbatim="No" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: sip" verbatim="SIP" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: unknown" verbatim="Unknown" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,6: unknown" verbatim="Unknown" row="15" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,7: supported devices: audiovox maestro, compaq/hp ipa" verbatim="Supported devices: AudioVox Maestro, Compaq/HP iPAQ: 365x, 37xx, 385x, 395x, hx4700, Dell Axim X51, X51v, Toshiba e550, e570. iPAQ 545x and Toshiba e7xx are not supported." row="15" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,8: 2.2" verbatim="2.2" row="15" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,0: yuilop" verbatim="Yuilop" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: android, ios, windows phone, blackberry os" verbatim="Android, iOS, Windows Phone, BlackBerry OS" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: freeware" verbatim="Freeware" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: no" verbatim="No" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: xmpp, rtp" verbatim="XMPP, RTP" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: ilbc" verbatim="iLBC" row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,6: tls" verbatim="TLS" row="16" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,7: voip over 3g/4g/lte and wifi, sms, group chat, pho" verbatim="VoIP over 3G/4G/LTE and Wifi, SMS, Group chat, Photo sharing, Location sharing, virtual phone numbers" row="16" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,8: ios 2.0.3 (february&#xa0;3, 2014; 2 months ago) android" verbatim="iOS 2.0.3 (February&#xa0;3, 2014; 2 months ago) &#xA;Android 2.0.2 (February&#xa0;12, 2014; 57 days ago) &#xA;Windows Phone 7.x 1.0.1.7 (September&#xa0;12, 2013; 6 months ago) &#xA;Windows Phone 8.x 1.0.0.4 (September&#xa0;18, 2013; 6 months ago) &#xA;BlackBerry OS 1.0.1 (May&#xa0;31, 2013; 10 months ago) &#xA;Kindle Fire 2.0 (December&#xa0;19, 2013; 3 months ago) &#xA;Category:Upptalk" row="16" rowspan="1" column="8" colspan="1"/>
+  </matrices>
+  <matrices name="Frameworks and libraries">
+    <cells xsi:type="pcmmm:Header" name="0,0: program" verbatim="Program" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: operating systems" verbatim="Operating systems" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: license" verbatim="License" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: protocols/based upon/compatible with" verbatim="Protocols/based upon/compatible with" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: encryption" verbatim="Encryption" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: other capabilities" verbatim="Other capabilities" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: key and target markets" verbatim="Key and target markets" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: latest release" verbatim="Latest release" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: tapioca" verbatim="Tapioca" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: linux" verbatim="Linux" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: gpl" verbatim="GPL" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: telepathy (software)" verbatim="Telepathy (software)" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: unknown" verbatim="Unknown" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: " verbatim="" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: " verbatim="" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: 0.3.9 (june 12, 2006)" verbatim="0.3.9 (June 12, 2006)" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: telepathy/farstream" verbatim="Telepathy/Farstream" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: linux, mac os x, windows" verbatim="Linux, Mac OS X, Windows" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: lgpl" verbatim="LGPL" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: sip, xmpp (jingle), ice (stun/turn), upnp" verbatim="SIP, XMPP (Jingle), ICE (STUN/TURN), UPnP" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: no" verbatim="No" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: multi-user a/v conferencing, im, collaborative app" verbatim="Multi-user A/V conferencing, IM, collaborative applications" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: mobile devices (maemo), linux desktop" verbatim="Mobile devices (Maemo), Linux Desktop" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: spec 0.17.8 (24-jul-2008)" verbatim="spec 0.17.8 (24-Jul-2008)" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: opal" verbatim="OPAL" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: windows, linux (including embedded variants), mac " verbatim="Windows, Linux (including embedded variants), Mac OS X" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: mpl" verbatim="MPL" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: sip, h.323, iax2, capi, vxml" verbatim="SIP, H.323, IAX2, CAPI, VXML" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: unknown" verbatim="Unknown" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: multi-user a/v conferencing, im, ivr" verbatim="Multi-user A/V conferencing, IM, IVR" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: softphones, softswitches, telephony application se" verbatim="Softphones, Softswitches, Telephony application servers" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: 3.10.3 (14-oct-2011)" verbatim="3.10.3 (14-Oct-2011)" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: gnu osip" verbatim="GNU oSIP" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: linux, windows, mac os, android, iphone, blackberr" verbatim="Linux, Windows, Mac OS, Android, iPhone, BlackBerry" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: lgpl" verbatim="LGPL" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: sip, sdp" verbatim="SIP, SDP" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: unknown" verbatim="Unknown" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: multi-user a/v conferencing, im, ivr" verbatim="Multi-user A/V conferencing, IM, IVR" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: softphones, embedded and mobile devices, telephony" verbatim="Softphones, Embedded and Mobile devices, Telephony application servers" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: 4.1.0 december&#xa0;18,&#xa0;2013" verbatim="4.1.0 December&#xa0;18,&#xa0;2013" row="4" rowspan="1" column="7" colspan="1"/>
+  </matrices>
+  <matrices name="Server software">
+    <cells xsi:type="pcmmm:Header" name="0,0: program" verbatim="Program" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: operating systems" verbatim="Operating systems" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: license" verbatim="License" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: protocols/based upon/compatible with" verbatim="Protocols/based upon/compatible with" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: encryption" verbatim="Encryption" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: other capabilities" verbatim="Other capabilities" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: key and target markets" verbatim="Key and target markets" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: latest release" verbatim="Latest release" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: 3cx phone system" verbatim="3CX Phone System" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: microsoft windows" verbatim="Microsoft Windows" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: proprietary" verbatim="Proprietary" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: sip" verbatim="SIP" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,4: tls, srtp" verbatim="TLS, SRTP" row="1" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,5: voice and video ip telephony, voice and video conf" verbatim="Voice and Video IP telephony, Voice and Video conferencing, voice mail and instant messaging" row="1" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,6: &lt;= 50,000 users" verbatim="&lt;= 50,000 users" row="1" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,7: 12 (sep 2013)" verbatim="12 (Sep 2013)" row="1" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: as5300" verbatim="AS5300" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: linux, windows server 2003" verbatim="Linux, Windows Server 2003" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: proprietary" verbatim="Proprietary" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: sip, unistim, mlpp" verbatim="SIP, UNIStim, MLPP" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,4: ssl, tls,srtp, sdesc" verbatim="SSL, TLS,SRTP, SDESC" row="2" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,5: voice and video ip telephony, voice and video conf" verbatim="Voice and Video IP telephony, Voice and Video conferencing, voice mail and instant messaging" row="2" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,6: 1,000 - 25,000 users" verbatim="1,000 - 25,000 users" row="2" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,7: 1.0 (jan 2008)" verbatim="1.0 (Jan 2008)" row="2" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: askoziapbx" verbatim="AskoziaPBX" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: no additional os required (linux based)" verbatim="no additional OS required (Linux based)" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: gpl / open core" verbatim="GPL / Open core" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: sip, h.323, iax, sccp" verbatim="SIP, H.323, IAX, SCCP" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,4: no" verbatim="No" row="3" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,5: isdn, analog, voicemail, conferencing, moh, acd, i" verbatim="ISDN, analog, Voicemail, Conferencing, MOH, ACD, IVR, Call forwarding, Call recording" row="3" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,6: sme up to 50 users" verbatim="SME up to 50 users" row="3" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,7: 2.2.2 (dec 2012)" verbatim="2.2.2 (Dec 2012)" row="3" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: asterisk pbx" verbatim="Asterisk PBX" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: linux/bsd, mac os x, solaris" verbatim="Linux/BSD, Mac OS X, Solaris" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: gpl / proprietary" verbatim="GPL / Proprietary" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: sip, h.323, iax" verbatim="SIP, H.323, IAX" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,4: tls, srtp" verbatim="TLS, SRTP" row="4" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,5: voip gateway, voicemail, basic accounting (can be " verbatim="VoIP Gateway, voicemail, basic accounting (can be expanded by interface with ODBC-compliant database), billing, conferencing, hot-desking, IVR trees with conditional logic, call queuing, automated call distribution" row="4" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,6: enthusiasts, developers, enterprise users (capacit" verbatim="Enthusiasts, developers, enterprise users (capacity dependent on server design, scalable across multiple servers)" row="4" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,7: 11.8.1 (10&#xa0;march 2014; 31 days ago) 3.0.1 (20&#xa0;marc" verbatim="11.8.1 (10&#xa0;March 2014; 31 days ago) 3.0.1 (20&#xa0;March 2013; 12 months ago)" row="4" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: callmax softswitch" verbatim="CallMax Softswitch" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: linux" verbatim="Linux" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: proprietary" verbatim="Proprietary" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: sip, h.323" verbatim="SIP, H.323" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,4: ssl, tls, https" verbatim="SSL, TLS, HTTPS" row="5" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,5: integrated billing, residential/hosted ip pbx, mul" verbatim="Integrated billing, Residential/Hosted IP PBX, Multilevel IVR menu, Calling card platform, Callshop module, DID-numbers, SIP Trunking, Authorization by SIP, PIN, ANI, IP address and login/password" row="5" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,6: sip service providers, voip service providers, ip " verbatim="SIP Service Providers, VoIP service providers, IP PBX Users, Other Class 5 softswitch users" row="5" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,7: 2.12 (january 2012)" verbatim="2.12 (January 2012)" row="5" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,0: cisco unified communications manager" verbatim="Cisco Unified Communications Manager" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: linux" verbatim="Linux" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: proprietary" verbatim="Proprietary" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: sip, sccp, mgcp, h.323" verbatim="SIP, SCCP, MGCP, H.323" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,4: ssl, tls, srtp" verbatim="SSL, TLS, SRTP" row="6" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,5: sip registrar/proxy, authentication" verbatim="SIP Registrar/Proxy, Authentication" row="6" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,6: enterprise users" verbatim="Enterprise users" row="6" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,7: 9.0" verbatim="9.0" row="6" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,0: clearsea (mirial s.u.r.l.)" verbatim="ClearSea (Mirial s.u.r.l.)" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: windows 2000/xp/2003/vista/7 (including 64bit vers" verbatim="Windows 2000/XP/2003/Vista/7 (including 64bit versions), Mac OS X (x86), iOS (iPhone 3S+, iPad 2), Android" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: proprietary" verbatim="Proprietary" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: sip, h.323" verbatim="SIP, H.323" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,4: no" verbatim="No" row="7" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,5: h.239 presentation, h.224, h.281 (fecc), acts as a" verbatim="H.239 presentation, H.224, H.281 (FECC), Acts as a Session Border Controller, H.323/SIP endpoint autodiscovery on local LAN, Support user authentication with external databases / LDAP,Centralized Contacts Directory, User Groups management, Video IVR for dialing endpoint extensions, Ajax-powered web-based administration console, ClearSea desktop client one-step installation via HTTP browser, Automatic provisioning, configuration and secure authentication of ClearSea client based on user credentials" row="7" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,6: desktop video conferencing users, enterprises, edu" verbatim="Desktop video conferencing users, Enterprises, Educational and Healthcare organizations" row="7" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,7: 1.0.3 (april 30, 2010)" verbatim="1.0.3 (April 30, 2010)" row="7" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,0: communigate pro" verbatim="CommuniGate Pro" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: linux/bsd, mac os x, windows, solaris, hpux, aix" verbatim="Linux/BSD, Mac OS X, Windows, Solaris, HPUX, AIX" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: proprietary" verbatim="Proprietary" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: sip, ximss protocol, xmpp" verbatim="SIP, XIMSS Protocol, XMPP" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,4: ssl, tls" verbatim="SSL, TLS" row="8" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,5: sip registrar/proxy, authentication, diameter, rad" verbatim="SIP Registrar/Proxy, Authentication, Diameter, RADIUS, ENUM, and many others..." row="8" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,6: mobile operators, isp's, and saas providers" verbatim="Mobile Operators, ISP's, and  SaaS providers" row="8" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,7: 6.0.1 (december 2012)" verbatim="6.0.1 (December 2012)" row="8" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,0: elastix" verbatim="Elastix" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: linux" verbatim="Linux" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: gpl" verbatim="GPL" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: sip, iax, h323, xmpp" verbatim="SIP, IAX, H323, XMPP" row="9" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,4: no" verbatim="No" row="9" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,5: unified communication server that also supports ch" verbatim="Unified communication server that also supports chat, mail and fax." row="9" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,6: capacity dependent on server design, scalable acro" verbatim="Capacity dependent on server design, scalable across multiple servers" row="9" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,7: 2.4.0 (february 6, 2013)" verbatim="2.4.0 (February 6, 2013)" row="9" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,0: freeswitch" verbatim="FreeSWITCH" row="10" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,1: linux/bsd, mac os x, solaris, windows" verbatim="Linux/BSD, Mac OS X, Solaris, Windows" row="10" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,2: mozilla public license" verbatim="Mozilla Public License" row="10" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,3: sip, nat-pmp, stun, simple, xmpp, google talk (jin" verbatim="SIP, NAT-PMP, STUN, SIMPLE, XMPP, Google Talk (Jingle), IAX, H.323, MRCP, RSS, Skype" row="10" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,4: tls, srtp, zrtp" verbatim="TLS, SRTP, ZRTP" row="10" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,5: recording, voicemail, conferencing, radius, enum, " verbatim="Recording, Voicemail, Conferencing, RADIUS, ENUM, IM Proxy, Streaming, Media gateway, Soft-PBX, IVR (modular)" row="10" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,6: large soft-switch users, home pbx users, softphone" verbatim="Large soft-switch users, home PBX users, softphone users" row="10" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="10,7: 1.2.14 (october&#xa0;14, 2013; 5 months ago)" verbatim="1.2.14 (October&#xa0;14, 2013; 5 months ago)" row="10" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,0: gnu gatekeeper" verbatim="GNU Gatekeeper" row="11" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,1: linux/freebsd, mac os x, windows xp/2000/vista/win" verbatim="Linux/FreeBSD, Mac OS X, Windows XP/2000/Vista/Windows 7" row="11" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,2: gpl" verbatim="GPL" row="11" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,3: h.323" verbatim="H.323" row="11" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,4: h.235" verbatim="H.235" row="11" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,5: h.460.18 firewall traversal, routing, accounting" verbatim="H.460.18 firewall traversal, Routing, Accounting" row="11" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,6: video conferencing, voip carriers large and small" verbatim="video conferencing, VoIP carriers large and small" row="11" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="11,7: 2.3.2, may 25, 2010" verbatim="2.3.2, May 25, 2010" row="11" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,0: mediacore softswitch" verbatim="MediaCore Softswitch" row="12" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,1: linux" verbatim="Linux" row="12" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,2: proprietary" verbatim="Proprietary" row="12" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,3: h.323, sip" verbatim="H.323, SIP" row="12" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,4: ssl, tls, https" verbatim="SSL, TLS, HTTPS" row="12" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,5: dynamic routing mechanism, integrated billing, sip" verbatim="Dynamic routing mechanism, integrated billing, SIP-H.323 protocol converter, Transcoding - codec converter module, Guardian - revenue assurance module, SBC functionality, full and media proxy" row="12" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,6: transit voip services providers, voip wholesale ca" verbatim="Transit VoIP services providers, VoIP wholesale carriers" row="12" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="12,7: 2.24 (december 2011)" verbatim="2.24 (December 2011)" row="12" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,0: murmur" verbatim="Murmur" row="13" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,1: linux/bsd, mac os x, windows" verbatim="Linux/BSD, Mac OS X, Windows" row="13" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,2: bsd / gpl" verbatim="BSD / GPL" row="13" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,3: celt, speex, opus" verbatim="CELT, Speex, Opus" row="13" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,4: tls" verbatim="TLS" row="13" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,5: chat with (limited) embedded html, acls for user m" verbatim="Chat with (limited) embedded HTML, ACLs for user management, Customizable In-Game Overlay, Directional Audio, Plugin Support, Nested Channels" row="13" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,6: individuals to small and medium enterprise (25-500" verbatim="Individuals to Small and medium enterprise (25-5000 users)" row="13" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="13,7: 1.2.4 (june 2013)" verbatim="1.2.4 (June 2013)" row="13" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,0: mysipswitch" verbatim="Mysipswitch" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,1: linux" verbatim="Linux" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: bsd" verbatim="BSD" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: sip, ajax" verbatim="SIP, Ajax" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: ssl" verbatim="SSL" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: sip proxy server which allows the use of multiple " verbatim="SIP proxy server which allows the use of multiple SIP accounts with a single SIP login" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: individuals" verbatim="Individuals" row="14" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,7: august 2007" verbatim="August 2007" row="14" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,0: objectworld uc server" verbatim="Objectworld UC Server" row="15" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,1: windows xp/2003/2008" verbatim="Windows XP/2003/2008" row="15" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,2: proprietary" verbatim="Proprietary" row="15" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,3: sip" verbatim="SIP" row="15" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,4: no" verbatim="No" row="15" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,5: ip pbx, personal assistants, ivr, automated phone " verbatim="IP PBX, personal assistants, IVR, automated phone provisioning, fax server, unified messaging, Outlook, Exchange and Lotus Domino/Notes integration, conferencing, outbound dialing" row="15" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,6: small and medium enterprise (25-2000 users)" verbatim="Small and medium enterprise (25-2000 users)" row="15" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="15,7: 4.4.2 (may 2009)" verbatim="4.4.2 (May 2009)" row="15" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,0: kamailio/opensips (formerly known as openser)" verbatim="Kamailio/OpenSIPS (formerly known as OpenSER)" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,1: linux/bsd, solaris" verbatim="Linux/BSD, Solaris" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: gpl" verbatim="GPL" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: sip, xmpp" verbatim="SIP, XMPP" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: no" verbatim="No" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: sip registrar/proxy, authentication, diameter, rad" verbatim="SIP Registrar/Proxy, Authentication, Diameter, RADIUS, ENUM, least-cost-routing and many others." row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,6: sip service providers" verbatim="SIP Service Providers" row="16" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,7: 4.0.1 (25&#xa0;april 2013; 11 months ago)" verbatim="4.0.1 (25&#xa0;April 2013; 11 months ago)" row="16" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,0: snom one (formerly pbxnsip)" verbatim="snom ONE (formerly pbxnsip)" row="17" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,1: linux/bsd, mac os x, windows" verbatim="Linux/BSD, Mac OS X, Windows" row="17" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,2: proprietary" verbatim="Proprietary" row="17" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,3: sip" verbatim="SIP" row="17" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,4: srtp" verbatim="SRTP" row="17" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,5: ip pbx, presence indication, ivr, automated phone " verbatim="IP PBX, presence indication, IVR, automated phone provisioning, fax server, unified messaging, Outlook, Exchange integration, conferencing, outbound dialing" row="17" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,6: small and medium enterprise (25-256 users)" verbatim="Small and medium enterprise (25-256 users)" row="17" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="17,7: 3.3.1.3177 (april 2009)" verbatim="3.3.1.3177 (April 2009)" row="17" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,0: revation linklive" verbatim="Revation LinkLive" row="18" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,1: windows server / linux" verbatim="Windows server / Linux" row="18" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,2: proprietary" verbatim="Proprietary" row="18" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,3: proprietary" verbatim="Proprietary" row="18" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,4: tls, srtp" verbatim="TLS, SRTP" row="18" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,5: secure unified communications, presence, instant m" verbatim="Secure Unified Communications, Presence, Instant Messaging/Chat, VoIP, Video, Desktop Sharing, File Sharing, IVR, PBX, Voicemail, ACD, Email Server" row="18" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,6: unified communications service providers" verbatim="Unified Communications Service Providers" row="18" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="18,7: 6.3 (july 2013)" verbatim="6.3 (July 2013)" row="18" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,0: sip express router (ser)" verbatim="SIP Express Router (SER)" row="19" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,1: linux/bsd, solaris" verbatim="Linux/BSD, Solaris" row="19" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,2: gpl" verbatim="GPL" row="19" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,3: sip" verbatim="SIP" row="19" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,4: no" verbatim="No" row="19" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,5: sip registrar/proxy, authentication, diameter, rad" verbatim="SIP Registrar/Proxy, Authentication, Diameter, RADIUS, ENUM, and many others..." row="19" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,6: sip service providers" verbatim="SIP Service Providers" row="19" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="19,7: 2.0.0 ottendorf" verbatim="2.0.0 Ottendorf" row="19" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,0: sipx ecs ip pbx" verbatim="sipX ECS IP PBX" row="20" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,1: linux" verbatim="Linux" row="20" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,2: agpl" verbatim="AGPL" row="20" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,3: native sip call control" verbatim="Native SIP Call Control" row="20" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,4: tls" verbatim="TLS" row="20" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,5: full redundancy (ha), plug &amp; play management inclu" verbatim="Full redundancy (HA), plug &amp; play management including phones and gateways, fully featured" row="20" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,6: enterprises between 200 and 10,000 users, multi-si" verbatim="Enterprises between 200 and 10,000 users, multi-site" row="20" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="20,7: 4.4, april 2012" verbatim="4.4, April 2012" row="20" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,0: unison" verbatim="Unison" row="21" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,1: linux" verbatim="Linux" row="21" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,2: proprietary" verbatim="Proprietary" row="21" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,3: sip, xmpp, imap, smtp, caldav" verbatim="SIP, XMPP, IMAP, SMTP, CalDAV" row="21" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,4: ssl, tls" verbatim="SSL, TLS" row="21" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,5: unified messaging, ip pbx, ivr, instant messaging," verbatim="Unified messaging, IP PBX, IVR, instant messaging, calendar server, LDAP server, E-mail server" row="21" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,6: small and medium enterprise (25-256 users)" verbatim="Small and medium enterprise (25-256 users)" row="21" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="21,7: 3.0, february 2010" verbatim="3.0, February 2010" row="21" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,0: vzroom" verbatim="vzRoom" row="22" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,1: windows" verbatim="Windows" row="22" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,2: proprietary" verbatim="Proprietary" row="22" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,3: sip" verbatim="SIP" row="22" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,4: ssl, tls, aes" verbatim="SSL, TLS, AES" row="22" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,5: instant messaging/chat, voip, video, desktop shari" verbatim="Instant Messaging/Chat, VoIP, Video, Desktop Sharing, Video Sharing, whiteboard, File Sharing, scheduler, recording" row="22" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,6: individual to small and medium enterprise (2-1,000" verbatim="Individual to small and medium enterprise (2-1,000 users)" row="22" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="22,7: 0.8.8.735, november 2010" verbatim="0.8.8.735, November 2010" row="22" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,0: yate" verbatim="Yate" row="23" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,1: linux, mac os, windows" verbatim="Linux, Mac OS, Windows" row="23" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,2: gpl" verbatim="GPL" row="23" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,3: sip, iax, h.323, xmpp" verbatim="SIP, IAX, H.323, XMPP" row="23" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,4: tls" verbatim="TLS" row="23" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,5: voice, data, messages, ussd" verbatim="voice, data, messages, ussd" row="23" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,6: is being used for large networks with milion users" verbatim="is being used for large networks with milion users" row="23" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="23,7: 5.0, october 2013" verbatim="5.0, October 2013" row="23" rowspan="1" column="7" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>

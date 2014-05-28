@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm" name="Comparison_of_distributed_file_systems">
+  <matrices name="Locally managed">
+    <cells xsi:type="pcmmm:Header" name="0,0: client" verbatim="Client" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: written in" verbatim="Written in" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: license" verbatim="License" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: access api" verbatim="Access API" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: ceph" verbatim="Ceph" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: c" verbatim="C" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: lgpl" verbatim="LGPL" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,3: librados (c, c++, python, ruby), s3, swift, fuse" verbatim="librados (C, C++, Python, Ruby), S3, Swift, FUSE" row="1" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: fhgfs" verbatim="FhGFS" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: c / c++" verbatim="C / C++" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: fraunhofer fs (fhgfs) eula,gplv2 client" verbatim="FRAUNHOFER FS (FhGFS) EULA,GPLv2 client" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,3: posix" verbatim="POSIX" row="2" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: glusterfs" verbatim="GlusterFS" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: c" verbatim="C" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: gplv3" verbatim="GPLv3" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,3: libglusterfs, fuse" verbatim="libglusterfs, FUSE" row="3" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: quantcast file system" verbatim="Quantcast File System" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: c" verbatim="C" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: apache license 2.0" verbatim="Apache License 2.0" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,3: c++ client, fuse (c++ server: metaserver and chunk" verbatim="C++ client, FUSE (C++ server: MetaServer and ChunkServer are both in C++)" row="4" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: lustre" verbatim="Lustre" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: c" verbatim="C" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: gplv2" verbatim="GPLv2" row="5" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,3: posix, liblustre, fuse" verbatim="POSIX, liblustre, FUSE" row="5" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: openafs" verbatim="OpenAFS" row="6" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,1: c" verbatim="C" row="6" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,2: ibm public license" verbatim="IBM Public License" row="6" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="6,3: virtual file system, installable file system" verbatim="Virtual file system, Installable File System" row="6" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: tahoe-lafs" verbatim="Tahoe-LAFS" row="7" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,1: python" verbatim="Python" row="7" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,2: gnu gpl 2+ and other" verbatim="GNU GPL 2+ and other" row="7" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="7,3: http (browser or cli), sftp, ftp, fuse via sshfs, " verbatim="HTTP (browser or CLI), SFTP, FTP, FUSE via sshfs, pyfilesystem" row="7" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: hdfs" verbatim="HDFS" row="8" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,1: java" verbatim="Java" row="8" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,2: apache license 2.0" verbatim="Apache License 2.0" row="8" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="8,3: java client, c client, http" verbatim="Java client, c client, HTTP" row="8" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: xtreemfs" verbatim="XtreemFS" row="9" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,1: java, c++" verbatim="Java, C++" row="9" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,2: bsd license" verbatim="BSD License" row="9" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="9,3: libxtreemfs (java, c++), fuse" verbatim="libxtreemfs (Java, C++), FUSE" row="9" rowspan="1" column="3" colspan="1"/>
+  </matrices>
+  <matrices name="Remote access">
+    <cells xsi:type="pcmmm:Header" name="0,0: name" verbatim="Name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,1: run by" verbatim="Run by" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: access api" verbatim="Access API" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,0: amazon s3" verbatim="Amazon S3" row="1" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,1: amazon.com" verbatim="Amazon.com" row="1" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="1,2: http (rest/soap)" verbatim="HTTP (REST/SOAP)" row="1" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,0: google cloud storage" verbatim="Google Cloud Storage" row="2" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,1: google" verbatim="Google" row="2" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="2,2: http (rest)" verbatim="HTTP (REST)" row="2" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,0: swift (part of openstack)" verbatim="SWIFT (part of OpenStack)" row="3" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,1: rackspace, hewlett-packard, others" verbatim="Rackspace, Hewlett-Packard, others" row="3" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="3,2: http (rest)" verbatim="HTTP (REST)" row="3" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,0: microsoft azure" verbatim="Microsoft Azure" row="4" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,1: microsoft" verbatim="Microsoft" row="4" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="4,2: http (rest)" verbatim="HTTP (REST)" row="4" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,0: cleversafe" verbatim="Cleversafe" row="5" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,1: cleversafe" verbatim="Cleversafe" row="5" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="5,2: http (rest)" verbatim="HTTP (REST)" row="5" rowspan="1" column="2" colspan="1"/>
+  </matrices>
+</pcmmm:PCM>
