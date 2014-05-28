@@ -39,8 +39,9 @@ public class PCMDirectoryRepo extends RemoteServiceServlet implements PCMReposit
 	
 	private static Logger _LOGGER = Logger.getLogger("PCMDirectoryRepo");
 	
-	private static final String _DEFAULT_DIRECTORY = "./" ; // war folder 
-	// /Users/macher1/git/Tools4PCM/evaluation/input/models/";
+	private static final String _DEFAULT_DIRECTORY =  "/Users/macher1/git/Tools4PCM/evaluation/output/models/" ;
+			// "./" ; // war folder 
+
 	
 	
 	private String _dir = _DEFAULT_DIRECTORY;

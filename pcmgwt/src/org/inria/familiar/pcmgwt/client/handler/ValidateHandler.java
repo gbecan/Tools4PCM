@@ -1,12 +1,7 @@
 package org.inria.familiar.pcmgwt.client.handler;
 
-import java.util.List;
-
 import org.inria.familiar.pcmgwt.client.ExperimentDataCellSingleton;
 import org.inria.familiar.pcmgwt.client.GreetingServiceAsync;
-import org.inria.familiar.pcmgwt.client.MatrixCell;
-import org.inria.familiar.pcmgwt.client.MatrixCellData;
-import org.inria.familiar.pcmgwt.shared.Matrix;
 import org.inria.familiar.pcmgwt.shared.PCM;
 import org.inria.familiar.pcmgwt.shared.PCMGuiBuilder;
 
@@ -14,26 +9,13 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.smartgwt.client.types.ClickMaskMode;
-import com.smartgwt.client.types.HoverMode;
-import com.smartgwt.client.util.SC;
 import com.smartgwt.client.widgets.Canvas;
 import com.smartgwt.client.widgets.IButton;
 import com.smartgwt.client.widgets.Img;
-import com.smartgwt.client.widgets.cube.CubeGrid;
 import com.smartgwt.client.widgets.events.ClickEvent;
 import com.smartgwt.client.widgets.events.ClickHandler;
 import com.smartgwt.client.widgets.form.DynamicForm;
-import com.smartgwt.client.widgets.grid.ListGridRecord;
-import com.smartgwt.client.widgets.grid.events.CellContextClickEvent;
-import com.smartgwt.client.widgets.grid.events.CellContextClickHandler;
-import com.smartgwt.client.widgets.grid.events.CellSelectionChangedEvent;
-import com.smartgwt.client.widgets.grid.events.CellSelectionChangedHandler;
-import com.smartgwt.client.widgets.grid.events.RowContextClickEvent;
-import com.smartgwt.client.widgets.grid.events.RowContextClickHandler;
 import com.smartgwt.client.widgets.layout.VLayout;
-import com.smartgwt.client.widgets.menu.Menu;
-import com.smartgwt.client.widgets.menu.MenuItem;
-import com.smartgwt.client.widgets.menu.events.MenuItemClickEvent;
 import com.smartgwt.client.widgets.tab.Tab;
 import com.smartgwt.client.widgets.tab.TabSet;
 
