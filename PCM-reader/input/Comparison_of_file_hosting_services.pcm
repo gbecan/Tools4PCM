@@ -1,0 +1,1478 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="File hosting services with file-sharing possibility" id="File hosting services with file-sharing possibility_1">
+    <cells xsi:type="pcmmm:Header" name="0,1: storage size" verbatim="Storage size" rowspan="1" column="1" colspan="1" concept="//@concepts.0"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: max. file size" verbatim="Max. file size" rowspan="1" column="2" colspan="1" concept="//@concepts.1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: direct access" verbatim="Direct access" rowspan="1" column="3" colspan="1" concept="//@concepts.2"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: traffic/bandwidth limit" verbatim="Traffic/bandwidth limit" rowspan="1" column="4" colspan="1" concept="//@concepts.3"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: file expiration" verbatim="File expiration" rowspan="1" column="5" colspan="1" concept="//@concepts.4"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: remote uploading?" verbatim="Remote uploading?" rowspan="1" column="6" colspan="1" concept="//@concepts.5"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: developer api?" verbatim="Developer API?" rowspan="1" column="7" colspan="1" concept="//@concepts.6"/>
+    <cells xsi:type="pcmmm:Header" name="0,8: ftp upload possible?" verbatim="FTP upload possible?" rowspan="1" column="8" colspan="1" concept="//@concepts.7"/>
+    <cells xsi:type="pcmmm:Header" name="0,9: file versioning" verbatim="File versioning" rowspan="1" column="9" colspan="1" concept="//@concepts.8"/>
+    <cells xsi:type="pcmmm:Header" name="0,10: follows symlinks" verbatim="Follows symlinks" rowspan="1" column="10" colspan="1" concept="//@concepts.9"/>
+    <cells xsi:type="pcmmm:Header" name="0,11: misc. notes" verbatim="Misc. notes" rowspan="1" column="11" colspan="1" concept="//@concepts.10"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: amazon cloud drive" verbatim="Amazon Cloud Drive" row="1" rowspan="1" colspan="1" concept="//@concepts.11"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: amazon s3" verbatim="Amazon S3" row="2" rowspan="1" colspan="1" concept="//@concepts.12"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: asus webstorage" verbatim="ASUS WebStorage" row="3" rowspan="1" colspan="1" concept="//@concepts.13"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: box" verbatim="Box" row="4" rowspan="1" colspan="1" concept="//@concepts.14"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: cloudme" verbatim="CloudMe" row="5" rowspan="1" colspan="1" concept="//@concepts.15"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: dropbox" verbatim="Dropbox" row="6" rowspan="1" colspan="1" concept="//@concepts.16"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: fileserve" verbatim="Fileserve" row="7" rowspan="1" colspan="1" concept="//@concepts.17"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: firedrive" verbatim="Firedrive" row="8" rowspan="1" colspan="1" concept="//@concepts.18"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: google drive" verbatim="Google Drive" row="9" rowspan="1" colspan="1" concept="//@concepts.19"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: handy backup" verbatim="Handy Backup" row="10" rowspan="1" colspan="1" concept="//@concepts.20"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: hightail" verbatim="Hightail" row="11" rowspan="1" colspan="1" concept="//@concepts.21"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: ibm connections" verbatim="IBM Connections" row="12" rowspan="1" colspan="1" concept="//@concepts.22"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: icloud" verbatim="iCloud" row="13" rowspan="1" colspan="1" concept="//@concepts.23"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: magicvortex" verbatim="MagicVortex" row="14" rowspan="1" colspan="1" concept="//@concepts.24"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: mediafire" verbatim="MediaFire" row="15" rowspan="1" colspan="1" concept="//@concepts.25"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: mega" verbatim="Mega" row="16" rowspan="1" colspan="1" concept="//@concepts.26"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: onedrive" verbatim="OneDrive" row="17" rowspan="1" colspan="1" concept="//@concepts.27"/>
+    <cells xsi:type="pcmmm:Header" name="18,0: rapidshare" verbatim="RapidShare" row="18" rowspan="1" colspan="1" concept="//@concepts.28"/>
+    <cells xsi:type="pcmmm:Header" name="19,0: spideroak" verbatim="SpiderOak" row="19" rowspan="1" colspan="1" concept="//@concepts.29"/>
+    <cells xsi:type="pcmmm:Header" name="20,0: sugarsync" verbatim="SugarSync" row="20" rowspan="1" colspan="1" concept="//@concepts.30"/>
+    <cells xsi:type="pcmmm:Header" name="21,0: titanfile" verbatim="TitanFile" row="21" rowspan="1" colspan="1" concept="//@concepts.31"/>
+    <cells xsi:type="pcmmm:Header" name="22,0: ubuntu one" verbatim="Ubuntu One" row="22" rowspan="1" colspan="1" concept="//@concepts.32"/>
+    <cells xsi:type="pcmmm:Header" name="23,0: wuala" verbatim="Wuala" row="23" rowspan="1" colspan="1" concept="//@concepts.33"/>
+    <cells xsi:type="pcmmm:Extra" name="24,0: web host" verbatim="Web host" row="24" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: web host" verbatim="Web host" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: 5 gb (free) unlimited (paid)" verbatim="5 GB (free) &#xA;Unlimited (paid)" row="1" rowspan="1" column="1" colspan="1" concepts="//@concepts.34 //@concepts.35" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free) &#xA;Unlimited (paid" verbatim="free) &#xA;Unlimited (paid" concept="//@concepts.34"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="5 GB" verbatim="5 GB" concept="//@concepts.35"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: 2 gb" verbatim="2 GB" row="1" rowspan="1" column="2" colspan="1" concepts="//@concepts.36" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="2 GB" verbatim="2 GB" concept="//@concepts.36"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: no" verbatim="No" row="1" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,4: amazon s3 limits" verbatim="Amazon S3 limits" row="1" rowspan="1" column="4" colspan="1" concepts="//@concepts.37" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Amazon S3 limits" verbatim="Amazon S3 limits" concept="//@concepts.37"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,5: none" verbatim="None" row="1" rowspan="1" column="5" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,6: no" verbatim="No" row="1" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,7: no" verbatim="No" row="1" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,8: ?" verbatim="?" row="1" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,9: ?" verbatim="?" row="1" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,10: ?" verbatim="?" row="1" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,11: n/a" verbatim="N/A" row="1" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: 5 gb (12-month trial, free storage with credit-car" verbatim="5 GB (12-month trial, free storage with credit-card details supplied, unfree bandwidth)&#xA; Unlimited (paid)" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.39 //@concepts.40 //@concepts.41 //@concepts.35" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="12-month trial" verbatim="12-month trial" concept="//@concepts.39"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="free storage with credit-card details supplied" verbatim="free storage with credit-card details supplied" concept="//@concepts.40"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="unfree bandwidth)&#xA; Unlimited (paid" verbatim="unfree bandwidth)&#xA; Unlimited (paid" concept="//@concepts.41"/>
+        </condition>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="5 GB" verbatim="5 GB" concept="//@concepts.35"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: 5&#xa0;tb per file, unlimited files per bucket" verbatim="5&#xa0;TB per file, unlimited files per bucket" row="2" rowspan="1" column="2" colspan="1" concepts="//@concepts.42 //@concepts.43" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="5&#xa0;TB per file" verbatim="5&#xa0;TB per file" concept="//@concepts.42"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="unlimited files per bucket" verbatim="unlimited files per bucket" concept="//@concepts.43"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,4: amazon s3 limits" verbatim="Amazon S3 limits" row="2" rowspan="1" column="4" colspan="1" concepts="//@concepts.37" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Amazon S3 limits" verbatim="Amazon S3 limits" concept="//@concepts.37"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,5: none, pay for storage each month" verbatim="None, pay for storage each month" row="2" rowspan="1" column="5" colspan="1" concepts="//@concepts.38 //@concepts.44" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="pay for storage each month" verbatim="pay for storage each month" concept="//@concepts.44"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,6: no" verbatim="No" row="2" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,7: rest, soap" verbatim="REST, SOAP" row="2" rowspan="1" column="7" colspan="1" concepts="//@concepts.45 //@concepts.46" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="REST" verbatim="REST" concept="//@concepts.45"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SOAP" verbatim="SOAP" concept="//@concepts.46"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,8: ?" verbatim="?" row="2" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,9: ?" verbatim="?" row="2" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,10: ?" verbatim="?" row="2" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,11: n/a" verbatim="N/A" row="2" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: 5&#xa0;gb (free) unlimited (paid)" verbatim="5&#xa0;GB (free) &#xA; Unlimited (paid)" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.47 //@concepts.48" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free) &#xA; Unlimited (paid" verbatim="free) &#xA; Unlimited (paid" concept="//@concepts.47"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="5&#xa0;GB" verbatim="5&#xa0;GB" concept="//@concepts.48"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: 500 mb (free) 1-2 gb (paid)" verbatim="500 MB (free) &#xA; 1-2 GB (paid)" row="3" rowspan="1" column="2" colspan="1" concepts="//@concepts.49 //@concepts.50" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free) &#xA; 1-2 GB (paid" verbatim="free) &#xA; 1-2 GB (paid" concept="//@concepts.49"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="500 MB" verbatim="500 MB" concept="//@concepts.50"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: no" verbatim="No" row="3" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,4: daily limit: 0.5 gb (free), 10/20 gb (paid)" verbatim="Daily limit: 0.5 GB (free), 10/20 GB (paid)" row="3" rowspan="1" column="4" colspan="1" concepts="//@concepts.51 //@concepts.52 //@concepts.53" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="free)" verbatim="free)" concept="//@concepts.51"/>
+          <contraints xsi:type="pcmmm:And">
+            <contraints xsi:type="pcmmm:Integer" name="10" confident="true" verbatim="10" value="10"/>
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="20 GB (paid" verbatim="20 GB (paid" concept="//@concepts.52"/>
+          </contraints>
+        </condition>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="Daily limit: 0.5 GB" verbatim="Daily limit: 0.5 GB" concept="//@concepts.53"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,5: ?" verbatim="?" row="3" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,6: no" verbatim="No" row="3" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,7: no" verbatim="No" row="3" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,8: ?" verbatim="?" row="3" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,9: ?" verbatim="?" row="3" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,10: ?" verbatim="?" row="3" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,11: n/a" verbatim="N/A" row="3" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: 10 gb (free personal) 50 gb (free with sony xperia" verbatim="10 GB (free Personal)&#xA; 50 GB (free with Sony Xperia device)&#xA;25-50 GB (paid Personal)&#xA;1000 GB (Business)&#xA;Unlimited (Enterprise)" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.54 //@concepts.55" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free Personal)&#xA; 50 GB (free with Sony Xperia device)&#xA;25-50 GB (paid Personal)&#xA;1000 GB (Business)&#xA;Unlimited (Enterprise" verbatim="free Personal)&#xA; 50 GB (free with Sony Xperia device)&#xA;25-50 GB (paid Personal)&#xA;1000 GB (Business)&#xA;Unlimited (Enterprise" concept="//@concepts.54"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="10 GB" verbatim="10 GB" concept="//@concepts.55"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: 250&#xa0;mb (free personal) 1&#xa0;gb (paid personal) 2 gb (" verbatim="250&#xa0;MB (free Personal)&#xA;1&#xa0;GB (paid Personal)&#xA;2 GB (Business)&#xA;5 GB (Enterprise)" row="4" rowspan="1" column="2" colspan="1" concepts="//@concepts.56 //@concepts.57" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free Personal)&#xA;1&#xa0;GB (paid Personal)&#xA;2 GB (Business)&#xA;5 GB (Enterprise" verbatim="free Personal)&#xA;1&#xa0;GB (paid Personal)&#xA;2 GB (Business)&#xA;5 GB (Enterprise" concept="//@concepts.56"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="250&#xa0;MB" verbatim="250&#xa0;MB" concept="//@concepts.57"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: no" verbatim="No" row="4" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,4: 10&#xa0;gb/month (free) 2 tb/month (paid)" verbatim="10&#xa0;GB/month (free) &#xA; 2 TB/month (paid)" row="4" rowspan="1" column="4" colspan="1" concepts="//@concepts.58 //@concepts.59 //@concepts.60 //@concepts.61" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="10&#xa0;GB" verbatim="10&#xa0;GB" concept="//@concepts.58"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="month (free) &#xA; 2 TB" verbatim="month (free) &#xA; 2 TB" concept="//@concepts.59"/>
+        <contraints xsi:type="pcmmm:Partial">
+          <condition xsi:type="pcmmm:VariabilityConceptRef" name="paid" verbatim="paid" concept="//@concepts.60"/>
+          <argument xsi:type="pcmmm:VariabilityConceptRef" name="month" verbatim="month" concept="//@concepts.61"/>
+        </contraints>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,5: none" verbatim="None" row="4" rowspan="1" column="5" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,6: no" verbatim="No" row="4" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,7: yes" verbatim="Yes" row="4" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,8: business and enterprise customers only" verbatim="Business and Enterprise customers only" row="4" rowspan="1" column="8" colspan="1" concepts="//@concepts.62 //@concepts.63" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Business" verbatim="Business" concept="//@concepts.62"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Enterprise customers only" verbatim="Enterprise customers only" concept="//@concepts.63"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,9: ?" verbatim="?" row="4" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,10: ?" verbatim="?" row="4" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,11: does not sync mac files such as iwork: keynote etc" verbatim="Does not sync Mac files such as iWork: Keynote etc." row="4" rowspan="1" column="11" colspan="1" concepts="//@concepts.64" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Does not sync Mac files such as iWork: Keynote etc." verbatim="Does not sync Mac files such as iWork: Keynote etc." concept="//@concepts.64"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: 3 gb plus 500 mb for each referral person up to 16" verbatim="3 GB plus 500 MB for each referral person up to 16 GB (free)&#xA; 500 GB (paid)" row="5" rowspan="1" column="1" colspan="1" concepts="//@concepts.65 //@concepts.66" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA; 500 GB (paid" verbatim="free)&#xA; 500 GB (paid" concept="//@concepts.65"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="3 GB plus 500 MB for each referral person up to 16 GB" verbatim="3 GB plus 500 MB for each referral person up to 16 GB" concept="//@concepts.66"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: 150&#xa0;mb (free) unlimited (premium)" verbatim="150&#xa0;MB (free)&#xA;Unlimited (premium)" row="5" rowspan="1" column="2" colspan="1" concepts="//@concepts.67 //@concepts.68" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA;Unlimited (premium" verbatim="free)&#xA;Unlimited (premium" concept="//@concepts.67"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="150&#xa0;MB" verbatim="150&#xa0;MB" concept="//@concepts.68"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,3: no" verbatim="No" row="5" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,4: none" verbatim="None" row="5" rowspan="1" column="4" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,5: none" verbatim="None" row="5" rowspan="1" column="5" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,6: no" verbatim="No" row="5" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,7: rest, soap, webdav" verbatim="REST, SOAP, WebDAV" row="5" rowspan="1" column="7" colspan="1" concepts="//@concepts.45 //@concepts.46 //@concepts.69" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="REST" verbatim="REST" concept="//@concepts.45"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SOAP" verbatim="SOAP" concept="//@concepts.46"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="WebDAV" verbatim="WebDAV" concept="//@concepts.69"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,8: ?" verbatim="?" row="5" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,9: ?" verbatim="?" row="5" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,10: ?" verbatim="?" row="5" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,11: primarily a media focused file synchronization and" verbatim="Primarily a media focused file synchronization and backup service with websharing." row="5" rowspan="1" column="11" colspan="1" concepts="//@concepts.70 //@concepts.71" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Primarily a media focused file synchronization" verbatim="Primarily a media focused file synchronization" concept="//@concepts.70"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="backup service with websharing." verbatim="backup service with websharing." concept="//@concepts.71"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,1: 2 gb(free) 18 gb (free, 500 mb for each referral p" verbatim="2 GB(free)&#xA; 18 GB (free, 500 MB for each referral person up to 18 GB)&#xA; 25 GB (free with HTC Sense 4 &amp; 5 device)&#xA; 50 GB (free with Samsung device)&#xA; 100-500 GB&#xa0;(Pro accounts)&#xA; 1 TB-Unlimited (Business accounts)" row="6" rowspan="1" column="1" colspan="1" concepts="//@concepts.72 //@concepts.73 //@concepts.36" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA; 18 GB (free" verbatim="free)&#xA; 18 GB (free" concept="//@concepts.72"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="500 MB for each referral person up to 18 GB)&#xA; 25 GB (free with HTC Sense 4 &amp; 5 device)&#xA; 50 GB (free with Samsung device)&#xA; 100-500 GB&#xa0;(Pro accounts)&#xA; 1 TB-Unlimited (Business accounts" verbatim="500 MB for each referral person up to 18 GB)&#xA; 25 GB (free with HTC Sense 4 &amp; 5 device)&#xA; 50 GB (free with Samsung device)&#xA; 100-500 GB&#xa0;(Pro accounts)&#xA; 1 TB-Unlimited (Business accounts" concept="//@concepts.73"/>
+        </condition>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="2 GB" verbatim="2 GB" concept="//@concepts.36"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,2: 300&#xa0;mb. unlimited&#xa0;using client&#xa0;application" verbatim="300&#xa0;MB.&#xA;Unlimited&#xa0;using&#xA;client&#xa0;application" row="6" rowspan="1" column="2" colspan="1" concepts="//@concepts.74" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="300&#xa0;MB.&#xA;Unlimited&#xa0;using&#xA;client&#xa0;application" verbatim="300&#xa0;MB.&#xA;Unlimited&#xa0;using&#xA;client&#xa0;application" concept="//@concepts.74"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,3: yes" verbatim="Yes" row="6" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,4: 20&#xa0;gb/day (free) 200&#xa0;gb/day (paid)" verbatim="20&#xa0;GB/day (free)&#xA;200&#xa0;GB/day (paid)" row="6" rowspan="1" column="4" colspan="1" concepts="//@concepts.75 //@concepts.76 //@concepts.60 //@concepts.77" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="20&#xa0;GB" verbatim="20&#xa0;GB" concept="//@concepts.75"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="day (free)&#xA;200&#xa0;GB" verbatim="day (free)&#xA;200&#xa0;GB" concept="//@concepts.76"/>
+        <contraints xsi:type="pcmmm:Partial">
+          <condition xsi:type="pcmmm:VariabilityConceptRef" name="paid" verbatim="paid" concept="//@concepts.60"/>
+          <argument xsi:type="pcmmm:VariabilityConceptRef" name="day" verbatim="day" concept="//@concepts.77"/>
+        </contraints>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,5: 90 days of inactivity for free users" verbatim="90 days of inactivity for free users" row="6" rowspan="1" column="5" colspan="1" concepts="//@concepts.78" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="90 days of inactivity for free users" verbatim="90 days of inactivity for free users" concept="//@concepts.78"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,6: no" verbatim="No" row="6" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,7: yes" verbatim="Yes" row="6" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,8: no" verbatim="No" row="6" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,9: 30 days (free) unlimited (paid)" verbatim="30 days (free)&#xA;Unlimited (paid)" row="6" rowspan="1" column="9" colspan="1" concepts="//@concepts.79 //@concepts.80" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA;Unlimited (paid" verbatim="free)&#xA;Unlimited (paid" concept="//@concepts.79"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="30 days" verbatim="30 days" concept="//@concepts.80"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,10: yes" verbatim="Yes" row="6" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,11: primarily a file synchronization and backup servic" verbatim="Primarily a file synchronization and backup service but websharing possible." row="6" rowspan="1" column="11" colspan="1" concepts="//@concepts.81 //@concepts.82" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Primarily a file synchronization" verbatim="Primarily a file synchronization" concept="//@concepts.81"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="backup service but websharing possible." verbatim="backup service but websharing possible." concept="//@concepts.82"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,1: 500&#xa0;gb (free) unlimited (paid)" verbatim="500&#xa0;GB (free)&#xA;Unlimited (paid)" row="7" rowspan="1" column="1" colspan="1" concepts="//@concepts.79 //@concepts.83" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA;Unlimited (paid" verbatim="free)&#xA;Unlimited (paid" concept="//@concepts.79"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="500&#xa0;GB" verbatim="500&#xa0;GB" concept="//@concepts.83"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,2: 1&#xa0;gb (free) 2&#xa0;gb (paid)" verbatim="1&#xa0;GB (free) &#xA;2&#xa0;GB (paid)" row="7" rowspan="1" column="2" colspan="1" concepts="//@concepts.84 //@concepts.85" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free) &#xA;2&#xa0;GB (paid" verbatim="free) &#xA;2&#xa0;GB (paid" concept="//@concepts.84"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="1&#xa0;GB" verbatim="1&#xa0;GB" concept="//@concepts.85"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,3: no" verbatim="No" row="7" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,4: none" verbatim="None" row="7" rowspan="1" column="4" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,5: 60 days after last download (free) never (paid)" verbatim="60 days after last download (free)&#xA; Never (paid)" row="7" rowspan="1" column="5" colspan="1" concepts="//@concepts.86 //@concepts.87" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA; Never (paid" verbatim="free)&#xA; Never (paid" concept="//@concepts.86"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="60 days after last download" verbatim="60 days after last download" concept="//@concepts.87"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,6: no" verbatim="No" row="7" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,7: ?" verbatim="?" row="7" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,8: yes (except for non-accounts)" verbatim="Yes (except for non-accounts)" row="7" rowspan="1" column="8" colspan="1" concepts="//@concepts.88" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="except for non-accounts" verbatim="except for non-accounts" concept="//@concepts.88"/>
+        <argument xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,9: yes" verbatim="Yes" row="7" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,10: ?" verbatim="?" row="7" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,11: n/a" verbatim="N/A" row="7" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,1: 50&#xa0;gb (free) up to 1&#xa0;tb (pro accounts) unlimited (" verbatim="50&#xa0;GB (free)&#xA;up to 1&#xa0;TB (Pro accounts)&#xA; Unlimited (Executive accounts)" row="8" rowspan="1" column="1" colspan="1" concepts="//@concepts.89 //@concepts.90" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA;up to 1&#xa0;TB (Pro accounts)&#xA; Unlimited (Executive accounts" verbatim="free)&#xA;up to 1&#xa0;TB (Pro accounts)&#xA; Unlimited (Executive accounts" concept="//@concepts.89"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="50&#xa0;GB" verbatim="50&#xa0;GB" concept="//@concepts.90"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,2: 1&#xa0;gb (free) 50&#xa0;gb (pro)" verbatim="1&#xa0;GB (free) &#xA;50&#xa0;GB (Pro)" row="8" rowspan="1" column="2" colspan="1" concepts="//@concepts.91 //@concepts.85" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free) &#xA;50&#xa0;GB (Pro" verbatim="free) &#xA;50&#xa0;GB (Pro" concept="//@concepts.91"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="1&#xa0;GB" verbatim="1&#xa0;GB" concept="//@concepts.85"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,3: no" verbatim="No" row="8" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,4: none" verbatim="None" row="8" rowspan="1" column="4" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,5: none" verbatim="None" row="8" rowspan="1" column="5" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,6: yes for all users" verbatim="Yes for all users" row="8" rowspan="1" column="6" colspan="1" concepts="//@concepts.92" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="for all users" verbatim="for all users" concept="//@concepts.92"/>
+        <argument xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,7: no" verbatim="No" row="8" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,8: yes" verbatim="Yes" row="8" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,9: no" verbatim="No" row="8" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,10: ?" verbatim="?" row="8" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,11: allows users to upload to each other's accounts wi" verbatim="Allows users to upload to each other's accounts without having to sign up using filedrop" row="8" rowspan="1" column="11" colspan="1" concepts="//@concepts.93" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Allows users to upload to each other's accounts without having to sign up using filedrop" verbatim="Allows users to upload to each other's accounts without having to sign up using filedrop" concept="//@concepts.93"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,1: 15&#xa0;gb (free) 10 gb (free for quickoffice mobile) 2" verbatim="15&#xa0;GB (free)&#xA; 10 GB (free for Quickoffice mobile)&#xA;25-50 GB (free with HTC Advantage)&#xA;50 GB (free with Motorola device)&#xA;100 GB (free with Chromebook)&#xA;2 TB (free with Chromebook Pixel)&#xA; up to 16&#xa0;TB (paid)" row="9" rowspan="1" column="1" colspan="1" concepts="//@concepts.94 //@concepts.95" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA; 10 GB (free for Quickoffice mobile)&#xA;25-50 GB (free with HTC Advantage)&#xA;50 GB (free with Motorola device)&#xA;100 GB (free with Chromebook)&#xA;2 TB (free with Chromebook Pixel)&#xA; up to 16&#xa0;TB (paid" verbatim="free)&#xA; 10 GB (free for Quickoffice mobile)&#xA;25-50 GB (free with HTC Advantage)&#xA;50 GB (free with Motorola device)&#xA;100 GB (free with Chromebook)&#xA;2 TB (free with Chromebook Pixel)&#xA; up to 16&#xa0;TB (paid" concept="//@concepts.94"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="15&#xa0;GB" verbatim="15&#xa0;GB" concept="//@concepts.95"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,2: 1&#xa0;tb" verbatim="1&#xa0;TB" row="9" rowspan="1" column="2" colspan="1" concepts="//@concepts.96" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="1&#xa0;TB" verbatim="1&#xa0;TB" concept="//@concepts.96"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,3: yes" verbatim="Yes" row="9" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,4: none" verbatim="None" row="9" rowspan="1" column="4" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,5: none" verbatim="None" row="9" rowspan="1" column="5" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,6: no" verbatim="No" row="9" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,7: oauth2" verbatim="OAuth2" row="9" rowspan="1" column="7" colspan="1" concepts="//@concepts.97" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="OAuth2" verbatim="OAuth2" concept="//@concepts.97"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,8: no" verbatim="No" row="9" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,9: yes" verbatim="Yes" row="9" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,10: no" verbatim="No" row="9" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,11: n/a" verbatim="N/A" row="9" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,1: up to 250gb. (free tier is just a limited-time tri" verbatim="Up to 250GB. (Free tier is just a limited-time trial)" row="10" rowspan="1" column="1" colspan="1" concepts="//@concepts.98 //@concepts.99" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="Free tier is just a limited-time trial" verbatim="Free tier is just a limited-time trial" concept="//@concepts.98"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="Up to 250GB." verbatim="Up to 250GB." concept="//@concepts.99"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,2: 5 gb" verbatim="5 GB" row="10" rowspan="1" column="2" colspan="1" concepts="//@concepts.35" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="5 GB" verbatim="5 GB" concept="//@concepts.35"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,3: yes" verbatim="Yes" row="10" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,4: none" verbatim="None" row="10" rowspan="1" column="4" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,5: for paying users there is usually no file expirati" verbatim="For paying users there is usually no file expiration." row="10" rowspan="1" column="5" colspan="1" concepts="//@concepts.100" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="For paying users there is usually no file expiration." verbatim="For paying users there is usually no file expiration." concept="//@concepts.100"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,6: no" verbatim="No" row="10" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,7: no" verbatim="No" row="10" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,8: yes" verbatim="Yes" row="10" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,9: yes" verbatim="Yes" row="10" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,10: ?" verbatim="?" row="10" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,11: optimized for automatic backup-to-cloud scenarios," verbatim="Optimized for automatic backup-to-cloud scenarios, i.e. auto backing up documents, databases, settings, system snapshots, and other things to cloud. New backup scenarios can be generated and shared by users." row="10" rowspan="1" column="11" colspan="1" concepts="//@concepts.102 //@concepts.101 //@concepts.103 //@concepts.107 //@concepts.104 //@concepts.106 //@concepts.105" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Optimized for automatic backup-to-cloud scenarios" verbatim="Optimized for automatic backup-to-cloud scenarios" concept="//@concepts.101"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="i.e. auto backing up documents" verbatim="i.e. auto backing up documents" concept="//@concepts.102"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="databases" verbatim="databases" concept="//@concepts.103"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="settings" verbatim="settings" concept="//@concepts.104"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="system snapshots" verbatim="system snapshots" concept="//@concepts.105"/>
+        <contraints xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="and other things to cloud. New backup scenarios can be generated" verbatim="and other things to cloud. New backup scenarios can be generated" concept="//@concepts.106"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="shared by users." verbatim="shared by users." concept="//@concepts.107"/>
+        </contraints>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,1: 2&#xa0;gb (free) unlimited (paid)" verbatim="2&#xa0;GB (free)&#xA;Unlimited (paid)" row="11" rowspan="1" column="1" colspan="1" concepts="//@concepts.79 //@concepts.108" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA;Unlimited (paid" verbatim="free)&#xA;Unlimited (paid" concept="//@concepts.79"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="2&#xa0;GB" verbatim="2&#xa0;GB" concept="//@concepts.108"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,2: 50&#xa0;mb (free) 2&#xa0;gb (pro) unlimited (business)" verbatim="50&#xa0;MB (free)&#xA;2&#xa0;GB (Pro)&#xA;Unlimited (Business)" row="11" rowspan="1" column="2" colspan="1" concepts="//@concepts.109 //@concepts.110" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA;2&#xa0;GB (Pro)&#xA;Unlimited (Business" verbatim="free)&#xA;2&#xa0;GB (Pro)&#xA;Unlimited (Business" concept="//@concepts.109"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="50&#xa0;MB" verbatim="50&#xa0;MB" concept="//@concepts.110"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,3: yes" verbatim="Yes" row="11" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,4: none" verbatim="None" row="11" rowspan="1" column="4" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,5: 7 days (free) 14 days ($9.99/month or $99.99/year)" verbatim="7 days (free)&#xA;14 days ($9.99/month or $99.99/year)&#xA;None (Business)" row="11" rowspan="1" column="5" colspan="1" concepts="//@concepts.113 //@concepts.114 //@concepts.112 //@concepts.111 //@concepts.61" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA;14 days ($9.99" verbatim="free)&#xA;14 days ($9.99" concept="//@concepts.111"/>
+          <contraints xsi:type="pcmmm:Or">
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="month" verbatim="month" concept="//@concepts.61"/>
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="$99.99" verbatim="$99.99" concept="//@concepts.112"/>
+          </contraints>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="year)&#xA;None (Business" verbatim="year)&#xA;None (Business" concept="//@concepts.113"/>
+        </condition>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="7 days" verbatim="7 days" concept="//@concepts.114"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,6: no" verbatim="No" row="11" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,7: yes" verbatim="Yes" row="11" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,8: no" verbatim="No" row="11" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,9: yes" verbatim="Yes" row="11" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,10: ?" verbatim="?" row="11" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,11: allows synchronization of files across devices. bu" verbatim="Allows synchronization of files across devices. Business version comes with administrative and security features." row="11" rowspan="1" column="11" colspan="1" concepts="//@concepts.115 //@concepts.116" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Allows synchronization of files across devices. Business version comes with administrative" verbatim="Allows synchronization of files across devices. Business version comes with administrative" concept="//@concepts.115"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="security features." verbatim="security features." concept="//@concepts.116"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,1: 5 gb additional space avail (paid)" verbatim="5 GB&#xA;additional space avail (paid)" row="12" rowspan="1" column="1" colspan="1" concepts="//@concepts.60 //@concepts.117" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="paid" verbatim="paid" concept="//@concepts.60"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="5 GB&#xA;additional space avail" verbatim="5 GB&#xA;additional space avail" concept="//@concepts.117"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,2: 2&#xa0;gb" verbatim="2&#xa0;GB" row="12" rowspan="1" column="2" colspan="1" concepts="//@concepts.108" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="2&#xa0;GB" verbatim="2&#xa0;GB" concept="//@concepts.108"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,3: yes" verbatim="Yes" row="12" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,4: none" verbatim="None" row="12" rowspan="1" column="4" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,5: none" verbatim="None" row="12" rowspan="1" column="5" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,6: no" verbatim="No" row="12" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,7: cmis, rest, atom (standard) and oauth2" verbatim="CMIS, REST, Atom (standard) and OAuth2" row="12" rowspan="1" column="7" colspan="1" concepts="//@concepts.45 //@concepts.119 //@concepts.120 //@concepts.118 //@concepts.97" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="CMIS" verbatim="CMIS" concept="//@concepts.118"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="REST" verbatim="REST" concept="//@concepts.45"/>
+        <contraints xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:Partial">
+            <condition xsi:type="pcmmm:VariabilityConceptRef" name="standard" verbatim="standard" concept="//@concepts.119"/>
+            <argument xsi:type="pcmmm:VariabilityConceptRef" name="Atom" verbatim="Atom" concept="//@concepts.120"/>
+          </contraints>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="OAuth2" verbatim="OAuth2" concept="//@concepts.97"/>
+        </contraints>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,8: no" verbatim="No" row="12" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,9: yes" verbatim="Yes" row="12" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,10: ?" verbatim="?" row="12" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,11: subscription costs us$6/year" verbatim="Subscription costs US$6/year" row="12" rowspan="1" column="11" colspan="1" concepts="//@concepts.121 //@concepts.122" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Subscription costs US$6" verbatim="Subscription costs US$6" concept="//@concepts.121"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="year" verbatim="year" concept="//@concepts.122"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,1: 5 gb (free) 25 gb (for previous mobileme accounts)" verbatim="5 GB (free)&#xA;25 GB (for previous MobileMe accounts)&#xA;10, 20, 50 GB (paid)" row="13" rowspan="1" column="1" colspan="1" concepts="//@concepts.123 //@concepts.124 //@concepts.35" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA;25 GB (for previous MobileMe accounts)&#xA;10" verbatim="free)&#xA;25 GB (for previous MobileMe accounts)&#xA;10" concept="//@concepts.123"/>
+          <contraints xsi:type="pcmmm:Integer" name="20" confident="true" verbatim="20" value="20"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="50 GB (paid" verbatim="50 GB (paid" concept="//@concepts.124"/>
+        </condition>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="5 GB" verbatim="5 GB" concept="//@concepts.35"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,2: 1&#xa0;gb" verbatim="1&#xa0;GB" row="13" rowspan="1" column="2" colspan="1" concepts="//@concepts.85" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="1&#xa0;GB" verbatim="1&#xa0;GB" concept="//@concepts.85"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,3: yes" verbatim="Yes" row="13" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,4: &#xa0;gb per month" verbatim="&#xa0;GB per month" row="13" rowspan="1" column="4" colspan="1" concepts="//@concepts.125" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="&#xa0;GB per month" verbatim="&#xa0;GB per month" concept="//@concepts.125"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,5: none (paid users)" verbatim="None (paid users)" row="13" rowspan="1" column="5" colspan="1" concepts="//@concepts.126 //@concepts.38" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="paid users" verbatim="paid users" concept="//@concepts.126"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,6: no" verbatim="No" row="13" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,7: webdav" verbatim="WebDAV" row="13" rowspan="1" column="7" colspan="1" concepts="//@concepts.69" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="WebDAV" verbatim="WebDAV" concept="//@concepts.69"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,8: ?" verbatim="?" row="13" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,9: ?" verbatim="?" row="13" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,10: ?" verbatim="?" row="13" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,11: subscription to mobileme costs us$99/year" verbatim="Subscription to MobileMe costs US$99/year" row="13" rowspan="1" column="11" colspan="1" concepts="//@concepts.127 //@concepts.122" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Subscription to MobileMe costs US$99" verbatim="Subscription to MobileMe costs US$99" concept="//@concepts.127"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="year" verbatim="year" concept="//@concepts.122"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,1: 2&#xa0;gb" verbatim="2&#xa0;GB" row="14" rowspan="1" column="1" colspan="1" concepts="//@concepts.108" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="2&#xa0;GB" verbatim="2&#xa0;GB" concept="//@concepts.108"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,2: 2&#xa0;gb (subscription)" verbatim="2&#xa0;GB&#xA;(subscription)" row="14" rowspan="1" column="2" colspan="1" concepts="//@concepts.128 //@concepts.108" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="subscription" verbatim="subscription" concept="//@concepts.128"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="2&#xa0;GB" verbatim="2&#xa0;GB" concept="//@concepts.108"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,3: yes" verbatim="Yes" row="14" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,4: none" verbatim="None" row="14" rowspan="1" column="4" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,5: 7 or 14&#xa0;days based on subscription" verbatim="7 or 14&#xa0;days based on subscription" row="14" rowspan="1" column="5" colspan="1" concepts="//@concepts.129" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Or">
+        <contraints xsi:type="pcmmm:Integer" name="7" confident="true" verbatim="7" value="7"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="14&#xa0;days based on subscription" verbatim="14&#xa0;days based on subscription" concept="//@concepts.129"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,6: no" verbatim="No" row="14" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,7: ?" verbatim="?" row="14" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,8: ?" verbatim="?" row="14" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,9: ?" verbatim="?" row="14" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,10: ?" verbatim="?" row="14" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,11: peer-to-peer file transfer service; free windows d" verbatim="Peer-to-peer file transfer service; free Windows desktop client with resumption of interrupted transfers, transfer pausing &amp; live data streaming" row="14" rowspan="1" column="11" colspan="1" concepts="//@concepts.130 //@concepts.131 //@concepts.132" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Peer-to-peer file transfer service" verbatim="Peer-to-peer file transfer service" concept="//@concepts.130"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="free Windows desktop client with resumption of interrupted transfers" verbatim="free Windows desktop client with resumption of interrupted transfers" concept="//@concepts.131"/>
+        </contraints>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="transfer pausing &amp; live data streaming" verbatim="transfer pausing &amp; live data streaming" concept="//@concepts.132"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,1: 10&#xa0;gb up to 50&#xa0; via referrals (free) up to 1&#xa0;tb (p" verbatim="10&#xa0;GB up to 50&#xa0; via referrals (free)&#xA;up to 1&#xa0;TB (Pro accounts)&#xA; up to 100&#xa0;TB (Business accounts)" row="15" rowspan="1" column="1" colspan="1" concepts="//@concepts.133 //@concepts.134" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA;up to 1&#xa0;TB (Pro accounts)&#xA; up to 100&#xa0;TB (Business accounts" verbatim="free)&#xA;up to 1&#xa0;TB (Pro accounts)&#xA; up to 100&#xa0;TB (Business accounts" concept="//@concepts.133"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="10&#xa0;GB up to 50&#xa0; via referrals" verbatim="10&#xa0;GB up to 50&#xa0; via referrals" concept="//@concepts.134"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,2: 200&#xa0;mb (free) 20&#xa0;gb (paid)" verbatim="200&#xa0;MB (free)&#xA;20&#xa0;GB (paid)" row="15" rowspan="1" column="2" colspan="1" concepts="//@concepts.135 //@concepts.136" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA;20&#xa0;GB (paid" verbatim="free)&#xA;20&#xa0;GB (paid" concept="//@concepts.135"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="200&#xa0;MB" verbatim="200&#xa0;MB" concept="//@concepts.136"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,3: no (free); yes (premium)" verbatim="No (free);&#xA; Yes (premium)" row="15" rowspan="1" column="3" colspan="1" concepts="//@concepts.51 //@concepts.137" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="free)" verbatim="free)" concept="//@concepts.51"/>
+          <contraints xsi:type="pcmmm:Partial">
+            <condition xsi:type="pcmmm:VariabilityConceptRef" name="(premium" verbatim="(premium" concept="//@concepts.137"/>
+            <argument xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+          </contraints>
+        </condition>
+        <argument xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,4: none" verbatim="None" row="15" rowspan="1" column="4" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,5: 1 year but &quot;no data warehousing&quot;" verbatim="1 year but &quot;no data warehousing&quot;" row="15" rowspan="1" column="5" colspan="1" concepts="//@concepts.138" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="1 year but &quot;no data warehousing&quot;" verbatim="1 year but &quot;no data warehousing&quot;" concept="//@concepts.138"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,6: only for pro users" verbatim="Only for pro users" row="15" rowspan="1" column="6" colspan="1" concepts="//@concepts.139" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Only for pro users" verbatim="Only for pro users" concept="//@concepts.139"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,7: yes" verbatim="Yes" row="15" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,8: no" verbatim="No" row="15" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,9: yes" verbatim="Yes" row="15" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,10: ?" verbatim="?" row="15" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,11: resuming of interrupted downloads possible." verbatim="Resuming of interrupted downloads possible." row="15" rowspan="1" column="11" colspan="1" concepts="//@concepts.140" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Resuming of interrupted downloads possible." verbatim="Resuming of interrupted downloads possible." concept="//@concepts.140"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,1: 50&#xa0;gb (free) up to 4&#xa0;tb (paid)" verbatim="50&#xa0;GB (free)&#xA;Up to 4&#xa0;TB (paid)" row="16" rowspan="1" column="1" colspan="1" concepts="//@concepts.141 //@concepts.90" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA;Up to 4&#xa0;TB (paid" verbatim="free)&#xA;Up to 4&#xa0;TB (paid" concept="//@concepts.141"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="50&#xa0;GB" verbatim="50&#xa0;GB" concept="//@concepts.90"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,2: only restricted by browser memory capability" verbatim="Only restricted by browser memory capability" row="16" rowspan="1" column="2" colspan="1" concepts="//@concepts.142" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Only restricted by browser memory capability" verbatim="Only restricted by browser memory capability" concept="//@concepts.142"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,3: no" verbatim="No" row="16" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,4: free (50&#xa0;gb storage): 10 gb traffic/30 minutes pro" verbatim="Free (50&#xa0;GB storage): 10 GB traffic/30 minutes&#xA;Pro I (500&#xa0;GB storage): 12&#xa0;TB traffic/month&#xA;Pro II (2&#xa0;TB storage): 48&#xa0;TB traffic/month&#xA;Pro III (4&#xa0;TB storage): 96&#xa0;TB traffic/month" row="16" rowspan="1" column="4" colspan="1" concepts="//@concepts.144 //@concepts.145 //@concepts.143 //@concepts.61 //@concepts.146" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Free (50&#xa0;GB storage): 10 GB traffic" verbatim="Free (50&#xa0;GB storage): 10 GB traffic" concept="//@concepts.143"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="30 minutes&#xA;Pro I (500&#xa0;GB storage): 12&#xa0;TB traffic" verbatim="30 minutes&#xA;Pro I (500&#xa0;GB storage): 12&#xa0;TB traffic" concept="//@concepts.144"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="month&#xA;Pro II (2&#xa0;TB storage): 48&#xa0;TB traffic" verbatim="month&#xA;Pro II (2&#xa0;TB storage): 48&#xa0;TB traffic" concept="//@concepts.145"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="month&#xA;Pro III (4&#xa0;TB storage): 96&#xa0;TB traffic" verbatim="month&#xA;Pro III (4&#xa0;TB storage): 96&#xa0;TB traffic" concept="//@concepts.146"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="month" verbatim="month" concept="//@concepts.61"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,5: none" verbatim="None" row="16" rowspan="1" column="5" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,6: no" verbatim="No" row="16" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,7: yes" verbatim="Yes" row="16" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,8: no" verbatim="No" row="16" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,9: yes" verbatim="Yes" row="16" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,10: ?" verbatim="?" row="16" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,11: resuming of interrupted downloads possible. encryp" verbatim="Resuming of interrupted downloads possible. Encrypted files." row="16" rowspan="1" column="11" colspan="1" concepts="//@concepts.147" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Resuming of interrupted downloads possible. Encrypted files." verbatim="Resuming of interrupted downloads possible. Encrypted files." concept="//@concepts.147"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,1: 7&#xa0;gb (free) 3 gb (free for sync photos with mobile" verbatim="7&#xa0;GB (free)&#xA;3 GB (free for sync photos with mobile app)&#xA;5 GB (free, 500 MB for each referral person up to 5 GB)&#xA;20 GB (free for Office 365 users)&#xA;200 GB (free with Surface 2 and Surface 2 Pro)&#xA;Up to 125&#xa0;GB (paid)" row="17" rowspan="1" column="1" colspan="1" concepts="//@concepts.148 //@concepts.149 //@concepts.150 //@concepts.151" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA;3 GB (free for sync photos with mobile app)&#xA;5 GB (free" verbatim="free)&#xA;3 GB (free for sync photos with mobile app)&#xA;5 GB (free" concept="//@concepts.148"/>
+          <contraints xsi:type="pcmmm:And">
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="500 MB for each referral person up to 5 GB)&#xA;20 GB (free for Office 365 users)&#xA;200 GB (free with Surface 2" verbatim="500 MB for each referral person up to 5 GB)&#xA;20 GB (free for Office 365 users)&#xA;200 GB (free with Surface 2" concept="//@concepts.149"/>
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Surface 2 Pro)&#xA;Up to 125&#xa0;GB (paid" verbatim="Surface 2 Pro)&#xA;Up to 125&#xa0;GB (paid" concept="//@concepts.150"/>
+          </contraints>
+        </condition>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="7&#xa0;GB" verbatim="7&#xa0;GB" concept="//@concepts.151"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,2: 2&#xa0;gb" verbatim="2&#xa0;GB" row="17" rowspan="1" column="2" colspan="1" concepts="//@concepts.108" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="2&#xa0;GB" verbatim="2&#xa0;GB" concept="//@concepts.108"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,3: yes" verbatim="Yes" row="17" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,4: none" verbatim="None" row="17" rowspan="1" column="4" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,5: 270&#xa0;days of account inactivity" verbatim="270&#xa0;days of account inactivity" row="17" rowspan="1" column="5" colspan="1" concepts="//@concepts.152" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="270&#xa0;days of account inactivity" verbatim="270&#xa0;days of account inactivity" concept="//@concepts.152"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,6: no" verbatim="No" row="17" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,7: yes" verbatim="Yes" row="17" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,8: ?" verbatim="?" row="17" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,9: yes" verbatim="Yes" row="17" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,10: ?" verbatim="?" row="17" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,11: allows remote access of files on running windows p" verbatim="Allows remote access of files on running Windows PCs with SkyDrive installed (&quot;Fetch files&quot;) without having to upload the contents of the shares to SkyDrive" row="17" rowspan="1" column="11" colspan="1" concepts="//@concepts.153" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Allows remote access of files on running Windows PCs with SkyDrive installed (&quot;Fetch files&quot;) without having to upload the contents of the shares to SkyDrive" verbatim="Allows remote access of files on running Windows PCs with SkyDrive installed (&quot;Fetch files&quot;) without having to upload the contents of the shares to SkyDrive" concept="//@concepts.153"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,1: 10&#xa0;gb standard (free) 300&#xa0;gb standard plus (&#x20ac;8.21/" verbatim="10&#xa0;GB Standard (free)&#xA;300&#xa0;GB Standard Plus (&#x20ac;8.21/month)&#xA;700&#xa0;GB Premium (&#x20ac;16.43/month)" row="18" rowspan="1" column="1" colspan="1" concepts="//@concepts.154 //@concepts.155 //@concepts.61 //@concepts.156" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA;300&#xa0;GB Standard Plus (&#x20ac;8.21" verbatim="free)&#xA;300&#xa0;GB Standard Plus (&#x20ac;8.21" concept="//@concepts.154"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="month)&#xA;700&#xa0;GB Premium (&#x20ac;16.43" verbatim="month)&#xA;700&#xa0;GB Premium (&#x20ac;16.43" concept="//@concepts.155"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="month" verbatim="month" concept="//@concepts.61"/>
+        </condition>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="10&#xa0;GB Standard" verbatim="10&#xa0;GB Standard" concept="//@concepts.156"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,2: 100&#xa0;gb" verbatim="100&#xa0;GB" row="18" rowspan="1" column="2" colspan="1" concepts="//@concepts.157" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="100&#xa0;GB" verbatim="100&#xa0;GB" concept="//@concepts.157"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,3: no" verbatim="No" row="18" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,4: 12.5 kb/s speed limitation for non-paying users. *" verbatim="12.5 kB/s speed limitation for non-paying users. *01/10/2012* Speed limitation was removed for undetermined break (setting by 1100 kbit/s)." row="18" rowspan="1" column="4" colspan="1" concepts="//@concepts.158 //@concepts.159 //@concepts.160 //@concepts.161" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="12.5 kB" verbatim="12.5 kB" concept="//@concepts.158"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="s speed limitation for non-paying users. *01" verbatim="s speed limitation for non-paying users. *01" concept="//@concepts.159"/>
+        <contraints xsi:type="pcmmm:Integer" name="10" confident="true" verbatim="10" value="10"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="2012* Speed limitation was removed for undetermined break (setting by 1100 kbit" verbatim="2012* Speed limitation was removed for undetermined break (setting by 1100 kbit" concept="//@concepts.160"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="s)." verbatim="s)." concept="//@concepts.161"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,5: none for any rapid users." verbatim="None for any Rapid users." row="18" rowspan="1" column="5" colspan="1" concepts="//@concepts.162" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None for any Rapid users." verbatim="None for any Rapid users." concept="//@concepts.162"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,6: up to 300 jobs, 5 at a time" verbatim="Up to 300 jobs, 5 at a time" row="18" rowspan="1" column="6" colspan="1" concepts="//@concepts.163 //@concepts.164" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Up to 300 jobs" verbatim="Up to 300 jobs" concept="//@concepts.163"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="5 at a time" verbatim="5 at a time" concept="//@concepts.164"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,7: yes" verbatim="Yes" row="18" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,8: ?" verbatim="?" row="18" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,9: ?" verbatim="?" row="18" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,10: ?" verbatim="?" row="18" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,11: resuming of interrupted downloads only for rapidpr" verbatim="Resuming of interrupted downloads only for RapidPro users" row="18" rowspan="1" column="11" colspan="1" concepts="//@concepts.165" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Resuming of interrupted downloads only for RapidPro users" verbatim="Resuming of interrupted downloads only for RapidPro users" concept="//@concepts.165"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,1: 2 gb (free), unlimited (paid)" verbatim="2 GB (free), Unlimited (paid)" row="19" rowspan="1" column="1" colspan="1" concepts="//@concepts.51 //@concepts.166 //@concepts.36" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="free)" verbatim="free)" concept="//@concepts.51"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Unlimited (paid" verbatim="Unlimited (paid" concept="//@concepts.166"/>
+        </condition>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="2 GB" verbatim="2 GB" concept="//@concepts.36"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,2: ?" verbatim="?" row="19" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,3: yes" verbatim="Yes" row="19" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,4: none" verbatim="None" row="19" rowspan="1" column="4" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,5: none" verbatim="None" row="19" rowspan="1" column="5" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,6: no" verbatim="No" row="19" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,7: no" verbatim="No" row="19" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,8: no" verbatim="No" row="19" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,9: ?" verbatim="?" row="19" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,10: no" verbatim="No" row="19" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,11: file synchronization and backup service." verbatim="File synchronization and backup service." row="19" rowspan="1" column="11" colspan="1" concepts="//@concepts.167 //@concepts.168" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="File synchronization" verbatim="File synchronization" concept="//@concepts.167"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="backup service." verbatim="backup service." concept="//@concepts.168"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,1: free only for 60 days, after: 60&#xa0;gb (personal tier" verbatim="Free only for 60 days, after: 60&#xa0;GB (personal tier)&#xA;Unlimited&#xa0;GB (professional tier)" row="20" rowspan="1" column="1" colspan="1" concepts="//@concepts.169 //@concepts.170 //@concepts.171" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Free only for 60 days" verbatim="Free only for 60 days" concept="//@concepts.169"/>
+        <contraints xsi:type="pcmmm:Partial">
+          <condition xsi:type="pcmmm:VariabilityConceptRef" name="personal tier)&#xA;Unlimited&#xa0;GB (professional tier" verbatim="personal tier)&#xA;Unlimited&#xa0;GB (professional tier" concept="//@concepts.170"/>
+          <argument xsi:type="pcmmm:VariabilityConceptRef" name="after: 60&#xa0;GB" verbatim="after: 60&#xa0;GB" concept="//@concepts.171"/>
+        </contraints>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,2: none" verbatim="None" row="20" rowspan="1" column="2" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,3: yes" verbatim="Yes" row="20" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,4: 10&#xa0;gb/file/day (free) 250&#xa0;gb/file/day (paid) if yo" verbatim="10&#xa0;GB/file/day (free) &#xA; 250&#xa0;GB/file/day (paid) &#xA; If you hit the limit your links will be disabled for 24 hours. The bandwidth limits only apply to public links." row="20" rowspan="1" column="4" colspan="1" concepts="//@concepts.58 //@concepts.172 //@concepts.173 //@concepts.174" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="10&#xa0;GB" verbatim="10&#xa0;GB" concept="//@concepts.58"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="file" verbatim="file" concept="//@concepts.172"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="day (free) &#xA; 250&#xa0;GB" verbatim="day (free) &#xA; 250&#xa0;GB" concept="//@concepts.173"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="file" verbatim="file" concept="//@concepts.172"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="day (paid) &#xA; If you hit the limit your links will be disabled for 24 hours. The bandwidth limits only apply to public links." verbatim="day (paid) &#xA; If you hit the limit your links will be disabled for 24 hours. The bandwidth limits only apply to public links." concept="//@concepts.174"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,5: no expiration for paid accounts; 90&#xa0;days of inacti" verbatim="No expiration for paid accounts;&#xA; 90&#xa0;days of inactivity for free users" row="20" rowspan="1" column="5" colspan="1" concepts="//@concepts.175 //@concepts.176" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="No expiration for paid accounts" verbatim="No expiration for paid accounts" concept="//@concepts.175"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="90&#xa0;days of inactivity for free users" verbatim="90&#xa0;days of inactivity for free users" concept="//@concepts.176"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,6: no" verbatim="No" row="20" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,7: rest" verbatim="REST" row="20" rowspan="1" column="7" colspan="1" concepts="//@concepts.45" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="REST" verbatim="REST" concept="//@concepts.45"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,8: ?" verbatim="?" row="20" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,9: ?" verbatim="?" row="20" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,10: ?" verbatim="?" row="20" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,11: n/a" verbatim="N/A" row="20" rowspan="1" column="11" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,1: unlimited" verbatim="Unlimited" row="21" rowspan="1" column="1" colspan="1" concepts="//@concepts.177" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Unlimited" verbatim="Unlimited" concept="//@concepts.177"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,2: free:100&#xa0;mb pro:1&#xa0;gb enterprise:4&#xa0;gb" verbatim="Free:100&#xa0;MB &#xA;Pro:1&#xa0;GB &#xA; Enterprise:4&#xa0;GB" row="21" rowspan="1" column="2" colspan="1" concepts="//@concepts.178" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Free:100&#xa0;MB &#xA;Pro:1&#xa0;GB &#xA; Enterprise:4&#xa0;GB" verbatim="Free:100&#xa0;MB &#xA;Pro:1&#xa0;GB &#xA; Enterprise:4&#xa0;GB" concept="//@concepts.178"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,3: yes" verbatim="Yes" row="21" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,4: none" verbatim="None" row="21" rowspan="1" column="4" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,5: none, unless set by user" verbatim="None, unless set by user" row="21" rowspan="1" column="5" colspan="1" concepts="//@concepts.38 //@concepts.179" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="unless set by user" verbatim="unless set by user" concept="//@concepts.179"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,6: no" verbatim="No" row="21" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,7: yes" verbatim="Yes" row="21" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,8: yes (for enterprise clients only)" verbatim="Yes &#xA;(For enterprise clients only)" row="21" rowspan="1" column="8" colspan="1" concepts="//@concepts.180" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="For enterprise clients only" verbatim="For enterprise clients only" concept="//@concepts.180"/>
+        <argument xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,9: yes" verbatim="Yes" row="21" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,10: ?" verbatim="?" row="21" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,11: hipaa-compliant, group messaging, audit logs, gran" verbatim="HIPAA-compliant, group messaging, audit logs, granular security control, embedable on website." row="21" rowspan="1" column="11" colspan="1" concepts="//@concepts.182 //@concepts.181 //@concepts.185 //@concepts.183 //@concepts.184" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="HIPAA-compliant" verbatim="HIPAA-compliant" concept="//@concepts.181"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="group messaging" verbatim="group messaging" concept="//@concepts.182"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="audit logs" verbatim="audit logs" concept="//@concepts.183"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="granular security control" verbatim="granular security control" concept="//@concepts.184"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="embedable on website." verbatim="embedable on website." concept="//@concepts.185"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,1: 5&#xa0;gb up to 20 via referrals (free) unlimited (paid" verbatim="5&#xa0;GB&#xA;up to 20 via referrals (free)&#xA;Unlimited (paid)" row="22" rowspan="1" column="1" colspan="1" concepts="//@concepts.79 //@concepts.186" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA;Unlimited (paid" verbatim="free)&#xA;Unlimited (paid" concept="//@concepts.79"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="5&#xa0;GB&#xA;up to 20 via referrals" verbatim="5&#xa0;GB&#xA;up to 20 via referrals" concept="//@concepts.186"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,2: 5 tb" verbatim="5 TB" row="22" rowspan="1" column="2" colspan="1" concepts="//@concepts.187" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="5 TB" verbatim="5 TB" concept="//@concepts.187"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,3: yes" verbatim="Yes" row="22" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,4: none" verbatim="None" row="22" rowspan="1" column="4" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,5: reserve the right to delete after 90 days of inact" verbatim="Reserve the right to delete after 90 days of inactivity for free users but will notify via email in advance." row="22" rowspan="1" column="5" colspan="1" concepts="//@concepts.188" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Reserve the right to delete after 90 days of inactivity for free users but will notify via email in advance." verbatim="Reserve the right to delete after 90 days of inactivity for free users but will notify via email in advance." concept="//@concepts.188"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,6: only files selected by 3rd party" verbatim="Only files selected by 3rd party" row="22" rowspan="1" column="6" colspan="1" concepts="//@concepts.189" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Only files selected by 3rd party" verbatim="Only files selected by 3rd party" concept="//@concepts.189"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,7: rest" verbatim="REST" row="22" rowspan="1" column="7" colspan="1" concepts="//@concepts.45" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="REST" verbatim="REST" concept="//@concepts.45"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,8: no. only through locally installed ftp server" verbatim="No. Only through locally installed FTP server" row="22" rowspan="1" column="8" colspan="1" concepts="//@concepts.190" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="No. Only through locally installed FTP server" verbatim="No. Only through locally installed FTP server" concept="//@concepts.190"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,9: ?" verbatim="?" row="22" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,10: ?" verbatim="?" row="22" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,11: application and service to be discontinued, effect" verbatim="Application and service to be discontinued, effective 1st June 2014." row="22" rowspan="1" column="11" colspan="1" concepts="//@concepts.191 //@concepts.192 //@concepts.193" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Application" verbatim="Application" concept="//@concepts.191"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="service to be discontinued" verbatim="service to be discontinued" concept="//@concepts.192"/>
+        </contraints>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="effective 1st June 2014." verbatim="effective 1st June 2014." concept="//@concepts.193"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,1: 5&#xa0;gb (free) unlimited (paid)" verbatim="5&#xa0;GB (free)&#xA; Unlimited (paid)" row="23" rowspan="1" column="1" colspan="1" concepts="//@concepts.194 //@concepts.48" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="free)&#xA; Unlimited (paid" verbatim="free)&#xA; Unlimited (paid" concept="//@concepts.194"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="5&#xa0;GB" verbatim="5&#xa0;GB" concept="//@concepts.48"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,2: 40&#xa0;gb" verbatim="40&#xa0;GB" row="23" rowspan="1" column="2" colspan="1" concepts="//@concepts.195" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="40&#xa0;GB" verbatim="40&#xa0;GB" concept="//@concepts.195"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,3: yes" verbatim="Yes" row="23" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,4: none" verbatim="None" row="23" rowspan="1" column="4" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="None" verbatim="None" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,5: 90 days of inactivity for free users" verbatim="90 days of inactivity for free users" row="23" rowspan="1" column="5" colspan="1" concepts="//@concepts.78" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="90 days of inactivity for free users" verbatim="90 days of inactivity for free users" concept="//@concepts.78"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,6: no" verbatim="No" row="23" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,7: rest, read-only, no post verb actions (wuala rest " verbatim="REST, read-only, no POST verb actions (Wuala REST API)" row="23" rowspan="1" column="7" colspan="1" concepts="//@concepts.45 //@concepts.196 //@concepts.197 //@concepts.198" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="REST" verbatim="REST" concept="//@concepts.45"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="read-only" verbatim="read-only" concept="//@concepts.196"/>
+        <contraints xsi:type="pcmmm:Partial">
+          <condition xsi:type="pcmmm:VariabilityConceptRef" name="Wuala REST API" verbatim="Wuala REST API" concept="//@concepts.197"/>
+          <argument xsi:type="pcmmm:VariabilityConceptRef" name="no POST verb actions" verbatim="no POST verb actions" concept="//@concepts.198"/>
+        </contraints>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,8: no" verbatim="No" row="23" rowspan="1" column="8" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.7">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,9: yes" verbatim="Yes" row="23" rowspan="1" column="9" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.8">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,10: ?" verbatim="?" row="23" rowspan="1" column="10" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.9">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,11: uses social networking, and has file sharing featu" verbatim="Uses Social Networking, and has file sharing features similar to Bittorrent. Uses client-side encryption." row="23" rowspan="1" column="11" colspan="1" concepts="//@concepts.199 //@concepts.200" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.10">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Uses Social Networking" verbatim="Uses Social Networking" concept="//@concepts.199"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="and has file sharing features similar to Bittorrent. Uses client-side encryption." verbatim="and has file sharing features similar to Bittorrent. Uses client-side encryption." concept="//@concepts.200"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Extra" name="24,1: storage size" verbatim="Storage size" row="24" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,2: max. file size" verbatim="Max. file size" row="24" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,3: direct access" verbatim="Direct access" row="24" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,4: traffic/bandwidth limit" verbatim="Traffic/bandwidth limit" row="24" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,5: file expiration" verbatim="File expiration" row="24" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,6: remote uploading?" verbatim="Remote uploading?" row="24" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,7: developer api?" verbatim="Developer API?" row="24" rowspan="1" column="7" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,8: ftp upload possible?" verbatim="FTP upload possible?" row="24" rowspan="1" column="8" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,9: file versioning" verbatim="File versioning" row="24" rowspan="1" column="9" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="24,10: misc. notes" verbatim="Misc. notes" row="24" rowspan="1" column="10" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="" verbatim="" row="24" rowspan="1" column="11" colspan="1"/>
+  </matrices>
+  <concepts xsi:type="pcmmm:Feature" name="Storage size" myValuedCells="//@matrices.0/@cells.36 //@matrices.0/@cells.47 //@matrices.0/@cells.58 //@matrices.0/@cells.69 //@matrices.0/@cells.80 //@matrices.0/@cells.91 //@matrices.0/@cells.102 //@matrices.0/@cells.113 //@matrices.0/@cells.124 //@matrices.0/@cells.135 //@matrices.0/@cells.146 //@matrices.0/@cells.157 //@matrices.0/@cells.168 //@matrices.0/@cells.179 //@matrices.0/@cells.190 //@matrices.0/@cells.201 //@matrices.0/@cells.212 //@matrices.0/@cells.223 //@matrices.0/@cells.234 //@matrices.0/@cells.245 //@matrices.0/@cells.256 //@matrices.0/@cells.267 //@matrices.0/@cells.278" domain="//@domainCollection/@domains.0"/>
+  <concepts xsi:type="pcmmm:Feature" name="Max. file size" myValuedCells="//@matrices.0/@cells.37 //@matrices.0/@cells.48 //@matrices.0/@cells.59 //@matrices.0/@cells.70 //@matrices.0/@cells.81 //@matrices.0/@cells.92 //@matrices.0/@cells.103 //@matrices.0/@cells.114 //@matrices.0/@cells.125 //@matrices.0/@cells.136 //@matrices.0/@cells.147 //@matrices.0/@cells.158 //@matrices.0/@cells.169 //@matrices.0/@cells.180 //@matrices.0/@cells.191 //@matrices.0/@cells.202 //@matrices.0/@cells.213 //@matrices.0/@cells.224 //@matrices.0/@cells.235 //@matrices.0/@cells.246 //@matrices.0/@cells.257 //@matrices.0/@cells.268 //@matrices.0/@cells.279" domain="//@domainCollection/@domains.1"/>
+  <concepts xsi:type="pcmmm:Feature" name="Direct access" myValuedCells="//@matrices.0/@cells.38 //@matrices.0/@cells.49 //@matrices.0/@cells.60 //@matrices.0/@cells.71 //@matrices.0/@cells.82 //@matrices.0/@cells.93 //@matrices.0/@cells.104 //@matrices.0/@cells.115 //@matrices.0/@cells.126 //@matrices.0/@cells.137 //@matrices.0/@cells.148 //@matrices.0/@cells.159 //@matrices.0/@cells.170 //@matrices.0/@cells.181 //@matrices.0/@cells.192 //@matrices.0/@cells.203 //@matrices.0/@cells.214 //@matrices.0/@cells.225 //@matrices.0/@cells.236 //@matrices.0/@cells.247 //@matrices.0/@cells.258 //@matrices.0/@cells.269 //@matrices.0/@cells.280" domain="//@domainCollection/@domains.2"/>
+  <concepts xsi:type="pcmmm:Feature" name="Traffic/bandwidth limit" myValuedCells="//@matrices.0/@cells.39 //@matrices.0/@cells.50 //@matrices.0/@cells.61 //@matrices.0/@cells.72 //@matrices.0/@cells.83 //@matrices.0/@cells.94 //@matrices.0/@cells.105 //@matrices.0/@cells.116 //@matrices.0/@cells.127 //@matrices.0/@cells.138 //@matrices.0/@cells.149 //@matrices.0/@cells.160 //@matrices.0/@cells.171 //@matrices.0/@cells.182 //@matrices.0/@cells.193 //@matrices.0/@cells.204 //@matrices.0/@cells.215 //@matrices.0/@cells.226 //@matrices.0/@cells.237 //@matrices.0/@cells.248 //@matrices.0/@cells.259 //@matrices.0/@cells.270 //@matrices.0/@cells.281" domain="//@domainCollection/@domains.3"/>
+  <concepts xsi:type="pcmmm:Feature" name="File expiration" myValuedCells="//@matrices.0/@cells.40 //@matrices.0/@cells.51 //@matrices.0/@cells.62 //@matrices.0/@cells.73 //@matrices.0/@cells.84 //@matrices.0/@cells.95 //@matrices.0/@cells.106 //@matrices.0/@cells.117 //@matrices.0/@cells.128 //@matrices.0/@cells.139 //@matrices.0/@cells.150 //@matrices.0/@cells.161 //@matrices.0/@cells.172 //@matrices.0/@cells.183 //@matrices.0/@cells.194 //@matrices.0/@cells.205 //@matrices.0/@cells.216 //@matrices.0/@cells.227 //@matrices.0/@cells.238 //@matrices.0/@cells.249 //@matrices.0/@cells.260 //@matrices.0/@cells.271 //@matrices.0/@cells.282" domain="//@domainCollection/@domains.4"/>
+  <concepts xsi:type="pcmmm:Feature" name="Remote uploading?" myValuedCells="//@matrices.0/@cells.41 //@matrices.0/@cells.52 //@matrices.0/@cells.63 //@matrices.0/@cells.74 //@matrices.0/@cells.85 //@matrices.0/@cells.96 //@matrices.0/@cells.107 //@matrices.0/@cells.118 //@matrices.0/@cells.129 //@matrices.0/@cells.140 //@matrices.0/@cells.151 //@matrices.0/@cells.162 //@matrices.0/@cells.173 //@matrices.0/@cells.184 //@matrices.0/@cells.195 //@matrices.0/@cells.206 //@matrices.0/@cells.217 //@matrices.0/@cells.228 //@matrices.0/@cells.239 //@matrices.0/@cells.250 //@matrices.0/@cells.261 //@matrices.0/@cells.272 //@matrices.0/@cells.283" domain="//@domainCollection/@domains.5"/>
+  <concepts xsi:type="pcmmm:Feature" name="Developer API?" myValuedCells="//@matrices.0/@cells.42 //@matrices.0/@cells.53 //@matrices.0/@cells.64 //@matrices.0/@cells.75 //@matrices.0/@cells.86 //@matrices.0/@cells.97 //@matrices.0/@cells.108 //@matrices.0/@cells.119 //@matrices.0/@cells.130 //@matrices.0/@cells.141 //@matrices.0/@cells.152 //@matrices.0/@cells.163 //@matrices.0/@cells.174 //@matrices.0/@cells.185 //@matrices.0/@cells.196 //@matrices.0/@cells.207 //@matrices.0/@cells.218 //@matrices.0/@cells.229 //@matrices.0/@cells.240 //@matrices.0/@cells.251 //@matrices.0/@cells.262 //@matrices.0/@cells.273 //@matrices.0/@cells.284" domain="//@domainCollection/@domains.6"/>
+  <concepts xsi:type="pcmmm:Feature" name="FTP upload possible?" myValuedCells="//@matrices.0/@cells.43 //@matrices.0/@cells.54 //@matrices.0/@cells.65 //@matrices.0/@cells.76 //@matrices.0/@cells.87 //@matrices.0/@cells.98 //@matrices.0/@cells.109 //@matrices.0/@cells.120 //@matrices.0/@cells.131 //@matrices.0/@cells.142 //@matrices.0/@cells.153 //@matrices.0/@cells.164 //@matrices.0/@cells.175 //@matrices.0/@cells.186 //@matrices.0/@cells.197 //@matrices.0/@cells.208 //@matrices.0/@cells.219 //@matrices.0/@cells.230 //@matrices.0/@cells.241 //@matrices.0/@cells.252 //@matrices.0/@cells.263 //@matrices.0/@cells.274 //@matrices.0/@cells.285" domain="//@domainCollection/@domains.7"/>
+  <concepts xsi:type="pcmmm:Feature" name="File versioning" myValuedCells="//@matrices.0/@cells.44 //@matrices.0/@cells.55 //@matrices.0/@cells.66 //@matrices.0/@cells.77 //@matrices.0/@cells.88 //@matrices.0/@cells.99 //@matrices.0/@cells.110 //@matrices.0/@cells.121 //@matrices.0/@cells.132 //@matrices.0/@cells.143 //@matrices.0/@cells.154 //@matrices.0/@cells.165 //@matrices.0/@cells.176 //@matrices.0/@cells.187 //@matrices.0/@cells.198 //@matrices.0/@cells.209 //@matrices.0/@cells.220 //@matrices.0/@cells.231 //@matrices.0/@cells.242 //@matrices.0/@cells.253 //@matrices.0/@cells.264 //@matrices.0/@cells.275 //@matrices.0/@cells.286" domain="//@domainCollection/@domains.8"/>
+  <concepts xsi:type="pcmmm:Feature" name="Follows symlinks" myValuedCells="//@matrices.0/@cells.45 //@matrices.0/@cells.56 //@matrices.0/@cells.67 //@matrices.0/@cells.78 //@matrices.0/@cells.89 //@matrices.0/@cells.100 //@matrices.0/@cells.111 //@matrices.0/@cells.122 //@matrices.0/@cells.133 //@matrices.0/@cells.144 //@matrices.0/@cells.155 //@matrices.0/@cells.166 //@matrices.0/@cells.177 //@matrices.0/@cells.188 //@matrices.0/@cells.199 //@matrices.0/@cells.210 //@matrices.0/@cells.221 //@matrices.0/@cells.232 //@matrices.0/@cells.243 //@matrices.0/@cells.254 //@matrices.0/@cells.265 //@matrices.0/@cells.276 //@matrices.0/@cells.287" domain="//@domainCollection/@domains.9"/>
+  <concepts xsi:type="pcmmm:Feature" name="Misc. notes" myValuedCells="//@matrices.0/@cells.46 //@matrices.0/@cells.57 //@matrices.0/@cells.68 //@matrices.0/@cells.79 //@matrices.0/@cells.90 //@matrices.0/@cells.101 //@matrices.0/@cells.112 //@matrices.0/@cells.123 //@matrices.0/@cells.134 //@matrices.0/@cells.145 //@matrices.0/@cells.156 //@matrices.0/@cells.167 //@matrices.0/@cells.178 //@matrices.0/@cells.189 //@matrices.0/@cells.200 //@matrices.0/@cells.211 //@matrices.0/@cells.222 //@matrices.0/@cells.233 //@matrices.0/@cells.244 //@matrices.0/@cells.255 //@matrices.0/@cells.266 //@matrices.0/@cells.277 //@matrices.0/@cells.288" domain="//@domainCollection/@domains.10"/>
+  <concepts xsi:type="pcmmm:Product" name="Amazon Cloud Drive" myValuedCells="//@matrices.0/@cells.36 //@matrices.0/@cells.37 //@matrices.0/@cells.38 //@matrices.0/@cells.39 //@matrices.0/@cells.40 //@matrices.0/@cells.41 //@matrices.0/@cells.42 //@matrices.0/@cells.43 //@matrices.0/@cells.44 //@matrices.0/@cells.45 //@matrices.0/@cells.46"/>
+  <concepts xsi:type="pcmmm:Product" name="Amazon S3" myValuedCells="//@matrices.0/@cells.47 //@matrices.0/@cells.48 //@matrices.0/@cells.49 //@matrices.0/@cells.50 //@matrices.0/@cells.51 //@matrices.0/@cells.52 //@matrices.0/@cells.53 //@matrices.0/@cells.54 //@matrices.0/@cells.55 //@matrices.0/@cells.56 //@matrices.0/@cells.57"/>
+  <concepts xsi:type="pcmmm:Product" name="ASUS WebStorage" myValuedCells="//@matrices.0/@cells.58 //@matrices.0/@cells.59 //@matrices.0/@cells.60 //@matrices.0/@cells.61 //@matrices.0/@cells.62 //@matrices.0/@cells.63 //@matrices.0/@cells.64 //@matrices.0/@cells.65 //@matrices.0/@cells.66 //@matrices.0/@cells.67 //@matrices.0/@cells.68"/>
+  <concepts xsi:type="pcmmm:Product" name="Box" myValuedCells="//@matrices.0/@cells.69 //@matrices.0/@cells.70 //@matrices.0/@cells.71 //@matrices.0/@cells.72 //@matrices.0/@cells.73 //@matrices.0/@cells.74 //@matrices.0/@cells.75 //@matrices.0/@cells.76 //@matrices.0/@cells.77 //@matrices.0/@cells.78 //@matrices.0/@cells.79"/>
+  <concepts xsi:type="pcmmm:Product" name="CloudMe" myValuedCells="//@matrices.0/@cells.80 //@matrices.0/@cells.81 //@matrices.0/@cells.82 //@matrices.0/@cells.83 //@matrices.0/@cells.84 //@matrices.0/@cells.85 //@matrices.0/@cells.86 //@matrices.0/@cells.87 //@matrices.0/@cells.88 //@matrices.0/@cells.89 //@matrices.0/@cells.90"/>
+  <concepts xsi:type="pcmmm:Product" name="Dropbox" myValuedCells="//@matrices.0/@cells.91 //@matrices.0/@cells.92 //@matrices.0/@cells.93 //@matrices.0/@cells.94 //@matrices.0/@cells.95 //@matrices.0/@cells.96 //@matrices.0/@cells.97 //@matrices.0/@cells.98 //@matrices.0/@cells.99 //@matrices.0/@cells.100 //@matrices.0/@cells.101"/>
+  <concepts xsi:type="pcmmm:Product" name="Fileserve" myValuedCells="//@matrices.0/@cells.102 //@matrices.0/@cells.103 //@matrices.0/@cells.104 //@matrices.0/@cells.105 //@matrices.0/@cells.106 //@matrices.0/@cells.107 //@matrices.0/@cells.108 //@matrices.0/@cells.109 //@matrices.0/@cells.110 //@matrices.0/@cells.111 //@matrices.0/@cells.112"/>
+  <concepts xsi:type="pcmmm:Product" name="Firedrive" myValuedCells="//@matrices.0/@cells.113 //@matrices.0/@cells.114 //@matrices.0/@cells.115 //@matrices.0/@cells.116 //@matrices.0/@cells.117 //@matrices.0/@cells.118 //@matrices.0/@cells.119 //@matrices.0/@cells.120 //@matrices.0/@cells.121 //@matrices.0/@cells.122 //@matrices.0/@cells.123"/>
+  <concepts xsi:type="pcmmm:Product" name="Google Drive" myValuedCells="//@matrices.0/@cells.124 //@matrices.0/@cells.125 //@matrices.0/@cells.126 //@matrices.0/@cells.127 //@matrices.0/@cells.128 //@matrices.0/@cells.129 //@matrices.0/@cells.130 //@matrices.0/@cells.131 //@matrices.0/@cells.132 //@matrices.0/@cells.133 //@matrices.0/@cells.134"/>
+  <concepts xsi:type="pcmmm:Product" name="Handy Backup" myValuedCells="//@matrices.0/@cells.135 //@matrices.0/@cells.136 //@matrices.0/@cells.137 //@matrices.0/@cells.138 //@matrices.0/@cells.139 //@matrices.0/@cells.140 //@matrices.0/@cells.141 //@matrices.0/@cells.142 //@matrices.0/@cells.143 //@matrices.0/@cells.144 //@matrices.0/@cells.145"/>
+  <concepts xsi:type="pcmmm:Product" name="Hightail" myValuedCells="//@matrices.0/@cells.146 //@matrices.0/@cells.147 //@matrices.0/@cells.148 //@matrices.0/@cells.149 //@matrices.0/@cells.150 //@matrices.0/@cells.151 //@matrices.0/@cells.152 //@matrices.0/@cells.153 //@matrices.0/@cells.154 //@matrices.0/@cells.155 //@matrices.0/@cells.156"/>
+  <concepts xsi:type="pcmmm:Product" name="IBM Connections" myValuedCells="//@matrices.0/@cells.157 //@matrices.0/@cells.158 //@matrices.0/@cells.159 //@matrices.0/@cells.160 //@matrices.0/@cells.161 //@matrices.0/@cells.162 //@matrices.0/@cells.163 //@matrices.0/@cells.164 //@matrices.0/@cells.165 //@matrices.0/@cells.166 //@matrices.0/@cells.167"/>
+  <concepts xsi:type="pcmmm:Product" name="iCloud" myValuedCells="//@matrices.0/@cells.168 //@matrices.0/@cells.169 //@matrices.0/@cells.170 //@matrices.0/@cells.171 //@matrices.0/@cells.172 //@matrices.0/@cells.173 //@matrices.0/@cells.174 //@matrices.0/@cells.175 //@matrices.0/@cells.176 //@matrices.0/@cells.177 //@matrices.0/@cells.178"/>
+  <concepts xsi:type="pcmmm:Product" name="MagicVortex" myValuedCells="//@matrices.0/@cells.179 //@matrices.0/@cells.180 //@matrices.0/@cells.181 //@matrices.0/@cells.182 //@matrices.0/@cells.183 //@matrices.0/@cells.184 //@matrices.0/@cells.185 //@matrices.0/@cells.186 //@matrices.0/@cells.187 //@matrices.0/@cells.188 //@matrices.0/@cells.189"/>
+  <concepts xsi:type="pcmmm:Product" name="MediaFire" myValuedCells="//@matrices.0/@cells.190 //@matrices.0/@cells.191 //@matrices.0/@cells.192 //@matrices.0/@cells.193 //@matrices.0/@cells.194 //@matrices.0/@cells.195 //@matrices.0/@cells.196 //@matrices.0/@cells.197 //@matrices.0/@cells.198 //@matrices.0/@cells.199 //@matrices.0/@cells.200"/>
+  <concepts xsi:type="pcmmm:Product" name="Mega" myValuedCells="//@matrices.0/@cells.201 //@matrices.0/@cells.202 //@matrices.0/@cells.203 //@matrices.0/@cells.204 //@matrices.0/@cells.205 //@matrices.0/@cells.206 //@matrices.0/@cells.207 //@matrices.0/@cells.208 //@matrices.0/@cells.209 //@matrices.0/@cells.210 //@matrices.0/@cells.211"/>
+  <concepts xsi:type="pcmmm:Product" name="OneDrive" myValuedCells="//@matrices.0/@cells.212 //@matrices.0/@cells.213 //@matrices.0/@cells.214 //@matrices.0/@cells.215 //@matrices.0/@cells.216 //@matrices.0/@cells.217 //@matrices.0/@cells.218 //@matrices.0/@cells.219 //@matrices.0/@cells.220 //@matrices.0/@cells.221 //@matrices.0/@cells.222"/>
+  <concepts xsi:type="pcmmm:Product" name="RapidShare" myValuedCells="//@matrices.0/@cells.223 //@matrices.0/@cells.224 //@matrices.0/@cells.225 //@matrices.0/@cells.226 //@matrices.0/@cells.227 //@matrices.0/@cells.228 //@matrices.0/@cells.229 //@matrices.0/@cells.230 //@matrices.0/@cells.231 //@matrices.0/@cells.232 //@matrices.0/@cells.233"/>
+  <concepts xsi:type="pcmmm:Product" name="SpiderOak" myValuedCells="//@matrices.0/@cells.234 //@matrices.0/@cells.235 //@matrices.0/@cells.236 //@matrices.0/@cells.237 //@matrices.0/@cells.238 //@matrices.0/@cells.239 //@matrices.0/@cells.240 //@matrices.0/@cells.241 //@matrices.0/@cells.242 //@matrices.0/@cells.243 //@matrices.0/@cells.244"/>
+  <concepts xsi:type="pcmmm:Product" name="SugarSync" myValuedCells="//@matrices.0/@cells.245 //@matrices.0/@cells.246 //@matrices.0/@cells.247 //@matrices.0/@cells.248 //@matrices.0/@cells.249 //@matrices.0/@cells.250 //@matrices.0/@cells.251 //@matrices.0/@cells.252 //@matrices.0/@cells.253 //@matrices.0/@cells.254 //@matrices.0/@cells.255"/>
+  <concepts xsi:type="pcmmm:Product" name="TitanFile" myValuedCells="//@matrices.0/@cells.256 //@matrices.0/@cells.257 //@matrices.0/@cells.258 //@matrices.0/@cells.259 //@matrices.0/@cells.260 //@matrices.0/@cells.261 //@matrices.0/@cells.262 //@matrices.0/@cells.263 //@matrices.0/@cells.264 //@matrices.0/@cells.265 //@matrices.0/@cells.266"/>
+  <concepts xsi:type="pcmmm:Product" name="Ubuntu One" myValuedCells="//@matrices.0/@cells.267 //@matrices.0/@cells.268 //@matrices.0/@cells.269 //@matrices.0/@cells.270 //@matrices.0/@cells.271 //@matrices.0/@cells.272 //@matrices.0/@cells.273 //@matrices.0/@cells.274 //@matrices.0/@cells.275 //@matrices.0/@cells.276 //@matrices.0/@cells.277"/>
+  <concepts xsi:type="pcmmm:Product" name="Wuala" myValuedCells="//@matrices.0/@cells.278 //@matrices.0/@cells.279 //@matrices.0/@cells.280 //@matrices.0/@cells.281 //@matrices.0/@cells.282 //@matrices.0/@cells.283 //@matrices.0/@cells.284 //@matrices.0/@cells.285 //@matrices.0/@cells.286 //@matrices.0/@cells.287 //@matrices.0/@cells.288"/>
+  <concepts xsi:type="pcmmm:Feature" name="free) &#xA;Unlimited (paid" constraints="//@matrices.0/@cells.36" domain="//@domainCollection/@domains.11"/>
+  <concepts xsi:type="pcmmm:Feature" name="5 GB" constraints="//@matrices.0/@cells.36 //@matrices.0/@cells.47 //@matrices.0/@cells.136 //@matrices.0/@cells.168" domain="//@domainCollection/@domains.12"/>
+  <concepts xsi:type="pcmmm:Feature" name="2 GB" constraints="//@matrices.0/@cells.37 //@matrices.0/@cells.91 //@matrices.0/@cells.234" domain="//@domainCollection/@domains.13"/>
+  <concepts xsi:type="pcmmm:Feature" name="Amazon S3 limits" constraints="//@matrices.0/@cells.39 //@matrices.0/@cells.50" domain="//@domainCollection/@domains.14"/>
+  <concepts xsi:type="pcmmm:Feature" name="None" constraints="//@matrices.0/@cells.40 //@matrices.0/@cells.51 //@matrices.0/@cells.73 //@matrices.0/@cells.83 //@matrices.0/@cells.84 //@matrices.0/@cells.105 //@matrices.0/@cells.116 //@matrices.0/@cells.117 //@matrices.0/@cells.127 //@matrices.0/@cells.128 //@matrices.0/@cells.138 //@matrices.0/@cells.149 //@matrices.0/@cells.160 //@matrices.0/@cells.161 //@matrices.0/@cells.172 //@matrices.0/@cells.182 //@matrices.0/@cells.193 //@matrices.0/@cells.205 //@matrices.0/@cells.215 //@matrices.0/@cells.237 //@matrices.0/@cells.238 //@matrices.0/@cells.246 //@matrices.0/@cells.259 //@matrices.0/@cells.260 //@matrices.0/@cells.270 //@matrices.0/@cells.281" domain="//@domainCollection/@domains.15"/>
+  <concepts xsi:type="pcmmm:Feature" name="12-month trial" constraints="//@matrices.0/@cells.47" domain="//@domainCollection/@domains.16"/>
+  <concepts xsi:type="pcmmm:Feature" name="free storage with credit-card details supplied" constraints="//@matrices.0/@cells.47" domain="//@domainCollection/@domains.17"/>
+  <concepts xsi:type="pcmmm:Feature" name="unfree bandwidth)&#xA; Unlimited (paid" constraints="//@matrices.0/@cells.47" domain="//@domainCollection/@domains.18"/>
+  <concepts xsi:type="pcmmm:Feature" name="5&#xa0;TB per file" constraints="//@matrices.0/@cells.48" domain="//@domainCollection/@domains.19"/>
+  <concepts xsi:type="pcmmm:Feature" name="unlimited files per bucket" constraints="//@matrices.0/@cells.48" domain="//@domainCollection/@domains.20"/>
+  <concepts xsi:type="pcmmm:Feature" name="pay for storage each month" constraints="//@matrices.0/@cells.51" domain="//@domainCollection/@domains.21"/>
+  <concepts xsi:type="pcmmm:Feature" name="REST" constraints="//@matrices.0/@cells.53 //@matrices.0/@cells.86 //@matrices.0/@cells.163 //@matrices.0/@cells.251 //@matrices.0/@cells.273 //@matrices.0/@cells.284" domain="//@domainCollection/@domains.22"/>
+  <concepts xsi:type="pcmmm:Feature" name="SOAP" constraints="//@matrices.0/@cells.53 //@matrices.0/@cells.86" domain="//@domainCollection/@domains.23"/>
+  <concepts xsi:type="pcmmm:Feature" name="free) &#xA; Unlimited (paid" constraints="//@matrices.0/@cells.58" domain="//@domainCollection/@domains.24"/>
+  <concepts xsi:type="pcmmm:Feature" name="5&#xa0;GB" constraints="//@matrices.0/@cells.58 //@matrices.0/@cells.278" domain="//@domainCollection/@domains.25"/>
+  <concepts xsi:type="pcmmm:Feature" name="free) &#xA; 1-2 GB (paid" constraints="//@matrices.0/@cells.59" domain="//@domainCollection/@domains.26"/>
+  <concepts xsi:type="pcmmm:Feature" name="500 MB" constraints="//@matrices.0/@cells.59" domain="//@domainCollection/@domains.27"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)" constraints="//@matrices.0/@cells.61 //@matrices.0/@cells.192 //@matrices.0/@cells.234" domain="//@domainCollection/@domains.28"/>
+  <concepts xsi:type="pcmmm:Feature" name="20 GB (paid" constraints="//@matrices.0/@cells.61" domain="//@domainCollection/@domains.29"/>
+  <concepts xsi:type="pcmmm:Feature" name="Daily limit: 0.5 GB" constraints="//@matrices.0/@cells.61" domain="//@domainCollection/@domains.30"/>
+  <concepts xsi:type="pcmmm:Feature" name="free Personal)&#xA; 50 GB (free with Sony Xperia device)&#xA;25-50 GB (paid Personal)&#xA;1000 GB (Business)&#xA;Unlimited (Enterprise" constraints="//@matrices.0/@cells.69" domain="//@domainCollection/@domains.31"/>
+  <concepts xsi:type="pcmmm:Feature" name="10 GB" constraints="//@matrices.0/@cells.69" domain="//@domainCollection/@domains.32"/>
+  <concepts xsi:type="pcmmm:Feature" name="free Personal)&#xA;1&#xa0;GB (paid Personal)&#xA;2 GB (Business)&#xA;5 GB (Enterprise" constraints="//@matrices.0/@cells.70" domain="//@domainCollection/@domains.33"/>
+  <concepts xsi:type="pcmmm:Feature" name="250&#xa0;MB" constraints="//@matrices.0/@cells.70" domain="//@domainCollection/@domains.34"/>
+  <concepts xsi:type="pcmmm:Feature" name="10&#xa0;GB" constraints="//@matrices.0/@cells.72 //@matrices.0/@cells.248" domain="//@domainCollection/@domains.35"/>
+  <concepts xsi:type="pcmmm:Feature" name="month (free) &#xA; 2 TB" constraints="//@matrices.0/@cells.72" domain="//@domainCollection/@domains.36"/>
+  <concepts xsi:type="pcmmm:Feature" name="paid" constraints="//@matrices.0/@cells.72 //@matrices.0/@cells.94 //@matrices.0/@cells.157" domain="//@domainCollection/@domains.37"/>
+  <concepts xsi:type="pcmmm:Feature" name="month" constraints="//@matrices.0/@cells.72 //@matrices.0/@cells.150 //@matrices.0/@cells.204 //@matrices.0/@cells.223" domain="//@domainCollection/@domains.38"/>
+  <concepts xsi:type="pcmmm:Feature" name="Business" constraints="//@matrices.0/@cells.76" domain="//@domainCollection/@domains.39"/>
+  <concepts xsi:type="pcmmm:Feature" name="Enterprise customers only" constraints="//@matrices.0/@cells.76" domain="//@domainCollection/@domains.40"/>
+  <concepts xsi:type="pcmmm:Feature" name="Does not sync Mac files such as iWork: Keynote etc." constraints="//@matrices.0/@cells.79" domain="//@domainCollection/@domains.41"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA; 500 GB (paid" constraints="//@matrices.0/@cells.80" domain="//@domainCollection/@domains.42"/>
+  <concepts xsi:type="pcmmm:Feature" name="3 GB plus 500 MB for each referral person up to 16 GB" constraints="//@matrices.0/@cells.80" domain="//@domainCollection/@domains.43"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA;Unlimited (premium" constraints="//@matrices.0/@cells.81" domain="//@domainCollection/@domains.44"/>
+  <concepts xsi:type="pcmmm:Feature" name="150&#xa0;MB" constraints="//@matrices.0/@cells.81" domain="//@domainCollection/@domains.45"/>
+  <concepts xsi:type="pcmmm:Feature" name="WebDAV" constraints="//@matrices.0/@cells.86 //@matrices.0/@cells.174" domain="//@domainCollection/@domains.46"/>
+  <concepts xsi:type="pcmmm:Feature" name="Primarily a media focused file synchronization" constraints="//@matrices.0/@cells.90" domain="//@domainCollection/@domains.47"/>
+  <concepts xsi:type="pcmmm:Feature" name="backup service with websharing." constraints="//@matrices.0/@cells.90" domain="//@domainCollection/@domains.48"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA; 18 GB (free" constraints="//@matrices.0/@cells.91" domain="//@domainCollection/@domains.49"/>
+  <concepts xsi:type="pcmmm:Feature" name="500 MB for each referral person up to 18 GB)&#xA; 25 GB (free with HTC Sense 4 &amp; 5 device)&#xA; 50 GB (free with Samsung device)&#xA; 100-500 GB&#xa0;(Pro accounts)&#xA; 1 TB-Unlimited (Business accounts" constraints="//@matrices.0/@cells.91" domain="//@domainCollection/@domains.50"/>
+  <concepts xsi:type="pcmmm:Feature" name="300&#xa0;MB.&#xA;Unlimited&#xa0;using&#xA;client&#xa0;application" constraints="//@matrices.0/@cells.92" domain="//@domainCollection/@domains.51"/>
+  <concepts xsi:type="pcmmm:Feature" name="20&#xa0;GB" constraints="//@matrices.0/@cells.94" domain="//@domainCollection/@domains.52"/>
+  <concepts xsi:type="pcmmm:Feature" name="day (free)&#xA;200&#xa0;GB" constraints="//@matrices.0/@cells.94" domain="//@domainCollection/@domains.53"/>
+  <concepts xsi:type="pcmmm:Feature" name="day" constraints="//@matrices.0/@cells.94" domain="//@domainCollection/@domains.54"/>
+  <concepts xsi:type="pcmmm:Feature" name="90 days of inactivity for free users" constraints="//@matrices.0/@cells.95 //@matrices.0/@cells.282" domain="//@domainCollection/@domains.55"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA;Unlimited (paid" constraints="//@matrices.0/@cells.99 //@matrices.0/@cells.102 //@matrices.0/@cells.146 //@matrices.0/@cells.267" domain="//@domainCollection/@domains.56"/>
+  <concepts xsi:type="pcmmm:Feature" name="30 days" constraints="//@matrices.0/@cells.99" domain="//@domainCollection/@domains.57"/>
+  <concepts xsi:type="pcmmm:Feature" name="Primarily a file synchronization" constraints="//@matrices.0/@cells.101" domain="//@domainCollection/@domains.58"/>
+  <concepts xsi:type="pcmmm:Feature" name="backup service but websharing possible." constraints="//@matrices.0/@cells.101" domain="//@domainCollection/@domains.59"/>
+  <concepts xsi:type="pcmmm:Feature" name="500&#xa0;GB" constraints="//@matrices.0/@cells.102" domain="//@domainCollection/@domains.60"/>
+  <concepts xsi:type="pcmmm:Feature" name="free) &#xA;2&#xa0;GB (paid" constraints="//@matrices.0/@cells.103" domain="//@domainCollection/@domains.61"/>
+  <concepts xsi:type="pcmmm:Feature" name="1&#xa0;GB" constraints="//@matrices.0/@cells.103 //@matrices.0/@cells.114 //@matrices.0/@cells.169" domain="//@domainCollection/@domains.62"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA; Never (paid" constraints="//@matrices.0/@cells.106" domain="//@domainCollection/@domains.63"/>
+  <concepts xsi:type="pcmmm:Feature" name="60 days after last download" constraints="//@matrices.0/@cells.106" domain="//@domainCollection/@domains.64"/>
+  <concepts xsi:type="pcmmm:Feature" name="except for non-accounts" constraints="//@matrices.0/@cells.109" domain="//@domainCollection/@domains.65"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA;up to 1&#xa0;TB (Pro accounts)&#xA; Unlimited (Executive accounts" constraints="//@matrices.0/@cells.113" domain="//@domainCollection/@domains.66"/>
+  <concepts xsi:type="pcmmm:Feature" name="50&#xa0;GB" constraints="//@matrices.0/@cells.113 //@matrices.0/@cells.201" domain="//@domainCollection/@domains.67"/>
+  <concepts xsi:type="pcmmm:Feature" name="free) &#xA;50&#xa0;GB (Pro" constraints="//@matrices.0/@cells.114" domain="//@domainCollection/@domains.68"/>
+  <concepts xsi:type="pcmmm:Feature" name="for all users" constraints="//@matrices.0/@cells.118" domain="//@domainCollection/@domains.69"/>
+  <concepts xsi:type="pcmmm:Feature" name="Allows users to upload to each other's accounts without having to sign up using filedrop" constraints="//@matrices.0/@cells.123" domain="//@domainCollection/@domains.70"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA; 10 GB (free for Quickoffice mobile)&#xA;25-50 GB (free with HTC Advantage)&#xA;50 GB (free with Motorola device)&#xA;100 GB (free with Chromebook)&#xA;2 TB (free with Chromebook Pixel)&#xA; up to 16&#xa0;TB (paid" constraints="//@matrices.0/@cells.124" domain="//@domainCollection/@domains.71"/>
+  <concepts xsi:type="pcmmm:Feature" name="15&#xa0;GB" constraints="//@matrices.0/@cells.124" domain="//@domainCollection/@domains.72"/>
+  <concepts xsi:type="pcmmm:Feature" name="1&#xa0;TB" constraints="//@matrices.0/@cells.125" domain="//@domainCollection/@domains.73"/>
+  <concepts xsi:type="pcmmm:Feature" name="OAuth2" constraints="//@matrices.0/@cells.130 //@matrices.0/@cells.163" domain="//@domainCollection/@domains.74"/>
+  <concepts xsi:type="pcmmm:Feature" name="Free tier is just a limited-time trial" constraints="//@matrices.0/@cells.135" domain="//@domainCollection/@domains.75"/>
+  <concepts xsi:type="pcmmm:Feature" name="Up to 250GB." constraints="//@matrices.0/@cells.135" domain="//@domainCollection/@domains.76"/>
+  <concepts xsi:type="pcmmm:Feature" name="For paying users there is usually no file expiration." constraints="//@matrices.0/@cells.139" domain="//@domainCollection/@domains.77"/>
+  <concepts xsi:type="pcmmm:Feature" name="Optimized for automatic backup-to-cloud scenarios" constraints="//@matrices.0/@cells.145" domain="//@domainCollection/@domains.78"/>
+  <concepts xsi:type="pcmmm:Feature" name="i.e. auto backing up documents" constraints="//@matrices.0/@cells.145" domain="//@domainCollection/@domains.79"/>
+  <concepts xsi:type="pcmmm:Feature" name="databases" constraints="//@matrices.0/@cells.145" domain="//@domainCollection/@domains.80"/>
+  <concepts xsi:type="pcmmm:Feature" name="settings" constraints="//@matrices.0/@cells.145" domain="//@domainCollection/@domains.81"/>
+  <concepts xsi:type="pcmmm:Feature" name="system snapshots" constraints="//@matrices.0/@cells.145" domain="//@domainCollection/@domains.82"/>
+  <concepts xsi:type="pcmmm:Feature" name="and other things to cloud. New backup scenarios can be generated" constraints="//@matrices.0/@cells.145" domain="//@domainCollection/@domains.83"/>
+  <concepts xsi:type="pcmmm:Feature" name="shared by users." constraints="//@matrices.0/@cells.145" domain="//@domainCollection/@domains.84"/>
+  <concepts xsi:type="pcmmm:Feature" name="2&#xa0;GB" constraints="//@matrices.0/@cells.146 //@matrices.0/@cells.158 //@matrices.0/@cells.179 //@matrices.0/@cells.180 //@matrices.0/@cells.213" domain="//@domainCollection/@domains.85"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA;2&#xa0;GB (Pro)&#xA;Unlimited (Business" constraints="//@matrices.0/@cells.147" domain="//@domainCollection/@domains.86"/>
+  <concepts xsi:type="pcmmm:Feature" name="50&#xa0;MB" constraints="//@matrices.0/@cells.147" domain="//@domainCollection/@domains.87"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA;14 days ($9.99" constraints="//@matrices.0/@cells.150" domain="//@domainCollection/@domains.88"/>
+  <concepts xsi:type="pcmmm:Feature" name="$99.99" constraints="//@matrices.0/@cells.150" domain="//@domainCollection/@domains.89"/>
+  <concepts xsi:type="pcmmm:Feature" name="year)&#xA;None (Business" constraints="//@matrices.0/@cells.150" domain="//@domainCollection/@domains.90"/>
+  <concepts xsi:type="pcmmm:Feature" name="7 days" constraints="//@matrices.0/@cells.150" domain="//@domainCollection/@domains.91"/>
+  <concepts xsi:type="pcmmm:Feature" name="Allows synchronization of files across devices. Business version comes with administrative" constraints="//@matrices.0/@cells.156" domain="//@domainCollection/@domains.92"/>
+  <concepts xsi:type="pcmmm:Feature" name="security features." constraints="//@matrices.0/@cells.156" domain="//@domainCollection/@domains.93"/>
+  <concepts xsi:type="pcmmm:Feature" name="5 GB&#xA;additional space avail" constraints="//@matrices.0/@cells.157" domain="//@domainCollection/@domains.94"/>
+  <concepts xsi:type="pcmmm:Feature" name="CMIS" constraints="//@matrices.0/@cells.163" domain="//@domainCollection/@domains.95"/>
+  <concepts xsi:type="pcmmm:Feature" name="standard" constraints="//@matrices.0/@cells.163" domain="//@domainCollection/@domains.96"/>
+  <concepts xsi:type="pcmmm:Feature" name="Atom" constraints="//@matrices.0/@cells.163" domain="//@domainCollection/@domains.97"/>
+  <concepts xsi:type="pcmmm:Feature" name="Subscription costs US$6" constraints="//@matrices.0/@cells.167" domain="//@domainCollection/@domains.98"/>
+  <concepts xsi:type="pcmmm:Feature" name="year" constraints="//@matrices.0/@cells.167 //@matrices.0/@cells.178" domain="//@domainCollection/@domains.99"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA;25 GB (for previous MobileMe accounts)&#xA;10" constraints="//@matrices.0/@cells.168" domain="//@domainCollection/@domains.100"/>
+  <concepts xsi:type="pcmmm:Feature" name="50 GB (paid" constraints="//@matrices.0/@cells.168" domain="//@domainCollection/@domains.101"/>
+  <concepts xsi:type="pcmmm:Feature" name="&#xa0;GB per month" constraints="//@matrices.0/@cells.171" domain="//@domainCollection/@domains.102"/>
+  <concepts xsi:type="pcmmm:Feature" name="paid users" constraints="//@matrices.0/@cells.172" domain="//@domainCollection/@domains.103"/>
+  <concepts xsi:type="pcmmm:Feature" name="Subscription to MobileMe costs US$99" constraints="//@matrices.0/@cells.178" domain="//@domainCollection/@domains.104"/>
+  <concepts xsi:type="pcmmm:Feature" name="subscription" constraints="//@matrices.0/@cells.180" domain="//@domainCollection/@domains.105"/>
+  <concepts xsi:type="pcmmm:Feature" name="14&#xa0;days based on subscription" constraints="//@matrices.0/@cells.183" domain="//@domainCollection/@domains.106"/>
+  <concepts xsi:type="pcmmm:Feature" name="Peer-to-peer file transfer service" constraints="//@matrices.0/@cells.189" domain="//@domainCollection/@domains.107"/>
+  <concepts xsi:type="pcmmm:Feature" name="free Windows desktop client with resumption of interrupted transfers" constraints="//@matrices.0/@cells.189" domain="//@domainCollection/@domains.108"/>
+  <concepts xsi:type="pcmmm:Feature" name="transfer pausing &amp; live data streaming" constraints="//@matrices.0/@cells.189" domain="//@domainCollection/@domains.109"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA;up to 1&#xa0;TB (Pro accounts)&#xA; up to 100&#xa0;TB (Business accounts" constraints="//@matrices.0/@cells.190" domain="//@domainCollection/@domains.110"/>
+  <concepts xsi:type="pcmmm:Feature" name="10&#xa0;GB up to 50&#xa0; via referrals" constraints="//@matrices.0/@cells.190" domain="//@domainCollection/@domains.111"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA;20&#xa0;GB (paid" constraints="//@matrices.0/@cells.191" domain="//@domainCollection/@domains.112"/>
+  <concepts xsi:type="pcmmm:Feature" name="200&#xa0;MB" constraints="//@matrices.0/@cells.191" domain="//@domainCollection/@domains.113"/>
+  <concepts xsi:type="pcmmm:Feature" name="(premium" constraints="//@matrices.0/@cells.192" domain="//@domainCollection/@domains.114"/>
+  <concepts xsi:type="pcmmm:Feature" name="1 year but &quot;no data warehousing&quot;" constraints="//@matrices.0/@cells.194" domain="//@domainCollection/@domains.115"/>
+  <concepts xsi:type="pcmmm:Feature" name="Only for pro users" constraints="//@matrices.0/@cells.195" domain="//@domainCollection/@domains.116"/>
+  <concepts xsi:type="pcmmm:Feature" name="Resuming of interrupted downloads possible." constraints="//@matrices.0/@cells.200" domain="//@domainCollection/@domains.117"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA;Up to 4&#xa0;TB (paid" constraints="//@matrices.0/@cells.201" domain="//@domainCollection/@domains.118"/>
+  <concepts xsi:type="pcmmm:Feature" name="Only restricted by browser memory capability" constraints="//@matrices.0/@cells.202" domain="//@domainCollection/@domains.119"/>
+  <concepts xsi:type="pcmmm:Feature" name="Free (50&#xa0;GB storage): 10 GB traffic" constraints="//@matrices.0/@cells.204" domain="//@domainCollection/@domains.120"/>
+  <concepts xsi:type="pcmmm:Feature" name="30 minutes&#xA;Pro I (500&#xa0;GB storage): 12&#xa0;TB traffic" constraints="//@matrices.0/@cells.204" domain="//@domainCollection/@domains.121"/>
+  <concepts xsi:type="pcmmm:Feature" name="month&#xA;Pro II (2&#xa0;TB storage): 48&#xa0;TB traffic" constraints="//@matrices.0/@cells.204" domain="//@domainCollection/@domains.122"/>
+  <concepts xsi:type="pcmmm:Feature" name="month&#xA;Pro III (4&#xa0;TB storage): 96&#xa0;TB traffic" constraints="//@matrices.0/@cells.204" domain="//@domainCollection/@domains.123"/>
+  <concepts xsi:type="pcmmm:Feature" name="Resuming of interrupted downloads possible. Encrypted files." constraints="//@matrices.0/@cells.211" domain="//@domainCollection/@domains.124"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA;3 GB (free for sync photos with mobile app)&#xA;5 GB (free" constraints="//@matrices.0/@cells.212" domain="//@domainCollection/@domains.125"/>
+  <concepts xsi:type="pcmmm:Feature" name="500 MB for each referral person up to 5 GB)&#xA;20 GB (free for Office 365 users)&#xA;200 GB (free with Surface 2" constraints="//@matrices.0/@cells.212" domain="//@domainCollection/@domains.126"/>
+  <concepts xsi:type="pcmmm:Feature" name="Surface 2 Pro)&#xA;Up to 125&#xa0;GB (paid" constraints="//@matrices.0/@cells.212" domain="//@domainCollection/@domains.127"/>
+  <concepts xsi:type="pcmmm:Feature" name="7&#xa0;GB" constraints="//@matrices.0/@cells.212" domain="//@domainCollection/@domains.128"/>
+  <concepts xsi:type="pcmmm:Feature" name="270&#xa0;days of account inactivity" constraints="//@matrices.0/@cells.216" domain="//@domainCollection/@domains.129"/>
+  <concepts xsi:type="pcmmm:Feature" name="Allows remote access of files on running Windows PCs with SkyDrive installed (&quot;Fetch files&quot;) without having to upload the contents of the shares to SkyDrive" constraints="//@matrices.0/@cells.222" domain="//@domainCollection/@domains.130"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA;300&#xa0;GB Standard Plus (&#x20ac;8.21" constraints="//@matrices.0/@cells.223" domain="//@domainCollection/@domains.131"/>
+  <concepts xsi:type="pcmmm:Feature" name="month)&#xA;700&#xa0;GB Premium (&#x20ac;16.43" constraints="//@matrices.0/@cells.223" domain="//@domainCollection/@domains.132"/>
+  <concepts xsi:type="pcmmm:Feature" name="10&#xa0;GB Standard" constraints="//@matrices.0/@cells.223" domain="//@domainCollection/@domains.133"/>
+  <concepts xsi:type="pcmmm:Feature" name="100&#xa0;GB" constraints="//@matrices.0/@cells.224" domain="//@domainCollection/@domains.134"/>
+  <concepts xsi:type="pcmmm:Feature" name="12.5 kB" constraints="//@matrices.0/@cells.226" domain="//@domainCollection/@domains.135"/>
+  <concepts xsi:type="pcmmm:Feature" name="s speed limitation for non-paying users. *01" constraints="//@matrices.0/@cells.226" domain="//@domainCollection/@domains.136"/>
+  <concepts xsi:type="pcmmm:Feature" name="2012* Speed limitation was removed for undetermined break (setting by 1100 kbit" constraints="//@matrices.0/@cells.226" domain="//@domainCollection/@domains.137"/>
+  <concepts xsi:type="pcmmm:Feature" name="s)." constraints="//@matrices.0/@cells.226" domain="//@domainCollection/@domains.138"/>
+  <concepts xsi:type="pcmmm:Feature" name="None for any Rapid users." constraints="//@matrices.0/@cells.227" domain="//@domainCollection/@domains.139"/>
+  <concepts xsi:type="pcmmm:Feature" name="Up to 300 jobs" constraints="//@matrices.0/@cells.228" domain="//@domainCollection/@domains.140"/>
+  <concepts xsi:type="pcmmm:Feature" name="5 at a time" constraints="//@matrices.0/@cells.228" domain="//@domainCollection/@domains.141"/>
+  <concepts xsi:type="pcmmm:Feature" name="Resuming of interrupted downloads only for RapidPro users" constraints="//@matrices.0/@cells.233" domain="//@domainCollection/@domains.142"/>
+  <concepts xsi:type="pcmmm:Feature" name="Unlimited (paid" constraints="//@matrices.0/@cells.234" domain="//@domainCollection/@domains.143"/>
+  <concepts xsi:type="pcmmm:Feature" name="File synchronization" constraints="//@matrices.0/@cells.244" domain="//@domainCollection/@domains.144"/>
+  <concepts xsi:type="pcmmm:Feature" name="backup service." constraints="//@matrices.0/@cells.244" domain="//@domainCollection/@domains.145"/>
+  <concepts xsi:type="pcmmm:Feature" name="Free only for 60 days" constraints="//@matrices.0/@cells.245" domain="//@domainCollection/@domains.146"/>
+  <concepts xsi:type="pcmmm:Feature" name="personal tier)&#xA;Unlimited&#xa0;GB (professional tier" constraints="//@matrices.0/@cells.245" domain="//@domainCollection/@domains.147"/>
+  <concepts xsi:type="pcmmm:Feature" name="after: 60&#xa0;GB" constraints="//@matrices.0/@cells.245" domain="//@domainCollection/@domains.148"/>
+  <concepts xsi:type="pcmmm:Feature" name="file" constraints="//@matrices.0/@cells.248" domain="//@domainCollection/@domains.149"/>
+  <concepts xsi:type="pcmmm:Feature" name="day (free) &#xA; 250&#xa0;GB" constraints="//@matrices.0/@cells.248" domain="//@domainCollection/@domains.150"/>
+  <concepts xsi:type="pcmmm:Feature" name="day (paid) &#xA; If you hit the limit your links will be disabled for 24 hours. The bandwidth limits only apply to public links." constraints="//@matrices.0/@cells.248" domain="//@domainCollection/@domains.151"/>
+  <concepts xsi:type="pcmmm:Feature" name="No expiration for paid accounts" constraints="//@matrices.0/@cells.249" domain="//@domainCollection/@domains.152"/>
+  <concepts xsi:type="pcmmm:Feature" name="90&#xa0;days of inactivity for free users" constraints="//@matrices.0/@cells.249" domain="//@domainCollection/@domains.153"/>
+  <concepts xsi:type="pcmmm:Feature" name="Unlimited" constraints="//@matrices.0/@cells.256" domain="//@domainCollection/@domains.154"/>
+  <concepts xsi:type="pcmmm:Feature" name="Free:100&#xa0;MB &#xA;Pro:1&#xa0;GB &#xA; Enterprise:4&#xa0;GB" constraints="//@matrices.0/@cells.257" domain="//@domainCollection/@domains.155"/>
+  <concepts xsi:type="pcmmm:Feature" name="unless set by user" constraints="//@matrices.0/@cells.260" domain="//@domainCollection/@domains.156"/>
+  <concepts xsi:type="pcmmm:Feature" name="For enterprise clients only" constraints="//@matrices.0/@cells.263" domain="//@domainCollection/@domains.157"/>
+  <concepts xsi:type="pcmmm:Feature" name="HIPAA-compliant" constraints="//@matrices.0/@cells.266" domain="//@domainCollection/@domains.158"/>
+  <concepts xsi:type="pcmmm:Feature" name="group messaging" constraints="//@matrices.0/@cells.266" domain="//@domainCollection/@domains.159"/>
+  <concepts xsi:type="pcmmm:Feature" name="audit logs" constraints="//@matrices.0/@cells.266" domain="//@domainCollection/@domains.160"/>
+  <concepts xsi:type="pcmmm:Feature" name="granular security control" constraints="//@matrices.0/@cells.266" domain="//@domainCollection/@domains.161"/>
+  <concepts xsi:type="pcmmm:Feature" name="embedable on website." constraints="//@matrices.0/@cells.266" domain="//@domainCollection/@domains.162"/>
+  <concepts xsi:type="pcmmm:Feature" name="5&#xa0;GB&#xA;up to 20 via referrals" constraints="//@matrices.0/@cells.267" domain="//@domainCollection/@domains.163"/>
+  <concepts xsi:type="pcmmm:Feature" name="5 TB" constraints="//@matrices.0/@cells.268" domain="//@domainCollection/@domains.164"/>
+  <concepts xsi:type="pcmmm:Feature" name="Reserve the right to delete after 90 days of inactivity for free users but will notify via email in advance." constraints="//@matrices.0/@cells.271" domain="//@domainCollection/@domains.165"/>
+  <concepts xsi:type="pcmmm:Feature" name="Only files selected by 3rd party" constraints="//@matrices.0/@cells.272" domain="//@domainCollection/@domains.166"/>
+  <concepts xsi:type="pcmmm:Feature" name="No. Only through locally installed FTP server" constraints="//@matrices.0/@cells.274" domain="//@domainCollection/@domains.167"/>
+  <concepts xsi:type="pcmmm:Feature" name="Application" constraints="//@matrices.0/@cells.277" domain="//@domainCollection/@domains.168"/>
+  <concepts xsi:type="pcmmm:Feature" name="service to be discontinued" constraints="//@matrices.0/@cells.277" domain="//@domainCollection/@domains.169"/>
+  <concepts xsi:type="pcmmm:Feature" name="effective 1st June 2014." constraints="//@matrices.0/@cells.277" domain="//@domainCollection/@domains.170"/>
+  <concepts xsi:type="pcmmm:Feature" name="free)&#xA; Unlimited (paid" constraints="//@matrices.0/@cells.278" domain="//@domainCollection/@domains.171"/>
+  <concepts xsi:type="pcmmm:Feature" name="40&#xa0;GB" constraints="//@matrices.0/@cells.279" domain="//@domainCollection/@domains.172"/>
+  <concepts xsi:type="pcmmm:Feature" name="read-only" constraints="//@matrices.0/@cells.284" domain="//@domainCollection/@domains.173"/>
+  <concepts xsi:type="pcmmm:Feature" name="Wuala REST API" constraints="//@matrices.0/@cells.284" domain="//@domainCollection/@domains.174"/>
+  <concepts xsi:type="pcmmm:Feature" name="no POST verb actions" constraints="//@matrices.0/@cells.284" domain="//@domainCollection/@domains.175"/>
+  <concepts xsi:type="pcmmm:Feature" name="Uses Social Networking" constraints="//@matrices.0/@cells.288" domain="//@domainCollection/@domains.176"/>
+  <concepts xsi:type="pcmmm:Feature" name="and has file sharing features similar to Bittorrent. Uses client-side encryption." constraints="//@matrices.0/@cells.288" domain="//@domainCollection/@domains.177"/>
+  <domainCollection>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.36/@interpretation/@argument //@matrices.0/@cells.47/@interpretation/@argument //@matrices.0/@cells.168/@interpretation/@argument //@matrices.0/@cells.91/@interpretation/@argument //@matrices.0/@cells.234/@interpretation/@argument //@matrices.0/@cells.69/@interpretation/@argument //@matrices.0/@cells.58/@interpretation/@argument //@matrices.0/@cells.278/@interpretation/@argument //@matrices.0/@cells.124/@interpretation/@argument //@matrices.0/@cells.146/@interpretation/@argument //@matrices.0/@cells.179/@interpretation //@matrices.0/@cells.212/@interpretation/@argument //@matrices.0/@cells.102/@interpretation/@argument //@matrices.0/@cells.113/@interpretation/@argument //@matrices.0/@cells.201/@interpretation/@argument"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.103/@interpretation/@argument //@matrices.0/@cells.114/@interpretation/@argument //@matrices.0/@cells.169/@interpretation //@matrices.0/@cells.125/@interpretation //@matrices.0/@cells.158/@interpretation //@matrices.0/@cells.180/@interpretation/@argument //@matrices.0/@cells.213/@interpretation //@matrices.0/@cells.224/@interpretation //@matrices.0/@cells.279/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.38/@interpretation //@matrices.0/@cells.49/@interpretation //@matrices.0/@cells.60/@interpretation //@matrices.0/@cells.71/@interpretation //@matrices.0/@cells.82/@interpretation //@matrices.0/@cells.93/@interpretation //@matrices.0/@cells.104/@interpretation //@matrices.0/@cells.115/@interpretation //@matrices.0/@cells.126/@interpretation //@matrices.0/@cells.137/@interpretation //@matrices.0/@cells.148/@interpretation //@matrices.0/@cells.159/@interpretation //@matrices.0/@cells.170/@interpretation //@matrices.0/@cells.181/@interpretation //@matrices.0/@cells.192/@interpretation/@argument //@matrices.0/@cells.192/@interpretation/@condition/@contraints.1/@argument //@matrices.0/@cells.203/@interpretation //@matrices.0/@cells.214/@interpretation //@matrices.0/@cells.225/@interpretation //@matrices.0/@cells.236/@interpretation //@matrices.0/@cells.247/@interpretation //@matrices.0/@cells.258/@interpretation //@matrices.0/@cells.269/@interpretation //@matrices.0/@cells.280/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.83/@interpretation //@matrices.0/@cells.105/@interpretation //@matrices.0/@cells.116/@interpretation //@matrices.0/@cells.127/@interpretation //@matrices.0/@cells.138/@interpretation //@matrices.0/@cells.149/@interpretation //@matrices.0/@cells.160/@interpretation //@matrices.0/@cells.182/@interpretation //@matrices.0/@cells.193/@interpretation //@matrices.0/@cells.215/@interpretation //@matrices.0/@cells.237/@interpretation //@matrices.0/@cells.259/@interpretation //@matrices.0/@cells.270/@interpretation //@matrices.0/@cells.281/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.40/@interpretation //@matrices.0/@cells.51/@interpretation/@contraints.0 //@matrices.0/@cells.73/@interpretation //@matrices.0/@cells.84/@interpretation //@matrices.0/@cells.117/@interpretation //@matrices.0/@cells.128/@interpretation //@matrices.0/@cells.161/@interpretation //@matrices.0/@cells.172/@interpretation/@argument //@matrices.0/@cells.205/@interpretation //@matrices.0/@cells.238/@interpretation //@matrices.0/@cells.260/@interpretation/@contraints.0"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.41/@interpretation //@matrices.0/@cells.52/@interpretation //@matrices.0/@cells.63/@interpretation //@matrices.0/@cells.74/@interpretation //@matrices.0/@cells.85/@interpretation //@matrices.0/@cells.96/@interpretation //@matrices.0/@cells.107/@interpretation //@matrices.0/@cells.118/@interpretation/@argument //@matrices.0/@cells.129/@interpretation //@matrices.0/@cells.140/@interpretation //@matrices.0/@cells.151/@interpretation //@matrices.0/@cells.162/@interpretation //@matrices.0/@cells.173/@interpretation //@matrices.0/@cells.184/@interpretation //@matrices.0/@cells.206/@interpretation //@matrices.0/@cells.217/@interpretation //@matrices.0/@cells.239/@interpretation //@matrices.0/@cells.250/@interpretation //@matrices.0/@cells.261/@interpretation //@matrices.0/@cells.283/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.53/@interpretation/@contraints.0 //@matrices.0/@cells.86/@interpretation/@contraints.0 //@matrices.0/@cells.163/@interpretation/@contraints.1 //@matrices.0/@cells.251/@interpretation //@matrices.0/@cells.273/@interpretation //@matrices.0/@cells.284/@interpretation/@contraints.0 //@matrices.0/@cells.75/@interpretation //@matrices.0/@cells.97/@interpretation //@matrices.0/@cells.152/@interpretation //@matrices.0/@cells.196/@interpretation //@matrices.0/@cells.207/@interpretation //@matrices.0/@cells.218/@interpretation //@matrices.0/@cells.229/@interpretation //@matrices.0/@cells.262/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.98/@interpretation //@matrices.0/@cells.109/@interpretation/@argument //@matrices.0/@cells.120/@interpretation //@matrices.0/@cells.131/@interpretation //@matrices.0/@cells.142/@interpretation //@matrices.0/@cells.153/@interpretation //@matrices.0/@cells.164/@interpretation //@matrices.0/@cells.197/@interpretation //@matrices.0/@cells.208/@interpretation //@matrices.0/@cells.241/@interpretation //@matrices.0/@cells.263/@interpretation/@argument //@matrices.0/@cells.285/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.110/@interpretation //@matrices.0/@cells.121/@interpretation //@matrices.0/@cells.132/@interpretation //@matrices.0/@cells.143/@interpretation //@matrices.0/@cells.154/@interpretation //@matrices.0/@cells.165/@interpretation //@matrices.0/@cells.198/@interpretation //@matrices.0/@cells.209/@interpretation //@matrices.0/@cells.220/@interpretation //@matrices.0/@cells.264/@interpretation //@matrices.0/@cells.286/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.100/@interpretation //@matrices.0/@cells.133/@interpretation //@matrices.0/@cells.243/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+  </domainCollection>
+</pcmmm:PCM>

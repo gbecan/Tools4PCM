@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="Locally managed" id="Locally managed_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: written in" verbatim="Written in" rowspan="1" column="1" colspan="1" concept="//@concepts.0"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: license" verbatim="License" rowspan="1" column="2" colspan="1" concept="//@concepts.1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: access api" verbatim="Access API" rowspan="1" column="3" colspan="1" concept="//@concepts.2"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: ceph" verbatim="Ceph" row="1" rowspan="1" colspan="1" concept="//@concepts.3"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: fhgfs" verbatim="FhGFS" row="2" rowspan="1" colspan="1" concept="//@concepts.4"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: glusterfs" verbatim="GlusterFS" row="3" rowspan="1" colspan="1" concept="//@concepts.5"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: quantcast file system" verbatim="Quantcast File System" row="4" rowspan="1" colspan="1" concept="//@concepts.6"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: lustre" verbatim="Lustre" row="5" rowspan="1" colspan="1" concept="//@concepts.7"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: openafs" verbatim="OpenAFS" row="6" rowspan="1" colspan="1" concept="//@concepts.8"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: tahoe-lafs" verbatim="Tahoe-LAFS" row="7" rowspan="1" colspan="1" concept="//@concepts.9"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: hdfs" verbatim="HDFS" row="8" rowspan="1" colspan="1" concept="//@concepts.10"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: xtreemfs" verbatim="XtreemFS" row="9" rowspan="1" colspan="1" concept="//@concepts.11"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: client" verbatim="Client" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: c" verbatim="C" row="1" rowspan="1" column="1" colspan="1" concepts="//@concepts.19" myHeaderProducts="//@concepts.3" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="C" verbatim="C" concept="//@concepts.19"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: lgpl" verbatim="LGPL" row="1" rowspan="1" column="2" colspan="1" concepts="//@concepts.20" myHeaderProducts="//@concepts.3" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="LGPL" verbatim="LGPL" concept="//@concepts.20"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: librados (c, c++, python, ruby), s3, swift, fuse" verbatim="librados (C, C++, Python, Ruby), S3, Swift, FUSE" row="1" rowspan="1" column="3" colspan="1" concepts="//@concepts.22 //@concepts.21 //@concepts.23 //@concepts.27 //@concepts.24 //@concepts.25 //@concepts.26" myHeaderProducts="//@concepts.3" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="librados (C" verbatim="librados (C" concept="//@concepts.21"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C++" verbatim="C++" concept="//@concepts.22"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Python" verbatim="Python" concept="//@concepts.23"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Ruby)" verbatim="Ruby)" concept="//@concepts.24"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="S3" verbatim="S3" concept="//@concepts.25"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Swift" verbatim="Swift" concept="//@concepts.26"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="FUSE" verbatim="FUSE" concept="//@concepts.27"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: c / c++" verbatim="C / C++" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.19 //@concepts.22" myHeaderProducts="//@concepts.4" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C" verbatim="C" concept="//@concepts.19"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C++" verbatim="C++" concept="//@concepts.22"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: fraunhofer fs (fhgfs) eula,gplv2 client" verbatim="FRAUNHOFER FS (FhGFS) EULA,GPLv2 client" row="2" rowspan="1" column="2" colspan="1" concepts="//@concepts.28" myHeaderProducts="//@concepts.4" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="FRAUNHOFER FS (FhGFS) EULA,GPLv2 client" verbatim="FRAUNHOFER FS (FhGFS) EULA,GPLv2 client" concept="//@concepts.28"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: posix" verbatim="POSIX" row="2" rowspan="1" column="3" colspan="1" concepts="//@concepts.29" myHeaderProducts="//@concepts.4" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="POSIX" verbatim="POSIX" concept="//@concepts.29"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: c" verbatim="C" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.19" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="C" verbatim="C" concept="//@concepts.19"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: gplv3" verbatim="GPLv3" row="3" rowspan="1" column="2" colspan="1" concepts="//@concepts.30" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPLv3" verbatim="GPLv3" concept="//@concepts.30"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: libglusterfs, fuse" verbatim="libglusterfs, FUSE" row="3" rowspan="1" column="3" colspan="1" concepts="//@concepts.31 //@concepts.27" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="libglusterfs" verbatim="libglusterfs" concept="//@concepts.31"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="FUSE" verbatim="FUSE" concept="//@concepts.27"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: c" verbatim="C" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.19" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="C" verbatim="C" concept="//@concepts.19"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: apache license 2.0" verbatim="Apache License 2.0" row="4" rowspan="1" column="2" colspan="1" concepts="//@concepts.32" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Apache License 2.0" verbatim="Apache License 2.0" concept="//@concepts.32"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: c++ client, fuse (c++ server: metaserver and chunk" verbatim="C++ client, FUSE (C++ server: MetaServer and ChunkServer are both in C++)" row="4" rowspan="1" column="3" colspan="1" concepts="//@concepts.33 //@concepts.34 //@concepts.35 //@concepts.27" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C++ client" verbatim="C++ client" concept="//@concepts.33"/>
+        <contraints xsi:type="pcmmm:Partial">
+          <condition xsi:type="pcmmm:And">
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C++ server: MetaServer" verbatim="C++ server: MetaServer" concept="//@concepts.34"/>
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="ChunkServer are both in C++" verbatim="ChunkServer are both in C++" concept="//@concepts.35"/>
+          </condition>
+          <argument xsi:type="pcmmm:VariabilityConceptRef" name="FUSE" verbatim="FUSE" concept="//@concepts.27"/>
+        </contraints>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: c" verbatim="C" row="5" rowspan="1" column="1" colspan="1" concepts="//@concepts.19" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="C" verbatim="C" concept="//@concepts.19"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: gplv2" verbatim="GPLv2" row="5" rowspan="1" column="2" colspan="1" concepts="//@concepts.36" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPLv2" verbatim="GPLv2" concept="//@concepts.36"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,3: posix, liblustre, fuse" verbatim="POSIX, liblustre, FUSE" row="5" rowspan="1" column="3" colspan="1" concepts="//@concepts.29 //@concepts.37 //@concepts.27" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="POSIX" verbatim="POSIX" concept="//@concepts.29"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="liblustre" verbatim="liblustre" concept="//@concepts.37"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="FUSE" verbatim="FUSE" concept="//@concepts.27"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,1: c" verbatim="C" row="6" rowspan="1" column="1" colspan="1" concepts="//@concepts.19" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="C" verbatim="C" concept="//@concepts.19"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,2: ibm public license" verbatim="IBM Public License" row="6" rowspan="1" column="2" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="IBM Public License" verbatim="IBM Public License" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,3: virtual file system, installable file system" verbatim="Virtual file system, Installable File System" row="6" rowspan="1" column="3" colspan="1" concepts="//@concepts.39 //@concepts.40" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Virtual file system" verbatim="Virtual file system" concept="//@concepts.39"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Installable File System" verbatim="Installable File System" concept="//@concepts.40"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,1: python" verbatim="Python" row="7" rowspan="1" column="1" colspan="1" concepts="//@concepts.23" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Python" verbatim="Python" concept="//@concepts.23"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,2: gnu gpl 2+ and other" verbatim="GNU GPL 2+ and other" row="7" rowspan="1" column="2" colspan="1" concepts="//@concepts.41 //@concepts.42" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="GNU GPL 2+" verbatim="GNU GPL 2+" concept="//@concepts.41"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="other" verbatim="other" concept="//@concepts.42"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,3: http (browser or cli), sftp, ftp, fuse via sshfs, " verbatim="HTTP (browser or CLI), SFTP, FTP, FUSE via sshfs, pyfilesystem" row="7" rowspan="1" column="3" colspan="1" concepts="//@concepts.49 //@concepts.46 //@concepts.44 //@concepts.45 //@concepts.47 //@concepts.48 //@concepts.43" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:Partial">
+          <condition xsi:type="pcmmm:Or">
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="browser" verbatim="browser" concept="//@concepts.43"/>
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="CLI" verbatim="CLI" concept="//@concepts.44"/>
+          </condition>
+          <argument xsi:type="pcmmm:VariabilityConceptRef" name="HTTP" verbatim="HTTP" concept="//@concepts.45"/>
+        </contraints>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SFTP" verbatim="SFTP" concept="//@concepts.46"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="FTP" verbatim="FTP" concept="//@concepts.47"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="FUSE via sshfs" verbatim="FUSE via sshfs" concept="//@concepts.48"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="pyfilesystem" verbatim="pyfilesystem" concept="//@concepts.49"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,1: java" verbatim="Java" row="8" rowspan="1" column="1" colspan="1" concepts="//@concepts.50" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Java" verbatim="Java" concept="//@concepts.50"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,2: apache license 2.0" verbatim="Apache License 2.0" row="8" rowspan="1" column="2" colspan="1" concepts="//@concepts.32" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Apache License 2.0" verbatim="Apache License 2.0" concept="//@concepts.32"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,3: java client, c client, http" verbatim="Java client, c client, HTTP" row="8" rowspan="1" column="3" colspan="1" concepts="//@concepts.51 //@concepts.52 //@concepts.45" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Java client" verbatim="Java client" concept="//@concepts.51"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="c client" verbatim="c client" concept="//@concepts.52"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="HTTP" verbatim="HTTP" concept="//@concepts.45"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,1: java, c++" verbatim="Java, C++" row="9" rowspan="1" column="1" colspan="1" concepts="//@concepts.50 //@concepts.22" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Java" verbatim="Java" concept="//@concepts.50"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C++" verbatim="C++" concept="//@concepts.22"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,2: bsd license" verbatim="BSD License" row="9" rowspan="1" column="2" colspan="1" concepts="//@concepts.53" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="BSD License" verbatim="BSD License" concept="//@concepts.53"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,3: libxtreemfs (java, c++), fuse" verbatim="libxtreemfs (Java, C++), FUSE" row="9" rowspan="1" column="3" colspan="1" concepts="//@concepts.54 //@concepts.55 //@concepts.27" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="libxtreemfs (Java" verbatim="libxtreemfs (Java" concept="//@concepts.54"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C++)" verbatim="C++)" concept="//@concepts.55"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="FUSE" verbatim="FUSE" concept="//@concepts.27"/>
+      </interpretation>
+    </cells>
+  </matrices>
+  <matrices name="Remote access" id="Remote access_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: run by" verbatim="Run by" rowspan="1" column="1" colspan="1" concept="//@concepts.12"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: access api" verbatim="Access API" rowspan="1" column="2" colspan="1" concept="//@concepts.13"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: name" verbatim="Name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: amazon s3" verbatim="Amazon S3" row="1" rowspan="1" colspan="1" concept="//@concepts.14"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: amazon.com" verbatim="Amazon.com" row="1" rowspan="1" column="1" colspan="1" concepts="//@concepts.56" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.12">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Amazon.com" verbatim="Amazon.com" concept="//@concepts.56"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: http (rest/soap)" verbatim="HTTP (REST/SOAP)" row="1" rowspan="1" column="2" colspan="1" concepts="//@concepts.57 //@concepts.58 //@concepts.45" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.13">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="REST" verbatim="REST" concept="//@concepts.57"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SOAP" verbatim="SOAP" concept="//@concepts.58"/>
+        </condition>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="HTTP" verbatim="HTTP" concept="//@concepts.45"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="2,0: google cloud storage" verbatim="Google Cloud Storage" row="2" rowspan="1" colspan="1" concept="//@concepts.15"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: google" verbatim="Google" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.59" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.12">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Google" verbatim="Google" concept="//@concepts.59"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: http (rest)" verbatim="HTTP (REST)" row="2" rowspan="1" column="2" colspan="1" concepts="//@concepts.57 //@concepts.45" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.13">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="REST" verbatim="REST" concept="//@concepts.57"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="HTTP" verbatim="HTTP" concept="//@concepts.45"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="3,0: swift (part of openstack)" verbatim="SWIFT (part of OpenStack)" row="3" rowspan="1" colspan="1" concept="//@concepts.16"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: rackspace, hewlett-packard, others" verbatim="Rackspace, Hewlett-Packard, others" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.60 //@concepts.61 //@concepts.62" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.12">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Rackspace" verbatim="Rackspace" concept="//@concepts.60"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Hewlett-Packard" verbatim="Hewlett-Packard" concept="//@concepts.61"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="others" verbatim="others" concept="//@concepts.62"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: http (rest)" verbatim="HTTP (REST)" row="3" rowspan="1" column="2" colspan="1" concepts="//@concepts.57 //@concepts.45" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.13">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="REST" verbatim="REST" concept="//@concepts.57"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="HTTP" verbatim="HTTP" concept="//@concepts.45"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="4,0: microsoft azure" verbatim="Microsoft Azure" row="4" rowspan="1" colspan="1" concept="//@concepts.17"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: microsoft" verbatim="Microsoft" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.63" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.12">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft" verbatim="Microsoft" concept="//@concepts.63"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: http (rest)" verbatim="HTTP (REST)" row="4" rowspan="1" column="2" colspan="1" concepts="//@concepts.57 //@concepts.45" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.13">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="REST" verbatim="REST" concept="//@concepts.57"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="HTTP" verbatim="HTTP" concept="//@concepts.45"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="5,0: cleversafe" verbatim="Cleversafe" row="5" rowspan="1" colspan="1" concept="//@concepts.18"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: cleversafe" verbatim="Cleversafe" row="5" rowspan="1" column="1" colspan="1" concepts="//@concepts.18" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.12">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Cleversafe" verbatim="Cleversafe" concept="//@concepts.18"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: http (rest)" verbatim="HTTP (REST)" row="5" rowspan="1" column="2" colspan="1" concepts="//@concepts.57 //@concepts.45" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.13">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="REST" verbatim="REST" concept="//@concepts.57"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="HTTP" verbatim="HTTP" concept="//@concepts.45"/>
+      </interpretation>
+    </cells>
+  </matrices>
+  <concepts xsi:type="pcmmm:Feature" name="Written in" myValuedCells="//@matrices.0/@cells.13 //@matrices.0/@cells.16 //@matrices.0/@cells.19 //@matrices.0/@cells.22 //@matrices.0/@cells.25 //@matrices.0/@cells.28 //@matrices.0/@cells.31 //@matrices.0/@cells.34 //@matrices.0/@cells.37" domain="//@domainCollection/@domains.0"/>
+  <concepts xsi:type="pcmmm:Feature" name="License" myValuedCells="//@matrices.0/@cells.14 //@matrices.0/@cells.17 //@matrices.0/@cells.20 //@matrices.0/@cells.23 //@matrices.0/@cells.26 //@matrices.0/@cells.29 //@matrices.0/@cells.32 //@matrices.0/@cells.35 //@matrices.0/@cells.38" domain="//@domainCollection/@domains.1"/>
+  <concepts xsi:type="pcmmm:Feature" name="Access API" myValuedCells="//@matrices.0/@cells.15 //@matrices.0/@cells.18 //@matrices.0/@cells.21 //@matrices.0/@cells.24 //@matrices.0/@cells.27 //@matrices.0/@cells.30 //@matrices.0/@cells.33 //@matrices.0/@cells.36 //@matrices.0/@cells.39" domain="//@domainCollection/@domains.2"/>
+  <concepts xsi:type="pcmmm:Product" name="Ceph" myValuedCells="//@matrices.0/@cells.13 //@matrices.0/@cells.14 //@matrices.0/@cells.15"/>
+  <concepts xsi:type="pcmmm:Product" name="FhGFS" myValuedCells="//@matrices.0/@cells.16 //@matrices.0/@cells.17 //@matrices.0/@cells.18"/>
+  <concepts xsi:type="pcmmm:Product" name="GlusterFS" myValuedCells="//@matrices.0/@cells.19 //@matrices.0/@cells.20 //@matrices.0/@cells.21"/>
+  <concepts xsi:type="pcmmm:Product" name="Quantcast File System" myValuedCells="//@matrices.0/@cells.22 //@matrices.0/@cells.23 //@matrices.0/@cells.24"/>
+  <concepts xsi:type="pcmmm:Product" name="Lustre" myValuedCells="//@matrices.0/@cells.25 //@matrices.0/@cells.26 //@matrices.0/@cells.27"/>
+  <concepts xsi:type="pcmmm:Product" name="OpenAFS" myValuedCells="//@matrices.0/@cells.28 //@matrices.0/@cells.29 //@matrices.0/@cells.30"/>
+  <concepts xsi:type="pcmmm:Product" name="Tahoe-LAFS" myValuedCells="//@matrices.0/@cells.31 //@matrices.0/@cells.32 //@matrices.0/@cells.33"/>
+  <concepts xsi:type="pcmmm:Product" name="HDFS" myValuedCells="//@matrices.0/@cells.34 //@matrices.0/@cells.35 //@matrices.0/@cells.36"/>
+  <concepts xsi:type="pcmmm:Product" name="XtreemFS" myValuedCells="//@matrices.0/@cells.37 //@matrices.0/@cells.38 //@matrices.0/@cells.39"/>
+  <concepts xsi:type="pcmmm:Feature" name="Run by" myValuedCells="//@matrices.1/@cells.4 //@matrices.1/@cells.7 //@matrices.1/@cells.10 //@matrices.1/@cells.13 //@matrices.1/@cells.16" domain="//@domainCollection/@domains.3"/>
+  <concepts xsi:type="pcmmm:Feature" name="Access API" myValuedCells="//@matrices.1/@cells.5 //@matrices.1/@cells.8 //@matrices.1/@cells.11 //@matrices.1/@cells.14 //@matrices.1/@cells.17" domain="//@domainCollection/@domains.4"/>
+  <concepts xsi:type="pcmmm:Product" name="Amazon S3" myValuedCells="//@matrices.1/@cells.4 //@matrices.1/@cells.5"/>
+  <concepts xsi:type="pcmmm:Product" name="Google Cloud Storage" myValuedCells="//@matrices.1/@cells.7 //@matrices.1/@cells.8"/>
+  <concepts xsi:type="pcmmm:Product" name="SWIFT (part of OpenStack)" myValuedCells="//@matrices.1/@cells.10 //@matrices.1/@cells.11"/>
+  <concepts xsi:type="pcmmm:Product" name="Microsoft Azure" myValuedCells="//@matrices.1/@cells.13 //@matrices.1/@cells.14"/>
+  <concepts xsi:type="pcmmm:Product" name="Cleversafe" constraints="//@matrices.1/@cells.16" myValuedCells="//@matrices.1/@cells.16 //@matrices.1/@cells.17"/>
+  <concepts xsi:type="pcmmm:Feature" name="C" constraints="//@matrices.0/@cells.13 //@matrices.0/@cells.16 //@matrices.0/@cells.19 //@matrices.0/@cells.22 //@matrices.0/@cells.25 //@matrices.0/@cells.28" domain="//@domainCollection/@domains.5"/>
+  <concepts xsi:type="pcmmm:Feature" name="LGPL" constraints="//@matrices.0/@cells.14" domain="//@domainCollection/@domains.6"/>
+  <concepts xsi:type="pcmmm:Feature" name="librados (C" constraints="//@matrices.0/@cells.15" domain="//@domainCollection/@domains.7"/>
+  <concepts xsi:type="pcmmm:Feature" name="C++" constraints="//@matrices.0/@cells.15 //@matrices.0/@cells.16 //@matrices.0/@cells.37" domain="//@domainCollection/@domains.8"/>
+  <concepts xsi:type="pcmmm:Feature" name="Python" constraints="//@matrices.0/@cells.15 //@matrices.0/@cells.31" domain="//@domainCollection/@domains.9"/>
+  <concepts xsi:type="pcmmm:Feature" name="Ruby)" constraints="//@matrices.0/@cells.15" domain="//@domainCollection/@domains.10"/>
+  <concepts xsi:type="pcmmm:Feature" name="S3" constraints="//@matrices.0/@cells.15" domain="//@domainCollection/@domains.11"/>
+  <concepts xsi:type="pcmmm:Feature" name="Swift" constraints="//@matrices.0/@cells.15" domain="//@domainCollection/@domains.12"/>
+  <concepts xsi:type="pcmmm:Feature" name="FUSE" constraints="//@matrices.0/@cells.15 //@matrices.0/@cells.21 //@matrices.0/@cells.24 //@matrices.0/@cells.27 //@matrices.0/@cells.39" domain="//@domainCollection/@domains.13"/>
+  <concepts xsi:type="pcmmm:Feature" name="FRAUNHOFER FS (FhGFS) EULA,GPLv2 client" constraints="//@matrices.0/@cells.17" domain="//@domainCollection/@domains.14"/>
+  <concepts xsi:type="pcmmm:Feature" name="POSIX" constraints="//@matrices.0/@cells.18 //@matrices.0/@cells.27" domain="//@domainCollection/@domains.15"/>
+  <concepts xsi:type="pcmmm:Feature" name="GPLv3" constraints="//@matrices.0/@cells.20" domain="//@domainCollection/@domains.16"/>
+  <concepts xsi:type="pcmmm:Feature" name="libglusterfs" constraints="//@matrices.0/@cells.21" domain="//@domainCollection/@domains.17"/>
+  <concepts xsi:type="pcmmm:Feature" name="Apache License 2.0" constraints="//@matrices.0/@cells.23 //@matrices.0/@cells.35" domain="//@domainCollection/@domains.18"/>
+  <concepts xsi:type="pcmmm:Feature" name="C++ client" constraints="//@matrices.0/@cells.24" domain="//@domainCollection/@domains.19"/>
+  <concepts xsi:type="pcmmm:Feature" name="C++ server: MetaServer" constraints="//@matrices.0/@cells.24" domain="//@domainCollection/@domains.20"/>
+  <concepts xsi:type="pcmmm:Feature" name="ChunkServer are both in C++" constraints="//@matrices.0/@cells.24" domain="//@domainCollection/@domains.21"/>
+  <concepts xsi:type="pcmmm:Feature" name="GPLv2" constraints="//@matrices.0/@cells.26" domain="//@domainCollection/@domains.22"/>
+  <concepts xsi:type="pcmmm:Feature" name="liblustre" constraints="//@matrices.0/@cells.27" domain="//@domainCollection/@domains.23"/>
+  <concepts xsi:type="pcmmm:Feature" name="IBM Public License" constraints="//@matrices.0/@cells.29" domain="//@domainCollection/@domains.24"/>
+  <concepts xsi:type="pcmmm:Feature" name="Virtual file system" constraints="//@matrices.0/@cells.30" domain="//@domainCollection/@domains.25"/>
+  <concepts xsi:type="pcmmm:Feature" name="Installable File System" constraints="//@matrices.0/@cells.30" domain="//@domainCollection/@domains.26"/>
+  <concepts xsi:type="pcmmm:Feature" name="GNU GPL 2+" constraints="//@matrices.0/@cells.32" domain="//@domainCollection/@domains.27"/>
+  <concepts xsi:type="pcmmm:Feature" name="other" constraints="//@matrices.0/@cells.32" domain="//@domainCollection/@domains.28"/>
+  <concepts xsi:type="pcmmm:Feature" name="browser" constraints="//@matrices.0/@cells.33" domain="//@domainCollection/@domains.29"/>
+  <concepts xsi:type="pcmmm:Feature" name="CLI" constraints="//@matrices.0/@cells.33" domain="//@domainCollection/@domains.30"/>
+  <concepts xsi:type="pcmmm:Feature" name="HTTP" constraints="//@matrices.0/@cells.33 //@matrices.0/@cells.36 //@matrices.1/@cells.5 //@matrices.1/@cells.8 //@matrices.1/@cells.11 //@matrices.1/@cells.14 //@matrices.1/@cells.17" domain="//@domainCollection/@domains.31"/>
+  <concepts xsi:type="pcmmm:Feature" name="SFTP" constraints="//@matrices.0/@cells.33" domain="//@domainCollection/@domains.32"/>
+  <concepts xsi:type="pcmmm:Feature" name="FTP" constraints="//@matrices.0/@cells.33" domain="//@domainCollection/@domains.33"/>
+  <concepts xsi:type="pcmmm:Feature" name="FUSE via sshfs" constraints="//@matrices.0/@cells.33" domain="//@domainCollection/@domains.34"/>
+  <concepts xsi:type="pcmmm:Feature" name="pyfilesystem" constraints="//@matrices.0/@cells.33" domain="//@domainCollection/@domains.35"/>
+  <concepts xsi:type="pcmmm:Feature" name="Java" constraints="//@matrices.0/@cells.34 //@matrices.0/@cells.37" domain="//@domainCollection/@domains.36"/>
+  <concepts xsi:type="pcmmm:Feature" name="Java client" constraints="//@matrices.0/@cells.36" domain="//@domainCollection/@domains.37"/>
+  <concepts xsi:type="pcmmm:Feature" name="c client" constraints="//@matrices.0/@cells.36" domain="//@domainCollection/@domains.38"/>
+  <concepts xsi:type="pcmmm:Feature" name="BSD License" constraints="//@matrices.0/@cells.38" domain="//@domainCollection/@domains.39"/>
+  <concepts xsi:type="pcmmm:Feature" name="libxtreemfs (Java" constraints="//@matrices.0/@cells.39" domain="//@domainCollection/@domains.40"/>
+  <concepts xsi:type="pcmmm:Feature" name="C++)" constraints="//@matrices.0/@cells.39" domain="//@domainCollection/@domains.41"/>
+  <concepts xsi:type="pcmmm:Feature" name="Amazon.com" constraints="//@matrices.1/@cells.4" domain="//@domainCollection/@domains.42"/>
+  <concepts xsi:type="pcmmm:Feature" name="REST" constraints="//@matrices.1/@cells.5 //@matrices.1/@cells.8 //@matrices.1/@cells.11 //@matrices.1/@cells.14 //@matrices.1/@cells.17" domain="//@domainCollection/@domains.43"/>
+  <concepts xsi:type="pcmmm:Feature" name="SOAP" constraints="//@matrices.1/@cells.5" domain="//@domainCollection/@domains.44"/>
+  <concepts xsi:type="pcmmm:Feature" name="Google" constraints="//@matrices.1/@cells.7" domain="//@domainCollection/@domains.45"/>
+  <concepts xsi:type="pcmmm:Feature" name="Rackspace" constraints="//@matrices.1/@cells.10" domain="//@domainCollection/@domains.46"/>
+  <concepts xsi:type="pcmmm:Feature" name="Hewlett-Packard" constraints="//@matrices.1/@cells.10" domain="//@domainCollection/@domains.47"/>
+  <concepts xsi:type="pcmmm:Feature" name="others" constraints="//@matrices.1/@cells.10" domain="//@domainCollection/@domains.48"/>
+  <concepts xsi:type="pcmmm:Feature" name="Microsoft" constraints="//@matrices.1/@cells.13" domain="//@domainCollection/@domains.49"/>
+  <domainCollection>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.13/@interpretation //@matrices.0/@cells.16/@interpretation/@contraints.0 //@matrices.0/@cells.19/@interpretation //@matrices.0/@cells.22/@interpretation //@matrices.0/@cells.25/@interpretation //@matrices.0/@cells.28/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.5/@interpretation/@condition/@contraints.0 //@matrices.1/@cells.8/@interpretation/@condition //@matrices.1/@cells.11/@interpretation/@condition //@matrices.1/@cells.14/@interpretation/@condition //@matrices.1/@cells.17/@interpretation/@condition //@matrices.1/@cells.5/@interpretation/@argument //@matrices.1/@cells.8/@interpretation/@argument //@matrices.1/@cells.11/@interpretation/@argument //@matrices.1/@cells.14/@interpretation/@argument //@matrices.1/@cells.17/@interpretation/@argument"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+  </domainCollection>
+</pcmmm:PCM>

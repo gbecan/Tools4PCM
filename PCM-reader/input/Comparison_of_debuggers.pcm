@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="" id="_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: description" verbatim="Description" rowspan="1" column="1" colspan="1" concept="//@concepts.0"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: language" verbatim="Language" rowspan="1" column="2" colspan="1" concept="//@concepts.1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: os" verbatim="OS" rowspan="1" column="3" colspan="1" concept="//@concepts.2"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: license" verbatim="License" rowspan="1" column="4" colspan="1" concept="//@concepts.3"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: most recent release" verbatim="most recent release" rowspan="1" column="5" colspan="1" concept="//@concepts.4"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: gdb" verbatim="GDB" row="1" rowspan="1" colspan="1" concept="//@concepts.5"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: idb" verbatim="IDB" row="2" rowspan="1" colspan="1" concept="//@concepts.6"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: lldb" verbatim="LLDB" row="3" rowspan="1" colspan="1" concept="//@concepts.7"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: pdb" verbatim="pdb" row="4" rowspan="1" colspan="1" concept="//@concepts.8"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: name" verbatim="Name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: gnu debugger" verbatim="GNU Debugger" row="1" rowspan="1" column="1" colspan="1" concepts="//@concepts.9" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GNU Debugger" verbatim="GNU Debugger" concept="//@concepts.9"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: any compiled to machine code" verbatim="any compiled to Machine code" row="1" rowspan="1" column="2" colspan="1" concepts="//@concepts.10" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="any compiled to Machine code" verbatim="any compiled to Machine code" concept="//@concepts.10"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: any" verbatim="any" row="1" rowspan="1" column="3" colspan="1" concepts="//@concepts.11" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="any" verbatim="any" concept="//@concepts.11"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,4: gpl" verbatim="GPL" row="1" rowspan="1" column="4" colspan="1" concepts="//@concepts.12" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.12"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,5: 7.7, feb 2014" verbatim="7.7, Feb 2014" row="1" rowspan="1" column="5" colspan="1" concepts="//@concepts.13" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:Double" name="7.7" confident="true" verbatim="7.7" value="7.7"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Feb 2014" verbatim="Feb 2014" concept="//@concepts.13"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: intel debugger" verbatim="Intel Debugger" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.14" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Intel Debugger" verbatim="Intel Debugger" concept="//@concepts.14"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: any compiled to machine code" verbatim="any compiled to Machine code" row="2" rowspan="1" column="2" colspan="1" concepts="//@concepts.10" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="any compiled to Machine code" verbatim="any compiled to Machine code" concept="//@concepts.10"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: windows, linux" verbatim="Windows, Linux" row="2" rowspan="1" column="3" colspan="1" concepts="//@concepts.15 //@concepts.16" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows" verbatim="Windows" concept="//@concepts.15"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Linux" verbatim="Linux" concept="//@concepts.16"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,4: proprietary" verbatim="Proprietary" row="2" rowspan="1" column="4" colspan="1" concepts="//@concepts.17" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.17"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,5: ?" verbatim="?" row="2" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: llvm debugger" verbatim="LLVM Debugger" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.18" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="LLVM Debugger" verbatim="LLVM Debugger" concept="//@concepts.18"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: any compiled to machine code" verbatim="any compiled to Machine code" row="3" rowspan="1" column="2" colspan="1" concepts="//@concepts.10" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="any compiled to Machine code" verbatim="any compiled to Machine code" concept="//@concepts.10"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: mac os x i386 and x86-64, linux, freebsd" verbatim="Mac OS X i386 and x86-64, Linux, FreeBSD" row="3" rowspan="1" column="3" colspan="1" concepts="//@concepts.19 //@concepts.20 //@concepts.16 //@concepts.21" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Mac OS X i386" verbatim="Mac OS X i386" concept="//@concepts.19"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="x86-64" verbatim="x86-64" concept="//@concepts.20"/>
+        </contraints>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Linux" verbatim="Linux" concept="//@concepts.16"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="FreeBSD" verbatim="FreeBSD" concept="//@concepts.21"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,4: bsd-style" verbatim="BSD-Style" row="3" rowspan="1" column="4" colspan="1" concepts="//@concepts.22" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="BSD-Style" verbatim="BSD-Style" concept="//@concepts.22"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,5: ?" verbatim="?" row="3" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: python debugger" verbatim="Python debugger" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.23" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Python debugger" verbatim="Python debugger" concept="//@concepts.23"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: python" verbatim="Python" row="4" rowspan="1" column="2" colspan="1" concepts="//@concepts.24" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Python" verbatim="Python" concept="//@concepts.24"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: any" verbatim="any" row="4" rowspan="1" column="3" colspan="1" concepts="//@concepts.11" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="any" verbatim="any" concept="//@concepts.11"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,4: python software foundation license" verbatim="Python Software Foundation License" row="4" rowspan="1" column="4" colspan="1" concepts="//@concepts.25" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Python Software Foundation License" verbatim="Python Software Foundation License" concept="//@concepts.25"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,5: 3.2.2, sept 2011" verbatim="3.2.2, Sept 2011" row="4" rowspan="1" column="5" colspan="1" concepts="//@concepts.26" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:Double" name="3.2.2" confident="true" verbatim="3.2.2" value="NaN"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Sept 2011" verbatim="Sept 2011" concept="//@concepts.26"/>
+      </interpretation>
+    </cells>
+  </matrices>
+  <concepts xsi:type="pcmmm:Feature" name="Description" myValuedCells="//@matrices.0/@cells.10 //@matrices.0/@cells.15 //@matrices.0/@cells.20 //@matrices.0/@cells.25" domain="//@domainCollection/@domains.0"/>
+  <concepts xsi:type="pcmmm:Feature" name="Language" myValuedCells="//@matrices.0/@cells.11 //@matrices.0/@cells.16 //@matrices.0/@cells.21 //@matrices.0/@cells.26" domain="//@domainCollection/@domains.1"/>
+  <concepts xsi:type="pcmmm:Feature" name="OS" myValuedCells="//@matrices.0/@cells.12 //@matrices.0/@cells.17 //@matrices.0/@cells.22 //@matrices.0/@cells.27" domain="//@domainCollection/@domains.2"/>
+  <concepts xsi:type="pcmmm:Feature" name="License" myValuedCells="//@matrices.0/@cells.13 //@matrices.0/@cells.18 //@matrices.0/@cells.23 //@matrices.0/@cells.28" domain="//@domainCollection/@domains.3"/>
+  <concepts xsi:type="pcmmm:Feature" name="most recent release" myValuedCells="//@matrices.0/@cells.14 //@matrices.0/@cells.19 //@matrices.0/@cells.24 //@matrices.0/@cells.29" domain="//@domainCollection/@domains.4"/>
+  <concepts xsi:type="pcmmm:Product" name="GDB" myValuedCells="//@matrices.0/@cells.10 //@matrices.0/@cells.11 //@matrices.0/@cells.12 //@matrices.0/@cells.13 //@matrices.0/@cells.14"/>
+  <concepts xsi:type="pcmmm:Product" name="IDB" myValuedCells="//@matrices.0/@cells.15 //@matrices.0/@cells.16 //@matrices.0/@cells.17 //@matrices.0/@cells.18 //@matrices.0/@cells.19"/>
+  <concepts xsi:type="pcmmm:Product" name="LLDB" myValuedCells="//@matrices.0/@cells.20 //@matrices.0/@cells.21 //@matrices.0/@cells.22 //@matrices.0/@cells.23 //@matrices.0/@cells.24"/>
+  <concepts xsi:type="pcmmm:Product" name="pdb" myValuedCells="//@matrices.0/@cells.25 //@matrices.0/@cells.26 //@matrices.0/@cells.27 //@matrices.0/@cells.28 //@matrices.0/@cells.29"/>
+  <concepts xsi:type="pcmmm:Feature" name="GNU Debugger" constraints="//@matrices.0/@cells.10" domain="//@domainCollection/@domains.5"/>
+  <concepts xsi:type="pcmmm:Feature" name="any compiled to Machine code" constraints="//@matrices.0/@cells.11 //@matrices.0/@cells.16 //@matrices.0/@cells.21" domain="//@domainCollection/@domains.6"/>
+  <concepts xsi:type="pcmmm:Feature" name="any" constraints="//@matrices.0/@cells.12 //@matrices.0/@cells.27" domain="//@domainCollection/@domains.7"/>
+  <concepts xsi:type="pcmmm:Feature" name="GPL" constraints="//@matrices.0/@cells.13" domain="//@domainCollection/@domains.8"/>
+  <concepts xsi:type="pcmmm:Feature" name="Feb 2014" constraints="//@matrices.0/@cells.14" domain="//@domainCollection/@domains.9"/>
+  <concepts xsi:type="pcmmm:Feature" name="Intel Debugger" constraints="//@matrices.0/@cells.15" domain="//@domainCollection/@domains.10"/>
+  <concepts xsi:type="pcmmm:Feature" name="Windows" constraints="//@matrices.0/@cells.17" domain="//@domainCollection/@domains.11"/>
+  <concepts xsi:type="pcmmm:Feature" name="Linux" constraints="//@matrices.0/@cells.17 //@matrices.0/@cells.22" domain="//@domainCollection/@domains.12"/>
+  <concepts xsi:type="pcmmm:Feature" name="Proprietary" constraints="//@matrices.0/@cells.18" domain="//@domainCollection/@domains.13"/>
+  <concepts xsi:type="pcmmm:Feature" name="LLVM Debugger" constraints="//@matrices.0/@cells.20" domain="//@domainCollection/@domains.14"/>
+  <concepts xsi:type="pcmmm:Feature" name="Mac OS X i386" constraints="//@matrices.0/@cells.22" domain="//@domainCollection/@domains.15"/>
+  <concepts xsi:type="pcmmm:Feature" name="x86-64" constraints="//@matrices.0/@cells.22" domain="//@domainCollection/@domains.16"/>
+  <concepts xsi:type="pcmmm:Feature" name="FreeBSD" constraints="//@matrices.0/@cells.22" domain="//@domainCollection/@domains.17"/>
+  <concepts xsi:type="pcmmm:Feature" name="BSD-Style" constraints="//@matrices.0/@cells.23" domain="//@domainCollection/@domains.18"/>
+  <concepts xsi:type="pcmmm:Feature" name="Python debugger" constraints="//@matrices.0/@cells.25" domain="//@domainCollection/@domains.19"/>
+  <concepts xsi:type="pcmmm:Feature" name="Python" constraints="//@matrices.0/@cells.26" domain="//@domainCollection/@domains.20"/>
+  <concepts xsi:type="pcmmm:Feature" name="Python Software Foundation License" constraints="//@matrices.0/@cells.28" domain="//@domainCollection/@domains.21"/>
+  <concepts xsi:type="pcmmm:Feature" name="Sept 2011" constraints="//@matrices.0/@cells.29" domain="//@domainCollection/@domains.22"/>
+  <domainCollection>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.10/@interpretation //@matrices.0/@cells.15/@interpretation //@matrices.0/@cells.20/@interpretation //@matrices.0/@cells.25/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.26/@interpretation //@matrices.0/@cells.11/@interpretation //@matrices.0/@cells.16/@interpretation //@matrices.0/@cells.21/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.17/@interpretation/@contraints.1 //@matrices.0/@cells.22/@interpretation/@contraints.1 //@matrices.0/@cells.12/@interpretation //@matrices.0/@cells.27/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.28/@interpretation //@matrices.0/@cells.18/@interpretation //@matrices.0/@cells.23/@interpretation //@matrices.0/@cells.13/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.14/@interpretation/@contraints.1 //@matrices.0/@cells.29/@interpretation/@contraints.1 //@matrices.0/@cells.29/@interpretation/@contraints.0 //@matrices.0/@cells.14/@interpretation/@contraints.0"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+  </domainCollection>
+</pcmmm:PCM>
