@@ -14,7 +14,15 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
  */
 @RemoteServiceRelativePath("greet")
 public interface GreetingService extends RemoteService {
+	
+	/**
+	 * Load a PCM model (random or demo) for the purpose of experiment. 
+	 * @param demo
+	 * @return PCM model (either a random PCM from a pre-defined list, or the PCM of the demo) 
+	 */
+	@Deprecated
 	PCM loadModel(boolean demo); 
 	 
 	public boolean createExperimentdata(ExperimentData data,Collection<ExperimentDataCell> datas);
+
 }

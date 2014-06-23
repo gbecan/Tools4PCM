@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="General" id="General_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: creator" verbatim="Creator" rowspan="1" column="1" colspan="1" concept="//@concepts.0"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: target business size" verbatim="Target Business Size" rowspan="1" column="2" colspan="1" concept="//@concepts.1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: license" verbatim="License" rowspan="1" column="3" colspan="1" concept="//@concepts.2"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: supported database platforms" verbatim="Supported Database Platforms" rowspan="1" column="4" colspan="1" concept="//@concepts.3"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: supported oss" verbatim="Supported OSs" rowspan="1" column="5" colspan="1" concept="//@concepts.4"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: standalone or bundled into a larger toolkit" verbatim="Standalone or bundled into a larger toolkit" rowspan="1" column="6" colspan="1" concept="//@concepts.5"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: launch date" verbatim="Launch Date" rowspan="1" column="7" colspan="1" concept="//@concepts.6"/>
+    <cells xsi:type="pcmmm:Extra" name="16,0: tool" verbatim="Tool" row="16" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: tool" verbatim="Tool" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: ca erwin data modeler" verbatim="CA ERwin Data Modeler" row="1" rowspan="1" colspan="1" concept="//@concepts.7"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: ca technologies" verbatim="CA Technologies" row="1" rowspan="1" column="1" colspan="1" concepts="//@concepts.41" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="CA Technologies" verbatim="CA Technologies" concept="//@concepts.41"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: smbs and enterprises" verbatim="SMBs and enterprises" row="1" rowspan="1" column="2" colspan="1" concepts="//@concepts.42 //@concepts.43" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SMBs" verbatim="SMBs" concept="//@concepts.42"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="enterprises" verbatim="enterprises" concept="//@concepts.43"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: proprietary" verbatim="Proprietary" row="1" rowspan="1" column="3" colspan="1" concepts="//@concepts.44" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,4: access, ibm db2, informix, ingres, mysql, oracle, " verbatim="Access, IBM DB2, Informix, Ingres, MySQL, Oracle, Progress, MS SQL Server, Sybase, Teradata" row="1" rowspan="1" column="4" colspan="1" concepts="//@concepts.47 //@concepts.45 //@concepts.53 //@concepts.50 //@concepts.52 //@concepts.51 //@concepts.49 //@concepts.48 //@concepts.46 //@concepts.54" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Access" verbatim="Access" concept="//@concepts.45"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IBM DB2" verbatim="IBM DB2" concept="//@concepts.46"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Informix" verbatim="Informix" concept="//@concepts.47"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Ingres" verbatim="Ingres" concept="//@concepts.48"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.49"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.50"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Progress" verbatim="Progress" concept="//@concepts.51"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS SQL Server" verbatim="MS SQL Server" concept="//@concepts.52"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Sybase" verbatim="Sybase" concept="//@concepts.53"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Teradata" verbatim="Teradata" concept="//@concepts.54"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,5: all versions of windows" verbatim="All versions of Windows" row="1" rowspan="1" column="5" colspan="1" concepts="//@concepts.55" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="All versions of Windows" verbatim="All versions of Windows" concept="//@concepts.55"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,6: standalone" verbatim="Standalone" row="1" rowspan="1" column="6" colspan="1" concepts="//@concepts.56" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Standalone" verbatim="Standalone" concept="//@concepts.56"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,7: 1992?" verbatim="1992?" row="1" rowspan="1" column="7" colspan="1" concepts="//@concepts.57" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="1992?" verbatim="1992?" concept="//@concepts.57"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="2,0: dezign for databases" verbatim="DeZign for Databases" row="2" rowspan="1" colspan="1" concept="//@concepts.8"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: datanamic" verbatim="Datanamic" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.58" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Datanamic" verbatim="Datanamic" concept="//@concepts.58"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: smbs and enterprises" verbatim="SMBs and enterprises" row="2" rowspan="1" column="2" colspan="1" concepts="//@concepts.42 //@concepts.43" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SMBs" verbatim="SMBs" concept="//@concepts.42"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="enterprises" verbatim="enterprises" concept="//@concepts.43"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: proprietary" verbatim="Proprietary" row="2" rowspan="1" column="3" colspan="1" concepts="//@concepts.44" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,4: ms sql server, mysql, oracle, ibm db2, firebird, i" verbatim="MS SQL Server, MySQL, Oracle, IBM DB2, Firebird, InterBase, Informix, MS Access, SQLite, PostgreSQL, Sybase, Paradox" row="2" rowspan="1" column="4" colspan="1" concepts="//@concepts.47 //@concepts.53 //@concepts.50 //@concepts.52 //@concepts.61 //@concepts.59 //@concepts.64 //@concepts.60 //@concepts.49 //@concepts.63 //@concepts.62 //@concepts.46" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS SQL Server" verbatim="MS SQL Server" concept="//@concepts.52"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.49"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.50"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IBM DB2" verbatim="IBM DB2" concept="//@concepts.46"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Firebird" verbatim="Firebird" concept="//@concepts.59"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="InterBase" verbatim="InterBase" concept="//@concepts.60"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Informix" verbatim="Informix" concept="//@concepts.47"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS Access" verbatim="MS Access" concept="//@concepts.61"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SQLite" verbatim="SQLite" concept="//@concepts.62"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PostgreSQL" verbatim="PostgreSQL" concept="//@concepts.63"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Sybase" verbatim="Sybase" concept="//@concepts.53"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Paradox" verbatim="Paradox" concept="//@concepts.64"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,5: all versions of windows" verbatim="All versions of Windows" row="2" rowspan="1" column="5" colspan="1" concepts="//@concepts.55" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="All versions of Windows" verbatim="All versions of Windows" concept="//@concepts.55"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,6: standalone" verbatim="Standalone" row="2" rowspan="1" column="6" colspan="1" concepts="//@concepts.56" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Standalone" verbatim="Standalone" concept="//@concepts.56"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,7: 1999" verbatim="1999" row="2" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="1999" confident="true" verbatim="1999" value="1999"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="3,0: enterprise architect" verbatim="Enterprise Architect" row="3" rowspan="1" colspan="1" concept="//@concepts.9"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: sparx systems" verbatim="Sparx Systems" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.65" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Sparx Systems" verbatim="Sparx Systems" concept="//@concepts.65"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: smbs and enterprises" verbatim="SMBs and enterprises" row="3" rowspan="1" column="2" colspan="1" concepts="//@concepts.42 //@concepts.43" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SMBs" verbatim="SMBs" concept="//@concepts.42"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="enterprises" verbatim="enterprises" concept="//@concepts.43"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: proprietary" verbatim="Proprietary" row="3" rowspan="1" column="3" colspan="1" concepts="//@concepts.44" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,4: ibm db2, firebird, interbase, informix, ingres, ac" verbatim="IBM DB2, Firebird, InterBase, Informix, Ingres, Access, MS SQL Server, MySQL, SQLite, Oracle, PostgreSQL, Sybase" row="3" rowspan="1" column="4" colspan="1" concepts="//@concepts.47 //@concepts.45 //@concepts.53 //@concepts.50 //@concepts.52 //@concepts.59 //@concepts.60 //@concepts.49 //@concepts.63 //@concepts.48 //@concepts.62 //@concepts.46" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IBM DB2" verbatim="IBM DB2" concept="//@concepts.46"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Firebird" verbatim="Firebird" concept="//@concepts.59"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="InterBase" verbatim="InterBase" concept="//@concepts.60"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Informix" verbatim="Informix" concept="//@concepts.47"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Ingres" verbatim="Ingres" concept="//@concepts.48"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Access" verbatim="Access" concept="//@concepts.45"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS SQL Server" verbatim="MS SQL Server" concept="//@concepts.52"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.49"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SQLite" verbatim="SQLite" concept="//@concepts.62"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.50"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PostgreSQL" verbatim="PostgreSQL" concept="//@concepts.63"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Sybase" verbatim="Sybase" concept="//@concepts.53"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,5: windows, linux, mac" verbatim="Windows, Linux, Mac" row="3" rowspan="1" column="5" colspan="1" concepts="//@concepts.66 //@concepts.67 //@concepts.68" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows" verbatim="Windows" concept="//@concepts.66"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Linux" verbatim="Linux" concept="//@concepts.67"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Mac" verbatim="Mac" concept="//@concepts.68"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,6: data modeling is supported as part of a complete m" verbatim="Data modeling is supported as part of a complete modeling platform." row="3" rowspan="1" column="6" colspan="1" concepts="//@concepts.69" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Data modeling is supported as part of a complete modeling platform." verbatim="Data modeling is supported as part of a complete modeling platform." concept="//@concepts.69"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,7: 2000" verbatim="2000" row="3" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="2000" confident="true" verbatim="2000" value="2000"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="4,0: cameo enterprise architecture" verbatim="Cameo Enterprise Architecture" row="4" rowspan="1" colspan="1" concept="//@concepts.10"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: no magic, inc." verbatim="No Magic, Inc." row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.70 //@concepts.71" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="No Magic" verbatim="No Magic" concept="//@concepts.70"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Inc." verbatim="Inc." concept="//@concepts.71"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: academic, sole proprietorship, team, and enterpris" verbatim="Academic, Sole Proprietorship, Team, and Enterprise" row="4" rowspan="1" column="2" colspan="1" concepts="//@concepts.72 //@concepts.73 //@concepts.74 //@concepts.75" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Academic" verbatim="Academic" concept="//@concepts.72"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Sole Proprietorship" verbatim="Sole Proprietorship" concept="//@concepts.73"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Team" verbatim="Team" concept="//@concepts.74"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="and Enterprise" verbatim="and Enterprise" concept="//@concepts.75"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: proprietary" verbatim="Proprietary" row="4" rowspan="1" column="3" colspan="1" concepts="//@concepts.44" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,4: neutral (model-to-text transformations can yield a" verbatim="Neutral (Model-to-Text Transformations can yield a variety of physical DDLs)" row="4" rowspan="1" column="4" colspan="1" concepts="//@concepts.76 //@concepts.77" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="Model-to-Text Transformations can yield a variety of physical DDLs" verbatim="Model-to-Text Transformations can yield a variety of physical DDLs" concept="//@concepts.76"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="Neutral" verbatim="Neutral" concept="//@concepts.77"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,5: any modern java host" verbatim="Any Modern Java Host" row="4" rowspan="1" column="5" colspan="1" concepts="//@concepts.78" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Any Modern Java Host" verbatim="Any Modern Java Host" concept="//@concepts.78"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,6: data modeling is available in core magicdraw, came" verbatim="Data Modeling is available in core MagicDraw, Cameo Business Modeler, and Cameo UPDM" row="4" rowspan="1" column="6" colspan="1" concepts="//@concepts.79 //@concepts.80 //@concepts.81" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Data Modeling is available in core MagicDraw" verbatim="Data Modeling is available in core MagicDraw" concept="//@concepts.79"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Cameo Business Modeler" verbatim="Cameo Business Modeler" concept="//@concepts.80"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="and Cameo UPDM" verbatim="and Cameo UPDM" concept="//@concepts.81"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,7: 1996" verbatim="1996" row="4" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="1996" confident="true" verbatim="1996" value="1996"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="5,0: er/studio" verbatim="ER/Studio" row="5" rowspan="1" colspan="1" concept="//@concepts.11"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: embarcadero" verbatim="Embarcadero" row="5" rowspan="1" column="1" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Embarcadero" verbatim="Embarcadero" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: smbs and enterprises" verbatim="SMBs and enterprises" row="5" rowspan="1" column="2" colspan="1" concepts="//@concepts.42 //@concepts.43" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SMBs" verbatim="SMBs" concept="//@concepts.42"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="enterprises" verbatim="enterprises" concept="//@concepts.43"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,3: proprietary" verbatim="Proprietary" row="5" rowspan="1" column="3" colspan="1" concepts="//@concepts.44" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,4: access, ibm db2, informix, hitachi hirdb, firebird" verbatim="Access, IBM DB2, Informix, Hitachi HiRDB, Firebird, Interbase, MySQL, MS SQL Server, Netezza, Oracle, PostgreSQL, Sybase, Teradata, Visual Foxpro and others via ODBC/ANSI SQL" row="5" rowspan="1" column="4" colspan="1" concepts="//@concepts.47 //@concepts.86 //@concepts.45 //@concepts.53 //@concepts.50 //@concepts.52 //@concepts.83 //@concepts.59 //@concepts.87 //@concepts.84 //@concepts.85 //@concepts.49 //@concepts.63 //@concepts.88 //@concepts.46 //@concepts.54" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Access" verbatim="Access" concept="//@concepts.45"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IBM DB2" verbatim="IBM DB2" concept="//@concepts.46"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Informix" verbatim="Informix" concept="//@concepts.47"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Hitachi HiRDB" verbatim="Hitachi HiRDB" concept="//@concepts.83"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Firebird" verbatim="Firebird" concept="//@concepts.59"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Interbase" verbatim="Interbase" concept="//@concepts.84"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.49"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS SQL Server" verbatim="MS SQL Server" concept="//@concepts.52"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Netezza" verbatim="Netezza" concept="//@concepts.85"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.50"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PostgreSQL" verbatim="PostgreSQL" concept="//@concepts.63"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Sybase" verbatim="Sybase" concept="//@concepts.53"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Teradata" verbatim="Teradata" concept="//@concepts.54"/>
+        <contraints xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:And">
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Visual Foxpro" verbatim="Visual Foxpro" concept="//@concepts.86"/>
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="others via ODBC" verbatim="others via ODBC" concept="//@concepts.87"/>
+          </contraints>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="ANSI SQL" verbatim="ANSI SQL" concept="//@concepts.88"/>
+        </contraints>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,5: all versions of windows" verbatim="All versions of Windows" row="5" rowspan="1" column="5" colspan="1" concepts="//@concepts.55" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="All versions of Windows" verbatim="All versions of Windows" concept="//@concepts.55"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,6: standalone" verbatim="Standalone" row="5" rowspan="1" column="6" colspan="1" concepts="//@concepts.56" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Standalone" verbatim="Standalone" concept="//@concepts.56"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,7: 1998" verbatim="1998" row="5" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="1998" confident="true" verbatim="1998" value="1998"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="6,0: ibm infosphere data architect" verbatim="IBM InfoSphere Data Architect" row="6" rowspan="1" colspan="1" concept="//@concepts.12"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,1: ibm" verbatim="IBM" row="6" rowspan="1" column="1" colspan="1" concepts="//@concepts.89" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="IBM" verbatim="IBM" concept="//@concepts.89"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,2: enterprises" verbatim="Enterprises" row="6" rowspan="1" column="2" colspan="1" concepts="//@concepts.90" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Enterprises" verbatim="Enterprises" concept="//@concepts.90"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,3: proprietary" verbatim="Proprietary" row="6" rowspan="1" column="3" colspan="1" concepts="//@concepts.44" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,4: ibm db2, informix, oracle, sybase, ms sql server, " verbatim="IBM DB2, Informix, Oracle, Sybase, MS SQL Server, MySQL, Teradata" row="6" rowspan="1" column="4" colspan="1" concepts="//@concepts.47 //@concepts.53 //@concepts.50 //@concepts.52 //@concepts.49 //@concepts.46 //@concepts.54" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IBM DB2" verbatim="IBM DB2" concept="//@concepts.46"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Informix" verbatim="Informix" concept="//@concepts.47"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.50"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Sybase" verbatim="Sybase" concept="//@concepts.53"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS SQL Server" verbatim="MS SQL Server" concept="//@concepts.52"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.49"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Teradata" verbatim="Teradata" concept="//@concepts.54"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,5: linux, windows" verbatim="Linux, Windows" row="6" rowspan="1" column="5" colspan="1" concepts="//@concepts.67 //@concepts.66" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Linux" verbatim="Linux" concept="//@concepts.67"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows" verbatim="Windows" concept="//@concepts.66"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,6: standalone" verbatim="Standalone" row="6" rowspan="1" column="6" colspan="1" concepts="//@concepts.56" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Standalone" verbatim="Standalone" concept="//@concepts.56"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,7: unknown" verbatim="Unknown" row="6" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Unknown" name="Unknown" confident="true" verbatim="Unknown"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="7,0: modelright" verbatim="ModelRight" row="7" rowspan="1" colspan="1" concept="//@concepts.13"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,1: modelright" verbatim="ModelRight" row="7" rowspan="1" column="1" colspan="1" concepts="//@concepts.13" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="ModelRight" verbatim="ModelRight" concept="//@concepts.13"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,2: enterprises, smbs, personal" verbatim="Enterprises, SMBs, personal" row="7" rowspan="1" column="2" colspan="1" concepts="//@concepts.90 //@concepts.42 //@concepts.91" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Enterprises" verbatim="Enterprises" concept="//@concepts.90"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SMBs" verbatim="SMBs" concept="//@concepts.42"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="personal" verbatim="personal" concept="//@concepts.91"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,3: proprietary" verbatim="Proprietary" row="7" rowspan="1" column="3" colspan="1" concepts="//@concepts.44" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,4: ms sql server, oracle, mysql, postgresql, ibm db2" verbatim="MS SQL Server, Oracle, MySQL, PostgreSQL, IBM DB2" row="7" rowspan="1" column="4" colspan="1" concepts="//@concepts.50 //@concepts.52 //@concepts.49 //@concepts.63 //@concepts.46" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS SQL Server" verbatim="MS SQL Server" concept="//@concepts.52"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.50"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.49"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PostgreSQL" verbatim="PostgreSQL" concept="//@concepts.63"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IBM DB2" verbatim="IBM DB2" concept="//@concepts.46"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,5: all versions of windows" verbatim="All versions of Windows" row="7" rowspan="1" column="5" colspan="1" concepts="//@concepts.55" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="All versions of Windows" verbatim="All versions of Windows" concept="//@concepts.55"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,6: standalone" verbatim="Standalone" row="7" rowspan="1" column="6" colspan="1" concepts="//@concepts.56" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Standalone" verbatim="Standalone" concept="//@concepts.56"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,7: 2005" verbatim="2005" row="7" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="2005" confident="true" verbatim="2005" value="2005"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="8,0: mysql workbench" verbatim="MySQL Workbench" row="8" rowspan="1" colspan="1" concept="//@concepts.14"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,1: mysql (an oracle company)" verbatim="MySQL (An Oracle Company)" row="8" rowspan="1" column="1" colspan="1" concepts="//@concepts.92 //@concepts.49" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="An Oracle Company" verbatim="An Oracle Company" concept="//@concepts.92"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.49"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,2: smbs - personal" verbatim="SMBs - personal" row="8" rowspan="1" column="2" colspan="1" concepts="//@concepts.93" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="SMBs - personal" verbatim="SMBs - personal" concept="//@concepts.93"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,3: proprietary or gpl" verbatim="Proprietary or GPL" row="8" rowspan="1" column="3" colspan="1" concepts="//@concepts.44 //@concepts.94" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Or">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.44"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.94"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,4: mysql" verbatim="MySQL" row="8" rowspan="1" column="4" colspan="1" concepts="//@concepts.49" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.49"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,5: linux, windows, mac os" verbatim="Linux, Windows, MAC OS" row="8" rowspan="1" column="5" colspan="1" concepts="//@concepts.67 //@concepts.66 //@concepts.95" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Linux" verbatim="Linux" concept="//@concepts.67"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows" verbatim="Windows" concept="//@concepts.66"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MAC OS" verbatim="MAC OS" concept="//@concepts.95"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,6: standalone" verbatim="Standalone" row="8" rowspan="1" column="6" colspan="1" concepts="//@concepts.56" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Standalone" verbatim="Standalone" concept="//@concepts.56"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,7: 2006" verbatim="2006" row="8" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="2006" confident="true" verbatim="2006" value="2006"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="9,0: navicat data modeler" verbatim="Navicat Data Modeler" row="9" rowspan="1" colspan="1" concept="//@concepts.15"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,1: premiumsoft" verbatim="PremiumSoft" row="9" rowspan="1" column="1" colspan="1" concepts="//@concepts.96" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="PremiumSoft" verbatim="PremiumSoft" concept="//@concepts.96"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,2: smbs - personal" verbatim="SMBs - personal" row="9" rowspan="1" column="2" colspan="1" concepts="//@concepts.93" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="SMBs - personal" verbatim="SMBs - personal" concept="//@concepts.93"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,3: proprietary" verbatim="Proprietary" row="9" rowspan="1" column="3" colspan="1" concepts="//@concepts.44" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,4: mysql, ms sql server, postgresql, oracle, sqlite" verbatim="MySQL, MS SQL Server, PostgreSQL, Oracle, SQLite" row="9" rowspan="1" column="4" colspan="1" concepts="//@concepts.50 //@concepts.52 //@concepts.49 //@concepts.63 //@concepts.62" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.49"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS SQL Server" verbatim="MS SQL Server" concept="//@concepts.52"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PostgreSQL" verbatim="PostgreSQL" concept="//@concepts.63"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.50"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SQLite" verbatim="SQLite" concept="//@concepts.62"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,5: windows, mac os, linux" verbatim="Windows, Mac OS, Linux" row="9" rowspan="1" column="5" colspan="1" concepts="//@concepts.66 //@concepts.97 //@concepts.67" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows" verbatim="Windows" concept="//@concepts.66"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Mac OS" verbatim="Mac OS" concept="//@concepts.97"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Linux" verbatim="Linux" concept="//@concepts.67"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,6: standalone" verbatim="Standalone" row="9" rowspan="1" column="6" colspan="1" concepts="//@concepts.56" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Standalone" verbatim="Standalone" concept="//@concepts.56"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,7: 2012" verbatim="2012" row="9" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="2012" confident="true" verbatim="2012" value="2012"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="10,0: open modelsphere" verbatim="Open ModelSphere" row="10" rowspan="1" colspan="1" concept="//@concepts.16"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,1: grandite" verbatim="Grandite" row="10" rowspan="1" column="1" colspan="1" concepts="//@concepts.98" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Grandite" verbatim="Grandite" concept="//@concepts.98"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,2: smbs - personal" verbatim="SMBs - personal" row="10" rowspan="1" column="2" colspan="1" concepts="//@concepts.93" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="SMBs - personal" verbatim="SMBs - personal" concept="//@concepts.93"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,3: proprietary" verbatim="Proprietary" row="10" rowspan="1" column="3" colspan="1" concepts="//@concepts.44" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,4: ms sql server, mysql" verbatim="MS SQL Server, MySQL" row="10" rowspan="1" column="4" colspan="1" concepts="//@concepts.52 //@concepts.49" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS SQL Server" verbatim="MS SQL Server" concept="//@concepts.52"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.49"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,5: online" verbatim="Online" row="10" rowspan="1" column="5" colspan="1" concepts="//@concepts.99" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Online" verbatim="Online" concept="//@concepts.99"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,6: part of modeling environment with uml support" verbatim="Part of modeling environment with UML support" row="10" rowspan="1" column="6" colspan="1" concepts="//@concepts.100" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Part of modeling environment with UML support" verbatim="Part of modeling environment with UML support" concept="//@concepts.100"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,7: 2010" verbatim="2010" row="10" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="2010" confident="true" verbatim="2010" value="2010"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="11,0: oracle sql developer data modeler" verbatim="Oracle SQL Developer Data Modeler" row="11" rowspan="1" colspan="1" concept="//@concepts.17"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,1: oracle" verbatim="Oracle" row="11" rowspan="1" column="1" colspan="1" concepts="//@concepts.50" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.50"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,2: enterprises" verbatim="Enterprises" row="11" rowspan="1" column="2" colspan="1" concepts="//@concepts.90" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Enterprises" verbatim="Enterprises" concept="//@concepts.90"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,3: proprietary" verbatim="Proprietary" row="11" rowspan="1" column="3" colspan="1" concepts="//@concepts.44" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,4: oracle, ms sql server, ibm db2" verbatim="Oracle, MS SQL Server, IBM DB2" row="11" rowspan="1" column="4" colspan="1" concepts="//@concepts.50 //@concepts.52 //@concepts.46" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.50"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS SQL Server" verbatim="MS SQL Server" concept="//@concepts.52"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IBM DB2" verbatim="IBM DB2" concept="//@concepts.46"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,5: cross-platform" verbatim="Cross-platform" row="11" rowspan="1" column="5" colspan="1" concepts="//@concepts.101" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Cross-platform" verbatim="Cross-platform" concept="//@concepts.101"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,6: standalone" verbatim="Standalone" row="11" rowspan="1" column="6" colspan="1" concepts="//@concepts.56" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Standalone" verbatim="Standalone" concept="//@concepts.56"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,7: unknown" verbatim="Unknown" row="11" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Unknown" name="Unknown" confident="true" verbatim="Unknown"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="12,0: powerdesigner" verbatim="PowerDesigner" row="12" rowspan="1" colspan="1" concept="//@concepts.18"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,1: sybase" verbatim="Sybase" row="12" rowspan="1" column="1" colspan="1" concepts="//@concepts.53" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Sybase" verbatim="Sybase" concept="//@concepts.53"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,2: smbs and enterprises" verbatim="SMBs and enterprises" row="12" rowspan="1" column="2" colspan="1" concepts="//@concepts.42 //@concepts.43" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SMBs" verbatim="SMBs" concept="//@concepts.42"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="enterprises" verbatim="enterprises" concept="//@concepts.43"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,3: proprietary" verbatim="Proprietary" row="12" rowspan="1" column="3" colspan="1" concepts="//@concepts.44" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,4: ms sql server, oracle, postgresql, mysql, ibm db2," verbatim="MS SQL Server, Oracle, PostgreSQL, MySQL, IBM DB2, Informix" row="12" rowspan="1" column="4" colspan="1" concepts="//@concepts.47 //@concepts.50 //@concepts.52 //@concepts.49 //@concepts.63 //@concepts.46" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS SQL Server" verbatim="MS SQL Server" concept="//@concepts.52"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.50"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PostgreSQL" verbatim="PostgreSQL" concept="//@concepts.63"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.49"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IBM DB2" verbatim="IBM DB2" concept="//@concepts.46"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Informix" verbatim="Informix" concept="//@concepts.47"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,5: all versions of windows" verbatim="All versions of Windows" row="12" rowspan="1" column="5" colspan="1" concepts="//@concepts.55" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="All versions of Windows" verbatim="All versions of Windows" concept="//@concepts.55"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,6: standalone" verbatim="Standalone" row="12" rowspan="1" column="6" colspan="1" concepts="//@concepts.56" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Standalone" verbatim="Standalone" concept="//@concepts.56"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,7: 1996" verbatim="1996" row="12" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="1996" confident="true" verbatim="1996" value="1996"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="13,0: software ideas modeler" verbatim="Software Ideas Modeler" row="13" rowspan="1" colspan="1" concept="//@concepts.19"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,1: dusan rodina" verbatim="Dusan Rodina" row="13" rowspan="1" column="1" colspan="1" concepts="//@concepts.102" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Dusan Rodina" verbatim="Dusan Rodina" concept="//@concepts.102"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,2: enterprises, smbs, personal" verbatim="Enterprises, SMBs, personal" row="13" rowspan="1" column="2" colspan="1" concepts="//@concepts.90 //@concepts.42 //@concepts.91" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Enterprises" verbatim="Enterprises" concept="//@concepts.90"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SMBs" verbatim="SMBs" concept="//@concepts.42"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="personal" verbatim="personal" concept="//@concepts.91"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,3: proprietary" verbatim="Proprietary" row="13" rowspan="1" column="3" colspan="1" concepts="//@concepts.44" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,4: ms sql server, mysql" verbatim="MS SQL Server, MySQL" row="13" rowspan="1" column="4" colspan="1" concepts="//@concepts.52 //@concepts.49" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS SQL Server" verbatim="MS SQL Server" concept="//@concepts.52"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.49"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,5: windows" verbatim="Windows" row="13" rowspan="1" column="5" colspan="1" concepts="//@concepts.66" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Windows" verbatim="Windows" concept="//@concepts.66"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,6: standalone" verbatim="Standalone" row="13" rowspan="1" column="6" colspan="1" concepts="//@concepts.56" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Standalone" verbatim="Standalone" concept="//@concepts.56"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,7: 2009" verbatim="2009" row="13" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="2009" confident="true" verbatim="2009" value="2009"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="14,0: toad data modeler" verbatim="Toad Data Modeler" row="14" rowspan="1" colspan="1" concept="//@concepts.20"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,1: quest software" verbatim="Quest Software" row="14" rowspan="1" column="1" colspan="1" concepts="//@concepts.103" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Quest Software" verbatim="Quest Software" concept="//@concepts.103"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,2: smbs and enterprises" verbatim="SMBs and enterprises" row="14" rowspan="1" column="2" colspan="1" concepts="//@concepts.42 //@concepts.43" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SMBs" verbatim="SMBs" concept="//@concepts.42"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="enterprises" verbatim="enterprises" concept="//@concepts.43"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,3: proprietary" verbatim="Proprietary" row="14" rowspan="1" column="3" colspan="1" concepts="//@concepts.44" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,4: access, ibm db2, informix, mysql, oracle, postgres" verbatim="Access, IBM DB2, Informix, MySQL, Oracle, PostgreSQL, MS SQL Server, SQLite" row="14" rowspan="1" column="4" colspan="1" concepts="//@concepts.47 //@concepts.45 //@concepts.50 //@concepts.52 //@concepts.49 //@concepts.63 //@concepts.62 //@concepts.46" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Access" verbatim="Access" concept="//@concepts.45"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IBM DB2" verbatim="IBM DB2" concept="//@concepts.46"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Informix" verbatim="Informix" concept="//@concepts.47"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.49"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.50"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PostgreSQL" verbatim="PostgreSQL" concept="//@concepts.63"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS SQL Server" verbatim="MS SQL Server" concept="//@concepts.52"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SQLite" verbatim="SQLite" concept="//@concepts.62"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,5: all versions of windows" verbatim="All versions of Windows" row="14" rowspan="1" column="5" colspan="1" concepts="//@concepts.55" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="All versions of Windows" verbatim="All versions of Windows" concept="//@concepts.55"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,6: standalone" verbatim="Standalone" row="14" rowspan="1" column="6" colspan="1" concepts="//@concepts.56" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Standalone" verbatim="Standalone" concept="//@concepts.56"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,7: 2005 (before this date known as casestudio)" verbatim="2005 (before this date known as CaseStudio)" row="14" rowspan="1" column="7" colspan="1" concepts="//@concepts.104" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="before this date known as CaseStudio" verbatim="before this date known as CaseStudio" concept="//@concepts.104"/>
+        <argument xsi:type="pcmmm:Integer" name="2005" confident="true" verbatim="2005" value="2005"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="15,0: vertabelo" verbatim="Vertabelo" row="15" rowspan="1" colspan="1" concept="//@concepts.21"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,1: e-point sa" verbatim="e-point SA" row="15" rowspan="1" column="1" colspan="1" concepts="//@concepts.105" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="e-point SA" verbatim="e-point SA" concept="//@concepts.105"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,2: enterprises, smbs, personal" verbatim="Enterprises, SMBs, personal" row="15" rowspan="1" column="2" colspan="1" concepts="//@concepts.90 //@concepts.42 //@concepts.91" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Enterprises" verbatim="Enterprises" concept="//@concepts.90"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SMBs" verbatim="SMBs" concept="//@concepts.42"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="personal" verbatim="personal" concept="//@concepts.91"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,3: proprietary" verbatim="Proprietary" row="15" rowspan="1" column="3" colspan="1" concepts="//@concepts.44" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Proprietary" verbatim="Proprietary" concept="//@concepts.44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,4: mysql, oracle, postgresql, sqlite, ibm db2, hsqldb" verbatim="MySQL, Oracle, PostgreSQL, SQLite, IBM DB2, HSQLDB, Microsoft SQL Server" row="15" rowspan="1" column="4" colspan="1" concepts="//@concepts.50 //@concepts.107 //@concepts.49 //@concepts.63 //@concepts.62 //@concepts.46 //@concepts.106" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.49"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.50"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PostgreSQL" verbatim="PostgreSQL" concept="//@concepts.63"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SQLite" verbatim="SQLite" concept="//@concepts.62"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IBM DB2" verbatim="IBM DB2" concept="//@concepts.46"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="HSQLDB" verbatim="HSQLDB" concept="//@concepts.106"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft SQL Server" verbatim="Microsoft SQL Server" concept="//@concepts.107"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,5: online" verbatim="Online" row="15" rowspan="1" column="5" colspan="1" concepts="//@concepts.99" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Online" verbatim="Online" concept="//@concepts.99"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,6: standalone" verbatim="Standalone" row="15" rowspan="1" column="6" colspan="1" concepts="//@concepts.56" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Standalone" verbatim="Standalone" concept="//@concepts.56"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,7: 2013" verbatim="2013" row="15" rowspan="1" column="7" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:Integer" name="2013" confident="true" verbatim="2013" value="2013"/>
+    </cells>
+    <cells xsi:type="pcmmm:Extra" name="16,1: creator" verbatim="Creator" row="16" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,2: target business size" verbatim="Target Business Size" row="16" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,3: license" verbatim="License" row="16" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,4: supported database platforms" verbatim="Supported Database Platforms" row="16" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,5: supported oss" verbatim="Supported OSs" row="16" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,6: standalone or bundled into a larger toolkit" verbatim="Standalone or bundled into a larger toolkit" row="16" rowspan="1" column="6" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="16,7: launch date" verbatim="Launch Date" row="16" rowspan="1" column="7" colspan="1"/>
+  </matrices>
+  <matrices name="Features" id="Features_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: supported data models (conceptual, logical, physic" verbatim="Supported data models (conceptual, logical, physical)" rowspan="1" column="1" colspan="1" concept="//@concepts.22"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: supported notations" verbatim="Supported notations" rowspan="1" column="2" colspan="1" concept="//@concepts.23"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: forward engineering" verbatim="Forward engineering" rowspan="1" column="3" colspan="1" concept="//@concepts.24"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: reverse engineering" verbatim="Reverse engineering" rowspan="1" column="4" colspan="1" concept="//@concepts.25"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: model/database comparison and synchronization" verbatim="Model/database comparison and synchronization" rowspan="1" column="5" colspan="1" concept="//@concepts.26"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: teamwork/repository" verbatim="Teamwork/repository" rowspan="1" column="6" colspan="1" concept="//@concepts.27"/>
+    <cells xsi:type="pcmmm:Extra" name="14,0: tool" verbatim="Tool" row="14" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: tool" verbatim="Tool" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: ca erwin data modeler" verbatim="CA ERwin Data Modeler" row="1" rowspan="1" colspan="1" concept="//@concepts.28"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: conceptual, logical, physical" verbatim="Conceptual, logical, physical" row="1" rowspan="1" column="1" colspan="1" concepts="//@concepts.108 //@concepts.109 //@concepts.110" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.22">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Conceptual" verbatim="Conceptual" concept="//@concepts.108"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="logical" verbatim="logical" concept="//@concepts.109"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="physical" verbatim="physical" concept="//@concepts.110"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: idef1x, ie (crows feet), and more" verbatim="IDEF1X, IE (Crows feet), and more" row="1" rowspan="1" column="2" colspan="1" concepts="//@concepts.111 //@concepts.112 //@concepts.113 //@concepts.114" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.23">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IDEF1X" verbatim="IDEF1X" concept="//@concepts.111"/>
+        <contraints xsi:type="pcmmm:Partial">
+          <condition xsi:type="pcmmm:VariabilityConceptRef" name="Crows feet" verbatim="Crows feet" concept="//@concepts.112"/>
+          <argument xsi:type="pcmmm:VariabilityConceptRef" name="IE" verbatim="IE" concept="//@concepts.113"/>
+        </contraints>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="and more" verbatim="and more" concept="//@concepts.114"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: yes" verbatim="Yes" row="1" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.24">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,4: yes" verbatim="Yes" row="1" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.25">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,5: update database and/or update model" verbatim="Update database and/or update model" row="1" rowspan="1" column="5" colspan="1" concepts="//@concepts.115 //@concepts.116" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.26">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Update database and" verbatim="Update database and" concept="//@concepts.115"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="or update model" verbatim="or update model" concept="//@concepts.116"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,6: workgroup edition provides collaboration" verbatim="Workgroup edition provides collaboration" row="1" rowspan="1" column="6" colspan="1" concepts="//@concepts.117" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.27">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Workgroup edition provides collaboration" verbatim="Workgroup edition provides collaboration" concept="//@concepts.117"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="2,0: dezign for databases" verbatim="DeZign for Databases" row="2" rowspan="1" colspan="1" concept="//@concepts.29"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: logical, physical" verbatim="Logical, physical" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.118 //@concepts.110" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.22">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Logical" verbatim="Logical" concept="//@concepts.118"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="physical" verbatim="physical" concept="//@concepts.110"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: idef1x, ie (crows feet)" verbatim="IDEF1X, IE (Crows feet)" row="2" rowspan="1" column="2" colspan="1" concepts="//@concepts.111 //@concepts.112 //@concepts.113" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.23">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IDEF1X" verbatim="IDEF1X" concept="//@concepts.111"/>
+        <contraints xsi:type="pcmmm:Partial">
+          <condition xsi:type="pcmmm:VariabilityConceptRef" name="Crows feet" verbatim="Crows feet" concept="//@concepts.112"/>
+          <argument xsi:type="pcmmm:VariabilityConceptRef" name="IE" verbatim="IE" concept="//@concepts.113"/>
+        </contraints>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: yes" verbatim="Yes" row="2" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.24">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,4: yes" verbatim="Yes" row="2" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.25">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,5: update database and/or update model" verbatim="Update database and/or update model" row="2" rowspan="1" column="5" colspan="1" concepts="//@concepts.115 //@concepts.116" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.26">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Update database and" verbatim="Update database and" concept="//@concepts.115"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="or update model" verbatim="or update model" concept="//@concepts.116"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,6: not directly. merge functionality available." verbatim="Not directly. Merge functionality available." row="2" rowspan="1" column="6" colspan="1" concepts="//@concepts.119" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.27">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Not directly. Merge functionality available." verbatim="Not directly. Merge functionality available." concept="//@concepts.119"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="3,0: enterprise architect" verbatim="Enterprise Architect" row="3" rowspan="1" colspan="1" concept="//@concepts.30"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: conceptual, logical &amp; physical + mda transform of " verbatim="Conceptual, Logical &amp; Physical + MDA transform of Logical to Physical" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.108 //@concepts.120" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.22">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Conceptual" verbatim="Conceptual" concept="//@concepts.108"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Logical &amp; Physical + MDA transform of Logical to Physical" verbatim="Logical &amp; Physical + MDA transform of Logical to Physical" concept="//@concepts.120"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: idef1x, uml ddl, information engineering &amp; erd" verbatim="IDEF1X, UML DDL, Information Engineering &amp; ERD" row="3" rowspan="1" column="2" colspan="1" concepts="//@concepts.111 //@concepts.121 //@concepts.122" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.23">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IDEF1X" verbatim="IDEF1X" concept="//@concepts.111"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="UML DDL" verbatim="UML DDL" concept="//@concepts.121"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Information Engineering &amp; ERD" verbatim="Information Engineering &amp; ERD" concept="//@concepts.122"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: yes" verbatim="Yes" row="3" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.24">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,4: yes" verbatim="Yes" row="3" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.25">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,5: update database and/or update model" verbatim="Update database and/or update model" row="3" rowspan="1" column="5" colspan="1" concepts="//@concepts.115 //@concepts.116" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.26">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Update database and" verbatim="Update database and" concept="//@concepts.115"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="or update model" verbatim="or update model" concept="//@concepts.116"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,6: multi-user collaboration using file or dbms reposi" verbatim="Multi-user collaboration using File or DBMS Repositoty (or transfer via XMI, CVS/TFS or Difference Merge)" row="3" rowspan="1" column="6" colspan="1" concepts="//@concepts.127 //@concepts.128 //@concepts.125 //@concepts.126 //@concepts.124 //@concepts.123" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.27">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="or transfer via XMI" verbatim="or transfer via XMI" concept="//@concepts.123"/>
+          <contraints xsi:type="pcmmm:And">
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="CVS" verbatim="CVS" concept="//@concepts.124"/>
+            <contraints xsi:type="pcmmm:Or">
+              <contraints xsi:type="pcmmm:VariabilityConceptRef" name="TFS" verbatim="TFS" concept="//@concepts.125"/>
+              <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Difference Merge" verbatim="Difference Merge" concept="//@concepts.126"/>
+            </contraints>
+          </contraints>
+        </condition>
+        <argument xsi:type="pcmmm:Or">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Multi-user collaboration using File" verbatim="Multi-user collaboration using File" concept="//@concepts.127"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="DBMS Repositoty" verbatim="DBMS Repositoty" concept="//@concepts.128"/>
+        </argument>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="4,0: cameo enterprise architect" verbatim="Cameo Enterprise Architect" row="4" rowspan="1" colspan="1" concept="//@concepts.31"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: ontological, operational, conceptual, logical, phy" verbatim="Ontological, Operational, Conceptual, Logical, Physical" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.108 //@concepts.118 //@concepts.129 //@concepts.130 //@concepts.131" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.22">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Ontological" verbatim="Ontological" concept="//@concepts.129"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Operational" verbatim="Operational" concept="//@concepts.130"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Conceptual" verbatim="Conceptual" concept="//@concepts.108"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Logical" verbatim="Logical" concept="//@concepts.118"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Physical" verbatim="Physical" concept="//@concepts.131"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: rules, requirements, visual ontology, er, uml, div" verbatim="Rules, Requirements, Visual Ontology, ER, UML, DIV-1, DIV-2, DIV-3, DSL for Custom Notations, Deployment Diagrams" row="4" rowspan="1" column="2" colspan="1" concepts="//@concepts.135 //@concepts.136 //@concepts.133 //@concepts.134 //@concepts.141 //@concepts.132 //@concepts.138 //@concepts.140 //@concepts.139 //@concepts.137" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.23">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Rules" verbatim="Rules" concept="//@concepts.132"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Requirements" verbatim="Requirements" concept="//@concepts.133"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Visual Ontology" verbatim="Visual Ontology" concept="//@concepts.134"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="ER" verbatim="ER" concept="//@concepts.135"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="UML" verbatim="UML" concept="//@concepts.136"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="DIV-1" verbatim="DIV-1" concept="//@concepts.137"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="DIV-2" verbatim="DIV-2" concept="//@concepts.138"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="DIV-3" verbatim="DIV-3" concept="//@concepts.139"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="DSL for Custom Notations" verbatim="DSL for Custom Notations" concept="//@concepts.140"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Deployment Diagrams" verbatim="Deployment Diagrams" concept="//@concepts.141"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: yes" verbatim="Yes" row="4" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.24">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,4: yes" verbatim="Yes" row="4" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.25">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,5: " verbatim="" row="4" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.26">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,6: individual offline modeling using files, collabora" verbatim="Individual Offline Modeling using Files, Collaborative Modeling using central Teamwork Server" row="4" rowspan="1" column="6" colspan="1" concepts="//@concepts.142 //@concepts.143" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.27">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Individual Offline Modeling using Files" verbatim="Individual Offline Modeling using Files" concept="//@concepts.142"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Collaborative Modeling using central Teamwork Server" verbatim="Collaborative Modeling using central Teamwork Server" concept="//@concepts.143"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="5,0: er/studio" verbatim="ER/Studio" row="5" rowspan="1" colspan="1" concept="//@concepts.32"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: conceptual, logical, physical, etl" verbatim="Conceptual, logical, physical, ETL" row="5" rowspan="1" column="1" colspan="1" concepts="//@concepts.108 //@concepts.109 //@concepts.110 //@concepts.144" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.22">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Conceptual" verbatim="Conceptual" concept="//@concepts.108"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="logical" verbatim="logical" concept="//@concepts.109"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="physical" verbatim="physical" concept="//@concepts.110"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="ETL" verbatim="ETL" concept="//@concepts.144"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: idef1x, ie (crows feet)" verbatim="IDEF1X, IE (Crows feet)" row="5" rowspan="1" column="2" colspan="1" concepts="//@concepts.111 //@concepts.112 //@concepts.113" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.23">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IDEF1X" verbatim="IDEF1X" concept="//@concepts.111"/>
+        <contraints xsi:type="pcmmm:Partial">
+          <condition xsi:type="pcmmm:VariabilityConceptRef" name="Crows feet" verbatim="Crows feet" concept="//@concepts.112"/>
+          <argument xsi:type="pcmmm:VariabilityConceptRef" name="IE" verbatim="IE" concept="//@concepts.113"/>
+        </contraints>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,3: yes" verbatim="Yes" row="5" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.24">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,4: yes" verbatim="Yes" row="5" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.25">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,5: update database and/or update model" verbatim="Update database and/or update model" row="5" rowspan="1" column="5" colspan="1" concepts="//@concepts.115 //@concepts.116" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.26">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Update database and" verbatim="Update database and" concept="//@concepts.115"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="or update model" verbatim="or update model" concept="//@concepts.116"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,6: er/studio repository and portal for collaboration" verbatim="ER/Studio Repository and Portal for collaboration" row="5" rowspan="1" column="6" colspan="1" concepts="//@concepts.135 //@concepts.145 //@concepts.146" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.27">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="ER" verbatim="ER" concept="//@concepts.135"/>
+        <contraints xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Studio Repository" verbatim="Studio Repository" concept="//@concepts.145"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Portal for collaboration" verbatim="Portal for collaboration" concept="//@concepts.146"/>
+        </contraints>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="6,0: ibm infosphere data architect" verbatim="IBM InfoSphere Data Architect" row="6" rowspan="1" colspan="1" concept="//@concepts.33"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,1: conceptual, logical, physical" verbatim="Conceptual, logical, physical" row="6" rowspan="1" column="1" colspan="1" concepts="//@concepts.108 //@concepts.109 //@concepts.110" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.22">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Conceptual" verbatim="Conceptual" concept="//@concepts.108"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="logical" verbatim="logical" concept="//@concepts.109"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="physical" verbatim="physical" concept="//@concepts.110"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,2: idef1x, ie (crows feet), and more" verbatim="IDEF1X, IE (Crows feet), and more" row="6" rowspan="1" column="2" colspan="1" concepts="//@concepts.111 //@concepts.112 //@concepts.113 //@concepts.114" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.23">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IDEF1X" verbatim="IDEF1X" concept="//@concepts.111"/>
+        <contraints xsi:type="pcmmm:Partial">
+          <condition xsi:type="pcmmm:VariabilityConceptRef" name="Crows feet" verbatim="Crows feet" concept="//@concepts.112"/>
+          <argument xsi:type="pcmmm:VariabilityConceptRef" name="IE" verbatim="IE" concept="//@concepts.113"/>
+        </contraints>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="and more" verbatim="and more" concept="//@concepts.114"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,3: yes" verbatim="Yes" row="6" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.24">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,4: yes" verbatim="Yes" row="6" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.25">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,5: update database and/or update model" verbatim="Update database and/or update model" row="6" rowspan="1" column="5" colspan="1" concepts="//@concepts.115 //@concepts.116" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.26">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Update database and" verbatim="Update database and" concept="//@concepts.115"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="or update model" verbatim="or update model" concept="//@concepts.116"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,6: yes" verbatim="Yes" row="6" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.27">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="7,0: mysql workbench" verbatim="MySQL Workbench" row="7" rowspan="1" colspan="1" concept="//@concepts.34"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,1: physical" verbatim="Physical" row="7" rowspan="1" column="1" colspan="1" concepts="//@concepts.131" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.22">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Physical" verbatim="Physical" concept="//@concepts.131"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,2: ie (crows feet)" verbatim="IE (Crows feet)" row="7" rowspan="1" column="2" colspan="1" concepts="//@concepts.112 //@concepts.113" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.23">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="Crows feet" verbatim="Crows feet" concept="//@concepts.112"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="IE" verbatim="IE" concept="//@concepts.113"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,3: yes" verbatim="Yes" row="7" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.24">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,4: yes" verbatim="Yes" row="7" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.25">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,5: update database and/or update model" verbatim="Update database and/or update model" row="7" rowspan="1" column="5" colspan="1" concepts="//@concepts.115 //@concepts.116" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.26">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Update database and" verbatim="Update database and" concept="//@concepts.115"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="or update model" verbatim="or update model" concept="//@concepts.116"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,6: no" verbatim="No" row="7" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.27">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="8,0: navicat data modeler" verbatim="Navicat Data Modeler" row="8" rowspan="1" colspan="1" concept="//@concepts.35"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,1: conceptual, physical" verbatim="Conceptual, physical" row="8" rowspan="1" column="1" colspan="1" concepts="//@concepts.108 //@concepts.110" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.22">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Conceptual" verbatim="Conceptual" concept="//@concepts.108"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="physical" verbatim="physical" concept="//@concepts.110"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,2: ie (crows feet)" verbatim="IE (Crows feet)" row="8" rowspan="1" column="2" colspan="1" concepts="//@concepts.112 //@concepts.113" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.23">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="Crows feet" verbatim="Crows feet" concept="//@concepts.112"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="IE" verbatim="IE" concept="//@concepts.113"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,3: yes" verbatim="Yes" row="8" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.24">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,4: yes" verbatim="Yes" row="8" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.25">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,5: update database and/or update model" verbatim="Update database and/or update model" row="8" rowspan="1" column="5" colspan="1" concepts="//@concepts.115 //@concepts.116" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.26">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Update database and" verbatim="Update database and" concept="//@concepts.115"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="or update model" verbatim="or update model" concept="//@concepts.116"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,6: no" verbatim="No" row="8" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.27">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="9,0: open modelsphere" verbatim="Open ModelSphere" row="9" rowspan="1" colspan="1" concept="//@concepts.36"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,1: logical, physical" verbatim="Logical, physical" row="9" rowspan="1" column="1" colspan="1" concepts="//@concepts.118 //@concepts.110" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.22">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Logical" verbatim="Logical" concept="//@concepts.118"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="physical" verbatim="physical" concept="//@concepts.110"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,2: idef1x, ie (crows feet), and more" verbatim="IDEF1X, IE (Crows feet), and more" row="9" rowspan="1" column="2" colspan="1" concepts="//@concepts.111 //@concepts.112 //@concepts.113 //@concepts.114" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.23">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IDEF1X" verbatim="IDEF1X" concept="//@concepts.111"/>
+        <contraints xsi:type="pcmmm:Partial">
+          <condition xsi:type="pcmmm:VariabilityConceptRef" name="Crows feet" verbatim="Crows feet" concept="//@concepts.112"/>
+          <argument xsi:type="pcmmm:VariabilityConceptRef" name="IE" verbatim="IE" concept="//@concepts.113"/>
+        </contraints>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="and more" verbatim="and more" concept="//@concepts.114"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,3: yes" verbatim="Yes" row="9" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.24">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,4: yes" verbatim="Yes" row="9" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.25">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,5: update database and/or update model" verbatim="Update database and/or update model" row="9" rowspan="1" column="5" colspan="1" concepts="//@concepts.115 //@concepts.116" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.26">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Update database and" verbatim="Update database and" concept="//@concepts.115"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="or update model" verbatim="or update model" concept="//@concepts.116"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,6: no" verbatim="No" row="9" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.27">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="10,0: oracle sql developer data modeler" verbatim="Oracle SQL Developer Data Modeler" row="10" rowspan="1" colspan="1" concept="//@concepts.37"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,1: logical, physical" verbatim="Logical, physical" row="10" rowspan="1" column="1" colspan="1" concepts="//@concepts.118 //@concepts.110" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.22">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Logical" verbatim="Logical" concept="//@concepts.118"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="physical" verbatim="physical" concept="//@concepts.110"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,2: idef1x, ie (crows feet), and more" verbatim="IDEF1X, IE (Crows feet), and more" row="10" rowspan="1" column="2" colspan="1" concepts="//@concepts.111 //@concepts.112 //@concepts.113 //@concepts.114" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.23">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IDEF1X" verbatim="IDEF1X" concept="//@concepts.111"/>
+        <contraints xsi:type="pcmmm:Partial">
+          <condition xsi:type="pcmmm:VariabilityConceptRef" name="Crows feet" verbatim="Crows feet" concept="//@concepts.112"/>
+          <argument xsi:type="pcmmm:VariabilityConceptRef" name="IE" verbatim="IE" concept="//@concepts.113"/>
+        </contraints>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="and more" verbatim="and more" concept="//@concepts.114"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,3: yes" verbatim="Yes" row="10" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.24">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,4: yes" verbatim="Yes" row="10" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.25">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,5: update database and/or update model" verbatim="Update database and/or update model" row="10" rowspan="1" column="5" colspan="1" concepts="//@concepts.115 //@concepts.116" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.26">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Update database and" verbatim="Update database and" concept="//@concepts.115"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="or update model" verbatim="or update model" concept="//@concepts.116"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,6: yes" verbatim="Yes" row="10" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.27">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="11,0: powerdesigner" verbatim="PowerDesigner" row="11" rowspan="1" colspan="1" concept="//@concepts.38"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,1: conceptual, logical, physical" verbatim="Conceptual, logical, physical" row="11" rowspan="1" column="1" colspan="1" concepts="//@concepts.108 //@concepts.109 //@concepts.110" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.22">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Conceptual" verbatim="Conceptual" concept="//@concepts.108"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="logical" verbatim="logical" concept="//@concepts.109"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="physical" verbatim="physical" concept="//@concepts.110"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,2: idef1x, ie (crows feet), and more" verbatim="IDEF1X, IE (Crows feet), and more" row="11" rowspan="1" column="2" colspan="1" concepts="//@concepts.111 //@concepts.112 //@concepts.113 //@concepts.114" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.23">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IDEF1X" verbatim="IDEF1X" concept="//@concepts.111"/>
+        <contraints xsi:type="pcmmm:Partial">
+          <condition xsi:type="pcmmm:VariabilityConceptRef" name="Crows feet" verbatim="Crows feet" concept="//@concepts.112"/>
+          <argument xsi:type="pcmmm:VariabilityConceptRef" name="IE" verbatim="IE" concept="//@concepts.113"/>
+        </contraints>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="and more" verbatim="and more" concept="//@concepts.114"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,3: yes" verbatim="Yes" row="11" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.24">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,4: yes" verbatim="Yes" row="11" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.25">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,5: update database and/or update model" verbatim="Update database and/or update model" row="11" rowspan="1" column="5" colspan="1" concepts="//@concepts.115 //@concepts.116" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.26">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Update database and" verbatim="Update database and" concept="//@concepts.115"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="or update model" verbatim="or update model" concept="//@concepts.116"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,6: yes" verbatim="Yes" row="11" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.27">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="12,0: toad data modeler" verbatim="Toad Data Modeler" row="12" rowspan="1" colspan="1" concept="//@concepts.39"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,1: logical, physical" verbatim="Logical, physical" row="12" rowspan="1" column="1" colspan="1" concepts="//@concepts.118 //@concepts.110" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.22">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Logical" verbatim="Logical" concept="//@concepts.118"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="physical" verbatim="physical" concept="//@concepts.110"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,2: idef1x, ie (crows feet), and more" verbatim="IDEF1X, IE (Crows feet), and more" row="12" rowspan="1" column="2" colspan="1" concepts="//@concepts.111 //@concepts.112 //@concepts.113 //@concepts.114" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.23">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="IDEF1X" verbatim="IDEF1X" concept="//@concepts.111"/>
+        <contraints xsi:type="pcmmm:Partial">
+          <condition xsi:type="pcmmm:VariabilityConceptRef" name="Crows feet" verbatim="Crows feet" concept="//@concepts.112"/>
+          <argument xsi:type="pcmmm:VariabilityConceptRef" name="IE" verbatim="IE" concept="//@concepts.113"/>
+        </contraints>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="and more" verbatim="and more" concept="//@concepts.114"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,3: yes" verbatim="Yes" row="12" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.24">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,4: yes" verbatim="Yes" row="12" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.25">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,5: update database and/or update model" verbatim="Update database and/or update model" row="12" rowspan="1" column="5" colspan="1" concepts="//@concepts.115 //@concepts.116" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.26">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Update database and" verbatim="Update database and" concept="//@concepts.115"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="or update model" verbatim="or update model" concept="//@concepts.116"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,6: yes" verbatim="Yes" row="12" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.27">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="13,0: vertabelo" verbatim="Vertabelo" row="13" rowspan="1" colspan="1" concept="//@concepts.40"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,1: physical" verbatim="Physical" row="13" rowspan="1" column="1" colspan="1" concepts="//@concepts.131" myHeaderProducts="//@concepts.40" myHeaderFeatures="//@concepts.22">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Physical" verbatim="Physical" concept="//@concepts.131"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,2: ie (crows feet)" verbatim="IE (Crows feet)" row="13" rowspan="1" column="2" colspan="1" concepts="//@concepts.112 //@concepts.113" myHeaderProducts="//@concepts.40" myHeaderFeatures="//@concepts.23">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="Crows feet" verbatim="Crows feet" concept="//@concepts.112"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="IE" verbatim="IE" concept="//@concepts.113"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,3: yes" verbatim="Yes" row="13" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.40" myHeaderFeatures="//@concepts.24">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,4: yes" verbatim="Yes" row="13" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.40" myHeaderFeatures="//@concepts.25">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,5: " verbatim="" row="13" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.40" myHeaderFeatures="//@concepts.26">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,6: yes" verbatim="Yes" row="13" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.40" myHeaderFeatures="//@concepts.27">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:Extra" name="14,1: supported data models (conceptual, logical, physic" verbatim="Supported data models (conceptual, logical, physical)" row="14" rowspan="1" column="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,2: supported notations" verbatim="Supported notations" row="14" rowspan="1" column="2" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,3: forward engineering" verbatim="Forward engineering" row="14" rowspan="1" column="3" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,4: reverse engineering" verbatim="Reverse engineering" row="14" rowspan="1" column="4" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,5: model/database comparison and synchronization" verbatim="Model/database comparison and synchronization" row="14" rowspan="1" column="5" colspan="1"/>
+    <cells xsi:type="pcmmm:Extra" name="14,6: teamwork/repository" verbatim="Teamwork/repository" row="14" rowspan="1" column="6" colspan="1"/>
+  </matrices>
+  <concepts xsi:type="pcmmm:Feature" name="Creator" myValuedCells="//@matrices.0/@cells.10 //@matrices.0/@cells.18 //@matrices.0/@cells.26 //@matrices.0/@cells.34 //@matrices.0/@cells.42 //@matrices.0/@cells.50 //@matrices.0/@cells.58 //@matrices.0/@cells.66 //@matrices.0/@cells.74 //@matrices.0/@cells.82 //@matrices.0/@cells.90 //@matrices.0/@cells.98 //@matrices.0/@cells.106 //@matrices.0/@cells.114 //@matrices.0/@cells.122" domain="//@domainCollection/@domains.0"/>
+  <concepts xsi:type="pcmmm:Feature" name="Target Business Size" myValuedCells="//@matrices.0/@cells.11 //@matrices.0/@cells.19 //@matrices.0/@cells.27 //@matrices.0/@cells.35 //@matrices.0/@cells.43 //@matrices.0/@cells.51 //@matrices.0/@cells.59 //@matrices.0/@cells.67 //@matrices.0/@cells.75 //@matrices.0/@cells.83 //@matrices.0/@cells.91 //@matrices.0/@cells.99 //@matrices.0/@cells.107 //@matrices.0/@cells.115 //@matrices.0/@cells.123" domain="//@domainCollection/@domains.1"/>
+  <concepts xsi:type="pcmmm:Feature" name="License" myValuedCells="//@matrices.0/@cells.12 //@matrices.0/@cells.20 //@matrices.0/@cells.28 //@matrices.0/@cells.36 //@matrices.0/@cells.44 //@matrices.0/@cells.52 //@matrices.0/@cells.60 //@matrices.0/@cells.68 //@matrices.0/@cells.76 //@matrices.0/@cells.84 //@matrices.0/@cells.92 //@matrices.0/@cells.100 //@matrices.0/@cells.108 //@matrices.0/@cells.116 //@matrices.0/@cells.124" domain="//@domainCollection/@domains.2"/>
+  <concepts xsi:type="pcmmm:Feature" name="Supported Database Platforms" myValuedCells="//@matrices.0/@cells.13 //@matrices.0/@cells.21 //@matrices.0/@cells.29 //@matrices.0/@cells.37 //@matrices.0/@cells.45 //@matrices.0/@cells.53 //@matrices.0/@cells.61 //@matrices.0/@cells.69 //@matrices.0/@cells.77 //@matrices.0/@cells.85 //@matrices.0/@cells.93 //@matrices.0/@cells.101 //@matrices.0/@cells.109 //@matrices.0/@cells.117 //@matrices.0/@cells.125" domain="//@domainCollection/@domains.3"/>
+  <concepts xsi:type="pcmmm:Feature" name="Supported OSs" myValuedCells="//@matrices.0/@cells.14 //@matrices.0/@cells.22 //@matrices.0/@cells.30 //@matrices.0/@cells.38 //@matrices.0/@cells.46 //@matrices.0/@cells.54 //@matrices.0/@cells.62 //@matrices.0/@cells.70 //@matrices.0/@cells.78 //@matrices.0/@cells.86 //@matrices.0/@cells.94 //@matrices.0/@cells.102 //@matrices.0/@cells.110 //@matrices.0/@cells.118 //@matrices.0/@cells.126" domain="//@domainCollection/@domains.4"/>
+  <concepts xsi:type="pcmmm:Feature" name="Standalone or bundled into a larger toolkit" myValuedCells="//@matrices.0/@cells.15 //@matrices.0/@cells.23 //@matrices.0/@cells.31 //@matrices.0/@cells.39 //@matrices.0/@cells.47 //@matrices.0/@cells.55 //@matrices.0/@cells.63 //@matrices.0/@cells.71 //@matrices.0/@cells.79 //@matrices.0/@cells.87 //@matrices.0/@cells.95 //@matrices.0/@cells.103 //@matrices.0/@cells.111 //@matrices.0/@cells.119 //@matrices.0/@cells.127" domain="//@domainCollection/@domains.5"/>
+  <concepts xsi:type="pcmmm:Feature" name="Launch Date" myValuedCells="//@matrices.0/@cells.16 //@matrices.0/@cells.24 //@matrices.0/@cells.32 //@matrices.0/@cells.40 //@matrices.0/@cells.48 //@matrices.0/@cells.56 //@matrices.0/@cells.64 //@matrices.0/@cells.72 //@matrices.0/@cells.80 //@matrices.0/@cells.88 //@matrices.0/@cells.96 //@matrices.0/@cells.104 //@matrices.0/@cells.112 //@matrices.0/@cells.120 //@matrices.0/@cells.128" domain="//@domainCollection/@domains.6"/>
+  <concepts xsi:type="pcmmm:Product" name="CA ERwin Data Modeler" myValuedCells="//@matrices.0/@cells.10 //@matrices.0/@cells.11 //@matrices.0/@cells.12 //@matrices.0/@cells.13 //@matrices.0/@cells.14 //@matrices.0/@cells.15 //@matrices.0/@cells.16"/>
+  <concepts xsi:type="pcmmm:Product" name="DeZign for Databases" myValuedCells="//@matrices.0/@cells.18 //@matrices.0/@cells.19 //@matrices.0/@cells.20 //@matrices.0/@cells.21 //@matrices.0/@cells.22 //@matrices.0/@cells.23 //@matrices.0/@cells.24"/>
+  <concepts xsi:type="pcmmm:Product" name="Enterprise Architect" myValuedCells="//@matrices.0/@cells.26 //@matrices.0/@cells.27 //@matrices.0/@cells.28 //@matrices.0/@cells.29 //@matrices.0/@cells.30 //@matrices.0/@cells.31 //@matrices.0/@cells.32"/>
+  <concepts xsi:type="pcmmm:Product" name="Cameo Enterprise Architecture" myValuedCells="//@matrices.0/@cells.34 //@matrices.0/@cells.35 //@matrices.0/@cells.36 //@matrices.0/@cells.37 //@matrices.0/@cells.38 //@matrices.0/@cells.39 //@matrices.0/@cells.40"/>
+  <concepts xsi:type="pcmmm:Product" name="ER/Studio" myValuedCells="//@matrices.0/@cells.42 //@matrices.0/@cells.43 //@matrices.0/@cells.44 //@matrices.0/@cells.45 //@matrices.0/@cells.46 //@matrices.0/@cells.47 //@matrices.0/@cells.48"/>
+  <concepts xsi:type="pcmmm:Product" name="IBM InfoSphere Data Architect" myValuedCells="//@matrices.0/@cells.50 //@matrices.0/@cells.51 //@matrices.0/@cells.52 //@matrices.0/@cells.53 //@matrices.0/@cells.54 //@matrices.0/@cells.55 //@matrices.0/@cells.56"/>
+  <concepts xsi:type="pcmmm:Product" name="ModelRight" constraints="//@matrices.0/@cells.58" myValuedCells="//@matrices.0/@cells.58 //@matrices.0/@cells.59 //@matrices.0/@cells.60 //@matrices.0/@cells.61 //@matrices.0/@cells.62 //@matrices.0/@cells.63 //@matrices.0/@cells.64"/>
+  <concepts xsi:type="pcmmm:Product" name="MySQL Workbench" myValuedCells="//@matrices.0/@cells.66 //@matrices.0/@cells.67 //@matrices.0/@cells.68 //@matrices.0/@cells.69 //@matrices.0/@cells.70 //@matrices.0/@cells.71 //@matrices.0/@cells.72"/>
+  <concepts xsi:type="pcmmm:Product" name="Navicat Data Modeler" myValuedCells="//@matrices.0/@cells.74 //@matrices.0/@cells.75 //@matrices.0/@cells.76 //@matrices.0/@cells.77 //@matrices.0/@cells.78 //@matrices.0/@cells.79 //@matrices.0/@cells.80"/>
+  <concepts xsi:type="pcmmm:Product" name="Open ModelSphere" myValuedCells="//@matrices.0/@cells.82 //@matrices.0/@cells.83 //@matrices.0/@cells.84 //@matrices.0/@cells.85 //@matrices.0/@cells.86 //@matrices.0/@cells.87 //@matrices.0/@cells.88"/>
+  <concepts xsi:type="pcmmm:Product" name="Oracle SQL Developer Data Modeler" myValuedCells="//@matrices.0/@cells.90 //@matrices.0/@cells.91 //@matrices.0/@cells.92 //@matrices.0/@cells.93 //@matrices.0/@cells.94 //@matrices.0/@cells.95 //@matrices.0/@cells.96"/>
+  <concepts xsi:type="pcmmm:Product" name="PowerDesigner" myValuedCells="//@matrices.0/@cells.98 //@matrices.0/@cells.99 //@matrices.0/@cells.100 //@matrices.0/@cells.101 //@matrices.0/@cells.102 //@matrices.0/@cells.103 //@matrices.0/@cells.104"/>
+  <concepts xsi:type="pcmmm:Product" name="Software Ideas Modeler" myValuedCells="//@matrices.0/@cells.106 //@matrices.0/@cells.107 //@matrices.0/@cells.108 //@matrices.0/@cells.109 //@matrices.0/@cells.110 //@matrices.0/@cells.111 //@matrices.0/@cells.112"/>
+  <concepts xsi:type="pcmmm:Product" name="Toad Data Modeler" myValuedCells="//@matrices.0/@cells.114 //@matrices.0/@cells.115 //@matrices.0/@cells.116 //@matrices.0/@cells.117 //@matrices.0/@cells.118 //@matrices.0/@cells.119 //@matrices.0/@cells.120"/>
+  <concepts xsi:type="pcmmm:Product" name="Vertabelo" myValuedCells="//@matrices.0/@cells.122 //@matrices.0/@cells.123 //@matrices.0/@cells.124 //@matrices.0/@cells.125 //@matrices.0/@cells.126 //@matrices.0/@cells.127 //@matrices.0/@cells.128"/>
+  <concepts xsi:type="pcmmm:Feature" name="Supported data models (conceptual, logical, physical)" myValuedCells="//@matrices.1/@cells.9 //@matrices.1/@cells.16 //@matrices.1/@cells.23 //@matrices.1/@cells.30 //@matrices.1/@cells.37 //@matrices.1/@cells.44 //@matrices.1/@cells.51 //@matrices.1/@cells.58 //@matrices.1/@cells.65 //@matrices.1/@cells.72 //@matrices.1/@cells.79 //@matrices.1/@cells.86 //@matrices.1/@cells.93" domain="//@domainCollection/@domains.7"/>
+  <concepts xsi:type="pcmmm:Feature" name="Supported notations" myValuedCells="//@matrices.1/@cells.10 //@matrices.1/@cells.17 //@matrices.1/@cells.24 //@matrices.1/@cells.31 //@matrices.1/@cells.38 //@matrices.1/@cells.45 //@matrices.1/@cells.52 //@matrices.1/@cells.59 //@matrices.1/@cells.66 //@matrices.1/@cells.73 //@matrices.1/@cells.80 //@matrices.1/@cells.87 //@matrices.1/@cells.94" domain="//@domainCollection/@domains.8"/>
+  <concepts xsi:type="pcmmm:Feature" name="Forward engineering" myValuedCells="//@matrices.1/@cells.11 //@matrices.1/@cells.18 //@matrices.1/@cells.25 //@matrices.1/@cells.32 //@matrices.1/@cells.39 //@matrices.1/@cells.46 //@matrices.1/@cells.53 //@matrices.1/@cells.60 //@matrices.1/@cells.67 //@matrices.1/@cells.74 //@matrices.1/@cells.81 //@matrices.1/@cells.88 //@matrices.1/@cells.95" domain="//@domainCollection/@domains.9"/>
+  <concepts xsi:type="pcmmm:Feature" name="Reverse engineering" myValuedCells="//@matrices.1/@cells.12 //@matrices.1/@cells.19 //@matrices.1/@cells.26 //@matrices.1/@cells.33 //@matrices.1/@cells.40 //@matrices.1/@cells.47 //@matrices.1/@cells.54 //@matrices.1/@cells.61 //@matrices.1/@cells.68 //@matrices.1/@cells.75 //@matrices.1/@cells.82 //@matrices.1/@cells.89 //@matrices.1/@cells.96" domain="//@domainCollection/@domains.10"/>
+  <concepts xsi:type="pcmmm:Feature" name="Model/database comparison and synchronization" myValuedCells="//@matrices.1/@cells.13 //@matrices.1/@cells.20 //@matrices.1/@cells.27 //@matrices.1/@cells.34 //@matrices.1/@cells.41 //@matrices.1/@cells.48 //@matrices.1/@cells.55 //@matrices.1/@cells.62 //@matrices.1/@cells.69 //@matrices.1/@cells.76 //@matrices.1/@cells.83 //@matrices.1/@cells.90 //@matrices.1/@cells.97" domain="//@domainCollection/@domains.11"/>
+  <concepts xsi:type="pcmmm:Feature" name="Teamwork/repository" myValuedCells="//@matrices.1/@cells.14 //@matrices.1/@cells.21 //@matrices.1/@cells.28 //@matrices.1/@cells.35 //@matrices.1/@cells.42 //@matrices.1/@cells.49 //@matrices.1/@cells.56 //@matrices.1/@cells.63 //@matrices.1/@cells.70 //@matrices.1/@cells.77 //@matrices.1/@cells.84 //@matrices.1/@cells.91 //@matrices.1/@cells.98" domain="//@domainCollection/@domains.12"/>
+  <concepts xsi:type="pcmmm:Product" name="CA ERwin Data Modeler" myValuedCells="//@matrices.1/@cells.9 //@matrices.1/@cells.10 //@matrices.1/@cells.11 //@matrices.1/@cells.12 //@matrices.1/@cells.13 //@matrices.1/@cells.14"/>
+  <concepts xsi:type="pcmmm:Product" name="DeZign for Databases" myValuedCells="//@matrices.1/@cells.16 //@matrices.1/@cells.17 //@matrices.1/@cells.18 //@matrices.1/@cells.19 //@matrices.1/@cells.20 //@matrices.1/@cells.21"/>
+  <concepts xsi:type="pcmmm:Product" name="Enterprise Architect" myValuedCells="//@matrices.1/@cells.23 //@matrices.1/@cells.24 //@matrices.1/@cells.25 //@matrices.1/@cells.26 //@matrices.1/@cells.27 //@matrices.1/@cells.28"/>
+  <concepts xsi:type="pcmmm:Product" name="Cameo Enterprise Architect" myValuedCells="//@matrices.1/@cells.30 //@matrices.1/@cells.31 //@matrices.1/@cells.32 //@matrices.1/@cells.33 //@matrices.1/@cells.34 //@matrices.1/@cells.35"/>
+  <concepts xsi:type="pcmmm:Product" name="ER/Studio" myValuedCells="//@matrices.1/@cells.37 //@matrices.1/@cells.38 //@matrices.1/@cells.39 //@matrices.1/@cells.40 //@matrices.1/@cells.41 //@matrices.1/@cells.42"/>
+  <concepts xsi:type="pcmmm:Product" name="IBM InfoSphere Data Architect" myValuedCells="//@matrices.1/@cells.44 //@matrices.1/@cells.45 //@matrices.1/@cells.46 //@matrices.1/@cells.47 //@matrices.1/@cells.48 //@matrices.1/@cells.49"/>
+  <concepts xsi:type="pcmmm:Product" name="MySQL Workbench" myValuedCells="//@matrices.1/@cells.51 //@matrices.1/@cells.52 //@matrices.1/@cells.53 //@matrices.1/@cells.54 //@matrices.1/@cells.55 //@matrices.1/@cells.56"/>
+  <concepts xsi:type="pcmmm:Product" name="Navicat Data Modeler" myValuedCells="//@matrices.1/@cells.58 //@matrices.1/@cells.59 //@matrices.1/@cells.60 //@matrices.1/@cells.61 //@matrices.1/@cells.62 //@matrices.1/@cells.63"/>
+  <concepts xsi:type="pcmmm:Product" name="Open ModelSphere" myValuedCells="//@matrices.1/@cells.65 //@matrices.1/@cells.66 //@matrices.1/@cells.67 //@matrices.1/@cells.68 //@matrices.1/@cells.69 //@matrices.1/@cells.70"/>
+  <concepts xsi:type="pcmmm:Product" name="Oracle SQL Developer Data Modeler" myValuedCells="//@matrices.1/@cells.72 //@matrices.1/@cells.73 //@matrices.1/@cells.74 //@matrices.1/@cells.75 //@matrices.1/@cells.76 //@matrices.1/@cells.77"/>
+  <concepts xsi:type="pcmmm:Product" name="PowerDesigner" myValuedCells="//@matrices.1/@cells.79 //@matrices.1/@cells.80 //@matrices.1/@cells.81 //@matrices.1/@cells.82 //@matrices.1/@cells.83 //@matrices.1/@cells.84"/>
+  <concepts xsi:type="pcmmm:Product" name="Toad Data Modeler" myValuedCells="//@matrices.1/@cells.86 //@matrices.1/@cells.87 //@matrices.1/@cells.88 //@matrices.1/@cells.89 //@matrices.1/@cells.90 //@matrices.1/@cells.91"/>
+  <concepts xsi:type="pcmmm:Product" name="Vertabelo" myValuedCells="//@matrices.1/@cells.93 //@matrices.1/@cells.94 //@matrices.1/@cells.95 //@matrices.1/@cells.96 //@matrices.1/@cells.97 //@matrices.1/@cells.98"/>
+  <concepts xsi:type="pcmmm:Feature" name="CA Technologies" constraints="//@matrices.0/@cells.10" domain="//@domainCollection/@domains.13"/>
+  <concepts xsi:type="pcmmm:Feature" name="SMBs" constraints="//@matrices.0/@cells.11 //@matrices.0/@cells.19 //@matrices.0/@cells.27 //@matrices.0/@cells.43 //@matrices.0/@cells.59 //@matrices.0/@cells.99 //@matrices.0/@cells.107 //@matrices.0/@cells.115 //@matrices.0/@cells.123" domain="//@domainCollection/@domains.14"/>
+  <concepts xsi:type="pcmmm:Feature" name="enterprises" constraints="//@matrices.0/@cells.11 //@matrices.0/@cells.19 //@matrices.0/@cells.27 //@matrices.0/@cells.43 //@matrices.0/@cells.99 //@matrices.0/@cells.115" domain="//@domainCollection/@domains.15"/>
+  <concepts xsi:type="pcmmm:Feature" name="Proprietary" constraints="//@matrices.0/@cells.12 //@matrices.0/@cells.20 //@matrices.0/@cells.28 //@matrices.0/@cells.36 //@matrices.0/@cells.44 //@matrices.0/@cells.52 //@matrices.0/@cells.60 //@matrices.0/@cells.68 //@matrices.0/@cells.76 //@matrices.0/@cells.84 //@matrices.0/@cells.92 //@matrices.0/@cells.100 //@matrices.0/@cells.108 //@matrices.0/@cells.116 //@matrices.0/@cells.124" domain="//@domainCollection/@domains.16"/>
+  <concepts xsi:type="pcmmm:Feature" name="Access" constraints="//@matrices.0/@cells.13 //@matrices.0/@cells.29 //@matrices.0/@cells.45 //@matrices.0/@cells.117" domain="//@domainCollection/@domains.17"/>
+  <concepts xsi:type="pcmmm:Feature" name="IBM DB2" constraints="//@matrices.0/@cells.13 //@matrices.0/@cells.21 //@matrices.0/@cells.29 //@matrices.0/@cells.45 //@matrices.0/@cells.53 //@matrices.0/@cells.61 //@matrices.0/@cells.93 //@matrices.0/@cells.101 //@matrices.0/@cells.117 //@matrices.0/@cells.125" domain="//@domainCollection/@domains.18"/>
+  <concepts xsi:type="pcmmm:Feature" name="Informix" constraints="//@matrices.0/@cells.13 //@matrices.0/@cells.21 //@matrices.0/@cells.29 //@matrices.0/@cells.45 //@matrices.0/@cells.53 //@matrices.0/@cells.101 //@matrices.0/@cells.117" domain="//@domainCollection/@domains.19"/>
+  <concepts xsi:type="pcmmm:Feature" name="Ingres" constraints="//@matrices.0/@cells.13 //@matrices.0/@cells.29" domain="//@domainCollection/@domains.20"/>
+  <concepts xsi:type="pcmmm:Feature" name="MySQL" constraints="//@matrices.0/@cells.13 //@matrices.0/@cells.21 //@matrices.0/@cells.29 //@matrices.0/@cells.45 //@matrices.0/@cells.53 //@matrices.0/@cells.61 //@matrices.0/@cells.66 //@matrices.0/@cells.69 //@matrices.0/@cells.77 //@matrices.0/@cells.85 //@matrices.0/@cells.101 //@matrices.0/@cells.109 //@matrices.0/@cells.117 //@matrices.0/@cells.125" domain="//@domainCollection/@domains.21"/>
+  <concepts xsi:type="pcmmm:Feature" name="Oracle" constraints="//@matrices.0/@cells.13 //@matrices.0/@cells.21 //@matrices.0/@cells.29 //@matrices.0/@cells.45 //@matrices.0/@cells.53 //@matrices.0/@cells.61 //@matrices.0/@cells.77 //@matrices.0/@cells.90 //@matrices.0/@cells.93 //@matrices.0/@cells.101 //@matrices.0/@cells.117 //@matrices.0/@cells.125" domain="//@domainCollection/@domains.22"/>
+  <concepts xsi:type="pcmmm:Feature" name="Progress" constraints="//@matrices.0/@cells.13" domain="//@domainCollection/@domains.23"/>
+  <concepts xsi:type="pcmmm:Feature" name="MS SQL Server" constraints="//@matrices.0/@cells.13 //@matrices.0/@cells.21 //@matrices.0/@cells.29 //@matrices.0/@cells.45 //@matrices.0/@cells.53 //@matrices.0/@cells.61 //@matrices.0/@cells.77 //@matrices.0/@cells.85 //@matrices.0/@cells.93 //@matrices.0/@cells.101 //@matrices.0/@cells.109 //@matrices.0/@cells.117" domain="//@domainCollection/@domains.24"/>
+  <concepts xsi:type="pcmmm:Feature" name="Sybase" constraints="//@matrices.0/@cells.13 //@matrices.0/@cells.21 //@matrices.0/@cells.29 //@matrices.0/@cells.45 //@matrices.0/@cells.53 //@matrices.0/@cells.98" domain="//@domainCollection/@domains.25"/>
+  <concepts xsi:type="pcmmm:Feature" name="Teradata" constraints="//@matrices.0/@cells.13 //@matrices.0/@cells.45 //@matrices.0/@cells.53" domain="//@domainCollection/@domains.26"/>
+  <concepts xsi:type="pcmmm:Feature" name="All versions of Windows" constraints="//@matrices.0/@cells.14 //@matrices.0/@cells.22 //@matrices.0/@cells.46 //@matrices.0/@cells.62 //@matrices.0/@cells.102 //@matrices.0/@cells.118" domain="//@domainCollection/@domains.27"/>
+  <concepts xsi:type="pcmmm:Feature" name="Standalone" constraints="//@matrices.0/@cells.15 //@matrices.0/@cells.23 //@matrices.0/@cells.47 //@matrices.0/@cells.55 //@matrices.0/@cells.63 //@matrices.0/@cells.71 //@matrices.0/@cells.79 //@matrices.0/@cells.95 //@matrices.0/@cells.103 //@matrices.0/@cells.111 //@matrices.0/@cells.119 //@matrices.0/@cells.127" domain="//@domainCollection/@domains.28"/>
+  <concepts xsi:type="pcmmm:Feature" name="1992?" constraints="//@matrices.0/@cells.16" domain="//@domainCollection/@domains.29"/>
+  <concepts xsi:type="pcmmm:Feature" name="Datanamic" constraints="//@matrices.0/@cells.18" domain="//@domainCollection/@domains.30"/>
+  <concepts xsi:type="pcmmm:Feature" name="Firebird" constraints="//@matrices.0/@cells.21 //@matrices.0/@cells.29 //@matrices.0/@cells.45" domain="//@domainCollection/@domains.31"/>
+  <concepts xsi:type="pcmmm:Feature" name="InterBase" constraints="//@matrices.0/@cells.21 //@matrices.0/@cells.29" domain="//@domainCollection/@domains.32"/>
+  <concepts xsi:type="pcmmm:Feature" name="MS Access" constraints="//@matrices.0/@cells.21" domain="//@domainCollection/@domains.33"/>
+  <concepts xsi:type="pcmmm:Feature" name="SQLite" constraints="//@matrices.0/@cells.21 //@matrices.0/@cells.29 //@matrices.0/@cells.77 //@matrices.0/@cells.117 //@matrices.0/@cells.125" domain="//@domainCollection/@domains.34"/>
+  <concepts xsi:type="pcmmm:Feature" name="PostgreSQL" constraints="//@matrices.0/@cells.21 //@matrices.0/@cells.29 //@matrices.0/@cells.45 //@matrices.0/@cells.61 //@matrices.0/@cells.77 //@matrices.0/@cells.101 //@matrices.0/@cells.117 //@matrices.0/@cells.125" domain="//@domainCollection/@domains.35"/>
+  <concepts xsi:type="pcmmm:Feature" name="Paradox" constraints="//@matrices.0/@cells.21" domain="//@domainCollection/@domains.36"/>
+  <concepts xsi:type="pcmmm:Feature" name="Sparx Systems" constraints="//@matrices.0/@cells.26" domain="//@domainCollection/@domains.37"/>
+  <concepts xsi:type="pcmmm:Feature" name="Windows" constraints="//@matrices.0/@cells.30 //@matrices.0/@cells.54 //@matrices.0/@cells.70 //@matrices.0/@cells.78 //@matrices.0/@cells.110" domain="//@domainCollection/@domains.38"/>
+  <concepts xsi:type="pcmmm:Feature" name="Linux" constraints="//@matrices.0/@cells.30 //@matrices.0/@cells.54 //@matrices.0/@cells.70 //@matrices.0/@cells.78" domain="//@domainCollection/@domains.39"/>
+  <concepts xsi:type="pcmmm:Feature" name="Mac" constraints="//@matrices.0/@cells.30" domain="//@domainCollection/@domains.40"/>
+  <concepts xsi:type="pcmmm:Feature" name="Data modeling is supported as part of a complete modeling platform." constraints="//@matrices.0/@cells.31" domain="//@domainCollection/@domains.41"/>
+  <concepts xsi:type="pcmmm:Feature" name="No Magic" constraints="//@matrices.0/@cells.34" domain="//@domainCollection/@domains.42"/>
+  <concepts xsi:type="pcmmm:Feature" name="Inc." constraints="//@matrices.0/@cells.34" domain="//@domainCollection/@domains.43"/>
+  <concepts xsi:type="pcmmm:Feature" name="Academic" constraints="//@matrices.0/@cells.35" domain="//@domainCollection/@domains.44"/>
+  <concepts xsi:type="pcmmm:Feature" name="Sole Proprietorship" constraints="//@matrices.0/@cells.35" domain="//@domainCollection/@domains.45"/>
+  <concepts xsi:type="pcmmm:Feature" name="Team" constraints="//@matrices.0/@cells.35" domain="//@domainCollection/@domains.46"/>
+  <concepts xsi:type="pcmmm:Feature" name="and Enterprise" constraints="//@matrices.0/@cells.35" domain="//@domainCollection/@domains.47"/>
+  <concepts xsi:type="pcmmm:Feature" name="Model-to-Text Transformations can yield a variety of physical DDLs" constraints="//@matrices.0/@cells.37" domain="//@domainCollection/@domains.48"/>
+  <concepts xsi:type="pcmmm:Feature" name="Neutral" constraints="//@matrices.0/@cells.37" domain="//@domainCollection/@domains.49"/>
+  <concepts xsi:type="pcmmm:Feature" name="Any Modern Java Host" constraints="//@matrices.0/@cells.38" domain="//@domainCollection/@domains.50"/>
+  <concepts xsi:type="pcmmm:Feature" name="Data Modeling is available in core MagicDraw" constraints="//@matrices.0/@cells.39" domain="//@domainCollection/@domains.51"/>
+  <concepts xsi:type="pcmmm:Feature" name="Cameo Business Modeler" constraints="//@matrices.0/@cells.39" domain="//@domainCollection/@domains.52"/>
+  <concepts xsi:type="pcmmm:Feature" name="and Cameo UPDM" constraints="//@matrices.0/@cells.39" domain="//@domainCollection/@domains.53"/>
+  <concepts xsi:type="pcmmm:Feature" name="Embarcadero" constraints="//@matrices.0/@cells.42" domain="//@domainCollection/@domains.54"/>
+  <concepts xsi:type="pcmmm:Feature" name="Hitachi HiRDB" constraints="//@matrices.0/@cells.45" domain="//@domainCollection/@domains.55"/>
+  <concepts xsi:type="pcmmm:Feature" name="Interbase" constraints="//@matrices.0/@cells.45" domain="//@domainCollection/@domains.56"/>
+  <concepts xsi:type="pcmmm:Feature" name="Netezza" constraints="//@matrices.0/@cells.45" domain="//@domainCollection/@domains.57"/>
+  <concepts xsi:type="pcmmm:Feature" name="Visual Foxpro" constraints="//@matrices.0/@cells.45" domain="//@domainCollection/@domains.58"/>
+  <concepts xsi:type="pcmmm:Feature" name="others via ODBC" constraints="//@matrices.0/@cells.45" domain="//@domainCollection/@domains.59"/>
+  <concepts xsi:type="pcmmm:Feature" name="ANSI SQL" constraints="//@matrices.0/@cells.45" domain="//@domainCollection/@domains.60"/>
+  <concepts xsi:type="pcmmm:Feature" name="IBM" constraints="//@matrices.0/@cells.50" domain="//@domainCollection/@domains.61"/>
+  <concepts xsi:type="pcmmm:Feature" name="Enterprises" constraints="//@matrices.0/@cells.51 //@matrices.0/@cells.59 //@matrices.0/@cells.91 //@matrices.0/@cells.107 //@matrices.0/@cells.123" domain="//@domainCollection/@domains.62"/>
+  <concepts xsi:type="pcmmm:Feature" name="personal" constraints="//@matrices.0/@cells.59 //@matrices.0/@cells.107 //@matrices.0/@cells.123" domain="//@domainCollection/@domains.63"/>
+  <concepts xsi:type="pcmmm:Feature" name="An Oracle Company" constraints="//@matrices.0/@cells.66" domain="//@domainCollection/@domains.64"/>
+  <concepts xsi:type="pcmmm:Feature" name="SMBs - personal" constraints="//@matrices.0/@cells.67 //@matrices.0/@cells.75 //@matrices.0/@cells.83" domain="//@domainCollection/@domains.65"/>
+  <concepts xsi:type="pcmmm:Feature" name="GPL" constraints="//@matrices.0/@cells.68" domain="//@domainCollection/@domains.66"/>
+  <concepts xsi:type="pcmmm:Feature" name="MAC OS" constraints="//@matrices.0/@cells.70" domain="//@domainCollection/@domains.67"/>
+  <concepts xsi:type="pcmmm:Feature" name="PremiumSoft" constraints="//@matrices.0/@cells.74" domain="//@domainCollection/@domains.68"/>
+  <concepts xsi:type="pcmmm:Feature" name="Mac OS" constraints="//@matrices.0/@cells.78" domain="//@domainCollection/@domains.69"/>
+  <concepts xsi:type="pcmmm:Feature" name="Grandite" constraints="//@matrices.0/@cells.82" domain="//@domainCollection/@domains.70"/>
+  <concepts xsi:type="pcmmm:Feature" name="Online" constraints="//@matrices.0/@cells.86 //@matrices.0/@cells.126" domain="//@domainCollection/@domains.71"/>
+  <concepts xsi:type="pcmmm:Feature" name="Part of modeling environment with UML support" constraints="//@matrices.0/@cells.87" domain="//@domainCollection/@domains.72"/>
+  <concepts xsi:type="pcmmm:Feature" name="Cross-platform" constraints="//@matrices.0/@cells.94" domain="//@domainCollection/@domains.73"/>
+  <concepts xsi:type="pcmmm:Feature" name="Dusan Rodina" constraints="//@matrices.0/@cells.106" domain="//@domainCollection/@domains.74"/>
+  <concepts xsi:type="pcmmm:Feature" name="Quest Software" constraints="//@matrices.0/@cells.114" domain="//@domainCollection/@domains.75"/>
+  <concepts xsi:type="pcmmm:Feature" name="before this date known as CaseStudio" constraints="//@matrices.0/@cells.120" domain="//@domainCollection/@domains.76"/>
+  <concepts xsi:type="pcmmm:Feature" name="e-point SA" constraints="//@matrices.0/@cells.122" domain="//@domainCollection/@domains.77"/>
+  <concepts xsi:type="pcmmm:Feature" name="HSQLDB" constraints="//@matrices.0/@cells.125" domain="//@domainCollection/@domains.78"/>
+  <concepts xsi:type="pcmmm:Feature" name="Microsoft SQL Server" constraints="//@matrices.0/@cells.125" domain="//@domainCollection/@domains.79"/>
+  <concepts xsi:type="pcmmm:Feature" name="Conceptual" constraints="//@matrices.1/@cells.9 //@matrices.1/@cells.23 //@matrices.1/@cells.30 //@matrices.1/@cells.37 //@matrices.1/@cells.44 //@matrices.1/@cells.58 //@matrices.1/@cells.79" domain="//@domainCollection/@domains.80"/>
+  <concepts xsi:type="pcmmm:Feature" name="logical" constraints="//@matrices.1/@cells.9 //@matrices.1/@cells.37 //@matrices.1/@cells.44 //@matrices.1/@cells.79" domain="//@domainCollection/@domains.81"/>
+  <concepts xsi:type="pcmmm:Feature" name="physical" constraints="//@matrices.1/@cells.9 //@matrices.1/@cells.16 //@matrices.1/@cells.37 //@matrices.1/@cells.44 //@matrices.1/@cells.58 //@matrices.1/@cells.65 //@matrices.1/@cells.72 //@matrices.1/@cells.79 //@matrices.1/@cells.86" domain="//@domainCollection/@domains.82"/>
+  <concepts xsi:type="pcmmm:Feature" name="IDEF1X" constraints="//@matrices.1/@cells.10 //@matrices.1/@cells.17 //@matrices.1/@cells.24 //@matrices.1/@cells.38 //@matrices.1/@cells.45 //@matrices.1/@cells.66 //@matrices.1/@cells.73 //@matrices.1/@cells.80 //@matrices.1/@cells.87" domain="//@domainCollection/@domains.83"/>
+  <concepts xsi:type="pcmmm:Feature" name="Crows feet" constraints="//@matrices.1/@cells.10 //@matrices.1/@cells.17 //@matrices.1/@cells.38 //@matrices.1/@cells.45 //@matrices.1/@cells.52 //@matrices.1/@cells.59 //@matrices.1/@cells.66 //@matrices.1/@cells.73 //@matrices.1/@cells.80 //@matrices.1/@cells.87 //@matrices.1/@cells.94" domain="//@domainCollection/@domains.84"/>
+  <concepts xsi:type="pcmmm:Feature" name="IE" constraints="//@matrices.1/@cells.10 //@matrices.1/@cells.17 //@matrices.1/@cells.38 //@matrices.1/@cells.45 //@matrices.1/@cells.52 //@matrices.1/@cells.59 //@matrices.1/@cells.66 //@matrices.1/@cells.73 //@matrices.1/@cells.80 //@matrices.1/@cells.87 //@matrices.1/@cells.94" domain="//@domainCollection/@domains.85"/>
+  <concepts xsi:type="pcmmm:Feature" name="and more" constraints="//@matrices.1/@cells.10 //@matrices.1/@cells.45 //@matrices.1/@cells.66 //@matrices.1/@cells.73 //@matrices.1/@cells.80 //@matrices.1/@cells.87" domain="//@domainCollection/@domains.86"/>
+  <concepts xsi:type="pcmmm:Feature" name="Update database and" constraints="//@matrices.1/@cells.13 //@matrices.1/@cells.20 //@matrices.1/@cells.27 //@matrices.1/@cells.41 //@matrices.1/@cells.48 //@matrices.1/@cells.55 //@matrices.1/@cells.62 //@matrices.1/@cells.69 //@matrices.1/@cells.76 //@matrices.1/@cells.83 //@matrices.1/@cells.90" domain="//@domainCollection/@domains.87"/>
+  <concepts xsi:type="pcmmm:Feature" name="or update model" constraints="//@matrices.1/@cells.13 //@matrices.1/@cells.20 //@matrices.1/@cells.27 //@matrices.1/@cells.41 //@matrices.1/@cells.48 //@matrices.1/@cells.55 //@matrices.1/@cells.62 //@matrices.1/@cells.69 //@matrices.1/@cells.76 //@matrices.1/@cells.83 //@matrices.1/@cells.90" domain="//@domainCollection/@domains.88"/>
+  <concepts xsi:type="pcmmm:Feature" name="Workgroup edition provides collaboration" constraints="//@matrices.1/@cells.14" domain="//@domainCollection/@domains.89"/>
+  <concepts xsi:type="pcmmm:Feature" name="Logical" constraints="//@matrices.1/@cells.16 //@matrices.1/@cells.30 //@matrices.1/@cells.65 //@matrices.1/@cells.72 //@matrices.1/@cells.86" domain="//@domainCollection/@domains.90"/>
+  <concepts xsi:type="pcmmm:Feature" name="Not directly. Merge functionality available." constraints="//@matrices.1/@cells.21" domain="//@domainCollection/@domains.91"/>
+  <concepts xsi:type="pcmmm:Feature" name="Logical &amp; Physical + MDA transform of Logical to Physical" constraints="//@matrices.1/@cells.23" domain="//@domainCollection/@domains.92"/>
+  <concepts xsi:type="pcmmm:Feature" name="UML DDL" constraints="//@matrices.1/@cells.24" domain="//@domainCollection/@domains.93"/>
+  <concepts xsi:type="pcmmm:Feature" name="Information Engineering &amp; ERD" constraints="//@matrices.1/@cells.24" domain="//@domainCollection/@domains.94"/>
+  <concepts xsi:type="pcmmm:Feature" name="or transfer via XMI" constraints="//@matrices.1/@cells.28" domain="//@domainCollection/@domains.95"/>
+  <concepts xsi:type="pcmmm:Feature" name="CVS" constraints="//@matrices.1/@cells.28" domain="//@domainCollection/@domains.96"/>
+  <concepts xsi:type="pcmmm:Feature" name="TFS" constraints="//@matrices.1/@cells.28" domain="//@domainCollection/@domains.97"/>
+  <concepts xsi:type="pcmmm:Feature" name="Difference Merge" constraints="//@matrices.1/@cells.28" domain="//@domainCollection/@domains.98"/>
+  <concepts xsi:type="pcmmm:Feature" name="Multi-user collaboration using File" constraints="//@matrices.1/@cells.28" domain="//@domainCollection/@domains.99"/>
+  <concepts xsi:type="pcmmm:Feature" name="DBMS Repositoty" constraints="//@matrices.1/@cells.28" domain="//@domainCollection/@domains.100"/>
+  <concepts xsi:type="pcmmm:Feature" name="Ontological" constraints="//@matrices.1/@cells.30" domain="//@domainCollection/@domains.101"/>
+  <concepts xsi:type="pcmmm:Feature" name="Operational" constraints="//@matrices.1/@cells.30" domain="//@domainCollection/@domains.102"/>
+  <concepts xsi:type="pcmmm:Feature" name="Physical" constraints="//@matrices.1/@cells.30 //@matrices.1/@cells.51 //@matrices.1/@cells.93" domain="//@domainCollection/@domains.103"/>
+  <concepts xsi:type="pcmmm:Feature" name="Rules" constraints="//@matrices.1/@cells.31" domain="//@domainCollection/@domains.104"/>
+  <concepts xsi:type="pcmmm:Feature" name="Requirements" constraints="//@matrices.1/@cells.31" domain="//@domainCollection/@domains.105"/>
+  <concepts xsi:type="pcmmm:Feature" name="Visual Ontology" constraints="//@matrices.1/@cells.31" domain="//@domainCollection/@domains.106"/>
+  <concepts xsi:type="pcmmm:Feature" name="ER" constraints="//@matrices.1/@cells.31 //@matrices.1/@cells.42" domain="//@domainCollection/@domains.107"/>
+  <concepts xsi:type="pcmmm:Feature" name="UML" constraints="//@matrices.1/@cells.31" domain="//@domainCollection/@domains.108"/>
+  <concepts xsi:type="pcmmm:Feature" name="DIV-1" constraints="//@matrices.1/@cells.31" domain="//@domainCollection/@domains.109"/>
+  <concepts xsi:type="pcmmm:Feature" name="DIV-2" constraints="//@matrices.1/@cells.31" domain="//@domainCollection/@domains.110"/>
+  <concepts xsi:type="pcmmm:Feature" name="DIV-3" constraints="//@matrices.1/@cells.31" domain="//@domainCollection/@domains.111"/>
+  <concepts xsi:type="pcmmm:Feature" name="DSL for Custom Notations" constraints="//@matrices.1/@cells.31" domain="//@domainCollection/@domains.112"/>
+  <concepts xsi:type="pcmmm:Feature" name="Deployment Diagrams" constraints="//@matrices.1/@cells.31" domain="//@domainCollection/@domains.113"/>
+  <concepts xsi:type="pcmmm:Feature" name="Individual Offline Modeling using Files" constraints="//@matrices.1/@cells.35" domain="//@domainCollection/@domains.114"/>
+  <concepts xsi:type="pcmmm:Feature" name="Collaborative Modeling using central Teamwork Server" constraints="//@matrices.1/@cells.35" domain="//@domainCollection/@domains.115"/>
+  <concepts xsi:type="pcmmm:Feature" name="ETL" constraints="//@matrices.1/@cells.37" domain="//@domainCollection/@domains.116"/>
+  <concepts xsi:type="pcmmm:Feature" name="Studio Repository" constraints="//@matrices.1/@cells.42" domain="//@domainCollection/@domains.117"/>
+  <concepts xsi:type="pcmmm:Feature" name="Portal for collaboration" constraints="//@matrices.1/@cells.42" domain="//@domainCollection/@domains.118"/>
+  <domainCollection>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.11/@interpretation/@contraints.1 //@matrices.0/@cells.19/@interpretation/@contraints.1 //@matrices.0/@cells.27/@interpretation/@contraints.1 //@matrices.0/@cells.43/@interpretation/@contraints.1 //@matrices.0/@cells.51/@interpretation //@matrices.0/@cells.59/@interpretation/@contraints.0 //@matrices.0/@cells.91/@interpretation //@matrices.0/@cells.99/@interpretation/@contraints.1 //@matrices.0/@cells.107/@interpretation/@contraints.0 //@matrices.0/@cells.115/@interpretation/@contraints.1 //@matrices.0/@cells.123/@interpretation/@contraints.0 //@matrices.0/@cells.35/@interpretation/@contraints.3 //@matrices.0/@cells.11/@interpretation/@contraints.0 //@matrices.0/@cells.19/@interpretation/@contraints.0 //@matrices.0/@cells.27/@interpretation/@contraints.0 //@matrices.0/@cells.43/@interpretation/@contraints.0 //@matrices.0/@cells.59/@interpretation/@contraints.1 //@matrices.0/@cells.99/@interpretation/@contraints.0 //@matrices.0/@cells.107/@interpretation/@contraints.1 //@matrices.0/@cells.115/@interpretation/@contraints.0 //@matrices.0/@cells.123/@interpretation/@contraints.1"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.12/@interpretation //@matrices.0/@cells.20/@interpretation //@matrices.0/@cells.28/@interpretation //@matrices.0/@cells.36/@interpretation //@matrices.0/@cells.44/@interpretation //@matrices.0/@cells.52/@interpretation //@matrices.0/@cells.60/@interpretation //@matrices.0/@cells.68/@interpretation/@contraints.0 //@matrices.0/@cells.76/@interpretation //@matrices.0/@cells.84/@interpretation //@matrices.0/@cells.92/@interpretation //@matrices.0/@cells.100/@interpretation //@matrices.0/@cells.108/@interpretation //@matrices.0/@cells.116/@interpretation //@matrices.0/@cells.124/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.30/@interpretation/@contraints.0 //@matrices.0/@cells.54/@interpretation/@contraints.1 //@matrices.0/@cells.70/@interpretation/@contraints.1 //@matrices.0/@cells.78/@interpretation/@contraints.0 //@matrices.0/@cells.110/@interpretation //@matrices.0/@cells.14/@interpretation //@matrices.0/@cells.22/@interpretation //@matrices.0/@cells.46/@interpretation //@matrices.0/@cells.62/@interpretation //@matrices.0/@cells.102/@interpretation //@matrices.0/@cells.118/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.15/@interpretation //@matrices.0/@cells.23/@interpretation //@matrices.0/@cells.47/@interpretation //@matrices.0/@cells.55/@interpretation //@matrices.0/@cells.63/@interpretation //@matrices.0/@cells.71/@interpretation //@matrices.0/@cells.79/@interpretation //@matrices.0/@cells.95/@interpretation //@matrices.0/@cells.103/@interpretation //@matrices.0/@cells.111/@interpretation //@matrices.0/@cells.119/@interpretation //@matrices.0/@cells.127/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.24/@interpretation //@matrices.0/@cells.32/@interpretation //@matrices.0/@cells.40/@interpretation //@matrices.0/@cells.48/@interpretation //@matrices.0/@cells.64/@interpretation //@matrices.0/@cells.72/@interpretation //@matrices.0/@cells.80/@interpretation //@matrices.0/@cells.88/@interpretation //@matrices.0/@cells.104/@interpretation //@matrices.0/@cells.112/@interpretation //@matrices.0/@cells.120/@interpretation/@argument //@matrices.0/@cells.128/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.9/@interpretation/@contraints.2 //@matrices.1/@cells.16/@interpretation/@contraints.1 //@matrices.1/@cells.30/@interpretation/@contraints.4 //@matrices.1/@cells.37/@interpretation/@contraints.2 //@matrices.1/@cells.44/@interpretation/@contraints.2 //@matrices.1/@cells.51/@interpretation //@matrices.1/@cells.58/@interpretation/@contraints.1 //@matrices.1/@cells.65/@interpretation/@contraints.1 //@matrices.1/@cells.72/@interpretation/@contraints.1 //@matrices.1/@cells.79/@interpretation/@contraints.2 //@matrices.1/@cells.86/@interpretation/@contraints.1 //@matrices.1/@cells.93/@interpretation //@matrices.1/@cells.9/@interpretation/@contraints.1 //@matrices.1/@cells.16/@interpretation/@contraints.0 //@matrices.1/@cells.30/@interpretation/@contraints.3 //@matrices.1/@cells.37/@interpretation/@contraints.1 //@matrices.1/@cells.44/@interpretation/@contraints.1 //@matrices.1/@cells.65/@interpretation/@contraints.0 //@matrices.1/@cells.72/@interpretation/@contraints.0 //@matrices.1/@cells.79/@interpretation/@contraints.1 //@matrices.1/@cells.86/@interpretation/@contraints.0 //@matrices.1/@cells.30/@interpretation/@contraints.0 //@matrices.1/@cells.9/@interpretation/@contraints.0 //@matrices.1/@cells.23/@interpretation/@contraints.0 //@matrices.1/@cells.30/@interpretation/@contraints.2 //@matrices.1/@cells.37/@interpretation/@contraints.0 //@matrices.1/@cells.44/@interpretation/@contraints.0 //@matrices.1/@cells.58/@interpretation/@contraints.0 //@matrices.1/@cells.79/@interpretation/@contraints.0"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.10/@interpretation/@contraints.1/@condition //@matrices.1/@cells.17/@interpretation/@contraints.1/@condition //@matrices.1/@cells.38/@interpretation/@contraints.1/@condition //@matrices.1/@cells.45/@interpretation/@contraints.1/@condition //@matrices.1/@cells.52/@interpretation/@condition //@matrices.1/@cells.59/@interpretation/@condition //@matrices.1/@cells.66/@interpretation/@contraints.1/@condition //@matrices.1/@cells.73/@interpretation/@contraints.1/@condition //@matrices.1/@cells.80/@interpretation/@contraints.1/@condition //@matrices.1/@cells.87/@interpretation/@contraints.1/@condition //@matrices.1/@cells.94/@interpretation/@condition //@matrices.1/@cells.10/@interpretation/@contraints.1/@argument //@matrices.1/@cells.17/@interpretation/@contraints.1/@argument //@matrices.1/@cells.38/@interpretation/@contraints.1/@argument //@matrices.1/@cells.45/@interpretation/@contraints.1/@argument //@matrices.1/@cells.52/@interpretation/@argument //@matrices.1/@cells.59/@interpretation/@argument //@matrices.1/@cells.66/@interpretation/@contraints.1/@argument //@matrices.1/@cells.73/@interpretation/@contraints.1/@argument //@matrices.1/@cells.80/@interpretation/@contraints.1/@argument //@matrices.1/@cells.87/@interpretation/@contraints.1/@argument //@matrices.1/@cells.94/@interpretation/@argument"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.11/@interpretation //@matrices.1/@cells.18/@interpretation //@matrices.1/@cells.25/@interpretation //@matrices.1/@cells.32/@interpretation //@matrices.1/@cells.39/@interpretation //@matrices.1/@cells.46/@interpretation //@matrices.1/@cells.53/@interpretation //@matrices.1/@cells.60/@interpretation //@matrices.1/@cells.67/@interpretation //@matrices.1/@cells.74/@interpretation //@matrices.1/@cells.81/@interpretation //@matrices.1/@cells.88/@interpretation //@matrices.1/@cells.95/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.12/@interpretation //@matrices.1/@cells.19/@interpretation //@matrices.1/@cells.26/@interpretation //@matrices.1/@cells.33/@interpretation //@matrices.1/@cells.40/@interpretation //@matrices.1/@cells.47/@interpretation //@matrices.1/@cells.54/@interpretation //@matrices.1/@cells.61/@interpretation //@matrices.1/@cells.68/@interpretation //@matrices.1/@cells.75/@interpretation //@matrices.1/@cells.82/@interpretation //@matrices.1/@cells.89/@interpretation //@matrices.1/@cells.96/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.13/@interpretation/@contraints.1 //@matrices.1/@cells.20/@interpretation/@contraints.1 //@matrices.1/@cells.27/@interpretation/@contraints.1 //@matrices.1/@cells.41/@interpretation/@contraints.1 //@matrices.1/@cells.48/@interpretation/@contraints.1 //@matrices.1/@cells.55/@interpretation/@contraints.1 //@matrices.1/@cells.62/@interpretation/@contraints.1 //@matrices.1/@cells.69/@interpretation/@contraints.1 //@matrices.1/@cells.76/@interpretation/@contraints.1 //@matrices.1/@cells.83/@interpretation/@contraints.1 //@matrices.1/@cells.90/@interpretation/@contraints.1 //@matrices.1/@cells.13/@interpretation/@contraints.0 //@matrices.1/@cells.20/@interpretation/@contraints.0 //@matrices.1/@cells.27/@interpretation/@contraints.0 //@matrices.1/@cells.41/@interpretation/@contraints.0 //@matrices.1/@cells.48/@interpretation/@contraints.0 //@matrices.1/@cells.55/@interpretation/@contraints.0 //@matrices.1/@cells.62/@interpretation/@contraints.0 //@matrices.1/@cells.69/@interpretation/@contraints.0 //@matrices.1/@cells.76/@interpretation/@contraints.0 //@matrices.1/@cells.83/@interpretation/@contraints.0 //@matrices.1/@cells.90/@interpretation/@contraints.0"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.49/@interpretation //@matrices.1/@cells.77/@interpretation //@matrices.1/@cells.84/@interpretation //@matrices.1/@cells.91/@interpretation //@matrices.1/@cells.98/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+  </domainCollection>
+</pcmmm:PCM>

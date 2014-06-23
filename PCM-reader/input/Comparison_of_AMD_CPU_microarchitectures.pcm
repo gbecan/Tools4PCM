@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="" id="_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: additional features" verbatim="Additional features" rowspan="1" column="1" colspan="1" concept="//@concepts.0"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: pipeline stages" verbatim="Pipeline stages" rowspan="1" column="2" colspan="1" concept="//@concepts.1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: thermal design power" verbatim="Thermal Design Power" rowspan="1" column="3" colspan="1" concept="//@concepts.2"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: tdp to clock speed ratio (w/ghz)" verbatim="TDP to Clock Speed Ratio (W/GHz)" rowspan="1" column="4" colspan="1" concept="//@concepts.3"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: microarchitecture" verbatim="Microarchitecture" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: k5" verbatim="K5" row="1" rowspan="1" colspan="1" concept="//@concepts.4"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: " verbatim="" row="1" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.4" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: " verbatim="" row="1" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.4" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: 15.8 (k5 pr100)" verbatim="15.8 (K5 PR100)" row="1" rowspan="1" column="3" colspan="1" concepts="//@concepts.14" myHeaderProducts="//@concepts.4" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="K5 PR100" verbatim="K5 PR100" concept="//@concepts.14"/>
+        <argument xsi:type="pcmmm:Double" name="15.8" confident="true" verbatim="15.8" value="15.8"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,4: 158 (k5 pr100)" verbatim="158 (K5 PR100)" row="1" rowspan="1" column="4" colspan="1" concepts="//@concepts.14" myHeaderProducts="//@concepts.4" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="K5 PR100" verbatim="K5 PR100" concept="//@concepts.14"/>
+        <argument xsi:type="pcmmm:Integer" name="158" confident="true" verbatim="158" value="158"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="2,0: k6" verbatim="K6" row="2" rowspan="1" colspan="1" concept="//@concepts.5"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: (design by nexgen)" verbatim="(design by NexGen)" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.15" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="(design by NexGen)" verbatim="(design by NexGen)" concept="//@concepts.15"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: 6" verbatim="6" row="2" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="6" confident="true" verbatim="6" value="6"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: 20 w (pr 200)" verbatim="20 W (PR 200)" row="2" rowspan="1" column="3" colspan="1" concepts="//@concepts.16 //@concepts.17" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="PR 200" verbatim="PR 200" concept="//@concepts.16"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="20 W" verbatim="20 W" concept="//@concepts.17"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,4: 100 (pr 200)" verbatim="100 (PR 200)" row="2" rowspan="1" column="4" colspan="1" concepts="//@concepts.16" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="PR 200" verbatim="PR 200" concept="//@concepts.16"/>
+        <argument xsi:type="pcmmm:Integer" name="100" confident="true" verbatim="100" value="100"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="3,0: k6-2" verbatim="K6-2" row="3" rowspan="1" colspan="1" concept="//@concepts.6"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: (+3dnow!)" verbatim="(+3DNow!)" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.18" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="(+3DNow!)" verbatim="(+3DNow!)" concept="//@concepts.18"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: " verbatim="" row="3" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: 20.75 w (pr 500)" verbatim="20.75 W (PR 500)" row="3" rowspan="1" column="3" colspan="1" concepts="//@concepts.19 //@concepts.20" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="PR 500" verbatim="PR 500" concept="//@concepts.19"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="20.75 W" verbatim="20.75 W" concept="//@concepts.20"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,4: 41.5 (pr 500)" verbatim="41.5 (PR 500)" row="3" rowspan="1" column="4" colspan="1" concepts="//@concepts.19" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="PR 500" verbatim="PR 500" concept="//@concepts.19"/>
+        <argument xsi:type="pcmmm:Double" name="41.5" confident="true" verbatim="41.5" value="41.5"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="4,0: k6-iii" verbatim="K6-III" row="4" rowspan="1" colspan="1" concept="//@concepts.7"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: motherboard-mounted l3 cache" verbatim="motherboard-mounted L3 cache" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.21" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="motherboard-mounted L3 cache" verbatim="motherboard-mounted L3 cache" concept="//@concepts.21"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: " verbatim="" row="4" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: 16 w (pr 450)" verbatim="16 W (PR 450)" row="4" rowspan="1" column="3" colspan="1" concepts="//@concepts.22 //@concepts.23" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="PR 450" verbatim="PR 450" concept="//@concepts.22"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="16 W" verbatim="16 W" concept="//@concepts.23"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,4: 36 (pr 450)" verbatim="36 (PR 450)" row="4" rowspan="1" column="4" colspan="1" concepts="//@concepts.22" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="PR 450" verbatim="PR 450" concept="//@concepts.22"/>
+        <argument xsi:type="pcmmm:Integer" name="36" confident="true" verbatim="36" value="36"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="5,0: k7 (athlon and athlon xp)" verbatim="K7 (Athlon and Athlon XP)" row="5" rowspan="1" colspan="1" concept="//@concepts.8"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: " verbatim="" row="5" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: " verbatim="" row="5" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,3: 62 w (athlon 1000), 74.3 w (athlon xp 3000+)" verbatim="62 W (Athlon 1000), 74.3 W (Athlon XP 3000+)" row="5" rowspan="1" column="3" colspan="1" concepts="//@concepts.24 //@concepts.25 //@concepts.26" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Athlon 1000)" verbatim="Athlon 1000)" concept="//@concepts.24"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="74.3 W (Athlon XP 3000+" verbatim="74.3 W (Athlon XP 3000+" concept="//@concepts.25"/>
+        </condition>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="62 W" verbatim="62 W" concept="//@concepts.26"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,4: 62 (athlon 1000), 34.4 (athlon xp 3000+)" verbatim="62 (Athlon 1000), 34.4 (Athlon XP 3000+)" row="5" rowspan="1" column="4" colspan="1" concepts="//@concepts.24 //@concepts.27" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Athlon 1000)" verbatim="Athlon 1000)" concept="//@concepts.24"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="34.4 (Athlon XP 3000+" verbatim="34.4 (Athlon XP 3000+" concept="//@concepts.27"/>
+        </condition>
+        <argument xsi:type="pcmmm:Integer" name="62" confident="true" verbatim="62" value="62"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="6,0: k8 (opteron / hammer)" verbatim="K8 (Opteron / Hammer)" row="6" rowspan="1" colspan="1" concept="//@concepts.9"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,1: 64 bit, integrated memory controller, hypertranspo" verbatim="64 bit, integrated memory controller, HyperTransport" row="6" rowspan="1" column="1" colspan="1" concepts="//@concepts.28 //@concepts.29 //@concepts.30" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="64 bit" verbatim="64 bit" concept="//@concepts.28"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="integrated memory controller" verbatim="integrated memory controller" concept="//@concepts.29"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="HyperTransport" verbatim="HyperTransport" concept="//@concepts.30"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,2: " verbatim="" row="6" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,3: 55 w (opteron 246 2&#xa0;ghz)" verbatim="55 W (Opteron 246 2&#xa0;GHz)" row="6" rowspan="1" column="3" colspan="1" concepts="//@concepts.31 //@concepts.32" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="Opteron 246 2&#xa0;GHz" verbatim="Opteron 246 2&#xa0;GHz" concept="//@concepts.31"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="55 W" verbatim="55 W" concept="//@concepts.32"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,4: 27.5 (opteron 246 2&#xa0;ghz)" verbatim="27.5 (Opteron 246 2&#xa0;GHz)" row="6" rowspan="1" column="4" colspan="1" concepts="//@concepts.31" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="Opteron 246 2&#xa0;GHz" verbatim="Opteron 246 2&#xa0;GHz" concept="//@concepts.31"/>
+        <argument xsi:type="pcmmm:Double" name="27.5" confident="true" verbatim="27.5" value="27.5"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="7,0: k10 / family 10h (barcelona)" verbatim="K10 / Family 10h (Barcelona)" row="7" rowspan="1" colspan="1" concept="//@concepts.10"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,1: amd-v nested paging hardware-assisted virtualizati" verbatim="AMD-V Nested Paging Hardware-assisted virtualization)" row="7" rowspan="1" column="1" colspan="1" concepts="//@concepts.33" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="AMD-V Nested Paging Hardware-assisted virtualization)" verbatim="AMD-V Nested Paging Hardware-assisted virtualization)" concept="//@concepts.33"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,2: " verbatim="" row="7" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,3: 95 watt (phenom ii x6 1100t 6 cores 3.3 to 3.7 (tu" verbatim="95 Watt (Phenom II X6 1100T 6 cores 3.3 to 3.7 (turbo freq.) GHz)" row="7" rowspan="1" column="3" colspan="1" concepts="//@concepts.34 //@concepts.35" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="Phenom II X6 1100T 6 cores 3.3 to 3.7 (turbo freq.) GHz" verbatim="Phenom II X6 1100T 6 cores 3.3 to 3.7 (turbo freq.) GHz" concept="//@concepts.34"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="95 Watt" verbatim="95 Watt" concept="//@concepts.35"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,4: 29 (phenom ii x6 1100t 6 cores 3.3 to 3.7 (turbo f" verbatim="29 (Phenom II X6 1100T 6 cores 3.3 to 3.7 (turbo freq.) GHz)" row="7" rowspan="1" column="4" colspan="1" concepts="//@concepts.34" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="Phenom II X6 1100T 6 cores 3.3 to 3.7 (turbo freq.) GHz" verbatim="Phenom II X6 1100T 6 cores 3.3 to 3.7 (turbo freq.) GHz" concept="//@concepts.34"/>
+        <argument xsi:type="pcmmm:Integer" name="29" confident="true" verbatim="29" value="29"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="8,0: family 12h (fusion)" verbatim="Family 12h (Fusion)" row="8" rowspan="1" colspan="1" concept="//@concepts.11"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,1: marketed as &quot;accelerated processing unit&quot; (apu). i" verbatim="Marketed as &quot;Accelerated processing unit&quot; (APU).  Integrated with Radeon HD graphics processor. Socket FM1" row="8" rowspan="1" column="1" colspan="1" concepts="//@concepts.36" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Marketed as &quot;Accelerated processing unit&quot; (APU).  Integrated with Radeon HD graphics processor. Socket FM1" verbatim="Marketed as &quot;Accelerated processing unit&quot; (APU).  Integrated with Radeon HD graphics processor. Socket FM1" concept="//@concepts.36"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,2: " verbatim="" row="8" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,3: " verbatim="" row="8" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,4: " verbatim="" row="8" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="9,0: family 14h (bobcat)" verbatim="Family 14h (Bobcat)" row="9" rowspan="1" colspan="1" concept="//@concepts.12"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,1: amd64 low power" verbatim="AMD64 low power" row="9" rowspan="1" column="1" colspan="1" concepts="//@concepts.37" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="AMD64 low power" verbatim="AMD64 low power" concept="//@concepts.37"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,2: " verbatim="" row="9" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,3: 9 w (c-50 1&#xa0;ghz, dual-core, 280&#xa0;mhz radeon hd 6250" verbatim="9 W (C-50 1&#xa0;GHz, dual-core, 280&#xa0;MHz Radeon HD 6250)" row="9" rowspan="1" column="3" colspan="1" concepts="//@concepts.38 //@concepts.39 //@concepts.40 //@concepts.41" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C-50 1&#xa0;GHz" verbatim="C-50 1&#xa0;GHz" concept="//@concepts.38"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="dual-core" verbatim="dual-core" concept="//@concepts.39"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="280&#xa0;MHz Radeon HD 6250" verbatim="280&#xa0;MHz Radeon HD 6250" concept="//@concepts.40"/>
+        </condition>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="9 W" verbatim="9 W" concept="//@concepts.41"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,4: 9 (c-50 1&#xa0;ghz, dual-core, 280&#xa0;mhz radeon hd 6250)" verbatim="9 (C-50 1&#xa0;GHz, dual-core, 280&#xa0;MHz Radeon HD 6250)" row="9" rowspan="1" column="4" colspan="1" concepts="//@concepts.38 //@concepts.39 //@concepts.40" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="C-50 1&#xa0;GHz" verbatim="C-50 1&#xa0;GHz" concept="//@concepts.38"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="dual-core" verbatim="dual-core" concept="//@concepts.39"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="280&#xa0;MHz Radeon HD 6250" verbatim="280&#xa0;MHz Radeon HD 6250" concept="//@concepts.40"/>
+        </condition>
+        <argument xsi:type="pcmmm:Integer" name="9" confident="true" verbatim="9" value="9"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="10,0: family 15h (bulldozer)" verbatim="Family 15h (Bulldozer)" row="10" rowspan="1" colspan="1" concept="//@concepts.13"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,1: socket am3+, up to 8 cores" verbatim="Socket AM3+, up to 8 cores" row="10" rowspan="1" column="1" colspan="1" concepts="//@concepts.42 //@concepts.43" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Socket AM3+" verbatim="Socket AM3+" concept="//@concepts.42"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="up to 8 cores" verbatim="up to 8 cores" concept="//@concepts.43"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,2: " verbatim="" row="10" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,3: 125 w (fx-8150 8 cores 3.6 to 4 (turbo freq.) ghz)" verbatim="125 W (FX-8150 8 cores 3.6 to 4 (turbo freq.) GHz)" row="10" rowspan="1" column="3" colspan="1" concepts="//@concepts.44 //@concepts.45" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="FX-8150 8 cores 3.6 to 4 (turbo freq.) GHz" verbatim="FX-8150 8 cores 3.6 to 4 (turbo freq.) GHz" concept="//@concepts.44"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="125 W" verbatim="125 W" concept="//@concepts.45"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,4: 35 (fx-8150 8 cores 3.6 to 4 (turbo freq.) ghz" verbatim="35 (FX-8150 8 cores 3.6 to 4 (turbo freq.) GHz" row="10" rowspan="1" column="4" colspan="1" concepts="//@concepts.46" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="35 (FX-8150 8 cores 3.6 to 4 (turbo freq.) GHz" verbatim="35 (FX-8150 8 cores 3.6 to 4 (turbo freq.) GHz" concept="//@concepts.46"/>
+    </cells>
+  </matrices>
+  <concepts xsi:type="pcmmm:Feature" name="Additional features" myValuedCells="//@matrices.0/@cells.6 //@matrices.0/@cells.11 //@matrices.0/@cells.16 //@matrices.0/@cells.21 //@matrices.0/@cells.26 //@matrices.0/@cells.31 //@matrices.0/@cells.36 //@matrices.0/@cells.41 //@matrices.0/@cells.46 //@matrices.0/@cells.51" domain="//@domainCollection/@domains.0"/>
+  <concepts xsi:type="pcmmm:Feature" name="Pipeline stages" myValuedCells="//@matrices.0/@cells.7 //@matrices.0/@cells.12 //@matrices.0/@cells.17 //@matrices.0/@cells.22 //@matrices.0/@cells.27 //@matrices.0/@cells.32 //@matrices.0/@cells.37 //@matrices.0/@cells.42 //@matrices.0/@cells.47 //@matrices.0/@cells.52" domain="//@domainCollection/@domains.1"/>
+  <concepts xsi:type="pcmmm:Feature" name="Thermal Design Power" myValuedCells="//@matrices.0/@cells.8 //@matrices.0/@cells.13 //@matrices.0/@cells.18 //@matrices.0/@cells.23 //@matrices.0/@cells.28 //@matrices.0/@cells.33 //@matrices.0/@cells.38 //@matrices.0/@cells.43 //@matrices.0/@cells.48 //@matrices.0/@cells.53" domain="//@domainCollection/@domains.2"/>
+  <concepts xsi:type="pcmmm:Feature" name="TDP to Clock Speed Ratio (W/GHz)" myValuedCells="//@matrices.0/@cells.9 //@matrices.0/@cells.14 //@matrices.0/@cells.19 //@matrices.0/@cells.24 //@matrices.0/@cells.29 //@matrices.0/@cells.34 //@matrices.0/@cells.39 //@matrices.0/@cells.44 //@matrices.0/@cells.49 //@matrices.0/@cells.54" domain="//@domainCollection/@domains.3"/>
+  <concepts xsi:type="pcmmm:Product" name="K5" myValuedCells="//@matrices.0/@cells.6 //@matrices.0/@cells.7 //@matrices.0/@cells.8 //@matrices.0/@cells.9"/>
+  <concepts xsi:type="pcmmm:Product" name="K6" myValuedCells="//@matrices.0/@cells.11 //@matrices.0/@cells.12 //@matrices.0/@cells.13 //@matrices.0/@cells.14"/>
+  <concepts xsi:type="pcmmm:Product" name="K6-2" myValuedCells="//@matrices.0/@cells.16 //@matrices.0/@cells.17 //@matrices.0/@cells.18 //@matrices.0/@cells.19"/>
+  <concepts xsi:type="pcmmm:Product" name="K6-III" myValuedCells="//@matrices.0/@cells.21 //@matrices.0/@cells.22 //@matrices.0/@cells.23 //@matrices.0/@cells.24"/>
+  <concepts xsi:type="pcmmm:Product" name="K7 (Athlon and Athlon XP)" myValuedCells="//@matrices.0/@cells.26 //@matrices.0/@cells.27 //@matrices.0/@cells.28 //@matrices.0/@cells.29"/>
+  <concepts xsi:type="pcmmm:Product" name="K8 (Opteron / Hammer)" myValuedCells="//@matrices.0/@cells.31 //@matrices.0/@cells.32 //@matrices.0/@cells.33 //@matrices.0/@cells.34"/>
+  <concepts xsi:type="pcmmm:Product" name="K10 / Family 10h (Barcelona)" myValuedCells="//@matrices.0/@cells.36 //@matrices.0/@cells.37 //@matrices.0/@cells.38 //@matrices.0/@cells.39"/>
+  <concepts xsi:type="pcmmm:Product" name="Family 12h (Fusion)" myValuedCells="//@matrices.0/@cells.41 //@matrices.0/@cells.42 //@matrices.0/@cells.43 //@matrices.0/@cells.44"/>
+  <concepts xsi:type="pcmmm:Product" name="Family 14h (Bobcat)" myValuedCells="//@matrices.0/@cells.46 //@matrices.0/@cells.47 //@matrices.0/@cells.48 //@matrices.0/@cells.49"/>
+  <concepts xsi:type="pcmmm:Product" name="Family 15h (Bulldozer)" myValuedCells="//@matrices.0/@cells.51 //@matrices.0/@cells.52 //@matrices.0/@cells.53 //@matrices.0/@cells.54"/>
+  <concepts xsi:type="pcmmm:Feature" name="K5 PR100" constraints="//@matrices.0/@cells.8 //@matrices.0/@cells.9" domain="//@domainCollection/@domains.4"/>
+  <concepts xsi:type="pcmmm:Feature" name="(design by NexGen)" constraints="//@matrices.0/@cells.11" domain="//@domainCollection/@domains.5"/>
+  <concepts xsi:type="pcmmm:Feature" name="PR 200" constraints="//@matrices.0/@cells.13 //@matrices.0/@cells.14" domain="//@domainCollection/@domains.6"/>
+  <concepts xsi:type="pcmmm:Feature" name="20 W" constraints="//@matrices.0/@cells.13" domain="//@domainCollection/@domains.7"/>
+  <concepts xsi:type="pcmmm:Feature" name="(+3DNow!)" constraints="//@matrices.0/@cells.16" domain="//@domainCollection/@domains.8"/>
+  <concepts xsi:type="pcmmm:Feature" name="PR 500" constraints="//@matrices.0/@cells.18 //@matrices.0/@cells.19" domain="//@domainCollection/@domains.9"/>
+  <concepts xsi:type="pcmmm:Feature" name="20.75 W" constraints="//@matrices.0/@cells.18" domain="//@domainCollection/@domains.10"/>
+  <concepts xsi:type="pcmmm:Feature" name="motherboard-mounted L3 cache" constraints="//@matrices.0/@cells.21" domain="//@domainCollection/@domains.11"/>
+  <concepts xsi:type="pcmmm:Feature" name="PR 450" constraints="//@matrices.0/@cells.23 //@matrices.0/@cells.24" domain="//@domainCollection/@domains.12"/>
+  <concepts xsi:type="pcmmm:Feature" name="16 W" constraints="//@matrices.0/@cells.23" domain="//@domainCollection/@domains.13"/>
+  <concepts xsi:type="pcmmm:Feature" name="Athlon 1000)" constraints="//@matrices.0/@cells.28 //@matrices.0/@cells.29" domain="//@domainCollection/@domains.14"/>
+  <concepts xsi:type="pcmmm:Feature" name="74.3 W (Athlon XP 3000+" constraints="//@matrices.0/@cells.28" domain="//@domainCollection/@domains.15"/>
+  <concepts xsi:type="pcmmm:Feature" name="62 W" constraints="//@matrices.0/@cells.28" domain="//@domainCollection/@domains.16"/>
+  <concepts xsi:type="pcmmm:Feature" name="34.4 (Athlon XP 3000+" constraints="//@matrices.0/@cells.29" domain="//@domainCollection/@domains.17"/>
+  <concepts xsi:type="pcmmm:Feature" name="64 bit" constraints="//@matrices.0/@cells.31" domain="//@domainCollection/@domains.18"/>
+  <concepts xsi:type="pcmmm:Feature" name="integrated memory controller" constraints="//@matrices.0/@cells.31" domain="//@domainCollection/@domains.19"/>
+  <concepts xsi:type="pcmmm:Feature" name="HyperTransport" constraints="//@matrices.0/@cells.31" domain="//@domainCollection/@domains.20"/>
+  <concepts xsi:type="pcmmm:Feature" name="Opteron 246 2&#xa0;GHz" constraints="//@matrices.0/@cells.33 //@matrices.0/@cells.34" domain="//@domainCollection/@domains.21"/>
+  <concepts xsi:type="pcmmm:Feature" name="55 W" constraints="//@matrices.0/@cells.33" domain="//@domainCollection/@domains.22"/>
+  <concepts xsi:type="pcmmm:Feature" name="AMD-V Nested Paging Hardware-assisted virtualization)" constraints="//@matrices.0/@cells.36" domain="//@domainCollection/@domains.23"/>
+  <concepts xsi:type="pcmmm:Feature" name="Phenom II X6 1100T 6 cores 3.3 to 3.7 (turbo freq.) GHz" constraints="//@matrices.0/@cells.38 //@matrices.0/@cells.39" domain="//@domainCollection/@domains.24"/>
+  <concepts xsi:type="pcmmm:Feature" name="95 Watt" constraints="//@matrices.0/@cells.38" domain="//@domainCollection/@domains.25"/>
+  <concepts xsi:type="pcmmm:Feature" name="Marketed as &quot;Accelerated processing unit&quot; (APU).  Integrated with Radeon HD graphics processor. Socket FM1" constraints="//@matrices.0/@cells.41" domain="//@domainCollection/@domains.26"/>
+  <concepts xsi:type="pcmmm:Feature" name="AMD64 low power" constraints="//@matrices.0/@cells.46" domain="//@domainCollection/@domains.27"/>
+  <concepts xsi:type="pcmmm:Feature" name="C-50 1&#xa0;GHz" constraints="//@matrices.0/@cells.48 //@matrices.0/@cells.49" domain="//@domainCollection/@domains.28"/>
+  <concepts xsi:type="pcmmm:Feature" name="dual-core" constraints="//@matrices.0/@cells.48 //@matrices.0/@cells.49" domain="//@domainCollection/@domains.29"/>
+  <concepts xsi:type="pcmmm:Feature" name="280&#xa0;MHz Radeon HD 6250" constraints="//@matrices.0/@cells.48 //@matrices.0/@cells.49" domain="//@domainCollection/@domains.30"/>
+  <concepts xsi:type="pcmmm:Feature" name="9 W" constraints="//@matrices.0/@cells.48" domain="//@domainCollection/@domains.31"/>
+  <concepts xsi:type="pcmmm:Feature" name="Socket AM3+" constraints="//@matrices.0/@cells.51" domain="//@domainCollection/@domains.32"/>
+  <concepts xsi:type="pcmmm:Feature" name="up to 8 cores" constraints="//@matrices.0/@cells.51" domain="//@domainCollection/@domains.33"/>
+  <concepts xsi:type="pcmmm:Feature" name="FX-8150 8 cores 3.6 to 4 (turbo freq.) GHz" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.34"/>
+  <concepts xsi:type="pcmmm:Feature" name="125 W" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.35"/>
+  <concepts xsi:type="pcmmm:Feature" name="35 (FX-8150 8 cores 3.6 to 4 (turbo freq.) GHz" constraints="//@matrices.0/@cells.54" domain="//@domainCollection/@domains.36"/>
+  <domainCollection>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.12/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.13/@interpretation/@argument //@matrices.0/@cells.53/@interpretation/@argument //@matrices.0/@cells.23/@interpretation/@argument //@matrices.0/@cells.28/@interpretation/@argument //@matrices.0/@cells.33/@interpretation/@argument"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+  </domainCollection>
+</pcmmm:PCM>

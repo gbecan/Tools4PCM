@@ -181,6 +181,11 @@ public class PcmConverter extends PcmmmSwitch{
 	public Object caseInconsistent(Inconsistent object) {
 		return new Constraint(org.inria.familiar.pcmgwt.shared.Type.Inconsistent,object.getVerbatim());
 	}
+
+
+	public org.inria.familiar.pcmgwt.shared.PCM getPCM() {
+		return pcm;
+	}
 	
 	
 }

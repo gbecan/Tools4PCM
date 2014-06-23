@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="General information" id="General information_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: developer" verbatim="Developer" rowspan="1" column="1" colspan="1" concept="//@concepts.0"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: first release" verbatim="First release" rowspan="1" column="2" colspan="1" concept="//@concepts.1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: latest release" verbatim="Latest release" rowspan="1" column="3" colspan="1" concept="//@concepts.2"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: license" verbatim="License" rowspan="1" column="4" colspan="1" concept="//@concepts.3"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: platform" verbatim="Platform" rowspan="1" column="5" colspan="1" concept="//@concepts.4"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: chess engine" verbatim="Chess engine" rowspan="1" column="6" colspan="1" concept="//@concepts.5"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: 1k zx chess" verbatim="1K ZX Chess" row="1" rowspan="1" colspan="1" concept="//@concepts.6"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: battle chess" verbatim="Battle Chess" row="2" rowspan="1" colspan="1" concept="//@concepts.7"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: battle chess: game of kings" verbatim="Battle Chess: Game of Kings" row="3" rowspan="1" colspan="1" concept="//@concepts.8"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: chess titans" verbatim="Chess Titans" row="4" rowspan="1" colspan="1" concept="//@concepts.9"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: fritz (chess)" verbatim="Fritz (chess)" row="5" rowspan="1" colspan="1" concept="//@concepts.10"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: hiarcs" verbatim="HIARCS" row="6" rowspan="1" colspan="1" concept="//@concepts.11"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: smirf" verbatim="SMIRF" row="7" rowspan="1" colspan="1" concept="//@concepts.12"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: junior (chess)" verbatim="Junior (chess)" row="8" rowspan="1" colspan="1" concept="//@concepts.13"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: dreamchess" verbatim="DreamChess" row="9" rowspan="1" colspan="1" concept="//@concepts.14"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: glchess" verbatim="glChess" row="10" rowspan="1" colspan="1" concept="//@concepts.15"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: gnu chess" verbatim="GNU Chess" row="11" rowspan="1" colspan="1" concept="//@concepts.16"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: xboard/winboard" verbatim="xBoard/Winboard" row="12" rowspan="1" colspan="1" concept="//@concepts.17"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: chessmaster" verbatim="Chessmaster" row="13" rowspan="1" colspan="1" concept="//@concepts.18"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: shredder (chess)" verbatim="Shredder (chess)" row="14" rowspan="1" colspan="1" concept="//@concepts.19"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: wii chess" verbatim="Wii Chess" row="15" rowspan="1" colspan="1" concept="//@concepts.20"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: rybka" verbatim="Rybka" row="16" rowspan="1" colspan="1" concept="//@concepts.21"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: lego chess" verbatim="Lego Chess" row="17" rowspan="1" colspan="1" concept="//@concepts.22"/>
+    <cells xsi:type="pcmmm:Header" name="18,0: pouetchess" verbatim="pouetChess" row="18" rowspan="1" colspan="1" concept="//@concepts.23"/>
+    <cells xsi:type="pcmmm:Header" name="19,0: pychess" verbatim="pyChess" row="19" rowspan="1" colspan="1" concept="//@concepts.24"/>
+    <cells xsi:type="pcmmm:Header" name="20,0: chessv" verbatim="ChessV" row="20" rowspan="1" colspan="1" concept="//@concepts.25"/>
+    <cells xsi:type="pcmmm:Header" name="21,0: battle vs. chess" verbatim="Battle vs. Chess" row="21" rowspan="1" colspan="1" concept="//@concepts.26"/>
+    <cells xsi:type="pcmmm:Header" name="22,0: microchess" verbatim="Microchess" row="22" rowspan="1" colspan="1" concept="//@concepts.27"/>
+    <cells xsi:type="pcmmm:Header" name="23,0: pure chess" verbatim="Pure Chess" row="23" rowspan="1" colspan="1" concept="//@concepts.28"/>
+    <cells xsi:type="pcmmm:Header" name="24,0: silver star chess" verbatim="Silver Star Chess" row="24" rowspan="1" colspan="1" concept="//@concepts.29"/>
+    <cells xsi:type="pcmmm:Header" name="25,0: power chess" verbatim="Power Chess" row="25" rowspan="1" colspan="1" concept="//@concepts.30"/>
+    <cells xsi:type="pcmmm:Header" name="26,0: chess crusade" verbatim="Chess Crusade" row="26" rowspan="1" colspan="1" concept="//@concepts.31"/>
+    <cells xsi:type="pcmmm:Header" name="27,0: chess: secrets" verbatim="Chess: Secrets" row="27" rowspan="1" colspan="1" concept="//@concepts.32"/>
+    <cells xsi:type="pcmmm:Header" name="28,0: combat chess" verbatim="Combat Chess" row="28" rowspan="1" colspan="1" concept="//@concepts.33"/>
+    <cells xsi:type="pcmmm:Header" name="29,0: wizard chess" verbatim="Wizard Chess" row="29" rowspan="1" colspan="1" concept="//@concepts.34"/>
+    <cells xsi:type="pcmmm:Header" name="30,0: fritz and chesster" verbatim="Fritz and Chesster" row="30" rowspan="1" colspan="1" concept="//@concepts.35"/>
+    <cells xsi:type="pcmmm:Header" name="31,0: chess advantage" verbatim="Chess Advantage" row="31" rowspan="1" colspan="1" concept="//@concepts.36"/>
+    <cells xsi:type="pcmmm:Header" name="32,0: virtual chess" verbatim="Virtual Chess" row="32" rowspan="1" colspan="1" concept="//@concepts.37"/>
+    <cells xsi:type="pcmmm:Header" name="33,0: kasparov chess" verbatim="Kasparov Chess" row="33" rowspan="1" colspan="1" concept="//@concepts.38"/>
+    <cells xsi:type="pcmmm:Header" name="34,0: play it chess challenger chess champion" verbatim="Play It Chess Challenger&#xA;Chess Champion" row="34" rowspan="1" colspan="1" concept="//@concepts.39"/>
+    <cells xsi:type="pcmmm:Header" name="35,0: grand master chess" verbatim="Grand Master Chess" row="35" rowspan="1" colspan="1" concept="//@concepts.40"/>
+    <cells xsi:type="pcmmm:Header" name="36,0: master chess" verbatim="Master Chess" row="36" rowspan="1" colspan="1" concept="//@concepts.41"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: " verbatim="" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: david horne" verbatim="David Horne" row="1" rowspan="1" column="1" colspan="1" concepts="//@concepts.81" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="David Horne" verbatim="David Horne" concept="//@concepts.81"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: 1983" verbatim="1983" row="1" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1983" confident="true" verbatim="1983" value="1983"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: n/a" verbatim="N/A" row="1" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,4: commercial" verbatim="Commercial" row="1" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,5: zx spectrum" verbatim="ZX Spectrum" row="1" rowspan="1" column="5" colspan="1" concepts="//@concepts.83" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="ZX Spectrum" verbatim="ZX Spectrum" concept="//@concepts.83"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,6: n/a" verbatim="N/A" row="1" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: interplay silicon &amp; synapse (c64)" verbatim="Interplay&#xA;Silicon &amp; Synapse (C64)" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.84 //@concepts.85" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="C64" verbatim="C64" concept="//@concepts.84"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="Interplay&#xA;Silicon &amp; Synapse" verbatim="Interplay&#xA;Silicon &amp; Synapse" concept="//@concepts.85"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: 1988" verbatim="1988" row="2" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1988" confident="true" verbatim="1988" value="1988"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: 1994" verbatim="1994" row="2" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="1994" confident="true" verbatim="1994" value="1994"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,4: commercial" verbatim="Commercial" row="2" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,5: amiga, 3do, acorn archimedes, amiga cd32, amiga cd" verbatim="Amiga, 3DO, Acorn Archimedes, Amiga CD32,  Amiga CDTV, Apple IIGS, Apple IIe, Atari ST, Commodore 64, DOS, FM Towns, NES, Mac OS, PC-98, Sharp X68000, Windows 3.x" row="2" rowspan="1" column="5" colspan="1" concepts="//@concepts.91 //@concepts.99 //@concepts.87 //@concepts.100 //@concepts.88 //@concepts.98 //@concepts.90 //@concepts.93 //@concepts.89 //@concepts.92 //@concepts.86 //@concepts.95 //@concepts.94 //@concepts.97 //@concepts.96 //@concepts.101" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Amiga" verbatim="Amiga" concept="//@concepts.86"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="3DO" verbatim="3DO" concept="//@concepts.87"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Acorn Archimedes" verbatim="Acorn Archimedes" concept="//@concepts.88"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Amiga CD32" verbatim="Amiga CD32" concept="//@concepts.89"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Amiga CDTV" verbatim="Amiga CDTV" concept="//@concepts.90"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Apple IIGS" verbatim="Apple IIGS" concept="//@concepts.91"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Apple IIe" verbatim="Apple IIe" concept="//@concepts.92"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Atari ST" verbatim="Atari ST" concept="//@concepts.93"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Commodore 64" verbatim="Commodore 64" concept="//@concepts.94"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="DOS" verbatim="DOS" concept="//@concepts.95"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="FM Towns" verbatim="FM Towns" concept="//@concepts.96"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="NES" verbatim="NES" concept="//@concepts.97"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Mac OS" verbatim="Mac OS" concept="//@concepts.98"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PC-98" verbatim="PC-98" concept="//@concepts.99"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Sharp X68000" verbatim="Sharp X68000" concept="//@concepts.100"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows 3.x" verbatim="Windows 3.x" concept="//@concepts.101"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,6: n/a" verbatim="N/A" row="2" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Unknown" name="N/A" confident="true" verbatim="N/A"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: interplay" verbatim="Interplay" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.102" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Interplay" verbatim="Interplay" concept="//@concepts.102"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: tba" verbatim="TBA" row="3" rowspan="1" column="2" colspan="1" concepts="//@concepts.103" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="TBA" verbatim="TBA" concept="//@concepts.103"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: n/a" verbatim="n/a" row="3" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="n/a" confident="true" verbatim="n/a"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,4: commercial" verbatim="Commercial" row="3" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,5: windows vista, windows 7" verbatim="Windows Vista, Windows 7" row="3" rowspan="1" column="5" colspan="1" concepts="//@concepts.104 //@concepts.105" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows Vista" verbatim="Windows Vista" concept="//@concepts.104"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows 7" verbatim="Windows 7" concept="//@concepts.105"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,6: n/a" verbatim="n/a" row="3" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Unknown" name="n/a" confident="true" verbatim="n/a"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: oberon games" verbatim="Oberon Games" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.106" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Oberon Games" verbatim="Oberon Games" concept="//@concepts.106"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: 2007" verbatim="2007" row="4" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2007" confident="true" verbatim="2007" value="2007"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: n/a" verbatim="n/a" row="4" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="n/a" confident="true" verbatim="n/a"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,4: commercial" verbatim="Commercial" row="4" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,5: windows vista, windows 7" verbatim="Windows Vista, Windows 7" row="4" rowspan="1" column="5" colspan="1" concepts="//@concepts.104 //@concepts.105" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows Vista" verbatim="Windows Vista" concept="//@concepts.104"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows 7" verbatim="Windows 7" concept="//@concepts.105"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,6: n/a" verbatim="n/a" row="4" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Unknown" name="n/a" confident="true" verbatim="n/a"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: chessbase" verbatim="Chessbase" row="5" rowspan="1" column="1" colspan="1" concepts="//@concepts.107" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Chessbase" verbatim="Chessbase" concept="//@concepts.107"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: 1992" verbatim="1992" row="5" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1992" confident="true" verbatim="1992" value="1992"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,3: 2013" verbatim="2013" row="5" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="2013" confident="true" verbatim="2013" value="2013"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,4: commercial" verbatim="Commercial" row="5" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,5: windows vista, windows xp, playstation 3, wii, nin" verbatim="Windows Vista, Windows XP, PlayStation 3, Wii, Nintendo DS, Windows 7" row="5" rowspan="1" column="5" colspan="1" concepts="//@concepts.108 //@concepts.109 //@concepts.111 //@concepts.105 //@concepts.104 //@concepts.110" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows Vista" verbatim="Windows Vista" concept="//@concepts.104"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows XP" verbatim="Windows XP" concept="//@concepts.108"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PlayStation 3" verbatim="PlayStation 3" concept="//@concepts.109"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Wii" verbatim="Wii" concept="//@concepts.110"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Nintendo DS" verbatim="Nintendo DS" concept="//@concepts.111"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows 7" verbatim="Windows 7" concept="//@concepts.105"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,6: deep fritz" verbatim="Deep Fritz" row="5" rowspan="1" column="6" colspan="1" concepts="//@concepts.112" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Deep Fritz" verbatim="Deep Fritz" concept="//@concepts.112"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,1: chessbase" verbatim="Chessbase" row="6" rowspan="1" column="1" colspan="1" concepts="//@concepts.107" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Chessbase" verbatim="Chessbase" concept="//@concepts.107"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,2: 1980" verbatim="1980" row="6" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1980" confident="true" verbatim="1980" value="1980"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,3: 2012" verbatim="2012" row="6" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="2012" confident="true" verbatim="2012" value="2012"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,4: commercial" verbatim="Commercial" row="6" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,5: microsoft windows, mac os x, windows mobile, frees" verbatim="Microsoft Windows, Mac OS X, Windows Mobile, Freescale DragonBall, ARM-based Palm OS, iPhone and iPod Touch" row="6" rowspan="1" column="5" colspan="1" concepts="//@concepts.118 //@concepts.117 //@concepts.115 //@concepts.113 //@concepts.116 //@concepts.114 //@concepts.119" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft Windows" verbatim="Microsoft Windows" concept="//@concepts.113"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Mac OS X" verbatim="Mac OS X" concept="//@concepts.114"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows Mobile" verbatim="Windows Mobile" concept="//@concepts.115"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Freescale DragonBall" verbatim="Freescale DragonBall" concept="//@concepts.116"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="ARM-based Palm OS" verbatim="ARM-based Palm OS" concept="//@concepts.117"/>
+        <contraints xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="iPhone" verbatim="iPhone" concept="//@concepts.118"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="iPod Touch" verbatim="iPod Touch" concept="//@concepts.119"/>
+        </contraints>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,6: deep fritz" verbatim="Deep Fritz" row="6" rowspan="1" column="6" colspan="1" concepts="//@concepts.112" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Deep Fritz" verbatim="Deep Fritz" concept="//@concepts.112"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,1: reinhard scharnagl" verbatim="Reinhard Scharnagl" row="7" rowspan="1" column="1" colspan="1" concepts="//@concepts.120" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Reinhard Scharnagl" verbatim="Reinhard Scharnagl" concept="//@concepts.120"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,2: " verbatim="" row="7" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,3: 2009" verbatim="2009" row="7" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="2009" confident="true" verbatim="2009" value="2009"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,4: commercial" verbatim="Commercial" row="7" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,5: microsoft windows" verbatim="Microsoft Windows" row="7" rowspan="1" column="5" colspan="1" concepts="//@concepts.113" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft Windows" verbatim="Microsoft Windows" concept="//@concepts.113"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,6: " verbatim="" row="7" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,1: amir ban and shay bushinsky" verbatim="Amir Ban and Shay Bushinsky" row="8" rowspan="1" column="1" colspan="1" concepts="//@concepts.121 //@concepts.122" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Amir Ban" verbatim="Amir Ban" concept="//@concepts.121"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Shay Bushinsky" verbatim="Shay Bushinsky" concept="//@concepts.122"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,2: 2003" verbatim="2003" row="8" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2003" confident="true" verbatim="2003" value="2003"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,3: " verbatim="" row="8" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,4: commercial" verbatim="Commercial" row="8" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,5: " verbatim="" row="8" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,6: deep junior" verbatim="Deep Junior" row="8" rowspan="1" column="6" colspan="1" concepts="//@concepts.123" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Deep Junior" verbatim="Deep Junior" concept="//@concepts.123"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,1: " verbatim="" row="9" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,2: " verbatim="" row="9" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,3: " verbatim="" row="9" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,4: free" verbatim="Free" row="9" rowspan="1" column="4" colspan="1" concepts="//@concepts.124" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Free" verbatim="Free" concept="//@concepts.124"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,5: " verbatim="" row="9" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,6: " verbatim="" row="9" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.14" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,1: robert ancell, gnome team" verbatim="Robert Ancell, GNOME Team" row="10" rowspan="1" column="1" colspan="1" concepts="//@concepts.125 //@concepts.126" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Robert Ancell" verbatim="Robert Ancell" concept="//@concepts.125"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="GNOME Team" verbatim="GNOME Team" concept="//@concepts.126"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,2: 2000" verbatim="2000" row="10" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2000" confident="true" verbatim="2000" value="2000"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,3: " verbatim="" row="10" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,4: free" verbatim="Free" row="10" rowspan="1" column="4" colspan="1" concepts="//@concepts.124" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Free" verbatim="Free" concept="//@concepts.124"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,5: unix-like" verbatim="Unix-like" row="10" rowspan="1" column="5" colspan="1" concepts="//@concepts.127" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Unix-like" verbatim="Unix-like" concept="//@concepts.127"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,6: " verbatim="" row="10" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.15" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,1: gnu project" verbatim="GNU Project" row="11" rowspan="1" column="1" colspan="1" concepts="//@concepts.128" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GNU Project" verbatim="GNU Project" concept="//@concepts.128"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,2: " verbatim="" row="11" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,3: 2013" verbatim="2013" row="11" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="2013" confident="true" verbatim="2013" value="2013"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,4: free" verbatim="Free" row="11" rowspan="1" column="4" colspan="1" concepts="//@concepts.124" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Free" verbatim="Free" concept="//@concepts.124"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,5: unix-like" verbatim="Unix-like" row="11" rowspan="1" column="5" colspan="1" concepts="//@concepts.127" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Unix-like" verbatim="Unix-like" concept="//@concepts.127"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,6: third-party" verbatim="third-party" row="11" rowspan="1" column="6" colspan="1" concepts="//@concepts.129" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="third-party" verbatim="third-party" concept="//@concepts.129"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,1: tim mann" verbatim="Tim Mann" row="12" rowspan="1" column="1" colspan="1" concepts="//@concepts.130" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Tim Mann" verbatim="Tim Mann" concept="//@concepts.130"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,2: " verbatim="" row="12" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,3: 2013" verbatim="2013" row="12" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="2013" confident="true" verbatim="2013" value="2013"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,4: free gpl" verbatim="Free GPL" row="12" rowspan="1" column="4" colspan="1" concepts="//@concepts.131" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Free GPL" verbatim="Free GPL" concept="//@concepts.131"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,5: unix-like x11 microsoft windows" verbatim="Unix-like X11 Microsoft Windows" row="12" rowspan="1" column="5" colspan="1" concepts="//@concepts.132" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Unix-like X11 Microsoft Windows" verbatim="Unix-like X11 Microsoft Windows" concept="//@concepts.132"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,6: third-party" verbatim="third-party" row="12" rowspan="1" column="6" colspan="1" concepts="//@concepts.129" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="third-party" verbatim="third-party" concept="//@concepts.129"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,1: ubisoft romania zonic limited (mac os x)" verbatim="Ubisoft Romania&#xA;Zonic Limited (Mac OS X)" row="13" rowspan="1" column="1" colspan="1" concepts="//@concepts.114 //@concepts.133" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="Mac OS X" verbatim="Mac OS X" concept="//@concepts.114"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="Ubisoft Romania&#xA;Zonic Limited" verbatim="Ubisoft Romania&#xA;Zonic Limited" concept="//@concepts.133"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,2: 1986" verbatim="1986" row="13" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1986" confident="true" verbatim="1986" value="1986"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,3: 2007" verbatim="2007" row="13" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="2007" confident="true" verbatim="2007" value="2007"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,4: commercial" verbatim="Commercial" row="13" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,5: ms windows, ms-dos, playstation xbox 360 (xbla), p" verbatim="MS Windows, MS-DOS, PlayStation Xbox 360 (XBLA), PSP, PS2" row="13" rowspan="1" column="5" colspan="1" concepts="//@concepts.138 //@concepts.134 //@concepts.135 //@concepts.139 //@concepts.136 //@concepts.137" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS Windows" verbatim="MS Windows" concept="//@concepts.134"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS-DOS" verbatim="MS-DOS" concept="//@concepts.135"/>
+        <contraints xsi:type="pcmmm:Partial">
+          <condition xsi:type="pcmmm:VariabilityConceptRef" name="XBLA" verbatim="XBLA" concept="//@concepts.136"/>
+          <argument xsi:type="pcmmm:VariabilityConceptRef" name="PlayStation Xbox 360" verbatim="PlayStation Xbox 360" concept="//@concepts.137"/>
+        </contraints>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PSP" verbatim="PSP" concept="//@concepts.138"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PS2" verbatim="PS2" concept="//@concepts.139"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,6: " verbatim="" row="13" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,1: stefan meyer-kahlen" verbatim="Stefan Meyer-Kahlen" row="14" rowspan="1" column="1" colspan="1" concepts="//@concepts.140" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Stefan Meyer-Kahlen" verbatim="Stefan Meyer-Kahlen" concept="//@concepts.140"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,2: 1993" verbatim="1993" row="14" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1993" confident="true" verbatim="1993" value="1993"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,3: 2010" verbatim="2010" row="14" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="2010" confident="true" verbatim="2010" value="2010"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,4: commercial" verbatim="Commercial" row="14" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,5: microsoft windows, mac os x, linux, iphone, ipad, " verbatim="Microsoft Windows, Mac OS X, Linux, iPhone, iPad, Android" row="14" rowspan="1" column="5" colspan="1" concepts="//@concepts.118 //@concepts.143 //@concepts.141 //@concepts.113 //@concepts.142 //@concepts.114" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft Windows" verbatim="Microsoft Windows" concept="//@concepts.113"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Mac OS X" verbatim="Mac OS X" concept="//@concepts.114"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Linux" verbatim="Linux" concept="//@concepts.141"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="iPhone" verbatim="iPhone" concept="//@concepts.118"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="iPad" verbatim="iPad" concept="//@concepts.142"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Android" verbatim="Android" concept="//@concepts.143"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,6: deep fritz" verbatim="Deep Fritz" row="14" rowspan="1" column="6" colspan="1" concepts="//@concepts.112" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Deep Fritz" verbatim="Deep Fritz" concept="//@concepts.112"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,1: nintendo" verbatim="Nintendo" row="15" rowspan="1" column="1" colspan="1" concepts="//@concepts.144" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Nintendo" verbatim="Nintendo" concept="//@concepts.144"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,2: 2008" verbatim="2008" row="15" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2008" confident="true" verbatim="2008" value="2008"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,3: n/a" verbatim="n/a" row="15" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="n/a" confident="true" verbatim="n/a"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,4: commercial" verbatim="Commercial" row="15" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,5: nintendo wii" verbatim="Nintendo Wii" row="15" rowspan="1" column="5" colspan="1" concepts="//@concepts.145" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Nintendo Wii" verbatim="Nintendo Wii" concept="//@concepts.145"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,6: loop express" verbatim="Loop Express" row="15" rowspan="1" column="6" colspan="1" concepts="//@concepts.146" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Loop Express" verbatim="Loop Express" concept="//@concepts.146"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,1: vasik rajlich" verbatim="Vasik Rajlich" row="16" rowspan="1" column="1" colspan="1" concepts="//@concepts.147" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Vasik Rajlich" verbatim="Vasik Rajlich" concept="//@concepts.147"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,2: 2010" verbatim="2010" row="16" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2010" confident="true" verbatim="2010" value="2010"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,3: " verbatim="" row="16" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,4: commercial" verbatim="Commercial" row="16" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,5: " verbatim="" row="16" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,6: rybka" verbatim="Rybka" row="16" rowspan="1" column="6" colspan="1" concepts="//@concepts.21" myHeaderProducts="//@concepts.21" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Rybka" verbatim="Rybka" concept="//@concepts.21"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,1: " verbatim="" row="17" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,2: 1998" verbatim="1998" row="17" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1998" confident="true" verbatim="1998" value="1998"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,3: n/a" verbatim="n/a" row="17" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="n/a" confident="true" verbatim="n/a"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,4: commercial" verbatim="Commercial" row="17" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,5: pc, dos" verbatim="PC, DOS" row="17" rowspan="1" column="5" colspan="1" concepts="//@concepts.148 //@concepts.95" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PC" verbatim="PC" concept="//@concepts.148"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="DOS" verbatim="DOS" concept="//@concepts.95"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,6: " verbatim="" row="17" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.22" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,1: " verbatim="" row="18" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,2: " verbatim="" row="18" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,3: " verbatim="" row="18" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,4: " verbatim="" row="18" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,5: " verbatim="" row="18" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,6: " verbatim="" row="18" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.23" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,1: pychess project" verbatim="PyChess Project" row="19" rowspan="1" column="1" colspan="1" concepts="//@concepts.149" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="PyChess Project" verbatim="PyChess Project" concept="//@concepts.149"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,2: 2006" verbatim="2006" row="19" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2006" confident="true" verbatim="2006" value="2006"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,3: " verbatim="" row="19" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,4: gpl" verbatim="GPL" row="19" rowspan="1" column="4" colspan="1" concepts="//@concepts.150" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.150"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,5: unix-like" verbatim="Unix-like" row="19" rowspan="1" column="5" colspan="1" concepts="//@concepts.127" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Unix-like" verbatim="Unix-like" concept="//@concepts.127"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,6: third-party" verbatim="third-party" row="19" rowspan="1" column="6" colspan="1" concepts="//@concepts.129" myHeaderProducts="//@concepts.24" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="third-party" verbatim="third-party" concept="//@concepts.129"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,1: gregory strong" verbatim="Gregory Strong" row="20" rowspan="1" column="1" colspan="1" concepts="//@concepts.151" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Gregory Strong" verbatim="Gregory Strong" concept="//@concepts.151"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,2: 2009" verbatim="2009" row="20" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2009" confident="true" verbatim="2009" value="2009"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,3: n/a" verbatim="n/a" row="20" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="n/a" confident="true" verbatim="n/a"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,4: gpl" verbatim="GPL" row="20" rowspan="1" column="4" colspan="1" concepts="//@concepts.150" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.150"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,5: microsoft windows" verbatim="Microsoft Windows" row="20" rowspan="1" column="5" colspan="1" concepts="//@concepts.113" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft Windows" verbatim="Microsoft Windows" concept="//@concepts.113"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,6: chessv" verbatim="ChessV" row="20" rowspan="1" column="6" colspan="1" concepts="//@concepts.25" myHeaderProducts="//@concepts.25" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="ChessV" verbatim="ChessV" concept="//@concepts.25"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,1: targem games zuxxez entertainment" verbatim="Targem Games&#xA;Zuxxez Entertainment" row="21" rowspan="1" column="1" colspan="1" concepts="//@concepts.152" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Targem Games&#xA;Zuxxez Entertainment" verbatim="Targem Games&#xA;Zuxxez Entertainment" concept="//@concepts.152"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,2: 2011" verbatim="2011" row="21" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2011" confident="true" verbatim="2011" value="2011"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,3: n/a" verbatim="n/a" row="21" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="n/a" confident="true" verbatim="n/a"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,4: commercial" verbatim="Commercial" row="21" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,5: microsoft windows, mac os x, nintendo ds, playstat" verbatim="Microsoft Windows, Mac OS X, Nintendo DS, PlayStation 3, PlayStation Portable, Xbox 360, Wii" row="21" rowspan="1" column="5" colspan="1" concepts="//@concepts.109 //@concepts.154 //@concepts.111 //@concepts.113 //@concepts.114 //@concepts.153 //@concepts.110" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft Windows" verbatim="Microsoft Windows" concept="//@concepts.113"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Mac OS X" verbatim="Mac OS X" concept="//@concepts.114"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Nintendo DS" verbatim="Nintendo DS" concept="//@concepts.111"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PlayStation 3" verbatim="PlayStation 3" concept="//@concepts.109"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PlayStation Portable" verbatim="PlayStation Portable" concept="//@concepts.153"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Xbox 360" verbatim="Xbox 360" concept="//@concepts.154"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Wii" verbatim="Wii" concept="//@concepts.110"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,6: " verbatim="" row="21" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.26" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,1: peter r. jennings" verbatim="Peter R. Jennings" row="22" rowspan="1" column="1" colspan="1" concepts="//@concepts.155" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Peter R. Jennings" verbatim="Peter R. Jennings" concept="//@concepts.155"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,2: 1976" verbatim="1976" row="22" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1976" confident="true" verbatim="1976" value="1976"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,3: n/a" verbatim="n/a" row="22" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="n/a" confident="true" verbatim="n/a"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,4: commercial" verbatim="Commercial" row="22" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,5: kim-1" verbatim="KIM-1" row="22" rowspan="1" column="5" colspan="1" concepts="//@concepts.156" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="KIM-1" verbatim="KIM-1" concept="//@concepts.156"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,6: microchess" verbatim="Microchess" row="22" rowspan="1" column="6" colspan="1" concepts="//@concepts.27" myHeaderProducts="//@concepts.27" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Microchess" verbatim="Microchess" concept="//@concepts.27"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,1: voofoo studios" verbatim="VooFoo Studios" row="23" rowspan="1" column="1" colspan="1" concepts="//@concepts.157" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="VooFoo Studios" verbatim="VooFoo Studios" concept="//@concepts.157"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,2: 2012" verbatim="2012" row="23" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2012" confident="true" verbatim="2012" value="2012"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,3: n/a" verbatim="n/a" row="23" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="n/a" confident="true" verbatim="n/a"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,4: commercial" verbatim="Commercial" row="23" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,5: playstation 3, playstation vita" verbatim="PlayStation 3, PlayStation Vita" row="23" rowspan="1" column="5" colspan="1" concepts="//@concepts.109 //@concepts.158" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PlayStation 3" verbatim="PlayStation 3" concept="//@concepts.109"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PlayStation Vita" verbatim="PlayStation Vita" concept="//@concepts.158"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,6: pure chess" verbatim="Pure Chess" row="23" rowspan="1" column="6" colspan="1" concepts="//@concepts.28" myHeaderProducts="//@concepts.28" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Pure Chess" verbatim="Pure Chess" concept="//@concepts.28"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,1: agetec" verbatim="AgeTec" row="24" rowspan="1" column="1" colspan="1" concepts="//@concepts.159" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="AgeTec" verbatim="AgeTec" concept="//@concepts.159"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,2: 2008" verbatim="2008" row="24" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2008" confident="true" verbatim="2008" value="2008"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,3: n/a" verbatim="n/a" row="24" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Unknown" name="n/a" confident="true" verbatim="n/a"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,4: commercial" verbatim="Commercial" row="24" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,5: wiiware" verbatim="Wiiware" row="24" rowspan="1" column="5" colspan="1" concepts="//@concepts.160" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Wiiware" verbatim="Wiiware" concept="//@concepts.160"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,6: silver star chess" verbatim="Silver Star Chess" row="24" rowspan="1" column="6" colspan="1" concepts="//@concepts.29" myHeaderProducts="//@concepts.29" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Silver Star Chess" verbatim="Silver Star Chess" concept="//@concepts.29"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,1: sierra entertainment" verbatim="Sierra Entertainment" row="25" rowspan="1" column="1" colspan="1" concepts="//@concepts.161" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Sierra Entertainment" verbatim="Sierra Entertainment" concept="//@concepts.161"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,2: 1996" verbatim="1996" row="25" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1996" confident="true" verbatim="1996" value="1996"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,3: 1998" verbatim="1998" row="25" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="1998" confident="true" verbatim="1998" value="1998"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,4: commercial" verbatim="Commercial" row="25" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,5: microsoft windows" verbatim="Microsoft Windows" row="25" rowspan="1" column="5" colspan="1" concepts="//@concepts.113" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft Windows" verbatim="Microsoft Windows" concept="//@concepts.113"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,6: wchess" verbatim="WChess" row="25" rowspan="1" column="6" colspan="1" concepts="//@concepts.162" myHeaderProducts="//@concepts.30" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="WChess" verbatim="WChess" concept="//@concepts.162"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,1: slam games" verbatim="Slam Games" row="26" rowspan="1" column="1" colspan="1" concepts="//@concepts.163" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Slam Games" verbatim="Slam Games" concept="//@concepts.163"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,2: tba" verbatim="TBA" row="26" rowspan="1" column="2" colspan="1" concepts="//@concepts.103" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="TBA" verbatim="TBA" concept="//@concepts.103"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,3: 2010" verbatim="2010" row="26" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="2010" confident="true" verbatim="2010" value="2010"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,4: commercial" verbatim="Commercial" row="26" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,5: wii, nintendo ds, playstation 2, microsoft windows" verbatim="Wii, Nintendo DS, PlayStation 2, Microsoft Windows, iPad" row="26" rowspan="1" column="5" colspan="1" concepts="//@concepts.164 //@concepts.111 //@concepts.113 //@concepts.142 //@concepts.110" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Wii" verbatim="Wii" concept="//@concepts.110"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Nintendo DS" verbatim="Nintendo DS" concept="//@concepts.111"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PlayStation 2" verbatim="PlayStation 2" concept="//@concepts.164"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft Windows" verbatim="Microsoft Windows" concept="//@concepts.113"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="iPad" verbatim="iPad" concept="//@concepts.142"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,6: " verbatim="" row="26" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.31" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="27,1: " verbatim="" row="27" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="27,2: " verbatim="" row="27" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="27,3: " verbatim="" row="27" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="27,4: " verbatim="" row="27" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="27,5: " verbatim="" row="27" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="27,6: " verbatim="" row="27" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.32" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="28,1: " verbatim="" row="28" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="28,2: " verbatim="" row="28" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="28,3: " verbatim="" row="28" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="28,4: " verbatim="" row="28" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="28,5: " verbatim="" row="28" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="28,6: " verbatim="" row="28" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.33" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="29,1: " verbatim="" row="29" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="29,2: " verbatim="" row="29" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="29,3: " verbatim="" row="29" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="29,4: " verbatim="" row="29" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="29,5: " verbatim="" row="29" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="29,6: " verbatim="" row="29" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.34" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="30,1: chessbase" verbatim="Chessbase" row="30" rowspan="1" column="1" colspan="1" concepts="//@concepts.107" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Chessbase" verbatim="Chessbase" concept="//@concepts.107"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="30,2: 2005" verbatim="2005" row="30" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2005" confident="true" verbatim="2005" value="2005"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="30,3: 2010" verbatim="2010" row="30" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="2010" confident="true" verbatim="2010" value="2010"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="30,4: " verbatim="" row="30" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="30,5: windows vista, windows xp, mac, nintendo ds" verbatim="Windows Vista, Windows XP, Mac, Nintendo DS" row="30" rowspan="1" column="5" colspan="1" concepts="//@concepts.104 //@concepts.108 //@concepts.165 //@concepts.111" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows Vista" verbatim="Windows Vista" concept="//@concepts.104"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows XP" verbatim="Windows XP" concept="//@concepts.108"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Mac" verbatim="Mac" concept="//@concepts.165"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Nintendo DS" verbatim="Nintendo DS" concept="//@concepts.111"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="30,6: deep fritz" verbatim="Deep Fritz" row="30" rowspan="1" column="6" colspan="1" concepts="//@concepts.112" myHeaderProducts="//@concepts.35" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Deep Fritz" verbatim="Deep Fritz" concept="//@concepts.112"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="31,1: " verbatim="" row="31" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="31,2: 1999" verbatim="1999" row="31" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="1999" confident="true" verbatim="1999" value="1999"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="31,3: 2002" verbatim="2002" row="31" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="2002" confident="true" verbatim="2002" value="2002"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="31,4: commercial" verbatim="Commercial" row="31" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="31,5: microsoft windows" verbatim="Microsoft Windows" row="31" rowspan="1" column="5" colspan="1" concepts="//@concepts.113" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft Windows" verbatim="Microsoft Windows" concept="//@concepts.113"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="31,6: chessmaster, combat chess, grandmaster chess" verbatim="Chessmaster, Combat Chess, Grandmaster Chess" row="31" rowspan="1" column="6" colspan="1" concepts="//@concepts.18 //@concepts.33 //@concepts.166" myHeaderProducts="//@concepts.36" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Chessmaster" verbatim="Chessmaster" concept="//@concepts.18"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Combat Chess" verbatim="Combat Chess" concept="//@concepts.33"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Grandmaster Chess" verbatim="Grandmaster Chess" concept="//@concepts.166"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="32,1: " verbatim="" row="32" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="32,2: ?" verbatim="?" row="32" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Unknown" name="?" confident="true" verbatim="?"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="32,3: 2002" verbatim="2002" row="32" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="2002" confident="true" verbatim="2002" value="2002"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="32,4: commercial" verbatim="Commercial" row="32" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="32,5: microsoft windows 3.11, microsoft windows" verbatim="Microsoft Windows 3.11, Microsoft Windows" row="32" rowspan="1" column="5" colspan="1" concepts="//@concepts.167 //@concepts.113" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft Windows 3.11" verbatim="Microsoft Windows 3.11" concept="//@concepts.167"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft Windows" verbatim="Microsoft Windows" concept="//@concepts.113"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="32,6: " verbatim="" row="32" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.37" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="33,1: " verbatim="" row="33" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="33,2: 2001" verbatim="2001" row="33" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Integer" name="2001" confident="true" verbatim="2001" value="2001"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="33,3: " verbatim="" row="33" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="33,4: commercial" verbatim="Commercial" row="33" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="33,5: playstation, microsoft windows" verbatim="Playstation, Microsoft Windows" row="33" rowspan="1" column="5" colspan="1" concepts="//@concepts.168 //@concepts.113" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Playstation" verbatim="Playstation" concept="//@concepts.168"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft Windows" verbatim="Microsoft Windows" concept="//@concepts.113"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="33,6: " verbatim="" row="33" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.38" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="34,1: system 3" verbatim="System 3" row="34" rowspan="1" column="1" colspan="1" concepts="//@concepts.169" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="System 3" verbatim="System 3" concept="//@concepts.169"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="34,2: " verbatim="" row="34" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="34,3: " verbatim="" row="34" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="34,4: commercial" verbatim="Commercial" row="34" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="34,5: playstation 2" verbatim="Playstation 2" row="34" rowspan="1" column="5" colspan="1" concepts="//@concepts.170" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Playstation 2" verbatim="Playstation 2" concept="//@concepts.170"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="34,6: " verbatim="" row="34" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.39" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="35,1: mastertronic" verbatim="Mastertronic" row="35" rowspan="1" column="1" colspan="1" concepts="//@concepts.171" myHeaderProducts="//@concepts.40" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Mastertronic" verbatim="Mastertronic" concept="//@concepts.171"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="35,2: " verbatim="" row="35" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.40" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="35,3: 2007" verbatim="2007" row="35" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.40" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Integer" name="2007" confident="true" verbatim="2007" value="2007"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="35,4: commercial" verbatim="Commercial" row="35" rowspan="1" column="4" colspan="1" concepts="//@concepts.82" myHeaderProducts="//@concepts.40" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Commercial" verbatim="Commercial" concept="//@concepts.82"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="35,5: microsoft windows" verbatim="Microsoft Windows" row="35" rowspan="1" column="5" colspan="1" concepts="//@concepts.113" myHeaderProducts="//@concepts.40" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Microsoft Windows" verbatim="Microsoft Windows" concept="//@concepts.113"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="35,6: " verbatim="" row="35" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.40" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="36,1: " verbatim="" row="36" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.41" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="36,2: " verbatim="" row="36" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.41" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="36,3: " verbatim="" row="36" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.41" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="36,4: " verbatim="" row="36" rowspan="1" column="4" colspan="1" myHeaderProducts="//@concepts.41" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="36,5: " verbatim="" row="36" rowspan="1" column="5" colspan="1" myHeaderProducts="//@concepts.41" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="36,6: " verbatim="" row="36" rowspan="1" column="6" colspan="1" myHeaderProducts="//@concepts.41" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+  </matrices>
+  <matrices name="Gameplay" id="Gameplay_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: 3d graphics/animated pieces mode" verbatim="3D Graphics/Animated pieces mode" rowspan="1" column="1" colspan="1" concept="//@concepts.42"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: variants (rules, pieces, boards)" verbatim="Variants (rules, pieces, boards)" rowspan="1" column="2" colspan="1" concept="//@concepts.43"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: multiplayer" verbatim="Multiplayer" rowspan="1" column="3" colspan="1" concept="//@concepts.44"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: 1k zx chess" verbatim="1K ZX Chess" row="1" rowspan="1" colspan="1" concept="//@concepts.45"/>
+    <cells xsi:type="pcmmm:Header" name="2,0: battle chess" verbatim="Battle Chess" row="2" rowspan="1" colspan="1" concept="//@concepts.46"/>
+    <cells xsi:type="pcmmm:Header" name="3,0: battle chess: game of kings" verbatim="Battle Chess: Game of Kings" row="3" rowspan="1" colspan="1" concept="//@concepts.47"/>
+    <cells xsi:type="pcmmm:Header" name="4,0: chess titans" verbatim="Chess Titans" row="4" rowspan="1" colspan="1" concept="//@concepts.48"/>
+    <cells xsi:type="pcmmm:Header" name="5,0: fritz (chess)" verbatim="Fritz (chess)" row="5" rowspan="1" colspan="1" concept="//@concepts.49"/>
+    <cells xsi:type="pcmmm:Header" name="6,0: hiarcs" verbatim="HIARCS" row="6" rowspan="1" colspan="1" concept="//@concepts.50"/>
+    <cells xsi:type="pcmmm:Header" name="7,0: smirf" verbatim="SMIRF" row="7" rowspan="1" colspan="1" concept="//@concepts.51"/>
+    <cells xsi:type="pcmmm:Header" name="8,0: junior (chess)" verbatim="Junior (chess)" row="8" rowspan="1" colspan="1" concept="//@concepts.52"/>
+    <cells xsi:type="pcmmm:Header" name="9,0: dreamchess" verbatim="DreamChess" row="9" rowspan="1" colspan="1" concept="//@concepts.53"/>
+    <cells xsi:type="pcmmm:Header" name="10,0: glchess" verbatim="glChess" row="10" rowspan="1" colspan="1" concept="//@concepts.54"/>
+    <cells xsi:type="pcmmm:Header" name="11,0: gnu chess" verbatim="GNU Chess" row="11" rowspan="1" colspan="1" concept="//@concepts.55"/>
+    <cells xsi:type="pcmmm:Header" name="12,0: xboard/winboard" verbatim="xBoard/Winboard" row="12" rowspan="1" colspan="1" concept="//@concepts.56"/>
+    <cells xsi:type="pcmmm:Header" name="13,0: chessmaster" verbatim="Chessmaster" row="13" rowspan="1" colspan="1" concept="//@concepts.57"/>
+    <cells xsi:type="pcmmm:Header" name="14,0: shredder (chess)" verbatim="Shredder (chess)" row="14" rowspan="1" colspan="1" concept="//@concepts.58"/>
+    <cells xsi:type="pcmmm:Header" name="15,0: wii chess" verbatim="Wii Chess" row="15" rowspan="1" colspan="1" concept="//@concepts.59"/>
+    <cells xsi:type="pcmmm:Header" name="16,0: rybka" verbatim="Rybka" row="16" rowspan="1" colspan="1" concept="//@concepts.60"/>
+    <cells xsi:type="pcmmm:Header" name="17,0: lego chess" verbatim="Lego Chess" row="17" rowspan="1" colspan="1" concept="//@concepts.61"/>
+    <cells xsi:type="pcmmm:Header" name="18,0: pouetchess" verbatim="pouetChess" row="18" rowspan="1" colspan="1" concept="//@concepts.62"/>
+    <cells xsi:type="pcmmm:Header" name="19,0: pychess" verbatim="pyChess" row="19" rowspan="1" colspan="1" concept="//@concepts.63"/>
+    <cells xsi:type="pcmmm:Header" name="20,0: chessv" verbatim="ChessV" row="20" rowspan="1" colspan="1" concept="//@concepts.64"/>
+    <cells xsi:type="pcmmm:Header" name="21,0: battle vs. chess" verbatim="Battle vs. Chess" row="21" rowspan="1" colspan="1" concept="//@concepts.65"/>
+    <cells xsi:type="pcmmm:Header" name="22,0: microchess" verbatim="Microchess" row="22" rowspan="1" colspan="1" concept="//@concepts.66"/>
+    <cells xsi:type="pcmmm:Header" name="23,0: pure chess" verbatim="Pure Chess" row="23" rowspan="1" colspan="1" concept="//@concepts.67"/>
+    <cells xsi:type="pcmmm:Header" name="24,0: silver star chess" verbatim="Silver Star Chess" row="24" rowspan="1" colspan="1" concept="//@concepts.68"/>
+    <cells xsi:type="pcmmm:Header" name="25,0: power chess" verbatim="Power Chess" row="25" rowspan="1" colspan="1" concept="//@concepts.69"/>
+    <cells xsi:type="pcmmm:Header" name="26,0: chess crusade" verbatim="Chess Crusade" row="26" rowspan="1" colspan="1" concept="//@concepts.70"/>
+    <cells xsi:type="pcmmm:Header" name="27,0: chess: secrets" verbatim="Chess: Secrets" row="27" rowspan="1" colspan="1" concept="//@concepts.71"/>
+    <cells xsi:type="pcmmm:Header" name="28,0: combat chess" verbatim="Combat Chess" row="28" rowspan="1" colspan="1" concept="//@concepts.72"/>
+    <cells xsi:type="pcmmm:Header" name="29,0: wizard chess" verbatim="Wizard Chess" row="29" rowspan="1" colspan="1" concept="//@concepts.73"/>
+    <cells xsi:type="pcmmm:Header" name="30,0: fritz and chesster" verbatim="Fritz and Chesster" row="30" rowspan="1" colspan="1" concept="//@concepts.74"/>
+    <cells xsi:type="pcmmm:Header" name="31,0: chess advantage" verbatim="Chess Advantage" row="31" rowspan="1" colspan="1" concept="//@concepts.75"/>
+    <cells xsi:type="pcmmm:Header" name="32,0: virtual chess" verbatim="Virtual Chess" row="32" rowspan="1" colspan="1" concept="//@concepts.76"/>
+    <cells xsi:type="pcmmm:Header" name="33,0: kasparov chess" verbatim="Kasparov Chess" row="33" rowspan="1" colspan="1" concept="//@concepts.77"/>
+    <cells xsi:type="pcmmm:Header" name="34,0: play it chess challenger chess champion" verbatim="Play It Chess Challenger&#xA;Chess Champion" row="34" rowspan="1" colspan="1" concept="//@concepts.78"/>
+    <cells xsi:type="pcmmm:Header" name="35,0: grand master chess" verbatim="Grand Master Chess" row="35" rowspan="1" colspan="1" concept="//@concepts.79"/>
+    <cells xsi:type="pcmmm:Header" name="36,0: master chess" verbatim="Master Chess" row="36" rowspan="1" colspan="1" concept="//@concepts.80"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: " verbatim="" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: no" verbatim="No" row="1" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: no" verbatim="No" row="1" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: " verbatim="" row="1" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.45" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: yes" verbatim="Yes" row="2" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: no" verbatim="No" row="2" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: " verbatim="" row="2" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.46" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: no" verbatim="No" row="3" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: no" verbatim="No" row="3" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: " verbatim="" row="3" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.47" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: no" verbatim="No" row="4" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: no" verbatim="No" row="4" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: " verbatim="" row="4" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.48" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: " verbatim="" row="5" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: " verbatim="" row="5" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,3: " verbatim="" row="5" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.49" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,1: " verbatim="" row="6" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,2: " verbatim="" row="6" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,3: " verbatim="" row="6" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.50" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,1: " verbatim="" row="7" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,2: chess960, bird chess, capablanca chess, capablanca" verbatim="Chess960, Bird Chess, Capablanca Chess, Capablanca Random Chess, Carrera Chess, Embassy Chess, Janus Chess" row="7" rowspan="1" column="2" colspan="1" concepts="//@concepts.176 //@concepts.177 //@concepts.175 //@concepts.174 //@concepts.178 //@concepts.173 //@concepts.172" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Chess960" verbatim="Chess960" concept="//@concepts.172"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Bird Chess" verbatim="Bird Chess" concept="//@concepts.173"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Capablanca Chess" verbatim="Capablanca Chess" concept="//@concepts.174"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Capablanca Random Chess" verbatim="Capablanca Random Chess" concept="//@concepts.175"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Carrera Chess" verbatim="Carrera Chess" concept="//@concepts.176"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Embassy Chess" verbatim="Embassy Chess" concept="//@concepts.177"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Janus Chess" verbatim="Janus Chess" concept="//@concepts.178"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,3: " verbatim="" row="7" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.51" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,1: " verbatim="" row="8" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,2: " verbatim="" row="8" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,3: " verbatim="" row="8" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.52" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,1: " verbatim="" row="9" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,2: " verbatim="" row="9" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="9,3: " verbatim="" row="9" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.53" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,1: " verbatim="" row="10" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,2: " verbatim="" row="10" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="10,3: " verbatim="" row="10" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.54" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,1: no" verbatim="No" row="11" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,2: yes knightmate, capablanca and gothic chess, shatr" verbatim="Yes Knightmate, Capablanca and Gothic Chess, Shatranj, Courier Chess, Cylinder chess, Berolina Chess under fairymax" row="11" rowspan="1" column="2" colspan="1" concepts="//@concepts.183 //@concepts.179 //@concepts.185 //@concepts.184 //@concepts.181 //@concepts.180 //@concepts.182" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Knightmate" verbatim="Knightmate" concept="//@concepts.179"/>
+          <contraints xsi:type="pcmmm:And">
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Capablanca" verbatim="Capablanca" concept="//@concepts.180"/>
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Gothic Chess" verbatim="Gothic Chess" concept="//@concepts.181"/>
+          </contraints>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Shatranj" verbatim="Shatranj" concept="//@concepts.182"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Courier Chess" verbatim="Courier Chess" concept="//@concepts.183"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Cylinder chess" verbatim="Cylinder chess" concept="//@concepts.184"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Berolina Chess under fairymax" verbatim="Berolina Chess under fairymax" concept="//@concepts.185"/>
+        </condition>
+        <argument xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="11,3: " verbatim="" row="11" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.55" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,1: no" verbatim="No" row="12" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,2: yes knightmate, capablanca and gothic chess, shatr" verbatim="Yes Knightmate, Capablanca and Gothic Chess, Shatranj, Courier Chess, Cylinder chess, Berolina Chess under fairymax" row="12" rowspan="1" column="2" colspan="1" concepts="//@concepts.183 //@concepts.179 //@concepts.185 //@concepts.184 //@concepts.181 //@concepts.180 //@concepts.182" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Knightmate" verbatim="Knightmate" concept="//@concepts.179"/>
+          <contraints xsi:type="pcmmm:And">
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Capablanca" verbatim="Capablanca" concept="//@concepts.180"/>
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Gothic Chess" verbatim="Gothic Chess" concept="//@concepts.181"/>
+          </contraints>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Shatranj" verbatim="Shatranj" concept="//@concepts.182"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Courier Chess" verbatim="Courier Chess" concept="//@concepts.183"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Cylinder chess" verbatim="Cylinder chess" concept="//@concepts.184"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Berolina Chess under fairymax" verbatim="Berolina Chess under fairymax" concept="//@concepts.185"/>
+        </condition>
+        <argument xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="12,3: " verbatim="" row="12" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.56" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,1: " verbatim="" row="13" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,2: " verbatim="" row="13" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="13,3: " verbatim="" row="13" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.57" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,1: " verbatim="" row="14" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,2: " verbatim="" row="14" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="14,3: " verbatim="" row="14" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.58" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,1: " verbatim="" row="15" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,2: " verbatim="" row="15" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="15,3: " verbatim="" row="15" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.59" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,1: " verbatim="" row="16" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.60" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,2: " verbatim="" row="16" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.60" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="16,3: yes" verbatim="Yes" row="16" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.60" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,1: " verbatim="" row="17" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.61" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,2: " verbatim="" row="17" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.61" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="17,3: no" verbatim="No" row="17" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.61" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,1: " verbatim="" row="18" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.62" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,2: " verbatim="" row="18" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.62" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="18,3: " verbatim="" row="18" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.62" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,1: " verbatim="" row="19" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.63" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,2: " verbatim="" row="19" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.63" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="19,3: " verbatim="" row="19" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.63" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,1: " verbatim="" row="20" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.64" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,2: " verbatim="" row="20" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.64" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="20,3: " verbatim="" row="20" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.64" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,1: yes" verbatim="Yes" row="21" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.65" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,2: " verbatim="" row="21" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.65" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="21,3: " verbatim="" row="21" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.65" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,1: " verbatim="" row="22" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.66" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,2: " verbatim="" row="22" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.66" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="22,3: " verbatim="" row="22" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.66" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,1: " verbatim="" row="23" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.67" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,2: " verbatim="" row="23" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.67" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="23,3: " verbatim="" row="23" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.67" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,1: " verbatim="" row="24" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.68" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,2: " verbatim="" row="24" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.68" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="24,3: " verbatim="" row="24" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.68" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,1: " verbatim="" row="25" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.69" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,2: " verbatim="" row="25" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.69" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="25,3: " verbatim="" row="25" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.69" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,1: " verbatim="" row="26" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.70" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,2: " verbatim="" row="26" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.70" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="26,3: " verbatim="" row="26" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.70" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="27,1: " verbatim="" row="27" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.71" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="27,2: " verbatim="" row="27" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.71" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="27,3: " verbatim="" row="27" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.71" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="28,1: " verbatim="" row="28" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.72" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="28,2: " verbatim="" row="28" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.72" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="28,3: " verbatim="" row="28" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.72" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="29,1: " verbatim="" row="29" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.73" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="29,2: " verbatim="" row="29" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.73" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="29,3: " verbatim="" row="29" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.73" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="30,1: " verbatim="" row="30" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.74" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="30,2: " verbatim="" row="30" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.74" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="30,3: " verbatim="" row="30" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.74" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="31,1: " verbatim="" row="31" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.75" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="31,2: " verbatim="" row="31" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.75" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="31,3: " verbatim="" row="31" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.75" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="32,1: " verbatim="" row="32" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.76" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="32,2: " verbatim="" row="32" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.76" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="32,3: " verbatim="" row="32" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.76" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="33,1: " verbatim="" row="33" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.77" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="33,2: " verbatim="" row="33" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.77" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="33,3: " verbatim="" row="33" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.77" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="34,1: " verbatim="" row="34" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.78" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="34,2: " verbatim="" row="34" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.78" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="34,3: " verbatim="" row="34" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.78" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="35,1: " verbatim="" row="35" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.79" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="35,2: " verbatim="" row="35" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.79" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="35,3: " verbatim="" row="35" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.79" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="36,1: " verbatim="" row="36" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.80" myHeaderFeatures="//@concepts.42">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="36,2: " verbatim="" row="36" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.80" myHeaderFeatures="//@concepts.43">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="36,3: " verbatim="" row="36" rowspan="1" column="3" colspan="1" myHeaderProducts="//@concepts.80" myHeaderFeatures="//@concepts.44">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+  </matrices>
+  <concepts xsi:type="pcmmm:Feature" name="Developer" myValuedCells="//@matrices.0/@cells.43 //@matrices.0/@cells.49 //@matrices.0/@cells.55 //@matrices.0/@cells.61 //@matrices.0/@cells.67 //@matrices.0/@cells.73 //@matrices.0/@cells.79 //@matrices.0/@cells.85 //@matrices.0/@cells.91 //@matrices.0/@cells.97 //@matrices.0/@cells.103 //@matrices.0/@cells.109 //@matrices.0/@cells.115 //@matrices.0/@cells.121 //@matrices.0/@cells.127 //@matrices.0/@cells.133 //@matrices.0/@cells.139 //@matrices.0/@cells.145 //@matrices.0/@cells.151 //@matrices.0/@cells.157 //@matrices.0/@cells.163 //@matrices.0/@cells.169 //@matrices.0/@cells.175 //@matrices.0/@cells.181 //@matrices.0/@cells.187 //@matrices.0/@cells.193 //@matrices.0/@cells.199 //@matrices.0/@cells.205 //@matrices.0/@cells.211 //@matrices.0/@cells.217 //@matrices.0/@cells.223 //@matrices.0/@cells.229 //@matrices.0/@cells.235 //@matrices.0/@cells.241 //@matrices.0/@cells.247 //@matrices.0/@cells.253" domain="//@domainCollection/@domains.0"/>
+  <concepts xsi:type="pcmmm:Feature" name="First release" myValuedCells="//@matrices.0/@cells.44 //@matrices.0/@cells.50 //@matrices.0/@cells.56 //@matrices.0/@cells.62 //@matrices.0/@cells.68 //@matrices.0/@cells.74 //@matrices.0/@cells.80 //@matrices.0/@cells.86 //@matrices.0/@cells.92 //@matrices.0/@cells.98 //@matrices.0/@cells.104 //@matrices.0/@cells.110 //@matrices.0/@cells.116 //@matrices.0/@cells.122 //@matrices.0/@cells.128 //@matrices.0/@cells.134 //@matrices.0/@cells.140 //@matrices.0/@cells.146 //@matrices.0/@cells.152 //@matrices.0/@cells.158 //@matrices.0/@cells.164 //@matrices.0/@cells.170 //@matrices.0/@cells.176 //@matrices.0/@cells.182 //@matrices.0/@cells.188 //@matrices.0/@cells.194 //@matrices.0/@cells.200 //@matrices.0/@cells.206 //@matrices.0/@cells.212 //@matrices.0/@cells.218 //@matrices.0/@cells.224 //@matrices.0/@cells.230 //@matrices.0/@cells.236 //@matrices.0/@cells.242 //@matrices.0/@cells.248 //@matrices.0/@cells.254" domain="//@domainCollection/@domains.1"/>
+  <concepts xsi:type="pcmmm:Feature" name="Latest release" myValuedCells="//@matrices.0/@cells.45 //@matrices.0/@cells.51 //@matrices.0/@cells.57 //@matrices.0/@cells.63 //@matrices.0/@cells.69 //@matrices.0/@cells.75 //@matrices.0/@cells.81 //@matrices.0/@cells.87 //@matrices.0/@cells.93 //@matrices.0/@cells.99 //@matrices.0/@cells.105 //@matrices.0/@cells.111 //@matrices.0/@cells.117 //@matrices.0/@cells.123 //@matrices.0/@cells.129 //@matrices.0/@cells.135 //@matrices.0/@cells.141 //@matrices.0/@cells.147 //@matrices.0/@cells.153 //@matrices.0/@cells.159 //@matrices.0/@cells.165 //@matrices.0/@cells.171 //@matrices.0/@cells.177 //@matrices.0/@cells.183 //@matrices.0/@cells.189 //@matrices.0/@cells.195 //@matrices.0/@cells.201 //@matrices.0/@cells.207 //@matrices.0/@cells.213 //@matrices.0/@cells.219 //@matrices.0/@cells.225 //@matrices.0/@cells.231 //@matrices.0/@cells.237 //@matrices.0/@cells.243 //@matrices.0/@cells.249 //@matrices.0/@cells.255" domain="//@domainCollection/@domains.2"/>
+  <concepts xsi:type="pcmmm:Feature" name="License" myValuedCells="//@matrices.0/@cells.46 //@matrices.0/@cells.52 //@matrices.0/@cells.58 //@matrices.0/@cells.64 //@matrices.0/@cells.70 //@matrices.0/@cells.76 //@matrices.0/@cells.82 //@matrices.0/@cells.88 //@matrices.0/@cells.94 //@matrices.0/@cells.100 //@matrices.0/@cells.106 //@matrices.0/@cells.112 //@matrices.0/@cells.118 //@matrices.0/@cells.124 //@matrices.0/@cells.130 //@matrices.0/@cells.136 //@matrices.0/@cells.142 //@matrices.0/@cells.148 //@matrices.0/@cells.154 //@matrices.0/@cells.160 //@matrices.0/@cells.166 //@matrices.0/@cells.172 //@matrices.0/@cells.178 //@matrices.0/@cells.184 //@matrices.0/@cells.190 //@matrices.0/@cells.196 //@matrices.0/@cells.202 //@matrices.0/@cells.208 //@matrices.0/@cells.214 //@matrices.0/@cells.220 //@matrices.0/@cells.226 //@matrices.0/@cells.232 //@matrices.0/@cells.238 //@matrices.0/@cells.244 //@matrices.0/@cells.250 //@matrices.0/@cells.256" domain="//@domainCollection/@domains.3"/>
+  <concepts xsi:type="pcmmm:Feature" name="Platform" myValuedCells="//@matrices.0/@cells.47 //@matrices.0/@cells.53 //@matrices.0/@cells.59 //@matrices.0/@cells.65 //@matrices.0/@cells.71 //@matrices.0/@cells.77 //@matrices.0/@cells.83 //@matrices.0/@cells.89 //@matrices.0/@cells.95 //@matrices.0/@cells.101 //@matrices.0/@cells.107 //@matrices.0/@cells.113 //@matrices.0/@cells.119 //@matrices.0/@cells.125 //@matrices.0/@cells.131 //@matrices.0/@cells.137 //@matrices.0/@cells.143 //@matrices.0/@cells.149 //@matrices.0/@cells.155 //@matrices.0/@cells.161 //@matrices.0/@cells.167 //@matrices.0/@cells.173 //@matrices.0/@cells.179 //@matrices.0/@cells.185 //@matrices.0/@cells.191 //@matrices.0/@cells.197 //@matrices.0/@cells.203 //@matrices.0/@cells.209 //@matrices.0/@cells.215 //@matrices.0/@cells.221 //@matrices.0/@cells.227 //@matrices.0/@cells.233 //@matrices.0/@cells.239 //@matrices.0/@cells.245 //@matrices.0/@cells.251 //@matrices.0/@cells.257" domain="//@domainCollection/@domains.4"/>
+  <concepts xsi:type="pcmmm:Feature" name="Chess engine" myValuedCells="//@matrices.0/@cells.48 //@matrices.0/@cells.54 //@matrices.0/@cells.60 //@matrices.0/@cells.66 //@matrices.0/@cells.72 //@matrices.0/@cells.78 //@matrices.0/@cells.84 //@matrices.0/@cells.90 //@matrices.0/@cells.96 //@matrices.0/@cells.102 //@matrices.0/@cells.108 //@matrices.0/@cells.114 //@matrices.0/@cells.120 //@matrices.0/@cells.126 //@matrices.0/@cells.132 //@matrices.0/@cells.138 //@matrices.0/@cells.144 //@matrices.0/@cells.150 //@matrices.0/@cells.156 //@matrices.0/@cells.162 //@matrices.0/@cells.168 //@matrices.0/@cells.174 //@matrices.0/@cells.180 //@matrices.0/@cells.186 //@matrices.0/@cells.192 //@matrices.0/@cells.198 //@matrices.0/@cells.204 //@matrices.0/@cells.210 //@matrices.0/@cells.216 //@matrices.0/@cells.222 //@matrices.0/@cells.228 //@matrices.0/@cells.234 //@matrices.0/@cells.240 //@matrices.0/@cells.246 //@matrices.0/@cells.252 //@matrices.0/@cells.258" domain="//@domainCollection/@domains.5"/>
+  <concepts xsi:type="pcmmm:Product" name="1K ZX Chess" myValuedCells="//@matrices.0/@cells.43 //@matrices.0/@cells.44 //@matrices.0/@cells.45 //@matrices.0/@cells.46 //@matrices.0/@cells.47 //@matrices.0/@cells.48"/>
+  <concepts xsi:type="pcmmm:Product" name="Battle Chess" myValuedCells="//@matrices.0/@cells.49 //@matrices.0/@cells.50 //@matrices.0/@cells.51 //@matrices.0/@cells.52 //@matrices.0/@cells.53 //@matrices.0/@cells.54"/>
+  <concepts xsi:type="pcmmm:Product" name="Battle Chess: Game of Kings" myValuedCells="//@matrices.0/@cells.55 //@matrices.0/@cells.56 //@matrices.0/@cells.57 //@matrices.0/@cells.58 //@matrices.0/@cells.59 //@matrices.0/@cells.60"/>
+  <concepts xsi:type="pcmmm:Product" name="Chess Titans" myValuedCells="//@matrices.0/@cells.61 //@matrices.0/@cells.62 //@matrices.0/@cells.63 //@matrices.0/@cells.64 //@matrices.0/@cells.65 //@matrices.0/@cells.66"/>
+  <concepts xsi:type="pcmmm:Product" name="Fritz (chess)" myValuedCells="//@matrices.0/@cells.67 //@matrices.0/@cells.68 //@matrices.0/@cells.69 //@matrices.0/@cells.70 //@matrices.0/@cells.71 //@matrices.0/@cells.72"/>
+  <concepts xsi:type="pcmmm:Product" name="HIARCS" myValuedCells="//@matrices.0/@cells.73 //@matrices.0/@cells.74 //@matrices.0/@cells.75 //@matrices.0/@cells.76 //@matrices.0/@cells.77 //@matrices.0/@cells.78"/>
+  <concepts xsi:type="pcmmm:Product" name="SMIRF" myValuedCells="//@matrices.0/@cells.79 //@matrices.0/@cells.80 //@matrices.0/@cells.81 //@matrices.0/@cells.82 //@matrices.0/@cells.83 //@matrices.0/@cells.84"/>
+  <concepts xsi:type="pcmmm:Product" name="Junior (chess)" myValuedCells="//@matrices.0/@cells.85 //@matrices.0/@cells.86 //@matrices.0/@cells.87 //@matrices.0/@cells.88 //@matrices.0/@cells.89 //@matrices.0/@cells.90"/>
+  <concepts xsi:type="pcmmm:Product" name="DreamChess" myValuedCells="//@matrices.0/@cells.91 //@matrices.0/@cells.92 //@matrices.0/@cells.93 //@matrices.0/@cells.94 //@matrices.0/@cells.95 //@matrices.0/@cells.96"/>
+  <concepts xsi:type="pcmmm:Product" name="glChess" myValuedCells="//@matrices.0/@cells.97 //@matrices.0/@cells.98 //@matrices.0/@cells.99 //@matrices.0/@cells.100 //@matrices.0/@cells.101 //@matrices.0/@cells.102"/>
+  <concepts xsi:type="pcmmm:Product" name="GNU Chess" myValuedCells="//@matrices.0/@cells.103 //@matrices.0/@cells.104 //@matrices.0/@cells.105 //@matrices.0/@cells.106 //@matrices.0/@cells.107 //@matrices.0/@cells.108"/>
+  <concepts xsi:type="pcmmm:Product" name="xBoard/Winboard" myValuedCells="//@matrices.0/@cells.109 //@matrices.0/@cells.110 //@matrices.0/@cells.111 //@matrices.0/@cells.112 //@matrices.0/@cells.113 //@matrices.0/@cells.114"/>
+  <concepts xsi:type="pcmmm:Product" name="Chessmaster" constraints="//@matrices.0/@cells.228" myValuedCells="//@matrices.0/@cells.115 //@matrices.0/@cells.116 //@matrices.0/@cells.117 //@matrices.0/@cells.118 //@matrices.0/@cells.119 //@matrices.0/@cells.120"/>
+  <concepts xsi:type="pcmmm:Product" name="Shredder (chess)" myValuedCells="//@matrices.0/@cells.121 //@matrices.0/@cells.122 //@matrices.0/@cells.123 //@matrices.0/@cells.124 //@matrices.0/@cells.125 //@matrices.0/@cells.126"/>
+  <concepts xsi:type="pcmmm:Product" name="Wii Chess" myValuedCells="//@matrices.0/@cells.127 //@matrices.0/@cells.128 //@matrices.0/@cells.129 //@matrices.0/@cells.130 //@matrices.0/@cells.131 //@matrices.0/@cells.132"/>
+  <concepts xsi:type="pcmmm:Product" name="Rybka" constraints="//@matrices.0/@cells.138" myValuedCells="//@matrices.0/@cells.133 //@matrices.0/@cells.134 //@matrices.0/@cells.135 //@matrices.0/@cells.136 //@matrices.0/@cells.137 //@matrices.0/@cells.138"/>
+  <concepts xsi:type="pcmmm:Product" name="Lego Chess" myValuedCells="//@matrices.0/@cells.139 //@matrices.0/@cells.140 //@matrices.0/@cells.141 //@matrices.0/@cells.142 //@matrices.0/@cells.143 //@matrices.0/@cells.144"/>
+  <concepts xsi:type="pcmmm:Product" name="pouetChess" myValuedCells="//@matrices.0/@cells.145 //@matrices.0/@cells.146 //@matrices.0/@cells.147 //@matrices.0/@cells.148 //@matrices.0/@cells.149 //@matrices.0/@cells.150"/>
+  <concepts xsi:type="pcmmm:Product" name="pyChess" myValuedCells="//@matrices.0/@cells.151 //@matrices.0/@cells.152 //@matrices.0/@cells.153 //@matrices.0/@cells.154 //@matrices.0/@cells.155 //@matrices.0/@cells.156"/>
+  <concepts xsi:type="pcmmm:Product" name="ChessV" constraints="//@matrices.0/@cells.162" myValuedCells="//@matrices.0/@cells.157 //@matrices.0/@cells.158 //@matrices.0/@cells.159 //@matrices.0/@cells.160 //@matrices.0/@cells.161 //@matrices.0/@cells.162"/>
+  <concepts xsi:type="pcmmm:Product" name="Battle vs. Chess" myValuedCells="//@matrices.0/@cells.163 //@matrices.0/@cells.164 //@matrices.0/@cells.165 //@matrices.0/@cells.166 //@matrices.0/@cells.167 //@matrices.0/@cells.168"/>
+  <concepts xsi:type="pcmmm:Product" name="Microchess" constraints="//@matrices.0/@cells.174" myValuedCells="//@matrices.0/@cells.169 //@matrices.0/@cells.170 //@matrices.0/@cells.171 //@matrices.0/@cells.172 //@matrices.0/@cells.173 //@matrices.0/@cells.174"/>
+  <concepts xsi:type="pcmmm:Product" name="Pure Chess" constraints="//@matrices.0/@cells.180" myValuedCells="//@matrices.0/@cells.175 //@matrices.0/@cells.176 //@matrices.0/@cells.177 //@matrices.0/@cells.178 //@matrices.0/@cells.179 //@matrices.0/@cells.180"/>
+  <concepts xsi:type="pcmmm:Product" name="Silver Star Chess" constraints="//@matrices.0/@cells.186" myValuedCells="//@matrices.0/@cells.181 //@matrices.0/@cells.182 //@matrices.0/@cells.183 //@matrices.0/@cells.184 //@matrices.0/@cells.185 //@matrices.0/@cells.186"/>
+  <concepts xsi:type="pcmmm:Product" name="Power Chess" myValuedCells="//@matrices.0/@cells.187 //@matrices.0/@cells.188 //@matrices.0/@cells.189 //@matrices.0/@cells.190 //@matrices.0/@cells.191 //@matrices.0/@cells.192"/>
+  <concepts xsi:type="pcmmm:Product" name="Chess Crusade" myValuedCells="//@matrices.0/@cells.193 //@matrices.0/@cells.194 //@matrices.0/@cells.195 //@matrices.0/@cells.196 //@matrices.0/@cells.197 //@matrices.0/@cells.198"/>
+  <concepts xsi:type="pcmmm:Product" name="Chess: Secrets" myValuedCells="//@matrices.0/@cells.199 //@matrices.0/@cells.200 //@matrices.0/@cells.201 //@matrices.0/@cells.202 //@matrices.0/@cells.203 //@matrices.0/@cells.204"/>
+  <concepts xsi:type="pcmmm:Product" name="Combat Chess" constraints="//@matrices.0/@cells.228" myValuedCells="//@matrices.0/@cells.205 //@matrices.0/@cells.206 //@matrices.0/@cells.207 //@matrices.0/@cells.208 //@matrices.0/@cells.209 //@matrices.0/@cells.210"/>
+  <concepts xsi:type="pcmmm:Product" name="Wizard Chess" myValuedCells="//@matrices.0/@cells.211 //@matrices.0/@cells.212 //@matrices.0/@cells.213 //@matrices.0/@cells.214 //@matrices.0/@cells.215 //@matrices.0/@cells.216"/>
+  <concepts xsi:type="pcmmm:Product" name="Fritz and Chesster" myValuedCells="//@matrices.0/@cells.217 //@matrices.0/@cells.218 //@matrices.0/@cells.219 //@matrices.0/@cells.220 //@matrices.0/@cells.221 //@matrices.0/@cells.222"/>
+  <concepts xsi:type="pcmmm:Product" name="Chess Advantage" myValuedCells="//@matrices.0/@cells.223 //@matrices.0/@cells.224 //@matrices.0/@cells.225 //@matrices.0/@cells.226 //@matrices.0/@cells.227 //@matrices.0/@cells.228"/>
+  <concepts xsi:type="pcmmm:Product" name="Virtual Chess" myValuedCells="//@matrices.0/@cells.229 //@matrices.0/@cells.230 //@matrices.0/@cells.231 //@matrices.0/@cells.232 //@matrices.0/@cells.233 //@matrices.0/@cells.234"/>
+  <concepts xsi:type="pcmmm:Product" name="Kasparov Chess" myValuedCells="//@matrices.0/@cells.235 //@matrices.0/@cells.236 //@matrices.0/@cells.237 //@matrices.0/@cells.238 //@matrices.0/@cells.239 //@matrices.0/@cells.240"/>
+  <concepts xsi:type="pcmmm:Product" name="Play It Chess Challenger&#xA;Chess Champion" myValuedCells="//@matrices.0/@cells.241 //@matrices.0/@cells.242 //@matrices.0/@cells.243 //@matrices.0/@cells.244 //@matrices.0/@cells.245 //@matrices.0/@cells.246"/>
+  <concepts xsi:type="pcmmm:Product" name="Grand Master Chess" myValuedCells="//@matrices.0/@cells.247 //@matrices.0/@cells.248 //@matrices.0/@cells.249 //@matrices.0/@cells.250 //@matrices.0/@cells.251 //@matrices.0/@cells.252"/>
+  <concepts xsi:type="pcmmm:Product" name="Master Chess" myValuedCells="//@matrices.0/@cells.253 //@matrices.0/@cells.254 //@matrices.0/@cells.255 //@matrices.0/@cells.256 //@matrices.0/@cells.257 //@matrices.0/@cells.258"/>
+  <concepts xsi:type="pcmmm:Feature" name="3D Graphics/Animated pieces mode" myValuedCells="//@matrices.1/@cells.40 //@matrices.1/@cells.43 //@matrices.1/@cells.46 //@matrices.1/@cells.49 //@matrices.1/@cells.52 //@matrices.1/@cells.55 //@matrices.1/@cells.58 //@matrices.1/@cells.61 //@matrices.1/@cells.64 //@matrices.1/@cells.67 //@matrices.1/@cells.70 //@matrices.1/@cells.73 //@matrices.1/@cells.76 //@matrices.1/@cells.79 //@matrices.1/@cells.82 //@matrices.1/@cells.85 //@matrices.1/@cells.88 //@matrices.1/@cells.91 //@matrices.1/@cells.94 //@matrices.1/@cells.97 //@matrices.1/@cells.100 //@matrices.1/@cells.103 //@matrices.1/@cells.106 //@matrices.1/@cells.109 //@matrices.1/@cells.112 //@matrices.1/@cells.115 //@matrices.1/@cells.118 //@matrices.1/@cells.121 //@matrices.1/@cells.124 //@matrices.1/@cells.127 //@matrices.1/@cells.130 //@matrices.1/@cells.133 //@matrices.1/@cells.136 //@matrices.1/@cells.139 //@matrices.1/@cells.142 //@matrices.1/@cells.145" domain="//@domainCollection/@domains.6"/>
+  <concepts xsi:type="pcmmm:Feature" name="Variants (rules, pieces, boards)" myValuedCells="//@matrices.1/@cells.41 //@matrices.1/@cells.44 //@matrices.1/@cells.47 //@matrices.1/@cells.50 //@matrices.1/@cells.53 //@matrices.1/@cells.56 //@matrices.1/@cells.59 //@matrices.1/@cells.62 //@matrices.1/@cells.65 //@matrices.1/@cells.68 //@matrices.1/@cells.71 //@matrices.1/@cells.74 //@matrices.1/@cells.77 //@matrices.1/@cells.80 //@matrices.1/@cells.83 //@matrices.1/@cells.86 //@matrices.1/@cells.89 //@matrices.1/@cells.92 //@matrices.1/@cells.95 //@matrices.1/@cells.98 //@matrices.1/@cells.101 //@matrices.1/@cells.104 //@matrices.1/@cells.107 //@matrices.1/@cells.110 //@matrices.1/@cells.113 //@matrices.1/@cells.116 //@matrices.1/@cells.119 //@matrices.1/@cells.122 //@matrices.1/@cells.125 //@matrices.1/@cells.128 //@matrices.1/@cells.131 //@matrices.1/@cells.134 //@matrices.1/@cells.137 //@matrices.1/@cells.140 //@matrices.1/@cells.143 //@matrices.1/@cells.146" domain="//@domainCollection/@domains.7"/>
+  <concepts xsi:type="pcmmm:Feature" name="Multiplayer" myValuedCells="//@matrices.1/@cells.42 //@matrices.1/@cells.45 //@matrices.1/@cells.48 //@matrices.1/@cells.51 //@matrices.1/@cells.54 //@matrices.1/@cells.57 //@matrices.1/@cells.60 //@matrices.1/@cells.63 //@matrices.1/@cells.66 //@matrices.1/@cells.69 //@matrices.1/@cells.72 //@matrices.1/@cells.75 //@matrices.1/@cells.78 //@matrices.1/@cells.81 //@matrices.1/@cells.84 //@matrices.1/@cells.87 //@matrices.1/@cells.90 //@matrices.1/@cells.93 //@matrices.1/@cells.96 //@matrices.1/@cells.99 //@matrices.1/@cells.102 //@matrices.1/@cells.105 //@matrices.1/@cells.108 //@matrices.1/@cells.111 //@matrices.1/@cells.114 //@matrices.1/@cells.117 //@matrices.1/@cells.120 //@matrices.1/@cells.123 //@matrices.1/@cells.126 //@matrices.1/@cells.129 //@matrices.1/@cells.132 //@matrices.1/@cells.135 //@matrices.1/@cells.138 //@matrices.1/@cells.141 //@matrices.1/@cells.144 //@matrices.1/@cells.147" domain="//@domainCollection/@domains.8"/>
+  <concepts xsi:type="pcmmm:Product" name="1K ZX Chess" myValuedCells="//@matrices.1/@cells.40 //@matrices.1/@cells.41 //@matrices.1/@cells.42"/>
+  <concepts xsi:type="pcmmm:Product" name="Battle Chess" myValuedCells="//@matrices.1/@cells.43 //@matrices.1/@cells.44 //@matrices.1/@cells.45"/>
+  <concepts xsi:type="pcmmm:Product" name="Battle Chess: Game of Kings" myValuedCells="//@matrices.1/@cells.46 //@matrices.1/@cells.47 //@matrices.1/@cells.48"/>
+  <concepts xsi:type="pcmmm:Product" name="Chess Titans" myValuedCells="//@matrices.1/@cells.49 //@matrices.1/@cells.50 //@matrices.1/@cells.51"/>
+  <concepts xsi:type="pcmmm:Product" name="Fritz (chess)" myValuedCells="//@matrices.1/@cells.52 //@matrices.1/@cells.53 //@matrices.1/@cells.54"/>
+  <concepts xsi:type="pcmmm:Product" name="HIARCS" myValuedCells="//@matrices.1/@cells.55 //@matrices.1/@cells.56 //@matrices.1/@cells.57"/>
+  <concepts xsi:type="pcmmm:Product" name="SMIRF" myValuedCells="//@matrices.1/@cells.58 //@matrices.1/@cells.59 //@matrices.1/@cells.60"/>
+  <concepts xsi:type="pcmmm:Product" name="Junior (chess)" myValuedCells="//@matrices.1/@cells.61 //@matrices.1/@cells.62 //@matrices.1/@cells.63"/>
+  <concepts xsi:type="pcmmm:Product" name="DreamChess" myValuedCells="//@matrices.1/@cells.64 //@matrices.1/@cells.65 //@matrices.1/@cells.66"/>
+  <concepts xsi:type="pcmmm:Product" name="glChess" myValuedCells="//@matrices.1/@cells.67 //@matrices.1/@cells.68 //@matrices.1/@cells.69"/>
+  <concepts xsi:type="pcmmm:Product" name="GNU Chess" myValuedCells="//@matrices.1/@cells.70 //@matrices.1/@cells.71 //@matrices.1/@cells.72"/>
+  <concepts xsi:type="pcmmm:Product" name="xBoard/Winboard" myValuedCells="//@matrices.1/@cells.73 //@matrices.1/@cells.74 //@matrices.1/@cells.75"/>
+  <concepts xsi:type="pcmmm:Product" name="Chessmaster" myValuedCells="//@matrices.1/@cells.76 //@matrices.1/@cells.77 //@matrices.1/@cells.78"/>
+  <concepts xsi:type="pcmmm:Product" name="Shredder (chess)" myValuedCells="//@matrices.1/@cells.79 //@matrices.1/@cells.80 //@matrices.1/@cells.81"/>
+  <concepts xsi:type="pcmmm:Product" name="Wii Chess" myValuedCells="//@matrices.1/@cells.82 //@matrices.1/@cells.83 //@matrices.1/@cells.84"/>
+  <concepts xsi:type="pcmmm:Product" name="Rybka" myValuedCells="//@matrices.1/@cells.85 //@matrices.1/@cells.86 //@matrices.1/@cells.87"/>
+  <concepts xsi:type="pcmmm:Product" name="Lego Chess" myValuedCells="//@matrices.1/@cells.88 //@matrices.1/@cells.89 //@matrices.1/@cells.90"/>
+  <concepts xsi:type="pcmmm:Product" name="pouetChess" myValuedCells="//@matrices.1/@cells.91 //@matrices.1/@cells.92 //@matrices.1/@cells.93"/>
+  <concepts xsi:type="pcmmm:Product" name="pyChess" myValuedCells="//@matrices.1/@cells.94 //@matrices.1/@cells.95 //@matrices.1/@cells.96"/>
+  <concepts xsi:type="pcmmm:Product" name="ChessV" myValuedCells="//@matrices.1/@cells.97 //@matrices.1/@cells.98 //@matrices.1/@cells.99"/>
+  <concepts xsi:type="pcmmm:Product" name="Battle vs. Chess" myValuedCells="//@matrices.1/@cells.100 //@matrices.1/@cells.101 //@matrices.1/@cells.102"/>
+  <concepts xsi:type="pcmmm:Product" name="Microchess" myValuedCells="//@matrices.1/@cells.103 //@matrices.1/@cells.104 //@matrices.1/@cells.105"/>
+  <concepts xsi:type="pcmmm:Product" name="Pure Chess" myValuedCells="//@matrices.1/@cells.106 //@matrices.1/@cells.107 //@matrices.1/@cells.108"/>
+  <concepts xsi:type="pcmmm:Product" name="Silver Star Chess" myValuedCells="//@matrices.1/@cells.109 //@matrices.1/@cells.110 //@matrices.1/@cells.111"/>
+  <concepts xsi:type="pcmmm:Product" name="Power Chess" myValuedCells="//@matrices.1/@cells.112 //@matrices.1/@cells.113 //@matrices.1/@cells.114"/>
+  <concepts xsi:type="pcmmm:Product" name="Chess Crusade" myValuedCells="//@matrices.1/@cells.115 //@matrices.1/@cells.116 //@matrices.1/@cells.117"/>
+  <concepts xsi:type="pcmmm:Product" name="Chess: Secrets" myValuedCells="//@matrices.1/@cells.118 //@matrices.1/@cells.119 //@matrices.1/@cells.120"/>
+  <concepts xsi:type="pcmmm:Product" name="Combat Chess" myValuedCells="//@matrices.1/@cells.121 //@matrices.1/@cells.122 //@matrices.1/@cells.123"/>
+  <concepts xsi:type="pcmmm:Product" name="Wizard Chess" myValuedCells="//@matrices.1/@cells.124 //@matrices.1/@cells.125 //@matrices.1/@cells.126"/>
+  <concepts xsi:type="pcmmm:Product" name="Fritz and Chesster" myValuedCells="//@matrices.1/@cells.127 //@matrices.1/@cells.128 //@matrices.1/@cells.129"/>
+  <concepts xsi:type="pcmmm:Product" name="Chess Advantage" myValuedCells="//@matrices.1/@cells.130 //@matrices.1/@cells.131 //@matrices.1/@cells.132"/>
+  <concepts xsi:type="pcmmm:Product" name="Virtual Chess" myValuedCells="//@matrices.1/@cells.133 //@matrices.1/@cells.134 //@matrices.1/@cells.135"/>
+  <concepts xsi:type="pcmmm:Product" name="Kasparov Chess" myValuedCells="//@matrices.1/@cells.136 //@matrices.1/@cells.137 //@matrices.1/@cells.138"/>
+  <concepts xsi:type="pcmmm:Product" name="Play It Chess Challenger&#xA;Chess Champion" myValuedCells="//@matrices.1/@cells.139 //@matrices.1/@cells.140 //@matrices.1/@cells.141"/>
+  <concepts xsi:type="pcmmm:Product" name="Grand Master Chess" myValuedCells="//@matrices.1/@cells.142 //@matrices.1/@cells.143 //@matrices.1/@cells.144"/>
+  <concepts xsi:type="pcmmm:Product" name="Master Chess" myValuedCells="//@matrices.1/@cells.145 //@matrices.1/@cells.146 //@matrices.1/@cells.147"/>
+  <concepts xsi:type="pcmmm:Feature" name="David Horne" constraints="//@matrices.0/@cells.43" domain="//@domainCollection/@domains.9"/>
+  <concepts xsi:type="pcmmm:Feature" name="Commercial" constraints="//@matrices.0/@cells.46 //@matrices.0/@cells.52 //@matrices.0/@cells.58 //@matrices.0/@cells.64 //@matrices.0/@cells.70 //@matrices.0/@cells.76 //@matrices.0/@cells.82 //@matrices.0/@cells.88 //@matrices.0/@cells.118 //@matrices.0/@cells.124 //@matrices.0/@cells.130 //@matrices.0/@cells.136 //@matrices.0/@cells.142 //@matrices.0/@cells.166 //@matrices.0/@cells.172 //@matrices.0/@cells.178 //@matrices.0/@cells.184 //@matrices.0/@cells.190 //@matrices.0/@cells.196 //@matrices.0/@cells.226 //@matrices.0/@cells.232 //@matrices.0/@cells.238 //@matrices.0/@cells.244 //@matrices.0/@cells.250" domain="//@domainCollection/@domains.10"/>
+  <concepts xsi:type="pcmmm:Feature" name="ZX Spectrum" constraints="//@matrices.0/@cells.47" domain="//@domainCollection/@domains.11"/>
+  <concepts xsi:type="pcmmm:Feature" name="C64" constraints="//@matrices.0/@cells.49" domain="//@domainCollection/@domains.12"/>
+  <concepts xsi:type="pcmmm:Feature" name="Interplay&#xA;Silicon &amp; Synapse" constraints="//@matrices.0/@cells.49" domain="//@domainCollection/@domains.13"/>
+  <concepts xsi:type="pcmmm:Feature" name="Amiga" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.14"/>
+  <concepts xsi:type="pcmmm:Feature" name="3DO" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.15"/>
+  <concepts xsi:type="pcmmm:Feature" name="Acorn Archimedes" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.16"/>
+  <concepts xsi:type="pcmmm:Feature" name="Amiga CD32" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.17"/>
+  <concepts xsi:type="pcmmm:Feature" name="Amiga CDTV" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.18"/>
+  <concepts xsi:type="pcmmm:Feature" name="Apple IIGS" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.19"/>
+  <concepts xsi:type="pcmmm:Feature" name="Apple IIe" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.20"/>
+  <concepts xsi:type="pcmmm:Feature" name="Atari ST" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.21"/>
+  <concepts xsi:type="pcmmm:Feature" name="Commodore 64" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.22"/>
+  <concepts xsi:type="pcmmm:Feature" name="DOS" constraints="//@matrices.0/@cells.53 //@matrices.0/@cells.143" domain="//@domainCollection/@domains.23"/>
+  <concepts xsi:type="pcmmm:Feature" name="FM Towns" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.24"/>
+  <concepts xsi:type="pcmmm:Feature" name="NES" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.25"/>
+  <concepts xsi:type="pcmmm:Feature" name="Mac OS" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.26"/>
+  <concepts xsi:type="pcmmm:Feature" name="PC-98" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.27"/>
+  <concepts xsi:type="pcmmm:Feature" name="Sharp X68000" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.28"/>
+  <concepts xsi:type="pcmmm:Feature" name="Windows 3.x" constraints="//@matrices.0/@cells.53" domain="//@domainCollection/@domains.29"/>
+  <concepts xsi:type="pcmmm:Feature" name="Interplay" constraints="//@matrices.0/@cells.55" domain="//@domainCollection/@domains.30"/>
+  <concepts xsi:type="pcmmm:Feature" name="TBA" constraints="//@matrices.0/@cells.56 //@matrices.0/@cells.194" domain="//@domainCollection/@domains.31"/>
+  <concepts xsi:type="pcmmm:Feature" name="Windows Vista" constraints="//@matrices.0/@cells.59 //@matrices.0/@cells.65 //@matrices.0/@cells.71 //@matrices.0/@cells.221" domain="//@domainCollection/@domains.32"/>
+  <concepts xsi:type="pcmmm:Feature" name="Windows 7" constraints="//@matrices.0/@cells.59 //@matrices.0/@cells.65 //@matrices.0/@cells.71" domain="//@domainCollection/@domains.33"/>
+  <concepts xsi:type="pcmmm:Feature" name="Oberon Games" constraints="//@matrices.0/@cells.61" domain="//@domainCollection/@domains.34"/>
+  <concepts xsi:type="pcmmm:Feature" name="Chessbase" constraints="//@matrices.0/@cells.67 //@matrices.0/@cells.73 //@matrices.0/@cells.217" domain="//@domainCollection/@domains.35"/>
+  <concepts xsi:type="pcmmm:Feature" name="Windows XP" constraints="//@matrices.0/@cells.71 //@matrices.0/@cells.221" domain="//@domainCollection/@domains.36"/>
+  <concepts xsi:type="pcmmm:Feature" name="PlayStation 3" constraints="//@matrices.0/@cells.71 //@matrices.0/@cells.167 //@matrices.0/@cells.179" domain="//@domainCollection/@domains.37"/>
+  <concepts xsi:type="pcmmm:Feature" name="Wii" constraints="//@matrices.0/@cells.71 //@matrices.0/@cells.167 //@matrices.0/@cells.197" domain="//@domainCollection/@domains.38"/>
+  <concepts xsi:type="pcmmm:Feature" name="Nintendo DS" constraints="//@matrices.0/@cells.71 //@matrices.0/@cells.167 //@matrices.0/@cells.197 //@matrices.0/@cells.221" domain="//@domainCollection/@domains.39"/>
+  <concepts xsi:type="pcmmm:Feature" name="Deep Fritz" constraints="//@matrices.0/@cells.72 //@matrices.0/@cells.78 //@matrices.0/@cells.126 //@matrices.0/@cells.222" domain="//@domainCollection/@domains.40"/>
+  <concepts xsi:type="pcmmm:Feature" name="Microsoft Windows" constraints="//@matrices.0/@cells.77 //@matrices.0/@cells.83 //@matrices.0/@cells.125 //@matrices.0/@cells.161 //@matrices.0/@cells.167 //@matrices.0/@cells.191 //@matrices.0/@cells.197 //@matrices.0/@cells.227 //@matrices.0/@cells.233 //@matrices.0/@cells.239 //@matrices.0/@cells.251" domain="//@domainCollection/@domains.41"/>
+  <concepts xsi:type="pcmmm:Feature" name="Mac OS X" constraints="//@matrices.0/@cells.77 //@matrices.0/@cells.115 //@matrices.0/@cells.125 //@matrices.0/@cells.167" domain="//@domainCollection/@domains.42"/>
+  <concepts xsi:type="pcmmm:Feature" name="Windows Mobile" constraints="//@matrices.0/@cells.77" domain="//@domainCollection/@domains.43"/>
+  <concepts xsi:type="pcmmm:Feature" name="Freescale DragonBall" constraints="//@matrices.0/@cells.77" domain="//@domainCollection/@domains.44"/>
+  <concepts xsi:type="pcmmm:Feature" name="ARM-based Palm OS" constraints="//@matrices.0/@cells.77" domain="//@domainCollection/@domains.45"/>
+  <concepts xsi:type="pcmmm:Feature" name="iPhone" constraints="//@matrices.0/@cells.77 //@matrices.0/@cells.125" domain="//@domainCollection/@domains.46"/>
+  <concepts xsi:type="pcmmm:Feature" name="iPod Touch" constraints="//@matrices.0/@cells.77" domain="//@domainCollection/@domains.47"/>
+  <concepts xsi:type="pcmmm:Feature" name="Reinhard Scharnagl" constraints="//@matrices.0/@cells.79" domain="//@domainCollection/@domains.48"/>
+  <concepts xsi:type="pcmmm:Feature" name="Amir Ban" constraints="//@matrices.0/@cells.85" domain="//@domainCollection/@domains.49"/>
+  <concepts xsi:type="pcmmm:Feature" name="Shay Bushinsky" constraints="//@matrices.0/@cells.85" domain="//@domainCollection/@domains.50"/>
+  <concepts xsi:type="pcmmm:Feature" name="Deep Junior" constraints="//@matrices.0/@cells.90" domain="//@domainCollection/@domains.51"/>
+  <concepts xsi:type="pcmmm:Feature" name="Free" constraints="//@matrices.0/@cells.94 //@matrices.0/@cells.100 //@matrices.0/@cells.106" domain="//@domainCollection/@domains.52"/>
+  <concepts xsi:type="pcmmm:Feature" name="Robert Ancell" constraints="//@matrices.0/@cells.97" domain="//@domainCollection/@domains.53"/>
+  <concepts xsi:type="pcmmm:Feature" name="GNOME Team" constraints="//@matrices.0/@cells.97" domain="//@domainCollection/@domains.54"/>
+  <concepts xsi:type="pcmmm:Feature" name="Unix-like" constraints="//@matrices.0/@cells.101 //@matrices.0/@cells.107 //@matrices.0/@cells.155" domain="//@domainCollection/@domains.55"/>
+  <concepts xsi:type="pcmmm:Feature" name="GNU Project" constraints="//@matrices.0/@cells.103" domain="//@domainCollection/@domains.56"/>
+  <concepts xsi:type="pcmmm:Feature" name="third-party" constraints="//@matrices.0/@cells.108 //@matrices.0/@cells.114 //@matrices.0/@cells.156" domain="//@domainCollection/@domains.57"/>
+  <concepts xsi:type="pcmmm:Feature" name="Tim Mann" constraints="//@matrices.0/@cells.109" domain="//@domainCollection/@domains.58"/>
+  <concepts xsi:type="pcmmm:Feature" name="Free GPL" constraints="//@matrices.0/@cells.112" domain="//@domainCollection/@domains.59"/>
+  <concepts xsi:type="pcmmm:Feature" name="Unix-like X11 Microsoft Windows" constraints="//@matrices.0/@cells.113" domain="//@domainCollection/@domains.60"/>
+  <concepts xsi:type="pcmmm:Feature" name="Ubisoft Romania&#xA;Zonic Limited" constraints="//@matrices.0/@cells.115" domain="//@domainCollection/@domains.61"/>
+  <concepts xsi:type="pcmmm:Feature" name="MS Windows" constraints="//@matrices.0/@cells.119" domain="//@domainCollection/@domains.62"/>
+  <concepts xsi:type="pcmmm:Feature" name="MS-DOS" constraints="//@matrices.0/@cells.119" domain="//@domainCollection/@domains.63"/>
+  <concepts xsi:type="pcmmm:Feature" name="XBLA" constraints="//@matrices.0/@cells.119" domain="//@domainCollection/@domains.64"/>
+  <concepts xsi:type="pcmmm:Feature" name="PlayStation Xbox 360" constraints="//@matrices.0/@cells.119" domain="//@domainCollection/@domains.65"/>
+  <concepts xsi:type="pcmmm:Feature" name="PSP" constraints="//@matrices.0/@cells.119" domain="//@domainCollection/@domains.66"/>
+  <concepts xsi:type="pcmmm:Feature" name="PS2" constraints="//@matrices.0/@cells.119" domain="//@domainCollection/@domains.67"/>
+  <concepts xsi:type="pcmmm:Feature" name="Stefan Meyer-Kahlen" constraints="//@matrices.0/@cells.121" domain="//@domainCollection/@domains.68"/>
+  <concepts xsi:type="pcmmm:Feature" name="Linux" constraints="//@matrices.0/@cells.125" domain="//@domainCollection/@domains.69"/>
+  <concepts xsi:type="pcmmm:Feature" name="iPad" constraints="//@matrices.0/@cells.125 //@matrices.0/@cells.197" domain="//@domainCollection/@domains.70"/>
+  <concepts xsi:type="pcmmm:Feature" name="Android" constraints="//@matrices.0/@cells.125" domain="//@domainCollection/@domains.71"/>
+  <concepts xsi:type="pcmmm:Feature" name="Nintendo" constraints="//@matrices.0/@cells.127" domain="//@domainCollection/@domains.72"/>
+  <concepts xsi:type="pcmmm:Feature" name="Nintendo Wii" constraints="//@matrices.0/@cells.131" domain="//@domainCollection/@domains.73"/>
+  <concepts xsi:type="pcmmm:Feature" name="Loop Express" constraints="//@matrices.0/@cells.132" domain="//@domainCollection/@domains.74"/>
+  <concepts xsi:type="pcmmm:Feature" name="Vasik Rajlich" constraints="//@matrices.0/@cells.133" domain="//@domainCollection/@domains.75"/>
+  <concepts xsi:type="pcmmm:Feature" name="PC" constraints="//@matrices.0/@cells.143" domain="//@domainCollection/@domains.76"/>
+  <concepts xsi:type="pcmmm:Feature" name="PyChess Project" constraints="//@matrices.0/@cells.151" domain="//@domainCollection/@domains.77"/>
+  <concepts xsi:type="pcmmm:Feature" name="GPL" constraints="//@matrices.0/@cells.154 //@matrices.0/@cells.160" domain="//@domainCollection/@domains.78"/>
+  <concepts xsi:type="pcmmm:Feature" name="Gregory Strong" constraints="//@matrices.0/@cells.157" domain="//@domainCollection/@domains.79"/>
+  <concepts xsi:type="pcmmm:Feature" name="Targem Games&#xA;Zuxxez Entertainment" constraints="//@matrices.0/@cells.163" domain="//@domainCollection/@domains.80"/>
+  <concepts xsi:type="pcmmm:Feature" name="PlayStation Portable" constraints="//@matrices.0/@cells.167" domain="//@domainCollection/@domains.81"/>
+  <concepts xsi:type="pcmmm:Feature" name="Xbox 360" constraints="//@matrices.0/@cells.167" domain="//@domainCollection/@domains.82"/>
+  <concepts xsi:type="pcmmm:Feature" name="Peter R. Jennings" constraints="//@matrices.0/@cells.169" domain="//@domainCollection/@domains.83"/>
+  <concepts xsi:type="pcmmm:Feature" name="KIM-1" constraints="//@matrices.0/@cells.173" domain="//@domainCollection/@domains.84"/>
+  <concepts xsi:type="pcmmm:Feature" name="VooFoo Studios" constraints="//@matrices.0/@cells.175" domain="//@domainCollection/@domains.85"/>
+  <concepts xsi:type="pcmmm:Feature" name="PlayStation Vita" constraints="//@matrices.0/@cells.179" domain="//@domainCollection/@domains.86"/>
+  <concepts xsi:type="pcmmm:Feature" name="AgeTec" constraints="//@matrices.0/@cells.181" domain="//@domainCollection/@domains.87"/>
+  <concepts xsi:type="pcmmm:Feature" name="Wiiware" constraints="//@matrices.0/@cells.185" domain="//@domainCollection/@domains.88"/>
+  <concepts xsi:type="pcmmm:Feature" name="Sierra Entertainment" constraints="//@matrices.0/@cells.187" domain="//@domainCollection/@domains.89"/>
+  <concepts xsi:type="pcmmm:Feature" name="WChess" constraints="//@matrices.0/@cells.192" domain="//@domainCollection/@domains.90"/>
+  <concepts xsi:type="pcmmm:Feature" name="Slam Games" constraints="//@matrices.0/@cells.193" domain="//@domainCollection/@domains.91"/>
+  <concepts xsi:type="pcmmm:Feature" name="PlayStation 2" constraints="//@matrices.0/@cells.197" domain="//@domainCollection/@domains.92"/>
+  <concepts xsi:type="pcmmm:Feature" name="Mac" constraints="//@matrices.0/@cells.221" domain="//@domainCollection/@domains.93"/>
+  <concepts xsi:type="pcmmm:Feature" name="Grandmaster Chess" constraints="//@matrices.0/@cells.228" domain="//@domainCollection/@domains.94"/>
+  <concepts xsi:type="pcmmm:Feature" name="Microsoft Windows 3.11" constraints="//@matrices.0/@cells.233" domain="//@domainCollection/@domains.95"/>
+  <concepts xsi:type="pcmmm:Feature" name="Playstation" constraints="//@matrices.0/@cells.239" domain="//@domainCollection/@domains.96"/>
+  <concepts xsi:type="pcmmm:Feature" name="System 3" constraints="//@matrices.0/@cells.241" domain="//@domainCollection/@domains.97"/>
+  <concepts xsi:type="pcmmm:Feature" name="Playstation 2" constraints="//@matrices.0/@cells.245" domain="//@domainCollection/@domains.98"/>
+  <concepts xsi:type="pcmmm:Feature" name="Mastertronic" constraints="//@matrices.0/@cells.247" domain="//@domainCollection/@domains.99"/>
+  <concepts xsi:type="pcmmm:Feature" name="Chess960" constraints="//@matrices.1/@cells.59" domain="//@domainCollection/@domains.100"/>
+  <concepts xsi:type="pcmmm:Feature" name="Bird Chess" constraints="//@matrices.1/@cells.59" domain="//@domainCollection/@domains.101"/>
+  <concepts xsi:type="pcmmm:Feature" name="Capablanca Chess" constraints="//@matrices.1/@cells.59" domain="//@domainCollection/@domains.102"/>
+  <concepts xsi:type="pcmmm:Feature" name="Capablanca Random Chess" constraints="//@matrices.1/@cells.59" domain="//@domainCollection/@domains.103"/>
+  <concepts xsi:type="pcmmm:Feature" name="Carrera Chess" constraints="//@matrices.1/@cells.59" domain="//@domainCollection/@domains.104"/>
+  <concepts xsi:type="pcmmm:Feature" name="Embassy Chess" constraints="//@matrices.1/@cells.59" domain="//@domainCollection/@domains.105"/>
+  <concepts xsi:type="pcmmm:Feature" name="Janus Chess" constraints="//@matrices.1/@cells.59" domain="//@domainCollection/@domains.106"/>
+  <concepts xsi:type="pcmmm:Feature" name="Knightmate" constraints="//@matrices.1/@cells.71 //@matrices.1/@cells.74" domain="//@domainCollection/@domains.107"/>
+  <concepts xsi:type="pcmmm:Feature" name="Capablanca" constraints="//@matrices.1/@cells.71 //@matrices.1/@cells.74" domain="//@domainCollection/@domains.108"/>
+  <concepts xsi:type="pcmmm:Feature" name="Gothic Chess" constraints="//@matrices.1/@cells.71 //@matrices.1/@cells.74" domain="//@domainCollection/@domains.109"/>
+  <concepts xsi:type="pcmmm:Feature" name="Shatranj" constraints="//@matrices.1/@cells.71 //@matrices.1/@cells.74" domain="//@domainCollection/@domains.110"/>
+  <concepts xsi:type="pcmmm:Feature" name="Courier Chess" constraints="//@matrices.1/@cells.71 //@matrices.1/@cells.74" domain="//@domainCollection/@domains.111"/>
+  <concepts xsi:type="pcmmm:Feature" name="Cylinder chess" constraints="//@matrices.1/@cells.71 //@matrices.1/@cells.74" domain="//@domainCollection/@domains.112"/>
+  <concepts xsi:type="pcmmm:Feature" name="Berolina Chess under fairymax" constraints="//@matrices.1/@cells.71 //@matrices.1/@cells.74" domain="//@domainCollection/@domains.113"/>
+  <domainCollection>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.44/@interpretation //@matrices.0/@cells.50/@interpretation //@matrices.0/@cells.62/@interpretation //@matrices.0/@cells.68/@interpretation //@matrices.0/@cells.74/@interpretation //@matrices.0/@cells.86/@interpretation //@matrices.0/@cells.98/@interpretation //@matrices.0/@cells.116/@interpretation //@matrices.0/@cells.122/@interpretation //@matrices.0/@cells.128/@interpretation //@matrices.0/@cells.134/@interpretation //@matrices.0/@cells.140/@interpretation //@matrices.0/@cells.152/@interpretation //@matrices.0/@cells.158/@interpretation //@matrices.0/@cells.164/@interpretation //@matrices.0/@cells.170/@interpretation //@matrices.0/@cells.176/@interpretation //@matrices.0/@cells.182/@interpretation //@matrices.0/@cells.188/@interpretation //@matrices.0/@cells.218/@interpretation //@matrices.0/@cells.224/@interpretation //@matrices.0/@cells.236/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.51/@interpretation //@matrices.0/@cells.69/@interpretation //@matrices.0/@cells.75/@interpretation //@matrices.0/@cells.81/@interpretation //@matrices.0/@cells.105/@interpretation //@matrices.0/@cells.111/@interpretation //@matrices.0/@cells.117/@interpretation //@matrices.0/@cells.123/@interpretation //@matrices.0/@cells.189/@interpretation //@matrices.0/@cells.195/@interpretation //@matrices.0/@cells.219/@interpretation //@matrices.0/@cells.225/@interpretation //@matrices.0/@cells.231/@interpretation //@matrices.0/@cells.249/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.46/@interpretation //@matrices.0/@cells.52/@interpretation //@matrices.0/@cells.58/@interpretation //@matrices.0/@cells.64/@interpretation //@matrices.0/@cells.70/@interpretation //@matrices.0/@cells.76/@interpretation //@matrices.0/@cells.82/@interpretation //@matrices.0/@cells.88/@interpretation //@matrices.0/@cells.118/@interpretation //@matrices.0/@cells.124/@interpretation //@matrices.0/@cells.130/@interpretation //@matrices.0/@cells.136/@interpretation //@matrices.0/@cells.142/@interpretation //@matrices.0/@cells.166/@interpretation //@matrices.0/@cells.172/@interpretation //@matrices.0/@cells.178/@interpretation //@matrices.0/@cells.184/@interpretation //@matrices.0/@cells.190/@interpretation //@matrices.0/@cells.196/@interpretation //@matrices.0/@cells.226/@interpretation //@matrices.0/@cells.232/@interpretation //@matrices.0/@cells.238/@interpretation //@matrices.0/@cells.244/@interpretation //@matrices.0/@cells.250/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.72/@interpretation //@matrices.0/@cells.78/@interpretation //@matrices.0/@cells.126/@interpretation //@matrices.0/@cells.222/@interpretation //@matrices.0/@cells.90/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.40/@interpretation //@matrices.1/@cells.43/@interpretation //@matrices.1/@cells.46/@interpretation //@matrices.1/@cells.49/@interpretation //@matrices.1/@cells.70/@interpretation //@matrices.1/@cells.73/@interpretation //@matrices.1/@cells.100/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.59/@interpretation/@contraints.1 //@matrices.1/@cells.59/@interpretation/@contraints.4 //@matrices.1/@cells.71/@interpretation/@condition/@contraints.3 //@matrices.1/@cells.74/@interpretation/@condition/@contraints.3 //@matrices.1/@cells.71/@interpretation/@condition/@contraints.4 //@matrices.1/@cells.74/@interpretation/@condition/@contraints.4 //@matrices.1/@cells.71/@interpretation/@condition/@contraints.1/@contraints.1 //@matrices.1/@cells.74/@interpretation/@condition/@contraints.1/@contraints.1"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.87/@interpretation //@matrices.1/@cells.90/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+  </domainCollection>
+</pcmmm:PCM>

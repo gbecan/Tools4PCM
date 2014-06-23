@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PCM-reader
+Bundle-SymbolicName: PCM-reader
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: PCM-reader.jar,
+ lib/model.jar
+Export-Package: .,
+ model,
+ pcmmm,
+ pcmmm.impl,
+ pcmmm.util
+Require-Bundle: org.eclipse.emf.common,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ org.eclipse.emf.ecore.edit;bundle-version="2.8.0"

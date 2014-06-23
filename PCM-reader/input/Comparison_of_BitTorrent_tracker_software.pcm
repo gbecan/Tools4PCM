@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="" id="_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: programming language" verbatim="Programming Language" rowspan="1" column="1" colspan="1" concept="//@concepts.0"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: license" verbatim="License" rowspan="1" column="2" colspan="1" concept="//@concepts.1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: operating system support" verbatim="Operating System Support" rowspan="1" column="3" colspan="1" concept="//@concepts.2"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: description" verbatim="Description" rowspan="1" column="4" colspan="1" concept="//@concepts.3"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: tracker" verbatim="Tracker" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: mldonkey" verbatim="MLDonkey" row="1" rowspan="1" colspan="1" concept="//@concepts.4"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: ocaml" verbatim="OCaml" row="1" rowspan="1" column="1" colspan="1" concepts="//@concepts.12" myHeaderProducts="//@concepts.4" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="OCaml" verbatim="OCaml" concept="//@concepts.12"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: gpl" verbatim="GPL" row="1" rowspan="1" column="2" colspan="1" concepts="//@concepts.13" myHeaderProducts="//@concepts.4" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.13"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: windows, os x, unix-like, morph os" verbatim="Windows, OS X, Unix-like, Morph OS" row="1" rowspan="1" column="3" colspan="1" concepts="//@concepts.14 //@concepts.15 //@concepts.16 //@concepts.17" myHeaderProducts="//@concepts.4" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows" verbatim="Windows" concept="//@concepts.14"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="OS X" verbatim="OS X" concept="//@concepts.15"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Unix-like" verbatim="Unix-like" concept="//@concepts.16"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Morph OS" verbatim="Morph OS" concept="//@concepts.17"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,4: has a built-in tracker and announcement service" verbatim="Has a built-in tracker and announcement service" row="1" rowspan="1" column="4" colspan="1" concepts="//@concepts.18 //@concepts.19" myHeaderProducts="//@concepts.4" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Has a built-in tracker" verbatim="Has a built-in tracker" concept="//@concepts.18"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="announcement service" verbatim="announcement service" concept="//@concepts.19"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="2,0: monotorrent" verbatim="MonoTorrent" row="2" rowspan="1" colspan="1" concept="//@concepts.5"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: c#" verbatim="C#" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.20" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="C#" verbatim="C#" concept="//@concepts.20"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: mit" verbatim="MIT" row="2" rowspan="1" column="2" colspan="1" concepts="//@concepts.21" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="MIT" verbatim="MIT" concept="//@concepts.21"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: windows, mac os, unix-like" verbatim="Windows, Mac OS, Unix-like" row="2" rowspan="1" column="3" colspan="1" concepts="//@concepts.14 //@concepts.22 //@concepts.16" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows" verbatim="Windows" concept="//@concepts.14"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Mac OS" verbatim="Mac OS" concept="//@concepts.22"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Unix-like" verbatim="Unix-like" concept="//@concepts.16"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,4: uses mono for cross-platform support (.net)" verbatim="Uses Mono for cross-platform support (.NET)" row="2" rowspan="1" column="4" colspan="1" concepts="//@concepts.23 //@concepts.24" myHeaderProducts="//@concepts.5" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name=".NET" verbatim=".NET" concept="//@concepts.23"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="Uses Mono for cross-platform support" verbatim="Uses Mono for cross-platform support" concept="//@concepts.24"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="3,0: opentracker" verbatim="Opentracker" row="3" rowspan="1" colspan="1" concept="//@concepts.6"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: c" verbatim="C" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.25" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="C" verbatim="C" concept="//@concepts.25"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: beerware" verbatim="Beerware" row="3" rowspan="1" column="2" colspan="1" concepts="//@concepts.26" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Beerware" verbatim="Beerware" concept="//@concepts.26"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: unix-like (source code only)" verbatim="Unix-like (source code only)" row="3" rowspan="1" column="3" colspan="1" concepts="//@concepts.27 //@concepts.16" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:Partial">
+        <condition xsi:type="pcmmm:VariabilityConceptRef" name="source code only" verbatim="source code only" concept="//@concepts.27"/>
+        <argument xsi:type="pcmmm:VariabilityConceptRef" name="Unix-like" verbatim="Unix-like" concept="//@concepts.16"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,4: uses libowfat, performs well even on embedded hard" verbatim="Uses libowfat, performs well even on embedded hardware. Only requirement is a POSIX compliant OS." row="3" rowspan="1" column="4" colspan="1" concepts="//@concepts.28 //@concepts.29" myHeaderProducts="//@concepts.6" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Uses libowfat" verbatim="Uses libowfat" concept="//@concepts.28"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="performs well even on embedded hardware. Only requirement is a POSIX compliant OS." verbatim="performs well even on embedded hardware. Only requirement is a POSIX compliant OS." concept="//@concepts.29"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="4,0: peertracker" verbatim="PeerTracker" row="4" rowspan="1" colspan="1" concept="//@concepts.7"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: php" verbatim="PHP" row="4" rowspan="1" column="1" colspan="1" concepts="//@concepts.30" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="PHP" verbatim="PHP" concept="//@concepts.30"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: gpl" verbatim="GPL" row="4" rowspan="1" column="2" colspan="1" concepts="//@concepts.13" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.13"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: web application" verbatim="Web application" row="4" rowspan="1" column="3" colspan="1" concepts="//@concepts.31" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Web application" verbatim="Web application" concept="//@concepts.31"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,4: extremely lightweight and efficient bittorrent tra" verbatim="Extremely lightweight and efficient BitTorrent tracker. Supports SQLite3, MySQL and soon PostgreSQL for storage." row="4" rowspan="1" column="4" colspan="1" concepts="//@concepts.32 //@concepts.33 //@concepts.34 //@concepts.35" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Extremely lightweight" verbatim="Extremely lightweight" concept="//@concepts.32"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="efficient BitTorrent tracker. Supports SQLite3" verbatim="efficient BitTorrent tracker. Supports SQLite3" concept="//@concepts.33"/>
+        </contraints>
+        <contraints xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.34"/>
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="soon PostgreSQL for storage." verbatim="soon PostgreSQL for storage." concept="//@concepts.35"/>
+        </contraints>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="5,0: &#x3bc;torrent" verbatim="&#x3bc;Torrent" row="5" rowspan="1" colspan="1" concept="//@concepts.8"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: c++" verbatim="C++" row="5" rowspan="1" column="1" colspan="1" concepts="//@concepts.36" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="C++" verbatim="C++" concept="//@concepts.36"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: freeware" verbatim="Freeware" row="5" rowspan="1" column="2" colspan="1" concepts="//@concepts.37" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Freeware" verbatim="Freeware" concept="//@concepts.37"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,3: windows, os x, linux, android" verbatim="Windows, OS X, Linux, Android" row="5" rowspan="1" column="3" colspan="1" concepts="//@concepts.14 //@concepts.15 //@concepts.38 //@concepts.39" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows" verbatim="Windows" concept="//@concepts.14"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="OS X" verbatim="OS X" concept="//@concepts.15"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Linux" verbatim="Linux" concept="//@concepts.38"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Android" verbatim="Android" concept="//@concepts.39"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,4: does not have a list of hosted torrents." verbatim="Does not have a list of hosted torrents." row="5" rowspan="1" column="4" colspan="1" concepts="//@concepts.40" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Does not have a list of hosted torrents." verbatim="Does not have a list of hosted torrents." concept="//@concepts.40"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="6,0: qbittorrent" verbatim="qBittorrent" row="6" rowspan="1" colspan="1" concept="//@concepts.9"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,1: c++" verbatim="C++" row="6" rowspan="1" column="1" colspan="1" concepts="//@concepts.36" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="C++" verbatim="C++" concept="//@concepts.36"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,2: gpl" verbatim="GPL" row="6" rowspan="1" column="2" colspan="1" concepts="//@concepts.13" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.13"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,3: windows, os x, unix-like, os/2" verbatim="Windows, OS X, Unix-like, OS/2" row="6" rowspan="1" column="3" colspan="1" concepts="//@concepts.14 //@concepts.15 //@concepts.16 //@concepts.41" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows" verbatim="Windows" concept="//@concepts.14"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="OS X" verbatim="OS X" concept="//@concepts.15"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Unix-like" verbatim="Unix-like" concept="//@concepts.16"/>
+        <contraints xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:VariabilityConceptRef" name="OS" verbatim="OS" concept="//@concepts.41"/>
+          <contraints xsi:type="pcmmm:Integer" name="2" confident="true" verbatim="2" value="2"/>
+        </contraints>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,4: lightweight. supports dht, pex, announcements via " verbatim="Lightweight. Supports DHT, PEX, announcements via UDP. Does not have a web interface or list of hosted torrents; it is not designed for secure or large-scale application." row="6" rowspan="1" column="4" colspan="1" concepts="//@concepts.46 //@concepts.45 //@concepts.47 //@concepts.43 //@concepts.44 //@concepts.42" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Lightweight. Supports DHT" verbatim="Lightweight. Supports DHT" concept="//@concepts.42"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PEX" verbatim="PEX" concept="//@concepts.43"/>
+        <contraints xsi:type="pcmmm:And">
+          <contraints xsi:type="pcmmm:Or">
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="announcements via UDP. Does not have a web interface" verbatim="announcements via UDP. Does not have a web interface" concept="//@concepts.44"/>
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="list of hosted torrents" verbatim="list of hosted torrents" concept="//@concepts.45"/>
+          </contraints>
+          <contraints xsi:type="pcmmm:Or">
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="it is not designed for secure" verbatim="it is not designed for secure" concept="//@concepts.46"/>
+            <contraints xsi:type="pcmmm:VariabilityConceptRef" name="large-scale application." verbatim="large-scale application." concept="//@concepts.47"/>
+          </contraints>
+        </contraints>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="7,0: vuze" verbatim="Vuze" row="7" rowspan="1" colspan="1" concept="//@concepts.10"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,1: java" verbatim="Java" row="7" rowspan="1" column="1" colspan="1" concepts="//@concepts.48" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Java" verbatim="Java" concept="//@concepts.48"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,2: disputed" verbatim="Disputed" row="7" rowspan="1" column="2" colspan="1" concepts="//@concepts.49" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Disputed" verbatim="Disputed" concept="//@concepts.49"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,3: windows, mac os, linux" verbatim="Windows, Mac OS, Linux" row="7" rowspan="1" column="3" colspan="1" concepts="//@concepts.14 //@concepts.22 //@concepts.38" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows" verbatim="Windows" concept="//@concepts.14"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Mac OS" verbatim="Mac OS" concept="//@concepts.22"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Linux" verbatim="Linux" concept="//@concepts.38"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,4: vuze (formerly azureus) has a built in tracker." verbatim="Vuze (formerly Azureus) has a built in tracker." row="7" rowspan="1" column="4" colspan="1" concepts="//@concepts.50" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Vuze (formerly Azureus) has a built in tracker." verbatim="Vuze (formerly Azureus) has a built in tracker." concept="//@concepts.50"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="8,0: xbt tracker" verbatim="XBT Tracker" row="8" rowspan="1" colspan="1" concept="//@concepts.11"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,1: c++" verbatim="C++" row="8" rowspan="1" column="1" colspan="1" concepts="//@concepts.36" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="C++" verbatim="C++" concept="//@concepts.36"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,2: gpl" verbatim="GPL" row="8" rowspan="1" column="2" colspan="1" concepts="//@concepts.13" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GPL" verbatim="GPL" concept="//@concepts.13"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,3: windows, linux" verbatim="Windows, Linux" row="8" rowspan="1" column="3" colspan="1" concepts="//@concepts.14 //@concepts.38" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Windows" verbatim="Windows" concept="//@concepts.14"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Linux" verbatim="Linux" concept="//@concepts.38"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="8,4: uses mysql for data storage, lightweight tracker" verbatim="Uses MySQL for data storage, lightweight tracker" row="8" rowspan="1" column="4" colspan="1" concepts="//@concepts.51 //@concepts.52" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Uses MySQL for data storage" verbatim="Uses MySQL for data storage" concept="//@concepts.51"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="lightweight tracker" verbatim="lightweight tracker" concept="//@concepts.52"/>
+      </interpretation>
+    </cells>
+  </matrices>
+  <concepts xsi:type="pcmmm:Feature" name="Programming Language" myValuedCells="//@matrices.0/@cells.6 //@matrices.0/@cells.11 //@matrices.0/@cells.16 //@matrices.0/@cells.21 //@matrices.0/@cells.26 //@matrices.0/@cells.31 //@matrices.0/@cells.36 //@matrices.0/@cells.41" domain="//@domainCollection/@domains.0"/>
+  <concepts xsi:type="pcmmm:Feature" name="License" myValuedCells="//@matrices.0/@cells.7 //@matrices.0/@cells.12 //@matrices.0/@cells.17 //@matrices.0/@cells.22 //@matrices.0/@cells.27 //@matrices.0/@cells.32 //@matrices.0/@cells.37 //@matrices.0/@cells.42" domain="//@domainCollection/@domains.1"/>
+  <concepts xsi:type="pcmmm:Feature" name="Operating System Support" myValuedCells="//@matrices.0/@cells.8 //@matrices.0/@cells.13 //@matrices.0/@cells.18 //@matrices.0/@cells.23 //@matrices.0/@cells.28 //@matrices.0/@cells.33 //@matrices.0/@cells.38 //@matrices.0/@cells.43" domain="//@domainCollection/@domains.2"/>
+  <concepts xsi:type="pcmmm:Feature" name="Description" myValuedCells="//@matrices.0/@cells.9 //@matrices.0/@cells.14 //@matrices.0/@cells.19 //@matrices.0/@cells.24 //@matrices.0/@cells.29 //@matrices.0/@cells.34 //@matrices.0/@cells.39 //@matrices.0/@cells.44" domain="//@domainCollection/@domains.3"/>
+  <concepts xsi:type="pcmmm:Product" name="MLDonkey" myValuedCells="//@matrices.0/@cells.6 //@matrices.0/@cells.7 //@matrices.0/@cells.8 //@matrices.0/@cells.9"/>
+  <concepts xsi:type="pcmmm:Product" name="MonoTorrent" myValuedCells="//@matrices.0/@cells.11 //@matrices.0/@cells.12 //@matrices.0/@cells.13 //@matrices.0/@cells.14"/>
+  <concepts xsi:type="pcmmm:Product" name="Opentracker" myValuedCells="//@matrices.0/@cells.16 //@matrices.0/@cells.17 //@matrices.0/@cells.18 //@matrices.0/@cells.19"/>
+  <concepts xsi:type="pcmmm:Product" name="PeerTracker" myValuedCells="//@matrices.0/@cells.21 //@matrices.0/@cells.22 //@matrices.0/@cells.23 //@matrices.0/@cells.24"/>
+  <concepts xsi:type="pcmmm:Product" name="&#x3bc;Torrent" myValuedCells="//@matrices.0/@cells.26 //@matrices.0/@cells.27 //@matrices.0/@cells.28 //@matrices.0/@cells.29"/>
+  <concepts xsi:type="pcmmm:Product" name="qBittorrent" myValuedCells="//@matrices.0/@cells.31 //@matrices.0/@cells.32 //@matrices.0/@cells.33 //@matrices.0/@cells.34"/>
+  <concepts xsi:type="pcmmm:Product" name="Vuze" myValuedCells="//@matrices.0/@cells.36 //@matrices.0/@cells.37 //@matrices.0/@cells.38 //@matrices.0/@cells.39"/>
+  <concepts xsi:type="pcmmm:Product" name="XBT Tracker" myValuedCells="//@matrices.0/@cells.41 //@matrices.0/@cells.42 //@matrices.0/@cells.43 //@matrices.0/@cells.44"/>
+  <concepts xsi:type="pcmmm:Feature" name="OCaml" constraints="//@matrices.0/@cells.6" domain="//@domainCollection/@domains.4"/>
+  <concepts xsi:type="pcmmm:Feature" name="GPL" constraints="//@matrices.0/@cells.7 //@matrices.0/@cells.22 //@matrices.0/@cells.32 //@matrices.0/@cells.42" domain="//@domainCollection/@domains.5"/>
+  <concepts xsi:type="pcmmm:Feature" name="Windows" constraints="//@matrices.0/@cells.8 //@matrices.0/@cells.13 //@matrices.0/@cells.28 //@matrices.0/@cells.33 //@matrices.0/@cells.38 //@matrices.0/@cells.43" domain="//@domainCollection/@domains.6"/>
+  <concepts xsi:type="pcmmm:Feature" name="OS X" constraints="//@matrices.0/@cells.8 //@matrices.0/@cells.28 //@matrices.0/@cells.33" domain="//@domainCollection/@domains.7"/>
+  <concepts xsi:type="pcmmm:Feature" name="Unix-like" constraints="//@matrices.0/@cells.8 //@matrices.0/@cells.13 //@matrices.0/@cells.18 //@matrices.0/@cells.33" domain="//@domainCollection/@domains.8"/>
+  <concepts xsi:type="pcmmm:Feature" name="Morph OS" constraints="//@matrices.0/@cells.8" domain="//@domainCollection/@domains.9"/>
+  <concepts xsi:type="pcmmm:Feature" name="Has a built-in tracker" constraints="//@matrices.0/@cells.9" domain="//@domainCollection/@domains.10"/>
+  <concepts xsi:type="pcmmm:Feature" name="announcement service" constraints="//@matrices.0/@cells.9" domain="//@domainCollection/@domains.11"/>
+  <concepts xsi:type="pcmmm:Feature" name="C#" constraints="//@matrices.0/@cells.11" domain="//@domainCollection/@domains.12"/>
+  <concepts xsi:type="pcmmm:Feature" name="MIT" constraints="//@matrices.0/@cells.12" domain="//@domainCollection/@domains.13"/>
+  <concepts xsi:type="pcmmm:Feature" name="Mac OS" constraints="//@matrices.0/@cells.13 //@matrices.0/@cells.38" domain="//@domainCollection/@domains.14"/>
+  <concepts xsi:type="pcmmm:Feature" name=".NET" constraints="//@matrices.0/@cells.14" domain="//@domainCollection/@domains.15"/>
+  <concepts xsi:type="pcmmm:Feature" name="Uses Mono for cross-platform support" constraints="//@matrices.0/@cells.14" domain="//@domainCollection/@domains.16"/>
+  <concepts xsi:type="pcmmm:Feature" name="C" constraints="//@matrices.0/@cells.16" domain="//@domainCollection/@domains.17"/>
+  <concepts xsi:type="pcmmm:Feature" name="Beerware" constraints="//@matrices.0/@cells.17" domain="//@domainCollection/@domains.18"/>
+  <concepts xsi:type="pcmmm:Feature" name="source code only" constraints="//@matrices.0/@cells.18" domain="//@domainCollection/@domains.19"/>
+  <concepts xsi:type="pcmmm:Feature" name="Uses libowfat" constraints="//@matrices.0/@cells.19" domain="//@domainCollection/@domains.20"/>
+  <concepts xsi:type="pcmmm:Feature" name="performs well even on embedded hardware. Only requirement is a POSIX compliant OS." constraints="//@matrices.0/@cells.19" domain="//@domainCollection/@domains.21"/>
+  <concepts xsi:type="pcmmm:Feature" name="PHP" constraints="//@matrices.0/@cells.21" domain="//@domainCollection/@domains.22"/>
+  <concepts xsi:type="pcmmm:Feature" name="Web application" constraints="//@matrices.0/@cells.23" domain="//@domainCollection/@domains.23"/>
+  <concepts xsi:type="pcmmm:Feature" name="Extremely lightweight" constraints="//@matrices.0/@cells.24" domain="//@domainCollection/@domains.24"/>
+  <concepts xsi:type="pcmmm:Feature" name="efficient BitTorrent tracker. Supports SQLite3" constraints="//@matrices.0/@cells.24" domain="//@domainCollection/@domains.25"/>
+  <concepts xsi:type="pcmmm:Feature" name="MySQL" constraints="//@matrices.0/@cells.24" domain="//@domainCollection/@domains.26"/>
+  <concepts xsi:type="pcmmm:Feature" name="soon PostgreSQL for storage." constraints="//@matrices.0/@cells.24" domain="//@domainCollection/@domains.27"/>
+  <concepts xsi:type="pcmmm:Feature" name="C++" constraints="//@matrices.0/@cells.26 //@matrices.0/@cells.31 //@matrices.0/@cells.41" domain="//@domainCollection/@domains.28"/>
+  <concepts xsi:type="pcmmm:Feature" name="Freeware" constraints="//@matrices.0/@cells.27" domain="//@domainCollection/@domains.29"/>
+  <concepts xsi:type="pcmmm:Feature" name="Linux" constraints="//@matrices.0/@cells.28 //@matrices.0/@cells.38 //@matrices.0/@cells.43" domain="//@domainCollection/@domains.30"/>
+  <concepts xsi:type="pcmmm:Feature" name="Android" constraints="//@matrices.0/@cells.28" domain="//@domainCollection/@domains.31"/>
+  <concepts xsi:type="pcmmm:Feature" name="Does not have a list of hosted torrents." constraints="//@matrices.0/@cells.29" domain="//@domainCollection/@domains.32"/>
+  <concepts xsi:type="pcmmm:Feature" name="OS" constraints="//@matrices.0/@cells.33" domain="//@domainCollection/@domains.33"/>
+  <concepts xsi:type="pcmmm:Feature" name="Lightweight. Supports DHT" constraints="//@matrices.0/@cells.34" domain="//@domainCollection/@domains.34"/>
+  <concepts xsi:type="pcmmm:Feature" name="PEX" constraints="//@matrices.0/@cells.34" domain="//@domainCollection/@domains.35"/>
+  <concepts xsi:type="pcmmm:Feature" name="announcements via UDP. Does not have a web interface" constraints="//@matrices.0/@cells.34" domain="//@domainCollection/@domains.36"/>
+  <concepts xsi:type="pcmmm:Feature" name="list of hosted torrents" constraints="//@matrices.0/@cells.34" domain="//@domainCollection/@domains.37"/>
+  <concepts xsi:type="pcmmm:Feature" name="it is not designed for secure" constraints="//@matrices.0/@cells.34" domain="//@domainCollection/@domains.38"/>
+  <concepts xsi:type="pcmmm:Feature" name="large-scale application." constraints="//@matrices.0/@cells.34" domain="//@domainCollection/@domains.39"/>
+  <concepts xsi:type="pcmmm:Feature" name="Java" constraints="//@matrices.0/@cells.36" domain="//@domainCollection/@domains.40"/>
+  <concepts xsi:type="pcmmm:Feature" name="Disputed" constraints="//@matrices.0/@cells.37" domain="//@domainCollection/@domains.41"/>
+  <concepts xsi:type="pcmmm:Feature" name="Vuze (formerly Azureus) has a built in tracker." constraints="//@matrices.0/@cells.39" domain="//@domainCollection/@domains.42"/>
+  <concepts xsi:type="pcmmm:Feature" name="Uses MySQL for data storage" constraints="//@matrices.0/@cells.44" domain="//@domainCollection/@domains.43"/>
+  <concepts xsi:type="pcmmm:Feature" name="lightweight tracker" constraints="//@matrices.0/@cells.44" domain="//@domainCollection/@domains.44"/>
+  <domainCollection>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.26/@interpretation //@matrices.0/@cells.31/@interpretation //@matrices.0/@cells.41/@interpretation //@matrices.0/@cells.11/@interpretation //@matrices.0/@cells.16/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.17/@interpretation //@matrices.0/@cells.27/@interpretation //@matrices.0/@cells.7/@interpretation //@matrices.0/@cells.22/@interpretation //@matrices.0/@cells.32/@interpretation //@matrices.0/@cells.42/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.8/@interpretation/@contraints.0 //@matrices.0/@cells.13/@interpretation/@contraints.0 //@matrices.0/@cells.28/@interpretation/@contraints.0 //@matrices.0/@cells.33/@interpretation/@contraints.0 //@matrices.0/@cells.38/@interpretation/@contraints.0 //@matrices.0/@cells.43/@interpretation/@contraints.0"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+  </domainCollection>
+</pcmmm:PCM>

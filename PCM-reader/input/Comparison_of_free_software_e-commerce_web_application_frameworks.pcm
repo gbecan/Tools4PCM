@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pcmmm:PCM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pcmmm="pcmmm">
+  <matrices name="Free software distribution and dependencies" id="Free software distribution and dependencies_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: first release date" verbatim="First release date" rowspan="1" column="1" colspan="1" concept="//@concepts.0"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: current stable version" verbatim="Current stable version" rowspan="1" column="2" colspan="1" concept="//@concepts.1"/>
+    <cells xsi:type="pcmmm:Header" name="0,3: latest release date" verbatim="Latest release date" rowspan="1" column="3" colspan="1" concept="//@concepts.2"/>
+    <cells xsi:type="pcmmm:Header" name="0,4: license" verbatim="License" rowspan="1" column="4" colspan="1" concept="//@concepts.3"/>
+    <cells xsi:type="pcmmm:Header" name="0,5: language" verbatim="Language" rowspan="1" column="5" colspan="1" concept="//@concepts.4"/>
+    <cells xsi:type="pcmmm:Header" name="0,6: web application framework (waf)" verbatim="Web application framework (WAF)" rowspan="1" column="6" colspan="1" concept="//@concepts.5"/>
+    <cells xsi:type="pcmmm:Header" name="0,7: free database backend support" verbatim="Free database backend support" rowspan="1" column="7" colspan="1" concept="//@concepts.6"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: software name" verbatim="Software name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: apache ofbiz" verbatim="Apache OFBiz" row="1" rowspan="1" colspan="1" concept="//@concepts.7"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: 2007" verbatim="2007" row="1" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Integer" name="2007" confident="true" verbatim="2007" value="2007"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: 12.04.02" verbatim="12.04.02" row="1" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Double" name="12.04.02" confident="true" verbatim="12.04.02" value="NaN"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,3: 2013-07-20" verbatim="2013-07-20" row="1" rowspan="1" column="3" colspan="1" concepts="//@concepts.21" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="2013-07-20" verbatim="2013-07-20" concept="//@concepts.21"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,4: apache license 2.0" verbatim="Apache License 2.0" row="1" rowspan="1" column="4" colspan="1" concepts="//@concepts.22" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Apache License 2.0" verbatim="Apache License 2.0" concept="//@concepts.22"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,5: java" verbatim="Java" row="1" rowspan="1" column="5" colspan="1" concepts="//@concepts.23" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Java" verbatim="Java" concept="//@concepts.23"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,6: apache ofbiz" verbatim="Apache OFBiz" row="1" rowspan="1" column="6" colspan="1" concepts="//@concepts.7" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Apache OFBiz" verbatim="Apache OFBiz" concept="//@concepts.7"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,7: apache derby, mysql, postgresql" verbatim="Apache Derby, MySQL, PostgreSQL" row="1" rowspan="1" column="7" colspan="1" concepts="//@concepts.24 //@concepts.25 //@concepts.26" myHeaderProducts="//@concepts.7" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Apache Derby" verbatim="Apache Derby" concept="//@concepts.24"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.25"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PostgreSQL" verbatim="PostgreSQL" concept="//@concepts.26"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="2,0: prestashop" verbatim="PrestaShop" row="2" rowspan="1" colspan="1" concept="//@concepts.8"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: 2007-08-15" verbatim="2007-08-15" row="2" rowspan="1" column="1" colspan="1" concepts="//@concepts.27" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="2007-08-15" verbatim="2007-08-15" concept="//@concepts.27"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,2: 1.5.6.2" verbatim="1.5.6.2" row="2" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Double" name="1.5.6.2" confident="true" verbatim="1.5.6.2" value="NaN"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,3: 2014-01-20" verbatim="2014-01-20" row="2" rowspan="1" column="3" colspan="1" concepts="//@concepts.28" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="2014-01-20" verbatim="2014-01-20" concept="//@concepts.28"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,4: open software license" verbatim="Open Software License" row="2" rowspan="1" column="4" colspan="1" concepts="//@concepts.29" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Open Software License" verbatim="Open Software License" concept="//@concepts.29"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,5: php" verbatim="PHP" row="2" rowspan="1" column="5" colspan="1" concepts="//@concepts.30" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="PHP" verbatim="PHP" concept="//@concepts.30"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,6: model&#x2013;view&#x2013;controller" verbatim="Model&#x2013;View&#x2013;Controller" row="2" rowspan="1" column="6" colspan="1" concepts="//@concepts.31" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Model&#x2013;View&#x2013;Controller" verbatim="Model&#x2013;View&#x2013;Controller" concept="//@concepts.31"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,7: mysql" verbatim="MySQL" row="2" rowspan="1" column="7" colspan="1" concepts="//@concepts.25" myHeaderProducts="//@concepts.8" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.25"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="3,0: magento" verbatim="Magento" row="3" rowspan="1" colspan="1" concept="//@concepts.9"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: 2007-08-31" verbatim="2007-08-31" row="3" rowspan="1" column="1" colspan="1" concepts="//@concepts.32" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="2007-08-31" verbatim="2007-08-31" concept="//@concepts.32"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: 1.8.0.0" verbatim="1.8.0.0" row="3" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Double" name="1.8.0.0" confident="true" verbatim="1.8.0.0" value="NaN"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,3: 2013-09-25" verbatim="2013-09-25" row="3" rowspan="1" column="3" colspan="1" concepts="//@concepts.33" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="2013-09-25" verbatim="2013-09-25" concept="//@concepts.33"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,4: open software license" verbatim="Open Software License" row="3" rowspan="1" column="4" colspan="1" concepts="//@concepts.29" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Open Software License" verbatim="Open Software License" concept="//@concepts.29"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,5: php" verbatim="PHP" row="3" rowspan="1" column="5" colspan="1" concepts="//@concepts.30" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="PHP" verbatim="PHP" concept="//@concepts.30"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,6: zend framework" verbatim="Zend Framework" row="3" rowspan="1" column="6" colspan="1" concepts="//@concepts.34" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Zend Framework" verbatim="Zend Framework" concept="//@concepts.34"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,7: mysql" verbatim="MySQL" row="3" rowspan="1" column="7" colspan="1" concepts="//@concepts.25" myHeaderProducts="//@concepts.9" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.25"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="4,0: spree commerce" verbatim="Spree Commerce" row="4" rowspan="1" colspan="1" concept="//@concepts.10"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: 2007" verbatim="2007" row="4" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Integer" name="2007" confident="true" verbatim="2007" value="2007"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: 2.1" verbatim="2.1" row="4" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Double" name="2.1" confident="true" verbatim="2.1" value="2.1"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,3: 2013-11-20" verbatim="2013-11-20" row="4" rowspan="1" column="3" colspan="1" concepts="//@concepts.35" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="2013-11-20" verbatim="2013-11-20" concept="//@concepts.35"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,4: new bsd license" verbatim="New BSD License" row="4" rowspan="1" column="4" colspan="1" concepts="//@concepts.36" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="New BSD License" verbatim="New BSD License" concept="//@concepts.36"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,5: ruby" verbatim="Ruby" row="4" rowspan="1" column="5" colspan="1" concepts="//@concepts.37" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Ruby" verbatim="Ruby" concept="//@concepts.37"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,6: ruby on rails" verbatim="Ruby on Rails" row="4" rowspan="1" column="6" colspan="1" concepts="//@concepts.38" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Ruby on Rails" verbatim="Ruby on Rails" concept="//@concepts.38"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,7: mysql, postgresql, sqlite3" verbatim="MySQL, PostgreSQL, SQLite3" row="4" rowspan="1" column="7" colspan="1" concepts="//@concepts.25 //@concepts.26 //@concepts.39" myHeaderProducts="//@concepts.10" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.25"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PostgreSQL" verbatim="PostgreSQL" concept="//@concepts.26"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SQLite3" verbatim="SQLite3" concept="//@concepts.39"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="5,0: drupal commerce" verbatim="Drupal Commerce" row="5" rowspan="1" colspan="1" concept="//@concepts.11"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: 2011-08-23" verbatim="2011-08-23" row="5" rowspan="1" column="1" colspan="1" concepts="//@concepts.40" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="2011-08-23" verbatim="2011-08-23" concept="//@concepts.40"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: 1.8" verbatim="1.8" row="5" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Double" name="1.8" confident="true" verbatim="1.8" value="1.8"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,3: 2013-07-23" verbatim="2013-07-23" row="5" rowspan="1" column="3" colspan="1" concepts="//@concepts.41" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="2013-07-23" verbatim="2013-07-23" concept="//@concepts.41"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,4: gnu gpl" verbatim="GNU GPL" row="5" rowspan="1" column="4" colspan="1" concepts="//@concepts.42" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GNU GPL" verbatim="GNU GPL" concept="//@concepts.42"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,5: php" verbatim="PHP" row="5" rowspan="1" column="5" colspan="1" concepts="//@concepts.30" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="PHP" verbatim="PHP" concept="//@concepts.30"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,6: drupal" verbatim="Drupal" row="5" rowspan="1" column="6" colspan="1" concepts="//@concepts.43" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Drupal" verbatim="Drupal" concept="//@concepts.43"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,7: mysql, postgresql, sqlite3" verbatim="MySQL, PostgreSQL, SQLite3" row="5" rowspan="1" column="7" colspan="1" concepts="//@concepts.25 //@concepts.26 //@concepts.39" myHeaderProducts="//@concepts.11" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.25"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PostgreSQL" verbatim="PostgreSQL" concept="//@concepts.26"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="SQLite3" verbatim="SQLite3" concept="//@concepts.39"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="6,0: woocommerce" verbatim="WooCommerce" row="6" rowspan="1" colspan="1" concept="//@concepts.12"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,1: 2011" verbatim="2011" row="6" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Integer" name="2011" confident="true" verbatim="2011" value="2011"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,2: 2.0.20" verbatim="2.0.20" row="6" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Double" name="2.0.20" confident="true" verbatim="2.0.20" value="NaN"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,3: 2013-11-21" verbatim="2013-11-21" row="6" rowspan="1" column="3" colspan="1" concepts="//@concepts.44" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="2013-11-21" verbatim="2013-11-21" concept="//@concepts.44"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,4: gnu gpl" verbatim="GNU GPL" row="6" rowspan="1" column="4" colspan="1" concepts="//@concepts.42" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="GNU GPL" verbatim="GNU GPL" concept="//@concepts.42"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,5: php" verbatim="PHP" row="6" rowspan="1" column="5" colspan="1" concepts="//@concepts.30" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="PHP" verbatim="PHP" concept="//@concepts.30"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,6: wordpress" verbatim="Wordpress" row="6" rowspan="1" column="6" colspan="1" concepts="//@concepts.45" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Wordpress" verbatim="Wordpress" concept="//@concepts.45"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="6,7: mysql" verbatim="MySQL" row="6" rowspan="1" column="7" colspan="1" concepts="//@concepts.25" myHeaderProducts="//@concepts.12" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.25"/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="7,0: bigfish" verbatim="BigFish" row="7" rowspan="1" colspan="1" concept="//@concepts.13"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,1: 2012" verbatim="2012" row="7" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.0">
+      <interpretation xsi:type="pcmmm:Integer" name="2012" confident="true" verbatim="2012" value="2012"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,2: 1.16.1" verbatim="1.16.1" row="7" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.1">
+      <interpretation xsi:type="pcmmm:Double" name="1.16.1" confident="true" verbatim="1.16.1" value="NaN"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,3: 2014-01-15" verbatim="2014-01-15" row="7" rowspan="1" column="3" colspan="1" concepts="//@concepts.46" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.2">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="2014-01-15" verbatim="2014-01-15" concept="//@concepts.46"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,4: apache license 2.0" verbatim="Apache License 2.0" row="7" rowspan="1" column="4" colspan="1" concepts="//@concepts.22" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.3">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Apache License 2.0" verbatim="Apache License 2.0" concept="//@concepts.22"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,5: java" verbatim="Java" row="7" rowspan="1" column="5" colspan="1" concepts="//@concepts.23" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.4">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Java" verbatim="Java" concept="//@concepts.23"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,6: apache ofbiz" verbatim="Apache OFBiz" row="7" rowspan="1" column="6" colspan="1" concepts="//@concepts.7" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.5">
+      <interpretation xsi:type="pcmmm:VariabilityConceptRef" name="Apache OFBiz" verbatim="Apache OFBiz" concept="//@concepts.7"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="7,7: apache derby, mysql, postgresql" verbatim="Apache Derby, MySQL, PostgreSQL" row="7" rowspan="1" column="7" colspan="1" concepts="//@concepts.24 //@concepts.25 //@concepts.26" myHeaderProducts="//@concepts.13" myHeaderFeatures="//@concepts.6">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Apache Derby" verbatim="Apache Derby" concept="//@concepts.24"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MySQL" verbatim="MySQL" concept="//@concepts.25"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="PostgreSQL" verbatim="PostgreSQL" concept="//@concepts.26"/>
+      </interpretation>
+    </cells>
+  </matrices>
+  <matrices name="Additional information" id="Additional information_0">
+    <cells xsi:type="pcmmm:Header" name="0,1: out-of-the-box shopping cart" verbatim="Out-of-the-box shopping cart" rowspan="1" column="1" colspan="1" concept="//@concepts.14"/>
+    <cells xsi:type="pcmmm:Header" name="0,2: non-free database backend support" verbatim="Non-free database backend support" rowspan="1" column="2" colspan="1" concept="//@concepts.15"/>
+    <cells xsi:type="pcmmm:Extra" name="0,0: software name" verbatim="Software name" rowspan="1" colspan="1"/>
+    <cells xsi:type="pcmmm:Header" name="1,0: apache ofbiz" verbatim="Apache OFBiz" row="1" rowspan="1" colspan="1" concept="//@concepts.16"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,1: no" verbatim="No" row="1" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.14">
+      <interpretation xsi:type="pcmmm:Boolean" name="No" confident="true" verbatim="No"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="1,2: ms sql, oracle" verbatim="MS SQL, Oracle" row="1" rowspan="1" column="2" colspan="1" concepts="//@concepts.47 //@concepts.48" myHeaderProducts="//@concepts.16" myHeaderFeatures="//@concepts.15">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS SQL" verbatim="MS SQL" concept="//@concepts.47"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.48"/>
+      </interpretation>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="2,0: prestashop" verbatim="PrestaShop" row="2" rowspan="1" colspan="1" concept="//@concepts.17"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="2,1: yes" verbatim="Yes" row="2" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.14">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="" verbatim="" row="2" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.17" myHeaderFeatures="//@concepts.15">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="3,0: magento" verbatim="Magento" row="3" rowspan="1" colspan="1" concept="//@concepts.18"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,1: yes" verbatim="Yes" row="3" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.14">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="3,2: " verbatim="" row="3" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.18" myHeaderFeatures="//@concepts.15">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="4,0: spree commerce" verbatim="Spree Commerce" row="4" rowspan="1" colspan="1" concept="//@concepts.19"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,1: yes" verbatim="Yes" row="4" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.14">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="4,2: " verbatim="" row="4" rowspan="1" column="2" colspan="1" myHeaderProducts="//@concepts.19" myHeaderFeatures="//@concepts.15">
+      <interpretation xsi:type="pcmmm:Empty" name="" confident="true" verbatim=""/>
+    </cells>
+    <cells xsi:type="pcmmm:Header" name="5,0: bigfish" verbatim="BigFish" row="5" rowspan="1" colspan="1" concept="//@concepts.20"/>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,1: yes" verbatim="Yes" row="5" rowspan="1" column="1" colspan="1" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.14">
+      <interpretation xsi:type="pcmmm:Boolean" name="Yes" confident="true" verbatim="Yes" value="true"/>
+    </cells>
+    <cells xsi:type="pcmmm:ValuedCell" name="5,2: ms sql, oracle, jdbc" verbatim="MS SQL, Oracle, JDBC" row="5" rowspan="1" column="2" colspan="1" concepts="//@concepts.47 //@concepts.48 //@concepts.49" myHeaderProducts="//@concepts.20" myHeaderFeatures="//@concepts.15">
+      <interpretation xsi:type="pcmmm:And">
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="MS SQL" verbatim="MS SQL" concept="//@concepts.47"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="Oracle" verbatim="Oracle" concept="//@concepts.48"/>
+        <contraints xsi:type="pcmmm:VariabilityConceptRef" name="JDBC" verbatim="JDBC" concept="//@concepts.49"/>
+      </interpretation>
+    </cells>
+  </matrices>
+  <concepts xsi:type="pcmmm:Feature" name="First release date" myValuedCells="//@matrices.0/@cells.9 //@matrices.0/@cells.17 //@matrices.0/@cells.25 //@matrices.0/@cells.33 //@matrices.0/@cells.41 //@matrices.0/@cells.49 //@matrices.0/@cells.57" domain="//@domainCollection/@domains.0"/>
+  <concepts xsi:type="pcmmm:Feature" name="Current stable version" myValuedCells="//@matrices.0/@cells.10 //@matrices.0/@cells.18 //@matrices.0/@cells.26 //@matrices.0/@cells.34 //@matrices.0/@cells.42 //@matrices.0/@cells.50 //@matrices.0/@cells.58" domain="//@domainCollection/@domains.1"/>
+  <concepts xsi:type="pcmmm:Feature" name="Latest release date" myValuedCells="//@matrices.0/@cells.11 //@matrices.0/@cells.19 //@matrices.0/@cells.27 //@matrices.0/@cells.35 //@matrices.0/@cells.43 //@matrices.0/@cells.51 //@matrices.0/@cells.59" domain="//@domainCollection/@domains.2"/>
+  <concepts xsi:type="pcmmm:Feature" name="License" myValuedCells="//@matrices.0/@cells.12 //@matrices.0/@cells.20 //@matrices.0/@cells.28 //@matrices.0/@cells.36 //@matrices.0/@cells.44 //@matrices.0/@cells.52 //@matrices.0/@cells.60" domain="//@domainCollection/@domains.3"/>
+  <concepts xsi:type="pcmmm:Feature" name="Language" myValuedCells="//@matrices.0/@cells.13 //@matrices.0/@cells.21 //@matrices.0/@cells.29 //@matrices.0/@cells.37 //@matrices.0/@cells.45 //@matrices.0/@cells.53 //@matrices.0/@cells.61" domain="//@domainCollection/@domains.4"/>
+  <concepts xsi:type="pcmmm:Feature" name="Web application framework (WAF)" myValuedCells="//@matrices.0/@cells.14 //@matrices.0/@cells.22 //@matrices.0/@cells.30 //@matrices.0/@cells.38 //@matrices.0/@cells.46 //@matrices.0/@cells.54 //@matrices.0/@cells.62" domain="//@domainCollection/@domains.5"/>
+  <concepts xsi:type="pcmmm:Feature" name="Free database backend support" myValuedCells="//@matrices.0/@cells.15 //@matrices.0/@cells.23 //@matrices.0/@cells.31 //@matrices.0/@cells.39 //@matrices.0/@cells.47 //@matrices.0/@cells.55 //@matrices.0/@cells.63" domain="//@domainCollection/@domains.6"/>
+  <concepts xsi:type="pcmmm:Product" name="Apache OFBiz" constraints="//@matrices.0/@cells.14 //@matrices.0/@cells.62" myValuedCells="//@matrices.0/@cells.9 //@matrices.0/@cells.10 //@matrices.0/@cells.11 //@matrices.0/@cells.12 //@matrices.0/@cells.13 //@matrices.0/@cells.14 //@matrices.0/@cells.15"/>
+  <concepts xsi:type="pcmmm:Product" name="PrestaShop" myValuedCells="//@matrices.0/@cells.17 //@matrices.0/@cells.18 //@matrices.0/@cells.19 //@matrices.0/@cells.20 //@matrices.0/@cells.21 //@matrices.0/@cells.22 //@matrices.0/@cells.23"/>
+  <concepts xsi:type="pcmmm:Product" name="Magento" myValuedCells="//@matrices.0/@cells.25 //@matrices.0/@cells.26 //@matrices.0/@cells.27 //@matrices.0/@cells.28 //@matrices.0/@cells.29 //@matrices.0/@cells.30 //@matrices.0/@cells.31"/>
+  <concepts xsi:type="pcmmm:Product" name="Spree Commerce" myValuedCells="//@matrices.0/@cells.33 //@matrices.0/@cells.34 //@matrices.0/@cells.35 //@matrices.0/@cells.36 //@matrices.0/@cells.37 //@matrices.0/@cells.38 //@matrices.0/@cells.39"/>
+  <concepts xsi:type="pcmmm:Product" name="Drupal Commerce" myValuedCells="//@matrices.0/@cells.41 //@matrices.0/@cells.42 //@matrices.0/@cells.43 //@matrices.0/@cells.44 //@matrices.0/@cells.45 //@matrices.0/@cells.46 //@matrices.0/@cells.47"/>
+  <concepts xsi:type="pcmmm:Product" name="WooCommerce" myValuedCells="//@matrices.0/@cells.49 //@matrices.0/@cells.50 //@matrices.0/@cells.51 //@matrices.0/@cells.52 //@matrices.0/@cells.53 //@matrices.0/@cells.54 //@matrices.0/@cells.55"/>
+  <concepts xsi:type="pcmmm:Product" name="BigFish" myValuedCells="//@matrices.0/@cells.57 //@matrices.0/@cells.58 //@matrices.0/@cells.59 //@matrices.0/@cells.60 //@matrices.0/@cells.61 //@matrices.0/@cells.62 //@matrices.0/@cells.63"/>
+  <concepts xsi:type="pcmmm:Feature" name="Out-of-the-box shopping cart" myValuedCells="//@matrices.1/@cells.4 //@matrices.1/@cells.7 //@matrices.1/@cells.10 //@matrices.1/@cells.13 //@matrices.1/@cells.16" domain="//@domainCollection/@domains.7"/>
+  <concepts xsi:type="pcmmm:Feature" name="Non-free database backend support" myValuedCells="//@matrices.1/@cells.5 //@matrices.1/@cells.8 //@matrices.1/@cells.11 //@matrices.1/@cells.14 //@matrices.1/@cells.17" domain="//@domainCollection/@domains.8"/>
+  <concepts xsi:type="pcmmm:Product" name="Apache OFBiz" myValuedCells="//@matrices.1/@cells.4 //@matrices.1/@cells.5"/>
+  <concepts xsi:type="pcmmm:Product" name="PrestaShop" myValuedCells="//@matrices.1/@cells.7 //@matrices.1/@cells.8"/>
+  <concepts xsi:type="pcmmm:Product" name="Magento" myValuedCells="//@matrices.1/@cells.10 //@matrices.1/@cells.11"/>
+  <concepts xsi:type="pcmmm:Product" name="Spree Commerce" myValuedCells="//@matrices.1/@cells.13 //@matrices.1/@cells.14"/>
+  <concepts xsi:type="pcmmm:Product" name="BigFish" myValuedCells="//@matrices.1/@cells.16 //@matrices.1/@cells.17"/>
+  <concepts xsi:type="pcmmm:Feature" name="2013-07-20" constraints="//@matrices.0/@cells.11" domain="//@domainCollection/@domains.9"/>
+  <concepts xsi:type="pcmmm:Feature" name="Apache License 2.0" constraints="//@matrices.0/@cells.12 //@matrices.0/@cells.60" domain="//@domainCollection/@domains.10"/>
+  <concepts xsi:type="pcmmm:Feature" name="Java" constraints="//@matrices.0/@cells.13 //@matrices.0/@cells.61" domain="//@domainCollection/@domains.11"/>
+  <concepts xsi:type="pcmmm:Feature" name="Apache Derby" constraints="//@matrices.0/@cells.15 //@matrices.0/@cells.63" domain="//@domainCollection/@domains.12"/>
+  <concepts xsi:type="pcmmm:Feature" name="MySQL" constraints="//@matrices.0/@cells.15 //@matrices.0/@cells.23 //@matrices.0/@cells.31 //@matrices.0/@cells.39 //@matrices.0/@cells.47 //@matrices.0/@cells.55 //@matrices.0/@cells.63" domain="//@domainCollection/@domains.13"/>
+  <concepts xsi:type="pcmmm:Feature" name="PostgreSQL" constraints="//@matrices.0/@cells.15 //@matrices.0/@cells.39 //@matrices.0/@cells.47 //@matrices.0/@cells.63" domain="//@domainCollection/@domains.14"/>
+  <concepts xsi:type="pcmmm:Feature" name="2007-08-15" constraints="//@matrices.0/@cells.17" domain="//@domainCollection/@domains.15"/>
+  <concepts xsi:type="pcmmm:Feature" name="2014-01-20" constraints="//@matrices.0/@cells.19" domain="//@domainCollection/@domains.16"/>
+  <concepts xsi:type="pcmmm:Feature" name="Open Software License" constraints="//@matrices.0/@cells.20 //@matrices.0/@cells.28" domain="//@domainCollection/@domains.17"/>
+  <concepts xsi:type="pcmmm:Feature" name="PHP" constraints="//@matrices.0/@cells.21 //@matrices.0/@cells.29 //@matrices.0/@cells.45 //@matrices.0/@cells.53" domain="//@domainCollection/@domains.18"/>
+  <concepts xsi:type="pcmmm:Feature" name="Model&#x2013;View&#x2013;Controller" constraints="//@matrices.0/@cells.22" domain="//@domainCollection/@domains.19"/>
+  <concepts xsi:type="pcmmm:Feature" name="2007-08-31" constraints="//@matrices.0/@cells.25" domain="//@domainCollection/@domains.20"/>
+  <concepts xsi:type="pcmmm:Feature" name="2013-09-25" constraints="//@matrices.0/@cells.27" domain="//@domainCollection/@domains.21"/>
+  <concepts xsi:type="pcmmm:Feature" name="Zend Framework" constraints="//@matrices.0/@cells.30" domain="//@domainCollection/@domains.22"/>
+  <concepts xsi:type="pcmmm:Feature" name="2013-11-20" constraints="//@matrices.0/@cells.35" domain="//@domainCollection/@domains.23"/>
+  <concepts xsi:type="pcmmm:Feature" name="New BSD License" constraints="//@matrices.0/@cells.36" domain="//@domainCollection/@domains.24"/>
+  <concepts xsi:type="pcmmm:Feature" name="Ruby" constraints="//@matrices.0/@cells.37" domain="//@domainCollection/@domains.25"/>
+  <concepts xsi:type="pcmmm:Feature" name="Ruby on Rails" constraints="//@matrices.0/@cells.38" domain="//@domainCollection/@domains.26"/>
+  <concepts xsi:type="pcmmm:Feature" name="SQLite3" constraints="//@matrices.0/@cells.39 //@matrices.0/@cells.47" domain="//@domainCollection/@domains.27"/>
+  <concepts xsi:type="pcmmm:Feature" name="2011-08-23" constraints="//@matrices.0/@cells.41" domain="//@domainCollection/@domains.28"/>
+  <concepts xsi:type="pcmmm:Feature" name="2013-07-23" constraints="//@matrices.0/@cells.43" domain="//@domainCollection/@domains.29"/>
+  <concepts xsi:type="pcmmm:Feature" name="GNU GPL" constraints="//@matrices.0/@cells.44 //@matrices.0/@cells.52" domain="//@domainCollection/@domains.30"/>
+  <concepts xsi:type="pcmmm:Feature" name="Drupal" constraints="//@matrices.0/@cells.46" domain="//@domainCollection/@domains.31"/>
+  <concepts xsi:type="pcmmm:Feature" name="2013-11-21" constraints="//@matrices.0/@cells.51" domain="//@domainCollection/@domains.32"/>
+  <concepts xsi:type="pcmmm:Feature" name="Wordpress" constraints="//@matrices.0/@cells.54" domain="//@domainCollection/@domains.33"/>
+  <concepts xsi:type="pcmmm:Feature" name="2014-01-15" constraints="//@matrices.0/@cells.59" domain="//@domainCollection/@domains.34"/>
+  <concepts xsi:type="pcmmm:Feature" name="MS SQL" constraints="//@matrices.1/@cells.5 //@matrices.1/@cells.17" domain="//@domainCollection/@domains.35"/>
+  <concepts xsi:type="pcmmm:Feature" name="Oracle" constraints="//@matrices.1/@cells.5 //@matrices.1/@cells.17" domain="//@domainCollection/@domains.36"/>
+  <concepts xsi:type="pcmmm:Feature" name="JDBC" constraints="//@matrices.1/@cells.17" domain="//@domainCollection/@domains.37"/>
+  <domainCollection>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.9/@interpretation //@matrices.0/@cells.33/@interpretation //@matrices.0/@cells.49/@interpretation //@matrices.0/@cells.57/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.11/@interpretation //@matrices.0/@cells.43/@interpretation //@matrices.0/@cells.27/@interpretation //@matrices.0/@cells.35/@interpretation //@matrices.0/@cells.51/@interpretation //@matrices.0/@cells.19/@interpretation //@matrices.0/@cells.59/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.44/@interpretation //@matrices.0/@cells.52/@interpretation //@matrices.0/@cells.20/@interpretation //@matrices.0/@cells.28/@interpretation //@matrices.0/@cells.12/@interpretation //@matrices.0/@cells.60/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.21/@interpretation //@matrices.0/@cells.29/@interpretation //@matrices.0/@cells.45/@interpretation //@matrices.0/@cells.53/@interpretation //@matrices.0/@cells.13/@interpretation //@matrices.0/@cells.61/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.14/@interpretation //@matrices.0/@cells.62/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.0/@cells.15/@interpretation/@contraints.2 //@matrices.0/@cells.39/@interpretation/@contraints.1 //@matrices.0/@cells.47/@interpretation/@contraints.1 //@matrices.0/@cells.63/@interpretation/@contraints.2 //@matrices.0/@cells.15/@interpretation/@contraints.1 //@matrices.0/@cells.23/@interpretation //@matrices.0/@cells.31/@interpretation //@matrices.0/@cells.39/@interpretation/@contraints.0 //@matrices.0/@cells.47/@interpretation/@contraints.0 //@matrices.0/@cells.55/@interpretation //@matrices.0/@cells.63/@interpretation/@contraints.1"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.4/@interpretation //@matrices.1/@cells.7/@interpretation //@matrices.1/@cells.10/@interpretation //@matrices.1/@cells.13/@interpretation //@matrices.1/@cells.16/@interpretation"/>
+    <domains xsi:type="pcmmm:Enum" values="//@matrices.1/@cells.5/@interpretation/@contraints.1 //@matrices.1/@cells.17/@interpretation/@contraints.1 //@matrices.1/@cells.5/@interpretation/@contraints.0 //@matrices.1/@cells.17/@interpretation/@contraints.0"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+    <domains xsi:type="pcmmm:Enum"/>
+  </domainCollection>
+</pcmmm:PCM>
