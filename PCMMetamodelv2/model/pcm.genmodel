@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/PCMMetamodelv2/src" modelPluginID="PCMMetamodelv2"
+    modelName="Pcm" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>pcm.ecore</foreignModel>
+  <genPackages prefix="Pcm" disposableProviderFactory="true" ecorePackage="pcm.ecore#/">
+    <genClasses ecoreClass="pcm.ecore#//PCM">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pcm.ecore#//PCM/products"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pcm.ecore#//PCM/features"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pcm.ecore#//PCM/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="pcm.ecore#//AbstractFeature"/>
+    <genClasses ecoreClass="pcm.ecore#//Product">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pcm.ecore#//Product/values"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pcm.ecore#//Product/name"/>
+    </genClasses>
+    <genClasses ecoreClass="pcm.ecore#//Feature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pcm.ecore#//Feature/name"/>
+    </genClasses>
+    <genClasses ecoreClass="pcm.ecore#//FeatureGroup">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pcm.ecore#//FeatureGroup/subfeatures"/>
+    </genClasses>
+    <genClasses ecoreClass="pcm.ecore#//Cell">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pcm.ecore#//Cell/feature"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pcm.ecore#//Cell/interpretation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute pcm.ecore#//Cell/content"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="pcm.ecore#//Value"/>
+    <genClasses ecoreClass="pcm.ecore#//IntegerValue"/>
+    <genClasses ecoreClass="pcm.ecore#//StringValue"/>
+    <genClasses ecoreClass="pcm.ecore#//RealValue"/>
+    <genClasses ecoreClass="pcm.ecore#//BooleanValue"/>
+    <genClasses ecoreClass="pcm.ecore#//Multiple">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pcm.ecore#//Multiple/subvalues"/>
+    </genClasses>
+    <genClasses ecoreClass="pcm.ecore#//NotAvailable"/>
+    <genClasses ecoreClass="pcm.ecore#//Condition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pcm.ecore#//Condition/value"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference pcm.ecore#//Condition/condition"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
