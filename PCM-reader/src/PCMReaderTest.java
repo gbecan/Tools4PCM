@@ -7,9 +7,15 @@ import java.util.Collection;
 import java.util.List;
 import java.util.logging.Logger;
 
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.resource.Resource;
 import org.junit.Test;
 
+import pcmmm.Cell;
+import pcmmm.Header;
+import pcmmm.Matrix;
 import pcmmm.PCM;
+import pcmmm.PcmmmFactory;
 
 
 
@@ -88,6 +94,37 @@ public class PCMReaderTest {
 		}
 		return results ; 
 
+		
+		
+	}
+	
+	
+	@Test
+	public void test() {
+		
+		String fileName = "Comparison_of_free_web_hosting_services.pcm" ;
+		
+			
+		
+		
+		// Read PCM from xml file
+		PCM pcm = new PCMReader().getPCM(fileName);
+				
+		// Get first matrix
+		EList<Matrix> matrices = pcm.getMatrices();
+		Matrix myMatrix = matrices.get(0); 
+		
+		// Create a new header
+		PcmmmFactory factory = PcmmmFactory.eINSTANCE;
+		Header myNewHeader = factory.createHeader();
+		myNewHeader.setRow(2);
+		myNewHeader.setColumn(3);
+		myNewHeader.setVerbatim("My new header");
+		
+		// Add the header in the matrix
+		EList<Cell> cells = myMatrix.getCells();
+		cells.add(myNewHeader); 
+		
 		
 		
 	}

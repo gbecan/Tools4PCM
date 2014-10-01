@@ -22,7 +22,7 @@ class PCM2CSV {
 		val domains = features.map(f => f.getDomain() match {
 		  case d : Enum if d.getValues.forall(_.isInstanceOf[VariabilityConceptRef]) => "ENUM"
 		  case d : Enum if d.getValues.forall(_.isInstanceOf[Integer]) => "INT(" + java.lang.Integer.SIZE + ")"
-		  case d : Enum if d.getValues.forall(_.isInstanceOf[Double]) => "DOUBLE(" + java.lang.Double.SIZE + ")"
+		  case d : Enum if d.getValues.forall(v => v.isInstanceOf[Double] || v.isInstanceOf[Integer]) => "DOUBLE(" + java.lang.Double.SIZE + ")"
 		  case d : Enum if d.getValues.forall(_.isInstanceOf[Boolean]) => "BOOLEAN"
 		  case _ => "AMBIGUOUS"
 		})
